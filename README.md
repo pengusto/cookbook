@@ -2,6 +2,10 @@
 
 An autonomous project-execution skill for Codex and compatible agent harnesses.
 
+[Explore the website](https://pengusto.github.io/you-got-this/) · [Portfolio image and prompt](output/portfolio-handoff/)
+
+![A finite path from goal through context, build and verification to handoff, with a separate human decision gate.](docs/assets/you-got-this-preview.webp)
+
 You provide the intent. The skill finds the real project context, chooses a practical quality bar, implements the smallest complete change, verifies the result, and stops when the work is genuinely handled.
 
 ## Install
@@ -58,6 +62,8 @@ It does not create a framework, scoreboard, state machine, or process layer arou
 ├── SKILL.md                 # Canonical skill instructions
 ├── agents/openai.yaml       # Codex display metadata
 ├── examples.md              # Prompt examples and expected mode selection
+├── docs/                   # Static GitHub Pages website
+├── output/portfolio-handoff/ # Public image, original and generation prompt
 ├── tests/test_skill.py      # Dependency-free structural validation
 ├── .github/workflows/       # Validation on every push and pull request
 ├── CHANGELOG.md
@@ -68,9 +74,10 @@ It does not create a framework, scoreboard, state machine, or process layer arou
 
 ```sh
 python3 tests/test_skill.py
+python3 tests/test_site.py
 ```
 
-No package installation is required.
+No package installation is required. The static website uses local assets and no framework, analytics, external fonts or browser storage. Pages deploys `docs/` after validation on pushes to `main`. The public handoff assets are intentionally tracked; local `.scratch/` work is ignored.
 
 ## Contributing
 

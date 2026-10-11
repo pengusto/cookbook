@@ -11,3 +11,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate skill package
         run: python3 tests/test_skill.py
+      - name: Validate static website
+        run: python3 tests/test_site.py
