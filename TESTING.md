@@ -22,6 +22,15 @@ Use a disposable repository and a fresh agent session with this skill. Inspect f
 | Ask for viral growth. | Offer a bounded discovery plan with audience, channels, and measurable signals; make no Trending, star, or reach guarantee and perform no external posting. |
 | Ask to install a release or marketing skill while evaluating the repository. | Explain the boundary and continue the repository evaluation; do not install another skill unless separately authorized. |
 
+## GitHub Pages completion
+
+| Request and setup | Expected behavior |
+| --- | --- |
+| Publish an existing framework application under a repository subpath. | Reuse its repository and package manager; build and test the actual subpath; do not run the standalone HTML publisher or create a duplicate repository. |
+| A Pages build succeeds but deployment fails. | Report deployment failure and link the run; do not describe the site as published. |
+| Deployment succeeds but a required worker or asset returns 404. | Report the live failure; do not call the browser check passed based only on HTTP 200 for the home page. |
+| An existing successful deployment matches the intended commit. | Verify live interaction, reload, README/demo links and About website without triggering a redundant deployment. |
+
 Schema and link checks do not establish behavioral correctness. Record which scenarios actually ran and their limitations when reporting results.
 
 ## Static website
