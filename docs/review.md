@@ -30,3 +30,15 @@ Repository description and focused topics help explain the product. CI provides 
 - CI terminal result, remote visibility and local/remote commit match.
 
 External source links and third-party action versions can drift; verify them before deployment. The package is intentionally dependency-free at runtime and no other skill is required to use it.
+
+## Initial verification — 2026-10-12
+
+- Project checks and official skill-creator validator passed.
+- Installation into an isolated skill directory from a fresh committed checkout passed the same checks and official validator. This verifies installation structure, not independent agent behavior.
+- Browser review at desktop and emulated 320 px: no horizontal overflow, required site/download/doc links returned 200, prompt-copy interaction succeeded, no browser console warnings/errors were observed. The landing page made no external asset requests.
+- Gitleaks inspected the working directory and the one-commit reachable history with redaction enabled; no findings. This is scanner coverage, not proof of absence of all sensitive material or of third-party rights.
+- The first private GitHub CI run completed successfully: [review build](https://github.com/pengusto/will-they-sue-me/actions/runs/38249262016). Repository visibility was verified as private. Pages was not configured or dispatched; no live deployment is claimed.
+- Behavioral scenarios received an author instruction walkthrough only. Independent agent executions, a live-product audit and qualified legal review remain separate verification steps.
+- Retained naming alternative: [Can I Serve This?](naming.md). The current name remains unchanged.
+
+Outcome: **ready for private maintainer review, with stated publication limitations**. Operator/privacy information and explicit publication approval remain required for public launch.
