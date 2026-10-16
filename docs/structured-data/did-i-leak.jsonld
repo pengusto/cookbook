@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Did I Leak?",
+  "mainEntity": {
+    "@type": "SoftwareSourceCode",
+    "name": "Did I Leak?",
+    "description": "Arbeitsbaum und Git-Geschichte auf sensible Inhalte prüfen."
+  }
+}

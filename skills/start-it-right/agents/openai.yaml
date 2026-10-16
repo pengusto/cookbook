@@ -1,0 +1,7 @@
+interface:
+  display_name: "Start It Right · Prep the Kitchen"
+  short_description: "Turn ideas into an actionable project start"
+  default_prompt: "Use $start-it-right to turn this product idea into a recommended, checkbox-driven project start."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,24 @@
+{
+  "name": "vibe-coding-cookbook",
+  "version": "0.1.4",
+  "description": "Seven curated skills for project planning, progress checks, review preparation, release readiness, release notes, and a deliberate chat finish or handoff.",
+  "author": {
+    "name": "Pengusto"
+  },
+  "license": "MIT",
+  "skills": [
+    "start-it-right",
+    "are-we-cooking",
+    "did-i-leak",
+    "will-they-sue-me",
+    "let-them-see-it",
+    "what-did-we-change",
+    "kill-the-todos"
+  ],
+  "keywords": [
+    "developer-tools",
+    "skills",
+    "project-planning",
+    "release-readiness"
+  ]
+}

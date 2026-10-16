@@ -1,0 +1,4 @@
+interface:
+  display_name: "What Did We Change · What’s New on the Menu?"
+  short_description: "Create release notes from real Git changes"
+  default_prompt: "Use $what-did-we-change to create concise release notes from the current repository."

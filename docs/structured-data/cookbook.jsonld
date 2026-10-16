@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Vibe Coding Cookbook",
+  "inLanguage": "de",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 6,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "Start It Right",
+          "description": "Aus einer Idee wird ein kleiner, prüfbarer Projektstart."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "Are We Cooking?",
+          "description": "Prüfen, ob die aktuelle Arbeit dem vereinbarten Ziel dient."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "Did I Leak?",
+          "description": "Arbeitsbaum und Git-Geschichte auf sensible Inhalte prüfen."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "Will They Sue Me?",
+          "description": "Produktverhalten, Versprechen und anwendbare Pflichten abgleichen."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "Let Them See It",
+          "description": "Ein Repository verständlich und überprüfbar für Außenstehende vorbereiten."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "What Did We Change",
+          "description": "Release-Notizen aus belegten Änderungen statt Commit-Rhetorik schreiben."
+        }
+      }
+    ]
+  }
+}

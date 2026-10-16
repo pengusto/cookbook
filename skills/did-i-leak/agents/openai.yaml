@@ -1,0 +1,4 @@
+interface:
+  display_name: "Did I Leak? · Keep the Recipe Secret"
+  short_description: "Inspect repository exposure before sharing"
+  default_prompt: "Use $did-i-leak to inspect this repository before sharing."

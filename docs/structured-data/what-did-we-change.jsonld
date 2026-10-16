@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "What Did We Change",
+  "mainEntity": {
+    "@type": "SoftwareSourceCode",
+    "name": "What Did We Change",
+    "description": "Release-Notizen aus belegten Änderungen statt Commit-Rhetorik schreiben."
+  }
+}

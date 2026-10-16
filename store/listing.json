@@ -1,0 +1,25 @@
+{
+  "displayName": "Vibe Coding Cookbook",
+  "shortDescription": "From idea to release review",
+  "longDescription": "Seven skills for developers moving from an idea to a reviewable release: Start It Right, Check Progress (Are We Cooking?), Did I Leak?, Will They Sue Me?, Let Them See It, What Did We Change, and Finish This Chat (Close the Kitchen). Plan a small project start, inspect exposure risks, prepare a context-specific legal review, assess release readiness, and draft release notes from repository evidence. The bundle contains instructions and supporting files, with no bundled MCP server or background service. Local file and Git access, host tools, and sometimes current external sources are needed for full workflows. Optional scanners are not installed automatically. Findings are review inputs, not security or legal certification. Publishing, credential rotation, and destructive changes require separate authorization. This is a local review build; host coverage and remaining release gates are documented with the package. Close the current chat with a guide, verified finish or intentional pause.",
+  "developerName": "Pengusto",
+  "category": "Developer Tools",
+  "capabilities": [
+    "Plan a project start",
+    "Review exposure risks",
+    "Prepare legal review",
+    "Assess release readiness",
+    "Draft verified release notes"
+  ],
+  "defaultPrompt": [
+    "Help me plan a small portfolio website with three projects.",
+    "Evaluate this repository for release readiness without publishing.",
+    "Draft release notes from the actual diff between the supplied Git refs."
+  ],
+  "brandColor": "#974022",
+  "brandColorDark": "#E7B998",
+  "composerIcon": "./assets/icon.png",
+  "logo": "./assets/icon.png",
+  "composerIconDark": "./assets/icon-dark.png",
+  "logoDark": "./assets/icon-dark.png"
+}

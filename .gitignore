@@ -1,0 +1,7 @@
+site/
+dist/
+sources.local.json
+.scratch/
+__pycache__/
+*.pyc
+.DS_Store

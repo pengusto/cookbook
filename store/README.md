@@ -1,0 +1,13 @@
+# Store preparation / Store-Vorbereitung
+
+Local review only, 2026-10-15. No upload, submission, publisher verification or publication has occurred.
+
+`listing.json` is the English Codex interface; `listing.de.json` is its German listing translation. The builder checks text limits, bundles the four local icon files, and maps the listing to the Codex manifest. Claude receives the same package description, author, keywords, display name and primary icon through its native manifest. The longer English/German descriptions are drafts for the directory form. No unverified homepage, source repository, support, privacy or terms URL is invented. Select and verify these destinations before submitting wherever the target requires them. Publisher identity and category must be confirmed in the actual portal.
+
+The icon depicts a cookbook cover framing a frying pan and egg. The mark fills more of the canvas, with thicker strokes and stronger contrast for small navigation surfaces. The light and dark variants use dark ink and warm white with one amber yolk. `assets/icon.svg` and `assets/icon-dark.svg` are editable originals; the PNGs are 512 × 512 native macOS exports. All four assets use the root MIT license. No third-party marks, fonts, links or scripts. Codex composer and listing roles reference these assets. The separate sidebar companion uses its own monochrome SVG and global MCP entrypoint; see [sidebar-app.md](../docs/sidebar-app.md). Claude uses the light PNG.
+
+Review coverage is recorded in [the host-test report](../docs/host-tests.md). Format and asset checks are not store acceptance. Individual skills retain their own licenses and byte-identical contents. No optional scanner is silently bundled or installed.
+
+Deutsch: Dies sind lokale Listing-Entwürfe und Icons. Die JSON-Dateien pflegen englische und deutsche Texte; der Build übernimmt die passenden Felder in die Host-Manifeste. Echte öffentliche Zieladressen und die bestätigte Publisher-Identität bleiben vor Einreichung zu klären. Die transparenten Pfannen-/Ei-Icons sind für kleine Navigationsflächen gestaltet, liegen als bearbeitbare SVGs und 512-Pixel-PNGs vor und stehen unter der Cookbook-MIT-Lizenz. Host-Tests und Store-Freigabe sind getrennte Schritte; es wurde nichts eingereicht.
+
+References checked 2026-10-15: [OpenAI submission metadata](https://developers.openai.com/plugins/deploy/submission), [Claude manifest and directory fields](https://code.claude.com/docs/en/plugins-reference). OpenAI currently imports translations but does not yet display them in directory/API listing responses. Claude listing URL/icon fields require v2.1.281+ for warning-free native validation.

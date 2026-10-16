@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Let Them See It",
+  "mainEntity": {
+    "@type": "SoftwareSourceCode",
+    "name": "Let Them See It",
+    "description": "Ein Repository verständlich und überprüfbar für Außenstehende vorbereiten."
+  }
+}

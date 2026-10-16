@@ -1,0 +1,4 @@
+interface:
+  display_name: "Finish This Chat · Close the Kitchen"
+  short_description: "Finish agreed work or prepare a clear handoff"
+  default_prompt: "Use $kill-the-todos (Close the Kitchen) to guide this chat toward a verified finish or an intentional pause."

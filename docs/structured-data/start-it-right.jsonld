@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Start It Right",
+  "mainEntity": {
+    "@type": "SoftwareSourceCode",
+    "name": "Start It Right",
+    "description": "Aus einer Idee wird ein kleiner, prüfbarer Projektstart."
+  }
+}

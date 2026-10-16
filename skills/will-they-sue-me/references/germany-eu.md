@@ -1,0 +1,17 @@
+# Germany / EU research entry points
+
+These are research entry points, not a frozen legal checklist. Verify the current text, applicability, effective dates and exceptions during each review. Record the date actually checked. This reference was prepared on 2026-10-12; it does not certify a product.
+
+| Topic | Primary source | Review decision |
+| --- | --- | --- |
+| Personal data | [GDPR, Regulation (EU) 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj) | Establish territorial scope and actual processing; inspect Articles 5–6, 12–22, 25, 28, 32 and Chapter V as relevant. Consent is one possible basis. Article 17 has exceptions. |
+| Children | [GDPR Article 8](https://eur-lex.europa.eu/eli/reg/2016/679/oj) | The child-consent rule concerns consent-based information-society services offered directly to children; member-state thresholds vary. Do not universalize it. |
+| Device storage/access | [TDDDG § 25](https://www.gesetze-im-internet.de/ttdsg/__25.html) | Establish whether storage/access requires consent or qualifies for an exception. This assessment is separate from the GDPR processing basis. |
+| Provider details | [DDG § 5](https://www.gesetze-im-internet.de/ddg/__5.html) | Check whether provider-information duties apply and collect verified operator details. |
+| Online consumer contracts | [EU distance-selling guidance](https://europa.eu/youreurope/business/selling-in-eu/selling-goods-services/ecommerce-distance-selling/index_en.htm), [BGB § 312j](https://www.gesetze-im-internet.de/bgb/__312j.html), [BGB § 356](https://www.gesetze-im-internet.de/bgb/__356.html) | Review purchase disclosures, order controls and withdrawal; digital-content exceptions require relevant conditions, not a blanket no-refund policy. |
+| Cancellation / withdrawal UI | [BGB § 312k](https://www.gesetze-im-internet.de/bgb/__312k.html), [Consumer Rights Directive, current versions](https://eur-lex.europa.eu/eli/dir/2011/83) | Assess subscription cancellation and any applicable electronic withdrawal function separately. Check current national implementation, commencement and product exceptions. |
+| Accessibility | [BFSG](https://www.gesetze-im-internet.de/bfsg/), [Bundesfachstelle BFSG FAQ](https://www.bundesfachstelle-barrierefreiheit.de/DE/Barrierefreiheitsstaerkungsgesetz/FAQ/faq.html), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) | Determine whether the service/product is covered; check microenterprise service exemptions and transitions. WCAG is technical guidance, not itself proof of all legal obligations. |
+| Marketing / claims / reviews | [UWG § 7](https://www.gesetze-im-internet.de/uwg_2004/__7.html), [UWG § 5](https://www.gesetze-im-internet.de/uwg_2004/__5.html), [UWG § 5b](https://www.gesetze-im-internet.de/uwg_2004/__5b.html) | Check actual permission/exception, opt-out, substantiation and authenticity information. Distinguish service mail from advertising. |
+| Copyright and licenses | [UrhG](https://www.gesetze-im-internet.de/urhg/) and the actual asset's license | Require provenance and specific rights; a link to a copyright statute does not establish permission for an asset. |
+
+Do not add outdated dispute-resolution links, blanket AGB requirements or guessed policies from old templates. For health, finance, public-sector services, marketplaces or other specialized products, research applicable sector rules only if triggered. Important ambiguity in legal applicability belongs in the operator/legal-review handoff, with concrete facts and sources.
