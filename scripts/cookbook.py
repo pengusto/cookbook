@@ -198,7 +198,9 @@ def build_plugins(downloads):
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(json_bytes(value))
             target = downloads / f'{config["name"]}-{variant}-{host}.zip'
-            write_zip({f'{config["name"]}/{name}': data for name, data in files.items()}, target)
+            archive_files = {f'{config["name"]}/plugins/{config["name"]}/{name}': data for name, data in files.items()}
+            archive_files[f'{config["name"]}/{name}'] = json_bytes(value)
+            write_zip(archive_files, target)
             sums.append(f'{sha(target.read_bytes())}  {target.name}')
     return sums
 
@@ -225,7 +227,7 @@ def sidebar_files(variant='plain'):
                      f'<p>{esc(row["summary"])}</p><p class="status">{esc(row["license"])} · {esc(row["status"])}</p>'
                      f'<details><summary>Rezept öffnen</summary><dl>{fields}</dl>'
                      f'<p>Beispielaufruf für einen separat installierten Skill:</p><code>{esc(row["prompt"])}</code></details></article>')
-    css = (ROOT / 'templates/index.html').read_text().split('<style>')[1].split('</style>')[0]
+    css = (ROOT / 'assets/sidebar.css').read_text()
     bridge = '''<script>
 const initId = 'cookbook-init';
 addEventListener('message', event => {
@@ -277,16 +279,17 @@ def check_plugins():
             if (root / market_path).read_bytes() != json_bytes(value):
                 raise ValueError('Marketplace configuration differs')
             with zipfile.ZipFile(ROOT / 'site/downloads' / f'{config["name"]}-{variant}-{host}.zip') as archive:
-                expected = {f'{config["name"]}/{name}': data for name, data in files.items()}
+                expected = {f'{config["name"]}/plugins/{config["name"]}/{name}': data for name, data in files.items()}
+                expected[f'{config["name"]}/{market_path}'] = json_bytes(value)
                 if {name: archive.read(name) for name in archive.namelist()} != expected:
                     raise ValueError('Plugin archive differs')
 
 
-def schema_script(rows):
+def schema_script(rows, language="de"):
     """Describe only the visible collection; omit unconfirmed public identifiers."""
     data = {
         '@context': 'https://schema.org', '@type': 'CollectionPage',
-        'name': 'Cookbook by Pengusto', 'inLanguage': 'de',
+        'name': 'Cookbook by Pengusto', 'inLanguage': language,
         'mainEntity': {
             '@type': 'ItemList', 'numberOfItems': len(rows),
             'itemListElement': [
@@ -302,6 +305,47 @@ def schema_script(rows):
     return '<script type="application/ld+json">\n' + payload + '\n</script>'
 
 
+
+def page_name(language, variant):
+    return ('index' if variant == 'plain' else 'kitchen') + ('' if language == 'de' else '-en') + '.html'
+
+
+def render_landing(rows, language, variant):
+    translations = json.loads((ROOT / 'templates/locales.json').read_text())
+    ui = translations[language]
+    esc = html.escape
+    visible, cards = [], []
+    icons = [
+        '<rect x="6" y="5" width="12" height="16" rx="2"/><path d="M9 5V3h6v2M9 9h6M9 13h6M9 17h4"/>',
+        '<path d="M4 9h16v9a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3ZM2 9h20M8 5h8M12 3v2"/>',
+        '<rect x="4" y="10" width="16" height="12" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4M12 15v3"/>',
+        '<circle cx="10" cy="10" r="7"/><path d="m15 15 6 6M7 10h6M10 7v6"/>',
+        '<path d="M3 17h18M5 17a7 7 0 0 1 14 0M12 8V6M10 6h4M4 21h16"/>',
+        '<rect x="5" y="3" width="14" height="19" rx="2"/><path d="M9 7h6M9 11h6M9 15h6M9 19h3"/>',
+        '<path d="M5 3h13v18H5ZM9 3v18M12 7h3M12 11h3M12 15h3"/>']
+    for index, row in enumerate(rows):
+        title = row['title'] if variant == 'plain' else row['cooking_title']
+        fields = dict(row, **ui.get('skills', {}).get(row['id'], {}))
+        visible.append(dict(fields, title=title))
+        slug = row['install_ids'][variant]
+        definition = ''.join(f'<dt>{esc(ui[key])}</dt><dd>{esc(fields[key])}</dd>' for key in (*RECIPE_FIELDS, 'limits'))
+        cards.append(f'<article class="skill" id="{row["id"]}"><details><summary><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24">{icons[index]}</svg></span><h2>{esc(title)}</h2><p>{esc(fields["summary"])}</p><span class="row-arrow" aria-hidden="true">→</span></summary><div class="skill-body"><dl>{definition}</dl><div class="skill-links"><code>${slug}</code><a href="downloads/{variant}-{row["id"]}.zip" download>{esc(ui["ZIP"])}</a><a href="skills/{variant}/{slug}/SKILL.md">{esc(ui["GUIDE"])}</a></div></div></details></article>')
+    hosts = []
+    for host, title in (('codex', 'Codex'), ('claude', 'Claude Code')):
+        commands = (f'codex plugin marketplace add .\ncodex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local' if host == 'codex' else 'claude plugin marketplace add . --scope user\nclaude plugin install cookbook-by-pengusto@cookbook-by-pengusto-local --scope user')
+        hosts.append(f'<div class="host"><h3>{title}</h3><a class="download" href="downloads/cookbook-by-pengusto-{variant}-{host}.zip" download>{esc(ui["DOWNLOAD"])} ↓</a><p>{esc(ui["EXTRACT"])}</p><pre><code>{esc(commands)}</code></pre><p class="small">{esc(ui["NEW_SESSION"])}</p></div>')
+    variant_links = ''.join(f'<a href="{page_name(language, v)}#skills"' + (' aria-current="page"' if v == variant else '') + f'>{esc(ui[v.upper()])}</a>' for v in ('kitchen', 'plain'))
+    lang_links = ''.join(f'<a href="{page_name(lang, variant)}" lang="{lang}" hreflang="{lang}"' + (' aria-current="page"' if lang == language else '') + f'>{lang.upper()}</a>' for lang in ('de', 'en'))
+    values = {key: esc(value) for key, value in ui.items() if isinstance(value, str)}
+    values.update(LANG=language, HOME=page_name(language, variant), HELP='help.html' if language == 'de' else 'help-en.html',
+                  CARDS='\n'.join(cards), HOSTS=''.join(hosts), VARIANT_LINKS=variant_links, LANG_LINKS=lang_links,
+                  CURRENT_VARIANT=esc(ui[variant.upper()]), STRUCTURED_DATA=schema_script(visible, language))
+    template = (ROOT / 'templates/index.html').read_text()
+    page = re.sub(r'\{\{([A-Z0-9_]+)\}\}', lambda match: values[match[1]], template)
+    if '{{' in page:
+        raise ValueError('Unresolved website placeholder')
+    return page
+
 def build():
     rows = catalog()
     for row in rows:
@@ -314,11 +358,8 @@ def build():
     (site / 'downloads').mkdir(parents=True, exist_ok=True)
     sums = []
     for variant in VARIANTS:
-        cards, visible = [], []
         for row in rows:
             slug, files = rendered_files(row, variant)
-            title = row['title'] if variant == 'plain' else row['cooking_title']
-            visible.append(dict(row, title=title))
             target = site / 'downloads' / f'{variant}-{row["id"]}.zip'
             write_zip({f'{slug}/{name}': data for name, data in files.items()}, target)
             sums.append(f'{sha(target.read_bytes())}  {target.name}')
@@ -326,17 +367,14 @@ def build():
                 path = site / 'skills' / variant / slug / name
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(data)
-            esc = html.escape
-            details = ''.join(f'<dt>{esc(key)}</dt><dd>{esc(row[key])}</dd>' for key in (*RECIPE_FIELDS, 'limits'))
-            cards.append(f'<article id="{row["id"]}"><p class="eyebrow">{esc(row["phase"])}</p><h2>{esc(title)}</h2><p>{esc(row["summary"])}</p><details><summary>Ablauf und Grenzen</summary><dl>{details}</dl><code>${slug}</code></details><p><a href="downloads/{variant}-{row["id"]}.zip" download>Skill-ZIP</a> · <a href="skills/{variant}/{slug}/SKILL.md">Anleitung</a></p></article>')
-        links = ' · '.join(f'<a href="downloads/cookbook-by-pengusto-{variant}-{host}.zip">{host}</a>' for host in ('codex', 'claude'))
-        page = (ROOT / 'templates/index.html').read_text().replace('{{CARDS}}', '\n'.join(cards)).replace('{{STRUCTURED_DATA}}', schema_script(visible)).replace('{{VARIANT}}', variant).replace('{{DOWNLOADS}}', links)
-        (site / ('index.html' if variant == 'plain' else 'kitchen.html')).write_text(page)
+        for language in ('de', 'en'):
+            (site / page_name(language, variant)).write_text(render_landing(rows, language, variant))
         build_sidebar(variant)
-    css = page.split('<style>')[1].split('</style>')[0]
-    (site / 'help.html').write_text((ROOT / 'templates/help.html').read_text().replace('{{CSS}}', css))
+    for language in ('de', 'en'):
+        (site / ('help.html' if language == 'de' else 'help-en.html')).write_text((ROOT / 'templates' / ('help.html' if language == 'de' else 'help-en.html')).read_text())
     (site / 'assets').mkdir(exist_ok=True)
-    shutil.copyfile(ROOT / 'assets/icon.svg', site / 'assets/icon.svg')
+    for name in ('icon.svg', 'site.css', 'cookbook-hero.jpg'):
+        shutil.copyfile(ROOT / 'assets' / name, site / 'assets' / name)
     shutil.copyfile(ROOT / 'LICENSE', site / 'LICENSE')
     sums.extend(build_plugins(site / 'downloads'))
     (site / 'downloads/SHA256SUMS').write_text('\n'.join(sums) + '\n')

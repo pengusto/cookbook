@@ -1,0 +1,11 @@
+
+:root{--paper:#f6f2e9;--ink:#202a22;--muted:#49564d;--accent:#974022;--line:#c7cbbd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,sans-serif}
+header,main,footer{max-width:1160px;margin:auto;padding:32px}header{padding-top:65px;border-bottom:1px solid var(--line)}
+.eyebrow{font:700 12px/1.5 system-ui;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font:normal clamp(44px,8vw,94px)/1.02 Georgia,serif;margin:22px 0;max-width:800px}h2{font:normal 29px/1.15 Georgia,serif;margin:12px 0}
+header>p{max-width:660px}.intro{color:var(--muted)}nav{display:flex;gap:22px;flex-wrap:wrap;margin:24px 0}a{color:var(--accent);text-underline-offset:4px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+article{background:#fffdf7;border:1px solid var(--line);padding:28px;overflow-wrap:anywhere}.cooking-title{font-weight:650;color:var(--accent);margin-top:0}.status{font-size:13px;color:var(--muted)}
+summary{cursor:pointer;font-weight:650;padding:12px 0}dt{font-weight:700;margin-top:16px}dd{margin:4px 0;color:var(--muted)}code{font:14px/1.6 ui-monospace,monospace}small{color:var(--muted);font-size:12px}
+footer{font-size:14px;color:var(--muted)}@media(max-width:680px){header,main,footer{padding:24px}header{padding-top:36px}.grid{grid-template-columns:1fr}article{padding:22px}}

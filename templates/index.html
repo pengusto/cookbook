@@ -1,34 +1,25 @@
 <!doctype html>
-<html lang="de">
+<html lang="{{LANG}}">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light"><title>Cookbook by Pengusto · Privater Review</title>
-<meta name="description" content="Sieben Agent-Skills für Projektstart, Prüfungen und nachvollziehbare Release-Vorbereitung. Einzelpakete sowie Codex- und Claude-Code-Bündel.">
-<meta name="robots" content="noindex,nofollow">
-<link rel="icon" href="assets/icon.svg">
-<style>
-:root{--paper:#f6f2e9;--ink:#202a22;--muted:#49564d;--accent:#974022;--line:#c7cbbd}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,sans-serif}
-header,main,footer{max-width:1160px;margin:auto;padding:32px}header{padding-top:65px;border-bottom:1px solid var(--line)}
-.eyebrow{font:700 12px/1.5 system-ui;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-h1{font:normal clamp(44px,8vw,94px)/1.02 Georgia,serif;margin:22px 0;max-width:800px}h2{font:normal 29px/1.15 Georgia,serif;margin:12px 0}
-header>p{max-width:660px}.intro{color:var(--muted)}nav{display:flex;gap:22px;flex-wrap:wrap;margin:24px 0}a{color:var(--accent);text-underline-offset:4px}
-a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-article{background:#fffdf7;border:1px solid var(--line);padding:28px;overflow-wrap:anywhere}.cooking-title{font-weight:650;color:var(--accent);margin-top:0}.status{font-size:13px;color:var(--muted)}
-summary{cursor:pointer;font-weight:650;padding:12px 0}dt{font-weight:700;margin-top:16px}dd{margin:4px 0;color:var(--muted)}code{font:14px/1.6 ui-monospace,monospace}small{color:var(--muted);font-size:12px}
-footer{font-size:14px;color:var(--muted)}@media(max-width:680px){header,main,footer{padding:24px}header{padding-top:36px}.grid{grid-template-columns:1fr}article{padding:22px}}
-</style>
+<meta name="color-scheme" content="light"><meta name="robots" content="noindex,nofollow">
+<title>Cookbook by Pengusto · {{PAGE_TITLE}}</title><meta name="description" content="{{DESCRIPTION}}">
+<link rel="icon" href="assets/icon.svg"><link rel="stylesheet" href="assets/site.css">
 {{STRUCTURED_DATA}}
 </head>
 <body>
-<header><p class="eyebrow">Pengusto / Eigene Agent-Skills / Review-Edition 01</p>
-<h1>Cookbook<br>by Pengusto.</h1>
-<p>Gute Skills für den richtigen Moment. Vom ersten Projektstart bis zu dem Punkt, an dem du dein Ergebnis zeigen kannst.</p>
-<p class="intro">Sieben gemeinsame Workflows · gewählte Namenswelt: {{VARIANT}}. Lokal vorbereitet; nichts veröffentlicht.</p>
-<nav aria-label="Review-Dokumentation"><a href="help.html#selection">Auswahl &amp; Nutzerreise</a><a href="help.html#installation">Installation</a><a href="help.html#status">Prüfstand &amp; offene Gates</a><a href="downloads/SHA256SUMS">Prüfsummen</a></nav>
-<nav aria-label="Namenswelt"><a href="index.html">Einfache Fragen</a><a href="kitchen.html">Koch-Namen</a></nav>
-<p><strong>Eine Installation auswählen:</strong> {{DOWNLOADS}}. Beide Namenswelten nutzen dieselben Abläufe. Nur eine Variante installieren; die Einzelpakete unten gehören zur gewählten Variante.</p>
+<a class="skip" href="#skills">{{SKIP}}</a>
+<header class="site-header wrap">
+<a class="brand" href="{{HOME}}" aria-label="Cookbook by Pengusto"><img src="assets/icon.svg" width="46" height="46" alt=""><span>Cookbook<small>by Pengusto</small></span></a>
+<nav class="main-nav" aria-label="{{NAV}}"><a href="#skills">Skills</a><a href="#how">{{HOW}}</a><a href="#install">Codex &amp; Claude Code</a><a href="#about">{{ABOUT}}</a></nav>
+<div class="header-actions"><nav class="languages" aria-label="{{LANG_LABEL}}">{{LANG_LINKS}}</nav><a class="button compact" href="#install">{{INSTALL}}</a></div>
 </header>
-<main><div class="grid">{{CARDS}}</div></main>
-<footer>Keine Tracker, externen Fonts oder eingebetteten Dienste. Die Vorschau lädt nur lokale Dateien. MIT für Cookbook-Texte und Werkzeuge; Skill-Lizenzen gelten jeweils separat. <a href="help.html#privacy">Datenschutz &amp; Support vor dem Launch</a>. Paketprüfung ist kein Nachweis für Agent-Verhalten oder rechtliche Freigabe.</footer>
+<main>
+<section class="hero wrap" aria-labelledby="hero-title"><div class="hero-copy"><p class="kicker">{{KICKER}}</p><h1 id="hero-title">{{HEADLINE}}</h1><p class="lead">{{INTRO}}</p><div class="hero-actions"><a class="button" href="#install"><span aria-hidden="true">↓</span> {{INSTALL}}</a><a class="button secondary" href="#skills">{{EXPLORE}}</a></div><p class="hero-note"><span></span>{{SEVEN}}</p></div><div class="hero-art"><img src="assets/cookbook-hero.jpg" width="1536" height="1024" alt="{{HERO_ALT}}" fetchpriority="high"></div></section>
+<section id="skills" class="skills-section wrap" aria-labelledby="skills-title"><div class="section-caption"><span>{{SKILLS_CAPTION}}</span><i></i></div><div class="section-heading"><h2 id="skills-title">{{FIND}}</h2><div class="naming"><p>{{NAMING_HINT}}</p><nav class="segmented" aria-label="{{NAMING_LABEL}}">{{VARIANT_LINKS}}</nav></div></div><div class="skill-list">{{CARDS}}</div><div class="list-foot"><p>{{FOOT_NOTE}}</p><a href="#install">{{INSTALL_ALL}} <span aria-hidden="true">↗</span></a></div></section>
+<section id="how" class="how-section wrap" aria-labelledby="how-title"><div class="section-caption"><span>{{HOW}}</span><i></i></div><h2 id="how-title">{{HOW_TITLE}}</h2><div class="steps"><div><span class="step-number">1</span><h3>{{STEP1}}</h3><p>{{STEP1_TEXT}}</p></div><div><span class="step-number">2</span><h3>{{STEP2}}</h3><p>{{STEP2_TEXT}}</p></div><div><span class="step-number">3</span><h3>{{STEP3}}</h3><p>{{STEP3_TEXT}}</p></div></div></section>
+<section id="install" class="install-section" aria-labelledby="install-title"><div class="wrap"><div class="install-heading"><div><p class="kicker">{{CURRENT_VARIANT}}</p><h2 id="install-title">{{INSTALL_TITLE}}</h2></div><p>{{INSTALL_INTRO}}</p></div><div class="install-grid">{{HOSTS}}</div><details class="update-note"><summary>{{UPDATES_TITLE}}</summary><p>{{UPDATES_TEXT}}</p><p>{{SWITCH_TEXT}}</p><p>{{LANG_NOTE}}</p></details><p class="checksums"><a href="downloads/SHA256SUMS">{{CHECKSUMS}}</a> · <a href="LICENSE">MIT</a></p></div></section>
+<section id="about" class="about wrap"><h2>{{ABOUT_TITLE}}</h2><div><p>{{ABOUT_TEXT}}</p><p>{{STATUS_TEXT}}</p></div></section>
+</main>
+<footer class="wrap"><a class="brand" href="{{HOME}}"><img src="assets/icon.svg" width="36" height="36" alt=""><span>Cookbook<small>by Pengusto</small></span></a><p>{{PRIVACY}}</p><a href="{{HELP}}#privacy">{{NOTES}}</a></footer>
 </body></html>

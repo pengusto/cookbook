@@ -182,6 +182,20 @@ class PackagingContracts(unittest.TestCase):
             self.assertEqual(plain['name'], kitchen['name'])
             self.assertEqual(app.marketplace(host, plain), app.marketplace(host, kitchen))
 
+    def test_download_zips_are_self_contained_marketplaces(self):
+        for variant in ('plain', 'kitchen'):
+            for host in ('codex', 'claude'):
+                with self.subTest(variant=variant, host=host):
+                    config, files = app.plugin_files(host, variant)
+                    market_path, market = app.marketplace(host, config)
+                    with zipfile.ZipFile(app.ROOT / 'site/downloads' / f'cookbook-by-pengusto-{variant}-{host}.zip') as archive, tempfile.TemporaryDirectory() as temporary:
+                        archive.extractall(temporary)
+                        root = Path(temporary) / config['name']
+                        self.assertEqual(json.loads((root / market_path).read_text()), market)
+                        source = market['plugins'][0]['source']
+                        plugin = root / (source['path'] if host == 'codex' else source)
+                        self.assertEqual({str(p.relative_to(plugin)): p.read_bytes() for p in plugin.rglob('*') if p.is_file()}, files)
+
 
 if __name__ == '__main__':
     unittest.main()

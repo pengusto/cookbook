@@ -52,26 +52,32 @@ class Page(html.parser.HTMLParser):
 
 class SchemaContracts(unittest.TestCase):
     def test_jsonld_matches_visible_cards_without_unverified_claims(self):
-        page = Page()
-        page.feed((ROOT / 'site/index.html').read_text())
-        self.assertEqual(len(page.scripts), 1)
-        self.assertEqual(page.scripts[0]['type'], 'application/ld+json')
-        data = json.loads(page.scripts[0]['text'])
-        self.assertEqual(set(data), {'@context', '@type', 'name', 'inLanguage', 'mainEntity'})
-        self.assertEqual(data['@context'], 'https://schema.org')
-        self.assertEqual(data['@type'], 'CollectionPage')
-        self.assertEqual(data['name'], 'Cookbook by Pengusto')
-        self.assertEqual(data['inLanguage'], 'de')
-        listing = data['mainEntity']
-        self.assertEqual(listing['@type'], 'ItemList')
-        self.assertEqual(listing['numberOfItems'], len(page.cards))
-        self.assertEqual(len(listing['itemListElement']), len(page.cards))
-        for position, (item, card) in enumerate(zip(listing['itemListElement'], page.cards), 1):
-            self.assertEqual(item, {'@type': 'ListItem', 'position': position,
-                                   'item': {'@type': 'CreativeWork', 'name': card['title'],
-                                            'description': card['summary']}})
-        self.assertIn('Am I Making Progress?', [i['item']['name'] for i in listing['itemListElement']])
-        self.assertTrue(all('alternateName' not in i['item'] for i in listing['itemListElement']))
+        for language, variant, filename in ((lang, v, builder.page_name(lang, v)) for lang in ('de', 'en') for v in ('plain', 'kitchen')):
+            with self.subTest(language=language, variant=variant):
+                page = Page()
+                page.feed((ROOT / 'site' / filename).read_text())
+                self.assertEqual(len(page.scripts), 1)
+                self.assertEqual(page.scripts[0]['type'], 'application/ld+json')
+                data = json.loads(page.scripts[0]['text'])
+                self.assertEqual(set(data), {'@context', '@type', 'name', 'inLanguage', 'mainEntity'})
+                self.assertEqual(data['@context'], 'https://schema.org')
+                self.assertEqual(data['@type'], 'CollectionPage')
+                self.assertEqual(data['name'], 'Cookbook by Pengusto')
+                self.assertEqual(data['inLanguage'], language)
+                listing = data['mainEntity']
+                self.assertEqual(listing['@type'], 'ItemList')
+                self.assertEqual(listing['numberOfItems'], len(page.cards))
+                self.assertEqual(len(listing['itemListElement']), len(page.cards))
+                for position, (item, card) in enumerate(zip(listing['itemListElement'], page.cards), 1):
+                    self.assertEqual(item, {'@type': 'ListItem', 'position': position,
+                                           'item': {'@type': 'CreativeWork', 'name': card['title'],
+                                                    'description': card['summary']}})
+                self.assertEqual(len(page.cards), 7)
+                self.assertEqual([i['item']['name'] for i in listing['itemListElement']],
+                                 [row['title' if variant == 'plain' else 'cooking_title'] for row in builder.catalog()])
+                self.assertEqual(page.scripts[0]['text'].count('https://'), 1)
+                self.assertNotIn('http://', page.scripts[0]['text'])
+                self.assertTrue(all('alternateName' not in i['item'] for i in listing['itemListElement']))
 
     def test_catalog_changes_are_reflected_and_cannot_escape_script(self):
         title = '</script><script>alert("demo")</script> & <Test>'

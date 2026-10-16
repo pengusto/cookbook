@@ -47,7 +47,7 @@ class WebsiteContracts(unittest.TestCase):
         site = ROOT / 'site'
         expected = {str(p.relative_to(site)): p.read_bytes() for p in site.rglob('*') if p.is_file()}
         rows = json.loads((ROOT / 'catalog.json').read_text())
-        allowed = {'index.html', 'kitchen.html', 'help.html', 'LICENSE', 'assets/icon.svg', 'downloads/SHA256SUMS'}
+        allowed = {'index.html', 'kitchen.html', 'help.html', 'LICENSE', 'assets/icon.svg', 'assets/site.css', 'assets/cookbook-hero.jpg', 'index-en.html', 'kitchen-en.html', 'help-en.html', 'downloads/SHA256SUMS'}
         allowed.update(f'downloads/cookbook-by-pengusto-{variant}-{host}.zip' for host in ('codex', 'claude') for variant in ('plain','kitchen'))
         for row in rows:
             if row['status'] == 'source':
@@ -66,3 +66,20 @@ class WebsiteContracts(unittest.TestCase):
         self.assertIn('help.html', expected)
         self.assertIn('LICENSE', expected)
         self.assertIn('assets/icon.svg', expected)
+
+    def test_language_and_naming_navigation_preserve_selection(self):
+        for language in ('de', 'en'):
+            for variant, base in (('plain', 'index'), ('kitchen', 'kitchen')):
+                with self.subTest(language=language, variant=variant):
+                    suffix = '' if language == 'de' else '-en'
+                    page = (ROOT / 'site' / (base + suffix + '.html')).read_text()
+                    self.assertIn(f'<html lang="{language}">', page)
+                    self.assertIn('href="index' + suffix + '.html#skills"', page)
+                    self.assertIn('href="kitchen' + suffix + '.html#skills"', page)
+                    self.assertIn('href="' + base + '.html"', page)
+                    self.assertIn('href="' + base + '-en.html"', page)
+                    self.assertIn(f'cookbook-by-pengusto-{variant}-codex.zip', page)
+                    self.assertIn(f'cookbook-by-pengusto-{variant}-claude.zip', page)
+                    self.assertEqual(page.count('<article class="skill"'), 7)
+                    self.assertNotIn('{{', page)
+                    self.assertNotIn('npm install', page)

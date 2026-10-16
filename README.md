@@ -54,11 +54,11 @@ Individual installation remains available:
 python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /empty/local/skills
 ```
 
-This creates `close-the-kitchen/`; Plain creates `can-we-finish/`. The installer refuses either variant if that workflow already exists in the destination. Four plugin ZIPs and fourteen individual ZIPs are generated in `site/downloads/` with SHA256SUMS. Optional read-only sidebar companions are under `dist/plain/sidebar/` and `dist/kitchen/sidebar/`; neither includes skill copies.
+This creates `close-the-kitchen/`; Plain creates `can-we-finish/`. The installer refuses either variant if that workflow already exists in the destination. Four plugin ZIPs (each including its complete local marketplace) and fourteen individual ZIPs are generated in `site/downloads/` with SHA256SUMS. Optional read-only sidebar companions are under `dist/plain/sidebar/` and `dist/kitchen/sidebar/`; neither includes skill copies.
 
 ## Website and history
 
-Preview: `python3 scripts/cookbook.py serve --port 8767`, then open the printed local URL. `index.html` shows Plain; `kitchen.html` shows Kitchen, each with matching downloads and structured data. No public URL is assumed; private-preview noindex remains.
+Preview: `python3 scripts/cookbook.py serve --port 8767`, then open the printed local URL. `index.html` shows Plain; `kitchen.html` shows Kitchen. English alternatives are `index-en.html` and `kitchen-en.html`. Language switches preserve naming style; naming switches preserve language. Each page has matching downloads and structured data. Website language does not translate skill instructions. The white/green landing page uses local styles and an AI-generated cookbook illustration. No public URL is assumed; private-preview noindex remains.
 
 All seven previous Git histories are preserved as `history/<stable-id>` branches and as ancestors of main, without squashing or rewriting. The previous source repositories and old generated outputs are retained. They are archives, not maintained inputs. See [consolidation and evidence](docs/consolidation.md), [maintenance](docs/maintenance.md) and [Deutsch](docs/readme/README.de.md).
 

@@ -91,3 +91,43 @@ SHA-256 des exakt geprüften Script-Blocks: `a7a3f4f52f96ddd1208f2f954cb5a2cfcf7
 Eingabekopie, Bytegleichheitsnachweis, Ergebnisansichten und zwei Screenshots bleiben lokal ignoriert unter `.scratch/schema-review-013/` bis zur Review-Abnahme erhalten. Beide Ergebnis-Tabs bleiben zur Nachprüfung offen. Die früheren Sechs-Einträge-Ergebnisse oben sind historische Nachweise für ihren damaligen Hash.
 
 English: The exact current embedded JSON-LD was submitted by code input to both official validators. Schema.org reports zero errors and zero warnings, recognizing all seven entries and both name fields per skill. Google completes the test with no supported rich-result items detected. No markup correction, invented URL or publication occurred.
+
+
+## Erneute Prüfung beider Namenswelten · 2026-10-16 · 0.2.0
+
+Angewendet: lokal installierter Schema-Skill. Geprüft wurden der aktuelle Generator, beide generierten HTML-Dateien und die tatsächlich gerenderte lokale Browser-Vorschau. Keine Übermittlung des Markups an externe Prüfdienste in diesem Durchlauf; die älteren offiziellen Validator-Ergebnisse oben sind historische Nachweise.
+
+| Variante | Ergebnis |
+|---|---|
+| Plain (`site/index.html`) | Sieben sichtbare Frage-Titel und Beschreibungen stimmen in Reihenfolge und Inhalt mit den sieben JSON-LD-Einträgen überein. |
+| Kitchen (`site/kitchen.html`) | Sieben sichtbare Koch-Titel und Beschreibungen stimmen in Reihenfolge und Inhalt mit den sieben JSON-LD-Einträgen überein. |
+
+Beide Seiten verwenden CollectionPage → ItemList → sieben ListItem/CreativeWork-Einträge. Der Seitentitel passt zur sichtbaren Marke, inLanguage zum deutschen Seiteninhalt. Keine unsichtbaren alternateName-Werte, erfundenen Bewertungen, Preise oder Veröffentlichungsdaten. Keine url-, @id-, Repository-, Canonical- oder Download-URL im JSON-LD. Der einzige URL-Wert bleibt der Vokabular-Kontext https://schema.org. Das private GitHub-Repo wurde nicht als öffentliches Seitenziel eingetragen. noindex,nofollow bleibt bestehen.
+
+Das Markup musste nicht geändert werden. Der bisher nur für Plain laufende Vertragstest deckt jetzt beide Varianten ab, einschließlich genau sieben Einträgen, sichtbarer Namen/Beschreibungen, Namenswelt aus catalog.json und fehlender zusätzlicher HTTP(S)-URLs. Alle 17 Tests und die Paket-/Linkprüfung bestehen. Lokale Hashes und Prüfnachweis bleiben ignoriert unter .scratch/schema-review-020/report.json. Änderungen ausschließlich lokal, kein Push und keine Veröffentlichung.
+
+Abgleich mit Primärdokumentation: [CollectionPage](https://schema.org/CollectionPage), [ItemList](https://schema.org/ItemList), [CreativeWork](https://schema.org/CreativeWork), [Google-Richtlinien](https://developers.google.com/search/docs/appearance/structured-data/sd-policies). Das beschreibt die Sammlung sachlich; eine Google-Rich-Result-Eignung oder Suchdarstellung wird damit nicht nachgewiesen.
+
+
+## Offizielle Code-Tests beider Varianten · 2026-10-16 · 0.2.0
+
+Auf ausdrücklichen Nutzerwunsch wurden die exakt eingebetteten Script-Blöcke aus beiden lokalen Browser-Seiten per Code-Eingabe an Schema.org Validator und Google Rich Results Test übertragen. Eingaben sind bytegleich zu den entsprechenden Blöcken in site/index.html und site/kitchen.html; ausschließlich JSON-LD samt Script-Tag, keine vollständige Website, Quelldateien oder Git-Historie.
+
+| Variante | Schema.org Validator | Google Rich Results Test |
+|---|---|---|
+| Plain | CollectionPage, ItemList mit sieben Einträgen; alle sieben Frage-Titel erkannt; 0 Fehler, 0 Warnungen. | Code-Test abgeschlossen: Keine Elemente erkannt. Der erste Versuch scheiterte mit einem Google-Dienstfehler; der Wiederholungsversuch war erfolgreich. |
+| Kitchen | CollectionPage, ItemList mit sieben Einträgen; alle sieben Koch-Titel erkannt; 0 Fehler, 0 Warnungen. | Code-Test abgeschlossen: Keine Elemente erkannt. |
+
+Google erkennt für diesen Block keine unterstützten Rich-Result-Elemente. Das ist kein Schema.org-Syntaxfehler und kein Nachweis einer besonderen Suchdarstellung. Kein Markup geändert, keine URLs erfunden oder ergänzt, kein Push, kein Deployment und keine öffentliche Veröffentlichung. noindex,nofollow bleibt. Die Freigeben-Funktion wurde nicht benutzt. Automatisch erzeugte Google-Test-IDs sind Ergebnisreferenzen, keine Cookbook-Seitenziele und werden nicht ins Markup übernommen.
+
+SHA-256 der vollständigen geprüften Script-Blöcke:
+
+- Plain: `11e7f09e243cc19c7e262ec78e296f3a9c6f79740e439655cc7bb64847825f10`
+- Kitchen: `9044bf535558d1d5c5ded67d9d3d0879411538e480430fbd3f55a4f563d34c65`
+
+Eingabekopien, Bytegleichheitsnachweis, vier vollständige Ergebnis-Texte, vier Screenshots und der dokumentierte Google-Dienstfehler bleiben lokal ignoriert unter .scratch/schema-review-020/ bis zur Review-Abnahme erhalten. Die aktuellen Ergebnis-Tabs bleiben zur Nachprüfung offen. Frühere Ergebnisabschnitte dokumentieren weiterhin ihren jeweiligen damaligen Stand.
+
+
+## Mehrsprachige Landingpage
+
+Die neue Landingpage erzeugt zusätzlich englische Plain-/Kitchen-Seiten. Der lokale Vertragstest gleicht alle vier Seiten mit jeweils sieben sichtbaren Namen und Beschreibungen ab; inLanguage ist de beziehungsweise en. Keine URL-Felder ergänzt. Die neuen englischen JSON-LD-Blöcke wurden noch nicht an die offiziellen Validatoren übermittelt. Die oben dokumentierten offiziellen Code-Tests behalten ihren dokumentierten Geltungsbereich.

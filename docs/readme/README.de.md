@@ -36,11 +36,11 @@ claude plugin install cookbook-by-pengusto@cookbook-by-pengusto-local --scope us
 
 Für Koch-Namen `plain` im Pfad durch `kitchen` ersetzen. Beide haben dieselbe Plugin-Identität. Für einen Wechsel das vorhandene Paket sichern, das Plugin nativ deinstallieren, nur dessen Marketplace abmelden und die andere Variante anmelden/installieren. Nicht zusätzlich zum alten vibe-coding-cookbook oder Einzelkopien installieren. Der Build verändert keine Host-Installation.
 
-Einzelinstallation: `python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /leeres/lokales/ziel` erzeugt close-the-kitchen, Plain dagegen can-we-finish. Vorhandene Varianten desselben Workflows werden nicht überschrieben. site/downloads enthält vier Plugin- und vierzehn Einzel-ZIPs. Optionale Sidebar-Pakete unter dist/plain/sidebar und dist/kitchen/sidebar enthalten keine Skills.
+Einzelinstallation: `python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /leeres/lokales/ziel` erzeugt close-the-kitchen, Plain dagegen can-we-finish. Vorhandene Varianten desselben Workflows werden nicht überschrieben. site/downloads enthält vier Plugin-ZIPs mit vollständigem lokalem Marketplace und vierzehn Einzel-ZIPs. Optionale Sidebar-Pakete unter dist/plain/sidebar und dist/kitchen/sidebar enthalten keine Skills.
 
 ## Vorschau, Historie und Grenzen
 
-`python3 scripts/cookbook.py serve --port 8767`: gedruckte lokale URL öffnen. index.html zeigt Plain, kitchen.html Kitchen, jeweils nur passende Namen, Downloads und strukturierte Daten. Kein öffentliches Ziel erfunden; noindex bleibt.
+`python3 scripts/cookbook.py serve --port 8767`: gedruckte lokale URL öffnen. index.html zeigt Plain, kitchen.html Kitchen. Die englischen Seiten heißen index-en.html und kitchen-en.html. Sprachwechsel erhalten die Namenswelt und umgekehrt. Jeweils nur passende Namen, Downloads und strukturierte Daten. Die Website-Sprache übersetzt nicht automatisch Skill-Anleitungen. Die neue weiße/grüne Landingpage lädt Styles und KI-generiertes Kochbuchmotiv lokal. Kein öffentliches Ziel erfunden; noindex bleibt.
 
 Alle sieben bisherigen Git-Historien sind über history/* und als Vorfahren von main vollständig erhalten. Alte Originalrepos und frühere generierte Ausgaben bleiben bestehen, sind aber keine weiter gepflegten Quellen. [Zusammenführung und Nachweise](../consolidation.md), [Pflege](../maintenance.md).
 
