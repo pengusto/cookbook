@@ -1,74 +1,67 @@
-# Vibe Coding Cookbook
+# Cookbook by Pengusto
 
-[English](README.md) · [Deutsch](docs/readme/README.de.md)
+Seven workflows. One maintained source. Choose **Plain questions** or **Kitchen names** when installing; each installation shows one name per workflow.
 
-**Private review edition · Python 3.10+ · MIT (Cookbook)**
+| Plain | Kitchen |
+|---|---|
+| How Do I Start? | Prep the Kitchen |
+| Am I Making Progress? | Are We Cooking? |
+| Did I Leak? | Keep the Recipe Secret |
+| Will They Sue Me? | Can I Serve This? |
+| Am I Ready to Share? | Ready to Serve |
+| What Did We Change? | What’s New on the Menu? |
+| Can We Finish? | Close the Kitchen |
 
-A curated collection of Pengusto's own agent skills. Choose by the moment you need help, read the recipe and its limits, then install only the relevant skill. Seven recipes, seven reviewed installable snapshots. The playful names stay; the instructions stay practical.
+## Use on another Mac and update
 
-## Local review
+The private repository is [pengusto/cookbook](https://github.com/pengusto/cookbook). See [Mac setup and updates](docs/mac-setup.md) for clone, build, variant selection and cache refresh. GitHub access and plugin login are separate; no credentials or personal host settings are stored here.
 
-From this repository directory:
+## Local build
+
+Python 3.10+ and standard library only:
 
 ```sh
 python3 scripts/cookbook.py build
 python3 scripts/cookbook.py check
+python3 scripts/cookbook.py check-sources
 python3 -m unittest discover -s tests
-python3 scripts/cookbook.py serve
+python3 scripts/launch_check.py
 ```
 
-Open [the loopback preview](http://127.0.0.1:8766/site/) while the server runs. You can also open `site/index.html` directly after building. There is no application framework, package installation, account, or deployment requirement.
+`skills/<stable-id>/` is now the only editable workflow source. Names and invocation IDs come from `catalog.json`; generated packages substitute only names and invocations. Do not directly install the source templates. There is no external source registry dependency, separate copy per naming variant, submodule or synchronization step.
 
-## Choose a recipe
+## Install one variant
 
-| Name | Cooking title | ID |
-|---|---|---|
-| Start It Right | Prep the Kitchen | `start-it-right` |
-| Check Progress | Are We Cooking? | `are-we-cooking` |
-| Did I Leak? | Keep the Recipe Secret | `did-i-leak` |
-| Will They Sue Me? | Can I Serve This? | `will-they-sue-me` |
-| Let Them See It | Ready to Serve | `let-them-see-it` |
-| What Did We Change | What’s New on the Menu? | `what-did-we-change` |
-| Finish This Chat | Close the Kitchen | `kill-the-todos` |
-
-The [inventory and journey](docs/inventory.md) explain the selection and exclusions. Each recipe covers when to use it, ingredients, preparation, verification, serving and limits. Recipe prose is German in this edition; original skill instructions are English. Both README versions cover the same installation and maintenance flow.
-
-## Install one snapshot
-
-First test in an empty disposable destination:
+Choose `plain` or `kitchen`. For example, Plain in Codex:
 
 ```sh
-python3 scripts/cookbook.py install let-them-see-it --dest .scratch/review-skills
+codex plugin marketplace add ./dist/plain/codex
+codex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local
 ```
 
-For a deliberate Codex installation, use `--dest ~/.codex/skills`. This is a proposed user action, not an installation performed during preparation. Existing directories and symlinks are refused; provider-managed installations are preserved. Restart/reload your host if needed and verify that it recognizes the skill. Targeted host tests and their limits are recorded in docs/host-tests.md.
+Claude Code, using the existing local binary:
 
-Alternatively extract the selected `site/downloads/<id>.zip` into an empty skill destination. Each ZIP contains one top-level skill folder with `SKILL.md`, its LICENSE, and the explicitly selected runtime files. Compare its SHA-256 with `site/downloads/SHA256SUMS`. Never install the repository root as one skill. Packaging is deterministic and requires no network; Did I Leak uses Git/Python and reports optional scanner availability during use.
+```sh
+claude plugin marketplace add ./dist/plain/claude --scope user
+claude plugin install cookbook-by-pengusto@cookbook-by-pengusto-local --scope user
+```
 
-## Install the bundle locally
+For Kitchen, replace `plain` with `kitchen` in the marketplace path. Both variants deliberately use the same marketplace and plugin identity. To switch, preserve the current package, uninstall that plugin natively, remove only its marketplace registration, then register/install the other variant. Do not install alongside the old `vibe-coding-cookbook` bundle or standalone copies of the same workflows. Review any existing installation before changing it; the build never installs or switches anything automatically.
 
-The same build creates Codex and Claude Code plugin ZIPs in `site/downloads/`, plus local review layouts and marketplaces in `dist/codex/` and `dist/claude/`. `bundle.json` explicitly selects the seven reviewed skills; individual downloads remain available. The two plugin packages preserve the same skill bytes and original license notices and include `SOURCES.json` for provenance.
+Individual installation remains available:
 
-See [local plugin setup and website integration](docs/plugins.md). Review 0.1.4 contains all seven skills, listing metadata and icons. Both hosts have native installation and seven-skill loading checks; packaging tests and a portable rebuild are checked locally. The Codex manifest declares its local execution requirement. Visible desktop acceptance remains separate. The closing skill has targeted Codex and Claude behavior coverage, including both visible names in Claude. See [host-tests.md](docs/host-tests.md) for actual coverage, prior tests of the other skills and remaining scanner limits. Nothing was published.
+```sh
+python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /empty/local/skills
+```
 
-Individual skill websites may later link to their own recipe, single download, and the shared bundles. Those websites and existing repositories have not been modified.
+This creates `close-the-kitchen/`; Plain creates `can-we-finish/`. The installer refuses either variant if that workflow already exists in the destination. Four plugin ZIPs and fourteen individual ZIPs are generated in `site/downloads/` with SHA256SUMS. Optional read-only sidebar companions are under `dist/plain/sidebar/` and `dist/kitchen/sidebar/`; neither includes skill copies.
 
-## Sources and updates
+## Website and history
 
-Original projects remain the only maintained skill sources. `catalog.json` records the curated recipe, source revision where available, and SHA-256 for every copied file. `skills/` contains read-only-intended review snapshots. ZIPs and the site are generated, ignored output. No source scripts execute during build.
+Preview: `python3 scripts/cookbook.py serve --port 8767`, then open the printed local URL. `index.html` shows Plain; `kitchen.html` shows Kitchen, each with matching downloads and structured data. No public URL is assumed; private-preview noindex remains.
 
-The existing skill-library remains the broad local catalog; this repository adds a reviewed distribution selection rather than another global registry. Ignored `sources.local.json` maps selection IDs to local originals. It is optional for portable builds and required only for `python3 scripts/cookbook.py check-sources`.
+All seven previous Git histories are preserved as `history/<stable-id>` branches and as ancestors of main, without squashing or rewriting. The previous source repositories and old generated outputs are retained. They are archives, not maintained inputs. See [consolidation and evidence](docs/consolidation.md), [maintenance](docs/maintenance.md) and [Deutsch](docs/readme/README.de.md).
 
-Follow [the update process](docs/maintenance.md): review changes at the original, inspect the exact runtime allowlist, copy approved files, update hashes/revision and rebuild. There is no automatic upstream sync or silent installation replacement. A Git revision is context; file hashes establish exact snapshot bytes, including an uncommitted source or a source without Git.
+Review 0.2.0 is prepared locally and synced to a private GitHub repository for use on your own Macs. Packaging tests do not prove full host behavior, security or legal compliance. Historical 0.1.x host and external-validator reports remain historical. Visible desktop acceptance, public destinations, legal pages, scanner coverage and store prerequisites remain open. No public publication, deletion of originals or deployment. Private GitHub sync was explicitly authorized.
 
-## Rights and readiness
-
-[MIT](LICENSE) covers new Cookbook text and tooling, as selected by the owner. Each packaged skill retains its own original MIT notice. Are We Cooking? has no source LICENSE and is not copied or packaged. Personal integrations, addresses, account settings, landing-page assets and unrelated source history are excluded.
-
-**Ready for private review with stated limitations.** Local checks do not establish legal clearance, complete security, cross-host compatibility or tested agent behavior. See [handoff](docs/handoff.md), [evaluation](docs/evaluation.md) and [behavior scenarios](docs/behavior-review.md). No Cookbook remote, push, release, deployment or public visibility change is part of this preparation.
-
-## Final local launch audit
-
-Run `python3 scripts/launch_check.py` for packaging tests, source checks where available, and a portable rebuild. `dist/website.zip` is a self-contained static website; `dist/launch-report.json` records artifact hashes and outstanding gates. See [launch readiness](docs/launch-readiness.md). Nothing is uploaded by the audit.
-
-All seven Cookbook entries have two visible names and their own local source repositories; IDs remain stable. See [names and source repositories](docs/skill-naming.md). The closing skill is included individually and in both bundles as `$kill-the-todos`.
+MIT; each source retains its LICENSE and provenance. Some preserved historical repositories are private; history preservation is not permission to publish their past contents.

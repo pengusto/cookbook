@@ -1,0 +1,79 @@
+{
+  "start-it-right": {
+    "ref": "history/start-it-right",
+    "commit": "cb7d6153e5be27f486f35c7822310b1acc90e069",
+    "uncommitted": "M SKILL.md\n M agents/openai.yaml",
+    "files": {
+      "SKILL.md": "b8ceb307e9411a95e92aa4fa17e0384f141328edc08306070588675bf717646d",
+      "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+      "agents/openai.yaml": "0c48ba576144a91d938ee529eb04b74096a35b96defc5e54827f409daee71eb2",
+      "references/module-catalog.md": "fd3314c85bf031bdf0ce2c889a22807a2124909efa1c5ca01db051fc4707ad6c",
+      "references/artifact-contract.md": "32e58c231bddc210f48008f31337d2540bc90450badac8c9929e22a3761cf90e",
+      "references/examples.md": "ccc828fb2c5f6d9a2aa678d18613d821ead1e97e8e280c21a4cab9f5bcf2e3ea"
+    }
+  },
+  "are-we-cooking": {
+    "ref": "history/are-we-cooking",
+    "commit": "f32f94c0c58e7d1f6a36676daf4ac80a31129819",
+    "uncommitted": "",
+    "files": {
+      "SKILL.md": "159687e02fcdad18b44bdee6bf62fe7c8144f0885a3b2f034ada6cf8ed5aca82",
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "agents/openai.yaml": "65b18dc187afb06f2679f386992836eb0708e407d401dd6adf231ff3264fd02c"
+    }
+  },
+  "did-i-leak": {
+    "ref": "history/did-i-leak",
+    "commit": "f3bd587b35c4fa9f8ad3e741e107cde0b12c44fc",
+    "uncommitted": "M SKILL.md\n?? agents/",
+    "files": {
+      "SKILL.md": "5acb6207c4b63bd8a643513ca2f1a86f1a3c833381bc0a9ea2ae390c3c806dd8",
+      "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+      "scripts/did_i_leak.py": "1ad2896a4c173ce1b72de9acb47548d72b295066c7d1dcc0046e4bad7075dd0b",
+      "bin/did-i-leak": "fd4d6597e8f760047c34af3c6779948692b1d53a78ba5109463528aff807c70a",
+      "agents/openai.yaml": "a016b6e033bfb3275931a5b7ee42d0e5348e67218629f8211449a79655455ebc"
+    }
+  },
+  "will-they-sue-me": {
+    "ref": "history/will-they-sue-me",
+    "commit": "9c2fac2ba85f3624322ce48b7d18560ddd155222",
+    "uncommitted": "M SKILL.md\n M agents/openai.yaml",
+    "files": {
+      "SKILL.md": "fb2aa9489b19e2167dc3658c823ee743bcba28c4bffa2c6b54527b9fe22853fd",
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "agents/openai.yaml": "4e3edddfdce6c63e4c88bc76eed519f9ba1a7e942d8b5c7411f29ab3cc8e5954",
+      "references/review-map.md": "7e862f5bc480adc420df4b0a022c02311b45f8cf2f2cd4eab22ee980d1dcdd14",
+      "references/germany-eu.md": "4f10ee43aa9dbc191179538a344e2340467865104adbc04a12b7e93e21976a0d"
+    }
+  },
+  "let-them-see-it": {
+    "ref": "history/let-them-see-it",
+    "commit": "908abc50d43aba0f9e3f85cc25f30dd47d8ab47e",
+    "uncommitted": "M SKILL.md\n M agents/openai.yaml",
+    "files": {
+      "SKILL.md": "7ae1066aac731c7e09e3677a4a5b549fdfeab8202cc9976cccd8541749c8a9fd",
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "agents/openai.yaml": "539688d5cc9eb9f197f37d9e95bd53adbcfe2212c0d2b22e25e61db97a63b91d"
+    }
+  },
+  "what-did-we-change": {
+    "ref": "history/what-did-we-change",
+    "commit": "1432a3311628553146eeda84915532aaefe6b9ae",
+    "uncommitted": "",
+    "files": {
+      "SKILL.md": "516f58c1723363e22a5af647413e5336f74bb86ebaf78314b7ae374eb1ef2c6a",
+      "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+      "agents/openai.yaml": "cd08bb96013c970ee40274bcee1fd3ec9519bda91dc109961b08ce0b01cecc83"
+    }
+  },
+  "kill-the-todos": {
+    "ref": "history/kill-the-todos",
+    "commit": "c309e60b17be484005c0004d127f5508c41a9576",
+    "uncommitted": "",
+    "files": {
+      "SKILL.md": "bc7c732e984c4b270d502e9cd494a5b30fbaabb3b9522af2cd31e63103ba73ce",
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "agents/openai.yaml": "2ae30757f77b44cca1cd0414d8175aca1c4c4b9823918a8bb9dad717d7e4ba09"
+    }
+  }
+}

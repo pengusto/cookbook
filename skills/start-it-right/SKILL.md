@@ -1,11 +1,11 @@
 ---
 name: start-it-right
-description: Turn a free-form product idea or existing project into a recommended, checkbox-driven implementation start. Use when beginning a project, feature, app, service, extension, CLI, game, or agent skill, or when the next project step is unclear. Also known as Prep the Kitchen.
+description: Turn a free-form product idea or existing project into a recommended, checkbox-driven implementation start. Use when beginning a project, feature, app, service, extension, CLI, game, or agent skill, or when the next project step is unclear.
 metadata:
   short-description: Turn ideas into an actionable project start
 ---
 
-# Start It Right
+# {{TITLE}}
 
 Turn intent into the smallest useful next action while keeping the user in the
 flow.

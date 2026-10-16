@@ -47,12 +47,13 @@ class WebsiteContracts(unittest.TestCase):
         site = ROOT / 'site'
         expected = {str(p.relative_to(site)): p.read_bytes() for p in site.rglob('*') if p.is_file()}
         rows = json.loads((ROOT / 'catalog.json').read_text())
-        allowed = {'index.html', 'help.html', 'LICENSE', 'assets/icon.svg', 'downloads/SHA256SUMS'}
-        allowed.update(f'downloads/vibe-coding-cookbook-{host}.zip' for host in ('codex', 'claude'))
+        allowed = {'index.html', 'kitchen.html', 'help.html', 'LICENSE', 'assets/icon.svg', 'downloads/SHA256SUMS'}
+        allowed.update(f'downloads/cookbook-by-pengusto-{variant}-{host}.zip' for host in ('codex', 'claude') for variant in ('plain','kitchen'))
         for row in rows:
-            if row['status'] == 'snapshot':
-                allowed.add(f'downloads/{row["id"]}.zip')
-                allowed.update(f'skills/{row["id"]}/{name}' for name in row['files'])
+            if row['status'] == 'source':
+                for variant in ('plain','kitchen'):
+                    allowed.add(f'downloads/{variant}-{row["id"]}.zip')
+                    allowed.update(f'skills/{variant}/{row["install_ids"][variant]}/{name}' for name in row['files'])
         self.assertEqual(set(expected), allowed, 'Unexpected or stale website export file')
         with zipfile.ZipFile(ROOT / 'dist/website.zip') as archive:
             self.assertEqual(set(archive.namelist()), set(expected))

@@ -1,3 +1,5 @@
+> **Historischer Prüfstand 0.1.x.** Die aktuelle Architektur, Namenswelten und Installationswege stehen in [consolidation.md](consolidation.md) und der [README](../README.md). Frühere Testergebnisse werden nicht als neue 0.2.0-Abnahme behauptet.
+
 # Repository preparation / Repository-Vorbereitung
 
 Stand: 2026-10-16. GitHub-Metadaten authentifiziert gelesen und die vier vorhandenen origin/main-Branches frisch gefetcht. Kein Push, keine Remote-Erstellung, kein Release oder Deployment.

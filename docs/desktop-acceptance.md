@@ -1,3 +1,5 @@
+> **Historischer Prüfstand 0.1.x.** Die aktuelle Architektur, Namenswelten und Installationswege stehen in [consolidation.md](consolidation.md) und der [README](../README.md). Frühere Testergebnisse werden nicht als neue 0.2.0-Abnahme behauptet.
+
 # Lokale Desktop-Abnahme / Local desktop acceptance
 
 Review 0.1.4. Beide nativen CLI-Installationen und 7/7 Lade-Tests bestehen. Für die angeforderte sichtbare Abnahme sind jetzt beide Plugins aus den stabilen lokalen dist-Ausgaben installiert und aktiviert: Codex im lokalen Host, Claude Code im Benutzerprofil. Beide Installationscaches stimmen vollständig mit den geprüften finalen ZIPs überein. Diese Registrierungen bleiben für die Nutzerprüfung erhalten. Nichts veröffentlicht. Diese Anleitung ist für die noch offene sichtbare Nutzerabnahme. Sie behauptet keine geprüften Menübezeichnungen oder Desktop-Ergebnisse.

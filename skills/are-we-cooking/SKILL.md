@@ -1,9 +1,9 @@
 ---
 name: are-we-cooking
-description: Check whether a running task is making evidenced progress toward the user's goal. Use for progress checks, stalled work, side quests, repeated attempts, or requests such as "are we cooking?" and "kommen wir voran?". Focus on the current task and its next useful move; use here-we-go-again for historical recurrence analysis. Also known as Check Progress.
+description: Check whether a running task is making evidenced progress toward the user's goal. Use for progress checks, stalled work, side quests, repeated attempts, or requests such as "are we cooking?" and "kommen wir voran?". Focus on the current task and its next useful move; use here-we-go-again for historical recurrence analysis.
 ---
 
-# Are We Cooking?
+# {{TITLE}}
 
 Are we making progress, or just keeping the VPS warm?
 

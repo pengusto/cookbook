@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 URI = 'ui://cookbook/catalog-v1'
 MIME = 'text/html;profile=mcp-app'
-VERSION = '0.1.3'
+VERSION = '0.2.0'
 
 
 def icons():
@@ -18,7 +18,7 @@ def icons():
 
 
 def tool():
-    return {'name': 'open_cookbook', 'title': 'Cookbook',
+    return {'name': 'open_cookbook', 'title': 'Cookbook by Pengusto',
             'description': 'Open the local Cookbook skill catalog. Read-only; no installation or publishing.',
             'icons': icons(), 'inputSchema': {'type': 'object', 'properties': {}, 'additionalProperties': False},
             'annotations': {'readOnlyHint': True, 'destructiveHint': False, 'openWorldHint': False},
@@ -27,7 +27,7 @@ def tool():
 
 
 def resource():
-    return {'uri': URI, 'name': 'cookbook', 'title': 'Cookbook', 'mimeType': MIME}
+    return {'uri': URI, 'name': 'cookbook', 'title': 'Cookbook by Pengusto', 'mimeType': MIME}
 
 
 def dispatch(method, params):

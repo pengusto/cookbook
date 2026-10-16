@@ -1,3 +1,5 @@
+> **Historischer Prüfstand 0.1.x.** Die aktuelle Architektur, Namenswelten und Installationswege stehen in [consolidation.md](consolidation.md) und der [README](../README.md). Frühere Testergebnisse werden nicht als neue 0.2.0-Abnahme behauptet.
+
 # Launch readiness / Launch-Prüfstand
 
 2026-10-15 · Review 0.1.4 · lokal vorbereitet, nichts veröffentlicht. Dieser Stand ersetzt frühere Launch-Zusammenfassungen; historische Host- und Validator-Ergebnisse bleiben mit ihrer jeweiligen Version in den Prüfberichten erhalten.

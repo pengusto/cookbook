@@ -45,7 +45,7 @@ class PackagingContracts(unittest.TestCase):
 
     def test_deterministic_and_complete_archives(self):
         for row in app.catalog():
-            if row['status'] != 'snapshot':
+            if row['status'] != 'source':
                 continue
             first, second = io.BytesIO(), io.BytesIO()
             app.zip_bytes(row, first)
@@ -53,16 +53,17 @@ class PackagingContracts(unittest.TestCase):
             self.assertEqual(first.getvalue(), second.getvalue())
             with zipfile.ZipFile(first) as archive, tempfile.TemporaryDirectory() as destination:
                 archive.extractall(destination)
-                installed = Path(destination) / row['id']
+                slug, rendered = app.rendered_files(row, 'plain')
+                installed = Path(destination) / slug
                 self.assertEqual({str(p.relative_to(installed)) for p in installed.rglob('*') if p.is_file()}, set(row['files']))
                 for name, digest in row['files'].items():
-                    self.assertEqual(app.sha((installed / name).read_bytes()), digest)
+                    self.assertEqual((installed / name).read_bytes(), rendered[name])
 
     def test_install_refuses_replacement_and_dangling_symlink(self):
         with tempfile.TemporaryDirectory() as directory:
             dest = Path(directory)
             app.install('let-them-see-it', dest)
-            marker = dest / 'let-them-see-it/user-note'
+            marker = dest / 'am-i-ready-to-share/user-note'
             marker.write_text('preserve')
             with self.assertRaises(ValueError):
                 app.install('let-them-see-it', dest)
@@ -79,7 +80,7 @@ class PackagingContracts(unittest.TestCase):
             self.assertEqual(list(Path(directory).iterdir()), [])
 
     def test_tampered_hash_and_unsafe_paths_are_rejected(self):
-        row = json.loads(json.dumps(next(r for r in app.catalog() if r['status'] == 'snapshot')))
+        row = json.loads(json.dumps(next(r for r in app.catalog() if r['status'] == 'source')))
         row['files']['SKILL.md'] = '0' * 64
         with self.assertRaises(ValueError):
             app.package_files(row)
@@ -92,12 +93,13 @@ class PackagingContracts(unittest.TestCase):
         for host in ('codex', 'claude'):
             config, files = app.plugin_files(host)
             payloads[host] = {name: data for name, data in files.items() if name.startswith('skills/')}
-            self.assertIn('skills/are-we-cooking/SKILL.md', files)
+            self.assertIn('skills/am-i-making-progress/SKILL.md', files)
             for row in app.catalog():
                 if row['id'] not in config['skills']:
                     continue
-                for name, digest in row['files'].items():
-                    self.assertEqual(app.sha(files[f'skills/{row["id"]}/{name}']), digest)
+                slug, rendered = app.rendered_files(row, 'plain')
+                for name, content in rendered.items():
+                    self.assertEqual(files[f'skills/{slug}/{name}'], content)
             for key in ('hooks', 'mcpServers', 'dependencies'):
                 self.assertNotIn(key, json.loads(files[f'.{host}-plugin/plugin.json']))
             first, second = io.BytesIO(), io.BytesIO()
@@ -122,7 +124,7 @@ class PackagingContracts(unittest.TestCase):
             source = entry['source']['path'] if host == 'codex' else entry['source']
             self.assertTrue(source.startswith('./plugins/'))
             self.assertNotIn('..', Path(source).parts)
-            manifest = app.ROOT / 'dist' / host / source / f'.{host}-plugin/plugin.json'
+            manifest = app.ROOT / 'dist' / 'plain' / host / source / f'.{host}-plugin/plugin.json'
             self.assertTrue(manifest.is_file())
             self.assertEqual(entry['name'], json.loads(manifest.read_text())['name'])
 
@@ -137,6 +139,48 @@ class PackagingContracts(unittest.TestCase):
             rows = app.catalog() + [{'id': 'unlicensed-candidate', 'status': 'candidate'}]
             with patch.object(app, 'catalog', return_value=rows), patch.object(Path, 'read_text', read), self.assertRaises(ValueError):
                 app.plugin_files('codex')
+
+    def test_variants_share_workflows_but_never_display_both_names(self):
+        for row in app.catalog():
+            outputs = {}
+            for variant in app.VARIANTS:
+                slug, files = app.rendered_files(row, variant)
+                title = row['title'] if variant == 'plain' else row['cooking_title']
+                other = row['cooking_title'] if variant == 'plain' else row['title']
+                self.assertIn(('name: '+slug+'\n').encode(), files['SKILL.md'])
+                self.assertIn(('# '+title+'\n').encode(), files['SKILL.md'])
+                self.assertIn(('display_name: "'+title+'"').encode(), files['agents/openai.yaml'])
+                self.assertNotIn(other.encode(), files['agents/openai.yaml'])
+                self.assertNotIn(b'{{', files['SKILL.md'])
+                import re
+                normalized = {}
+                for name, content in files.items():
+                    if name in ('SKILL.md', 'agents/openai.yaml'):
+                        content = content.replace(('name: '+slug+'\n').encode(), b'name: ID\n')
+                        content = content.replace(('$'+slug).encode(), b'$ID')
+                        if name == 'SKILL.md':
+                            content = content.replace(('# '+title+'\n').encode(), b'# TITLE\n')
+                            content = content.replace(('description: '+title).encode(), b'description: TITLE')
+                        else:
+                            content = content.replace(('display_name: "'+title+'"').encode(), b'display_name: "TITLE"')
+                    normalized[name] = content
+                outputs[variant] = normalized
+            self.assertEqual(outputs['plain'], outputs['kitchen'])
+
+    def test_cross_variant_single_install_is_refused(self):
+        with tempfile.TemporaryDirectory() as directory:
+            dest = Path(directory)
+            app.install('kill-the-todos', dest, 'plain')
+            with self.assertRaises(ValueError):
+                app.install('kill-the-todos', dest, 'kitchen')
+            self.assertTrue((dest / 'can-we-finish/SKILL.md').is_file())
+
+    def test_alternative_plugins_use_same_identity(self):
+        for host in ('codex','claude'):
+            plain, _ = app.plugin_files(host, 'plain')
+            kitchen, _ = app.plugin_files(host, 'kitchen')
+            self.assertEqual(plain['name'], kitchen['name'])
+            self.assertEqual(app.marketplace(host, plain), app.marketplace(host, kitchen))
 
 
 if __name__ == '__main__':

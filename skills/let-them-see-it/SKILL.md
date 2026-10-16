@@ -1,9 +1,9 @@
 ---
 name: let-them-see-it
-description: Evaluate a repository for public GitHub release, propose a prioritized preparation plan, then implement approved changes. Use when preparing a project for open source or improving its public documentation and repository hygiene. Also known as Ready to Serve.
+description: Evaluate a repository for public GitHub release, propose a prioritized preparation plan, then implement approved changes. Use when preparing a project for open source or improving its public documentation and repository hygiene.
 ---
 
-# Let Them See It
+# {{TITLE}}
 
 Prepare a repository so outsiders can understand, run, and contribute to it. Work in two phases: evaluate first, implement the agreed scope second.
 

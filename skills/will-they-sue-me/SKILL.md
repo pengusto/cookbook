@@ -1,9 +1,9 @@
 ---
 name: will-they-sue-me
-description: Review an app or website for evidence-backed privacy, consumer-rights, accessibility, and asset-licensing gaps before launch or after changes. Determine which checks apply, trace actual behavior, and prepare scoped fixes; use for product compliance reviews rather than predicting lawsuits. Also known as Can I Serve This?.
+description: Review an app or website for evidence-backed privacy, consumer-rights, accessibility, and asset-licensing gaps before launch or after changes. Determine which checks apply, trace actual behavior, and prepare scoped fixes; use for product compliance reviews rather than predicting lawsuits.
 ---
 
-# Will They Sue Me?
+# {{TITLE}}
 
 Find the gap between what a product does, what it promises, and what its applicable obligations require. The name is playful; the output is a technical product review, not a legal certificate or a prediction about litigation.
 

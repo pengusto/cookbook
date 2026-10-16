@@ -1,3 +1,5 @@
+> **Historischer Prüfstand 0.1.x.** Die aktuelle Architektur, Namenswelten und Installationswege stehen in [consolidation.md](consolidation.md) und der [README](../README.md). Frühere Testergebnisse werden nicht als neue 0.2.0-Abnahme behauptet.
+
 # Strukturierte Daten: lokal eingebunden
 
 Stand 2026-10-15: Die Cookbook-Startseite enthält jetzt einen JSON-LD-Block im HTML-Head. Der installierte Skill `schema` wurde angewendet; er wird nicht Teil des Cookbook-Bündels. Die Website wurde nicht veröffentlicht. Der eingebundene JSON-LD-Block wurde auf ausdrücklichen Nutzerwunsch per Code-Eingabe an Schema.org und Google zur Prüfung gesendet.

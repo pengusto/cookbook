@@ -1,7 +1,7 @@
 {
-  "displayName": "Vibe Coding Cookbook",
+  "displayName": "Cookbook by Pengusto",
   "shortDescription": "From idea to release review",
-  "longDescription": "Seven skills for developers moving from an idea to a reviewable release: Start It Right, Check Progress (Are We Cooking?), Did I Leak?, Will They Sue Me?, Let Them See It, What Did We Change, and Finish This Chat (Close the Kitchen). Plan a small project start, inspect exposure risks, prepare a context-specific legal review, assess release readiness, and draft release notes from repository evidence. The bundle contains instructions and supporting files, with no bundled MCP server or background service. Local file and Git access, host tools, and sometimes current external sources are needed for full workflows. Optional scanners are not installed automatically. Findings are review inputs, not security or legal certification. Publishing, credential rotation, and destructive changes require separate authorization. This is a local review build; host coverage and remaining release gates are documented with the package. Close the current chat with a guide, verified finish or intentional pause.",
+  "longDescription": "Seven workflows from one shared source for starting a project, checking progress, reviewing exposure and legal questions, preparing a release, drafting change notes and ending a chat deliberately. Choose Plain questions or Kitchen names; install one naming variant at a time. Local tools may be required. Scanners are optional; no hooks or MCP server are bundled. Reviews are not security or legal certification. Publication, deletion and external actions require separate authorization.",
   "developerName": "Pengusto",
   "category": "Developer Tools",
   "capabilities": [

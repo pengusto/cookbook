@@ -60,7 +60,7 @@ class SchemaContracts(unittest.TestCase):
         self.assertEqual(set(data), {'@context', '@type', 'name', 'inLanguage', 'mainEntity'})
         self.assertEqual(data['@context'], 'https://schema.org')
         self.assertEqual(data['@type'], 'CollectionPage')
-        self.assertEqual(data['name'], 'Vibe Coding Cookbook')
+        self.assertEqual(data['name'], 'Cookbook by Pengusto')
         self.assertEqual(data['inLanguage'], 'de')
         listing = data['mainEntity']
         self.assertEqual(listing['@type'], 'ItemList')
@@ -69,8 +69,9 @@ class SchemaContracts(unittest.TestCase):
         for position, (item, card) in enumerate(zip(listing['itemListElement'], page.cards), 1):
             self.assertEqual(item, {'@type': 'ListItem', 'position': position,
                                    'item': {'@type': 'CreativeWork', 'name': card['title'],
-                                            'description': card['summary'], 'alternateName': card['cooking_title']}})
-        self.assertIn('Are We Cooking?', [i['item']['alternateName'] for i in listing['itemListElement']])
+                                            'description': card['summary']}})
+        self.assertIn('Am I Making Progress?', [i['item']['name'] for i in listing['itemListElement']])
+        self.assertTrue(all('alternateName' not in i['item'] for i in listing['itemListElement']))
 
     def test_catalog_changes_are_reflected_and_cannot_escape_script(self):
         title = '</script><script>alert("demo")</script> & <Test>'

@@ -1,3 +1,5 @@
+> **Historischer Prüfstand 0.1.x.** Die aktuelle Architektur, Namenswelten und Installationswege stehen in [consolidation.md](consolidation.md) und der [README](../README.md). Frühere Testergebnisse werden nicht als neue 0.2.0-Abnahme behauptet.
+
 # Inventar und Auswahl
 
 Historischer Auswahlbericht vom 2026-10-12. Aktuell sind sieben Skills MIT-lizenziert und integriert; Kill the TODOs wurde zum Abschluss-Skill weiterentwickelt. Aktueller Stand: [Namen und Quellen](skill-naming.md) und [Launch-Prüfstand](launch-readiness.md).

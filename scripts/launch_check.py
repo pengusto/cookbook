@@ -17,15 +17,14 @@ def run(*args, cwd=ROOT):
 
 def artifacts(root):
     paths = list((root / 'site/downloads').glob('*.zip'))
-    paths += [root / 'dist/website.zip', root / 'dist/sidebar/cookbook-sidebar.zip']
+    paths += [root / 'dist/website.zip', *[root / 'dist' / v / 'sidebar/cookbook-sidebar.zip' for v in ('plain', 'kitchen')]]
     return {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
 
 
 def main():
     run('scripts/cookbook.py', 'build')
     run('scripts/cookbook.py', 'check')
-    if (ROOT / 'sources.local.json').exists():
-        run('scripts/cookbook.py', 'check-sources')
+    run('scripts/cookbook.py', 'check-sources')
     run('-m', 'unittest', 'discover', '-s', 'tests')
     expected = artifacts(ROOT)
     with tempfile.TemporaryDirectory(prefix='cookbook-launch-') as temporary:

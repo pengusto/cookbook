@@ -1,11 +1,11 @@
 ---
 name: kill-the-todos
-description: Finish This Chat / Close the Kitchen (formerly Kill the TODOs). Guide the current conversation to a verified finish or an intentional pause by reconciling commitments, proposing a small closing plan, completing authorized work and preparing a handoff. Use when the user wants to wrap up, wind down, hand over or close this chat; a guide-only request does not authorize execution.
+description: {{TITLE}}. Guide the current conversation to a verified finish or an intentional pause by reconciling commitments, proposing a small closing plan, completing authorized work and preparing a handoff. Use when the user wants to wrap up, wind down, hand over or close this chat; a guide-only request does not authorize execution.
 ---
 
-# Finish This Chat · Close the Kitchen
+# {{TITLE}}
 
-Bring the current chat to a deliberate stopping point. Keep `kill-the-todos` as the invocation ID; both visible names describe this single workflow.
+Bring the current chat to a deliberate stopping point. Use `${{ID}}` to invoke this workflow.
 
 ## Establish the finish line
 

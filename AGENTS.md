@@ -1,9 +1,9 @@
-# Cookbook maintenance
+# Cookbook by Pengusto maintenance
 
-- Original projects are the only editable skill sources. `skills/` holds reviewed snapshots; never silently patch them independently.
-- `catalog.json` is the curated selection, recipes, and per-file provenance. Keep absolute source paths in ignored `sources.local.json` only.
-- Use Python standard library. Reuse skill-library for broad inventory; do not replace its registry or modify installations during catalog work.
-- Update only explicitly reviewed runtime files, preserve each source LICENSE, update hashes and revision together. Never export entire repositories.
-- Run build, check, check-sources where local sources exist, and unittest after packaging changes. Keep EN/DE documentation synchronized.
-- Packaging checks are not independent agent behavior tests. No publication, external messages, remote creation or deployment without direct authorization.
-- `bundle.json` explicitly selects the shared plugin contents. Generate Codex/Claude manifests, local marketplaces and ZIPs from it; never edit ignored `dist/` output. Preserve byte-identical skill files across individual and bundled packages.
+- This repository is the single maintained source. Edit workflow content only in `skills/<stable-id>/`; original repositories are retained archives, not live dependencies.
+- `catalog.json` holds one runtime allowlist and hashes per source, and plain/kitchen display names and invocation IDs. Regenerate hashes after reviewed source changes.
+- Render the two naming variants from the same source. Never maintain separate workflow bodies or expose both naming worlds within one installed variant.
+- Both variants use the same plugin identity and marketplace name; install one variant at a time. Never silently overwrite existing host installations.
+- Preserve LICENSE files, imported history/* branches and merge ancestry. No deletion, remote creation, push, deployment or publication without direct authorization.
+- Use Python standard library. Run build, check, check-sources, unit tests and the portable rebuild after packaging changes.
+- Generated site/, dist/, private .scratch/ and legacy sources.local.json remain ignored. Never edit generated outputs manually. Keep EN/DE instructions aligned.

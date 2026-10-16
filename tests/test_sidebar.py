@@ -15,7 +15,7 @@ spec.loader.exec_module(builder)
 
 class SidebarContracts(unittest.TestCase):
     def test_stdio_entrypoint_icons_resource_and_rejections(self):
-        root = builder.ROOT / 'dist/sidebar/plugins/cookbook-sidebar'
+        root = builder.ROOT / 'dist/plain/sidebar/plugins/cookbook-sidebar'
         requests = [
             {'id': 1, 'method': 'initialize', 'params': {'protocolVersion': '2025-11-25'}},
             {'method': 'notifications/initialized'},
@@ -63,8 +63,8 @@ class SidebarContracts(unittest.TestCase):
     def test_companion_archive_has_no_duplicate_skills(self):
         expected = builder.sidebar_files()
         self.assertFalse(any(name.startswith('skills/') for name in expected))
-        with zipfile.ZipFile(builder.ROOT / 'dist/sidebar/cookbook-sidebar.zip') as archive:
+        with zipfile.ZipFile(builder.ROOT / 'dist/plain/sidebar/cookbook-sidebar.zip') as archive:
             self.assertEqual(set(archive.namelist()), {f'cookbook-sidebar/{n}' for n in expected})
             for name, data in expected.items():
                 self.assertEqual(archive.read(f'cookbook-sidebar/{name}'), data)
-                self.assertEqual((builder.ROOT / 'dist/sidebar/plugins/cookbook-sidebar' / name).read_bytes(), data)
+                self.assertEqual((builder.ROOT / 'dist/plain/sidebar/plugins/cookbook-sidebar' / name).read_bytes(), data)

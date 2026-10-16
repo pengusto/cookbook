@@ -1,6 +1,6 @@
 {
-  "name": "vibe-coding-cookbook",
-  "version": "0.1.4",
+  "name": "cookbook-by-pengusto",
+  "version": "0.2.0",
   "description": "Seven curated skills for project planning, progress checks, review preparation, release readiness, release notes, and a deliberate chat finish or handoff.",
   "author": {
     "name": "Pengusto"
@@ -20,5 +20,10 @@
     "skills",
     "project-planning",
     "release-readiness"
+  ],
+  "display_name": "Cookbook by Pengusto",
+  "variants": [
+    "plain",
+    "kitchen"
   ]
 }

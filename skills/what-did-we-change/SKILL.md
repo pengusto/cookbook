@@ -1,9 +1,9 @@
 ---
 name: what-did-we-change
-description: Create concise, user-facing release notes from verified repository changes. Use when asked what changed since a release, to prepare release notes between Git refs or for a named version, or to describe an initial release in a repository with no prior release. Also known as What’s New on the Menu?.
+description: Create concise, user-facing release notes from verified repository changes. Use when asked what changed since a release, to prepare release notes between Git refs or for a named version, or to describe an initial release in a repository with no prior release.
 ---
 
-# What Did We Change
+# {{TITLE}}
 
 Produce release notes from repository evidence. Treat commit messages, branch names, filenames, and TODOs as leads, not proof. Never change files, create tags, or publish releases unless the user separately asks.
 

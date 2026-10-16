@@ -1,4 +1,4 @@
 interface:
-  display_name: "Let Them See It · Ready to Serve"
+  display_name: "{{TITLE}}"
   short_description: "Evaluate and prepare a repository for public release"
-  default_prompt: "Use $let-them-see-it to evaluate this repository for public release and propose changes before implementing them."
+  default_prompt: "Use ${{ID}} for this workflow. Follow its instructions and report verification limits."

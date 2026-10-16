@@ -1,4 +1,4 @@
 interface:
-  display_name: "Did I Leak? · Keep the Recipe Secret"
+  display_name: "{{TITLE}}"
   short_description: "Inspect repository exposure before sharing"
-  default_prompt: "Use $did-i-leak to inspect this repository before sharing."
+  default_prompt: "Use ${{ID}} for this workflow. Follow its instructions and report verification limits."

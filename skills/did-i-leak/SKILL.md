@@ -1,9 +1,9 @@
 ---
 name: did-i-leak
-description: Run a redacted pre-publication safety check over a Git repository's current tree and reachable history, using Gitleaks, TruffleHog, and fallback heuristics. Use when a developer asks whether a repository is safe to publish, open-source, share, or promote, or mentions leaked secrets, deleted credentials, Git history, PII, or internal URLs. Also known as Keep the Recipe Secret.
+description: Run a redacted pre-publication safety check over a Git repository's current tree and reachable history, using Gitleaks, TruffleHog, and fallback heuristics. Use when a developer asks whether a repository is safe to publish, open-source, share, or promote, or mentions leaked secrets, deleted credentials, Git history, PII, or internal URLs.
 ---
 
-# Did I Leak?
+# {{TITLE}}
 
 Before making a repository public, check what Git remembers.
 

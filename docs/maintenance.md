@@ -1,29 +1,13 @@
-# Pflege und Provenienz
+# Pflege und gemeinsame Quelle
 
-## Kleine Struktur
+Seit Review 0.2.0 ist dieses Repo die einzige gepflegte Quelle. `skills/<stabile-id>/` enthält die sieben Workflows; catalog.json wählt Laufzeitdateien aus, hält SHA256 und legt die beiden Namenswelten fest. Original-LICENSE bleibt pro Workflow erhalten. Neue Runtime-Dateien bewusst in die Allowlist aufnehmen; nichts automatisch aus anderen Repos synchronisieren.
 
-- catalog.json: kuratierte Rezepte und exakte Dateihashes; die einzige shareable Auswahl-Datei.
-- skills/<id>/: geprüfte Kopien, keine zweiten editierbaren Originalprojekte.
-- scripts/cookbook.py: Build, Check, Driftprüfung, explizite Installation und Loopback-Vorschau.
-- templates/index.html: lokale Darstellung ohne externe Abhängigkeiten.
-- docs/: Auswahl, Rechte, Evaluation und Übergabe; übersetzte README unter docs/readme/.
-- site/: generierte Vorschau, ZIPs und SHA256SUMS; nicht versioniert.
-- bundle.json: ausdrückliche Auswahl für Codex-/Claude-Plugin-Bündel, mit gemeinsamer Review-Version.
-- dist/: generierte Plugin-Ordner und lokale Marketplaces; nicht versioniert. Nur im Build erzeugen, nie separat editieren.
-- sources.local.json und .scratch/: ignorierte lokale Quellzuordnung und private Review-Evidenz.
+SKILL.md behält die stabile Quell-ID im Frontmatter. Überschrift und Host-Metadaten verwenden `{{TITLE}}`, Selbstaufrufe `{{ID}}`. Beim Paketbau werden nur diese Namen/Aufrufe und die installierte Frontmatter-ID ersetzt; der Ablauf wird nicht dupliziert. Direkte Installation der Vorlagen ist nicht vorgesehen.
 
-## Gezielte Aktualisierung
+Nach einer Inhaltsänderung die betroffenen Hashes in catalog.json aktualisieren und Build, Check, check-sources, Tests und portablen Neubau ausführen. `check-sources` prüft jetzt die gemeinsamen lokalen Quellen, nicht mehr externe Archive. Dateien, Symlinks und unerwartete Runtime-Dateien bleiben durch die Paketverträge geschützt.
 
-1. `python3 scripts/cookbook.py check-sources` vergleicht ausgewählte Bytes mit lokalen Originalen. Ohne lokale Registry bleibt der portable Build vollständig nutzbar.
-2. Im betroffenen Original Änderungen, Git-Status und Rechte prüfen. Für Vergleiche gegen einen Remote zuerst dessen relevanten Stand fetchen; lokale Hashes sind keine Aussage über Remote-Gleichheit.
-3. Nur die bisher erlaubten Dateien aus catalog.json im Original prüfen. Neue Abhängigkeiten/Referenzen bewusst hinzufügen, keine ganzen Ordner automatisch exportieren. Keine Originale umbenennen oder verschieben; nur ausdrücklich beauftragte Änderungen am Original durchführen.
-4. Den ausgewählten Skill-Snapshot nach Review ersetzen; Original-LICENSE erhalten. Pro Datei SHA-256 über die exakten Bytes ermitteln, beispielsweise mit `shasum -a 256 skills/<id>/SKILL.md`. Revision nur angeben, wenn sie im owning Git-Repository belegt ist; uncommittete Änderungen im privaten Prüfprotokoll kennzeichnen.
-5. catalog.json aktualisieren; Rezept, Grenzen und beide README-Versionen bei verändertem Ablauf synchronisieren. Paketnamen bleiben die Skill-ID. Entfernte Skills samt alten generierten ZIPs bewusst bereinigen, damit keine veralteten Downloads verbleiben.
-6. Build, Check und Tests laufen lassen; zwei Builds müssen identische ZIP-Hashes ergeben. Isolierte Installation und relevante Verhaltensszenarien prüfen. Keine produktive Installation automatisch ersetzen.
-7. Erst danach Cookbook-Diff reviewen und einen lokalen Commit erwägen. Push, Release und Deployment benötigen eine direkte Freigabe.
+site/ und dist/ sind generierte ignorierte Ausgaben; niemals manuell pflegen. .scratch/ und die frühere sources.local.json bleiben ignoriert. Alte 0.1.x-dist-Ordner werden für bestehende Installationen erhalten, aber nicht mehr gebaut; die neuen aktiven Ziele sind dist/plain und dist/kitchen. Für die neue Website wurde die vorherige generierte Ausgabe vollständig unter .scratch/consolidation/website-before-0.2.0 erhalten.
 
-Die Originale sind nicht Teil der Cookbook-Git-Historie. Der Katalog verlinkt Quellprojekte, behauptet aber weder deren öffentliche Sichtbarkeit noch Remote-Aktualität. Alle sieben Quellen haben eigene lokale Git-Repositories. Die Namensänderungen in den vier bestehenden GitHub-Quellen sind weiterhin uncommittet. Are We Cooking, What Did We Change und der Abschluss-Skill haben seit der lokalen Repository-Vorbereitung eigene lokale Commits; keine neuen Remotes oder Pushes. Dateihashes identifizieren die Snapshots unabhängig davon. Siehe [Repository-Stand](repositories.md). Are We Cooking ist nach ausdrücklicher MIT-Lizenzwahl ebenfalls redistribuierbar aufgenommen. Aktuelle Rechtsquellen sind bei jedem konkreten Will-They-Sue-Me-Review zu prüfen; die gebündelten Referenzen sind Einstiegspunkte.
+Beide Namenswelten nutzen dieselbe Plugin-/Marketplace-Identität. Für einen Wechsel das bisherige Paket sichern und nativ wechseln; ein identisches Versionscache darf nicht als Nachweis der anderen Variante gelten. Einzelinstaller verweigert parallele Varianten desselben Workflows. Kein automatischer Host-Wechsel beim Build.
 
-## Installationsvertrag
-
-Ein ZIP enthält <id>/SKILL.md plus erlaubte Runtime-Dateien und Original-LICENSE. Der Installer prüft Hashes und lehnt vorhandene Ziele einschließlich dangling symlinks ab. Keine Globalinstallation wurde in dieser Vorbereitung vorgenommen. Für einen bereits installierten Skill das Original oder bestehende Symlink-Ziel pflegen; keine automatische Cookbook-Kopie darüber schreiben.
+Die sieben vollständigen Git-Historien sind als history/* und über einen Merge ohne Squash als Vorfahren von main erhalten. Keine history/*-Branches entfernen. Originalrepos bleiben unverändert erhalten und werden nicht mehr als aktive Quellprojekte gepflegt. Vor einer späteren Veröffentlichung die gesamte importierte Historie einschließlich privater Ursprünge prüfen; nichts pushen oder veröffentlichen ohne ausdrückliche Freigabe.

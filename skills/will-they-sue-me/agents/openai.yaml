@@ -1,4 +1,4 @@
 interface:
-  display_name: "Will They Sue Me? · Can I Serve This?"
+  display_name: "{{TITLE}}"
   short_description: "Check product obligations against actual app behavior"
-  default_prompt: "Use $will-they-sue-me to review this app before launch, identify applicable obligations and evidence-backed gaps, and propose verified fixes."
+  default_prompt: "Use ${{ID}} for this workflow. Follow its instructions and report verification limits."
