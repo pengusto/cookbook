@@ -1,4 +1,4 @@
 interface:
-  display_name: "Kill the TODOs"
-  short_description: "Den aktuellen Chat bis zum Abschluss bringen"
-  default_prompt: "Nutze $kill-the-todos, um den aktuellen Chat abzuschließen: Erledige offene Arbeit, kläre wichtige Entscheidungen und bereite die verbleibenden menschlichen Schritte vor."
+  display_name: "Finish This Chat · Close the Kitchen"
+  short_description: "Finish agreed work or prepare a clear handoff"
+  default_prompt: "Use $kill-the-todos (Close the Kitchen) to guide this chat toward a verified finish or an intentional pause."

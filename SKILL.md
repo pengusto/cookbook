@@ -1,44 +1,36 @@
 ---
 name: kill-the-todos
-description: Bring the current chat to completion by reconciling open todos, completing authorized work, resolving consequential decisions, and preparing precise remaining human steps. Use when the user wants to finish or wrap up the current conversation and its outstanding work.
+description: Finish This Chat / Close the Kitchen (formerly Kill the TODOs). Guide the current conversation to a verified finish or an intentional pause by reconciling commitments, proposing a small closing plan, completing authorized work and preparing a handoff. Use when the user wants to wrap up, wind down, hand over or close this chat; a guide-only request does not authorize execution.
 ---
 
-# Kill the TODOs
+# Finish This Chat · Close the Kitchen
 
-Finish the work agreed in the current chat. A summary and a plan are intermediate results; continue through execution and verification wherever authorization and available access allow.
+Bring the current chat to a deliberate stopping point. Keep `kill-the-todos` as the invocation ID; both visible names describe this single workflow.
 
-## Reconstruct the finish line
+## Establish the finish line
 
-Read the available conversation, including carried-over context. Identify the intended outcome, accepted decisions, constraints, promises, and unfinished todos. Reconcile them with current evidence: completed, actionable now, needs a decision, or needs a human action. Drop superseded and cancelled work; do not revive rejected ideas or optional suggestions as commitments.
+Reconstruct the agreed outcome, accepted decisions and remaining commitments from the available conversation and actual artifacts. Resolve factual uncertainty with relevant tools. Ask for missing context only when it materially affects scope; do not invent prior agreements.
 
-Use tools to resolve factual uncertainty before asking the user. If missing conversation context materially affects scope, ask for that specific gap instead of inventing prior agreements. Stay within this chat's agreed work; do not sweep other projects or create tasks, goals, or automations unless requested.
+Separate work that is verified complete, actionable now, needs a decision or human action, or has been deferred or cancelled. Do not revive rejected ideas or promote optional suggestions into commitments. Stay within this chat; do not sweep unrelated projects or create tasks, goals or automations unless requested.
 
-Briefly state the finish line and the remaining execution plan. Keep the checklist in the conversation unless a saved artifact is useful or requested.
+## Give a closing guide first
 
-## Resolve decisions with little effort
+Briefly recommend a useful stopping point and the smallest remaining plan, explaining any failed check or unresolved gate. Distinguish finishing the agreed work from intentionally pausing it. A pause is a valid stopping point, but the original objective remains open.
 
-Ask only questions whose answers materially change the outcome, scope, cost, access, or an irreversible action. Choose routine implementation details yourself. Stress-test consequential assumptions with concrete tradeoffs, without turning completion into an open-ended interview.
+If the user asks only for a guide or says to pause, prepare the guide or handoff without changing files, task states or jobs. Otherwise continue through the already authorized local work without asking again for settled permissions. Ask only when a missing decision materially changes the result, scope, cost, access or an irreversible action. Use the host's question tools when available and permitted; offer a recommendation and keep working on independent branches while an answer is pending. Silence is not approval.
 
-Prefer an available native Codex question tool when its current mode and tool rules permit. Otherwise use numbered questions with lettered options so the user can answer `1a 2c 3a`. Give each question only as many meaningful choices as needed, usually two to four, and mark a recommendation with a short reason. Allow a free-text answer. Group independent questions; ask dependent questions after their prerequisite is answered. Avoid re-asking settled questions.
+## Finish the selected slice
 
-For example:
+Complete and verify the necessary authorized work before requesting a remaining human step. Make that step concrete and reviewable: what is ready, what input or permission is missing, where the user acts, and how success will be checked. Use secure credential entry rather than requesting secrets in chat.
 
-1. Where should the finished draft go?
-   a. Stay local (recommended; ready for your review).
-   b. Prepare it in the agreed publishing system as a draft.
+Earlier limits such as no edits, no commits, or no publication remain in force. A request to close the chat does not authorize pushing, deployment, external messages, deletion or history rewrites. Do not cancel active jobs or remove staging, backups or temporary copies just because they appear unfinished; inspect ownership, active references and retention requirements first. Diagnose repeated failures or report the specific blocker instead of retrying indefinitely.
 
-Do useful independent work while answers are pending. Do not treat silence, a preselected option, or elapsed time as approval. Follow the environment's rules for requesting actual authorization; a preference question must not hide a publishing or deployment approval.
+Dropping a TODO is not completing it. Change persisted task status only when requested or already authorized, and only to reflect actual work. Do not hide failing checks to produce a clean finish.
 
-## Execute to the human boundary
+## Leave a verified handoff
 
-Complete authorized work, incorporating answers as they arrive. Preserve earlier limits such as no edits, no commits, or no deployment. The request to finish the chat does not grant new external permissions.
+Compare the outcome with the finish line and run checks relevant to the selected slice. Distinguish local files, commits, pushes and deployments; attempted checks and confirmed results; complete, deferred and blocked work. State important coverage limits.
 
-Before asking for a human intervention, finish the preparation that makes it concrete and reviewable. Identify exactly what is missing, why it is needed, where the user performs the step, and how completion will be verified. For credentials, use the appropriate secure entry or local secret storage; do not ask the user to paste tokens into the chat.
+End with a compact account of what is complete, verification evidence, what remains and one concrete re-entry action if pausing. Include paths, refs or active job identifiers only when useful for resuming. Do not add fresh improvement ideas after reaching the stopping point.
 
-When a gate blocks one branch, finish the other authorized branches. If a tool repeatedly fails for the same reason, diagnose it or report the specific blocker instead of retrying indefinitely. Once only human-dependent work remains, present the handoff and wait for the user. After they respond, resume the remaining work and verify the result.
-
-## Check whether we can call it done
-
-Compare the result against the original finish line and every remaining commitment. Run relevant checks and distinguish implementation from tested behavior, local work from published or deployed work, and an attempted operation from confirmed success.
-
-End with a compact account of what is complete, verification evidence, and any remaining human steps or unresolved decisions. If nothing remains, say so. If a gate remains, say the work is prepared up to that gate; do not call the entire chat finished. Do not append new improvement ideas or a generic offer to continue.
+Preparing to close is not a request to archive or end a voice call. Use a supported host action only when the user explicitly requests that action. If unavailable, explain the manual step without claiming it happened. Never mark an unfinished objective complete to make the chat look closed.
