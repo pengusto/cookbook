@@ -47,7 +47,7 @@ class WebsiteContracts(unittest.TestCase):
         site = ROOT / 'site'
         expected = {str(p.relative_to(site)): p.read_bytes() for p in site.rglob('*') if p.is_file()}
         rows = json.loads((ROOT / 'catalog.json').read_text())
-        allowed = {'index.html', 'kitchen.html', 'help.html', 'LICENSE', 'assets/icon.svg', 'assets/icon-dark.svg', 'assets/cookbook-hero-dark.jpg', 'assets/site.css', 'assets/cookbook-hero.jpg', 'index-en.html', 'kitchen-en.html', 'help-en.html', 'downloads/SHA256SUMS'}
+        allowed = {'index.html', 'kitchen.html', 'help.html', 'LICENSE', 'assets/icon.svg', 'assets/icon-dark.svg', 'assets/cookbook-hero-transparent.png', 'assets/site.css', 'index-en.html', 'kitchen-en.html', 'help-en.html', 'downloads/SHA256SUMS'}
         allowed.update(f'assets/icons/{name}' for name in ('download.svg', 'book.svg', 'chef-hat.svg', 'message-circle.svg', 'arrow-right.svg', 'clipboard.svg', 'soup.svg', 'lock.svg', 'search.svg', 'bell.svg', 'list-details.svg', 'door-exit.svg', 'terminal-2.svg', 'LICENSE', 'LUCIDE-LICENSE', 'README.md'))
         allowed.update(f'downloads/cookbook-by-pengusto-{variant}-{host}.zip' for host in ('codex', 'claude') for variant in ('plain','kitchen'))
         for row in rows:
@@ -94,10 +94,41 @@ class PublicBetaContracts(unittest.TestCase):
             self.assertIn('media="(prefers-color-scheme: dark)"', text)
             self.assertIn('assets/icon-dark.svg', text)
             if not name.startswith('help'):
-                self.assertIn('assets/cookbook-hero-dark.jpg', text)
+                self.assertIn('assets/cookbook-hero-transparent.png', text)
+                self.assertNotIn('cookbook-hero-dark.jpg', text)
+                self.assertNotIn('cookbook-hero.jpg', text)
         css = (ROOT / 'site/assets/site.css').read_text()
         self.assertIn('@media(prefers-color-scheme:dark)', css)
-        self.assertTrue((ROOT / 'site/assets/cookbook-hero-dark.jpg').is_file())
+        self.assertTrue((ROOT / 'site/assets/cookbook-hero-transparent.png').is_file())
+
+    def test_hero_has_real_transparency_and_solid_foreground(self):
+        import struct
+        import zlib
+        data = (ROOT / 'site/assets/cookbook-hero-transparent.png').read_bytes()
+        self.assertEqual(data[:8], b'\x89PNG\r\n\x1a\n')
+        width, height, depth, color, _, _, interlace = struct.unpack('>IIBBBBB', data[16:29])
+        self.assertEqual((depth, color, interlace), (8, 6, 0))
+        compressed, offset = bytearray(), 8
+        while offset < len(data):
+            size = int.from_bytes(data[offset:offset + 4], 'big')
+            if data[offset + 4:offset + 8] == b'IDAT':
+                compressed.extend(data[offset + 8:offset + 8 + size])
+            offset += size + 12
+        raw, stride = zlib.decompress(compressed), width * 4
+        previous, transparent, opaque = bytearray(stride), 0, 0
+        for y in range(height):
+            start = y * (stride + 1)
+            kind, row = raw[start], bytearray(raw[start + 1:start + 1 + stride])
+            for x in range(stride):
+                left, up, corner = (row[x - 4] if x >= 4 else 0), previous[x], (previous[x - 4] if x >= 4 else 0)
+                estimate = left + up - corner
+                paeth = min((left, up, corner), key=lambda value: abs(estimate - value))
+                row[x] = (row[x] + (0, left, up, (left + up) // 2, paeth)[kind]) & 255
+            transparent += row[3::4].count(0)
+            opaque += sum(alpha >= 250 for alpha in row[3::4])
+            previous = row
+        self.assertGreater(transparent, width * height // 10)
+        self.assertGreater(opaque, width * height // 3)
 
     def test_readme_translations_preserve_commands_and_local_links(self):
         import re

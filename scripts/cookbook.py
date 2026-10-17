@@ -336,7 +336,7 @@ def render_landing(rows, language, variant):
     values.update(LANG=language, HOME=page_name(language, variant), HELP='help.html' if language == 'de' else 'help-en.html',
                   CARDS='\n'.join(cards), HOSTS=''.join(hosts), VARIANT_LINKS=variant_links, LANG_LINKS=lang_links,
                   CURRENT_VARIANT=esc(ui[variant.upper()]), STRUCTURED_DATA=schema_script(visible, language),
-                  ASSET_VERSION=sha((ROOT / 'assets/site.css').read_bytes() + (ROOT / 'assets/cookbook-hero.jpg').read_bytes())[:12])
+                  ASSET_VERSION=sha((ROOT / 'assets/site.css').read_bytes() + (ROOT / 'assets/cookbook-hero-transparent.png').read_bytes())[:12])
     template = (ROOT / 'templates/index.html').read_text()
     page = re.sub(r'\{\{([A-Z0-9_]+)\}\}', lambda match: values[match[1]], template)
     if '{{' in page:
@@ -370,7 +370,10 @@ def build():
     for language in ('de', 'en'):
         (site / ('help.html' if language == 'de' else 'help-en.html')).write_text((ROOT / 'templates' / ('help.html' if language == 'de' else 'help-en.html')).read_text())
     (site / 'assets').mkdir(exist_ok=True)
-    for name in ('icon.svg', 'icon-dark.svg', 'site.css', 'cookbook-hero.jpg', 'cookbook-hero-dark.jpg'):
+    # Remove obsolete generated copies; preserve the original source images.
+    for name in ('cookbook-hero.jpg', 'cookbook-hero-dark.jpg'):
+        (site / 'assets' / name).unlink(missing_ok=True)
+    for name in ('icon.svg', 'icon-dark.svg', 'site.css', 'cookbook-hero-transparent.png'):
         shutil.copyfile(ROOT / 'assets' / name, site / 'assets' / name)
     shutil.copytree(ROOT / 'assets/icons', site / 'assets/icons', dirs_exist_ok=True)
     shutil.copyfile(ROOT / 'LICENSE', site / 'LICENSE')

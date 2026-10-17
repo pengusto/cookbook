@@ -42,3 +42,13 @@ Die sieben Listenmotive verwenden jetzt filigrane Lucide-Outlines mit 1,5 statt 
 Systemeinstellung über prefers-color-scheme; helle Logos und separates dunkles Hero-Bild. Keine Cookies, externen Dienste oder Theme-Skripte. Landingpages und Hilfe in DE/EN unterstützen beide Farbschemata. Browserprüfung verwendet isolierte, ignorierte Testkopien mit erzwungenem Medienzweig, weil die verfügbare Browser-API keine Farbschema-Emulation anbietet; die Produktionsdateien behalten den echten System-Media-Query. Beide Hintergründe, Bilderauswahl, aufklappbare Details, fehlende Bilder und horizontale Überläufe wurden geprüft, einschließlich 320 CSS Pixel.
 
 Die frühere Aussage „keine Veröffentlichung“ bezieht sich auf den damaligen Stand. Öffentlich freigegeben ist jetzt die GitHub-Source-Beta, keine Website oder Store-Einreichung.
+
+## Transparenter Hero · 2026-10-17
+
+Das freigestellte Motiv assets/cookbook-hero-transparent.png ersetzt die beiden JPEGs im Website-Export. Echtes Alpha statt eingebautem weißem oder dunklem Hintergrund; alle vier Landingpages verwenden dieselbe Grafik. Die Original-JPEGs bleiben als Quellen erhalten. Cache-Version berücksichtigt die transparente Grafik. Erstellt per eingebautem Imagegen, Bearbeitungsauftrag: Hintergrund und Boden entfernen; Buch, Schrift, Register, Pfannen, Eier, Petersilie und Tuch unverändert erhalten; saubere Kanten ohne weißen Saum.
+
+### Markup-Nachprüfung vor dem GitHub-Push
+
+2026-10-17: Plain und Kitchen jeweils auf DE/EN lokal erneut geprüft. CollectionPage → ItemList → sieben ListItem/CreativeWork: Namen, Beschreibungen, Reihenfolge und Sprache entsprechen dem gerenderten Inhalt. Keine unsichtbaren alternativen Namen, erfundenen URLs, Bewertungen, Angebote oder Produktbehauptungen. Das transparente Markenmotiv wird nicht als physisches Produkt ausgezeichnet. JSON-LD bleibt unverändert. Aktuelle Schema.org-Typdefinitionen und Google-Richtlinien abgeglichen; keine erneute Code-Eingabe in externe Validatoren in diesem Durchlauf. Kein Rich-Result-Versprechen. Vollständiger lokaler Launch-Check mit 22 Tests und portablem Neubau bestanden. Der Builder entfernt nur veraltete generierte JPEG-Kopien, die Originale unter assets bleiben erhalten. GitHub-Push freigegeben; Website-Deployment weiterhin nicht freigegeben.
+
+Referenzen: https://schema.org/CollectionPage · https://schema.org/ItemList · https://developers.google.com/search/docs/appearance/structured-data/sd-policies
