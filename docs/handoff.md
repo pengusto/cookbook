@@ -1,3 +1,5 @@
+> Historical preparation record. For current Beta status, installation and limitations, use the [README](../README.md) and [public release review](public-release-review.md).
+
 # Privater Review und Übergabe
 
 Aktueller Launch-Prüfstand 2026-10-15: [launch-readiness.md](launch-readiness.md) ersetzt ältere Statusaussagen unten. Historische Ergebnisse bleiben zur Nachvollziehbarkeit erhalten.

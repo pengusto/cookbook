@@ -9,6 +9,7 @@ import re
 import shutil
 import zipfile
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 RECIPE_FIELDS = ('when', 'ingredients', 'steps', 'verify', 'result')
@@ -315,31 +316,27 @@ def render_landing(rows, language, variant):
     ui = translations[language]
     esc = html.escape
     visible, cards = [], []
-    icons = [
-        '<rect x="6" y="5" width="12" height="16" rx="2"/><path d="M9 5V3h6v2M9 9h6M9 13h6M9 17h4"/>',
-        '<path d="M4 9h16v9a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3ZM2 9h20M8 5h8M12 3v2"/>',
-        '<rect x="4" y="10" width="16" height="12" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4M12 15v3"/>',
-        '<circle cx="10" cy="10" r="7"/><path d="m15 15 6 6M7 10h6M10 7v6"/>',
-        '<path d="M3 17h18M5 17a7 7 0 0 1 14 0M12 8V6M10 6h4M4 21h16"/>',
-        '<rect x="5" y="3" width="14" height="19" rx="2"/><path d="M9 7h6M9 11h6M9 15h6M9 19h3"/>',
-        '<path d="M5 3h13v18H5ZM9 3v18M12 7h3M12 11h3M12 15h3"/>']
+    icons = ('clipboard', 'soup', 'lock', 'search', 'bell', 'list-details', 'door-exit')
+    def icon(name):
+        return f'<span class="ui-icon icon-{name}" aria-hidden="true"></span>'
     for index, row in enumerate(rows):
         title = row['title'] if variant == 'plain' else row['cooking_title']
         fields = dict(row, **ui.get('skills', {}).get(row['id'], {}))
         visible.append(dict(fields, title=title))
         slug = row['install_ids'][variant]
         definition = ''.join(f'<dt>{esc(ui[key])}</dt><dd>{esc(fields[key])}</dd>' for key in (*RECIPE_FIELDS, 'limits'))
-        cards.append(f'<article class="skill" id="{row["id"]}"><details><summary><span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24">{icons[index]}</svg></span><h2>{esc(title)}</h2><p>{esc(fields["summary"])}</p><span class="row-arrow" aria-hidden="true">→</span></summary><div class="skill-body"><dl>{definition}</dl><div class="skill-links"><code>${slug}</code><a href="downloads/{variant}-{row["id"]}.zip" download>{esc(ui["ZIP"])}</a><a href="skills/{variant}/{slug}/SKILL.md">{esc(ui["GUIDE"])}</a></div></div></details></article>')
+        cards.append(f'<article class="skill" id="{row["id"]}"><details><summary><span class="skill-number" aria-hidden="true">{index + 1:02d}</span><span class="skill-icon" aria-hidden="true">{icon(icons[index])}</span><h2>{esc(title)}</h2><p>{esc(fields["summary"])}</p><span class="row-arrow" aria-hidden="true">{icon("arrow-right")}</span></summary><div class="skill-body"><dl>{definition}</dl><div class="skill-links"><code>${slug}</code><a href="downloads/{variant}-{row["id"]}.zip" download>{icon("download")}{esc(ui["ZIP"])}</a><a href="skills/{variant}/{slug}/SKILL.md">{esc(ui["GUIDE"])}</a></div></div></details></article>')
     hosts = []
     for host, title in (('codex', 'Codex'), ('claude', 'Claude Code')):
         commands = (f'codex plugin marketplace add .\ncodex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local' if host == 'codex' else 'claude plugin marketplace add . --scope user\nclaude plugin install cookbook-by-pengusto@cookbook-by-pengusto-local --scope user')
-        hosts.append(f'<div class="host"><h3>{title}</h3><a class="download" href="downloads/cookbook-by-pengusto-{variant}-{host}.zip" download>{esc(ui["DOWNLOAD"])} ↓</a><p>{esc(ui["EXTRACT"])}</p><pre><code>{esc(commands)}</code></pre><p class="small">{esc(ui["NEW_SESSION"])}</p></div>')
-    variant_links = ''.join(f'<a href="{page_name(language, v)}#skills"' + (' aria-current="page"' if v == variant else '') + f'>{esc(ui[v.upper()])}</a>' for v in ('kitchen', 'plain'))
+        hosts.append(f'<div class="host"><h3>{icon("terminal-2")}{title}</h3><a class="download" href="downloads/cookbook-by-pengusto-{variant}-{host}.zip" download>{icon("download")}{esc(ui["DOWNLOAD"])}</a><p>{esc(ui["EXTRACT"])}</p><pre><code>{esc(commands)}</code></pre><p class="small">{esc(ui["NEW_SESSION"])}</p></div>')
+    variant_links = ''.join(f'<a href="{page_name(language, v)}#skills"' + (' aria-current="page"' if v == variant else '') + f'>{icon("chef-hat" if v == "kitchen" else "message-circle")}{esc(ui[v.upper()])}</a>' for v in ('kitchen', 'plain'))
     lang_links = ''.join(f'<a href="{page_name(lang, variant)}" lang="{lang}" hreflang="{lang}"' + (' aria-current="page"' if lang == language else '') + f'>{lang.upper()}</a>' for lang in ('de', 'en'))
     values = {key: esc(value) for key, value in ui.items() if isinstance(value, str)}
     values.update(LANG=language, HOME=page_name(language, variant), HELP='help.html' if language == 'de' else 'help-en.html',
                   CARDS='\n'.join(cards), HOSTS=''.join(hosts), VARIANT_LINKS=variant_links, LANG_LINKS=lang_links,
-                  CURRENT_VARIANT=esc(ui[variant.upper()]), STRUCTURED_DATA=schema_script(visible, language))
+                  CURRENT_VARIANT=esc(ui[variant.upper()]), STRUCTURED_DATA=schema_script(visible, language),
+                  ASSET_VERSION=sha((ROOT / 'assets/site.css').read_bytes() + (ROOT / 'assets/cookbook-hero.jpg').read_bytes())[:12])
     template = (ROOT / 'templates/index.html').read_text()
     page = re.sub(r'\{\{([A-Z0-9_]+)\}\}', lambda match: values[match[1]], template)
     if '{{' in page:
@@ -373,8 +370,9 @@ def build():
     for language in ('de', 'en'):
         (site / ('help.html' if language == 'de' else 'help-en.html')).write_text((ROOT / 'templates' / ('help.html' if language == 'de' else 'help-en.html')).read_text())
     (site / 'assets').mkdir(exist_ok=True)
-    for name in ('icon.svg', 'site.css', 'cookbook-hero.jpg'):
+    for name in ('icon.svg', 'icon-dark.svg', 'site.css', 'cookbook-hero.jpg', 'cookbook-hero-dark.jpg'):
         shutil.copyfile(ROOT / 'assets' / name, site / 'assets' / name)
+    shutil.copytree(ROOT / 'assets/icons', site / 'assets/icons', dirs_exist_ok=True)
     shutil.copyfile(ROOT / 'LICENSE', site / 'LICENSE')
     sums.extend(build_plugins(site / 'downloads'))
     (site / 'downloads/SHA256SUMS').write_text('\n'.join(sums) + '\n')
@@ -411,7 +409,7 @@ def check():
             for link in links:
                 if re.match(r'^[a-zA-Z][\w+.-]*:', link) or link.startswith('#'):
                     continue
-                local = link.split('#')[0]
+                local = urlsplit(link).path
                 if local and not (path.parent / local).exists():
                     raise ValueError(f'Broken link: {path.relative_to(ROOT)} -> {link}')
     print('OK: metadata, snapshot hashes, individual/plugin ZIPs, marketplaces, checksums, local links')

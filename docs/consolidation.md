@@ -1,3 +1,5 @@
+> Historical preparation record. For current Beta status, installation and limitations, use the [README](../README.md) and [public release review](public-release-review.md).
+
 # Zusammenführung: Cookbook by Pengusto
 
 Stand 2026-10-16 · Review 0.2.0 · privater GitHub-Abgleich auf ausdrücklichen Nutzerwunsch; keine öffentliche Veröffentlichung.

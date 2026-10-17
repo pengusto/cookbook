@@ -47,7 +47,8 @@ class WebsiteContracts(unittest.TestCase):
         site = ROOT / 'site'
         expected = {str(p.relative_to(site)): p.read_bytes() for p in site.rglob('*') if p.is_file()}
         rows = json.loads((ROOT / 'catalog.json').read_text())
-        allowed = {'index.html', 'kitchen.html', 'help.html', 'LICENSE', 'assets/icon.svg', 'assets/site.css', 'assets/cookbook-hero.jpg', 'index-en.html', 'kitchen-en.html', 'help-en.html', 'downloads/SHA256SUMS'}
+        allowed = {'index.html', 'kitchen.html', 'help.html', 'LICENSE', 'assets/icon.svg', 'assets/icon-dark.svg', 'assets/cookbook-hero-dark.jpg', 'assets/site.css', 'assets/cookbook-hero.jpg', 'index-en.html', 'kitchen-en.html', 'help-en.html', 'downloads/SHA256SUMS'}
+        allowed.update(f'assets/icons/{name}' for name in ('download.svg', 'book.svg', 'chef-hat.svg', 'message-circle.svg', 'arrow-right.svg', 'clipboard.svg', 'soup.svg', 'lock.svg', 'search.svg', 'bell.svg', 'list-details.svg', 'door-exit.svg', 'terminal-2.svg', 'LICENSE', 'LUCIDE-LICENSE', 'README.md'))
         allowed.update(f'downloads/cookbook-by-pengusto-{variant}-{host}.zip' for host in ('codex', 'claude') for variant in ('plain','kitchen'))
         for row in rows:
             if row['status'] == 'source':
@@ -83,3 +84,35 @@ class WebsiteContracts(unittest.TestCase):
                     self.assertEqual(page.count('<article class="skill"'), 7)
                     self.assertNotIn('{{', page)
                     self.assertNotIn('npm install', page)
+
+
+class PublicBetaContracts(unittest.TestCase):
+    def test_dark_assets_match_system_preference_without_external_runtime(self):
+        for name in ('index.html', 'kitchen.html', 'index-en.html', 'kitchen-en.html', 'help.html', 'help-en.html'):
+            text = (ROOT / 'site' / name).read_text()
+            self.assertIn('content="light dark"', text)
+            self.assertIn('media="(prefers-color-scheme: dark)"', text)
+            self.assertIn('assets/icon-dark.svg', text)
+            if not name.startswith('help'):
+                self.assertIn('assets/cookbook-hero-dark.jpg', text)
+        css = (ROOT / 'site/assets/site.css').read_text()
+        self.assertIn('@media(prefers-color-scheme:dark)', css)
+        self.assertTrue((ROOT / 'site/assets/cookbook-hero-dark.jpg').is_file())
+
+    def test_readme_translations_preserve_commands_and_local_links(self):
+        import re
+        english = ROOT / 'README.md'
+        expected_commands = re.findall(r'```sh\n(.*?)```', english.read_text(), re.S)
+        pages = [english] + sorted((ROOT / 'docs/readme').glob('README.*.md'))
+        self.assertEqual(len(pages), 8)
+        for page in pages:
+            text = page.read_text()
+            self.assertEqual(re.findall(r'```sh\n(.*?)```', text, re.S), expected_commands, page.name)
+            for target in re.findall(r'\]\(([^)]+)\)', text):
+                url = urlsplit(target)
+                if url.scheme:
+                    continue
+                self.assertTrue((page.parent / url.path).resolve().is_file(), (page, target))
+            for row in json.loads((ROOT / 'catalog.json').read_text()):
+                self.assertIn(row['title'], text)
+                self.assertIn(row['cooking_title'], text)

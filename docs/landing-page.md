@@ -26,3 +26,19 @@ Browser: Desktop und schmale mobile Ansicht geprüft, Sprachwechsel und Namenswe
 Bild: assets/cookbook-hero.jpg, mit eingebautem Imagegen erzeugt, als JPEG für die Website exportiert. Kein Screenshot als Website, sondern HTML/CSS und separates Motiv. Das Kochbuch ist Illustration, kein physisches Verkaufsprodukt. PNG-Original und Prompt/Nachweise lokal unter .scratch/landing-review erhalten; zusätzlich bleibt das erzeugte Original im Imagegen-Verzeichnis erhalten. Aufbewahren bis zur Design-Abnahme. Temporäre ZIP-Testentpackungen wurden nach Prüfung entfernt.
 
 Keine öffentliche Veröffentlichung, kein Deployment, keine Store-Einreichung. noindex,nofollow bleibt aktiv. Vollständige Desktop-Workflow-Abnahme, öffentliche Ziele, Hosting-/Rechtsseiten und Stores bleiben Release-Gates.
+
+## Referenzkorrektur 2026-10-17
+
+Größeres Portraitmotiv anhand des ausgewählten Originalentwurfs, kräftigere CTA-Flächen, Download-/Buch-Buttons, Kochmütze/Sprechblase und nummerierte Skill-Zeilen. Lokal eingebundene Tabler-Outline-Icons mit MIT-Lizenz unter assets/icons; keine externen Laufzeitanfragen. Browser-Cache-Version für CSS und Hero, lokale Linkprüfung berücksichtigt Query-Parameter. Beide Sprachen und Namenswelten verwenden dieselben Komponenten. Produktbeschreibungen bleiben belegbar aus dem Katalog statt weitergehender Aussagen des Bildentwurfs. Das bisherige Hero bleibt lokal unter .scratch/landing-review/cookbook-hero-before-reference-alignment.jpg bis zur Design-Abnahme erhalten.
+
+GitHub: vorheriger vollständiger Stand 8ff03a4 privat gepusht. Diese nachfolgende Designkorrektur bleibt lokal zur Abnahme.
+
+### Skill-Symbole verfeinert
+
+Die sieben Listenmotive verwenden jetzt filigrane Lucide-Outlines mit 1,5 statt 2 Strichstärke: Klemmbrett, Kochtopf, Schloss, Lupe, Servierglocke, Notizliste, offene Tür. Zuordnung der Motive und unveränderte Original-Lizenzen unter assets/icons/README.md und LUCIDE-LICENSE. Bisherige Symbole lokal unter .scratch/landing-review/icons-before-refinement bis zur Abnahme behalten. Buttons und restliche Gestaltung unverändert.
+
+## Dark Mode und öffentliche Source-Beta
+
+Systemeinstellung über prefers-color-scheme; helle Logos und separates dunkles Hero-Bild. Keine Cookies, externen Dienste oder Theme-Skripte. Landingpages und Hilfe in DE/EN unterstützen beide Farbschemata. Browserprüfung verwendet isolierte, ignorierte Testkopien mit erzwungenem Medienzweig, weil die verfügbare Browser-API keine Farbschema-Emulation anbietet; die Produktionsdateien behalten den echten System-Media-Query. Beide Hintergründe, Bilderauswahl, aufklappbare Details, fehlende Bilder und horizontale Überläufe wurden geprüft, einschließlich 320 CSS Pixel.
+
+Die frühere Aussage „keine Veröffentlichung“ bezieht sich auf den damaligen Stand. Öffentlich freigegeben ist jetzt die GitHub-Source-Beta, keine Website oder Store-Einreichung.

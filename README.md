@@ -1,6 +1,12 @@
 # Cookbook by Pengusto
 
-Seven workflows. One maintained source. Choose **Plain questions** or **Kitchen names** when installing; each installation shows one name per workflow.
+[![MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)](README.md#build-and-verify) [![Beta](https://img.shields.io/badge/status-experimental_Beta-orange)](docs/public-release-review.md) [![CI](https://img.shields.io/badge/CI-launch_checks-grey)](https://github.com/pengusto/cookbook/actions/workflows/check.yml)
+
+[English](README.md) · [Deutsch](docs/readme/README.de.md) · [简体中文](docs/readme/README.zh-CN.md) · [日本語](docs/readme/README.ja.md) · [Español](docs/readme/README.es.md) · [한국어](docs/readme/README.ko.md) · [Português (Brasil)](docs/readme/README.pt-BR.md) · [Français](docs/readme/README.fr.md)
+
+Seven agent workflows from one maintained source. Choose **Plain questions** or **Kitchen names**; install one naming style per host.
+
+**Experimental public Beta.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
 
 | Plain | Kitchen |
 |---|---|
@@ -12,56 +18,72 @@ Seven workflows. One maintained source. Choose **Plain questions** or **Kitchen 
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
 
-## Use on another Mac and update
+## Build and verify
 
-The private repository is [pengusto/cookbook](https://github.com/pengusto/cookbook). See [Mac setup and updates](docs/mac-setup.md) for clone, build, variant selection and cache refresh. GitHub access and plugin login are separate; no credentials or personal host settings are stored here.
-
-## Local build
-
-Python 3.10+ and standard library only:
+Python 3.10+ and Git are required to build; no Python packages are needed. Install and sign in to Codex and/or Claude Code separately. Run these commands from the repository root.
 
 ```sh
-python3 scripts/cookbook.py build
-python3 scripts/cookbook.py check
-python3 scripts/cookbook.py check-sources
-python3 -m unittest discover -s tests
+git clone https://github.com/pengusto/cookbook.git
+cd cookbook
 python3 scripts/launch_check.py
 ```
 
-`skills/<stable-id>/` is now the only editable workflow source. Names and invocation IDs come from `catalog.json`; generated packages substitute only names and invocations. Do not directly install the source templates. There is no external source registry dependency, separate copy per naming variant, submodule or synchronization step.
+## Install one naming style
 
-## Install one variant
+Choose plain or kitchen. Both use the same plugin identity. The examples install Kitchen. Start a new host session afterward. The build itself never changes host installations.
 
-Choose `plain` or `kitchen`. For example, Plain in Codex:
+Codex:
 
 ```sh
-codex plugin marketplace add ./dist/plain/codex
+codex plugin marketplace add ./dist/kitchen/codex
 codex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local
 ```
 
-Claude Code, using the existing local binary:
+Claude Code:
 
 ```sh
-claude plugin marketplace add ./dist/plain/claude --scope user
+claude plugin marketplace add ./dist/kitchen/claude --scope user
 claude plugin install cookbook-by-pengusto@cookbook-by-pengusto-local --scope user
 ```
 
-For Kitchen, replace `plain` with `kitchen` in the marketplace path. Both variants deliberately use the same marketplace and plugin identity. To switch, preserve the current package, uninstall that plugin natively, remove only its marketplace registration, then register/install the other variant. Do not install alongside the old `vibe-coding-cookbook` bundle or standalone copies of the same workflows. Review any existing installation before changing it; the build never installs or switches anything automatically.
+Before switching styles, back up the installed package, natively uninstall only the Cookbook plugin, remove only its marketplace registration, then register the other style. Do not keep standalone copies or the old vibe-coding-cookbook bundle alongside it.
 
-Individual installation remains available:
+Individual installation is supported; the destination must be empty for this workflow. This creates close-the-kitchen; plain creates can-we-finish.
 
 ```sh
 python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /empty/local/skills
 ```
 
-This creates `close-the-kitchen/`; Plain creates `can-we-finish/`. The installer refuses either variant if that workflow already exists in the destination. Four plugin ZIPs (each including its complete local marketplace) and fourteen individual ZIPs are generated in `site/downloads/` with SHA256SUMS. Optional read-only sidebar companions are under `dist/plain/sidebar/` and `dist/kitchen/sidebar/`; neither includes skill copies.
+Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-## Website and history
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 14 individual ZIPs + `SHA256SUMS`.
 
-Preview: `python3 scripts/cookbook.py serve --port 8767`, then open the printed local URL. `index.html` shows Plain; `kitchen.html` shows Kitchen. English alternatives are `index-en.html` and `kitchen-en.html`. Language switches preserve naming style; naming switches preserve language. Each page has matching downloads and structured data. Website language does not translate skill instructions. The white/green landing page uses local styles and an AI-generated cookbook illustration. No public URL is assumed; private-preview noindex remains.
+## Update
 
-All seven previous Git histories are preserved as `history/<stable-id>` branches and as ancestors of main, without squashing or rewriting. The previous source repositories and old generated outputs are retained. They are archives, not maintained inputs. See [consolidation and evidence](docs/consolidation.md), [maintenance](docs/maintenance.md) and [Deutsch](docs/readme/README.de.md).
+```sh
+git status --short
+git pull --ff-only
+python3 scripts/launch_check.py
+```
 
-Review 0.2.0 is prepared locally and synced to a private GitHub repository for use on your own Macs. Packaging tests do not prove full host behavior, security or legal compliance. Historical 0.1.x host and external-validator reports remain historical. Visible desktop acceptance, public destinations, legal pages, scanner coverage and store prerequisites remain open. No public publication, deletion of originals or deployment. Private GitHub sync was explicitly authorized.
+Commit or separately back up your changes before pulling. A rebuild updates local packages, not an installed plugin cache. Back up the installed package and use native uninstall/reinstall to refresh it. See the detailed Mac setup guide. [Mac setup](docs/mac-setup.md).
 
-MIT; each source retains its LICENSE and provenance. Some preserved historical repositories are private; history preservation is not permission to publish their past contents.
+## Website
+
+DE/EN landing pages support the system light/dark preference. Website language and naming style switch independently; website translations do not translate skill instructions. Start the local preview and open the printed URL. No live public website or store listing is included in this Beta.
+
+```sh
+python3 scripts/cookbook.py serve --port 8767
+```
+
+`index.html` / `kitchen.html` (DE), `index-en.html` / `kitchen-en.html` (EN). [Website details](docs/landing-page.md).
+
+## Limits and status
+
+Package, hash, link and portable rebuild checks are automated. Skill loading has been tested locally, but complete visible desktop workflow acceptance and store approvals remain open. Security and legal review skills guide checks; they are not guarantees. The imported histories contain maintainer-approved historical contact pages. Original repositories are retained as archives. [Release review](docs/public-release-review.md).
+
+## Contributing and licenses
+
+Report issues or send focused pull requests. Edit only the shared skills source and keep all eight READMEs aligned. Original code and skills are MIT; third-party icons retain MIT/ISC notices and artwork is AI-generated.
+
+[Contributing](CONTRIBUTING.md) · [MIT](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Maintenance](docs/maintenance.md).

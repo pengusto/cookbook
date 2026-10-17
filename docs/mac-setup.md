@@ -1,11 +1,11 @@
 # Cookbook auf einem anderen Mac
 
-Das Repo https://github.com/pengusto/cookbook ist privat. Auf dem zweiten Mac brauchst du Zugriff als Pengusto, Python 3.10+ sowie Codex und/oder Claude Code. Melde dich in den jeweiligen Apps separat an; das Repo enthält keine Zugangsdaten.
+Das Beta-Repo ist https://github.com/pengusto/cookbook. Auf dem zweiten Mac brauchst du Git, Python 3.10+ sowie Codex und/oder Claude Code. Melde dich in den jeweiligen Apps separat an; das Repo enthält keine Zugangsdaten.
 
 ## Erstmalig klonen und bauen
 
 ```sh
-gh repo clone pengusto/cookbook
+git clone https://github.com/pengusto/cookbook.git
 cd cookbook
 python3 scripts/launch_check.py
 ```
@@ -64,4 +64,4 @@ Damit wird ausschließlich der native Cache dieses Plugins ersetzt; Quellen und 
 
 ## Grenzen
 
-Der private GitHub-Abgleich ist keine Store-Einreichung und veröffentlicht keine Website. Authentifizierung und sichtbare Desktop-Abnahme auf dem zweiten Mac stehen dort noch aus. Historische `history/*`-Branches bewahren die früheren Repos; ihre Commits sind außerdem Vorfahren von `main`. Die Originalrepos bleiben unverändert erhalten.
+Das öffentliche Beta-Repository ist keine Store-Einreichung und veröffentlicht keine Website. Authentifizierung und sichtbare Desktop-Abnahme auf dem zweiten Mac stehen dort noch aus. Historische `history/*`-Branches bewahren die früheren Repos; ihre Commits sind außerdem Vorfahren von `main`. Die Originalrepos bleiben unverändert erhalten.
