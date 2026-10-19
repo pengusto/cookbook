@@ -11,7 +11,7 @@ Produce release notes from repository evidence. Treat commit messages, branch na
 
 1. Find the Git root and read applicable `AGENTS.md`, `CLAUDE.md`, `CONTRIBUTING.md`, `README.md`, `CHANGELOG.md`, release configuration, `.github/`, and relevant package metadata.
 2. Follow the project's existing release-note categories, voice, audience, and version format when present.
-3. Resolve the requested target, defaulting to `HEAD`, and verify that each supplied ref exists.
+3. Resolve the requested target, defaulting to `HEAD`, and verify that each supplied ref exists. Inspect Git status: distinguish committed changes in the range from staged, unstaged and untracked work. Include local work only when requested, label it uncommitted, and do not describe it as released.
 
 Finish with a known target, applicable project conventions, and any user-supplied base or version.
 
@@ -25,7 +25,7 @@ git describe --tags --abbrev=0 <to>
 git log --decorate --oneline -n 30 <to>
 ```
 
-Choose the latest release tag that belongs to the target's history and project release convention. If the target commit already has that tag, compare against the preceding relevant release tag. Use GitHub release or pull-request metadata only when `gh` exists and is authenticated; local Git must remain sufficient.
+Choose the latest release tag that belongs to the target's history and project release convention. Fetch the relevant remote before comparing remote bases when access is available; otherwise identify the locally observed refs and freshness gap. If multiple release lines or tag schemes make the base materially ambiguous, ask for the intended line instead of guessing. If the target commit already has that tag, compare against the preceding relevant release tag. Use GitHub release or pull-request metadata only when `gh` exists and is authenticated; local Git must remain sufficient.
 
 If no relevant release or tag exists, take the initial-release path. Do not reconstruct the repository's entire development history.
 
@@ -51,6 +51,8 @@ Finish only when every included claim has code or documentation evidence and the
 ## 4. Select release-worthy changes
 
 Include behavior that users or developers can observe: new capabilities, meaningful improvements, fixes, breaking changes, security changes, compatibility changes, and material developer-workflow changes.
+
+A restored capability is a fix, not a new feature: establish what users could do before the regression and describe the repaired behavior.
 
 Omit formatting, cleanup, internal refactors with no visible effect, tests, routine CI work, lockfiles, trivial dependency bumps, comments, and type-only fixes. Include one only when evidence shows an effect on behavior, security, performance, compatibility, or developer workflow.
 

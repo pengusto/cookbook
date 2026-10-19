@@ -7,6 +7,8 @@ description: Reconstruct the original goal from the first substantive chat messa
 
 Give the user their bearings in the current conversation. Match their language; keep the meme in the name and the status readable.
 
+For ambiguous scope or missing history, see [examples](references/examples.md).
+
 ## Reconstruct the goal
 
 - Start with the earliest substantive user requests, excluding setup messages, pasted instructions, and metadata. Identify the intended outcome and explicit constraints.
@@ -31,6 +33,8 @@ Mark a side quest with 🌀 alongside its status; a detour may itself be done or
 Separate local implementation, checks, commit/push, deployment, and live verification when they affect whether the requested outcome is complete. Do not infer deployment from a passing test or mark the whole task done because a file exists. Attribute prior reports as reports when no direct result is visible; do not imply you rechecked them now.
 
 ## Output
+
+Default to a short recap: original goal, current state, meaningful open work. Expand the chronology only when requested or needed to explain a disputed scope change.
 
 Lead with two short statements: **Originally:** the initial outcome; **Now:** the current activity and any agreed scope change.
 

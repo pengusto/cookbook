@@ -30,12 +30,14 @@ The output is a concise `GO`, `GO WITH REVIEW`, or `NO-GO`. Use `--json` only wh
 ## Workflow
 
 1. Inspect the current tree and reachable Git history, including branches, tags, deleted files, and historical blobs. Reuse safe local scan state when coverage is trusted; cache corruption, history rewrites, changed detection/scanner configuration, and uncertain coverage require a full audit.
-2. Run Gitleaks and TruffleHog when installed. They run redacted and offline; missing tools are reported, never installed globally.
+2. Run Gitleaks and TruffleHog when installed. They run redacted and offline; missing tools are reported, never installed globally. Unreadable current files are counted as incomplete fallback coverage and prevent an unqualified GO; binary, capped-text and scanner coverage remain distinct.
 3. Treat scanner findings and non-placeholder credential-shaped values as blockers. Treat PII, internal URLs, local paths, and unverified/noisy results as review items unless context makes the risk clear.
 4. Deduplicate matching scanner hits. Explain current versus historical exposure, file, short commit, confidence, detector coverage, and the safest next action without revealing the value.
 5. If a real credential was ever committed or shared: revoke/rotate it first, verify the replacement is absent, then consider history cleanup. Rewriting history does not make the old credential trustworthy.
 
 Gitleaks can receive a native `git --log-opts` commit delta. TruffleHog supports `--since-commit`/`--branch` for one changed local branch; use a conservative full Git scan for mixed refs, new tags, detached history, or ambiguous coverage. Both scanners still inspect the current filesystem, and the cache stores only validated redacted metadata—not scanner payloads or credential values.
+
+The unreadable-file field is a count, not a filename inventory: do not claim `--json` identifies the affected path. Investigate file access separately without printing contents. Do not infer why a read failed. A GO is a scan verdict within stated coverage, never publication permission or a guarantee of safety.
 
 ## Safety boundary
 

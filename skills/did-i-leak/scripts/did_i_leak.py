@@ -409,9 +409,10 @@ def heuristic_findings(
     return findings
 
 
-def scan_current_tree(repo: Path, current: set[str]) -> tuple[list[Finding], int]:
+def scan_current_tree(repo: Path, current: set[str]) -> tuple[list[Finding], int, int]:
     findings: list[Finding] = []
     truncated = 0
+    unreadable = 0
     for name in sorted(current):
         path = repo / name
         try:
@@ -419,13 +420,14 @@ def scan_current_tree(repo: Path, current: set[str]) -> tuple[list[Finding], int
                 continue
             data = path.read_bytes()
         except (OSError, ValueError):
+            unreadable += 1
             continue
         text, was_truncated = text_from_bytes(data)
         if text is None:
             continue
         truncated += int(was_truncated)
         findings.extend(heuristic_findings(text, name, current=current))
-    return findings, truncated
+    return findings, truncated, unreadable
 
 
 def historical_objects(repo: Path, revisions: Iterable[str] | None = None) -> list[tuple[str, str]]:
@@ -889,7 +891,7 @@ def scan_repo(
     cached, cache_note = load_cache(root)
     plan = scan_plan(root, refs, cached, cache_note, scanner_state, full_requested=full)
 
-    current_findings, current_truncated = scan_current_tree(root, current)
+    current_findings, current_truncated, current_unreadable = scan_current_tree(root, current)
     if plan["full"]:
         objects = historical_objects(root)
         historical_findings, history_truncated = scan_historical_objects(root, current, objects)
@@ -930,7 +932,7 @@ def scan_repo(
     incomplete = any(item["status"] != "completed" for item in scanners.values())
     if blockers:
         verdict = "NO-GO"
-    elif reviews or incomplete or current_truncated or history_truncated:
+    elif reviews or incomplete or current_truncated or history_truncated or current_unreadable:
         verdict = "GO WITH REVIEW"
     else:
         verdict = "GO"
@@ -975,6 +977,7 @@ def scan_repo(
         "git_history": "reachable commits, branches, tags, and historical blobs",
         "counts": counts,
         "heuristic_truncated_current_files": current_truncated,
+        "heuristic_unreadable_current_files": current_unreadable,
         "heuristic_truncated_historical_blobs": history_truncated,
         "scanners": scanners,
     }
@@ -1054,6 +1057,8 @@ def render(result: dict[str, Any]) -> str:
         f"{counts['branches']} branches · {counts['tags']} tags"
     )
     lines.append("* Current tree: tracked, non-ignored, and ignored files outside dependency/build directories")
+    if coverage.get("heuristic_unreadable_current_files"):
+        lines.append(f"* Incomplete fallback coverage: {coverage['heuristic_unreadable_current_files']} current file(s) could not be read.")
     for name, scanner in result["coverage"]["scanners"].items():
         suffix = f" ({scanner['note']})" if scanner.get("note") else ""
         lines.append(f"* {name}: {scanner['status']}{suffix}")

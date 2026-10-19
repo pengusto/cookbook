@@ -1,6 +1,6 @@
 # Cookbook by Pengusto maintenance
 
-- This repository is the single maintained source. Edit workflow content only in `skills/<stable-id>/`; original repositories are retained archives, not live dependencies.
+- This repository is the single maintained source. Edit workflow content only in `skills/<stable-id>/`; imported histories preserve provenance; former remote repositories are not live dependencies.
 - `catalog.json` holds one runtime allowlist and hashes per source, and plain/kitchen display names and invocation IDs. Regenerate hashes after reviewed source changes.
 - Render the two naming variants from the same source. Never maintain separate workflow bodies or expose both naming worlds within one installed variant.
 - Both variants use the same plugin identity and marketplace name; install one variant at a time. Never silently overwrite existing host installations.

@@ -7,6 +7,14 @@ description: Review an app or website for evidence-backed privacy, consumer-righ
 
 Find the gap between what a product does, what it promises, and what its applicable obligations require. The name is playful; the output is a technical product review, not a legal certificate or a prediction about litigation.
 
+## Choose review depth
+
+Follow the requested scope. For a targeted review, trace the named flow and its
+relevant obligations; do not expand into a complete launch audit. For a broad
+launch review, use the conditional review map. If scope is unclear, start with
+the concrete reported flow and state the boundary; ask only if the distinction
+materially affects the result. A targeted review does not certify the product.
+
 ## Establish the recipe
 
 Read the project instructions and trace its actual stack, deployment, data flows, checkout, and public claims before proposing fixes. Establish the operator and target markets, B2B/B2C model, payments/subscriptions, personal-data processing, and whether children are an intended audience. Use project evidence for answers; ask only for missing facts that materially change the review. Separate operator location from user markets. German UI or a `.de` domain alone does not establish jurisdiction.
@@ -22,6 +30,8 @@ Follow SDKs, cookies, local storage, pixels, embedded content, browser/device pe
 Review checkout, renewal, cancellation, withdrawal/refunds, pricing, reviews, product claims, accessibility, operator details, marketing, and asset provenance in proportion to the product. Classify each relevant area as applicable, not applicable with a reason, or applicability unresolved. Do not add a banner, terms page, age gate, or consent checkbox merely because a generic checklist lists it. Consent is not the only data-processing basis; a contact form does not automatically need a mandatory consent checkbox.
 
 For legal requirements, verify current primary sources for the jurisdiction and date, including effective dates, exceptions, and transition rules. Link the rule supporting each legal conclusion. If research fails, mark the conclusion unverified and continue independent technical work; do not guess. Distinguish statutory obligations, platform requirements, and optional good practice.
+
+A reported Tab skip alone does not establish that submission is impossible or prove its cause: the control could be intentionally disabled or another keyboard path could exist. Mark the report as needing reproduction, and propose a conditional fix only after tracing semantics and state. Do not claim personal verification of supplied observations.
 
 ## Plate the findings
 

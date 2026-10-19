@@ -1,6 +1,6 @@
 ---
 name: start-it-right
-description: Turn a free-form product idea or existing project into a recommended, checkbox-driven implementation start. Use when beginning a project, feature, app, service, extension, CLI, game, or agent skill, or when the next project step is unclear.
+description: Turn a free-form product idea or existing project into a focused implementation start. Use when beginning a project, feature, app, service, extension, CLI, game, or agent skill, or when the next project step is unclear.
 metadata:
   short-description: Turn ideas into an actionable project start
 ---
@@ -10,19 +10,15 @@ metadata:
 Turn intent into the smallest useful next action while keeping the user in the
 flow.
 
-## Core rule
+## Scope
 
-Every turn ends with a recommendation pass:
+Choose the smallest useful start. A clear small request can go directly to a
+local implementation and one relevant check; it does not need modules, a ticket
+tree, or a decision workshop. Recommend additional work only when it resolves a
+real uncertainty. If the requested slice is complete, stop without inventing a
+next task. These instructions apply to this invocation, not every later turn.
 
-- recommend one concrete next step;
-- recommend only the modules or skills that fit the current project;
-- mark open human decisions and external gates;
-- present recommendations as a short, preselected checkbox list when the host
-  supports it, otherwise as compact Markdown;
-- let the user reject a recommendation without making them restate the idea.
-
-If no specialist module is needed, say why and recommend the smallest useful
-check or the next open, unblocked ticket. Do not stop at “no action needed”.
+Do not ask for hosting, accounts or publication decisions when the requested slice is local brainstorming. Defer choices that do not block that slice.
 
 ## Modes
 
@@ -71,15 +67,15 @@ Use these defaults:
 - recommend i18n when languages, regions, locale-sensitive data, or a future
   international audience make it useful;
 - recommend a license decision before public source distribution;
-- recommend Stop Slop for visible human-facing prose and realistic content
-  fixtures, not for code or structured data;
+- review visible prose and realistic content fixtures; suggest an available
+  specialist only when it materially helps;
 - recommend browser, device, runtime, or store checks when the product claims
   behavior that local unit tests cannot prove.
 
 ### 3. Ask once, in a batch
 
-Present the recommended modules as selected checkboxes grouped as required,
-recommended, and optional. Ask only decisions that materially change scope,
+For a material choice, give a concise recommendation and alternatives. Use
+checkboxes only when several independent selections genuinely help. Ask only decisions that materially change scope,
 security, ownership, cost, privacy, publication, or compatibility. Keep
 straightforward work moving with safe assumptions.
 
@@ -104,7 +100,7 @@ creating project files or tickets. Use existing project patterns first.
 Do not overwrite existing README, `AGENTS.md`, design guidance, tickets,
 licenses, or changelog entries without inspecting and preserving their intent.
 Do not install plugins, publish, push, deploy, contact people, or incur cost
-without explicit action-time approval.
+without explicit authorization. Reuse authorization already given for that action.
 
 ### 5. Verify and hand off
 
@@ -129,6 +125,6 @@ Keep the response compact and concrete:
 3. one batched human decision, if needed;
 4. selected artifacts or implementation result;
 5. checks and remaining gates;
-6. exactly one next recommended action.
+6. a next action only if useful work remains.
 
 For three representative flows, read [references/examples.md](references/examples.md).

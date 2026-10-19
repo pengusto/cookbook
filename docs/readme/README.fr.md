@@ -21,7 +21,7 @@ Huit processus pour agents issus d’une source maintenue. Choisissez les **ques
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
 
-> 0.3.0: Where Were We? / What Was I Cooking? is included in both naming variants under MIT. Package checks cover all eight skills; native host-loading and behavioral acceptance of the new skill remain open.
+> 0.3.1 local revision: all eight workflows refined; incomplete scanner reads are reported. See [verification](../skill-review-0.3.1.md) for package, behavioral and host-test boundaries.
 
 ## Construire et vérifier
 

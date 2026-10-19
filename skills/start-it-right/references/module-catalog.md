@@ -7,7 +7,7 @@ Use this as a routing table, not as a checklist to apply everywhere.
 | New or unclear idea | Product brief and smallest useful flow | README or project brief |
 | Unproven demand or crowded space | Research and alternatives check | research note, validation ticket |
 | Several plausible product or architecture paths | Let Him Grill or inline decision gate | decision record, selected path |
-| Confirmed work needs execution | Versioned tickets | `docs/tickets/<slug>/ticket.md` |
+| Durable multi-step work needs tracking | Existing tracker or versioned tickets | `docs/tickets/<slug>/ticket.md` |
 | UI direction is still open | UI evaluation ticket | screenshots, decisions, prototype ticket |
 | Multiple languages, regions, locale data, or RTL | i18n | locale contract and translation plan |
 | Public source distribution | License decision and pre-publication scan | license, README/legal notes |
@@ -25,7 +25,7 @@ Use this as a routing table, not as a checklist to apply everywhere.
 
 ## Always recommended at the right stage
 
-Every response recommends the next executable action. A tiny project may only
+Recommend a next executable action when useful work remains; accept a completed slice. A tiny project may only
 get “write the product promise and test one path”. A public extension may get a
 larger batch covering permissions, browser smoke, packaging, license, and store
 copy.

@@ -3,25 +3,25 @@
     "id": "start-it-right",
     "title": "How Do I Start?",
     "phase": "Start",
-    "summary": "Aus einer Idee wird ein kleiner, prüfbarer Projektstart.",
+    "summary": "Klein anfangen: eine Idee in den nächsten prüfbaren Projektschritt übersetzen.",
     "when": "Eine Idee ist klar genug zum Besprechen, aber der erste umsetzbare Schritt fehlt.",
     "ingredients": "Produktidee oder Repository; Zielgruppe, Grenzen, vorhandene Konventionen. Keine Kontozugriffe nötig.",
-    "steps": "Projekt einordnen; passende Module begründen; materielle Entscheidungen bündeln; bestätigten Abschnitt umsetzen.",
+    "steps": "Projekt einordnen; nur nötige Entscheidungen klären; kleinen autorisierten Abschnitt umsetzen, ohne Ticketpflicht.",
     "verify": "Der empfohlene nächste Schritt hat ein beobachtbares Ergebnis; offene Entscheidungen sind sichtbar.",
     "result": "Kompakter Projektstart mit Empfehlung und, wenn bestätigt, passenden Artefakten.",
-    "limits": "Module sind Vorschläge, keine Pflichtliste. Init wartet auf bestätigte Auswahl; zusätzliche Skills sind optional.",
+    "limits": "Zusatzmodule und Tickets sind optional. Brainstorming erlaubt keine Umsetzung; bestehende Freigaben bleiben gültig.",
     "prompt": "${{ID}} brainstorm Eine kleine Website für meine drei Projekte.",
     "status": "source",
     "license": "MIT",
     "revision": null,
     "repository": null,
     "files": {
-      "SKILL.md": "b62f3c4a37e7fad192a2378bfeddd38faa59a4ca8379e5fa139d8c2f0b9088e4",
       "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+      "SKILL.md": "c84a97d172f4a3e28b2f6c4d0eb67ab18b9df254155590e61b3fc04ec85af885",
       "agents/openai.yaml": "e2132fb5e90309fc5d1884e41a234875bb610f63827fbafa6372847ce80ff586",
-      "references/module-catalog.md": "fd3314c85bf031bdf0ce2c889a22807a2124909efa1c5ca01db051fc4707ad6c",
       "references/artifact-contract.md": "32e58c231bddc210f48008f31337d2540bc90450badac8c9929e22a3761cf90e",
-      "references/examples.md": "ccc828fb2c5f6d9a2aa678d18613d821ead1e97e8e280c21a4cab9f5bcf2e3ea"
+      "references/examples.md": "ccc828fb2c5f6d9a2aa678d18613d821ead1e97e8e280c21a4cab9f5bcf2e3ea",
+      "references/module-catalog.md": "471f4049414f9f440a6dfbf197b3e57210976d86fe35f4abee0e3ea6fef9c324"
     },
     "cooking_title": "Prep the Kitchen",
     "install_ids": {
@@ -33,10 +33,10 @@
     "id": "are-we-cooking",
     "title": "Am I Making Progress?",
     "phase": "Unterwegs",
-    "summary": "Prüfen, ob die aktuelle Arbeit dem vereinbarten Ziel dient.",
+    "summary": "Kurz prüfen, ob die aktuelle Vorgehensweise dem Ziel dient.",
     "when": "Viele Versuche, unklarer Fortschritt oder eine vermutete Nebenbaustelle.",
     "ingredients": "Aktueller Chat, vereinbartes Ziel, relevante Ergebnisse und Prüfungen.",
-    "steps": "Ziel rekonstruieren; Ergebnisse statt Aktivität vergleichen; kleinsten nützlichen nächsten Schritt empfehlen.",
+    "steps": "Bekanntes Ziel, belegten Fortschritt und Hindernis abgleichen; nächste sinnvolle Entscheidung empfehlen.",
     "verify": "Cooking, Stalled, Side quest oder Unclear ist durch sichtbare Evidenz begründet.",
     "result": "Kurze Kurskorrektur mit nächstem Schritt.",
     "limits": "Diagnostik allein autorisiert keine neuen Änderungen. Historische Musteranalyse ist optional und kein erforderlicher Zusatz-Skill.",
@@ -46,8 +46,8 @@
     "revision": null,
     "repository": null,
     "files": {
-      "SKILL.md": "f4424c60c3f5ae61470e7ba530ac06083a60996e9a9e97bf5a16ebc67e996d8f",
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "e7f79b0290ff7e3b280ac5e75dc373d2b89b8a4d9811c3c9422b8b14d58162bb",
       "agents/openai.yaml": "4dc21bf49cc77f133981fc3b0e99a56372033d5b0f31f058605e7b9889d16f16"
     },
     "cooking_title": "Are We Cooking?",
@@ -60,10 +60,10 @@
     "id": "what-was-i-cooking",
     "title": "Where Were We?",
     "phase": "Wiedereinstieg",
-    "summary": "Das ursprüngliche Chat-Ziel und den aktuellen Arbeitsstand rekonstruieren.",
+    "summary": "Nach einer Pause kurz Ziel, Stand und offene Arbeit wiederfinden.",
     "when": "Nach einer Pause oder einem langen Chat ist unklar, was vereinbart, erledigt oder offen ist.",
     "ingredients": "Verfügbarer Verlauf dieses Chats, spätere Zielentscheidungen und belegte Ergebnisse.",
-    "steps": "Ursprungsziel und spätere Entscheidungen nachvollziehen; aktuellen Stand, offene Arbeit und Nebenwege abgleichen.",
+    "steps": "Ziel und spätere Entscheidungen abgleichen; kurz zusammenfassen, bei fehlendem Verlauf die Lücke benennen.",
     "verify": "Zieländerungen sind von Vorschlägen getrennt; fehlender Verlauf und unbelegte Ergebnisse bleiben sichtbar.",
     "result": "Kompakter Rückblick mit aktuellem Stand und einem sinnvollen nächsten Schritt.",
     "limits": "Nur Zusammenfassung: keine Dateien, Aufgabenstatus oder Automationen ändern und keine Restarbeit automatisch fortsetzen.",
@@ -74,8 +74,9 @@
     "repository": null,
     "files": {
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "5a8ee878e037130f82ce3a33cc9f1520067952eee63781d79c14950470cbd877",
-      "agents/openai.yaml": "58f193486f02c6a6791c62f184044d6c1b27a6c989415b00f2e709cf7c90e2ca"
+      "SKILL.md": "de17adb3ac6d9b55d86b6d8f83d6c38d1481b7a0fab41d7f65a2d2bcb6997eec",
+      "agents/openai.yaml": "58f193486f02c6a6791c62f184044d6c1b27a6c989415b00f2e709cf7c90e2ca",
+      "references/examples.md": "a1b09f7ce03ed323e997bd4855bc93c52185b6db7e1d9fbf73e5872e5a14d572"
     },
     "cooking_title": "What Was I Cooking?",
     "install_ids": {
@@ -87,10 +88,10 @@
     "id": "did-i-leak",
     "title": "Did I Leak?",
     "phase": "Vor dem Teilen",
-    "summary": "Arbeitsbaum und Git-Geschichte auf sensible Inhalte prüfen.",
+    "summary": "Arbeitsbaum und Git-Geschichte auf sensible Inhalte und Prüflücken untersuchen.",
     "when": "Bevor ein Repository geteilt oder später öffentlich gemacht werden soll.",
     "ingredients": "Git-Repository, Python 3, Git; Gitleaks und TruffleHog optional mit klarer Abdeckung.",
-    "steps": "Bundled CLI mit explizitem Repository aufrufen; bei Vollprüfung --full; redigierte Findings bewerten.",
+    "steps": "Redigierten Scan ausführen; Findings sowie fehlende Scanner und unlesbare Dateien bewerten.",
     "verify": "Aktueller Baum und erreichbare Geschichte sind abgedeckt; fehlende Scanner und Restprüfungen dokumentiert.",
     "result": "GO, GO WITH REVIEW oder NO-GO mit konkreten Gründen.",
     "limits": "Kein Beweis für vollständige Sicherheit. Keine Rotation, History-Rewrites oder Veröffentlichung ohne Freigabe.",
@@ -100,11 +101,11 @@
     "revision": null,
     "repository": null,
     "files": {
-      "SKILL.md": "b3b0f384aedd6d18f5c13a665a6a037e40320aa097fa0b3cf55797785ee4efb0",
       "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
-      "scripts/did_i_leak.py": "1ad2896a4c173ce1b72de9acb47548d72b295066c7d1dcc0046e4bad7075dd0b",
+      "SKILL.md": "1b41fbd55edd12a77dd8ebd19e2f0e9b151ff05d7a3cf8f0b7ba7f62d98b4b53",
+      "agents/openai.yaml": "368658d03a1c2b28417b868ebd980f8a307a99cbb1bfa51d08e99a4bc622920e",
       "bin/did-i-leak": "fd4d6597e8f760047c34af3c6779948692b1d53a78ba5109463528aff807c70a",
-      "agents/openai.yaml": "368658d03a1c2b28417b868ebd980f8a307a99cbb1bfa51d08e99a4bc622920e"
+      "scripts/did_i_leak.py": "7ae7758cf521b0c1536bd1241df952fa9e8bd36f65a6b7afb16521be370f2c65"
     },
     "cooking_title": "Keep the Recipe Secret",
     "install_ids": {
@@ -116,10 +117,10 @@
     "id": "will-they-sue-me",
     "title": "Will They Sue Me?",
     "phase": "Produktreview",
-    "summary": "Produktverhalten, Versprechen und anwendbare Pflichten abgleichen.",
+    "summary": "Einen konkreten Produktablauf oder den Launch gezielt auf Review-Lücken prüfen.",
     "when": "Eine App oder Website soll vor Launch oder nach Änderungen technisch geprüft werden.",
     "ingredients": "Repository, reale Datenflüsse, Betreiber und Märkte; Browser/Testdaten; aktuelle Primärquellen für rechtliche Aussagen.",
-    "steps": "Anwendbarkeit klären; relevante Flows verfolgen; bedingte Review-Map verwenden; belegte Findings mit kleinsten Fixes formulieren.",
+    "steps": "Gewünschte Prüftiefe festlegen; relevante Flows und Pflichten belegen; kleinste Fixes mit Abnahme formulieren.",
     "verify": "Jedes Finding hat Evidenz, Basis, Prüfdatum und Abnahme; unbekannte Anwendbarkeit bleibt offen.",
     "result": "Priorisierte Review-Tabelle und konkrete Restfragen.",
     "limits": "Keine rechtssicher- oder lawsuit-proof-Zusage; keine echten Zahlungen, Löschungen oder Außenaktionen zum Testen.",
@@ -129,11 +130,11 @@
     "revision": null,
     "repository": null,
     "files": {
-      "SKILL.md": "b021610fd8670d9d9a38e69e6a011a5f86a7ddbe1fc200b46f8fa2a5728e2356",
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "87b277f81a7d10ac2394f457b7dabefa6f88ea24f96337f454d9a361a345a604",
       "agents/openai.yaml": "c1e1c54cbe2992cf2f903fdf100f7f3991b94eed58addae04f0caab68a0cfc81",
-      "references/review-map.md": "7e862f5bc480adc420df4b0a022c02311b45f8cf2f2cd4eab22ee980d1dcdd14",
-      "references/germany-eu.md": "4f10ee43aa9dbc191179538a344e2340467865104adbc04a12b7e93e21976a0d"
+      "references/germany-eu.md": "4f10ee43aa9dbc191179538a344e2340467865104adbc04a12b7e93e21976a0d",
+      "references/review-map.md": "7e862f5bc480adc420df4b0a022c02311b45f8cf2f2cd4eab22ee980d1dcdd14"
     },
     "cooking_title": "Can I Serve This?",
     "install_ids": {
@@ -145,10 +146,10 @@
     "id": "let-them-see-it",
     "title": "Am I Ready to Share?",
     "phase": "Release-Vorbereitung",
-    "summary": "Ein Repository verständlich und überprüfbar für Außenstehende vorbereiten.",
+    "summary": "Ein Repository mit passender Dokumentation und überprüfbarer Installation teilbar machen.",
     "when": "Das Produkt funktioniert lokal, aber Dokumentation, Installation oder Release-Grenzen fehlen.",
     "ingredients": "Repository, Git-Status, Installationsfluss, bestehende Dokumentation und Lizenzen.",
-    "steps": "Erst konkrete Evaluation; dann den bereits autorisierten oder bestätigten Umfang umsetzen; Installation und Links prüfen.",
+    "steps": "Zuerst konkrete Evaluation; nur passende freigegebene Änderungen umsetzen; keine pauschale Sprach- oder Dateipflicht.",
     "verify": "Quickstart und Paket passen zusammen; lokal, committed, pushed und deployed bleiben getrennt.",
     "result": "Prüfbares Repository mit offen benannten Veröffentlichungsgates.",
     "limits": "Vorbereitung erlaubt keine Veröffentlichung. Neue Lizenz und Umfang klären; keine pauschale Dateicheckliste.",
@@ -158,9 +159,10 @@
     "revision": null,
     "repository": null,
     "files": {
-      "SKILL.md": "5360d46c0b1a3ac5cef5bd12c692262e63f1b89da5652ad3ce9e1b48090eae50",
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "agents/openai.yaml": "c5a544227bc017b57f85b0f0692a9a725fd81699ad43ae839c16acb0c78f0020"
+      "SKILL.md": "73d8f7fab54691b290fd1ddb8dd64edb1505f98b0fd2f2570ed3893dd30c15fd",
+      "agents/openai.yaml": "c5a544227bc017b57f85b0f0692a9a725fd81699ad43ae839c16acb0c78f0020",
+      "references/github-pages.md": "26a71d05cf69d44f432012d4c506f0eb69a021a6b37a891718447310b7721e92"
     },
     "cooking_title": "Ready to Serve",
     "install_ids": {
@@ -172,10 +174,10 @@
     "id": "what-did-we-change",
     "title": "What Did We Change?",
     "phase": "Übergabe",
-    "summary": "Release-Notizen aus belegten Änderungen statt Commit-Rhetorik schreiben.",
+    "summary": "Änderungsnotizen mit klarer Trennung zwischen Release, Fix und lokaler Arbeit schreiben.",
     "when": "Eine Version oder ein erster Release braucht verständliche Änderungsnotizen.",
     "ingredients": "Git-Repository, Zielref, geeigneter Basisref oder erster Release; GitHub-Zugriff optional.",
-    "steps": "Vergleich begründen; Diffs und Verhalten prüfen; nutzerrelevante Änderungen auswählen; kompakte Notizen schreiben.",
+    "steps": "Ziel und Basis begründen; Mehrdeutigkeit klären; belegte Änderungen und reparierte Regressionen korrekt beschreiben.",
     "verify": "Jede Aussage ist durch die gewählten Änderungen belegbar; Versionen und Prüfstatus sind korrekt.",
     "result": "Release-Notizen als Text, ohne Veröffentlichung.",
     "limits": "Keine Tags, Releases oder Dateiänderungen durch bloßen Aufruf. Ohne belastbare Evidenz Aussage weglassen.",
@@ -185,8 +187,8 @@
     "revision": null,
     "repository": null,
     "files": {
-      "SKILL.md": "bc88a403aa9392322b387174d12a77c941c70c60950a1ee70e0539d172513cbb",
       "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+      "SKILL.md": "088ad8acb2f04de90355c6b0bbf402782a432ac867c7516c2ef1f7971454bbaf",
       "agents/openai.yaml": "f1626935626ed16e2461d5895afbf4fefcac7f55e6f36bba72c828ee5923aaf6"
     },
     "cooking_title": "What’s New on the Menu?",
@@ -199,10 +201,10 @@
     "id": "kill-the-todos",
     "title": "Can We Finish?",
     "phase": "Abschluss",
-    "summary": "Den Chat geordnet abschließen oder mit klarer Übergabe pausieren.",
+    "summary": "Den Chat kurz und belegt abschließen oder bewusst mit Übergabe pausieren.",
     "when": "Der aktuelle Chat soll auslaufen, beendet oder später fortgesetzt werden.",
     "ingredients": "Vereinbartes Ziel, vorhandene Ergebnisse, offene Arbeit und relevante Prüfungen.",
-    "steps": "Stand rekonstruieren; kleinen Abschluss-Guide empfehlen; autorisierten Rest prüfen oder bewusste Pause vorbereiten.",
+    "steps": "Vorhandene Prüfnachweise nutzen; autorisierten Rest abschließen; fertig, offen und nötigen Wiedereinstieg knapp nennen.",
     "verify": "Erledigtes ist belegt; offene, vertagte und blockierte Punkte bleiben sichtbar.",
     "result": "Geprüfter Abschluss oder konkrete Übergabe mit Wiedereinstieg.",
     "limits": "Guide-only und Pause ändern keine Dateien oder Aufgabenstatus. Kein blindes TODO-Abhaken, Veröffentlichen oder automatisches Archivieren.",
@@ -212,8 +214,8 @@
     "revision": null,
     "repository": null,
     "files": {
-      "SKILL.md": "043c9d1e954039c7c82553c199cfdd50fbacb9bb6074741295478a8026816577",
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "c0a654a06a03c24c6f2783062708bce689085e791074dd9882b9c4ee191a7e3d",
       "agents/openai.yaml": "ffd32d863dc091b3f7c2e6e0fb5e3c0f90350d6e0606be90d75270990d181623"
     },
     "cooking_title": "Close the Kitchen",

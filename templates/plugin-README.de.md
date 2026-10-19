@@ -1,6 +1,6 @@
 # Cookbook by Pengusto
 
-Review 0.3.0 · {{VARIANT}}
+Review 0.3.1 · {{VARIANT}}
 
 Eight workflows, one shared source. Choose either Plain questions or Kitchen names. Install one variant only. Both use plugin ID `cookbook-by-pengusto` and marketplace `cookbook-by-pengusto-local`; switching requires uninstalling the previous variant before registering the other marketplace. Preserve previous packages before switching. Keep hidden manifest folders when extracting.
 

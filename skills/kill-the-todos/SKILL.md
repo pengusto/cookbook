@@ -9,7 +9,7 @@ Bring the current chat to a deliberate stopping point. Use `${{ID}}` to invoke t
 
 ## Establish the finish line
 
-Reconstruct the agreed outcome, accepted decisions and remaining commitments from the available conversation and actual artifacts. Resolve factual uncertainty with relevant tools. Ask for missing context only when it materially affects scope; do not invent prior agreements.
+Reconstruct the agreed outcome, accepted decisions and remaining commitments from the available conversation and actual artifacts. Resolve material factual uncertainty with relevant tools. Reuse observed results from this chat when the relevant state has not changed; do not rerun checks just to produce a closing message. Ask for missing context only when it materially affects scope; do not invent prior agreements.
 
 Separate work that is verified complete, actionable now, needs a decision or human action, or has been deferred or cancelled. Do not revive rejected ideas or promote optional suggestions into commitments. Stay within this chat; do not sweep unrelated projects or create tasks, goals or automations unless requested.
 
@@ -31,6 +31,6 @@ Dropping a TODO is not completing it. Change persisted task status only when req
 
 Compare the outcome with the finish line and run checks relevant to the selected slice. Distinguish local files, commits, pushes and deployments; attempted checks and confirmed results; complete, deferred and blocked work. State important coverage limits.
 
-End with a compact account of what is complete, verification evidence, what remains and one concrete re-entry action if pausing. Include paths, refs or active job identifiers only when useful for resuming. Do not add fresh improvement ideas after reaching the stopping point.
+Default to three short points: complete with evidence, remaining work, and a re-entry action only if pausing unfinished work. A fully completed small request needs no handoff document or new task. Include paths, refs or active job identifiers only when useful for resuming. Do not add fresh improvement ideas after reaching the stopping point.
 
 Preparing to close is not a request to archive or end a voice call. Use a supported host action only when the user explicitly requests that action. If unavailable, explain the manual step without claiming it happened. Never mark an unfinished objective complete to make the chat look closed.

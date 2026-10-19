@@ -39,7 +39,7 @@
     "CHECKSUMS": "Downloads mit SHA-256 prüfen",
     "ABOUT_TITLE": "Gute Werkzeuge brauchen klare Grenzen.",
     "ABOUT_TEXT": "Von Pengusto für die Arbeit mit Agents: acht gezielte Workflows aus einer gemeinsamen Quelle. Die Skills geben Orientierung, machen Prüfungen nachvollziehbar und lassen Entscheidungen bei dir. Das abgebildete Kochbuch ist ein Markenmotiv, kein physisches Produkt.",
-    "STATUS_TEXT": "Öffentliche Source-Beta, Website lokal vorbereitet. Paketprüfungen für alle acht Skills bestehen. Das Laden und Verhalten des neuen Wiedereinstiegs-Skills in Codex und Claude ist noch offen; ebenso die vollständige Desktop-Abnahme und Store-Freigaben. Kein Sicherheits- oder Rechtsversprechen.",
+    "STATUS_TEXT": "Öffentliche Source-Beta, Website lokal vorbereitet. Version 0.3.1 ist eine lokale Überarbeitung im Test. Paketprüfungen, Host-Laden und Verhaltenstests werden getrennt ausgewiesen; Store-Freigaben bleiben offen. Kein Sicherheits- oder Rechtsversprechen.",
     "PRIVACY": "Ohne Tracking, externe Fonts oder eingebettete Dienste. Cookbook und Skills mit MIT-Lizenzen.",
     "NOTES": "Hinweise & Datenschutz",
     "DETAILS": "Ablauf und Grenzen",
@@ -94,7 +94,7 @@
     "CHECKSUMS": "Verify downloads with SHA-256",
     "ABOUT_TITLE": "Good tools need clear boundaries.",
     "ABOUT_TEXT": "Built by Pengusto for working with agents: eight focused workflows maintained in one shared source. The skills guide your work, make checks traceable and keep decisions in your hands. The pictured cookbook is a brand illustration, not a physical product.",
-    "STATUS_TEXT": "Public-source Beta; website prepared locally. Package checks pass for all eight skills. Native loading and behavioral acceptance of the new conversation recap skill remain open, along with complete desktop acceptance and store approvals. No security or legal guarantees.",
+    "STATUS_TEXT": "Public-source Beta; website prepared locally. Version 0.3.1 is a local revision under test. Package checks, host loading and behavioral checks are reported separately; store approvals remain open. No security or legal guarantees.",
     "PRIVACY": "No tracking, external fonts or embedded services. Cookbook and skills carry MIT licenses.",
     "NOTES": "Notes & privacy",
     "DETAILS": "Workflow and limits",
@@ -108,73 +108,73 @@
     "limits": "Limits",
     "skills": {
       "start-it-right": {
-        "summary": "Turn an idea into a small, verifiable project start.",
+        "summary": "Start small: turn an idea into the next verifiable project step.",
         "when": "You have an idea but need a concrete first step.",
         "ingredients": "A product idea or repository, audience, constraints and existing conventions. No account access required.",
-        "steps": "Understand the project, recommend suitable modules, group important decisions and implement the confirmed scope.",
+        "steps": "Understand the project, resolve only necessary choices and implement the authorized slice without mandatory tickets.",
         "verify": "The next step has an observable outcome; open decisions stay explicit.",
         "result": "A compact project starting point with recommendations and, when confirmed, useful artifacts.",
-        "limits": "Modules are suggestions. Initialization waits for a confirmed selection; extra skills are optional."
+        "limits": "Extra modules and tracking are optional. Brainstorming does not authorize implementation; existing approval is retained."
       },
       "are-we-cooking": {
-        "summary": "Check whether the current work serves the agreed goal.",
+        "summary": "Briefly check whether the current approach serves the goal.",
         "when": "Many attempts, unclear progress or a suspected detour.",
         "ingredients": "The current conversation, agreed goal, relevant results and checks.",
-        "steps": "Reconstruct the goal, compare outcomes with it and recommend the smallest useful next step.",
+        "steps": "Compare the known goal, evidenced progress and main obstacle; recommend the next useful decision.",
         "verify": "Cooking, Stalled, Side quest or Unclear is supported by evidence.",
         "result": "A brief course correction and next step.",
         "limits": "Diagnosis alone does not authorize new changes. Historical pattern analysis is optional."
       },
       "did-i-leak": {
-        "summary": "Review the working tree and Git history for sensitive content.",
+        "summary": "Review the working tree and Git history for sensitive content and coverage gaps.",
         "when": "Before sharing a repository or preparing to make it public.",
         "ingredients": "A Git repository, Python 3 and Git. Gitleaks and TruffleHog are optional; coverage stays explicit.",
-        "steps": "Run the bundled CLI with an explicit repository, use --full for a full scan and review redacted findings.",
+        "steps": "Run a redacted scan; assess findings, missing scanners and unreadable files.",
         "verify": "Working tree and reachable history are covered; missing scanners and remaining checks are documented.",
         "result": "GO, GO WITH REVIEW or NO-GO, with concrete reasons.",
         "limits": "No proof of complete security. No credential rotation, history rewrites or publication without approval."
       },
       "will-they-sue-me": {
-        "summary": "Compare product behavior and claims with applicable obligations.",
+        "summary": "Review a specific product flow or launch for evidence-backed gaps.",
         "when": "An app or website needs a technical review before launch or after changes.",
         "ingredients": "Repository, real data flows, operator and markets; browser and test data; current primary sources for legal claims.",
-        "steps": "Clarify applicability, trace relevant flows, use the conditional review map and report evidence-backed findings with the smallest fixes.",
+        "steps": "Set review depth, trace relevant flows and obligations, and propose scoped fixes with acceptance checks.",
         "verify": "Each finding has evidence, a basis, a review date and acceptance criteria; unknown applicability stays open.",
         "result": "A prioritized review table and concrete remaining questions.",
         "limits": "No legally safe or lawsuit-proof promise; no real payments, deletions or external actions for testing."
       },
       "let-them-see-it": {
-        "summary": "Make a repository understandable and reviewable for others.",
+        "summary": "Make a repository shareable with suitable documentation and a verified installation.",
         "when": "The product works locally but documentation, installation or release boundaries are missing.",
         "ingredients": "Repository, Git status, installation flow, existing documentation and licenses.",
-        "steps": "Evaluate first, implement the already authorized or confirmed scope, then verify installation and links.",
+        "steps": "Evaluate first, implement relevant authorized changes and avoid mandatory languages or generic file lists.",
         "verify": "Quickstart and package agree; local, committed, pushed and deployed remain distinct.",
         "result": "A reviewable repository with explicit publication gates.",
         "limits": "Preparation does not authorize publication. Clarify new licenses and scope; avoid a blanket file checklist."
       },
       "what-did-we-change": {
-        "summary": "Write release notes from verified changes instead of commit rhetoric.",
+        "summary": "Write change notes that distinguish releases, fixes and uncommitted work.",
         "when": "A version or first release needs understandable change notes.",
         "ingredients": "Git repository, target ref and suitable base ref or first release; GitHub access is optional.",
-        "steps": "Justify the comparison, review diffs and behavior, select user-relevant changes and write concise notes.",
+        "steps": "Justify target and base, clarify ambiguity and accurately describe evidenced changes and repaired regressions.",
         "verify": "Every claim is supported by the selected changes; versions and verification status are accurate.",
         "result": "Release notes as text, without publication.",
         "limits": "Invoking the skill does not authorize tags, releases or file changes. Omit claims without reliable evidence."
       },
       "kill-the-todos": {
-        "summary": "Wrap up a conversation cleanly or pause with a clear handover.",
+        "summary": "Close a chat briefly with evidence, or pause with a deliberate handoff.",
         "when": "The current conversation should wind down, end or be continued later.",
         "ingredients": "The agreed goal, existing results, open work and relevant checks.",
-        "steps": "Reconstruct the current state, recommend a small closure guide, check authorized remaining work or prepare a deliberate pause.",
+        "steps": "Reuse existing checks, finish authorized remaining work and briefly state completion, open work and any needed re-entry.",
         "verify": "Completed work has evidence; open, deferred and blocked items remain visible.",
         "result": "A verified finish or concrete handover with a way to resume.",
         "limits": "Guide-only and pause modes do not change files or task status. No blind TODO completion, publishing or automatic archiving."
       },
       "what-was-i-cooking": {
-        "summary": "Reconstruct the original conversation goal and the current state of work.",
+        "summary": "After a pause, recover the goal, current state and open work.",
         "when": "After a break or a long conversation, the agreed goal, completed work or open items are unclear.",
         "ingredients": "Available history of this conversation, later goal decisions and verified outcomes.",
-        "steps": "Trace the original goal and later decisions; reconcile current work, open items and detours.",
+        "steps": "Reconcile goals and later decisions, recap briefly and identify missing history.",
         "verify": "Approved goal changes are distinguished from suggestions; missing history and unverified outcomes stay explicit.",
         "result": "A compact recap of the current state and a useful next step.",
         "limits": "Recap only: no file edits, task-status changes, automations or automatic resumption of remaining work."

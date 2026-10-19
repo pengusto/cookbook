@@ -64,4 +64,4 @@ Damit wird ausschließlich der native Cache dieses Plugins ersetzt; Quellen und 
 
 ## Grenzen
 
-Das öffentliche Beta-Repository ist keine Store-Einreichung und veröffentlicht keine Website. Authentifizierung und sichtbare Desktop-Abnahme auf dem zweiten Mac stehen dort noch aus. Historische `history/*`-Branches bewahren die früheren Repos; ihre Commits sind außerdem Vorfahren von `main`. Die Originalrepos bleiben unverändert erhalten.
+Das öffentliche Beta-Repository ist keine Store-Einreichung und veröffentlicht keine Website. Authentifizierung und sichtbare Desktop-Abnahme auf dem zweiten Mac stehen dort noch aus. Historische `history/*`-Branches bewahren die früheren Repos; ihre Commits sind außerdem Vorfahren von `main`. Die vier früheren GitHub-Einzelrepos wurden auf Maintainer-Wunsch entfernt; ihre importierte Git-Historie bleibt im Cookbook erhalten.

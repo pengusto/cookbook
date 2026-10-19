@@ -237,7 +237,7 @@ addEventListener('message', event => {
     parent.postMessage({jsonrpc:'2.0',method:'ui/notifications/initialized'}, '*');
   }
 });
-parent.postMessage({jsonrpc:'2.0',id:initId,method:'ui/initialize',params:{protocolVersion:'2026-01-26',appInfo:{name:'cookbook-sidebar',version:'0.3.0'},appCapabilities:{}}}, '*');
+parent.postMessage({jsonrpc:'2.0',id:initId,method:'ui/initialize',params:{protocolVersion:'2026-01-26',appInfo:{name:'cookbook-sidebar',version:'0.3.1'},appCapabilities:{}}}, '*');
 </script>'''
     page = '<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
     page += f'<title>Cookbook</title><style>{css}</style><header><p class="eyebrow">Lokales Cookbook</p><h1>Cookbook by Pengusto</h1>'
