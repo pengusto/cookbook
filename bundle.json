@@ -1,7 +1,7 @@
 {
   "name": "cookbook-by-pengusto",
-  "version": "0.2.0",
-  "description": "Seven curated skills for project planning, progress checks, review preparation, release readiness, release notes, and a deliberate chat finish or handoff.",
+  "version": "0.3.0",
+  "description": "Eight curated skills for project planning, progress checks, conversation recaps, review preparation, release readiness, release notes, and a deliberate chat finish or handoff.",
   "author": {
     "name": "Pengusto"
   },
@@ -9,6 +9,7 @@
   "skills": [
     "start-it-right",
     "are-we-cooking",
+    "what-was-i-cooking",
     "did-i-leak",
     "will-they-sue-me",
     "let-them-see-it",

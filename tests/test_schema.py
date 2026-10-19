@@ -72,7 +72,7 @@ class SchemaContracts(unittest.TestCase):
                     self.assertEqual(item, {'@type': 'ListItem', 'position': position,
                                            'item': {'@type': 'CreativeWork', 'name': card['title'],
                                                     'description': card['summary']}})
-                self.assertEqual(len(page.cards), 7)
+                self.assertEqual(len(page.cards), 8)
                 self.assertEqual([i['item']['name'] for i in listing['itemListElement']],
                                  [row['title' if variant == 'plain' else 'cooking_title'] for row in builder.catalog()])
                 self.assertEqual(page.scripts[0]['text'].count('https://'), 1)

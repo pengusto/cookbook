@@ -81,7 +81,7 @@ class WebsiteContracts(unittest.TestCase):
                     self.assertIn('href="' + base + '-en.html"', page)
                     self.assertIn(f'cookbook-by-pengusto-{variant}-codex.zip', page)
                     self.assertIn(f'cookbook-by-pengusto-{variant}-claude.zip', page)
-                    self.assertEqual(page.count('<article class="skill"'), 7)
+                    self.assertEqual(page.count('<article class="skill"'), 8)
                     self.assertNotIn('{{', page)
                     self.assertNotIn('npm install', page)
 

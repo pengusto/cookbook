@@ -1,0 +1,4 @@
+interface:
+  display_name: "{{TITLE}}"
+  short_description: "Ursprungsziel, aktueller Stand und offene Nebenquests"
+  default_prompt: "Nutze ${{ID}}: Was wollte ich am Anfang, woran arbeiten wir jetzt und was ist erledigt oder offen?"

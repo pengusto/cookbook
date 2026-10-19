@@ -26,7 +26,7 @@ Stand: 2026-10-12. Alle 22 eigenen SKILL.md unter Own wurden vollständig gelese
 | Let Them See It | Erstauswahl | Erste Strecke: Ein Repository verständlich und überprüfbar für Außenstehende vorbereiten. | MIT |
 | Remix My UI | Zurückgestellt | Später: Variantenworkflow braucht Bildwerkzeuge und ausdrückliche Konzeptfreigabe; Lizenz fehlt. | Fehlt |
 | What Did We Change | Erstauswahl | Erste Strecke: Release-Notizen aus belegten Änderungen statt Commit-Rhetorik schreiben. | MIT |
-| What Was I Cooking? | Zurückgestellt | Später: Zielrekonstruktion statt Fortschrittsdiagnose; ergänzt Are We Cooking, Lizenz fehlt. | Fehlt |
+| What Was I Cooking? | Seit 0.3.0 aufgenommen | Ursprünglich zurückgestellt; auf Nutzerwunsch als Chat-Rückblick ergänzt. | MIT |
 | Which Name Wins? | Zurückgestellt | Später: persönliche Namensmuster und lokale Änderungen; Portabilität und Lizenz offen. | Fehlt |
 | Yap to Spec | Zurückgestellt | Später: offene Chat-Ideen in ausgewählte Aufgaben überführen; Lizenz fehlt. | Fehlt |
 | You Got This | Zurückgestellt | Später: breiter Ausführungsworkflow; erste Edition fokussiert Diagnose und Release, statt mehrere Autonomie-Workflows zu bündeln. | MIT |
@@ -45,3 +45,5 @@ Persönliche Impressumsdaten, Account-Konfigurationen und private Betriebszugrif
 5. Ergebnisse prüfen; vor öffentlichem Servieren Geheimnisse, Produktpflichten und Repository getrennt reviewen.
 
 Are We Cooking? ist redaktionell aufgenommen, aber ohne Paket, solange die Skill-Lizenz nicht ausdrücklich entschieden ist.
+
+Aktualisierung 2026-10-19: What Was I Cooking? ist als achter Skill unter MIT aufgenommen; aktuelle Namen und Abgrenzung in [skill-naming.md](skill-naming.md). Die übrige Tabelle dokumentiert die damalige Erstauswahl.

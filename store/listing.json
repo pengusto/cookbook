@@ -1,7 +1,7 @@
 {
   "displayName": "Cookbook by Pengusto",
   "shortDescription": "From idea to release review",
-  "longDescription": "Seven workflows from one shared source for starting a project, checking progress, reviewing exposure and legal questions, preparing a release, drafting change notes and ending a chat deliberately. Choose Plain questions or Kitchen names; install one naming variant at a time. Local tools may be required. Scanners are optional; no hooks or MCP server are bundled. Reviews are not security or legal certification. Publication, deletion and external actions require separate authorization.",
+  "longDescription": "Eight workflows from one shared source for starting a project, checking progress, reconstructing conversation goals and status, reviewing exposure and legal questions, preparing a release, drafting change notes and ending a chat deliberately. Choose Plain questions or Kitchen names; install one naming variant at a time. Local tools may be required. Scanners are optional; no hooks or MCP server are bundled. Reviews are not security or legal certification. Publication, deletion and external actions require separate authorization.",
   "developerName": "Pengusto",
   "category": "Developer Tools",
   "capabilities": [
@@ -9,7 +9,8 @@
     "Review exposure risks",
     "Prepare legal review",
     "Assess release readiness",
-    "Draft verified release notes"
+    "Draft verified release notes",
+    "Reconstruct conversation goals and status"
   ],
   "defaultPrompt": [
     "Help me plan a small portfolio website with three projects.",

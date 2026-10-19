@@ -10,3 +10,5 @@ Lucide (ISC, portions MIT; LUCIDE-LICENSE), skill-row icons with stroke-width ad
 - bell.svg: concierge-bell.svg
 - list-details.svg: notebook-text.svg
 - door-exit.svg: door-open.svg
+
+0.3.0: The conversation recap row reuses the vendored Tabler book.svg icon (MIT). No new icon dependency.

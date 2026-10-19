@@ -75,5 +75,14 @@
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
       "agents/openai.yaml": "2ae30757f77b44cca1cd0414d8175aca1c4c4b9823918a8bb9dad717d7e4ba09"
     }
+  },
+  "what-was-i-cooking": {
+    "ref": null,
+    "commit": null,
+    "origin": "Maintainer-authored local skill; no source Git repository. Integrated 2026-10-19 with MIT approval.",
+    "files": {
+      "SKILL.md": "53b31050e14eec66e66b593cf8e0a4cd34fb831bbc3dcf6bdf35a0a0741c9711",
+      "agents/openai.yaml": "a18886a98eabc4fe52a8809241f1cc360d45828941933ce310b7f1384457f745"
+    }
   }
 }

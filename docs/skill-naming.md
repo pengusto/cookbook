@@ -1,29 +1,24 @@
-# Skill-Namen und Quell-Repositories / Names and source repositories
+# Skill-Namen und gemeinsame Quelle
 
-Stand: 2026-10-15, lokale Review-Fassung 0.1.3. Die sieben kuratierten Cookbook-Skills haben jeweils ein eigenes lokales Git-Quellprojekt. Keine Originalordner verschoben, keine neuen Remotes angelegt und nichts veröffentlicht.
+Stand 2026-10-19 · Fassung 0.3.0. Acht MIT-lizenzierte Skills aus einer gepflegten Quelle; keine separaten Skill-Repos erforderlich.
 
-| Verständlicher Name | Koch-Titel | Unveränderte ID | Paket |
-|---|---|---|---|
-| Start It Right | Prep the Kitchen | `start-it-right` | Einzeln + Codex/Claude |
-| Check Progress | Are We Cooking? | `are-we-cooking` | Einzeln + Codex/Claude |
-| Did I Leak? | Keep the Recipe Secret | `did-i-leak` | Einzeln + Codex/Claude |
-| Will They Sue Me? | Can I Serve This? | `will-they-sue-me` | Einzeln + Codex/Claude |
-| Let Them See It | Ready to Serve | `let-them-see-it` | Einzeln + Codex/Claude |
-| What Did We Change | What’s New on the Menu? | `what-did-we-change` | Einzeln + Codex/Claude |
-| Finish This Chat | Close the Kitchen | `kill-the-todos` | Einzeln + Codex/Claude |
+| Stabile Quell-ID | Plain | Kitchen |
+|---|---|---|
+| `start-it-right` | How Do I Start? (`how-do-i-start`) | Prep the Kitchen (`prep-the-kitchen`) |
+| `are-we-cooking` | Am I Making Progress? (`am-i-making-progress`) | Are We Cooking? (`are-we-cooking`) |
+| `what-was-i-cooking` | Where Were We? (`where-were-we`) | What Was I Cooking? (`what-was-i-cooking`) |
+| `did-i-leak` | Did I Leak? (`did-i-leak`) | Keep the Recipe Secret (`keep-the-recipe-secret`) |
+| `will-they-sue-me` | Will They Sue Me? (`will-they-sue-me`) | Can I Serve This? (`can-i-serve-this`) |
+| `let-them-see-it` | Am I Ready to Share? (`am-i-ready-to-share`) | Ready to Serve (`ready-to-serve`) |
+| `what-did-we-change` | What Did We Change? (`what-did-we-change`) | What’s New on the Menu? (`whats-new-on-the-menu`) |
+| `kill-the-todos` | Can We Finish? (`can-we-finish`) | Close the Kitchen (`close-the-kitchen`) |
 
-Beide sichtbaren Namen stehen in den Codex-UI-Metadaten; Koch-Namen sind auch in den Skill-Beschreibungen auffindbar. Du kannst im normalen Chat beide Namen nennen. Das erzeugt keine zusätzlichen Slash-Commands: der exakte Codex-Aufruf bleibt `$<id>`, im Claude-Bündel `/vibe-coding-cookbook:<id>`. Keine duplizierten Alias-Skills.
+Die stabile Quell-ID bleibt im Katalog und im Quell-Frontmatter erhalten. Beim Build werden nur Überschrift, Anzeigename und Aufruf-ID der gewählten Namenswelt eingesetzt. Ablauf und Lizenz sind in beiden Varianten gleich. Einzeldownloads und beide Host-Plugins enthalten dieselben ausgewählten Quelldateien. Keine zusätzlichen Alias-Skills; jeweils eine Variante installieren. Codex: `$<install-id>`, Claude: `/cookbook-by-pengusto:<install-id>`.
 
-## Ein Quellprojekt, mehrere Ausgaben
+## What Was I Cooking? wieder aufgenommen
 
-Originalprojekt → bewusst ausgewählte, gehashte Dateien in `skills/<id>/` → identische Einzelpakete und beide Plugin-Bündel → Cookbook-Karte mit beiden Namen. Lokale Quellpfade stehen ausschließlich in der ignorierten `sources.local.json`. Bestehende Repository-URLs bleiben erhalten; für neue lokale Repos wird keine öffentliche URL erfunden. Änderungen dieser Runde sind uncommitted, daher identifizieren Dateihashes die Snapshots statt einer vermeintlich passenden Commit-Revision.
+Die vom Nutzer selbst verfasste und privat genutzte Anleitung wurde am 2026-10-19 aus seiner vorhandenen Quelle übernommen. Sie war dort nicht in Git versioniert und hatte keine Lizenzdatei. Der Nutzer hat die Aufnahme nach dem gleichen MIT-Konzept bestätigt. Originaldateien bleiben unverändert; der Workflow-Text ist unverändert bis auf den Titelplatzhalter. Die ursprünglichen UI-Metadaten erhalten nur die gemeinsamen Titel-/ID-Platzhalter. MIT-Lizenz: Copyright 2026 Pengusto, wie bei den anderen eigenen Quellen. Verbindliche Runtime-Hashes stehen in catalog.json.
 
-`what-did-we-change` hat jetzt ein eigenes lokales Git-Repository. Die vorhandenen sechs anderen Repositories bleiben bestehen. `are-we-cooking` ist nach ausdrücklicher Nutzerwahl ebenfalls MIT-lizenziert und vollständig aufgenommen. Die bereits gewählte MIT-Lizenz gilt für den neu verfassten Abschluss-Skill; andere Quell-Lizenzen wurden nicht ersetzt.
+**Where Were We? / What Was I Cooking?** rekonstruiert Ziel, Zieländerungen, erledigte und offene Arbeit sowie Nebenwege. Es ist ein Rückblick ohne automatische Änderungen. **Am I Making Progress? / Are We Cooking?** bewertet den Fortschritt; **What Did We Change? / What’s New on the Menu?** erstellt Release-Notizen. Der Abschluss-Skill **Can We Finish? / Close the Kitchen** bleibt separat.
 
-## Ein Abschluss-Skill
-
-`kill-the-todos` wurde zu **Finish This Chat · Close the Kitchen** weiterentwickelt. Er rekonstruiert den vereinbarten Umfang, empfiehlt zuerst einen kleinen Abschluss-Guide und erledigt dann nur die autorisierte Arbeit. Ein Guide-only-Auftrag oder eine bewusste Pause verändert weder Dateien noch Aufgabenstatus. Vertagte Arbeit ist offen, fehlgeschlagene Checks bleiben sichtbar. Keine automatischen Archivierungs-, Publikations- oder Löschaktionen. Der frühere zusätzliche Entwurf `close-the-kitchen` wurde darin konsolidiert.
-
-Die tatsächlichen lokalen Verhaltenstests und Grenzen stehen in [host-tests.md](host-tests.md). Es wurden keine separaten Skill-Websites migriert oder bestehenden globalen Plugin-Installationen ersetzt.
-
-English: Each of the seven curated entries has its own local source Git repository and two visible names, with stable IDs. All seven licensed snapshots are individually installable and bundled identically for Codex and Claude. The closing workflow replaces the former Kill the TODOs behavior rather than adding an overlapping skill. Natural-language display aliases do not create additional slash commands. Nothing was published.
+Die sieben früher importierten Git-Historien bleiben erhalten. Die vier ehemaligen GitHub-Einzelrepos wurden am 2026-10-18 auf Nutzerwunsch gelöscht. Die Erweiterung der Source-Beta auf 0.3.0 ist zur Veröffentlichung auf GitHub freigegeben. Keine Website deployt, keine Stores eingereicht, aktive Host-Installationen nicht verändert.

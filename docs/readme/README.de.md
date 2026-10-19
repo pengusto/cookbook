@@ -6,7 +6,7 @@
 
 > Machine-translated documentation; no independent fluent-speaker review. Commands, identifiers and paths match the English source.
 
-Sieben Agent-Workflows aus einer gepflegten Quelle. Wähle **einfache Fragen** oder **Koch-Namen** und installiere pro Host genau eine Namenswelt.
+Acht Agent-Workflows aus einer gepflegten Quelle. Wähle **einfache Fragen** oder **Koch-Namen** und installiere pro Host genau eine Namenswelt.
 
 **Experimentelle öffentliche Beta.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
 
@@ -14,11 +14,14 @@ Sieben Agent-Workflows aus einer gepflegten Quelle. Wähle **einfache Fragen** o
 |---|---|
 | How Do I Start? | Prep the Kitchen |
 | Am I Making Progress? | Are We Cooking? |
+| Where Were We? | What Was I Cooking? |
 | Did I Leak? | Keep the Recipe Secret |
 | Will They Sue Me? | Can I Serve This? |
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
+
+> 0.3.0: Where Were We? / What Was I Cooking? is included in both naming variants under MIT. Package checks cover all eight skills; native host-loading and behavioral acceptance of the new skill remain open.
 
 ## Bauen und prüfen
 
@@ -58,7 +61,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 14 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 16 individual ZIPs + `SHA256SUMS`.
 
 ## Aktualisieren
 
@@ -82,7 +85,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## Grenzen und Prüfstand
 
-Paket-, Hash-, Linkprüfungen und portabler Neubau sind automatisiert. Skill-Laden wurde lokal getestet; vollständige sichtbare Desktop-Abnahme und Store-Freigaben bleiben offen. Sicherheits- und Rechtsprüfskills bieten Orientierung, keine Garantien. Die erhaltenen Historien enthalten ausdrücklich freigegebene frühere Kontaktseiten. Originalrepos bleiben als Archive erhalten. [Release review](../../docs/public-release-review.md).
+Paket-, Hash-, Linkprüfungen und portabler Neubau sind automatisiert. Skill-Laden wurde lokal getestet; vollständige sichtbare Desktop-Abnahme und Store-Freigaben bleiben offen. Sicherheits- und Rechtsprüfskills bieten Orientierung, keine Garantien. Die erhaltenen Historien enthalten ausdrücklich freigegebene frühere Kontaktseiten. Die ursprünglichen Git-Historien bleiben im Cookbook erhalten; die vier alten GitHub-Repos wurden auf Nutzerwunsch gelöscht. [Release review](../../docs/public-release-review.md).
 
 ## Mitwirken und Lizenzen
 

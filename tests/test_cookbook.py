@@ -12,6 +12,19 @@ spec.loader.exec_module(app)
 
 
 class PackagingContracts(unittest.TestCase):
+    def test_both_hosts_and_variants_include_every_reviewed_source(self):
+        reviewed = {row['id']: row for row in app.catalog() if row['status'] == 'source'}
+        for host in ('codex', 'claude'):
+            for variant in app.VARIANTS:
+                with self.subTest(host=host, variant=variant):
+                    config, files = app.plugin_files(host, variant)
+                    self.assertEqual(set(config['skills']), set(reviewed))
+                    provenance = json.loads(files['SOURCES.json'])
+                    self.assertEqual({row['id'] for row in provenance['skills']}, set(reviewed))
+                    for row in reviewed.values():
+                        slug, _ = app.rendered_files(row, variant)
+                        self.assertIn(f'skills/{slug}/LICENSE', files)
+
     def test_store_metadata_and_safe_square_icons_are_packaged(self):
         import xml.etree.ElementTree as ET
         import struct

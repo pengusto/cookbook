@@ -6,7 +6,7 @@
 
 > Machine-translated documentation; no independent fluent-speaker review. Commands, identifiers and paths match the English source.
 
-七个智能体工作流，维护于同一份源代码。安装时选择**直白问题**或**厨房名称**，每个宿主只安装一种命名风格。
+八个智能体工作流，维护于同一份源代码。安装时选择**直白问题**或**厨房名称**，每个宿主只安装一种命名风格。
 
 **实验性公开 Beta.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
 
@@ -14,11 +14,14 @@
 |---|---|
 | How Do I Start? | Prep the Kitchen |
 | Am I Making Progress? | Are We Cooking? |
+| Where Were We? | What Was I Cooking? |
 | Did I Leak? | Keep the Recipe Secret |
 | Will They Sue Me? | Can I Serve This? |
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
+
+> 0.3.0: Where Were We? / What Was I Cooking? is included in both naming variants under MIT. Package checks cover all eight skills; native host-loading and behavioral acceptance of the new skill remain open.
 
 ## 构建与验证
 
@@ -58,7 +61,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 14 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 16 individual ZIPs + `SHA256SUMS`.
 
 ## 更新
 
@@ -82,7 +85,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## 限制与状态
 
-自动检查软件包、哈希、链接和可移植重建。技能加载已在本地测试；完整桌面可视验收及商店审核仍待完成。安全和法律审查技能提供指导，不作保证。保留的历史包含维护者明确允许公开的旧联系页面。原仓库作为存档保留。 [Release review](../../docs/public-release-review.md).
+自动检查软件包、哈希、链接和可移植重建。技能加载已在本地测试；完整桌面可视验收及商店审核仍待完成。安全和法律审查技能提供指导，不作保证。保留的历史包含维护者明确允许公开的旧联系页面。原始Git历史保留在Cookbook中；四个旧GitHub仓库已获授权删除。 [Release review](../../docs/public-release-review.md).
 
 ## 贡献与许可证
 

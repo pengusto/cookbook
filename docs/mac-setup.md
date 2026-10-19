@@ -32,7 +32,7 @@ claude plugin marketplace add ./dist/kitchen/claude --scope user
 claude plugin install cookbook-by-pengusto@cookbook-by-pengusto-local --scope user
 ```
 
-Danach neue Host-Sitzung starten bzw. die App neu laden und genau sieben Skills in der gewählten Namenswelt prüfen. In Claude heißen Aufrufe z. B. `/cookbook-by-pengusto:close-the-kitchen`, in Codex `$close-the-kitchen`. Die optionale Sidebar ist separat; sie ist für die Skills nicht notwendig.
+Danach neue Host-Sitzung starten bzw. die App neu laden und genau acht Skills in der gewählten Namenswelt prüfen. In Claude heißen Aufrufe z. B. `/cookbook-by-pengusto:close-the-kitchen`, in Codex `$close-the-kitchen`. Die optionale Sidebar ist separat; sie ist für die Skills nicht notwendig.
 
 ## Spätere Updates
 

@@ -6,7 +6,7 @@
 
 > Machine-translated documentation; no independent fluent-speaker review. Commands, identifiers and paths match the English source.
 
-7つのエージェント用ワークフローを共通のソースで管理します。**わかりやすい質問**または**料理の名前**を選び、ホストごとに一方だけインストールしてください。
+8つのエージェント用ワークフローを共通のソースで管理します。**わかりやすい質問**または**料理の名前**を選び、ホストごとに一方だけインストールしてください。
 
 **実験的な公開 Beta.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
 
@@ -14,11 +14,14 @@
 |---|---|
 | How Do I Start? | Prep the Kitchen |
 | Am I Making Progress? | Are We Cooking? |
+| Where Were We? | What Was I Cooking? |
 | Did I Leak? | Keep the Recipe Secret |
 | Will They Sue Me? | Can I Serve This? |
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
+
+> 0.3.0: Where Were We? / What Was I Cooking? is included in both naming variants under MIT. Package checks cover all eight skills; native host-loading and behavioral acceptance of the new skill remain open.
 
 ## ビルドと検証
 
@@ -58,7 +61,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 14 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 16 individual ZIPs + `SHA256SUMS`.
 
 ## 更新
 
@@ -82,7 +85,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## 制限と状態
 
-パッケージ、ハッシュ、リンク、ポータブル再ビルドを自動検証します。スキルの読み込みはローカルで確認済みですが、完全なデスクトップ目視受け入れ確認とストア審査は未完了です。安全性・法務の確認用スキルは保証を提供しません。履歴には管理者が公開を承認した過去の連絡先ページが含まれます。元のリポジトリはアーカイブとして保持します。 [Release review](../../docs/public-release-review.md).
+パッケージ、ハッシュ、リンク、ポータブル再ビルドを自動検証します。スキルの読み込みはローカルで確認済みですが、完全なデスクトップ目視受け入れ確認とストア審査は未完了です。安全性・法務の確認用スキルは保証を提供しません。履歴には管理者が公開を承認した過去の連絡先ページが含まれます。元のGit履歴はCookbookに保持しています。以前の4つのGitHubリポジトリは承認を得て削除しました。 [Release review](../../docs/public-release-review.md).
 
 ## 貢献とライセンス
 

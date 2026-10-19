@@ -6,7 +6,7 @@
 
 > Machine-translated documentation; no independent fluent-speaker review. Commands, identifiers and paths match the English source.
 
-하나의 공통 소스에서 관리하는 일곱 가지 에이전트 워크플로입니다. **쉬운 질문** 또는 **요리 이름**을 선택하고 호스트마다 한 가지 이름 체계만 설치하세요.
+하나의 공통 소스에서 관리하는 여덟 가지 에이전트 워크플로입니다. **쉬운 질문** 또는 **요리 이름**을 선택하고 호스트마다 한 가지 이름 체계만 설치하세요.
 
 **실험적 공개 Beta.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
 
@@ -14,11 +14,14 @@
 |---|---|
 | How Do I Start? | Prep the Kitchen |
 | Am I Making Progress? | Are We Cooking? |
+| Where Were We? | What Was I Cooking? |
 | Did I Leak? | Keep the Recipe Secret |
 | Will They Sue Me? | Can I Serve This? |
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
+
+> 0.3.0: Where Were We? / What Was I Cooking? is included in both naming variants under MIT. Package checks cover all eight skills; native host-loading and behavioral acceptance of the new skill remain open.
 
 ## 빌드 및 검증
 
@@ -58,7 +61,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 14 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 16 individual ZIPs + `SHA256SUMS`.
 
 ## 업데이트
 
@@ -82,7 +85,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## 제한 및 상태
 
-패키지, 해시, 링크 및 이동 가능한 재빌드를 자동으로 확인합니다. 스킬 로딩은 로컬에서 테스트했지만 전체 데스크톱 시각적 인수 확인과 스토어 승인은 아직 남아 있습니다. 보안 및 법률 검토 스킬은 지침이며 보증이 아닙니다. 보존된 기록에는 관리자가 공개를 승인한 과거 연락처 페이지가 포함됩니다. 원래 저장소는 보관됩니다. [Release review](../../docs/public-release-review.md).
+패키지, 해시, 링크 및 이동 가능한 재빌드를 자동으로 확인합니다. 스킬 로딩은 로컬에서 테스트했지만 전체 데스크톱 시각적 인수 확인과 스토어 승인은 아직 남아 있습니다. 보안 및 법률 검토 스킬은 지침이며 보증이 아닙니다. 보존된 기록에는 관리자가 공개를 승인한 과거 연락처 페이지가 포함됩니다. 원래 Git 기록은 Cookbook에 보존됩니다. 이전 GitHub 저장소 네 개는 승인 후 삭제했습니다. [Release review](../../docs/public-release-review.md).
 
 ## 기여 및 라이선스
 

@@ -213,7 +213,7 @@ def sidebar_files(variant='plain'):
     listing.update(displayName='Cookbook by Pengusto', shortDescription='Browse local skill recipes',
                    longDescription='Read the local Cookbook catalog in the sidebar. Requires Python 3.10+. Does not install skills, edit files, or publish.',
                    capabilities=['Browse the local Cookbook'], defaultPrompt=[])
-    manifest = {'name': name, 'version': '0.2.0', 'description': listing['longDescription'],
+    manifest = {'name': name, 'version': json.loads((ROOT / 'bundle.json').read_text())['version'], 'description': listing['longDescription'],
                 'author': {'name': 'Pengusto'}, 'license': 'MIT', 'interface': listing,
                 'mcpServers': './.mcp.json'}
     config = {'mcpServers': {name: {'command': 'python3',
@@ -237,11 +237,11 @@ addEventListener('message', event => {
     parent.postMessage({jsonrpc:'2.0',method:'ui/notifications/initialized'}, '*');
   }
 });
-parent.postMessage({jsonrpc:'2.0',id:initId,method:'ui/initialize',params:{protocolVersion:'2026-01-26',appInfo:{name:'cookbook-sidebar',version:'0.2.0'},appCapabilities:{}}}, '*');
+parent.postMessage({jsonrpc:'2.0',id:initId,method:'ui/initialize',params:{protocolVersion:'2026-01-26',appInfo:{name:'cookbook-sidebar',version:'0.3.0'},appCapabilities:{}}}, '*');
 </script>'''
     page = '<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
     page += f'<title>Cookbook</title><style>{css}</style><header><p class="eyebrow">Lokales Cookbook</p><h1>Cookbook by Pengusto</h1>'
-    page += '<p>Sieben Rezepte, sieben separat installierbare Skills. Diese Ansicht ist zum Lesen; sie installiert oder veröffentlicht nichts.</p></header>'
+    page += '<p>Acht Rezepte, acht separat installierbare Skills. Diese Ansicht ist zum Lesen; sie installiert oder veröffentlicht nichts.</p></header>'
     page += '<main><div class="grid">' + ''.join(cards) + '</div></main>' + bridge + '</html>'
     files = {'.codex-plugin/plugin.json': json_bytes(manifest), '.mcp.json': json_bytes(config),
              'scripts/sidebar_server.py': (ROOT / 'scripts/sidebar_server.py').read_bytes(),
@@ -316,7 +316,7 @@ def render_landing(rows, language, variant):
     ui = translations[language]
     esc = html.escape
     visible, cards = [], []
-    icons = ('clipboard', 'soup', 'lock', 'search', 'bell', 'list-details', 'door-exit')
+    icons = ('clipboard', 'soup', 'book', 'lock', 'search', 'bell', 'list-details', 'door-exit')
     def icon(name):
         return f'<span class="ui-icon icon-{name}" aria-hidden="true"></span>'
     for index, row in enumerate(rows):
@@ -419,9 +419,10 @@ def check():
 
 
 def check_sources():
-    for row in catalog():
+    rows = catalog()
+    for row in rows:
         package_files(row)
-    print('OK: seven canonical sources and reviewed runtime hashes; no external source dependency')
+    print(f'OK: {len(rows)} canonical sources and reviewed runtime hashes; no external source dependency')
 
 
 def install(slug, destination, variant='plain'):

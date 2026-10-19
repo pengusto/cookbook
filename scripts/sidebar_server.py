@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 URI = 'ui://cookbook/catalog-v1'
 MIME = 'text/html;profile=mcp-app'
-VERSION = '0.2.0'
+VERSION = '0.3.0'
 
 
 def icons():

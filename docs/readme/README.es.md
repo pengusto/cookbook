@@ -6,7 +6,7 @@
 
 > Machine-translated documentation; no independent fluent-speaker review. Commands, identifiers and paths match the English source.
 
-Siete flujos de trabajo para agentes desde una fuente mantenida. Elige **preguntas sencillas** o **nombres de cocina** e instala un solo estilo por entorno.
+Ocho flujos de trabajo para agentes desde una fuente mantenida. Elige **preguntas sencillas** o **nombres de cocina** e instala un solo estilo por entorno.
 
 **Beta pública experimental.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
 
@@ -14,11 +14,14 @@ Siete flujos de trabajo para agentes desde una fuente mantenida. Elige **pregunt
 |---|---|
 | How Do I Start? | Prep the Kitchen |
 | Am I Making Progress? | Are We Cooking? |
+| Where Were We? | What Was I Cooking? |
 | Did I Leak? | Keep the Recipe Secret |
 | Will They Sue Me? | Can I Serve This? |
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
+
+> 0.3.0: Where Were We? / What Was I Cooking? is included in both naming variants under MIT. Package checks cover all eight skills; native host-loading and behavioral acceptance of the new skill remain open.
 
 ## Compilar y verificar
 
@@ -58,7 +61,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 14 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 16 individual ZIPs + `SHA256SUMS`.
 
 ## Actualizar
 
@@ -82,7 +85,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## Límites y estado
 
-Se automatizan las comprobaciones de paquetes, hashes, enlaces y compilación portable. La carga de skills se probó localmente; quedan pendientes la aceptación visual completa en escritorio y las tiendas. Los skills de seguridad y revisión legal no dan garantías. El historial conserva páginas de contacto antiguas autorizadas por el mantenedor. Los repositorios originales se conservan como archivos. [Release review](../../docs/public-release-review.md).
+Se automatizan las comprobaciones de paquetes, hashes, enlaces y compilación portable. La carga de skills se probó localmente; quedan pendientes la aceptación visual completa en escritorio y las tiendas. Los skills de seguridad y revisión legal no dan garantías. El historial conserva páginas de contacto antiguas autorizadas por el mantenedor. Los historiales Git originales se conservan en Cookbook; los cuatro repositorios anteriores de GitHub se eliminaron con autorización. [Release review](../../docs/public-release-review.md).
 
 ## Contribuir y licencias
 

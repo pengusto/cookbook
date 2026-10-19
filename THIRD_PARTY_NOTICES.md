@@ -1,6 +1,6 @@
 # Assets and licenses
 
-Cookbook's original code, documentation and seven skill sources use MIT licenses; each source retains its own LICENSE. Imported Git histories retain their original attribution and files.
+Cookbook's original code, documentation and eight skill sources use MIT licenses; each source retains its own LICENSE. Imported Git histories retain their original attribution and files.
 
 Website icons in `assets/icons/` are from Tabler (MIT) and Lucide (ISC, with some MIT-derived portions); see the included LICENSE, LUCIDE-LICENSE and README for per-file sources. Lucide skill icons use a thinner 1.5 stroke. These assets are included in the website export with their license texts.
 

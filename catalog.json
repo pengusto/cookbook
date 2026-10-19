@@ -57,6 +57,33 @@
     }
   },
   {
+    "id": "what-was-i-cooking",
+    "title": "Where Were We?",
+    "phase": "Wiedereinstieg",
+    "summary": "Das ursprüngliche Chat-Ziel und den aktuellen Arbeitsstand rekonstruieren.",
+    "when": "Nach einer Pause oder einem langen Chat ist unklar, was vereinbart, erledigt oder offen ist.",
+    "ingredients": "Verfügbarer Verlauf dieses Chats, spätere Zielentscheidungen und belegte Ergebnisse.",
+    "steps": "Ursprungsziel und spätere Entscheidungen nachvollziehen; aktuellen Stand, offene Arbeit und Nebenwege abgleichen.",
+    "verify": "Zieländerungen sind von Vorschlägen getrennt; fehlender Verlauf und unbelegte Ergebnisse bleiben sichtbar.",
+    "result": "Kompakter Rückblick mit aktuellem Stand und einem sinnvollen nächsten Schritt.",
+    "limits": "Nur Zusammenfassung: keine Dateien, Aufgabenstatus oder Automationen ändern und keine Restarbeit automatisch fortsetzen.",
+    "prompt": "${{ID}} Was wollte ich am Anfang, wo stehen wir jetzt und was ist noch offen?",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "5a8ee878e037130f82ce3a33cc9f1520067952eee63781d79c14950470cbd877",
+      "agents/openai.yaml": "58f193486f02c6a6791c62f184044d6c1b27a6c989415b00f2e709cf7c90e2ca"
+    },
+    "cooking_title": "What Was I Cooking?",
+    "install_ids": {
+      "plain": "where-were-we",
+      "kitchen": "what-was-i-cooking"
+    }
+  },
+  {
     "id": "did-i-leak",
     "title": "Did I Leak?",
     "phase": "Vor dem Teilen",

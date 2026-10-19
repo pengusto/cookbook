@@ -4,7 +4,7 @@
 
 [English](README.md) · [Deutsch](docs/readme/README.de.md) · [简体中文](docs/readme/README.zh-CN.md) · [日本語](docs/readme/README.ja.md) · [Español](docs/readme/README.es.md) · [한국어](docs/readme/README.ko.md) · [Português (Brasil)](docs/readme/README.pt-BR.md) · [Français](docs/readme/README.fr.md)
 
-Seven agent workflows from one maintained source. Choose **Plain questions** or **Kitchen names**; install one naming style per host.
+Eight agent workflows from one maintained source. Choose **Plain questions** or **Kitchen names**; install one naming style per host.
 
 **Experimental public Beta.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
 
@@ -12,11 +12,14 @@ Seven agent workflows from one maintained source. Choose **Plain questions** or 
 |---|---|
 | How Do I Start? | Prep the Kitchen |
 | Am I Making Progress? | Are We Cooking? |
+| Where Were We? | What Was I Cooking? |
 | Did I Leak? | Keep the Recipe Secret |
 | Will They Sue Me? | Can I Serve This? |
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
+
+> 0.3.0: Where Were We? / What Was I Cooking? is included in both naming variants under MIT. Package checks cover all eight skills; native host-loading and behavioral acceptance of the new skill remain open.
 
 ## Build and verify
 
@@ -56,7 +59,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 14 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 16 individual ZIPs + `SHA256SUMS`.
 
 ## Update
 
@@ -80,7 +83,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## Limits and status
 
-Package, hash, link and portable rebuild checks are automated. Skill loading has been tested locally, but complete visible desktop workflow acceptance and store approvals remain open. Security and legal review skills guide checks; they are not guarantees. The imported histories contain maintainer-approved historical contact pages. Original repositories are retained as archives. [Release review](docs/public-release-review.md).
+Package, hash, link and portable rebuild checks are automated. Earlier skill loading was tested locally; native loading and behavioral acceptance of the new recap skill, complete visible desktop workflow acceptance and store approvals remain open. Security and legal review skills guide checks; they are not guarantees. The imported histories contain maintainer-approved historical contact pages. The original Git histories are preserved in Cookbook; the four superseded GitHub repositories were removed with maintainer approval. [Release review](docs/public-release-review.md).
 
 ## Contributing and licenses
 
