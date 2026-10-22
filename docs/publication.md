@@ -40,3 +40,5 @@ Still required before Store submission: verified publisher identity/access in th
 ## Regression lessons / Erkenntnisse
 
 Keep dates and release scopes on acceptance reports. Derive workflow counts from the catalog; never replace the English word “eight” indiscriminately in HTML, because that also corrupts `height`. Link validation covers the exported site, legal contact `mailto:` links and fragment targets. Packaging tests cover the native marketplace root and exact generated payload.
+
+Python compatibility lesson: keep nested expressions out of quoted f-string HTML when supporting Python 3.10. Source grammar is checked with `ast.parse(feature_version=(3, 10))`; the real 3.10/3.13 CI matrix remains authoritative for runtime behavior.
