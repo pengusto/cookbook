@@ -1,3 +1,5 @@
+> Current polish: 0.5.1 adds thirteen recipe-specific utensils across the book and landing pages. See [release checklist](release-checklist.md). The 0.5.0 evidence below remains historical.
+
 # Public beta 0.5.0 / Öffentliche Beta
 
 This release contains thirteen shared workflows, including **Explain the Cookbook / Show Me the Kitchen**. Kitchen and Plain are two naming variants of the same source; installing a naming style does not install aliases from the other one.

@@ -23,7 +23,7 @@ class SidebarContracts(unittest.TestCase):
             data = json.loads(payload[1])
             self.assertEqual(set(data['locales']), {'de','en','fr','es','pt-BR','it','tr','ja','ko','zh-CN','ar','hi'})
             self.assertEqual([r['id'] for r in data['recipes']], [r['install_ids'][variant] for r in builder.catalog()])
-            self.assertEqual(data['version'], '0.5.0')
+            self.assertEqual(data['version'], '0.5.1')
             self.assertEqual(data['variant'], variant)
             self.assertEqual([r['names'] for r in data['recipes']], [{'plain': r['title'], 'kitchen': r['cooking_title']} for r in builder.catalog()])
             self.assertIn("$('invocation').textContent='$'+recipe.id", text)
@@ -115,3 +115,33 @@ class SidebarContracts(unittest.TestCase):
             for name, data in expected.items():
                 self.assertEqual(archive.read(f'cookbook-sidebar/{name}'), data)
                 self.assertEqual((builder.ROOT / 'dist/plain/sidebar/plugins/cookbook-sidebar' / name).read_bytes(), data)
+
+class RecipeIconContracts(unittest.TestCase):
+    def test_utensils_follow_stable_ids_in_both_variants_and_landing(self):
+        import re
+        icons = builder.recipe_icons()
+        self.assertEqual(len(set(icon['id'] for icon in icons.values())), len(builder.catalog()))
+        for variant in ('plain', 'kitchen'):
+            page = builder.sidebar_files(variant)['ui/index.html'].decode()
+            data = json.loads(re.search(r'<script id="cookbook-data" type="application/json">(.*?)</script>', page, re.S)[1])
+            expected = {row['install_ids'][variant]: icons[row['id']]['id'] for row in builder.catalog()}
+            self.assertEqual({row['id']: row['icon'] for row in data['recipes']}, expected)
+            for icon in icons.values():
+                self.assertEqual(page.count('id="recipe-' + icon['id'] + '"'), 1)
+                self.assertIn(icon['body'], builder.render_landing(builder.catalog(), 'en', variant))
+            self.assertIn("icon('recipe-'+recipe.icon)", page)
+            self.assertIn("$('recipe-emblem').setAttribute('href','#recipe-'+recipe.icon)", page)
+
+    def test_icon_source_rejects_active_svg_content(self):
+        from unittest.mock import patch
+        original = Path.read_text
+        def injected(path, *args, **kwargs):
+            text = original(path, *args, **kwargs)
+            if path == builder.ROOT / 'ui/recipe-icons.json':
+                data = json.loads(text)
+                data['start-it-right']['body'] = '<path onload="unexpected()" d="M1 1"/>'
+                return json.dumps(data)
+            return text
+        with patch.object(Path, 'read_text', injected):
+            with self.assertRaises(ValueError):
+                builder.recipe_icons()

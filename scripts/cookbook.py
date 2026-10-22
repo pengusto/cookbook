@@ -225,6 +225,23 @@ def build_plugins(downloads):
     return sums
 
 
+def recipe_icons():
+    """One meaningful utensil per shared workflow, independent of naming or order."""
+    import xml.etree.ElementTree as ET
+    icons = json.loads((ROOT / 'ui/recipe-icons.json').read_text())
+    if set(icons) != {row['id'] for row in catalog()}:
+        raise ValueError('Recipe icons must cover the exact catalog')
+    if len({icon['id'] for icon in icons.values()}) != len(icons):
+        raise ValueError('Every recipe needs its own distinct utensil')
+    for icon in icons.values():
+        if not re.fullmatch('[a-z]+(?:-[a-z]+)*', icon['id']) or not icon['meaning'].strip():
+            raise ValueError('Invalid recipe icon identity')
+        svg = ET.fromstring('<svg>' + icon['body'] + '</svg>')
+        if any(node.tag not in ('svg', 'path', 'circle', 'rect', 'ellipse') or any(key not in ('d','x','y','width','height','rx','cx','cy','r','ry') for key in node.attrib) for node in svg.iter()):
+            raise ValueError('Recipe icons may only contain static drawing geometry')
+    return icons
+
+
 def sidebar_files(variant='plain'):
     """Optional read-only companion; does not duplicate installed skills."""
     name = 'cookbook-sidebar'
@@ -258,7 +275,8 @@ def sidebar_files(variant='plain'):
             raise ValueError(f'Incomplete preparation steps: {locale}')
     accents = ['#843327', '#52623e', '#465e70', '#6d405d', '#78602e', '#3f6963', '#9b4f30', '#3f536a', '#774551', '#8b522d', '#326b70', '#69712c', '#795132']
     dark_accents = ['#e3a384', '#b9cd92', '#a9c8dc', '#d5add0', '#e6ca87', '#9fd1c6', '#ecb08b', '#b5c9e1', '#e5a5b8', '#e1b88d', '#96d5da', '#cbd58e', '#ddc19b']
-    recipes = [{'id': row['install_ids'][variant], 'title': row['title'] if variant == 'plain' else row['cooking_title'],
+    utensil_icons = recipe_icons()
+    recipes = [{'icon': utensil_icons[row['id']]['id'], 'id': row['install_ids'][variant], 'title': row['title'] if variant == 'plain' else row['cooking_title'],
                 'names': {'plain': row['title'], 'kitchen': row['cooking_title']},
                 'accent': accents[index], 'accentDark': dark_accents[index], 'art': data_uri('assets/cookbook/' + row['id'] + '.webp', 'image/webp')}
                for index, row in enumerate(catalog())]
@@ -272,6 +290,7 @@ def sidebar_files(variant='plain'):
     css = css.replace('/*COOKBOOK_FONTS*/', '\n'.join(font_css))
     css = css.replace('DECOR_ASSET', data_uri('assets/cookbook/decor.webp', 'image/webp'))
     page = (ROOT / 'ui/book.html').read_text()
+    page = page.replace('<!--RECIPE_ICONS-->', ''.join('<symbol id="recipe-'+icon['id']+'" viewBox="0 0 32 32">'+icon['body']+'</symbol>' for icon in utensil_icons.values()))
     for token, content in (
         ('/*COOKBOOK_CSS*/', css), ('PAN_ASSET', 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22/%3E'),
         ('/*COOKBOOK_DATA*/', payload),
@@ -357,7 +376,7 @@ def render_landing(rows, language, variant):
     ui = translations[language]
     esc = html.escape
     visible, cards = [], []
-    icons = ('clipboard', 'soup', 'book', 'lock', 'search', 'bell', 'list-details', 'door-exit', 'search', 'book', 'clipboard', 'soup', 'book')
+    utensil_icons = recipe_icons()
     def icon(name):
         return f'<span class="ui-icon icon-{name}" aria-hidden="true"></span>'
     for index, row in enumerate(rows):
@@ -366,7 +385,8 @@ def render_landing(rows, language, variant):
         visible.append(dict(fields, title=title))
         slug = row['install_ids'][variant]
         definition = ''.join(f'<dt>{esc(ui[key])}</dt><dd>{esc(fields[key])}</dd>' for key in (*RECIPE_FIELDS, 'limits'))
-        cards.append(f'<article class="skill" id="{row["id"]}"><details><summary><span class="skill-number" aria-hidden="true">{index + 1:02d}</span><span class="skill-icon" aria-hidden="true">{icon(icons[index])}</span><h2>{esc(title)}</h2><p>{esc(fields["summary"])}</p><span class="row-arrow" aria-hidden="true">{icon("arrow-right")}</span></summary><div class="skill-body"><dl>{definition}</dl><div class="skill-links"><code>${slug}</code><a href="downloads/{variant}-{row["id"]}.zip" download>{icon("download")}{esc(ui["ZIP"])}</a><a href="skills/{variant}/{slug}/SKILL.md">{esc(ui["GUIDE"])}</a></div></div></details></article>')
+        recipe_svg = '<svg class="recipe-utensil" viewBox="0 0 32 32" aria-hidden="true">'+utensil_icons[row['id']]['body']+'</svg>'
+        cards.append(f'<article class="skill" id="{row["id"]}"><details><summary><span class="skill-number" aria-hidden="true">{index + 1:02d}</span><span class="skill-icon" aria-hidden="true">{recipe_svg}</span><h2>{esc(title)}</h2><p>{esc(fields["summary"])}</p><span class="row-arrow" aria-hidden="true">{icon("arrow-right")}</span></summary><div class="skill-body"><dl>{definition}</dl><div class="skill-links"><code>${slug}</code><a href="downloads/{variant}-{row["id"]}.zip" download>{icon("download")}{esc(ui["ZIP"])}</a><a href="skills/{variant}/{slug}/SKILL.md">{esc(ui["GUIDE"])}</a></div></div></details></article>')
     hosts = []
     for host, title in (('codex', 'Codex'), ('claude', 'Claude Code')):
         commands = (f'codex plugin marketplace add pengusto/cookbook --ref {variant}\ncodex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local' if host == 'codex' else 'claude plugin marketplace add . --scope user\nclaude plugin install cookbook-by-pengusto@cookbook-by-pengusto-local --scope user')

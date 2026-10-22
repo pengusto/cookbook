@@ -1,0 +1,67 @@
+{
+  "start-it-right": {
+    "id": "cutting-board",
+    "meaning": "Schneidebrett: den Arbeitsplatz vorbereiten",
+    "body": "<rect x=\"5\" y=\"7\" width=\"22\" height=\"22\" rx=\"3\"/><path d=\"M12 7V5a4 4 0 0 1 8 0v2M10 13h12M10 19h8M10 25h12\"/>"
+  },
+  "are-we-cooking": {
+    "id": "saucepan",
+    "meaning": "Kochtopf: den Fortschritt im Blick behalten",
+    "body": "<path d=\"M7 13h20v9a6 6 0 0 1-6 6h-8a6 6 0 0 1-6-6v-9ZM7 16H2m25 0h3M5 11h24M14 7V3m7 4V3\"/>"
+  },
+  "what-was-i-cooking": {
+    "id": "recipe-card",
+    "meaning": "Rezeptkarte: Ziele und Entscheidungen wiederfinden",
+    "body": "<path d=\"M7 3h18v26H7zM11 3v5m10-5v5M12 13h8m-8 5h8m-8 5h5M4 8h6M4 15h6M4 22h6\"/>"
+  },
+  "did-i-leak": {
+    "id": "preserving-jar",
+    "meaning": "Vorratsglas: sensible Zutaten sicher verschließen",
+    "body": "<path d=\"M10 3h12v4H10zM11 7v3l-4 4v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V14l-4-4V7M8 16h16M8 25h16\"/><path d=\"M16 19c-5-4-6 4 0 4 6 0 5-8 0-4Z\"/>"
+  },
+  "will-they-sue-me": {
+    "id": "sieve",
+    "meaning": "Küchensieb: problematische Punkte herausfiltern",
+    "body": "<path d=\"M3 10h20a10 10 0 0 1-20 0ZM23 10l7-6M6 15h14M9 10l2 9m6-9-2 9M4 8h19\"/>"
+  },
+  "let-them-see-it": {
+    "id": "cloche",
+    "meaning": "Servierglocke: die Freigabe vorbereiten",
+    "body": "<path d=\"M3 26h26M5 23a11 11 0 0 1 22 0H5ZM16 12V8m-3 0h6M4 29h24\"/>"
+  },
+  "what-did-we-change": {
+    "id": "menu",
+    "meaning": "Menütafel: zeigen, was neu auf der Karte steht",
+    "body": "<path d=\"M8 5h17v24H8zM12 5V2h9v3M12 11h9m-9 5h6m-6 5h9M5 8v18\"/><path d=\"m22 18 3 3 5-6\"/>"
+  },
+  "kill-the-todos": {
+    "id": "apron",
+    "meaning": "Schürze am Haken: die Küche geordnet schließen",
+    "body": "<path d=\"M12 9V5a4 4 0 0 1 8 0v4M10 9h12l1 7 5 12H4l5-12 1-7ZM12 20h8v4h-8zM9 13l-6-3m20 3 6-3\"/>"
+  },
+  "here-we-go-again": {
+    "id": "burnt-pan",
+    "meaning": "Pfanne: aus angebrannten Versuchen lernen",
+    "body": "<path d=\"M3 17h19l-2 5H8l-5-5ZM22 18l8-5M8 12c-4-4 3-4 0-8m6 8c-4-4 3-4 0-8m6 8c-4-4 3-4 0-8M7 27h12\"/>"
+  },
+  "catch-me-up": {
+    "id": "kettle",
+    "meaning": "Teekessel: zurückkommen und sich wieder sammeln",
+    "body": "<path d=\"M10 11a7 7 0 0 1 12 0M7 15h17l2 12H5l2-12ZM24 18l6-6v10l-5 3M8 15V9a8 8 0 0 1 16 0v6M12 12h8M14 3h4\"/>"
+  },
+  "finish-my-prompt": {
+    "id": "piping-bag",
+    "meaning": "Spritzbeutel: einen begonnenen Auftrag vervollständigen",
+    "body": "<path d=\"m9 5 17 7-12 12-9-8L9 5ZM9 5l-2-3m19 10 3 1M14 24l-4 6-2-2 3-6M8 12l10 7M11 7l10 8\"/>"
+  },
+  "which-name-wins": {
+    "id": "dish-label",
+    "meaning": "Beschriftungsschild: dem Gericht einen Namen geben",
+    "body": "<path d=\"M4 7h18l7 9-7 9H4z\"/><circle cx=\"9\" cy=\"16\" r=\"2\"/><path d=\"M14 12h7m-7 4h5m-5 4h7\"/>"
+  },
+  "explain-the-cookbook": {
+    "id": "open-cookbook",
+    "meaning": "Offenes Kochbuch: die Sammlung kennenlernen",
+    "body": "<path d=\"M16 7C12 3 6 3 2 5v23c5-2 10-1 14 1 4-2 9-3 14-1V5c-4-2-10-2-14 2ZM16 7v22M6 10l6 1M6 15l6 1M6 20l6 1m8-10 6-1m-6 6 6-1m-6 6 6-1\"/>"
+  }
+}

@@ -33,3 +33,7 @@ html[dir=rtl] .recipe-tab>span:last-child{direction:ltr;text-align:end}html[dir=
 /* Long recipe names stay on their own paper page, clear of the illustration. */
 h1{width:auto;max-width:100%;max-inline-size:100%;overflow-wrap:break-word}
 .recipe-subtitle{width:auto;max-width:100%}
+/* Recipe-specific utensils remain visible in the index at every viewport. */
+.folio{display:flex;align-items:center;gap:7px}.recipe-emblem{width:32px;height:32px;margin-inline-end:5px;color:var(--recipe-accent,var(--wine));stroke-width:1.5}
+@media(max-width:850px){.recipe-tab{grid-template-columns:18px 25px 1fr;gap:7px}.recipe-tab svg{display:block;width:24px;height:24px}}
+@media(max-width:560px){.recipe-tab{width:190px;grid-template-columns:18px 25px 1fr}.recipe-emblem{width:28px;height:28px}}

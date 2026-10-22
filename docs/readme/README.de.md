@@ -26,7 +26,7 @@ Dreizehn Agent-Workflows aus einer gepflegten Quelle. Wähle **einfache Fragen**
 | Which Name Wins? | Name That Dish |
 | Explain the Cookbook | Show Me the Kitchen |
 
-> **0.5.0 · 13 workflows.** Start with `$show-me-the-kitchen` (Kitchen) or `$explain-the-cookbook` (Plain). The visual Cookbook supports 12 languages and system/light/dark themes. Use `--ref plain` for Plain installation. The GitHub release is separate from the Store review. [Publication and installation](../../docs/publication.md).
+> **0.5.1 · 13 workflows.** Start with `$show-me-the-kitchen` (Kitchen) or `$explain-the-cookbook` (Plain). The visual Cookbook supports 12 languages and system/light/dark themes. Use `--ref plain` for Plain installation. The GitHub release is separate from the Store review. [Publication and installation](../../docs/publication.md).
 
 
 

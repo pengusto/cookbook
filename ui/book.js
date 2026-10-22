@@ -3,7 +3,6 @@
 const data = JSON.parse(document.getElementById('cookbook-data').textContent);
 const locales = data.locales, recipes = data.recipes;
 const $ = id => document.getElementById(id);
-const icons = ['chef','spoon','book','lock','check','serve','leaf','exit','clock','book','spoon','serve','chef'];
 const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 const systemColors=window.matchMedia('(prefers-color-scheme: dark)');
 let appearance='system';try{const saved=localStorage.getItem('cookbook-appearance');if(['system','light','dark'].includes(saved))appearance=saved;}catch{}
@@ -50,6 +49,7 @@ function displayRecipe(motion=true) {
  const number=String(selected+1).padStart(2,'0');
  $('recipe-number').textContent=number; $('page-number').textContent=number;
  $('recipe-title').textContent=recipeName(recipe);
+ $('recipe-emblem').setAttribute('href','#recipe-'+recipe.icon);
  $('recipe-total').textContent=String(recipes.length).padStart(2,'0');
  $('alternate-name').textContent=(naming==='kitchen'?t.plainNames:'Kitchen')+': '+recipe.names[naming==='kitchen'?'plain':'kitchen'];
  $('installed-invocation').textContent=t.installedInvocation+' · '+(data.variant==='kitchen'?'Kitchen':t.plainNames);
@@ -102,7 +102,7 @@ function chooseRecipe(index,focus=false) {
 recipes.forEach((recipe,index)=>{
  const button=document.createElement('button');button.type='button';button.className='recipe-tab';
  const number=document.createElement('span');number.className='index-number';number.textContent=String(index+1).padStart(2,'0');number.setAttribute('aria-hidden','true');
- const label=document.createElement('span');label.dir='ltr';label.className='recipe-label';label.textContent=recipeName(recipe);button.append(number,icon(icons[index]),label);
+ const label=document.createElement('span');label.dir='ltr';label.className='recipe-label';label.textContent=recipeName(recipe);button.append(number,icon('recipe-'+recipe.icon),label);
  button.addEventListener('click',()=>chooseRecipe(index));
  button.addEventListener('keydown',event=>{let next=null;if(event.key==='ArrowDown') next=Math.min(recipes.length-1,index+1);if(event.key==='ArrowUp') next=Math.max(0,index-1);if(event.key==='Home')next=0;if(event.key==='End')next=recipes.length-1;if(next!==null){event.preventDefault();chooseRecipe(next);$('recipe-index').children[next].focus();}});
  $('recipe-index').append(button);
