@@ -1,0 +1,4 @@
+interface:
+  display_name: "Can We Finish?"
+  short_description: "Finish agreed work or prepare a clear handoff"
+  default_prompt: "Use $can-we-finish for this workflow. Follow its instructions and report verification limits."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Explain the Cookbook"
+  short_description: "Cookbook verstehen und den passenden Skill auswählen"
+  default_prompt: "Use $explain-the-cookbook to explain the available Cookbook workflows and recommend one for my situation. Show a concrete invocation example without executing it."

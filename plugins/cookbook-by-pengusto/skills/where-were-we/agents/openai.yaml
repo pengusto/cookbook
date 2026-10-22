@@ -1,0 +1,4 @@
+interface:
+  display_name: "Where Were We?"
+  short_description: "Ursprungsziel, aktueller Stand und offene Nebenquests"
+  default_prompt: "Nutze $where-were-we: Was wollte ich am Anfang, woran arbeiten wir jetzt und was ist erledigt oder offen?"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Will They Sue Me?"
+  short_description: "Check product obligations against actual app behavior"
+  default_prompt: "Use $will-they-sue-me for this workflow. Follow its instructions and report verification limits."

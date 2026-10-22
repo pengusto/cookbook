@@ -1,0 +1,4 @@
+interface:
+  display_name: "Which Name Wins?"
+  short_description: "Passende Namen finden und Klartext/Kitchen-Paare gemeinsam vergleichen."
+  default_prompt: "Use $which-name-wins: Schlage drei Namenspaare für einen Skill vor, der langsame Tests erklärt."

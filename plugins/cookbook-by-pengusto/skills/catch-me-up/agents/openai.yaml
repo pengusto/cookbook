@@ -1,0 +1,4 @@
+interface:
+  display_name: "Catch Me Up"
+  short_description: "Nach einer Pause Ziel, Entscheidungen und heutigen Projektstand auffrischen."
+  default_prompt: "Use $catch-me-up: Hol mich nach der langen Pause ab. Was war das Ziel, was gilt heute und wo steigen wir ein?"

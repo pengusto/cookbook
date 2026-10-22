@@ -1,0 +1,17 @@
+{
+  "name": "cookbook-by-pengusto-local",
+  "plugins": [
+    {
+      "name": "cookbook-by-pengusto",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cookbook-by-pengusto"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

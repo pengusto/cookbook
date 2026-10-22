@@ -1,0 +1,4 @@
+interface:
+  display_name: "What Did We Change?"
+  short_description: "Create release notes from real Git changes"
+  default_prompt: "Use $what-did-we-change for this workflow. Follow its instructions and report verification limits."

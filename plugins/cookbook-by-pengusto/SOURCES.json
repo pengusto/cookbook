@@ -1,0 +1,159 @@
+{
+  "bundle": "cookbook-by-pengusto",
+  "version": "0.5.0",
+  "variant": "plain",
+  "skills": [
+    {
+      "id": "start-it-right",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+        "SKILL.md": "c84a97d172f4a3e28b2f6c4d0eb67ab18b9df254155590e61b3fc04ec85af885",
+        "agents/openai.yaml": "e2132fb5e90309fc5d1884e41a234875bb610f63827fbafa6372847ce80ff586",
+        "references/artifact-contract.md": "32e58c231bddc210f48008f31337d2540bc90450badac8c9929e22a3761cf90e",
+        "references/examples.md": "ccc828fb2c5f6d9a2aa678d18613d821ead1e97e8e280c21a4cab9f5bcf2e3ea",
+        "references/module-catalog.md": "471f4049414f9f440a6dfbf197b3e57210976d86fe35f4abee0e3ea6fef9c324"
+      }
+    },
+    {
+      "id": "are-we-cooking",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "e7f79b0290ff7e3b280ac5e75dc373d2b89b8a4d9811c3c9422b8b14d58162bb",
+        "agents/openai.yaml": "4dc21bf49cc77f133981fc3b0e99a56372033d5b0f31f058605e7b9889d16f16"
+      }
+    },
+    {
+      "id": "what-was-i-cooking",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "de17adb3ac6d9b55d86b6d8f83d6c38d1481b7a0fab41d7f65a2d2bcb6997eec",
+        "agents/openai.yaml": "58f193486f02c6a6791c62f184044d6c1b27a6c989415b00f2e709cf7c90e2ca",
+        "references/examples.md": "a1b09f7ce03ed323e997bd4855bc93c52185b6db7e1d9fbf73e5872e5a14d572"
+      }
+    },
+    {
+      "id": "did-i-leak",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+        "SKILL.md": "1b41fbd55edd12a77dd8ebd19e2f0e9b151ff05d7a3cf8f0b7ba7f62d98b4b53",
+        "agents/openai.yaml": "368658d03a1c2b28417b868ebd980f8a307a99cbb1bfa51d08e99a4bc622920e",
+        "bin/did-i-leak": "fd4d6597e8f760047c34af3c6779948692b1d53a78ba5109463528aff807c70a",
+        "scripts/did_i_leak.py": "7ae7758cf521b0c1536bd1241df952fa9e8bd36f65a6b7afb16521be370f2c65"
+      }
+    },
+    {
+      "id": "will-they-sue-me",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "87b277f81a7d10ac2394f457b7dabefa6f88ea24f96337f454d9a361a345a604",
+        "agents/openai.yaml": "c1e1c54cbe2992cf2f903fdf100f7f3991b94eed58addae04f0caab68a0cfc81",
+        "references/germany-eu.md": "4f10ee43aa9dbc191179538a344e2340467865104adbc04a12b7e93e21976a0d",
+        "references/review-map.md": "7e862f5bc480adc420df4b0a022c02311b45f8cf2f2cd4eab22ee980d1dcdd14"
+      }
+    },
+    {
+      "id": "let-them-see-it",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "73d8f7fab54691b290fd1ddb8dd64edb1505f98b0fd2f2570ed3893dd30c15fd",
+        "agents/openai.yaml": "c5a544227bc017b57f85b0f0692a9a725fd81699ad43ae839c16acb0c78f0020",
+        "references/github-pages.md": "26a71d05cf69d44f432012d4c506f0eb69a021a6b37a891718447310b7721e92"
+      }
+    },
+    {
+      "id": "what-did-we-change",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+        "SKILL.md": "088ad8acb2f04de90355c6b0bbf402782a432ac867c7516c2ef1f7971454bbaf",
+        "agents/openai.yaml": "f1626935626ed16e2461d5895afbf4fefcac7f55e6f36bba72c828ee5923aaf6"
+      }
+    },
+    {
+      "id": "kill-the-todos",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "c0a654a06a03c24c6f2783062708bce689085e791074dd9882b9c4ee191a7e3d",
+        "agents/openai.yaml": "ffd32d863dc091b3f7c2e6e0fb5e3c0f90350d6e0606be90d75270990d181623"
+      }
+    },
+    {
+      "id": "here-we-go-again",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "28edc81a7798659a025f221414df7a07b6a1231f9caeab2361ca4f7f0b725180",
+        "agents/openai.yaml": "e1543cd0e45357f167536a48679044e57d57731e91a5da57852de7620c720671"
+      }
+    },
+    {
+      "id": "catch-me-up",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "5ff11eeef0a8b4a34aef7fd0f07ad13486bead237289d03edf58fe4d0bd66611",
+        "agents/openai.yaml": "32891f3e96cd00fd0420f7a878796f9435eb39f782c48ca6b3fd0d763913b4d0"
+      }
+    },
+    {
+      "id": "finish-my-prompt",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "aed74a6e456c40b32efdb3f09c4a3b72fa6475b82c888b54e89f157b4a23c4f5",
+        "agents/openai.yaml": "e4aa7445aa07ec623783f7f031bf0045ffb357b1ffff3bb51b63353e23e8fbee"
+      }
+    },
+    {
+      "id": "which-name-wins",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "825954780e912ece60ea7fc48b036dd537b4813334e788993e9dcdb073dddb90",
+        "agents/openai.yaml": "fbddc0ad937a4607c6075ad41ba8d0b729d420059d3d0a1165a030fd7973d051"
+      }
+    },
+    {
+      "id": "explain-the-cookbook",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "8df04f8b609fcc9d435c816893ddef0eb044e2e1dbb69cb64a8728486db06878",
+        "agents/openai.yaml": "276fe7b61fe3887bcde70ad8bc40ade7f4420d0b35973f796b48a0e3f88d12b6"
+      }
+    }
+  ]
+}

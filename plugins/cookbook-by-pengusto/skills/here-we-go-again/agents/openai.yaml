@@ -1,0 +1,4 @@
+interface:
+  display_name: "Here We Go Again"
+  short_description: "Wiederkehrende Fehler und liegen gebliebene Empfehlungen belegt untersuchen."
+  default_prompt: "Use $here-we-go-again: Prüfe aus dem sichtbaren Verlauf, warum wir wiederholt feststecken; ändere nichts."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Did I Leak?"
+  short_description: "Inspect repository exposure before sharing"
+  default_prompt: "Use $did-i-leak for this workflow. Follow its instructions and report verification limits."

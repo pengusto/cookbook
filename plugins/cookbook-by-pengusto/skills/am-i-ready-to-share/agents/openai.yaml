@@ -1,0 +1,4 @@
+interface:
+  display_name: "Am I Ready to Share?"
+  short_description: "Evaluate and prepare a repository for public release"
+  default_prompt: "Use $am-i-ready-to-share for this workflow. Follow its instructions and report verification limits."
