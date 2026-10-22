@@ -1,0 +1,4 @@
+interface:
+  display_name: "Name That Dish"
+  short_description: "Passende Namen finden und Klartext/Kitchen-Paare gemeinsam vergleichen."
+  default_prompt: "Use $name-that-dish: Schlage drei Namenspaare für einen Skill vor, der langsame Tests erklärt."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "What’s New on the Menu?"
+  short_description: "Create release notes from real Git changes"
+  default_prompt: "Use $whats-new-on-the-menu for this workflow. Follow its instructions and report verification limits."

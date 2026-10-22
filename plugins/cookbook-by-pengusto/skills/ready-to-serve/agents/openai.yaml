@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ready to Serve"
+  short_description: "Evaluate and prepare a repository for public release"
+  default_prompt: "Use $ready-to-serve for this workflow. Follow its instructions and report verification limits."

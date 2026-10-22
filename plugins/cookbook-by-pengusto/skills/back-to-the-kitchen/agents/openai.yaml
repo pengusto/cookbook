@@ -1,0 +1,4 @@
+interface:
+  display_name: "Back to the Kitchen"
+  short_description: "Nach einer Pause Ziel, Entscheidungen und heutigen Projektstand auffrischen."
+  default_prompt: "Use $back-to-the-kitchen: Hol mich nach der langen Pause ab. Was war das Ziel, was gilt heute und wo steigen wir ein?"

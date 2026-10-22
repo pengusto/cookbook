@@ -1,0 +1,4 @@
+interface:
+  display_name: "Can I Serve This?"
+  short_description: "Check product obligations against actual app behavior"
+  default_prompt: "Use $can-i-serve-this for this workflow. Follow its instructions and report verification limits."

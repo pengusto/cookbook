@@ -1,0 +1,4 @@
+interface:
+  display_name: "Keep the Recipe Secret"
+  short_description: "Inspect repository exposure before sharing"
+  default_prompt: "Use $keep-the-recipe-secret for this workflow. Follow its instructions and report verification limits."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Close the Kitchen"
+  short_description: "Finish agreed work or prepare a clear handoff"
+  default_prompt: "Use $close-the-kitchen for this workflow. Follow its instructions and report verification limits."

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Prep the Kitchen"
+  short_description: "Turn ideas into an actionable project start"
+  default_prompt: "Use $prep-the-kitchen for this workflow. Follow its instructions and report verification limits."
+
+policy:
+  allow_implicit_invocation: true

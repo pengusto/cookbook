@@ -1,0 +1,4 @@
+interface:
+  display_name: "Finish My Order"
+  short_description: "Einen begonnenen Prompt aus sichtbarem Kontext sinnvoll vervollständigen."
+  default_prompt: "Use $finish-my-order: Vervollständige nur diesen Prompt, führe ihn nicht aus: Bitte prüfe die Startseite und …"

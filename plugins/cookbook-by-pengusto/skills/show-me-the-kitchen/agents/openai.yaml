@@ -1,0 +1,4 @@
+interface:
+  display_name: "Show Me the Kitchen"
+  short_description: "Cookbook verstehen und den passenden Skill auswählen"
+  default_prompt: "Use $show-me-the-kitchen to explain the available Cookbook workflows and recommend one for my situation. Show a concrete invocation example without executing it."
