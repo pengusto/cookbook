@@ -1,57 +1,44 @@
 # Cookbook by Pengusto
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/brand/cookbook-horizontal-dark-1200.png">
+  <img src="../../assets/brand/cookbook-horizontal-light-1200.png" width="600" alt="Cookbook by Pengusto">
+</picture>
+
 [![MIT](https://img.shields.io/badge/license-MIT-blue)](../../LICENSE) [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)](../../README.md#build-and-verify) [![Beta](https://img.shields.io/badge/status-experimental_Beta-orange)](../../docs/public-release-review.md) [![CI](https://img.shields.io/badge/CI-launch_checks-grey)](https://github.com/pengusto/cookbook/actions/workflows/check.yml)
 
 [English](../../README.md) · [Deutsch](README.de.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Español](README.es.md) · [한국어](README.ko.md) · [Português (Brasil)](README.pt-BR.md) · [Français](README.fr.md)
 
 > Machine-translated documentation; no independent fluent-speaker review. Commands, identifiers and paths match the English source.
 
-하나의 공통 소스에서 관리하는 여덟 가지 에이전트 워크플로입니다. **쉬운 질문** 또는 **요리 이름**을 선택하고 호스트마다 한 가지 이름 체계만 설치하세요.
+**코딩 대화의 다음 단계를 위한 레시피.**
 
-**실험적 공개 Beta.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
+Cookbook은 Codex 또는 Claude Code를 사용하는 개발자에게 13개의 집중된 워크플로를 제공합니다. 프로젝트 계획, 진행 상황 점검, 휴식 후 맥락 복구, 공유 전 검토, 유용한 인계 정리에 활용하세요. 필요할 때 레시피를 선택하면 호스트와 모델이 작업을 수행합니다.
 
-| Plain | Kitchen |
-|---|---|
-| How Do I Start? | Prep the Kitchen |
-| Am I Making Progress? | Are We Cooking? |
-| Where Were We? | What Was I Cooking? |
-| Did I Leak? | Keep the Recipe Secret |
-| Will They Sue Me? | Can I Serve This? |
-| Am I Ready to Share? | Ready to Serve |
-| What Did We Change? | What’s New on the Menu? |
-| Can We Finish? | Close the Kitchen |
-| Here We Go Again | Why Did It Burn? |
-| Catch Me Up | Back to the Kitchen |
-| Finish My Prompt | Finish My Order |
-| Which Name Wins? | Name That Dish |
-| Explain the Cookbook | Show Me the Kitchen |
+**쉬운 질문** 또는 **요리 이름**을 선택하세요. 두 스타일은 같은 관리 지침에서 생성되며, 호스트마다 하나의 이름 체계를 설치합니다.
 
-> **0.5.1 · 13 workflows.** Start with `$show-me-the-kitchen` (Kitchen) or `$explain-the-cookbook` (Plain). The visual Cookbook supports 12 languages and system/light/dark themes. Use `--ref plain` for Plain installation. The GitHub release is separate from the Store review. [Publication and installation](../../docs/publication.md).
+**실험적 공개 베타 · 0.5.1.** [레시피 둘러보기](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
+## 빠른 시작: 이름 체계 선택
 
+먼저 Codex 및/또는 Claude Code를 설치하고 로그인하세요. 예제는 Kitchen을 설치합니다. Codex에서 Plain을 사용하려면 `--ref plain`을 지정하세요. 두 스타일은 플러그인 ID를 공유하므로 한 번에 하나만 설치합니다. 패키지 빌드는 기존 호스트 설치를 변경하지 않습니다.
 
-## 빌드 및 검증
-
-Git과 Python 3.10+가 필요하며 추가 Python 패키지는 필요하지 않습니다. Codex 또는 Claude Code는 별도로 설치하고 로그인하세요. 저장소 루트에서 명령을 실행합니다.
-
-```sh
-git clone https://github.com/pengusto/cookbook.git
-cd cookbook
-python3 scripts/launch_check.py
-```
-
-## 이름 체계 하나 설치
-
-plain 또는 kitchen을 선택하세요. 두 방식은 같은 플러그인 식별자를 사용합니다. 예시는 Kitchen을 설치합니다. 설치 후 새 세션을 시작하세요. 빌드는 기존 설치를 변경하지 않습니다.
-
-Codex:
+Codex — 로컬 빌드 불필요:
 
 ```sh
 codex plugin marketplace add pengusto/cookbook --ref kitchen
 codex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local
 ```
 
-Claude Code:
+설치 후 새 Codex 세션을 열고 다음을 입력하세요:
+
+```text
+$show-me-the-kitchen Cookbook을 설명하고 오랜 휴식 후 프로젝트에 복귀할 때 사용할 워크플로를 추천해 주세요.
+```
+
+가이드는 설명하고 추천하며 추천한 워크플로를 실행하지 않습니다. Plain은 설치 시 `--ref plain`, 대화에서는 `$explain-the-cookbook`을 사용하세요.
+
+Claude Code — 먼저 아래의 빌드 및 검증 명령을 실행하세요:
 
 ```sh
 claude plugin marketplace add ./dist/kitchen/claude --scope user
@@ -69,6 +56,34 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
 `skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
+
+## 빌드 및 검증
+
+Git과 Python 3.10+가 필요하며 추가 Python 패키지는 필요하지 않습니다. Codex 또는 Claude Code는 별도로 설치하고 로그인하세요. 저장소 루트에서 명령을 실행합니다.
+
+```sh
+git clone https://github.com/pengusto/cookbook.git
+cd cookbook
+python3 scripts/launch_check.py
+```
+
+## 레시피 메뉴
+
+| Plain | Kitchen |
+|---|---|
+| How Do I Start? | Prep the Kitchen |
+| Am I Making Progress? | Are We Cooking? |
+| Where Were We? | What Was I Cooking? |
+| Did I Leak? | Keep the Recipe Secret |
+| Will They Sue Me? | Can I Serve This? |
+| Am I Ready to Share? | Ready to Serve |
+| What Did We Change? | What’s New on the Menu? |
+| Can We Finish? | Close the Kitchen |
+| Here We Go Again | Why Did It Burn? |
+| Catch Me Up | Back to the Kitchen |
+| Finish My Prompt | Finish My Order |
+| Which Name Wins? | Name That Dish |
+| Explain the Cookbook | Show Me the Kitchen |
 
 ## 업데이트
 
@@ -92,10 +107,14 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## 제한 및 상태
 
-패키지, 해시, 링크 및 이동 가능한 재빌드를 자동으로 확인합니다. 스킬 로딩은 로컬에서 테스트했지만 전체 데스크톱 시각적 인수 확인과 스토어 승인은 아직 남아 있습니다. 보안 및 법률 검토 스킬은 지침이며 보증이 아닙니다. 보존된 기록에는 관리자가 공개를 승인한 과거 연락처 페이지가 포함됩니다. 원래 Git 기록은 Cookbook에 보존됩니다. 이전 GitHub 저장소 네 개는 승인 후 삭제했습니다. [Release review](../../docs/public-release-review.md).
+패키지, 해시, 링크 및 이식 가능한 재빌드 검사는 자동화되어 있습니다. 관리자는 0.4.0에서 열두 스킬의 Desktop 선택기와 종료 가이드를 확인했습니다. 0.5.0의 새 소개 가이드는 새 네이티브 Codex 호출로 별도 테스트되었습니다. 이는 해당 버전의 검사 기록이며 0.5.1 전체의 시각적 승인이나 스토어 승인이 아닙니다. 시각적 Cookbook은 12개 UI 언어와 시스템/밝은/어두운 테마를 제공합니다. UI 언어는 워크플로 지침을 번역하지 않습니다. 선택적인 로컬 MCP 사이드바는 별도 패키지입니다.
+
+보안 및 법률 검토 레시피는 검사를 안내하지만 보장하지 않습니다. 저장소 및 웹사이트 공개는 스토어 제출과 별개입니다. 승인된 과거 연락처 페이지를 포함한 가져온 Git 기록과 출처는 보존됩니다. 대체된 네 개의 GitHub 저장소는 관리자의 승인으로 삭제되었습니다. [0.5.0 acceptance](../../docs/acceptance-0.5.0.md) · [Release review](../../docs/public-release-review.md).
 
 ## 기여 및 라이선스
 
 issue 또는 범위가 명확한 pull request를 보내주세요. 공통 스킬 소스만 수정하고 여덟 README를 함께 유지하세요. 자체 코드와 스킬은 MIT이며 외부 아이콘은 MIT/ISC 고지를 유지합니다. 일러스트는 AI로 생성했습니다.
 
 [Contributing](../../CONTRIBUTING.md) · [MIT](../../LICENSE) · [Third-party notices](../../THIRD_PARTY_NOTICES.md) · [Maintenance](../../docs/maintenance.md).
+
+기존 Cookbook 로고 사용: Cormorant Garamond 글꼴 윤곽은 SIL OFL을 따릅니다. 레시피 그림은 AI로 생성되었으며 스크린샷이나 호스트 승인 증거가 아닙니다. [에셋 출처 및 라이선스](../../THIRD_PARTY_NOTICES.md) · [로고 안내](../../assets/brand/GUIDE.md).

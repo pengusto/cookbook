@@ -1,57 +1,44 @@
 # Cookbook by Pengusto
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/brand/cookbook-horizontal-dark-1200.png">
+  <img src="../../assets/brand/cookbook-horizontal-light-1200.png" width="600" alt="Cookbook by Pengusto">
+</picture>
+
 [![MIT](https://img.shields.io/badge/license-MIT-blue)](../../LICENSE) [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)](../../README.md#build-and-verify) [![Beta](https://img.shields.io/badge/status-experimental_Beta-orange)](../../docs/public-release-review.md) [![CI](https://img.shields.io/badge/CI-launch_checks-grey)](https://github.com/pengusto/cookbook/actions/workflows/check.yml)
 
 [English](../../README.md) · [Deutsch](README.de.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Español](README.es.md) · [한국어](README.ko.md) · [Português (Brasil)](README.pt-BR.md) · [Français](README.fr.md)
 
 > Machine-translated documentation; no independent fluent-speaker review. Commands, identifiers and paths match the English source.
 
-Treze fluxos de trabalho para agentes em uma fonte mantida. Escolha **perguntas simples** ou **nomes de cozinha** e instale apenas um estilo por ambiente.
+**Uma receita para o próximo passo na sua conversa de código.**
 
-**Beta pública experimental.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
+Cookbook oferece a quem desenvolve com Codex ou Claude Code 13 fluxos focados: planejar um projeto, verificar o progresso, retomar o contexto após uma pausa, revisar antes de compartilhar e encerrar com uma passagem de trabalho útil. Escolha uma receita quando precisar; seu ambiente e modelo executam o trabalho.
 
-| Plain | Kitchen |
-|---|---|
-| How Do I Start? | Prep the Kitchen |
-| Am I Making Progress? | Are We Cooking? |
-| Where Were We? | What Was I Cooking? |
-| Did I Leak? | Keep the Recipe Secret |
-| Will They Sue Me? | Can I Serve This? |
-| Am I Ready to Share? | Ready to Serve |
-| What Did We Change? | What’s New on the Menu? |
-| Can We Finish? | Close the Kitchen |
-| Here We Go Again | Why Did It Burn? |
-| Catch Me Up | Back to the Kitchen |
-| Finish My Prompt | Finish My Order |
-| Which Name Wins? | Name That Dish |
-| Explain the Cookbook | Show Me the Kitchen |
+Escolha **perguntas simples** ou **nomes de cozinha**. Ambos vêm das mesmas instruções mantidas; instale um estilo por ambiente.
 
-> **0.5.1 · 13 workflows.** Start with `$show-me-the-kitchen` (Kitchen) or `$explain-the-cookbook` (Plain). The visual Cookbook supports 12 languages and system/light/dark themes. Use `--ref plain` for Plain installation. The GitHub release is separate from the Store review. [Publication and installation](../../docs/publication.md).
+**Beta pública experimental · 0.5.1.** [Explorar as receitas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
+## Início rápido: escolha um estilo
 
+Primeiro instale Codex e/ou Claude Code e entre na sua conta. Os exemplos instalam Kitchen; para Plain no Codex, use `--ref plain`. Ambos compartilham uma identidade de plugin: instale um de cada vez. Compilar pacotes não altera instalações existentes.
 
-## Gerar e verificar
-
-É necessário Git e Python 3.10+, sem pacotes Python adicionais. Instale e entre no Codex ou Claude Code separadamente. Execute os comandos na raiz do repositório.
-
-```sh
-git clone https://github.com/pengusto/cookbook.git
-cd cookbook
-python3 scripts/launch_check.py
-```
-
-## Instalar um estilo de nomes
-
-Escolha plain ou kitchen. Ambos usam a mesma identidade de plugin. Os exemplos instalam Kitchen. Depois, inicie uma nova sessão. A geração não altera instalações existentes.
-
-Codex:
+Codex — sem compilação local:
 
 ```sh
 codex plugin marketplace add pengusto/cookbook --ref kitchen
 codex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local
 ```
 
-Claude Code:
+Após instalar, abra uma nova sessão do Codex e experimente:
+
+```text
+$show-me-the-kitchen Explique Cookbook e recomende um fluxo para retomar um projeto após uma longa pausa.
+```
+
+O guia explica e recomenda; não executa o fluxo recomendado. Para Plain, use `--ref plain` na instalação e `$explain-the-cookbook` na conversa.
+
+Claude Code — execute primeiro os comandos de compilação e verificação abaixo:
 
 ```sh
 claude plugin marketplace add ./dist/kitchen/claude --scope user
@@ -69,6 +56,34 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
 `skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
+
+## Gerar e verificar
+
+É necessário Git e Python 3.10+, sem pacotes Python adicionais. Instale e entre no Codex ou Claude Code separadamente. Execute os comandos na raiz do repositório.
+
+```sh
+git clone https://github.com/pengusto/cookbook.git
+cd cookbook
+python3 scripts/launch_check.py
+```
+
+## O menu de receitas
+
+| Plain | Kitchen |
+|---|---|
+| How Do I Start? | Prep the Kitchen |
+| Am I Making Progress? | Are We Cooking? |
+| Where Were We? | What Was I Cooking? |
+| Did I Leak? | Keep the Recipe Secret |
+| Will They Sue Me? | Can I Serve This? |
+| Am I Ready to Share? | Ready to Serve |
+| What Did We Change? | What’s New on the Menu? |
+| Can We Finish? | Close the Kitchen |
+| Here We Go Again | Why Did It Burn? |
+| Catch Me Up | Back to the Kitchen |
+| Finish My Prompt | Finish My Order |
+| Which Name Wins? | Name That Dish |
+| Explain the Cookbook | Show Me the Kitchen |
 
 ## Atualizar
 
@@ -92,10 +107,14 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## Limitações e estado
 
-Pacotes, hashes, links e geração portátil são verificados automaticamente. O carregamento dos skills foi testado localmente; a aceitação visual completa e as lojas continuam pendentes. Skills de segurança e revisão jurídica não oferecem garantias. O histórico contém páginas antigas de contato autorizadas pelo mantenedor. Os históricos Git originais continuam no Cookbook; os quatro repositórios antigos do GitHub foram removidos com autorização. [Release review](../../docs/public-release-review.md).
+As verificações de pacotes, hashes, links e reconstrução portátil são automatizadas. O mantenedor confirmou o seletor Desktop com doze skills e o guia de encerramento em 0.4.0; a nova introdução foi testada separadamente em 0.5.0 numa nova invocação nativa do Codex. São verificações datadas, não aceitação visual completa da 0.5.1 nem aprovação na loja. O Cookbook visual oferece 12 idiomas de interface e temas do sistema/claro/escuro; isso não traduz as instruções dos fluxos. A barra lateral MCP local opcional é um pacote separado.
+
+As receitas de segurança e revisão jurídica orientam verificações sem garantias. Publicar o repositório e o site é separado de enviar à loja. Os históricos Git importados e sua atribuição são preservados, incluindo páginas de contato históricas aprovadas; os quatro repositórios GitHub substituídos foram removidos com autorização do mantenedor. [0.5.0 acceptance](../../docs/acceptance-0.5.0.md) · [Release review](../../docs/public-release-review.md).
 
 ## Contribuições e licenças
 
 Abra uma issue ou pull request focada. Edite apenas a fonte comum dos skills e mantenha os oito README alinhados. Código e skills originais: MIT; ícones de terceiros: avisos MIT/ISC. As ilustrações foram geradas por IA.
 
 [Contributing](../../CONTRIBUTING.md) · [MIT](../../LICENSE) · [Third-party notices](../../THIRD_PARTY_NOTICES.md) · [Maintenance](../../docs/maintenance.md).
+
+Logo Cookbook existente: contornos Cormorant Garamond sob SIL OFL. Ilustrações das receitas são geradas por IA; não são capturas nem comprovam aceitação no ambiente. [Origem e licenças dos recursos](../../THIRD_PARTY_NOTICES.md) · [Guia do logo](../../assets/brand/GUIDE.md).
