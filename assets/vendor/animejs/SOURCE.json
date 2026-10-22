@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/juliangarnier/anime",
+  "version": "4.5.0",
+  "source": "https://raw.githubusercontent.com/juliangarnier/anime/v4.5.0/dist/bundles/anime.umd.min.js",
+  "sha256": "8d5b3a58a1f64023a04a4cedeef135a2263b18da04b35177ac13438a0bad033b"
+}

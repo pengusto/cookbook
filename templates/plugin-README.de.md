@@ -1,9 +1,15 @@
 # Cookbook by Pengusto
 
-Review 0.3.1 · {{VARIANT}}
+Version {{VERSION}} · {{HOST}} · {{VARIANT}}
 
-Eight workflows, one shared source. Choose either Plain questions or Kitchen names. Install one variant only. Both use plugin ID `cookbook-by-pengusto` and marketplace `cookbook-by-pengusto-local`; switching requires uninstalling the previous variant before registering the other marketplace. Preserve previous packages before switching. Keep hidden manifest folders when extracting.
+Dreizehn Workflows für Projektplanung, Fortschrittschecks, Chat-Rückblicke, Sicherheits- und Rechtsfragen, Release-Vorbereitung, Änderungsnotizen und einen bewussten Chat-Abschluss. Nach der Installation eine neue Host-Sitzung öffnen und einen Workflow zusammen mit dem eigenen Anliegen aufrufen.
 
-Acht Workflows, eine Quelle. Diese Installation enthält nur die gewählte Namenswelt. Nicht parallel zur anderen Variante oder zu Einzelkopien derselben Skills installieren. Vorherige Pakete vor einem Wechsel sichern. Neue Aufrufnamen stehen in den jeweiligen SKILL.md-Dateien.
+| Workflow | Aufruf |
+|---|---|
+{{INVOCATIONS}}
 
-Local tools and Git may be required. Optional scanners are not installed automatically. No hooks, background service or MCP server in this bundle. Publication, deletion and other external actions need separate authorization. MIT; per-skill licenses and SOURCES.json remain included. Historical tests do not prove all behavior under new invocation names. Nothing published.
+Klein anfangen: den Planungsworkflow um einen Portfolio-Plan mit drei Projekten bitten oder den Release-Workflow das aktuelle Repository ohne Veröffentlichung prüfen lassen. Reviews benennen Befunde und Grenzen; sie sind keine Sicherheits- oder Rechtsfreigabe.
+
+Pro Host nur eine Namenswelt installieren. Vor einem Wechsel das installierte Paket sichern, dieses Plugin nativ deinstallieren und nur dessen Marketplace abmelden; anschließend den Ersatz installieren. Einzelkopien derselben Workflows nicht parallel aktiv halten. Beim Entpacken versteckte Manifestordner erhalten.
+
+Lokale Werkzeuge und Git können erforderlich sein; Repository-Scans nutzen Python 3.10+. Optionale Scanner werden nicht automatisch installiert. Das Skill-Paket enthält keine Hooks, Hintergrunddienste oder MCP-Server. Veröffentlichung, Löschung und andere externe Aktionen benötigen Autorisierung. MIT; einzelne Lizenzen und Quellnachweise sind in LICENSE und SOURCES.json enthalten.

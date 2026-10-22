@@ -6,7 +6,7 @@
 
 > Machine-translated documentation; no independent fluent-speaker review. Commands, identifiers and paths match the English source.
 
-Acht Agent-Workflows aus einer gepflegten Quelle. Wähle **einfache Fragen** oder **Koch-Namen** und installiere pro Host genau eine Namenswelt.
+Dreizehn Agent-Workflows aus einer gepflegten Quelle. Wähle **einfache Fragen** oder **Koch-Namen** und installiere pro Host genau eine Namenswelt.
 
 **Experimentelle öffentliche Beta.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
 
@@ -20,8 +20,15 @@ Acht Agent-Workflows aus einer gepflegten Quelle. Wähle **einfache Fragen** ode
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
+| Here We Go Again | Why Did It Burn? |
+| Catch Me Up | Back to the Kitchen |
+| Finish My Prompt | Finish My Order |
+| Which Name Wins? | Name That Dish |
+| Explain the Cookbook | Show Me the Kitchen |
 
-> 0.3.1 local revision: all eight workflows refined; incomplete scanner reads are reported. See [verification](../skill-review-0.3.1.md) for package, behavioral and host-test boundaries.
+> **0.5.0 · 13 workflows.** Start with `$show-me-the-kitchen` (Kitchen) or `$explain-the-cookbook` (Plain). The visual Cookbook supports 12 languages and system/light/dark themes. Use `--ref plain` for Plain installation. The GitHub release is separate from the Store review. [Publication and installation](../../docs/publication.md).
+
+
 
 ## Bauen und prüfen
 
@@ -40,7 +47,7 @@ Wähle plain oder kitchen. Beide verwenden dieselbe Plugin-Identität. Die Beisp
 Codex:
 
 ```sh
-codex plugin marketplace add ./dist/kitchen/codex
+codex plugin marketplace add pengusto/cookbook --ref kitchen
 codex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local
 ```
 
@@ -51,7 +58,7 @@ claude plugin marketplace add ./dist/kitchen/claude --scope user
 claude plugin install cookbook-by-pengusto@cookbook-by-pengusto-local --scope user
 ```
 
-Vor einem Variantenwechsel das installierte Paket sichern, nur das Cookbook-Plugin nativ deinstallieren und dessen Marketplace abmelden; anschließend die andere Variante registrieren. Keine Einzelkopien oder das alte vibe-coding-cookbook parallel behalten.
+Vor einem Variantenwechsel das installierte Paket sichern, nur das Cookbook-Plugin nativ deinstallieren und dessen Marketplace abmelden; anschließend die andere Variante registrieren. Unbeabsichtigte Doppelinstallationen vermeiden. Bestehende eigenständige Aufrufe werden nicht automatisch entfernt.
 
 Einzelinstallation bleibt möglich; dieser Workflow darf im Ziel noch nicht vorhanden sein. Das Beispiel erzeugt close-the-kitchen; plain erzeugt can-we-finish.
 
@@ -61,7 +68,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 16 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
 
 ## Aktualisieren
 
@@ -75,7 +82,7 @@ Eigene Änderungen vor dem Pull committen oder separat sichern. Ein Neubau aktua
 
 ## Website
 
-Die DE/EN-Landingpages folgen dem hellen/dunklen Systemdesign. Sprache und Namenswelt sind unabhängig; die Skill-Anleitungen werden dadurch nicht übersetzt. Lokale Vorschau starten und die ausgegebene URL öffnen. Die Beta enthält keine öffentliche Website oder Store-Veröffentlichung.
+Die DE/EN-Landingpages folgen dem hellen/dunklen Systemdesign. Sprache und Namenswelt sind unabhängig; die Skill-Anleitungen werden dadurch nicht übersetzt. Lokale Vorschau starten und die ausgegebene URL öffnen. Die Website wird auf GitHub Pages veröffentlicht; die Store-Einreichung bleibt separat.
 
 ```sh
 python3 scripts/cookbook.py serve --port 8767

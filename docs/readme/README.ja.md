@@ -6,7 +6,7 @@
 
 > Machine-translated documentation; no independent fluent-speaker review. Commands, identifiers and paths match the English source.
 
-8つのエージェント用ワークフローを共通のソースで管理します。**わかりやすい質問**または**料理の名前**を選び、ホストごとに一方だけインストールしてください。
+13のエージェント用ワークフローを共通のソースで管理します。**わかりやすい質問**または**料理の名前**を選び、ホストごとに一方だけインストールしてください。
 
 **実験的な公開 Beta.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
 
@@ -20,8 +20,15 @@
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
+| Here We Go Again | Why Did It Burn? |
+| Catch Me Up | Back to the Kitchen |
+| Finish My Prompt | Finish My Order |
+| Which Name Wins? | Name That Dish |
+| Explain the Cookbook | Show Me the Kitchen |
 
-> 0.3.1 local revision: all eight workflows refined; incomplete scanner reads are reported. See [verification](../skill-review-0.3.1.md) for package, behavioral and host-test boundaries.
+> **0.5.0 · 13 workflows.** Start with `$show-me-the-kitchen` (Kitchen) or `$explain-the-cookbook` (Plain). The visual Cookbook supports 12 languages and system/light/dark themes. Use `--ref plain` for Plain installation. The GitHub release is separate from the Store review. [Publication and installation](../../docs/publication.md).
+
+
 
 ## ビルドと検証
 
@@ -40,7 +47,7 @@ plain または kitchen を選びます。両方とも同じプラグイン識�
 Codex:
 
 ```sh
-codex plugin marketplace add ./dist/kitchen/codex
+codex plugin marketplace add pengusto/cookbook --ref kitchen
 codex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local
 ```
 
@@ -61,7 +68,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 16 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
 
 ## 更新
 
@@ -75,7 +82,7 @@ python3 scripts/launch_check.py
 
 ## ウェブサイト
 
-独語・英語のページはシステムのライト／ダーク設定に従います。言語と命名スタイルは独立して切り替えられますが、スキルの説明は翻訳されません。ローカルプレビューを開始し、表示された URL を開いてください。この Beta に公開サイトのデプロイやストア公開は含まれません。
+独語・英語のページはシステムのライト／ダーク設定に従います。言語と命名スタイルは独立して切り替えられますが、スキルの説明は翻訳されません。ローカルプレビューを開始し、表示された URL を開いてください。公開 Beta サイトは GitHub Pages で提供されます。ストア審査は別です。
 
 ```sh
 python3 scripts/cookbook.py serve --port 8767

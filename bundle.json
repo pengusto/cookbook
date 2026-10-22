@@ -1,7 +1,7 @@
 {
   "name": "cookbook-by-pengusto",
-  "version": "0.3.1",
-  "description": "Eight curated skills for project planning, progress checks, conversation recaps, review preparation, release readiness, release notes, and a deliberate chat finish or handoff.",
+  "version": "0.5.0",
+  "description": "Thirteen focused coding-agent workflows: collection guide, planning, progress, context recovery, reviews, release preparation, handoff, retrospectives, prompt drafting and naming.",
   "author": {
     "name": "Pengusto"
   },
@@ -14,7 +14,12 @@
     "will-they-sue-me",
     "let-them-see-it",
     "what-did-we-change",
-    "kill-the-todos"
+    "kill-the-todos",
+    "here-we-go-again",
+    "catch-me-up",
+    "finish-my-prompt",
+    "which-name-wins",
+    "explain-the-cookbook"
   ],
   "keywords": [
     "developer-tools",
@@ -26,5 +31,7 @@
   "variants": [
     "plain",
     "kitchen"
-  ]
+  ],
+  "store_variant": "kitchen",
+  "sidebar_version": "0.5.0"
 }

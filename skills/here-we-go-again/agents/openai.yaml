@@ -1,0 +1,4 @@
+interface:
+  display_name: "{{TITLE}}"
+  short_description: "Wiederkehrende Fehler und liegen gebliebene Empfehlungen belegt untersuchen."
+  default_prompt: "Use ${{ID}}: Prüfe aus dem sichtbaren Verlauf, warum wir wiederholt feststecken; ändere nichts."

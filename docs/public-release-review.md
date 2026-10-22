@@ -1,4 +1,10 @@
+> **0.5.0 publication:** thirteen workflows; current install, website and Store boundaries: [publication.md](publication.md). Earlier acceptance results below are version-specific historical evidence.
+
+> **Aktueller lokaler Stand 0.4.0 (2026-10-22):** zwölf Kitchen-Skills installiert und in frischen Codex-Sitzungen erkannt; vier neue Aufrufe verhaltensgeprüft. Sidebar 0.4.1 aktualisiert, vorherigen deaktivierten Zustand erhalten. [Aktueller Installations- und Abnahmebericht](skill-installation-0.4.0.md). Frühere Nachweise unten bleiben historisch; keine Veröffentlichung.
+
 # Public Beta release review
+
+Historical source-Beta review. For the current eight-workflow package and OpenAI store preparation, see [0.3.1 verification](skill-review-0.3.1.md) and [Store preparation](../store/README.md). The seven-workflow counts below describe the reviewed 2026-10-17 scope.
 
 Reviewed 2026-10-17 with Let Them See It / Ready to Serve. Audience: Codex and Claude Code users who want seven focused workflows from one shared source and one naming style per host. Status: experimental Beta, not a store-approved product.
 

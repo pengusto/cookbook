@@ -223,5 +223,140 @@
       "plain": "can-we-finish",
       "kitchen": "close-the-kitchen"
     }
+  },
+  {
+    "id": "here-we-go-again",
+    "title": "Here We Go Again",
+    "cooking_title": "Why Did It Burn?",
+    "phase": "Planung",
+    "summary": "Wiederkehrende Fehler und liegen gebliebene Empfehlungen belegt untersuchen.",
+    "when": "Fehlversuche wiederholen sich oder akzeptierte Empfehlungen bleiben liegen.",
+    "ingredients": "Relevanter Verlauf, Projektartefakte und belegte Ergebnisse im vereinbarten Zeitraum.",
+    "steps": "Evidenz eingrenzen; Ursachen statt Versuche zählen; Empfehlungen abgleichen; kleinste Prävention empfehlen.",
+    "verify": "Jedes Muster hat eine Quelle; Einzelereignisse und Hypothesen bleiben ausdrücklich getrennt.",
+    "result": "Priorisierte Retrospektive mit Ursachen, Empfehlungsstatus und überprüfbarer Verbesserung.",
+    "limits": "Bericht allein autorisiert keine Fixes, Tickets, Regeländerungen oder Erinnerungen.",
+    "prompt": "${{ID}} Prüfe aus dem sichtbaren Verlauf, warum wir wiederholt feststecken; ändere nichts.",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "28edc81a7798659a025f221414df7a07b6a1231f9caeab2361ca4f7f0b725180",
+      "agents/openai.yaml": "e1543cd0e45357f167536a48679044e57d57731e91a5da57852de7620c720671"
+    },
+    "install_ids": {
+      "plain": "here-we-go-again",
+      "kitchen": "why-did-it-burn"
+    }
+  },
+  {
+    "id": "catch-me-up",
+    "title": "Catch Me Up",
+    "cooking_title": "Back to the Kitchen",
+    "phase": "Orientierung",
+    "summary": "Nach einer Pause Ziel, Entscheidungen und heutigen Projektstand auffrischen.",
+    "when": "Nach längerer Pause fehlen Kontext, letzter Stand und ein sinnvoller Wiedereinstieg.",
+    "ingredients": "Verfügbarer Chat, Übergabe und relevante aktuelle Projektartefakte.",
+    "steps": "Letzten bestätigten Stand rekonstruieren; veraltete Angaben gezielt prüfen; Änderungen und nächsten Einstieg benennen.",
+    "verify": "Frühere Berichte sind von heute geprüften Fakten getrennt; fehlender Verlauf bleibt sichtbar.",
+    "result": "Kurzer Wiedereinstieg mit Projektzweck, Entscheidungen, aktuellem Stand und nächstem Schritt.",
+    "limits": "Keine Restarbeit automatisch ausführen und keine aktuelle Bereitstellung aus alten Aussagen ableiten.",
+    "prompt": "${{ID}} Hol mich nach der langen Pause ab. Was war das Ziel, was gilt heute und wo steigen wir ein?",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "5ff11eeef0a8b4a34aef7fd0f07ad13486bead237289d03edf58fe4d0bd66611",
+      "agents/openai.yaml": "32891f3e96cd00fd0420f7a878796f9435eb39f782c48ca6b3fd0d763913b4d0"
+    },
+    "install_ids": {
+      "plain": "catch-me-up",
+      "kitchen": "back-to-the-kitchen"
+    }
+  },
+  {
+    "id": "finish-my-prompt",
+    "title": "Finish My Prompt",
+    "cooking_title": "Finish My Order",
+    "phase": "Planung",
+    "summary": "Einen begonnenen Prompt aus sichtbarem Kontext sinnvoll vervollständigen.",
+    "when": "Die automatische Prompt-Ergänzung hilft gerade nicht oder ein Satz bleibt unvollständig.",
+    "ingredients": "Prompt-Fragment, sichtbarer Kontext, gewünschtes Ziel und bestehende Grenzen.",
+    "steps": "Fragment als Entwurf lesen; Absicht erhalten; nur nötigen Kontext ergänzen; kopierbaren Vorschlag ausgeben.",
+    "verify": "Keine erfundenen Projektfakten oder zusätzlichen Aufträge; der Entwurf wird nicht ausgeführt.",
+    "result": "Ein bearbeitbarer vollständiger Prompt oder ausdrücklich nur die gewünschte Fortsetzung.",
+    "limits": "Manueller Ersatz für eine Ergänzung, keine native Tab-Integration und keine identische Modellfunktion.",
+    "prompt": "${{ID}} Vervollständige nur diesen Prompt, führe ihn nicht aus: Bitte prüfe die Startseite und …",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "aed74a6e456c40b32efdb3f09c4a3b72fa6475b82c888b54e89f157b4a23c4f5",
+      "agents/openai.yaml": "e4aa7445aa07ec623783f7f031bf0045ffb357b1ffff3bb51b63353e23e8fbee"
+    },
+    "install_ids": {
+      "plain": "finish-my-prompt",
+      "kitchen": "finish-my-order"
+    }
+  },
+  {
+    "id": "which-name-wins",
+    "title": "Which Name Wins?",
+    "cooking_title": "Name That Dish",
+    "phase": "Planung",
+    "summary": "Passende Namen finden und Klartext/Kitchen-Paare gemeinsam vergleichen.",
+    "when": "Ein Produkt oder Skill braucht einen Namen oder ein klares Namenspaar.",
+    "ingredients": "Zweck, Zielgruppe, Ton und relevante bestehende Namen; kein privater Korpus nötig.",
+    "steps": "Einsatzmoment verstehen; Namen paarweise erzeugen; Kollisionen und Bedeutungen prüfen; Auswahl empfehlen.",
+    "verify": "Beide Varianten benennen dieselbe Funktion; bestätigte Auswahl und Vorschlag bleiben getrennt.",
+    "result": "Bewertete Namenspaare mit beiden Aufruf-IDs und kurzer Begründung.",
+    "limits": "Keine behauptete Verfügbarkeit und keine Umbenennung durch eine bloße Namensfrage.",
+    "prompt": "${{ID}} Schlage drei Namenspaare für einen Skill vor, der langsame Tests erklärt.",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "825954780e912ece60ea7fc48b036dd537b4813334e788993e9dcdb073dddb90",
+      "agents/openai.yaml": "fbddc0ad937a4607c6075ad41ba8d0b729d420059d3d0a1165a030fd7973d051"
+    },
+    "install_ids": {
+      "plain": "which-name-wins",
+      "kitchen": "name-that-dish"
+    }
+  },
+  {
+    "id": "explain-the-cookbook",
+    "title": "Explain the Cookbook",
+    "cooking_title": "Show Me the Kitchen",
+    "phase": "Einführung",
+    "summary": "Cookbook verstehen, den passenden Skill wählen und richtig aufrufen.",
+    "when": "Beim Einstieg oder wenn unklar ist, welcher Workflow zur Situation passt.",
+    "ingredients": "Aktuelle Skill-Liste, installierte Namenswelt, Frage und gewünschtes Ergebnis.",
+    "steps": "Sammlung einordnen; ähnliche Zwecke unterscheiden; passenden Skill empfehlen; konkreten Aufruf zeigen.",
+    "verify": "Nur tatsächlich verfügbare Aufrufe nennen; Anzeigenamen und installierte IDs unterscheiden.",
+    "result": "Verständliche Orientierung mit einer passenden Empfehlung und einem editierbaren Beispiel.",
+    "limits": "Erklärt und empfiehlt; keine automatische Ausführung, Installation oder Freigabe.",
+    "prompt": "${{ID}} Erkläre mir Cookbook und welchen Skill ich nach einer langen Projektpause nutzen sollte.",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "8df04f8b609fcc9d435c816893ddef0eb044e2e1dbb69cb64a8728486db06878",
+      "agents/openai.yaml": "276fe7b61fe3887bcde70ad8bc40ade7f4420d0b35973f796b48a0e3f88d12b6"
+    },
+    "install_ids": {
+      "plain": "explain-the-cookbook",
+      "kitchen": "show-me-the-kitchen"
+    }
   }
 ]

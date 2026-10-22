@@ -1,3 +1,7 @@
+> **0.5.0 publication:** thirteen workflows; current install, website and Store boundaries: [publication.md](publication.md). Earlier acceptance results below are version-specific historical evidence.
+
+> **Aktueller lokaler Stand 0.4.0 (2026-10-22):** zwölf Kitchen-Skills installiert und in frischen Codex-Sitzungen erkannt; vier neue Aufrufe verhaltensgeprüft. Sidebar 0.4.1 aktualisiert, vorherigen deaktivierten Zustand erhalten. [Aktueller Installations- und Abnahmebericht](skill-installation-0.4.0.md). Frühere Nachweise unten bleiben historisch; keine Veröffentlichung.
+
 > Historical preparation record. For current Beta status, installation and limitations, use the [README](../README.md) and [public release review](public-release-review.md).
 
 > **Historischer Prüfstand 0.1.x.** Die aktuelle Architektur, Namenswelten und Installationswege stehen in [consolidation.md](consolidation.md) und der [README](../README.md). Frühere Testergebnisse werden nicht als neue 0.2.0-Abnahme behauptet.

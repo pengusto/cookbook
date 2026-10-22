@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>Cookbook by Pengusto</title>
+<script>try{const saved=localStorage.getItem('cookbook-appearance');const m=['system','light','dark'].includes(saved)?saved:'system';document.documentElement.dataset.theme=m==='system'?(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'):m;}catch{document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';}</script>
+<style>/*COOKBOOK_CSS*/</style>
+</head>
+<body>
+<svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg"><defs>
+<filter id="paper-grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+<symbol id="chef" viewBox="0 0 32 32"><path d="M9 21V13C1 13 3 3 10 6c1-7 11-7 12 0 8-3 10 7 2 7v8M9 21h15v6H9zM13 14v5m6-5v5"/></symbol>
+<symbol id="spoon" viewBox="0 0 32 32"><path d="M19 12 7 28c-3 2-5-1-3-3l12-15m3 2c-7-1-5-9 0-10s10 3 6 8c-2 2-4 3-6 2Z"/></symbol>
+<symbol id="book" viewBox="0 0 32 32"><path d="M16 7C11 3 4 4 2 5v23c5-2 9-1 14 1 5-2 9-3 14-1V5c-5-2-9-1-14 2Zm0 0v22"/></symbol>
+<symbol id="lock" viewBox="0 0 32 32"><rect x="5" y="13" width="22" height="17" rx="2"/><path d="M10 13V8a6 6 0 0 1 12 0v5m-6 7v4"/></symbol>
+<symbol id="check" viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><path d="m9 16 5 5 9-11"/></symbol>
+<symbol id="serve" viewBox="0 0 32 32"><path d="M3 24h26M5 21a11 11 0 0 1 22 0H5Zm11-14V4m-3 0h6"/></symbol>
+<symbol id="leaf" viewBox="0 0 32 32"><path d="M6 25C-1 9 16 9 26 3c2 15-7 23-20 22Zm-2 4L24 7M11 19l-1-7m7 1 7 1"/></symbol>
+<symbol id="exit" viewBox="0 0 32 32"><path d="M18 5H6v24h12M14 16h15m-6-6 6 6-6 6"/></symbol>
+<symbol id="basket" viewBox="0 0 32 32"><path d="M3 12h26l-3 16H6L3 12ZM8 12l5-9m11 9-5-9M3 17h26M11 17v7m10-7v7m-5-7v7"/></symbol>
+<symbol id="clock" viewBox="0 0 32 32"><circle cx="16" cy="17" r="12"/><path d="M16 9v9l5 3M13 2h6m7 4 3 3"/></symbol>
+<symbol id="copy" viewBox="0 0 32 32"><rect x="10" y="4" width="17" height="21" rx="2"/><path d="M20 29H5V10"/></symbol>
+<symbol id="appearance" viewBox="0 0 32 32"><circle cx="16" cy="16" r="10"/><path d="M16 6v20M16 6a10 10 0 0 1 0 20Z" fill="currentColor"/></symbol>
+<symbol id="globe" viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><ellipse cx="16" cy="16" rx="6" ry="13"/><path d="M3 16h26M6 8h20M6 24h20"/></symbol>
+</defs></svg>
+<div class="cookbook">
+<aside class="cover">
+<div class="brand"><svg class="brand-icon" viewBox="0 0 256 256" aria-label="Cookbook" role="img"><g fill="currentColor" stroke="none"><path fill-rule="evenodd" d="M62 28H210Q228 28 228 46V228H62Q28 228 28 194V62Q28 28 62 28ZM62 52Q52 52 52 62V162Q57 160 64 160H204V52ZM64 184Q52 184 52 194Q52 204 64 204H204V184Z"/><path fill-rule="evenodd" d="M128 70A44 44 0 1 0 159 83L178 60Q186 52 194 60Q202 68 194 76L174 96A44 44 0 0 0 128 70ZM128 94A20 20 0 1 1 128 134A20 20 0 0 1 128 94Z"/></g></svg><span class="edition">Kitchen edition</span><div class="brand-title">Cookbook<small>by Pengusto</small></div><p data-i18n="tagline"></p></div>
+<nav id="recipe-index" aria-label="Recipes"></nav>
+<div class="cover-bottom"><fieldset class="naming-picker"><legend data-i18n="naming"></legend><div><button type="button" data-naming="kitchen">Kitchen</button><button type="button" data-naming="plain" data-i18n="plainNames"></button></div></fieldset><div class="herb-art" aria-hidden="true"></div><p class="handwritten" data-i18n="motto"></p>
+<div class="language-picker"><button id="language-toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="language-panel"><svg><use href="#globe"/></svg><span id="current-language"></span><span class="chevron">⌄</span></button>
+<div id="language-panel" role="dialog" aria-labelledby="language-heading" hidden><div class="language-heading"><h2 id="language-heading"></h2><button type="button" id="language-close" aria-label="Close">×</button></div><div id="language-options"></div><p data-i18n="languageNote"></p></div></div>
+<div class="appearance-picker"><button id="appearance-toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="appearance-panel"><svg><use href="#appearance"/></svg><span id="appearance-label"></span></button><div id="appearance-panel" role="dialog" aria-labelledby="appearance-heading" hidden><h2 id="appearance-heading" data-i18n="appearance"></h2><div class="appearance-options"><button type="button" data-appearance="system" data-i18n="system"></button><button type="button" data-appearance="light" data-i18n="light"></button><button type="button" data-appearance="dark" data-i18n="dark"></button></div></div></div>
+</div>
+</aside>
+<main class="pages" id="main">
+<div class="page-stack" aria-hidden="true"></div><div class="book-gutter" aria-hidden="true"></div>
+<p id="recipe-announcement" class="visually-hidden" role="status"></p>
+<div class="recipe-spread" id="recipe-content">
+<section class="page left-page">
+<p class="folio"><span data-i18n="recipe"></span> <span id="recipe-number">01</span> / <span id="recipe-total"></span></p>
+<h1 id="recipe-title" tabindex="-1"></h1><p id="alternate-name" class="alternate-name" dir="ltr"></p><p id="recipe-summary" class="recipe-subtitle"></p><div class="title-rule"></div>
+<p id="recipe-intro" class="intro"></p>
+<section class="recipe-section when-section"><h2><svg><use href="#clock"/></svg><span data-i18n="when"></span></h2><p id="recipe-when"></p></section>
+<section class="recipe-section ingredients-section"><h2><svg><use href="#basket"/></svg><span data-i18n="ingredients"></span></h2><ul id="ingredient-list"></ul></section>
+<div class="invocation-card"><span class="tape" aria-hidden="true"></span><h2><svg><use href="#chef"/></svg><span data-i18n="invoke"></span></h2><p class="installed-invocation" id="installed-invocation"></p><div class="command-row"><code id="invocation" dir="ltr"></code><button id="copy-command" type="button"><svg><use href="#copy"/></svg><span class="visually-hidden" data-i18n="copy"></span></button></div><p id="copy-status" role="status"></p></div>
+</section>
+<section class="page right-page">
+<div class="ribbon" aria-hidden="true"><svg><use href="#leaf"/></svg><span>Ideas<br>Code<br>Cook</span></div>
+<div class="hero-illustration" aria-hidden="true"><img id="pan-art" src="PAN_ASSET" alt=""><span class="handwritten hero-note" data-i18n="note"></span></div>
+<section class="method-section"><h2><svg><use href="#spoon"/></svg><span data-i18n="method"></span></h2><ol id="method-list"></ol></section>
+<details class="recipe-limits"><summary data-i18n="limits"></summary><p id="limits-copy"></p></details>
+<div class="page-footer"><p class="handwritten" data-i18n="footer"></p><div class="page-navigation"><button id="previous-recipe" type="button">←</button><span id="page-number">01</span><button id="next-recipe" type="button">→</button></div></div>
+</section>
+</div>
+</main>
+</div>
+<script id="cookbook-data" type="application/json">/*COOKBOOK_DATA*/</script>
+<script>/*COOKBOOK_MOTION*/</script>
+<script>/*COOKBOOK_JS*/</script>
+</body></html>

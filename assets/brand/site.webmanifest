@@ -1,0 +1,21 @@
+{
+  "name": "Cookbook by Pengusto",
+  "short_name": "Cookbook",
+  "icons": [
+    {
+      "src": "cookbook-app-light-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "cookbook-app-light-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "background_color": "#F6F0E4",
+  "theme_color": "#682C27",
+  "display": "standalone"
+}

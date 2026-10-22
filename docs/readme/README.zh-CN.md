@@ -6,7 +6,7 @@
 
 > Machine-translated documentation; no independent fluent-speaker review. Commands, identifiers and paths match the English source.
 
-八个智能体工作流，维护于同一份源代码。安装时选择**直白问题**或**厨房名称**，每个宿主只安装一种命名风格。
+十三个智能体工作流，维护于同一份源代码。安装时选择**直白问题**或**厨房名称**，每个宿主只安装一种命名风格。
 
 **实验性公开 Beta.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
 
@@ -20,8 +20,15 @@
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
+| Here We Go Again | Why Did It Burn? |
+| Catch Me Up | Back to the Kitchen |
+| Finish My Prompt | Finish My Order |
+| Which Name Wins? | Name That Dish |
+| Explain the Cookbook | Show Me the Kitchen |
 
-> 0.3.1 local revision: all eight workflows refined; incomplete scanner reads are reported. See [verification](../skill-review-0.3.1.md) for package, behavioral and host-test boundaries.
+> **0.5.0 · 13 workflows.** Start with `$show-me-the-kitchen` (Kitchen) or `$explain-the-cookbook` (Plain). The visual Cookbook supports 12 languages and system/light/dark themes. Use `--ref plain` for Plain installation. The GitHub release is separate from the Store review. [Publication and installation](../../docs/publication.md).
+
+
 
 ## 构建与验证
 
@@ -40,7 +47,7 @@ python3 scripts/launch_check.py
 Codex:
 
 ```sh
-codex plugin marketplace add ./dist/kitchen/codex
+codex plugin marketplace add pengusto/cookbook --ref kitchen
 codex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local
 ```
 
@@ -61,7 +68,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 16 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
 
 ## 更新
 
@@ -75,7 +82,7 @@ python3 scripts/launch_check.py
 
 ## 网站
 
-德语和英语页面跟随系统明暗主题。页面语言与命名风格可独立切换；技能说明不会因此翻译。启动本地预览并打开输出的 URL。本 Beta 不包含已部署的公开网站或商店上架。
+德语和英语页面跟随系统明暗主题。页面语言与命名风格可独立切换；技能说明不会因此翻译。启动本地预览并打开输出的 URL。公开 Beta 网站托管在 GitHub Pages；商店审核单独进行。
 
 ```sh
 python3 scripts/cookbook.py serve --port 8767

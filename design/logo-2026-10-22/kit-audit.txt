@@ -1,0 +1,49 @@
+
+=== cookbook-app-light.svg  (639 bytes)
+viewBox 0 0 256 256 · aspect 1.0 (square)
+colours 2: #f6f0e4 #682c27 · gradients 0 · anchors 40
+margins L0.0 R0.0 T0.0 B0.0 · bbox fill 1.0
+✔ no issues found
+production-readiness score: 100/100 (heuristic)
+
+=== cookbook-horizontal-light.svg  (40012 bytes)
+viewBox 0 0 1024 256 · aspect 4.0 (horizontal)
+colours 1: #682c27 · gradients 0 · anchors 747
+margins L28.0 R29.9 T28.0 B22.7 · bbox fill 0.757
+▲ WARN [complex] 747 anchor points — more than 95% of comparable reference logos (median 75.0). Simplify: fewer points, merged shapes, less detail.
+▲ WARN [tiny-detail] 1 sub-shape(s) smaller than 1/32 of the lockup height (≈1 px at 32 px tall): 7.9×4.7 at (454,194). They vanish when small — enlarge, merge or remove them, or provide a small-size version.
+· INFO [precision] Coordinates with 4+ decimals: round to 0–2 decimals to reduce size and reveal misalignments.
+production-readiness score: 83/100 (heuristic)
+
+=== cookbook-small-light.svg  (440 bytes)
+viewBox 0 0 20 20 · aspect 1.0 (square)
+colours 1: #682c27 · gradients 0 · anchors 28
+margins L1.0 R1.0 T1.0 B1.0 · bbox fill 0.81
+✔ no issues found
+production-readiness score: 100/100 (heuristic)
+
+=== cookbook-stacked-light.svg  (40045 bytes)
+viewBox 0 0 640 440 · aspect 1.455 (wide)
+colours 1: #682c27 · gradients 0 · anchors 747
+margins L66.2 R60.0 T28.0 B19.1 · bbox fill 0.717
+▲ WARN [complex] 747 anchor points — more than 95% of comparable reference logos (median 75.0). Simplify: fewer points, merged shapes, less detail.
+▲ WARN [tiny-detail] 4 sub-shape(s) smaller than 1/32 of the lockup height (≈1 px at 32 px tall): 10.2×1.0 at (284,396); 7.1×10.4 at (329,391); 6.3×3.7 at (336,390); 7.8×2.3 at (388,390). They vanish when small — enlarge, merge or remove them, or provide a small-size version.
+· INFO [precision] Coordinates with 4+ decimals: round to 0–2 decimals to reduce size and reveal misalignments.
+production-readiness score: 83/100 (heuristic)
+
+=== cookbook-symbol-light.svg  (545 bytes)
+viewBox 0 0 256 256 · aspect 1.0 (square)
+colours 1: #682c27 · gradients 0 · anchors 31
+margins L28.0 R28.0 T28.0 B28.0 · bbox fill 0.61
+✔ no issues found
+production-readiness score: 100/100 (heuristic)
+
+=== cookbook-wordmark-light.svg  (39635 bytes)
+viewBox 0 0 752 256 · aspect 2.938 (horizontal)
+colours 1: #682c27 · gradients 0 · anchors 716
+margins L14.4 R25.9 T23.9 B27.7 · bbox fill 0.756
+▲ WARN [complex] 716 anchor points — more than 95% of comparable reference logos (median 75.0). Simplify: fewer points, merged shapes, less detail.
+▲ WARN [near-miss-angle] 2 straight edge(s) are 0.3–3° off a clean angle — they read as mistakes. Snap them: 137.9° (→135°) len 33.4 at (318,120); 137.9° (→135°) len 33.4 at (662,120). (Expected — and fine — for type set on a curve or deliberately rotated elements.)
+▲ WARN [tiny-detail] 1 sub-shape(s) smaller than 1/32 of the lockup height (≈1 px at 32 px tall): 7.9×4.7 at (186,189). They vanish when small — enlarge, merge or remove them, or provide a small-size version.
+· INFO [precision] Coordinates with 4+ decimals: round to 0–2 decimals to reduce size and reveal misalignments.
+production-readiness score: 75/100 (heuristic)

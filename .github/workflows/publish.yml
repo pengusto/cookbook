@@ -1,0 +1,41 @@
+name: Publish Pages and marketplaces
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cookbook-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify packages and portable build
+        run: python scripts/launch_check.py
+      - name: Publish generated naming variants
+        run: |
+          git config user.name 'Pengusto'
+          git config user.email '106893073+pengusto@users.noreply.github.com'
+          python scripts/publish_marketplaces.py --push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Deploy verified website
+        id: deployment
+        uses: actions/deploy-pages@v4

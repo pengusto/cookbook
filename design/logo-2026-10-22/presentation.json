@@ -1,0 +1,40 @@
+{
+  "brand": "Cookbook by Pengusto",
+  "tagline": "Gute Projekte schmecken besser.",
+  "brief": "Kuratierte Skills als Rezepte: warm, handwerklich und klar. Gewählt ist die Buch-und-Pfannen-Marke A.",
+  "adjectives": [
+    "warm",
+    "handwerklich",
+    "klar"
+  ],
+  "industry": "software",
+  "brand_color": "#682C27",
+  "tile_color": "#682C27",
+  "greyscale": false,
+  "final": true,
+  "date": "2026-10-22",
+  "designer": "Pengusto",
+  "deck_title": "Cookbook — gewählte Identität",
+  "concepts": [
+    {
+      "name": "Recipe Book",
+      "symbol": "../../assets/brand/cookbook-symbol-light.svg",
+      "lockup": "../../assets/brand/cookbook-horizontal-light.svg",
+      "stacked": "../../assets/brand/cookbook-stacked-light.svg",
+      "symbol_on_tile": "../../assets/brand/cookbook-symbol-dark.svg",
+      "symbol_on_dark": "../../assets/brand/cookbook-symbol-dark.svg",
+      "lockup_on_dark": "../../assets/brand/cookbook-horizontal-dark.svg",
+      "idea": "Ein gebundenes Buch mit Pfanne im Deckel.",
+      "rationale": [
+        "Vorhandene Idee reduziert und konsistent aufgebaut.",
+        "Einfarbig für helle und dunkle Oberflächen.",
+        "Eigene kleine Zeichnung für Codex-Sidebar und Favicon."
+      ]
+    }
+  ],
+  "recommendation": "Richtung A ist vom Nutzer gewählt.",
+  "next_steps": [
+    "Lokale Pakete gebaut und geprüft.",
+    "Native Codex-Abnahme vor Veröffentlichung."
+  ]
+}

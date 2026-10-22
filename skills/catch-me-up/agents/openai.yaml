@@ -1,0 +1,4 @@
+interface:
+  display_name: "{{TITLE}}"
+  short_description: "Nach einer Pause Ziel, Entscheidungen und heutigen Projektstand auffrischen."
+  default_prompt: "Use ${{ID}}: Hol mich nach der langen Pause ab. Was war das Ziel, was gilt heute und wo steigen wir ein?"

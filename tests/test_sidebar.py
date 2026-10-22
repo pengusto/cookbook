@@ -14,6 +14,53 @@ spec.loader.exec_module(builder)
 
 
 class SidebarContracts(unittest.TestCase):
+    def test_book_has_twelve_complete_locales_and_both_names_with_installed_invocation(self):
+        import re
+        for variant in ('plain', 'kitchen'):
+            files = builder.sidebar_files(variant)
+            text = files['ui/index.html'].decode()
+            payload = re.search(r'<script id="cookbook-data" type="application/json">(.*?)</script>', text, re.S)
+            data = json.loads(payload[1])
+            self.assertEqual(set(data['locales']), {'de','en','fr','es','pt-BR','it','tr','ja','ko','zh-CN','ar','hi'})
+            self.assertEqual([r['id'] for r in data['recipes']], [r['install_ids'][variant] for r in builder.catalog()])
+            self.assertEqual(data['version'], '0.5.0')
+            self.assertEqual(data['variant'], variant)
+            self.assertEqual([r['names'] for r in data['recipes']], [{'plain': r['title'], 'kitchen': r['cooking_title']} for r in builder.catalog()])
+            self.assertIn("$('invocation').textContent='$'+recipe.id", text)
+            self.assertIn('cookbook-naming', text)
+            self.assertIn("let appearance='system'", text)
+            for locale in data['locales'].values():
+                self.assertEqual(len(locale['stepNotes12']), 4)
+                self.assertEqual(len(locale['verifications']), len(builder.catalog()))
+                self.assertEqual(len(locale['ingredientLists']), len(builder.catalog()))
+                self.assertEqual(len(locale['intros'].split('|')), len(builder.catalog()))
+                self.assertTrue(all(len(locale['steps'+str(i)].split('|')) == 4 for i in range(len(builder.catalog()))))
+            self.assertIn('prefers-reduced-motion', text)
+            self.assertIn('navigator.clipboard.writeText', text)
+            self.assertIn('page-turn-leaf', text)
+            self.assertIn('data:image/webp;base64,', text)
+            self.assertIn('data:font/woff2;base64,', text)
+            self.assertLess(len(files['ui/index.html']), 3 * 1024 * 1024)
+            self.assertIn('licenses/animejs.txt', files)
+            self.assertIn('licenses/caveat.txt', files)
+
+    def test_inline_data_cannot_terminate_script_and_no_runtime_remote_assets(self):
+        from unittest.mock import patch
+        import re
+        original = Path.read_text
+        def read(path, *args, **kwargs):
+            text = original(path, *args, **kwargs)
+            if path == builder.ROOT / 'ui/locales.json':
+                data = json.loads(text)
+                data['de']['motto'] = '</script><script>unexpected()</script>'
+                return json.dumps(data)
+            return text
+        with patch.object(Path, 'read_text', read):
+            text = builder.sidebar_files('kitchen')['ui/index.html'].decode()
+        self.assertNotIn('</script><script>unexpected()', text)
+        self.assertFalse(re.search(r'<(?:script|link|img)[^>]+(?:src|href)=["\']https?://', text))
+        self.assertFalse(re.search(r'url\(["\']?https?://', text))
+
     def test_stdio_entrypoint_icons_resource_and_rejections(self):
         root = builder.ROOT / 'dist/plain/sidebar/plugins/cookbook-sidebar'
         requests = [

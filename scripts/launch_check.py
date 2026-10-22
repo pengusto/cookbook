@@ -18,6 +18,7 @@ def run(*args, cwd=ROOT):
 def artifacts(root):
     paths = list((root / 'site/downloads').glob('*.zip'))
     paths += [root / 'dist/website.zip', *[root / 'dist' / v / 'sidebar/cookbook-sidebar.zip' for v in ('plain', 'kitchen')]]
+    paths += list((root / 'dist/store').glob('*/*.zip'))
     return {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
 
 
@@ -36,17 +37,20 @@ def main():
         run('-m', 'unittest', 'discover', '-s', 'tests', cwd=portable)
         if artifacts(portable) != expected:
             raise ValueError('Portable artifact hashes differ')
-    report = {'scope': 'local-only', 'version': json.loads((ROOT / 'bundle.json').read_text())['version'],
+    config = json.loads((ROOT / 'bundle.json').read_text())
+    report = {'scope': 'local-only', 'version': config['version'],
+              'selected_store_variant': config['store_variant'],
               'packaging': 'pass', 'portable_rebuild': 'pass', 'sha256': expected,
-              'public_launch': 'not-ready',
-              'remaining_gates': ['Visible desktop installation and main workflow acceptance',
-                  'Complete optional TruffleHog scanner coverage',
-                  'Confirm public website, repository and support destinations',
-                  'Finalize provider identity and hosting-specific legal pages',
-                  'Remove private-preview noindex only for an approved release',
-                  'Publisher verification and store review',
-                  'Partner allowlisting before any public local-MCP sidebar submission',
-                  'Explicit publication approval']}
+              'store_submission': 'not-assessed-by-local-checks',
+              'remaining_gates': ['Clean desktop installation and main workflow acceptance of the exact upload package',
+                  'Confirm submission access, verified publisher identity and portal category',
+                  'Review the exact upload ZIP for unintended public content',
+                  'Pass portal metadata and skill scans and store review',
+                  'Explicit upload, submission and publication approval'],
+              'separate_scopes': {
+                  'website': ['Verify the GitHub Pages deployment and public legal/privacy destinations'],
+                  'local_mcp_sidebar': ['Confirm partner eligibility and organization allowlisting before submission'],
+                  'optional_verification': ['Additional TruffleHog coverage; absence alone is not a store blocker']}}
     (ROOT / 'dist/launch-report.json').write_text(json.dumps(report, indent=2) + '\n')
     print('PASS: local artifacts and portable rebuild. Public launch gates remain; see dist/launch-report.json')
 

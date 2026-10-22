@@ -1,26 +1,36 @@
 {
   "displayName": "Cookbook by Pengusto",
-  "shortDescription": "From idea to release review",
-  "longDescription": "Eight workflows from one shared source for starting a project, checking progress, reconstructing conversation goals and status, reviewing exposure and legal questions, preparing a release, drafting change notes and ending a chat deliberately. Choose Plain questions or Kitchen names; install one naming variant at a time. Local tools may be required. Scanners are optional; no hooks or MCP server are bundled. Reviews are not security or legal certification. Publication, deletion and external actions require separate authorization.",
+  "shortDescription": "Plan, review and finish work",
+  "longDescription": "Thirteen workflows for developers working with a coding agent: turn an idea into a small project plan, check progress, recover chat goals and decisions, review exposure and legal questions, assess release readiness, draft change notes from evidence, and finish with a clear handoff. Choose one naming style per installation. Runs locally; repository checks may need Git, Python 3.10+ and optional scanners. No hooks or MCP server are included. Findings are not security or legal certification. External actions require authorization. Also includes evidence-based retrospectives, returning after a long pause, manual prompt completion and paired Plain/Kitchen naming. Includes an introduction that explains the collection and recommends a fitting workflow.",
   "developerName": "Pengusto",
   "category": "Developer Tools",
   "capabilities": [
     "Plan a project start",
+    "Check project progress",
+    "Recover chat goals and decisions",
     "Review exposure risks",
-    "Prepare legal review",
+    "Scope legal review questions",
     "Assess release readiness",
-    "Draft verified release notes",
-    "Reconstruct conversation goals and status"
+    "Draft verified change notes",
+    "Finish with a clear handoff",
+    "Learn from past attempts",
+    "Return after a long break",
+    "Complete a partial prompt",
+    "Compare paired skill names",
+    "Understand Cookbook and choose a workflow"
   ],
   "defaultPrompt": [
     "Help me plan a small portfolio website with three projects.",
     "Evaluate this repository for release readiness without publishing.",
     "Draft release notes from the actual diff between the supplied Git refs."
   ],
-  "brandColor": "#974022",
-  "brandColorDark": "#E7B998",
+  "brandColor": "#682C27",
+  "brandColorDark": "#F6F0E4",
   "composerIcon": "./assets/icon.png",
   "logo": "./assets/icon.png",
   "composerIconDark": "./assets/icon-dark.png",
-  "logoDark": "./assets/icon-dark.png"
+  "logoDark": "./assets/icon-dark.png",
+  "websiteURL": "https://pengusto.github.io/cookbook/",
+  "supportURL": "https://github.com/pengusto/cookbook/issues",
+  "privacyPolicyURL": "https://pengusto.github.io/cookbook/privacy-en.html"
 }

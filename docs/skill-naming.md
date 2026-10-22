@@ -22,3 +22,20 @@ Die vom Nutzer selbst verfasste und privat genutzte Anleitung wurde am 2026-10-1
 **Where Were We? / What Was I Cooking?** rekonstruiert Ziel, Zieländerungen, erledigte und offene Arbeit sowie Nebenwege. Es ist ein Rückblick ohne automatische Änderungen. **Am I Making Progress? / Are We Cooking?** bewertet den Fortschritt; **What Did We Change? / What’s New on the Menu?** erstellt Release-Notizen. Der Abschluss-Skill **Can We Finish? / Close the Kitchen** bleibt separat.
 
 Die sieben früher importierten Git-Historien bleiben erhalten. Die vier ehemaligen GitHub-Einzelrepos wurden am 2026-10-18 auf Nutzerwunsch gelöscht. Die Erweiterung der Source-Beta auf 0.3.0 ist zur Veröffentlichung auf GitHub freigegeben. Keine Website deployt, keine Stores eingereicht, aktive Host-Installationen nicht verändert.
+
+## Namensreview 2026-10-22
+
+Die acht Katalogpaare oben bleiben bestehen. Für Erweiterungen und noch nicht zugeordnete allgemeine Skills gibt es eine [gemeinsame Vorschlagsliste mit beiden Varianten](naming-pairs.md). Neu bestätigt ist das Paar des privaten Namens-Skills: **Which Name Wins?** (Plain, `which-name-wins`) / **Name That Dish** (Kitchen, `name-that-dish`). Seit der lokalen Erweiterung 0.4.0 ist die portable Fassung im Cookbook-Katalog enthalten. Der Kitchen-Aufruf lautet `$name-that-dish`; der historische Standalone-Aufruf gehört zur privaten Quelle. Eine Anzeigenamensentscheidung ist keine Installation oder Veröffentlichung.
+
+## Lokale Erweiterung 0.4.0
+
+Die vier bestätigten Paare sind jetzt kanonische Quellen und Bestandteil beider Varianten.
+
+| Stabile Quell-ID | Plain | Kitchen |
+|---|---|---|
+| `here-we-go-again` | Here We Go Again (`here-we-go-again`) | Why Did It Burn? (`why-did-it-burn`) |
+| `catch-me-up` | Catch Me Up (`catch-me-up`) | Back to the Kitchen (`back-to-the-kitchen`) |
+| `finish-my-prompt` | Finish My Prompt (`finish-my-prompt`) | Finish My Order (`finish-my-order`) |
+| `which-name-wins` | Which Name Wins? (`which-name-wins`) | Name That Dish (`name-that-dish`) |
+
+Der Naming-Workflow wurde als portable Fassung ohne persönliche Pfade oder privaten Korpus übernommen. Die ursprüngliche private Quelle bleibt erhalten. [Aktueller Installationsnachweis](skill-installation-0.4.0.md).

@@ -32,7 +32,7 @@ class WebsiteContracts(unittest.TestCase):
             for link in parser.links:
                 url = urlsplit(link)
                 if url.scheme or url.netloc:
-                    self.assertIn(url.scheme, ('https', 'data'))
+                    self.assertIn(url.scheme, ('https', 'data', 'mailto'))
                     continue
                 target = (page.parent / unquote(url.path)).resolve() if url.path else page
                 self.assertTrue(target.is_relative_to(site.resolve()), link)
@@ -41,13 +41,15 @@ class WebsiteContracts(unittest.TestCase):
                     destination = Links()
                     destination.feed(target.read_text())
                     self.assertIn(url.fragment, destination.ids, link)
-            self.assertIn('noindex,nofollow', page.read_text())
+            self.assertNotIn('noindex,nofollow', page.read_text())
+            self.assertNotIn('htwelve', page.read_text())
 
     def test_website_archive_exactly_matches_site_without_private_state(self):
         site = ROOT / 'site'
         expected = {str(p.relative_to(site)): p.read_bytes() for p in site.rglob('*') if p.is_file()}
         rows = json.loads((ROOT / 'catalog.json').read_text())
         allowed = {'index.html', 'kitchen.html', 'help.html', 'LICENSE', 'assets/icon.svg', 'assets/icon-dark.svg', 'assets/cookbook-hero-transparent.png', 'assets/site.css', 'index-en.html', 'kitchen-en.html', 'help-en.html', 'downloads/SHA256SUMS'}
+        allowed.update({'legal.html','legal-en.html','privacy.html','privacy-en.html','cookbook.html','cookbook-plain.html','robots.txt','sitemap.xml','.nojekyll'})
         allowed.update(f'assets/icons/{name}' for name in ('download.svg', 'book.svg', 'chef-hat.svg', 'message-circle.svg', 'arrow-right.svg', 'clipboard.svg', 'soup.svg', 'lock.svg', 'search.svg', 'bell.svg', 'list-details.svg', 'door-exit.svg', 'terminal-2.svg', 'LICENSE', 'LUCIDE-LICENSE', 'README.md'))
         allowed.update(f'downloads/cookbook-by-pengusto-{variant}-{host}.zip' for host in ('codex', 'claude') for variant in ('plain','kitchen'))
         for row in rows:
@@ -60,7 +62,7 @@ class WebsiteContracts(unittest.TestCase):
             self.assertEqual(set(archive.namelist()), set(expected))
             for name, data in expected.items():
                 self.assertEqual(archive.read(name), data)
-                self.assertFalse(any(p.startswith('.') for p in Path(name).parts))
+                self.assertFalse(any(p.startswith('.') for p in Path(name).parts) and name != '.nojekyll')
                 self.assertNotIn('sources.local.json', name)
                 self.assertNotIn(b'/Users/enisuysal/', data)
         self.assertIn('index.html', expected)
@@ -81,7 +83,7 @@ class WebsiteContracts(unittest.TestCase):
                     self.assertIn('href="' + base + '-en.html"', page)
                     self.assertIn(f'cookbook-by-pengusto-{variant}-codex.zip', page)
                     self.assertIn(f'cookbook-by-pengusto-{variant}-claude.zip', page)
-                    self.assertEqual(page.count('<article class="skill"'), 8)
+                    self.assertEqual(page.count('<article class="skill"'), len(json.loads((ROOT / 'catalog.json').read_text())))
                     self.assertNotIn('{{', page)
                     self.assertNotIn('npm install', page)
 

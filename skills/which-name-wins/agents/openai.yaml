@@ -1,0 +1,4 @@
+interface:
+  display_name: "{{TITLE}}"
+  short_description: "Passende Namen finden und Klartext/Kitchen-Paare gemeinsam vergleichen."
+  default_prompt: "Use ${{ID}}: Schlage drei Namenspaare für einen Skill vor, der langsame Tests erklärt."

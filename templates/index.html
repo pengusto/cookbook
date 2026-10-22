@@ -2,16 +2,16 @@
 <html lang="{{LANG}}">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light dark"><meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark"><meta name="robots" content="index,follow">
 <title>Cookbook by Pengusto · {{PAGE_TITLE}}</title><meta name="description" content="{{DESCRIPTION}}">
-<link rel="icon" href="assets/icon.svg"><link rel="stylesheet" href="assets/site.css?v={{ASSET_VERSION}}">
+<link rel="canonical" href="{{CANONICAL}}"><link rel="icon" href="assets/icon.svg"><link rel="stylesheet" href="assets/site.css?v={{ASSET_VERSION}}">
 {{STRUCTURED_DATA}}
 </head>
 <body>
 <a class="skip" href="#skills">{{SKIP}}</a>
 <header class="site-header wrap">
 <a class="brand" href="{{HOME}}" aria-label="Cookbook by Pengusto"><picture class="brand-mark"><source media="(prefers-color-scheme: dark)" srcset="assets/icon-dark.svg"><img src="assets/icon.svg" width="46" height="46" alt=""></picture><span>Cookbook<small>by Pengusto</small></span></a>
-<nav class="main-nav" aria-label="{{NAV}}"><a href="#skills">Skills</a><a href="#how">{{HOW}}</a><a href="#install">Codex &amp; Claude Code</a><a href="#about">{{ABOUT}}</a></nav>
+<nav class="main-nav" aria-label="{{NAV}}"><a href="#skills">Skills</a><a href="#how">{{HOW}}</a><a href="#install">Codex &amp; Claude Code</a><a href="#about">{{ABOUT}}</a><a href="{{BOOK}}">{{OPEN_BOOK}}</a></nav>
 <div class="header-actions"><nav class="languages" aria-label="{{LANG_LABEL}}">{{LANG_LINKS}}</nav><a class="button compact" href="#install"><span class="ui-icon icon-download" aria-hidden="true"></span>{{INSTALL}}</a></div>
 </header>
 <main>
@@ -21,5 +21,5 @@
 <section id="install" class="install-section" aria-labelledby="install-title"><div class="wrap"><div class="install-heading"><div><p class="kicker">{{CURRENT_VARIANT}}</p><h2 id="install-title">{{INSTALL_TITLE}}</h2></div><p>{{INSTALL_INTRO}}</p></div><div class="install-grid">{{HOSTS}}</div><details class="update-note"><summary>{{UPDATES_TITLE}}</summary><p>{{UPDATES_TEXT}}</p><p>{{SWITCH_TEXT}}</p><p>{{LANG_NOTE}}</p></details><p class="checksums"><a href="downloads/SHA256SUMS">{{CHECKSUMS}}</a> · <a href="LICENSE">MIT</a></p></div></section>
 <section id="about" class="about wrap"><h2>{{ABOUT_TITLE}}</h2><div><p>{{ABOUT_TEXT}}</p><p>{{STATUS_TEXT}}</p></div></section>
 </main>
-<footer class="wrap"><a class="brand" href="{{HOME}}"><picture class="brand-mark"><source media="(prefers-color-scheme: dark)" srcset="assets/icon-dark.svg"><img src="assets/icon.svg" width="36" height="36" alt=""></picture><span>Cookbook<small>by Pengusto</small></span></a><p>{{PRIVACY}}</p><a href="{{HELP}}#privacy">{{NOTES}}</a></footer>
+<footer class="wrap"><a class="brand" href="{{HOME}}"><picture class="brand-mark"><source media="(prefers-color-scheme: dark)" srcset="assets/icon-dark.svg"><img src="assets/icon.svg" width="36" height="36" alt=""></picture><span>Cookbook<small>by Pengusto</small></span></a><p>{{PRIVACY}}</p><nav><a href="{{HELP}}">{{NOTES}}</a> · <a href="{{LEGAL}}">{{LEGAL_LABEL}}</a> · <a href="{{POLICY}}">{{POLICY_LABEL}}</a></nav></footer>
 </body></html>

@@ -12,6 +12,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+PUBLIC_BASE = 'https://pengusto.github.io/cookbook/'
 RECIPE_FIELDS = ('when', 'ingredients', 'steps', 'verify', 'result')
 
 
@@ -113,6 +114,8 @@ def plugin_files(host, variant='plain'):
     if host not in ('codex', 'claude'):
         raise ValueError('Unknown plugin host')
     config = json.loads((ROOT / 'bundle.json').read_text())
+    if config['store_variant'] not in VARIANTS:
+        raise ValueError('Unknown store naming variant')
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', config['name']):
         raise ValueError('Invalid bundle name')
     if not re.fullmatch(r'\d+\.\d+\.\d+', config['version']):
@@ -129,7 +132,6 @@ def plugin_files(host, variant='plain'):
         manifest['requires_local_executor'] = True
         listing = json.loads((ROOT / 'store/listing.json').read_text())
         listing['displayName'] = config['display_name']
-        listing['shortDescription'] = 'Plain questions' if variant == 'plain' else 'Kitchen names'
         for key, limit in (('displayName', 30), ('shortDescription', 30),
                            ('longDescription', 4000), ('developerName', 80)):
             if not isinstance(listing.get(key), str) or not 0 < len(listing[key]) <= limit:
@@ -163,8 +165,20 @@ def plugin_files(host, variant='plain'):
         files.update({f'skills/{install_id}/{name}': data for name, data in rendered.items()})
         sources.append({key: row[key] for key in ('id', 'license', 'repository', 'revision', 'files')})
     files['SOURCES.json'] = json_bytes({'bundle': config['name'], 'version': config['version'], 'variant': variant, 'skills': sources})
-    files['README.md'] = (ROOT / 'templates/plugin-README.md').read_text().replace('{{VARIANT}}', variant).encode()
-    files['README.de.md'] = (ROOT / 'templates/plugin-README.de.md').read_text().replace('{{VARIANT}}', variant).encode()
+    invocations = []
+    for slug in selected:
+        row = rows[slug]
+        title = row['title'] if variant == 'plain' else row['cooking_title']
+        name = row['install_ids'][variant]
+        command = f'${name}' if host == 'codex' else f'/{config["name"]}:{name}'
+        invocations.append(f'| {title} | `{command}` |')
+    for language in ('', '.de'):
+        text = (ROOT / f'templates/plugin-README{language}.md').read_text()
+        for key, value in {'VERSION': config['version'], 'VARIANT': variant,
+                           'HOST': 'Codex' if host == 'codex' else 'Claude Code',
+                           'INVOCATIONS': '\n'.join(invocations)}.items():
+            text = text.replace('{{' + key + '}}', value)
+        files[f'README{language}.md'] = text.encode()
     return config, files
 
 
@@ -202,6 +216,11 @@ def build_plugins(downloads):
             archive_files = {f'{config["name"]}/plugins/{config["name"]}/{name}': data for name, data in files.items()}
             archive_files[f'{config["name"]}/{name}'] = json_bytes(value)
             write_zip(archive_files, target)
+            if host == 'codex':
+                # Portal uploads contain the plugin itself, not a marketplace wrapper.
+                upload = ROOT / 'dist' / 'store' / variant / f'{config["name"]}.zip'
+                upload.parent.mkdir(parents=True, exist_ok=True)
+                write_zip(files, upload)
             sums.append(f'{sha(target.read_bytes())}  {target.name}')
     return sums
 
@@ -213,39 +232,61 @@ def sidebar_files(variant='plain'):
     listing.update(displayName='Cookbook by Pengusto', shortDescription='Browse local skill recipes',
                    longDescription='Read the local Cookbook catalog in the sidebar. Requires Python 3.10+. Does not install skills, edit files, or publish.',
                    capabilities=['Browse the local Cookbook'], defaultPrompt=[])
-    manifest = {'name': name, 'version': json.loads((ROOT / 'bundle.json').read_text())['version'], 'description': listing['longDescription'],
+    manifest = {'name': name, 'version': json.loads((ROOT / 'bundle.json').read_text())['sidebar_version'], 'description': listing['longDescription'],
                 'author': {'name': 'Pengusto'}, 'license': 'MIT', 'interface': listing,
                 'mcpServers': './.mcp.json'}
     config = {'mcpServers': {name: {'command': 'python3',
               'args': ['./scripts/sidebar_server.py'], 'cwd': './'}}}
-    cards = []
-    for row in catalog():
-        row = dict(row, title=row['title'] if variant == 'plain' else row['cooking_title'])
-        esc = html.escape
-        fields = ''.join(f'<dt>{esc(key)}</dt><dd>{esc(row[key])}</dd>'
-                         for key in (*RECIPE_FIELDS, 'limits'))
-        cards.append(f'<article><p class="eyebrow">{esc(row["phase"])}</p><h2>{esc(row["title"])}</h2>'
-                     f'<p>{esc(row["summary"])}</p><p class="status">{esc(row["license"])} · {esc(row["status"])}</p>'
-                     f'<details><summary>Rezept öffnen</summary><dl>{fields}</dl>'
-                     f'<p>Beispielaufruf für einen separat installierten Skill:</p><code>{esc(row["prompt"])}</code></details></article>')
+    import base64
+    def data_uri(path, mime):
+        return 'data:' + mime + ';base64,' + base64.b64encode((ROOT / path).read_bytes()).decode()
+    locales = json.loads((ROOT / 'ui/locales.json').read_text())
+    expected = {'de', 'en', 'fr', 'es', 'pt-BR', 'it', 'tr', 'ja', 'ko', 'zh-CN', 'ar', 'hi'}
+    if set(locales) != expected:
+        raise ValueError('Cookbook UI requires the twelve reviewed locales')
+    recipe_count = len(catalog())
+    reference_keys = set(locales['de'])
+    for locale, values in locales.items():
+        if set(values) != reference_keys or any(not str(value).strip() for value in values.values()):
+            raise ValueError(f'Incomplete UI locale: {locale}')
+        for key in ('summaries', 'whenList', 'intros'):
+            if len(values[key].split('|')) != recipe_count:
+                raise ValueError(f'Incomplete recipes: {locale}/{key}')
+        if len(values['recipeLimits']) != recipe_count or len(values['stepNotes']) != 4 or len(values['verifications']) != recipe_count or len(values['ingredientLists']) != recipe_count or any(len(row) != 4 for row in values['ingredientLists']):
+            raise ValueError(f'Incomplete recipe details: {locale}')
+        if any(len(values['steps'+str(i)].split('|')) != 4 for i in range(recipe_count)):
+            raise ValueError(f'Incomplete preparation steps: {locale}')
+    accents = ['#843327', '#52623e', '#465e70', '#6d405d', '#78602e', '#3f6963', '#9b4f30', '#3f536a', '#774551', '#8b522d', '#326b70', '#69712c', '#795132']
+    dark_accents = ['#e3a384', '#b9cd92', '#a9c8dc', '#d5add0', '#e6ca87', '#9fd1c6', '#ecb08b', '#b5c9e1', '#e5a5b8', '#e1b88d', '#96d5da', '#cbd58e', '#ddc19b']
+    recipes = [{'id': row['install_ids'][variant], 'title': row['title'] if variant == 'plain' else row['cooking_title'],
+                'names': {'plain': row['title'], 'kitchen': row['cooking_title']},
+                'accent': accents[index], 'accentDark': dark_accents[index], 'art': data_uri('assets/cookbook/' + row['id'] + '.webp', 'image/webp')}
+               for index, row in enumerate(catalog())]
+    payload = json.dumps({'version': manifest['version'], 'variant': variant, 'recipes': recipes, 'locales': locales}, ensure_ascii=False).replace('<', '\\u003c')
     css = (ROOT / 'assets/sidebar.css').read_text()
-    bridge = '''<script>
-const initId = 'cookbook-init';
-addEventListener('message', event => {
-  if (event.source !== parent || !event.data || event.data.jsonrpc !== '2.0') return;
-  if (event.data.id === initId && event.data.result) {
-    parent.postMessage({jsonrpc:'2.0',method:'ui/notifications/initialized'}, '*');
-  }
-});
-parent.postMessage({jsonrpc:'2.0',id:initId,method:'ui/initialize',params:{protocolVersion:'2026-01-26',appInfo:{name:'cookbook-sidebar',version:'0.3.1'},appCapabilities:{}}}, '*');
-</script>'''
-    page = '<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-    page += f'<title>Cookbook</title><style>{css}</style><header><p class="eyebrow">Lokales Cookbook</p><h1>Cookbook by Pengusto</h1>'
-    page += '<p>Acht Rezepte, acht separat installierbare Skills. Diese Ansicht ist zum Lesen; sie installiert oder veröffentlicht nichts.</p></header>'
-    page += '<main><div class="grid">' + ''.join(cards) + '</div></main>' + bridge + '</html>'
+    font_css = []
+    for font in json.loads((ROOT / 'assets/vendor/fonts/sources.json').read_text()):
+        block = font['css'].replace('Caveat', 'CookbookHand').replace('Cormorant Garamond', 'CookbookSerif')
+        block = block.replace(font['source'], data_uri('assets/vendor/fonts/' + font['family'] + '/' + font['file'], 'font/woff2'))
+        font_css.append(block)
+    css = css.replace('/*COOKBOOK_FONTS*/', '\n'.join(font_css))
+    css = css.replace('DECOR_ASSET', data_uri('assets/cookbook/decor.webp', 'image/webp'))
+    page = (ROOT / 'ui/book.html').read_text()
+    for token, content in (
+        ('/*COOKBOOK_CSS*/', css), ('PAN_ASSET', 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22/%3E'),
+        ('/*COOKBOOK_DATA*/', payload),
+        ('/*COOKBOOK_MOTION*/', (ROOT / 'assets/vendor/animejs/anime.umd.min.js').read_text()),
+        ('/*COOKBOOK_JS*/', (ROOT / 'ui/book.js').read_text())):
+        page = page.replace(token, content)
     files = {'.codex-plugin/plugin.json': json_bytes(manifest), '.mcp.json': json_bytes(config),
              'scripts/sidebar_server.py': (ROOT / 'scripts/sidebar_server.py').read_bytes(),
              'ui/index.html': page.encode(), 'LICENSE': (ROOT / 'LICENSE').read_bytes()}
+    for source, target in (
+        ('assets/vendor/animejs/LICENSE.md', 'licenses/animejs.txt'),
+        ('assets/vendor/animejs/SOURCE.json', 'licenses/animejs-source.json'),
+        ('assets/vendor/fonts/cormorantgaramond/OFL.txt', 'licenses/cormorant-garamond.txt'),
+        ('assets/vendor/fonts/caveat/OFL.txt', 'licenses/caveat.txt')):
+        files[target] = (ROOT / source).read_bytes()
     for asset in ('icon.png', 'icon-dark.png', 'icon.svg', 'icon-dark.svg', 'sidebar-icon.svg'):
         files[f'assets/{asset}'] = (ROOT / 'assets' / asset).read_bytes()
     return files
@@ -316,7 +357,7 @@ def render_landing(rows, language, variant):
     ui = translations[language]
     esc = html.escape
     visible, cards = [], []
-    icons = ('clipboard', 'soup', 'book', 'lock', 'search', 'bell', 'list-details', 'door-exit')
+    icons = ('clipboard', 'soup', 'book', 'lock', 'search', 'bell', 'list-details', 'door-exit', 'search', 'book', 'clipboard', 'soup', 'book')
     def icon(name):
         return f'<span class="ui-icon icon-{name}" aria-hidden="true"></span>'
     for index, row in enumerate(rows):
@@ -328,12 +369,12 @@ def render_landing(rows, language, variant):
         cards.append(f'<article class="skill" id="{row["id"]}"><details><summary><span class="skill-number" aria-hidden="true">{index + 1:02d}</span><span class="skill-icon" aria-hidden="true">{icon(icons[index])}</span><h2>{esc(title)}</h2><p>{esc(fields["summary"])}</p><span class="row-arrow" aria-hidden="true">{icon("arrow-right")}</span></summary><div class="skill-body"><dl>{definition}</dl><div class="skill-links"><code>${slug}</code><a href="downloads/{variant}-{row["id"]}.zip" download>{icon("download")}{esc(ui["ZIP"])}</a><a href="skills/{variant}/{slug}/SKILL.md">{esc(ui["GUIDE"])}</a></div></div></details></article>')
     hosts = []
     for host, title in (('codex', 'Codex'), ('claude', 'Claude Code')):
-        commands = (f'codex plugin marketplace add .\ncodex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local' if host == 'codex' else 'claude plugin marketplace add . --scope user\nclaude plugin install cookbook-by-pengusto@cookbook-by-pengusto-local --scope user')
-        hosts.append(f'<div class="host"><h3>{icon("terminal-2")}{title}</h3><a class="download" href="downloads/cookbook-by-pengusto-{variant}-{host}.zip" download>{icon("download")}{esc(ui["DOWNLOAD"])}</a><p>{esc(ui["EXTRACT"])}</p><pre><code>{esc(commands)}</code></pre><p class="small">{esc(ui["NEW_SESSION"])}</p></div>')
+        commands = (f'codex plugin marketplace add pengusto/cookbook --ref {variant}\ncodex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local' if host == 'codex' else 'claude plugin marketplace add . --scope user\nclaude plugin install cookbook-by-pengusto@cookbook-by-pengusto-local --scope user')
+        hosts.append(f'<div class="host"><h3>{icon("terminal-2")}{title}</h3><a class="download" href="downloads/cookbook-by-pengusto-{variant}-{host}.zip" download>{icon("download")}{esc(ui["DOWNLOAD"])}</a><p>{esc(ui['EXTRACT']) if host == 'claude' else esc(ui['REMOTE_INSTALL'])}</p><pre><code>{esc(commands)}</code></pre><p class="small">{esc(ui["NEW_SESSION"])}</p></div>')
     variant_links = ''.join(f'<a href="{page_name(language, v)}#skills"' + (' aria-current="page"' if v == variant else '') + f'>{icon("chef-hat" if v == "kitchen" else "message-circle")}{esc(ui[v.upper()])}</a>' for v in ('kitchen', 'plain'))
     lang_links = ''.join(f'<a href="{page_name(lang, variant)}" lang="{lang}" hreflang="{lang}"' + (' aria-current="page"' if lang == language else '') + f'>{lang.upper()}</a>' for lang in ('de', 'en'))
     values = {key: esc(value) for key, value in ui.items() if isinstance(value, str)}
-    values.update(LANG=language, HOME=page_name(language, variant), HELP='help.html' if language == 'de' else 'help-en.html',
+    values.update(CANONICAL=PUBLIC_BASE+page_name(language,variant), BOOK='cookbook.html' if variant=='kitchen' else 'cookbook-plain.html', LEGAL='legal.html' if language=='de' else 'legal-en.html', POLICY='privacy.html' if language=='de' else 'privacy-en.html', LANG=language, HOME=page_name(language, variant), HELP='help.html' if language == 'de' else 'help-en.html',
                   CARDS='\n'.join(cards), HOSTS=''.join(hosts), VARIANT_LINKS=variant_links, LANG_LINKS=lang_links,
                   CURRENT_VARIANT=esc(ui[variant.upper()]), STRUCTURED_DATA=schema_script(visible, language),
                   ASSET_VERSION=sha((ROOT / 'assets/site.css').read_bytes() + (ROOT / 'assets/cookbook-hero-transparent.png').read_bytes())[:12])
@@ -342,6 +383,35 @@ def render_landing(rows, language, variant):
     if '{{' in page:
         raise ValueError('Unresolved website placeholder')
     return page
+
+def public_pages(site):
+    legal = json.loads((ROOT / 'templates/legal.json').read_text())
+    for language, sections in legal.items():
+        suffix = '' if language == 'de' else '-en'
+        for kind, content in sections.items():
+            name = kind + suffix + '.html'
+            other = kind + ('-en' if language == 'de' else '') + '.html'
+            home = 'kitchen'+suffix+'.html'
+            page = ('<!doctype html><html lang="'+language+'"><head><meta charset="utf-8">'
+                '<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">'
+                '<link rel="stylesheet" href="assets/site.css"><link rel="canonical" href="'+PUBLIC_BASE+name+'">'
+                '<title>'+content['title']+' · Cookbook by Pengusto</title></head><body>'
+                '<header class="site-header wrap"><a class="brand" href="'+home+'">Cookbook by Pengusto</a>'
+                '<nav><a href="'+other+'">'+('English' if language=='de' else 'Deutsch')+'</a></nav></header>'
+                '<main class="help-main wrap"><h1>'+content['title']+'</h1>'+content['body']+'</main>'
+                '<footer class="wrap"><a href="'+home+'">Cookbook</a> · <a href="legal'+suffix+'.html">'
+                +legal[language]['legal']['title']+'</a> · <a href="privacy'+suffix+'.html">'+legal[language]['privacy']['title']+'</a></footer></body></html>')
+            (site / name).write_text(page)
+    for variant, name in (('kitchen','cookbook.html'),('plain','cookbook-plain.html')):
+        page = sidebar_files(variant)['ui/index.html'].decode()
+        links = '<nav class="public-book-links" aria-label="Project links"><a href="'+page_name('en',variant)+'#install">Install Cookbook</a> · <a href="legal-en.html">Legal</a> · <a href="privacy-en.html">Privacy</a></nav>'
+        page = page.replace('</aside>', links+'</aside>').replace('</head>', '<link rel="canonical" href="'+PUBLIC_BASE+name+'"></head>')
+        (site / name).write_text(page)
+    (site / '.nojekyll').write_text('')
+    urls = [page_name(lang,v) for lang in ('de','en') for v in VARIANTS]+['legal.html','legal-en.html','privacy.html','privacy-en.html','cookbook.html','cookbook-plain.html']
+    (site / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+PUBLIC_BASE+name+'</loc></url>' for name in urls)+'</urlset>')
+    (site / 'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+PUBLIC_BASE+'sitemap.xml\n')
+
 
 def build():
     rows = catalog()
@@ -377,6 +447,7 @@ def build():
         shutil.copyfile(ROOT / 'assets' / name, site / 'assets' / name)
     shutil.copytree(ROOT / 'assets/icons', site / 'assets/icons', dirs_exist_ok=True)
     shutil.copyfile(ROOT / 'LICENSE', site / 'LICENSE')
+    public_pages(site)
     sums.extend(build_plugins(site / 'downloads'))
     (site / 'downloads/SHA256SUMS').write_text('\n'.join(sums) + '\n')
     write_zip({str(p.relative_to(site)): p.read_bytes() for p in site.rglob('*') if p.is_file()}, ROOT / 'dist/website.zip')

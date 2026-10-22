@@ -20,8 +20,15 @@
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
+| Here We Go Again | Why Did It Burn? |
+| Catch Me Up | Back to the Kitchen |
+| Finish My Prompt | Finish My Order |
+| Which Name Wins? | Name That Dish |
+| Explain the Cookbook | Show Me the Kitchen |
 
-> 0.3.1 local revision: all eight workflows refined; incomplete scanner reads are reported. See [verification](../skill-review-0.3.1.md) for package, behavioral and host-test boundaries.
+> **0.5.0 · 13 workflows.** Start with `$show-me-the-kitchen` (Kitchen) or `$explain-the-cookbook` (Plain). The visual Cookbook supports 12 languages and system/light/dark themes. Use `--ref plain` for Plain installation. The GitHub release is separate from the Store review. [Publication and installation](../../docs/publication.md).
+
+
 
 ## 빌드 및 검증
 
@@ -40,7 +47,7 @@ plain 또는 kitchen을 선택하세요. 두 방식은 같은 플러그인 식�
 Codex:
 
 ```sh
-codex plugin marketplace add ./dist/kitchen/codex
+codex plugin marketplace add pengusto/cookbook --ref kitchen
 codex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local
 ```
 
@@ -61,7 +68,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 16 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
 
 ## 업데이트
 
@@ -75,7 +82,7 @@ python3 scripts/launch_check.py
 
 ## 웹사이트
 
-독일어/영어 페이지는 시스템의 라이트/다크 설정을 따릅니다. 언어와 이름 체계는 각각 바꿀 수 있지만 스킬 지침은 번역되지 않습니다. 로컬 미리보기를 시작하고 출력된 URL을 여세요. 이 Beta에는 공개 웹사이트 배포나 스토어 등록이 포함되지 않습니다.
+독일어/영어 페이지는 시스템의 라이트/다크 설정을 따릅니다. 언어와 이름 체계는 각각 바꿀 수 있지만 스킬 지침은 번역되지 않습니다. 로컬 미리보기를 시작하고 출력된 URL을 여세요. 공개 Beta 웹사이트는 GitHub Pages에서 제공됩니다. 스토어 심사는 별도입니다.
 
 ```sh
 python3 scripts/cookbook.py serve --port 8767

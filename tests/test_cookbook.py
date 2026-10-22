@@ -12,6 +12,32 @@ spec.loader.exec_module(app)
 
 
 class PackagingContracts(unittest.TestCase):
+    def test_store_uploads_contain_plugin_at_root_without_marketplace_or_sidebar(self):
+        for variant in app.VARIANTS:
+            config, files = app.plugin_files('codex', variant)
+            upload = app.ROOT / 'dist/store' / variant / f'{config["name"]}.zip'
+            with self.subTest(variant=variant), zipfile.ZipFile(upload) as archive:
+                self.assertEqual({name: archive.read(name) for name in archive.namelist()}, files)
+                self.assertIn('.codex-plugin/plugin.json', archive.namelist())
+                self.assertNotIn('.mcp.json', archive.namelist())
+                self.assertFalse(any('marketplace.json' in name for name in archive.namelist()))
+
+    def test_package_readmes_show_only_selected_names_and_host_invocations(self):
+        for host in ('codex', 'claude'):
+            for variant in app.VARIANTS:
+                config, files = app.plugin_files(host, variant)
+                for name in ('README.md', 'README.de.md'):
+                    text = files[name].decode()
+                    self.assertIn(config['version'], text)
+                    self.assertNotIn('{{', text)
+                    for row in app.catalog():
+                        title = row['title'] if variant == 'plain' else row['cooking_title']
+                        other = row['cooking_title'] if variant == 'plain' else row['title']
+                        slug = row['install_ids'][variant]
+                        command = f'${slug}' if host == 'codex' else f'/{config["name"]}:{slug}'
+                        self.assertIn(f'| {title} | `{command}` |', text)
+                        self.assertNotIn(other, text)
+
     def test_both_hosts_and_variants_include_every_reviewed_source(self):
         reviewed = {row['id']: row for row in app.catalog() if row['status'] == 'source'}
         for host in ('codex', 'claude'):
@@ -51,6 +77,8 @@ class PackagingContracts(unittest.TestCase):
                 self.assertEqual(struct.unpack('>II', png[16:24]), (512, 512))
                 self.assertLess(len(png), 5 * 1024 * 1024)
             if host == 'codex':
+                source_listing = json.loads((app.ROOT / 'store/listing.json').read_text())
+                self.assertEqual(listing['shortDescription'], source_listing['shortDescription'])
                 self.assertLessEqual(len(listing['displayName']), 30)
                 self.assertLessEqual(len(listing['shortDescription']), 30)
                 self.assertLessEqual(len(listing['longDescription']), 4000)
@@ -212,3 +240,43 @@ class PackagingContracts(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class NewWorkflowInstallationContracts(unittest.TestCase):
+    def test_confirmed_new_workflows_are_selected_and_rendered_in_both_variants(self):
+        expected = {
+            'here-we-go-again': 'why-did-it-burn',
+            'catch-me-up': 'back-to-the-kitchen',
+            'finish-my-prompt': 'finish-my-order',
+            'which-name-wins': 'name-that-dish',
+            'explain-the-cookbook': 'show-me-the-kitchen',
+        }
+        rows = {r['id']: r for r in app.catalog()}
+        for variant in app.VARIANTS:
+            config, files = app.plugin_files('codex', variant)
+            for source_id, kitchen_id in expected.items():
+                with self.subTest(variant=variant, source=source_id):
+                    self.assertIn(source_id, config['skills'])
+                    self.assertEqual(rows[source_id]['install_ids'], {'plain': source_id, 'kitchen': kitchen_id})
+                    slug = rows[source_id]['install_ids'][variant]
+                    guide = files[f'skills/{slug}/SKILL.md'].decode()
+                    metadata = files[f'skills/{slug}/agents/openai.yaml'].decode()
+                    self.assertIn(f'name: {slug}\n', guide)
+                    self.assertIn(f'${slug}', metadata)
+                    self.assertNotIn('{{', guide)
+                    self.assertNotIn('/Users/', guide)
+                    self.assertNotIn('Enis Uysal', guide)
+                    self.assertNotIn(f'skills/{rows[source_id]["install_ids"]["plain" if variant == "kitchen" else "kitchen"]}/SKILL.md', files)
+
+class RemoteMarketplaceContracts(unittest.TestCase):
+    def test_remote_branches_have_the_native_root_and_exact_skill_package(self):
+        import sys
+        sys.path.insert(0, str(app.ROOT / 'scripts'))
+        import publish_marketplaces
+        for variant in app.VARIANTS:
+            config, expected = app.plugin_files('codex', variant)
+            files = publish_marketplaces.marketplace_files(variant)
+            metadata = json.loads(files['.agents/plugins/marketplace.json'])
+            self.assertEqual(metadata['plugins'][0]['source']['path'], './plugins/cookbook-by-pengusto')
+            self.assertEqual({n.removeprefix('plugins/cookbook-by-pengusto/'): v for n,v in files.items() if n.startswith('plugins/')}, expected)
+            self.assertIn(f'--ref {variant}', files['README.md'].decode())
+            self.assertNotIn('.mcp.json', files)

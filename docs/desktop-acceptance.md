@@ -1,3 +1,23 @@
+> **0.5.0 publication:** thirteen workflows; current install, website and Store boundaries: [publication.md](publication.md). Earlier acceptance results below are version-specific historical evidence.
+
+> **Abnahme 0.4.0 abgeschlossen (2026-10-22):** zwölf Skills nativ synthetisch geprüft; Nutzer bestätigt alle zwölf im Desktop-Picker und funktionierenden Abschluss-Guide. Exaktes Upload-ZIP erneut gescannt. Store-Zugang scheitert aktuell an der Identitätsprüfung; veröffentlichte vollständige Datenschutzerklärung fehlt. [Finaler Bericht](final-acceptance-0.4.0.md). Nichts hochgeladen oder veröffentlicht.
+
+> **Aktueller lokaler Stand 0.4.0 (2026-10-22):** zwölf Kitchen-Skills installiert und in frischen Codex-Sitzungen erkannt; vier neue Aufrufe verhaltensgeprüft. Sidebar 0.4.1 aktualisiert, vorherigen deaktivierten Zustand erhalten. [Aktueller Installations- und Abnahmebericht](skill-installation-0.4.0.md). Frühere Nachweise unten bleiben historisch; keine Veröffentlichung.
+
+# Aktuelle Kitchen-Abnahme · 2026-10-22
+
+Die aktuelle lokale Installation von Cookbook Kitchen 0.3.1 stimmt nach nativer Neuinstallation in allen 42 Dateien mit dem vorbereiteten Store-ZIP überein. Eine neue native Codex-CLI-Sitzung erkennt und liest alle acht Skills; acht begrenzte synthetische Szenarien bestehen. Der Nutzer hat anschließend bestätigt: „Alle acht sichtbar; Abschluss-Guide funktioniert.“ Damit ist die sichtbare Kurzabnahme als Nutzerbeobachtung erfasst. Die Computersteuerung verweigert weiterhin den direkten Zugriff auf Codex; keine eigene visuelle Beobachtung oder umfassende UI-Abnahme behauptet.
+
+Vollständiger Prüfstand, Paket-Hash, Grenzen und Einreichungsblocker: [Kitchen Store Acceptance](store-acceptance-2026-10-22.md).
+
+In einer neuen lokalen Codex-Sitzung Cookbook auswählen. Erwartete Kitchen-IDs: `prep-the-kitchen`, `are-we-cooking`, `what-was-i-cooking`, `keep-the-recipe-secret`, `can-i-serve-this`, `ready-to-serve`, `whats-new-on-the-menu`, `close-the-kitchen`. Keine parallele Plain-Installation hinzufügen. Die Sidebar gehört nicht zur Store-Abnahme dieses Skill-Pakets.
+
+Sichtbare Kurzprobe: `$close-the-kitchen` mit „Nur Abschluss-Guide: Zwei Links sind repariert, der relevante Test ist grün. Nichts ändern, archivieren oder veröffentlichen.“ Erwartet: begrenzter Abschluss auf Grundlage der mitgeteilten Beobachtungen, keine neuen Aufgaben oder externen Aktionen. Sichtbarkeit, Host-Version und Ergebnis festhalten; bei Fehlern die genaue Meldung ohne Zugangsdaten dokumentieren. Icons im tatsächlichen Picker auf Erkennbarkeit prüfen; ein CLI-Test belegt das nicht.
+
+English: Kitchen is the selected store variant. All 42 installed files match the upload ZIP; a fresh native CLI session discovered/read all eight skills and passed bounded synthetic scenarios. The maintainer subsequently confirmed all eight visible skills and a working closing guide; this is user-reported short acceptance. Computer use still denies direct access to Codex. Check the eight Kitchen IDs and the guide-only closing scenario in a fresh local desktop session, and record actual UI results. Do not publish.
+
+---
+
 > **Historischer Prüfstand 0.1.x.** Die aktuelle Architektur, Namenswelten und Installationswege stehen in [consolidation.md](consolidation.md) und der [README](../README.md). Frühere Testergebnisse werden nicht als neue 0.2.0-Abnahme behauptet.
 
 # Lokale Desktop-Abnahme / Local desktop acceptance

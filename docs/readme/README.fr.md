@@ -6,7 +6,7 @@
 
 > Machine-translated documentation; no independent fluent-speaker review. Commands, identifiers and paths match the English source.
 
-Huit processus pour agents issus d’une source maintenue. Choisissez les **questions simples** ou les **noms de cuisine** et installez un seul style par environnement.
+Treize processus pour agents issus d’une source maintenue. Choisissez les **questions simples** ou les **noms de cuisine** et installez un seul style par environnement.
 
 **Bêta publique expérimentale.** [pengusto/cookbook](https://github.com/pengusto/cookbook)
 
@@ -20,8 +20,15 @@ Huit processus pour agents issus d’une source maintenue. Choisissez les **ques
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
+| Here We Go Again | Why Did It Burn? |
+| Catch Me Up | Back to the Kitchen |
+| Finish My Prompt | Finish My Order |
+| Which Name Wins? | Name That Dish |
+| Explain the Cookbook | Show Me the Kitchen |
 
-> 0.3.1 local revision: all eight workflows refined; incomplete scanner reads are reported. See [verification](../skill-review-0.3.1.md) for package, behavioral and host-test boundaries.
+> **0.5.0 · 13 workflows.** Start with `$show-me-the-kitchen` (Kitchen) or `$explain-the-cookbook` (Plain). The visual Cookbook supports 12 languages and system/light/dark themes. Use `--ref plain` for Plain installation. The GitHub release is separate from the Store review. [Publication and installation](../../docs/publication.md).
+
+
 
 ## Construire et vérifier
 
@@ -40,7 +47,7 @@ Choisissez plain ou kitchen. Les deux utilisent la même identité de plugin. Le
 Codex:
 
 ```sh
-codex plugin marketplace add ./dist/kitchen/codex
+codex plugin marketplace add pengusto/cookbook --ref kitchen
 codex plugin add cookbook-by-pengusto@cookbook-by-pengusto-local
 ```
 
@@ -61,7 +68,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 16 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
 
 ## Mettre à jour
 
@@ -75,7 +82,7 @@ Commitez ou sauvegardez vos changements avant la mise à jour. Reconstruire actu
 
 ## Site web
 
-Les pages DE/EN suivent le thème clair ou sombre du système. La langue et les noms sont indépendants ; les instructions des skills ne sont pas traduites. Lancez l’aperçu et ouvrez l’URL affichée. Cette bêta ne comprend ni site public déployé ni publication en boutique.
+Les pages DE/EN suivent le thème clair ou sombre du système. La langue et les noms sont indépendants ; les instructions des skills ne sont pas traduites. Lancez l’aperçu et ouvrez l’URL affichée. Le site bêta public est hébergé sur GitHub Pages ; la validation en boutique reste distincte.
 
 ```sh
 python3 scripts/cookbook.py serve --port 8767
