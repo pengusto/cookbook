@@ -394,9 +394,10 @@ def render_landing(rows, language, variant):
         hosts.append(f'<div class="host"><h3>{icon("terminal-2")}{title}</h3><a class="download" href="downloads/cookbook-by-pengusto-{variant}-{host}.zip" download>{icon("download")}{esc(ui["DOWNLOAD"])}</a><p>{esc(install_note)}</p><pre><code>{esc(commands)}</code></pre><p class="small">{esc(ui["NEW_SESSION"])}</p></div>')
     variant_links = ''.join(f'<a href="{page_name(language, v)}#skills"' + (' aria-current="page"' if v == variant else '') + f'>{icon("chef-hat" if v == "kitchen" else "message-circle")}{esc(ui[v.upper()])}</a>' for v in ('kitchen', 'plain'))
     lang_links = ''.join(f'<a href="{page_name(lang, variant)}" lang="{lang}" hreflang="{lang}"' + (' aria-current="page"' if lang == language else '') + f'>{lang.upper()}</a>' for lang in ('de', 'en'))
+    alternates = ''.join(f'<link rel="alternate" hreflang="{lang}" href="{PUBLIC_BASE}{page_name(lang, variant)}">' for lang in ('de', 'en'))
     values = {key: esc(value) for key, value in ui.items() if isinstance(value, str)}
     values.update(CANONICAL=PUBLIC_BASE+page_name(language,variant), BOOK='cookbook.html' if variant=='kitchen' else 'cookbook-plain.html', LEGAL='legal.html' if language=='de' else 'legal-en.html', POLICY='privacy.html' if language=='de' else 'privacy-en.html', LANG=language, HOME=page_name(language, variant), HELP='help.html' if language == 'de' else 'help-en.html',
-                  CARDS='\n'.join(cards), HOSTS=''.join(hosts), VARIANT_LINKS=variant_links, LANG_LINKS=lang_links,
+                  CARDS='\n'.join(cards), HOSTS=''.join(hosts), VARIANT_LINKS=variant_links, LANG_LINKS=lang_links, ALTERNATES=alternates,
                   CURRENT_VARIANT=esc(ui[variant.upper()]), STRUCTURED_DATA=schema_script(visible, language),
                   ASSET_VERSION=sha((ROOT / 'assets/site.css').read_bytes() + (ROOT / 'assets/cookbook-hero-transparent.png').read_bytes())[:12])
     template = (ROOT / 'templates/index.html').read_text()
@@ -431,6 +432,7 @@ def public_pages(site):
     (site / '.nojekyll').write_text('')
     urls = [page_name(lang,v) for lang in ('de','en') for v in VARIANTS]+['legal.html','legal-en.html','privacy.html','privacy-en.html','cookbook.html','cookbook-plain.html']
     (site / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+PUBLIC_BASE+name+'</loc></url>' for name in urls)+'</urlset>')
+    # This file applies to a root-hosted export, not the /cookbook/ Pages path.
     (site / 'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+PUBLIC_BASE+'sitemap.xml\n')
 
 
