@@ -11,3 +11,9 @@ The product and documentation mention Codex, Claude Code, GitHub and their respe
 The optional Cookbook sidebar bundles Anime.js 4.5.0 from the official juliangarnier/anime repository (MIT) and Cormorant Garamond / Caveat from Google Fonts (SIL Open Font License). Source records, checksums and license texts are in `assets/vendor/`; the sidebar package includes the license texts. Assets are embedded locally, with no runtime font or animation CDN.
 
 The individual cookbook recipe illustrations and decorative sheet in `assets/cookbook/` were generated for this project. `SOURCES.json` records the delivered recipe image hashes; the original generated images are preserved separately.
+
+## README banner illustrations
+
+`assets/readme/cookbook-banner-storybook-v3.png` (light) and `assets/readme/cookbook-banner-storybook-dark.png` (dark) are AI-generated illustrations selected by the maintainer. The supplied profile illustration was used as a penguin identity reference, with the existing Cookbook logo as a brand reference. They depict a kitchen rising from an open recipe book; they are not product screenshots or evidence of host acceptance. The dark companion preserves the same scene and character while adapting background, lettering and lighting for contrast.
+
+The eight READMEs select the appropriate image with native `picture/source` markup. No automatic image generation or new update service is added. Source roles, generation prompts and SHA-256 checksums are recorded in [the banner source record](assets/readme/SOURCES.json). Original logo masters and font notices remain unchanged. Generated artwork carries no claim of exclusive rights or trademark clearance.

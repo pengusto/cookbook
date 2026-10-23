@@ -1,0 +1,30 @@
+{
+  "description": "Maintainer-selected paired README illustrations: open-book kitchen with the same penguin in light and dark themes.",
+  "references": [
+    {
+      "source": "Maintainer-provided profile-banner-purple.png",
+      "role": "Penguin identity reference only; no claim to exclusive generated artwork rights."
+    },
+    {
+      "source": "assets/brand/cookbook-horizontal-light-1200.png",
+      "role": "Existing Cookbook brand reference; original vector masters and font notices retained."
+    }
+  ],
+  "rights": "AI-generated illustrations, not product screenshots or host acceptance evidence. No exclusive artwork or trademark clearance claimed. Existing asset and font license notices remain applicable.",
+  "images": [
+    {
+      "file": "cookbook-banner-storybook-v3.png",
+      "theme": "light",
+      "generator": "built-in image_gen",
+      "sha256": "047c4e47f3954db2631077dd8117de8b222f50ff7bb4e3269fe805ff6de4f1d5",
+      "prompt": "Use case: illustration-story. Create a fresh alternative 3:1 panoramic README banner for Cookbook by Pengusto, NOT an edit of the previous island scene. Reference image 1 is ONLY the identity of the penguin: preserve its round dark charcoal body, cream face and belly, large dark oval eyes, small orange beak and feet, and gentle focused expression. Do not borrow ANY scenery or composition from that reference. Image 2 is the existing Cookbook brand logo: preserve its book/pan emblem and elegant serif identity. New concept: a warm editorial storybook kitchen built into the pages of an enormous open recipe book, with the penguin as a small but clearly readable cook inside it. A playful paper-theatre cutaway: cream book pages curl into kitchen walls, a wine-red cabinet and copper stove sit on the right page, a steaming pot and hanging whisk/pan make it unmistakably a kitchen, and the penguin stirs a little copper pot while consulting three large recipe cards on the left page, bearing simple abstract plan/return/check symbols. The enormous open book is the stage and major silhouette across the banner; the page edges at the foreground emphasize 'cookbook'. No rock, island, ocean, moon, mountain, night scene, floating platform or workshop bench. Cream paper #F6F0E4 background, rich wine red #682C27 cabinets and book binding, sage green herbs, warm copper cookware, one or two subtle lavender recipe tabs only. Soft daylight and painterly gouache/paper texture, charming sophisticated illustrated book-cover aesthetic, clear simple silhouettes at mobile scale. Typography in a calm cream area above the left book page: exact words 'Cookbook' and small 'by Pengusto', wine-red elegant serif with the existing book/pan emblem; readable and generous. Penguin and kitchen take center-right, not the stock side-island arrangement. No tiny labels, no additional text, no fake UI, no badges, no chef hat, no watermark. Treat coding workflows as recipes through the cards and diagrams; picture is an illustration, not a product screenshot. Generous margins so all important details remain visible at 390px README width."
+    },
+    {
+      "file": "cookbook-banner-storybook-dark.png",
+      "theme": "dark",
+      "generator": "built-in image_gen",
+      "sha256": "741c6448cbc32cf635fef505ccc73e8b932b37ddb1ffebf43a012334d146e1c3",
+      "prompt": "Use case: lighting-weather. Make an exactly composition-matched DARK-MODE sister version of this approved Cookbook banner. Preserve the identical wide 3:1 framing, exact same recognisable penguin, pose, kitchen rising from the open book, three workflow cards, copper pot, cabinetry, herbs, book silhouette, existing Cookbook book-pan emblem and lettering positions. Keep text exactly 'Cookbook' and 'by Pengusto'. Main change only: replace the outer pale cream paper background with deep warm charcoal/plum (#17131b) and change the dark wine-red lettering/emblem against that background to luminous warm cream, so both title and byline are clearly readable on dark GitHub. Preserve light cream cookbook pages, wine-red kitchen cabinets, warm copper cookware and sage herbs; adapt lighting into soft warm stove/task-lamp light with restrained lavender edge highlights to distinguish the penguin's dark body from the dark surroundings. Keep cream pages softly warm rather than glaring white. Not a color negative; retain natural material colours and all important geometry, identity and content. The dark background is flat textured paper, NOT night scenery: absolutely no islands, water, moon, rocks, workshop or new scene props. No new text, no new characters, no hat. Large readable title and penguin silhouette at 320px. Full opaque background, no transparency."
+    }
+  ]
+}

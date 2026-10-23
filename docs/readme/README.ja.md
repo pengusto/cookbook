@@ -1,8 +1,9 @@
 # Cookbook by Pengusto
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../../assets/brand/cookbook-horizontal-dark-1200.png">
-  <img src="../../assets/brand/cookbook-horizontal-light-1200.png" width="600" alt="Cookbook by Pengusto">
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/readme/cookbook-banner-storybook-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="../../assets/readme/cookbook-banner-storybook-v3.png">
+  <img alt="AI生成イラスト：開いた料理本から広がるクリーム色とワインレッドのキッチンで、ワークフローカードの隣で料理するCookbookのペンギン。" src="../../assets/readme/cookbook-banner-storybook-v3.png">
 </picture>
 
 [![MIT](https://img.shields.io/badge/license-MIT-blue)](../../LICENSE) [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)](../../README.md#build-and-verify) [![Beta](https://img.shields.io/badge/status-experimental_Beta-orange)](../../docs/public-release-review.md) [![CI](https://img.shields.io/badge/CI-launch_checks-grey)](https://github.com/pengusto/cookbook/actions/workflows/check.yml)
