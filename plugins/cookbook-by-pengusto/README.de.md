@@ -1,8 +1,8 @@
 # Cookbook by Pengusto
 
-Version 0.5.1 · Codex · plain
+Version 0.6.0 · Codex · plain
 
-Dreizehn Workflows für Projektplanung, Fortschrittschecks, Chat-Rückblicke, Sicherheits- und Rechtsfragen, Release-Vorbereitung, Änderungsnotizen und einen bewussten Chat-Abschluss. Nach der Installation eine neue Host-Sitzung öffnen und einen Workflow zusammen mit dem eigenen Anliegen aufrufen.
+14 Workflows für Projektplanung, Fortschrittschecks, Chat-Rückblicke, Sicherheits- und Rechtsfragen, Release-Vorbereitung, Änderungsnotizen und einen bewussten Chat-Abschluss. Nach der Installation eine neue Host-Sitzung öffnen und einen Workflow zusammen mit dem eigenen Anliegen aufrufen.
 
 | Workflow | Aufruf |
 |---|---|
@@ -19,6 +19,7 @@ Dreizehn Workflows für Projektplanung, Fortschrittschecks, Chat-Rückblicke, Si
 | Finish My Prompt | `$finish-my-prompt` |
 | Which Name Wins? | `$which-name-wins` |
 | Explain the Cookbook | `$explain-the-cookbook` |
+| You Got This | `$you-got-this` |
 
 Klein anfangen: den Planungsworkflow um einen Portfolio-Plan mit drei Projekten bitten oder den Release-Workflow das aktuelle Repository ohne Veröffentlichung prüfen lassen. Reviews benennen Befunde und Grenzen; sie sind keine Sicherheits- oder Rechtsfreigabe.
 

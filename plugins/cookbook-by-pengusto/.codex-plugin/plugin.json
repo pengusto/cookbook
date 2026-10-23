@@ -1,7 +1,7 @@
 {
   "name": "cookbook-by-pengusto",
-  "version": "0.5.1",
-  "description": "Thirteen focused coding-agent workflows: collection guide, planning, progress, context recovery, reviews, release preparation, handoff, retrospectives, prompt drafting and naming.",
+  "version": "0.6.0",
+  "description": "Fourteen coding-agent workflows for planning, autonomous execution, progress, context recovery, reviews, release preparation, handoff, retrospectives, prompt drafting and naming.",
   "author": {
     "name": "Pengusto"
   },
@@ -17,7 +17,7 @@
   "interface": {
     "displayName": "Cookbook by Pengusto",
     "shortDescription": "Plan, review and finish work",
-    "longDescription": "Thirteen workflows for developers working with a coding agent: turn an idea into a small project plan, check progress, recover chat goals and decisions, review exposure and legal questions, assess release readiness, draft change notes from evidence, and finish with a clear handoff. Choose one naming style per installation. Runs locally; repository checks may need Git, Python 3.10+ and optional scanners. No hooks or MCP server are included. Findings are not security or legal certification. External actions require authorization. Also includes evidence-based retrospectives, returning after a long pause, manual prompt completion and paired Plain/Kitchen naming. Includes an introduction that explains the collection and recommends a fitting workflow.",
+    "longDescription": "Fourteen workflows for developers working with a coding agent: turn an idea into a small project plan, check progress, recover chat goals and decisions, review exposure and legal questions, assess release readiness, draft change notes from evidence, and finish with a clear handoff. Choose one naming style per installation. Runs locally; repository checks may need Git, Python 3.10+ and optional scanners. No hooks or MCP server are included. Findings are not security or legal certification. External actions require authorization. Also includes evidence-based retrospectives, returning after a long pause, manual prompt completion and paired Plain/Kitchen naming. Includes an introduction that explains the collection and recommends a fitting workflow. Includes autonomous goal execution with verification and critique, while preserving product intent.",
     "developerName": "Pengusto",
     "category": "Developer Tools",
     "capabilities": [
@@ -33,7 +33,8 @@
       "Return after a long break",
       "Complete a partial prompt",
       "Compare paired skill names",
-      "Understand Cookbook and choose a workflow"
+      "Understand Cookbook and choose a workflow",
+      "Execute a project goal and verify the actual result"
     ],
     "defaultPrompt": [
       "Help me plan a small portfolio website with three projects.",
@@ -56,7 +57,7 @@
         "translations": {
           "de-DE": {
             "subtitle": "Planen, prüfen, abschließen",
-            "description": "Dreizehn Workflows für die Arbeit mit einem Coding-Agenten: aus einer Idee einen kleinen Projektplan machen, Fortschritt prüfen, Chat-Ziele und Entscheidungen rekonstruieren, Sicherheits- und Rechtsfragen eingrenzen, Veröffentlichungsreife bewerten, belegte Änderungsnotizen schreiben und mit einer klaren Übergabe abschließen. Pro Installation eine Namenswelt wählen. Lokale Ausführung; Repository-Prüfungen können Git, Python 3.10+ und optionale Scanner benötigen. Keine Hooks oder MCP-Server enthalten. Befunde sind keine Sicherheits- oder Rechtsfreigabe. Externe Aktionen benötigen Autorisierung. Zusätzlich: belegte Retrospektiven, Wiedereinstieg nach langer Pause, manuelle Prompt-Vervollständigung und gemeinsame Klartext/Kitchen-Namenswahl. Ein Einführungs-Guide erklärt die Sammlung und empfiehlt einen passenden Workflow.",
+            "description": "Vierzehn Workflows für die Arbeit mit einem Coding-Agenten: aus einer Idee einen kleinen Projektplan machen, Fortschritt prüfen, Chat-Ziele und Entscheidungen rekonstruieren, Sicherheits- und Rechtsfragen eingrenzen, Veröffentlichungsreife bewerten, belegte Änderungsnotizen schreiben und mit einer klaren Übergabe abschließen. Pro Installation eine Namenswelt wählen. Lokale Ausführung; Repository-Prüfungen können Git, Python 3.10+ und optionale Scanner benötigen. Keine Hooks oder MCP-Server enthalten. Befunde sind keine Sicherheits- oder Rechtsfreigabe. Externe Aktionen benötigen Autorisierung. Zusätzlich: belegte Retrospektiven, Wiedereinstieg nach langer Pause, manuelle Prompt-Vervollständigung und gemeinsame Klartext/Kitchen-Namenswahl. Ein Einführungs-Guide erklärt die Sammlung und empfiehlt einen passenden Workflow. Zusätzlich: selbstständige Zielumsetzung mit Prüfung und kritischer Verbesserung unter Wahrung der Produktidee.",
             "brandColor": "#682C27",
             "brandColorDark": "#F6F0E4"
           }
