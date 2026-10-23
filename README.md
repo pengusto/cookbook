@@ -1,6 +1,6 @@
 # Cookbook by Pengusto — kitchen
 
-Generated installation branch for version 0.5.1. Source and issues: https://github.com/pengusto/cookbook
+Generated installation branch for version 0.6.0. Source and issues: https://github.com/pengusto/cookbook
 
 ```sh
 codex plugin marketplace add pengusto/cookbook --ref kitchen

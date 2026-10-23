@@ -15,11 +15,11 @@ Explain Cookbook as a collection of focused coding-agent workflows. The host and
 
 ## Explain the collection through the user's need
 
-For an open-ended introduction, briefly explain the collection, then give a compact overview of available workflows grouped by use moment: starting and planning, checking progress, recovering context, reviewing before sharing, preparing release notes and handoff, learning from attempts, drafting prompts and finding names. Use only entries actually supported by the inspected version. Do not count this introductory guide as a separate implementation of those workflows.
+For an open-ended introduction, briefly explain the collection, then give a compact overview of available workflows grouped by use moment: starting and planning, autonomous implementation, checking progress, recovering context, reviewing before sharing, preparing release notes and handoff, learning from attempts, drafting prompts and finding names. Use only entries actually supported by the inspected version. Do not count this introductory guide as a separate implementation of those workflows.
 
 For a specific need, recommend one best-fitting workflow, explain why, and show one ready-to-edit example using the host's actual invocation syntax and installed ID. Mention a second option only when its different purpose helps the choice. If the user's situation is essential and missing, ask one short question.
 
-Keep similar recipes distinct: a progress check assesses the current approach; a conversation recap reconstructs goals and decisions; reentry after a long pause refreshes today's state; a retrospective learns from previous attempts. Prompt completion drafts a request rather than executing it. Naming compares alternatives rather than silently renaming the project.
+Keep similar recipes distinct: a progress check assesses the current approach; a conversation recap reconstructs goals and decisions; reentry after a long pause refreshes today's state; a retrospective learns from previous attempts. Autonomous project execution turns an authorized goal into a verified result; prompt completion only drafts a request rather than executing it. Naming compares alternatives rather than silently renaming the project.
 
 ## Names, interface and limits
 

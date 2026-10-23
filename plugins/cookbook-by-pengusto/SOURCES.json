@@ -1,6 +1,6 @@
 {
   "bundle": "cookbook-by-pengusto",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "variant": "kitchen",
   "skills": [
     {
@@ -73,9 +73,10 @@
       "revision": null,
       "files": {
         "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "73d8f7fab54691b290fd1ddb8dd64edb1505f98b0fd2f2570ed3893dd30c15fd",
+        "SKILL.md": "9efbb6b83a694ae48bc9eea953ff3dbafb8cea229513147cf210d5caa6f56a68",
         "agents/openai.yaml": "c5a544227bc017b57f85b0f0692a9a725fd81699ad43ae839c16acb0c78f0020",
-        "references/github-pages.md": "26a71d05cf69d44f432012d4c506f0eb69a021a6b37a891718447310b7721e92"
+        "references/github-pages.md": "26a71d05cf69d44f432012d4c506f0eb69a021a6b37a891718447310b7721e92",
+        "references/readme-presentation.md": "fc87dfdc97cdddf1b0126542573b69bf8c9190b3d33728fd141e13891d843cde"
       }
     },
     {
@@ -151,8 +152,20 @@
       "revision": null,
       "files": {
         "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "8df04f8b609fcc9d435c816893ddef0eb044e2e1dbb69cb64a8728486db06878",
+        "SKILL.md": "44343f29b237ddbf60f6d7fba77600d333ad37114d72c3055c342b95d7b7f20b",
         "agents/openai.yaml": "276fe7b61fe3887bcde70ad8bc40ade7f4420d0b35973f796b48a0e3f88d12b6"
+      }
+    },
+    {
+      "id": "you-got-this",
+      "license": "MIT",
+      "repository": "https://github.com/pengusto/you-got-this",
+      "revision": "d8ce9d530d74852ead13fac2f6994714808caff5",
+      "files": {
+        "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+        "SKILL.md": "e0467c392f67641f25e9a1727536304789ca51af2568b16ce4845e339290eb87",
+        "agents/openai.yaml": "653155bf6dc1bba854d8087cff023592efe19b27425e376b884498473ac8fec5",
+        "examples.md": "8fc73aea812a6e809fda1c7db30d55c6157c05fd41db7e91f9fc2d40ea654867"
       }
     }
   ]
