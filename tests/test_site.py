@@ -12,18 +12,42 @@ ROOT = Path(__file__).resolve().parents[1]
 class Links(html.parser.HTMLParser):
     def __init__(self):
         super().__init__()
-        self.links, self.ids = [], set()
+        self.links, self.ids, self.head_links = [], set(), []
+        self.in_head = False
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == 'head':
+            self.in_head = True
+        if tag == 'link' and self.in_head:
+            self.head_links.append(attrs)
         if 'id' in attrs:
             self.ids.add(attrs['id'])
         for key in ('href', 'src'):
             if key in attrs:
                 self.links.append(attrs[key])
 
+    def handle_endtag(self, tag):
+        if tag == 'head':
+            self.in_head = False
+
 
 class WebsiteContracts(unittest.TestCase):
+    def test_landing_discovery_preserves_language_and_naming_pairs(self):
+        base_url = 'https://pengusto.github.io/cookbook/'
+        for base in ('index', 'kitchen'):
+            expected = {'de': base_url + base + '.html',
+                        'en': base_url + base + '-en.html'}
+            for language, url in expected.items():
+                with self.subTest(language=language, variant=base):
+                    parser = Links()
+                    parser.feed((ROOT / 'site' / urlsplit(url).path.rsplit('/', 1)[1]).read_text())
+                    alternates = [link for link in parser.head_links if link.get('rel') == 'alternate']
+                    self.assertEqual(len(alternates), 2)
+                    self.assertEqual({link['hreflang']: link['href'] for link in alternates}, expected)
+                    self.assertEqual([link['href'] for link in parser.head_links if link.get('rel') == 'canonical'], [url])
+                    self.assertIn('https://github.com/pengusto/cookbook', parser.links)
+
     def test_html_links_and_fragments_stay_inside_export(self):
         site = ROOT / 'site'
         for page in site.glob('*.html'):

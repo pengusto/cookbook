@@ -27,6 +27,8 @@ The visual cookbook has thirteen individually illustrated recipes, twelve UI lan
 
 GitHub Actions verifies all packages and a clean portable rebuild before generating marketplace branches and deploying `site/` through GitHub Pages. A push alone is not evidence of a successful deployment; inspect the workflow and actual live pages. The workflow needs repository Contents write permissions and Pages configured with build type `workflow`.
 
+The four landing pages link directly to the source repository and declare reciprocal DE/EN language alternatives within the selected naming style. Submit `/cookbook/sitemap.xml` directly in Search Console. The exported `/cookbook/robots.txt` cannot set crawl rules or advertise a sitemap for GitHub Pages: crawlers read robots rules only at `https://pengusto.github.io/robots.txt`, maintained separately at the account site root. These discovery aids do not guarantee indexing.
+
 ## Privacy and attribution / Datenschutz und Herkunft
 
 The maintained public text is in `templates/legal.json`, rendered into [Legal notice](https://pengusto.github.io/cookbook/legal-en.html) and [Privacy policy](https://pengusto.github.io/cookbook/privacy-en.html), with German versions. The public maintainer identity was reused from the maintainer's confirmed legal skill. GitHub Pages hosting, support contacts, local preferences, host/model processing and local scanner cache are described separately. No tracking or external font runtime was added.
