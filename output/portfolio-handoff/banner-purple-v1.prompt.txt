@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: GitHub README banner, approximately 3:1 landscape.
+Primary request: Create a new project-specific banner for "You Got This", a Codex skill that helps turn a project goal into a small completed and verified result.
+Input image 1: use as CHARACTER IDENTITY and painterly world reference, not an edit target. Keep the exact recognizable rounded penguin: dark plum body, creamy facial patches and belly, large dark eyes, tiny warm orange beak and feet, calm friendly expression.
+Scene: a small stone-island workshop over quiet dark purple water. A single low workbench across the right half shows three readable large stages of the SAME small desk lamp project: loose base/arm/shade components, a half-assembled lamp, and a finished softly glowing lamp with a single large checkmark card. Penguin actively fits the shade onto the near-finished lamp. Clear left-to-right progression along the bench. Make this about making and checking, not cooking or a generic code screen.
+Composition: title in the quiet left 40%, workshop and large penguin in right 60%; soft arch and sparse tiny plants connect the island world to the reference. All action readable in a small banner; no tiny labels, no UI or screenshot. Keep ample safe margins.
+Text verbatim, only text: "You Got This" in large warm cream bold friendly sans serif, on two lines if needed. No subtitle.
+Palette: dark plum #131119, deep violet shadows, lavender #bd93f9, pale lavender #e7caff, cream, subtle warm glow only for completed lamp. Painted tactile textures, soft light, restrained atmosphere matching reference. Approximately 2100 x 700.
+Avoid: extra penguins, human hands, busy details, photorealism, neon cyberpunk, imitation app UI, additional text, logos, watermarks, automatic-success claims.

@@ -1,14 +1,14 @@
+![You Got This: a penguin assembles a desk lamp on an island workbench, from loose parts through assembly to a working lamp with a check card.](output/portfolio-handoff/banner-purple-v1.png)
+
 # You Got This
 
 **Give your agent a goal. Get back a change it can explain and verify.**
 
 You Got This is a project-execution skill for Codex: a set of instructions that helps an agent turn intent into a small, complete, checked result. Use it when you know what should improve but want the agent to investigate the repository and handle the implementation details.
 
-[Explore the website](https://pengusto.github.io/you-got-this/) · [Portfolio image and prompt](output/portfolio-handoff/)
+[Explore the website](https://pengusto.github.io/you-got-this/) · [Artwork and prompts](output/portfolio-handoff/)
 
-![A finite path from goal through context, build and verification to handoff, with a separate human decision gate.](docs/assets/you-got-this-preview.webp)
-
-*AI-generated process illustration, not a runtime screenshot. [Original, prompt and provenance](output/portfolio-handoff/).*
+*AI-generated banner illustration. [Prompt and provenance](output/portfolio-handoff/) · [Original process illustration](docs/assets/you-got-this-preview.webp).*
 
 ## From “make it better” to something inspectable
 
@@ -106,7 +106,7 @@ No package installation is required. The static website uses local assets and no
 
 Keep changes focused on better decisions, safer execution, clearer evidence, and less unnecessary ceremony. If a rule cannot be checked or does not improve outcomes, it probably does not belong in the skill.
 
-Run both validation commands above before opening a pull request and include the behavior or failure mode the change improves.
+Run both validation commands above before opening a pull request and include the behavior or failure mode the change improves. Keep the project banner as the first content in the README, before the heading.
 
 ## License
 
