@@ -1,3 +1,13 @@
+# Veröffentlichung 0.6.0 / Publication 0.6.0
+
+Stand 2026-10-24: 14 gemeinsame Workflows, einschließlich **You Got This / You’re the Chef**. Das offene Kochbuch ist die Startseite mit Willkommen, Installation und Über Cookbook, eigenen Gericht-/Zutatenbildern und adaptivem Buchrahmen. Alle sechs Bucheinstiege haben kataloggleiche strukturierte Daten. 44 lokale Tests, Quellen-/Paketprüfungen, portabler Neubau und die dokumentierten Browser-Stichproben bestehen.
+
+Commit, Push auf `main`, GitHub-Pages-Deployment und Update des vorhandenen Kitchen-Plugins auf 0.6.0 sind vom Nutzer ausdrücklich beauftragt. Der Publish-Workflow prüft den konkreten Commit erneut, erzeugt beide Marketplace-Branches und deployt erst danach die Website. Tatsächlicher Workflow-Erfolg und Live-Antwort müssen nach dem Push getrennt verifiziert werden. Kein GitHub-Release/Tag oder Store-Upload wird daraus abgeleitet. Originalrepo und nicht benötigte lokale Entwurfsdateien bleiben erhalten.
+
+Die bestehenden Installationsbefehle und der technische Publish-Ablauf unten gelten weiter. Frühere Versionszahlen und Abnahmen im folgenden Abschnitt sind historische Nachweise.
+
+---
+
 > Current polish: 0.5.1 adds thirteen recipe-specific utensils across the book and landing pages. See [release checklist](release-checklist.md). The 0.5.0 evidence below remains historical.
 
 # Public beta 0.5.0 / Öffentliche Beta
@@ -23,7 +33,7 @@ Claude Code and individual skill ZIPs remain available from the website. Extract
 
 [Landing page](https://pengusto.github.io/cookbook/) · [Interactive Kitchen cookbook](https://pengusto.github.io/cookbook/cookbook.html) · [Plain cookbook](https://pengusto.github.io/cookbook/cookbook-plain.html).
 
-The visual cookbook has thirteen individually illustrated recipes, twelve UI languages, a name comparison control and system/light/dark themes. Language changes translate the interface and recipe summaries, not the maintained workflow bodies. Fonts, motion runtime and artwork are embedded; reduced motion is respected. The DE/EN installation landing pages retain their previous layout; a full visual restyle remains deferred.
+The visual cookbook has thirteen individually illustrated recipes, twelve UI languages, a name comparison control and system/light/dark themes. Language changes translate the interface and recipe summaries, not the maintained workflow bodies. Fonts, motion runtime and artwork are embedded; reduced motion is respected. The open cookbook is now the DE/EN website entry, with Welcome, Installation and About pages in the book and a persistent Install link. Detailed installation overviews remain separately reachable. See [landing-page.md](landing-page.md) for the route map and local verification scope.
 
 GitHub Actions verifies all packages and a clean portable rebuild before generating marketplace branches and deploying `site/` through GitHub Pages. A push alone is not evidence of a successful deployment; inspect the workflow and actual live pages. The workflow needs repository Contents write permissions and Pages configured with build type `workflow`.
 

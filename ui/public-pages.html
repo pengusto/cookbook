@@ -1,0 +1,30 @@
+<div class="book-info recipe-spread" style="{{WELCOME_SPRITES}}" data-book-page="welcome" id="welcome">
+<section class="page left-page">
+<p class="folio">Cookbook by Pengusto</p><h1 tabindex="-1">{{WELCOME_TITLE}}</h1><div class="title-rule"></div><p class="intro">{{WELCOME_INTRO}}</p><p>{{WELCOME_NOTE}}</p>
+<section class="recipe-section ingredients-section public-ingredients" aria-labelledby="welcome-ingredients-title"><h2 id="welcome-ingredients-title">{{INGREDIENTS}}</h2><div class="food-ingredients-gallery">{{WELCOME_INGREDIENTS}}</div></section>
+<div class="book-facts"><span>{{COUNT}} {{RECIPE_LABEL}}</span><span>Codex &amp; Claude Code</span><span>Beta {{VERSION}}</span><span>MIT</span></div>
+<div class="book-actions"><button type="button" class="book-primary" data-open-recipe="0">{{EXPLORE}}</button><a href="#install" data-open-page="install">{{INSTALL}}</a></div>
+<p class="public-language-note">{{LANGUAGE_NOTE}} <a href="index.html">{{GERMAN}}</a> · <a href="index-en.html">{{ENGLISH}}</a></p>
+</section>
+<section class="page right-page"><figure class="public-dish"><div class="food-dish" aria-hidden="true"></div><figcaption>{{WELCOME_DISH}}</figcaption></figure>
+<h2>{{WELCOME_RIGHT}}</h2>
+<div class="book-moments"><button type="button" data-open-recipe="0"><svg aria-hidden="true"><use href="#book"/></svg><span><strong>{{START}}</strong><small>{{START_TEXT}}</small></span></button><button type="button" data-open-recipe="9"><svg aria-hidden="true"><use href="#clock"/></svg><span><strong>{{RETURN}}</strong><small>{{RETURN_TEXT}}</small></span></button><button type="button" data-open-recipe="5"><svg aria-hidden="true"><use href="#serve"/></svg><span><strong>{{REVIEW}}</strong><small>{{REVIEW_TEXT}}</small></span></button></div>
+<section class="book-note"><h2>{{CHOICE}}</h2><p>{{CHOICE_TEXT}}</p></section>
+<p class="handwritten">Ideas. Code. Cook.</p><p class="scroll-hint">{{SCROLL_HINT}}</p>
+</section></div>
+<div class="book-info recipe-spread" style="{{INSTALL_SPRITES}}" data-book-page="install" id="install" hidden>
+<section class="page left-page"><p class="folio">{{INSTALL}}</p><h1 tabindex="-1">{{INSTALL_TITLE}}</h1><div class="title-rule"></div><p class="intro">{{INSTALL_INTRO}}</p>
+<section class="recipe-section ingredients-section public-ingredients" aria-labelledby="install-ingredients-title"><h2 id="install-ingredients-title">{{INGREDIENTS}}</h2><div class="food-ingredients-gallery">{{INSTALL_INGREDIENTS}}</div></section><section><h2>{{REQUIREMENTS}}</h2><p>{{REQUIREMENTS_TEXT}}</p></section>
+<fieldset class="host-picker"><legend>{{HOST_CHOICE}}</legend><button type="button" data-install-host="codex" aria-pressed="true">Codex</button><button type="button" data-install-host="claude" aria-pressed="false">Claude Code</button></fieldset>
+<section class="book-note"><h2>{{INSTALL_NAMES}}</h2><p><strong data-public-variant>{{VARIANT}}</strong></p><p>{{INSTALL_NAMES_NOTE}}</p></section></section>
+<section class="page right-page"><figure class="public-dish"><div class="food-dish" aria-hidden="true"></div><figcaption>{{INSTALL_DISH}}</figcaption></figure><h2>{{INSTALL_STEPS}}</h2>
+<div data-host-panel="codex"><h3>Codex</h3><p>{{CODEX_NOTE}}</p><pre><code id="codex-install-command">{{CODEX_COMMAND}}</code></pre><button class="command-copy" type="button" data-copy-target="codex-install-command">{{COPY}}</button><p><a href="{{CODEX_ZIP}}" data-download-host="codex" download>{{DOWNLOAD}}</a></p></div>
+<div data-host-panel="claude" hidden><h3>Claude Code</h3><p>{{CLAUDE_NOTE}}</p><p><a href="{{CLAUDE_ZIP}}" data-download-host="claude" download>{{DOWNLOAD}}</a></p><pre><code id="claude-install-command">{{CLAUDE_COMMAND}}</code></pre><button class="command-copy" type="button" data-copy-target="claude-install-command">{{COPY}}</button></div>
+<section class="first-invocation"><h3>{{FIRST}}</h3><p>{{FIRST_NOTE}}</p><pre><code id="first-invocation">${{GUIDE_ID}} {{FIRST_PROMPT}}</code></pre><button class="command-copy" type="button" data-copy-target="first-invocation">{{COPY}}</button></section>
+<p id="install-copy-status" role="status" data-copied="{{COPIED}}" data-manual="{{MANUAL}}"></p>
+<details class="book-updates"><summary>{{UPDATES}}</summary><p>{{UPDATES_TEXT}}</p></details><p class="book-links"><a href="downloads/SHA256SUMS">{{CHECKSUMS}}</a> · <a href="{{INSTALL_FALLBACK}}" data-install-overview>{{FULL_GUIDE}}</a></p>
+</section></div>
+<div class="book-info recipe-spread" style="{{ABOUT_SPRITES}}" data-book-page="about" id="about" hidden>
+<section class="page left-page"><p class="folio">{{ABOUT}}</p><h1 tabindex="-1">{{ABOUT_TITLE}}</h1><div class="title-rule"></div><p class="intro">{{ABOUT_INTRO}}</p><section class="recipe-section ingredients-section public-ingredients" aria-labelledby="about-ingredients-title"><h2 id="about-ingredients-title">{{INGREDIENTS}}</h2><div class="food-ingredients-gallery">{{ABOUT_INGREDIENTS}}</div></section><p class="book-version">Version {{VERSION}} · Pengusto · MIT</p><section><h2>{{STATUS}}</h2><p>{{STATUS_TEXT}}</p></section><section><h2>{{LICENSE}}</h2><p>{{LICENSE_TEXT}}</p><a href="LICENSE">MIT</a></section></section>
+<section class="page right-page"><figure class="public-dish"><div class="food-dish" aria-hidden="true"></div><figcaption>{{ABOUT_DISH}}</figcaption></figure><h2>{{PROJECT}}</h2><p><a href="https://github.com/pengusto/cookbook">pengusto/cookbook</a></p><p><a href="https://github.com/pengusto/cookbook/issues">{{FEEDBACK}}</a></p><p>{{FEEDBACK_TEXT}}</p><section class="book-note"><h2>{{LOCAL}}</h2><p>{{LOCAL_TEXT}}</p></section><p class="book-links"><a href="{{LEGAL_PAGE}}">{{LEGAL}}</a> · <a href="{{POLICY_PAGE}}">{{PRIVACY}}</a></p></section>
+</div>

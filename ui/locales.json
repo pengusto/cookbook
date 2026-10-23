@@ -1,12 +1,12 @@
 {
   "de": {
     "name": "Deutsch",
-    "tagline": "Dreizehn Rezepte für deine Projekte",
+    "tagline": "Vierzehn Rezepte für deine Projekte",
     "recipe": "Rezept",
     "when": "Wann",
     "ingredients": "Zutaten",
     "method": "Zubereitung",
-    "invoke": "So rufst du das Rezept auf",
+    "invoke": "Aufrufen",
     "copy": "Kopieren",
     "copied": "Kopiert",
     "language": "Sprache",
@@ -16,8 +16,8 @@
     "previous": "Vorheriges Rezept",
     "next": "Nächstes Rezept",
     "ingredientList": "Eine Idee|Projektkontext|Offene Fragen|Rahmenbedingungen",
-    "summaries": "Von der Idee zum ersten prüfbaren Schritt.|Prüfen, ob der aktuelle Weg zum Ziel führt.|Ziele, Entscheidungen und Stand wiederfinden.|Sensible Inhalte vor dem Teilen prüfen.|Rechtsfragen und Nutzerhürden gezielt eingrenzen.|Das Projekt auf eine Veröffentlichung vorbereiten.|Änderungsnotizen aus belegten Änderungen schreiben.|Die Arbeit bewusst abschließen oder übergeben.|Aus vergangenen Versuchen lernen.|Nach langer Pause wieder in das Projekt finden.|Einen begonnenen Prompt passend vervollständigen.|Klartext- und Kitchen-Namen gemeinsam finden.|Cookbook verstehen und den passenden Skill finden.",
-    "whenList": "Eine Idee braucht einen konkreten Anfang.|Du möchtest wissen, ob die Arbeit vorankommt.|Nach einer Pause fehlt dir der Überblick.|Du möchtest Dateien oder ein Repository teilen.|Vor einer Freigabe oder bei einer konkreten Frage.|Andere sollen dein Projekt verstehen und nutzen.|Eine Version oder ein Arbeitsabschnitt ist fertig.|Ein Abschnitt ist fertig oder muss übergeben werden.|Wenn sich Fehler oder liegen gebliebene Empfehlungen wiederholen.|Wenn Ziel, Entscheidungen und heutiger Stand nicht mehr präsent sind.|Wenn die automatische Ergänzung fehlt oder ein Gedanke unvollständig bleibt.|Wenn ein Produkt oder Skill passende Namen braucht.|Wenn du neu dabei bist oder die richtige Anleitung suchst.",
+    "summaries": "Von der Idee zum ersten prüfbaren Schritt.|Prüfen, ob der aktuelle Weg zum Ziel führt.|Ziele, Entscheidungen und Stand wiederfinden.|Sensible Inhalte vor dem Teilen prüfen.|Rechtsfragen und Nutzerhürden gezielt eingrenzen.|Das Projekt auf eine Veröffentlichung vorbereiten.|Änderungsnotizen aus belegten Änderungen schreiben.|Die Arbeit bewusst abschließen oder übergeben.|Aus vergangenen Versuchen lernen.|Nach langer Pause wieder in das Projekt finden.|Einen begonnenen Prompt passend vervollständigen.|Klartext- und Kitchen-Namen gemeinsam finden.|Cookbook verstehen und den passenden Skill finden.|Ein Ziel selbstständig bis zum geprüften Ergebnis umsetzen.",
+    "whenList": "Eine Idee braucht einen konkreten Anfang.|Du möchtest wissen, ob die Arbeit vorankommt.|Nach einer Pause fehlt dir der Überblick.|Du möchtest Dateien oder ein Repository teilen.|Vor einer Freigabe oder bei einer konkreten Frage.|Andere sollen dein Projekt verstehen und nutzen.|Eine Version oder ein Arbeitsabschnitt ist fertig.|Ein Abschnitt ist fertig oder muss übergeben werden.|Wenn sich Fehler oder liegen gebliebene Empfehlungen wiederholen.|Wenn Ziel, Entscheidungen und heutiger Stand nicht mehr präsent sind.|Wenn die automatische Ergänzung fehlt oder ein Gedanke unvollständig bleibt.|Wenn ein Produkt oder Skill passende Namen braucht.|Wenn du neu dabei bist oder die richtige Anleitung suchst.|Wenn du ein Projektziel übergeben und die Umsetzung übernehmen lassen möchtest.",
     "steps0": "Ziel verstehen|Umfeld sichten|Offene Fragen klären|Ersten Schritt planen",
     "steps1": "Ziel abgleichen|Belege sichten|Hindernisse benennen|Nächsten Schritt empfehlen",
     "steps2": "Sichtbaren Verlauf lesen|Entscheidungen trennen|Ergebnisse zuordnen|Stand knapp festhalten",
@@ -29,7 +29,7 @@
     "limitText": "Nur vorhandene Belege verwenden. Grenzen sichtbar halten; externe Aktionen brauchen Autorisierung.",
     "languageNote": "Skill-Aufrufe bleiben in ihrer installierten Sprache.",
     "footer": "Gut vorbereitet. Besser programmiert.",
-    "intros": "Wir verstehen dein Ziel und planen den ersten kleinen, prüfbaren Schritt. So entsteht ein gemeinsamer Ausgangspunkt.|Wir prüfen den aktuellen Ansatz anhand des Auftrags und der bereits vorhandenen Nachweise.|Wir rekonstruieren das sichtbare Ziel, bestätigte Entscheidungen und den letzten belegten Stand.|Wir untersuchen freigegebene Dateien und Historie, ohne sensible Werte im Bericht offenzulegen.|Wir betrachten die konkrete Nutzerhürde und klären, welche Quellen und rechtlichen Fragen wirklich relevant sind.|Wir prüfen Einstieg, Dokumentation und Paket für die tatsächliche Zielgruppe und priorisieren die Befunde.|Wir nutzen den vereinbarten Vergleichsbereich und trennen bestätigte Änderungen von ungespeicherter Arbeit.|Wir gleichen Auftrag und Ergebnisse ab und halten einen ehrlichen Abschluss oder eine klare Übergabe fest.|Wir vergleichen relevante Versuche, ihre Ursachen und frühere Empfehlungen. Daraus entsteht eine konkrete, überprüfbare Verbesserung.|Wir rekonstruieren die letzte vereinbarte Richtung und prüfen gezielt, was heute noch gilt. So findest du einen verlässlichen Einstieg.|Wir ergänzen den begonnenen Auftrag mit dem sichtbaren Kontext. Du erhältst einen Prompt, den du selbst prüfen und absenden kannst.|Wir suchen Namen aus dem Einsatzmoment des Produkts. Klartext und Kitchen werden als zusammengehörige Paare bewertet.|Wir erklären die Sammlung anhand deines Anliegens und zeigen dir einen passenden nächsten Aufruf.",
+    "intros": "Wir verstehen dein Ziel und planen den ersten kleinen, prüfbaren Schritt. So entsteht ein gemeinsamer Ausgangspunkt.|Wir prüfen den aktuellen Ansatz anhand des Auftrags und der bereits vorhandenen Nachweise.|Wir rekonstruieren das sichtbare Ziel, bestätigte Entscheidungen und den letzten belegten Stand.|Wir untersuchen freigegebene Dateien und Historie, ohne sensible Werte im Bericht offenzulegen.|Wir betrachten die konkrete Nutzerhürde und klären, welche Quellen und rechtlichen Fragen wirklich relevant sind.|Wir prüfen Einstieg, Dokumentation und Paket für die tatsächliche Zielgruppe und priorisieren die Befunde.|Wir nutzen den vereinbarten Vergleichsbereich und trennen bestätigte Änderungen von ungespeicherter Arbeit.|Wir gleichen Auftrag und Ergebnisse ab und halten einen ehrlichen Abschluss oder eine klare Übergabe fest.|Wir vergleichen relevante Versuche, ihre Ursachen und frühere Empfehlungen. Daraus entsteht eine konkrete, überprüfbare Verbesserung.|Wir rekonstruieren die letzte vereinbarte Richtung und prüfen gezielt, was heute noch gilt. So findest du einen verlässlichen Einstieg.|Wir ergänzen den begonnenen Auftrag mit dem sichtbaren Kontext. Du erhältst einen Prompt, den du selbst prüfen und absenden kannst.|Wir suchen Namen aus dem Einsatzmoment des Produkts. Klartext und Kitchen werden als zusammengehörige Paare bewertet.|Wir erklären die Sammlung anhand deines Anliegens und zeigen dir einen passenden nächsten Aufruf.|Wir setzen dein Ziel im bestehenden Projekt um, prüfen das tatsächliche Ergebnis und verbessern wichtige Lücken. Deine Absicht und Grenzen bleiben erhalten.",
     "stepNotes": [
       "Vorhandene Informationen nutzen.",
       "Bestehende Konventionen berücksichtigen.",
@@ -51,7 +51,8 @@
       "Frühere Aussagen sind keine heutige Prüfung; nicht automatisch weiterarbeiten.",
       "Nur Entwurf; keine Ausführung und keine native Tab-Integration.",
       "Vorschläge sind keine Umbenennung oder Verfügbarkeitszusage.",
-      "Der Guide empfiehlt; er startet keine weiteren Workflows automatisch."
+      "Der Guide empfiehlt; er startet keine weiteren Workflows automatisch.",
+      "Keine pauschale Freigabe für Veröffentlichung oder externe Aktionen; fehlende notwendige Entscheidungen erfragen."
     ],
     "ingredientLists": [
       [
@@ -131,6 +132,12 @@
         "Deine Situation",
         "Installierte Namenswelt",
         "Gewünschtes Ergebnis"
+      ],
+      [
+        "Vereinbartes Projektziel",
+        "Bestehende Architektur",
+        "Prüfbare Erfolgskriterien",
+        "Freigegebener Handlungsspielraum"
       ]
     ],
     "verifications": [
@@ -146,7 +153,8 @@
       "Nach langer Pause wieder in das Projekt finden.",
       "Einen begonnenen Prompt passend vervollständigen.",
       "Klartext- und Kitchen-Namen gemeinsam finden.",
-      "Wir erklären die Sammlung anhand deines Anliegens und zeigen dir einen passenden nächsten Aufruf."
+      "Wir erklären die Sammlung anhand deines Anliegens und zeigen dir einen passenden nächsten Aufruf.",
+      "Umgesetzte Ergebnisse und bestandene Prüfungen belegen; offene Grenzen benennen."
     ],
     "appearance": "Erscheinungsbild",
     "system": "System",
@@ -165,16 +173,23 @@
       "Ähnliche Rezepte nach ihrem Einsatzmoment abgrenzen.",
       "Dein Anliegen einem verfügbaren Workflow zuordnen.",
       "Ein konkretes Beispiel zeigen, ohne es auszuführen."
+    ],
+    "steps13": "Ziel und Grenzen klären|Qualitätsmaßstab festlegen|Umsetzen und prüfen|Ergebnis kritisch verbessern",
+    "stepNotes13": [
+      "Auftrag, vorhandenen Stand und freigegebenen Handlungsspielraum verstehen.",
+      "Beobachtbare Erfolgskriterien und relevante Prüfungen festlegen.",
+      "Die kleinste vollständige Lösung umsetzen und im tatsächlichen Ablauf prüfen.",
+      "Schwächen beheben und Ergebnis, Nachweise sowie offene Punkte knapp übergeben."
     ]
   },
   "en": {
     "name": "English",
-    "tagline": "Thirteen recipes for your projects",
+    "tagline": "Fourteen recipes for your projects",
     "recipe": "Recipe",
     "when": "When",
     "ingredients": "Ingredients",
     "method": "Method",
-    "invoke": "How to invoke this recipe",
+    "invoke": "Run this recipe",
     "copy": "Copy",
     "copied": "Copied",
     "language": "Language",
@@ -184,8 +199,8 @@
     "previous": "Previous recipe",
     "next": "Next recipe",
     "ingredientList": "An idea|Project context|Open questions|Constraints",
-    "summaries": "From an idea to the first verifiable step.|Check whether the current approach leads to the goal.|Recover goals, decisions and current status.|Review sensitive content before sharing.|Scope legal questions and user barriers.|Prepare a project for publication.|Write change notes from verified changes.|Finish deliberately or prepare a handoff.|Learn from earlier attempts.|Return to a project after a long break.|Complete a partial prompt using the context.|Find Plain and Kitchen names together.|Understand Cookbook and find the right skill.",
-    "whenList": "An idea needs a concrete starting point.|You want to know whether work is progressing.|After a break, you need the context again.|You want to share files or a repository.|Before release or for a specific question.|Others should understand and use your project.|A version or work slice is complete.|A work slice is complete or needs a handoff.|When failures or unfinished recommendations recur.|When the goal, decisions and current state need refreshing.|When autocomplete is missing or a thought is unfinished.|When a product or skill needs fitting names.|When you are new or looking for the right workflow.",
+    "summaries": "From an idea to the first verifiable step.|Check whether the current approach leads to the goal.|Recover goals, decisions and current status.|Review sensitive content before sharing.|Scope legal questions and user barriers.|Prepare a project for publication.|Write change notes from verified changes.|Finish deliberately or prepare a handoff.|Learn from earlier attempts.|Return to a project after a long break.|Complete a partial prompt using the context.|Find Plain and Kitchen names together.|Understand Cookbook and find the right skill.|Carry a goal through to an implemented, verified result.",
+    "whenList": "An idea needs a concrete starting point.|You want to know whether work is progressing.|After a break, you need the context again.|You want to share files or a repository.|Before release or for a specific question.|Others should understand and use your project.|A version or work slice is complete.|A work slice is complete or needs a handoff.|When failures or unfinished recommendations recur.|When the goal, decisions and current state need refreshing.|When autocomplete is missing or a thought is unfinished.|When a product or skill needs fitting names.|When you are new or looking for the right workflow.|When you want to delegate a project goal and its implementation.",
     "steps0": "Understand the goal|Inspect the context|Clarify open questions|Plan the first step",
     "steps1": "Compare with the goal|Inspect evidence|Identify obstacles|Recommend a next step",
     "steps2": "Read available history|Separate decisions|Attribute results|Record a short recap",
@@ -197,7 +212,7 @@
     "limitText": "Use existing evidence only. Keep limits visible; external actions require authorization.",
     "languageNote": "Skill invocations keep their installed language.",
     "footer": "Well prepared. Better built.",
-    "intros": "Understand your goal and plan one small, verifiable first step. Build a shared starting point.|Review the current approach against the request and existing evidence.|Reconstruct the visible goal, confirmed decisions and last evidenced status.|Review authorized files and history without exposing sensitive values in reports.|Inspect the actual user barrier and identify relevant sources and legal questions.|Review setup, documentation and packaging for the real audience; prioritize findings.|Use the agreed comparison and separate verified changes from uncommitted work.|Reconcile the request and results; write an honest closure or clear handoff.|We compare relevant attempts, their causes and earlier advice to recommend one concrete, checkable improvement.|We recover the last agreed direction and check what still holds today, giving you a reliable place to return.|We complete your draft using the visible context. You receive an editable prompt to review and submit yourself.|We find names from the product’s usage moment and compare Plain and Kitchen as paired alternatives.|We explain the collection through your needs and show a fitting next invocation.",
+    "intros": "Understand your goal and plan one small, verifiable first step. Build a shared starting point.|Review the current approach against the request and existing evidence.|Reconstruct the visible goal, confirmed decisions and last evidenced status.|Review authorized files and history without exposing sensitive values in reports.|Inspect the actual user barrier and identify relevant sources and legal questions.|Review setup, documentation and packaging for the real audience; prioritize findings.|Use the agreed comparison and separate verified changes from uncommitted work.|Reconcile the request and results; write an honest closure or clear handoff.|We compare relevant attempts, their causes and earlier advice to recommend one concrete, checkable improvement.|We recover the last agreed direction and check what still holds today, giving you a reliable place to return.|We complete your draft using the visible context. You receive an editable prompt to review and submit yourself.|We find names from the product’s usage moment and compare Plain and Kitchen as paired alternatives.|We explain the collection through your needs and show a fitting next invocation.|Preserve your intent, establish an appropriate quality bar and carry out the goal independently. Then inspect and improve the result using concrete evidence.",
     "stepNotes": [
       "Use available information.",
       "Respect existing conventions.",
@@ -219,7 +234,8 @@
       "Older claims are not current checks; do not resume automatically.",
       "Draft only; no execution or native Tab integration.",
       "Proposals do not rename anything or establish availability.",
-      "The guide recommends; it does not automatically execute other workflows."
+      "The guide recommends; it does not automatically execute other workflows.",
+      "No blanket permission to publish or take external actions; ask for necessary missing decisions."
     ],
     "ingredientLists": [
       [
@@ -299,6 +315,12 @@
         "Your situation",
         "Installed naming style",
         "Desired outcome"
+      ],
+      [
+        "Agreed project goal",
+        "Existing architecture",
+        "Verifiable success criteria",
+        "Authorized scope"
       ]
     ],
     "verifications": [
@@ -314,7 +336,8 @@
       "Return to a project after a long break.",
       "Complete a partial prompt using the context.",
       "Find Plain and Kitchen names together.",
-      "We explain the collection through your needs and show a fitting next invocation."
+      "We explain the collection through your needs and show a fitting next invocation.",
+      "Evidence implemented outcomes and passing checks; state unresolved limits."
     ],
     "appearance": "Appearance",
     "system": "System",
@@ -333,16 +356,23 @@
       "Distinguish similar recipes by when to use them.",
       "Match your need to an available workflow.",
       "Show a concrete invocation without running it."
+    ],
+    "steps13": "Clarify the goal and boundaries|Set the quality bar|Implement and verify|Critique and improve",
+    "stepNotes13": [
+      "Understand the request, current state and authorized scope.",
+      "Define observable success criteria and relevant checks.",
+      "Build the smallest complete solution and verify the actual flow.",
+      "Fix weaknesses and hand over the result, evidence and remaining gaps."
     ]
   },
   "fr": {
     "name": "Français",
-    "tagline": "Treize recettes pour vos projets",
+    "tagline": "Quatorze recettes pour vos projets",
     "recipe": "Recette",
     "when": "Quand",
     "ingredients": "Ingrédients",
     "method": "Préparation",
-    "invoke": "Lancer cette recette",
+    "invoke": "Lancer la recette",
     "copy": "Copier",
     "copied": "Copié",
     "language": "Langue",
@@ -352,8 +382,8 @@
     "previous": "Recette précédente",
     "next": "Recette suivante",
     "ingredientList": "Une idée|Contexte du projet|Questions ouvertes|Contraintes",
-    "summaries": "De l’idée au premier pas vérifiable.|Vérifier si la démarche mène au but.|Retrouver objectifs, décisions et état actuel.|Examiner les données sensibles avant partage.|Cadrer les questions juridiques et les obstacles.|Préparer un projet à la publication.|Rédiger les changements à partir de preuves.|Terminer ou préparer une transmission.|Apprendre des tentatives précédentes.|Reprendre un projet après une longue pause.|Compléter un début de prompt selon le contexte.|Trouver ensemble les noms Plain et Kitchen.|Comprendre Cookbook et trouver le bon skill.",
-    "whenList": "Une idée a besoin d’un début concret.|Vous voulez évaluer la progression.|Après une pause, le contexte manque.|Vous souhaitez partager des fichiers ou un dépôt.|Avant publication ou pour une question précise.|D’autres doivent comprendre et utiliser le projet.|Une version ou une étape est terminée.|Une étape se termine ou doit être transmise.|Quand les échecs ou conseils sans suite se répètent.|Quand les objectifs, décisions et état actuel doivent être rappelés.|Quand la saisie automatique manque ou une idée reste inachevée.|Quand un produit ou skill a besoin de noms adaptés.|Pour découvrir la collection ou choisir un processus.",
+    "summaries": "De l’idée au premier pas vérifiable.|Vérifier si la démarche mène au but.|Retrouver objectifs, décisions et état actuel.|Examiner les données sensibles avant partage.|Cadrer les questions juridiques et les obstacles.|Préparer un projet à la publication.|Rédiger les changements à partir de preuves.|Terminer ou préparer une transmission.|Apprendre des tentatives précédentes.|Reprendre un projet après une longue pause.|Compléter un début de prompt selon le contexte.|Trouver ensemble les noms Plain et Kitchen.|Comprendre Cookbook et trouver le bon skill.|Mener un objectif jusqu’à un résultat réalisé et vérifié.",
+    "whenList": "Une idée a besoin d’un début concret.|Vous voulez évaluer la progression.|Après une pause, le contexte manque.|Vous souhaitez partager des fichiers ou un dépôt.|Avant publication ou pour une question précise.|D’autres doivent comprendre et utiliser le projet.|Une version ou une étape est terminée.|Une étape se termine ou doit être transmise.|Quand les échecs ou conseils sans suite se répètent.|Quand les objectifs, décisions et état actuel doivent être rappelés.|Quand la saisie automatique manque ou une idée reste inachevée.|Quand un produit ou skill a besoin de noms adaptés.|Pour découvrir la collection ou choisir un processus.|Quand vous souhaitez déléguer un objectif de projet et sa réalisation.",
     "steps0": "Comprendre le but|Examiner le contexte|Clarifier les questions|Préparer le premier pas",
     "steps1": "Comparer au but|Examiner les preuves|Identifier les obstacles|Recommander la suite",
     "steps2": "Lire l’historique disponible|Séparer les décisions|Attribuer les résultats|Résumer la situation",
@@ -365,7 +395,7 @@
     "limitText": "Utiliser les preuves disponibles. Signaler les limites ; les actions externes demandent une autorisation.",
     "languageNote": "Les commandes gardent leur langue installée.",
     "footer": "Bien préparer. Mieux construire.",
-    "intros": "Comprendre le but et préparer un premier pas modeste et vérifiable.|Examiner la démarche selon la demande et les preuves disponibles.|Reconstituer le but visible, les décisions confirmées et le dernier état prouvé.|Examiner les fichiers autorisés sans exposer de valeurs sensibles.|Étudier l’obstacle réel et les sources pertinentes.|Vérifier démarrage, documentation et paquet pour le vrai public.|Utiliser la comparaison convenue et séparer le travail non commité.|Comparer demande et résultats pour une conclusion ou transmission claire.|Ne pas appliquer automatiquement de correctifs ou de règles.|Les anciennes affirmations ne sont pas des vérifications actuelles; pas de reprise automatique.|Brouillon uniquement; aucune exécution ni intégration Tab native.|Les propositions ne renomment rien et ne garantissent pas la disponibilité.|Nous présentons la collection selon votre besoin et proposons une commande adaptée.",
+    "intros": "Comprendre le but et préparer un premier pas modeste et vérifiable.|Examiner la démarche selon la demande et les preuves disponibles.|Reconstituer le but visible, les décisions confirmées et le dernier état prouvé.|Examiner les fichiers autorisés sans exposer de valeurs sensibles.|Étudier l’obstacle réel et les sources pertinentes.|Vérifier démarrage, documentation et paquet pour le vrai public.|Utiliser la comparaison convenue et séparer le travail non commité.|Comparer demande et résultats pour une conclusion ou transmission claire.|Ne pas appliquer automatiquement de correctifs ou de règles.|Les anciennes affirmations ne sont pas des vérifications actuelles; pas de reprise automatique.|Brouillon uniquement; aucune exécution ni intégration Tab native.|Les propositions ne renomment rien et ne garantissent pas la disponibilité.|Nous présentons la collection selon votre besoin et proposons une commande adaptée.|Nous préservons votre intention, définissons le niveau de qualité attendu et réalisons l’objectif en autonomie. Nous examinons ensuite le résultat et l’améliorons à partir de preuves concrètes.",
     "stepNotes": [
       "Utiliser les informations disponibles.",
       "Respecter les conventions existantes.",
@@ -387,7 +417,8 @@
       "Les anciennes affirmations ne sont pas des vérifications actuelles; pas de reprise automatique.",
       "Brouillon uniquement; aucune exécution ni intégration Tab native.",
       "Les propositions ne renomment rien et ne garantissent pas la disponibilité.",
-      "Le guide recommande sans lancer automatiquement un autre processus."
+      "Le guide recommande sans lancer automatiquement un autre processus.",
+      "Aucune autorisation générale de publier ou d’agir à l’extérieur ; demander les décisions indispensables manquantes."
     ],
     "ingredientLists": [
       [
@@ -467,6 +498,12 @@
         "Votre situation",
         "Style installé",
         "Résultat souhaité"
+      ],
+      [
+        "Objectif de projet convenu",
+        "Architecture existante",
+        "Critères de réussite vérifiables",
+        "Périmètre autorisé"
       ]
     ],
     "verifications": [
@@ -482,7 +519,8 @@
       "Reprendre un projet après une longue pause.",
       "Compléter un début de prompt selon le contexte.",
       "Trouver ensemble les noms Plain et Kitchen.",
-      "Nous présentons la collection selon votre besoin et proposons une commande adaptée."
+      "Nous présentons la collection selon votre besoin et proposons une commande adaptée.",
+      "Étayer les résultats réalisés et les vérifications réussies ; préciser les limites restantes."
     ],
     "appearance": "Apparence",
     "system": "Système",
@@ -501,16 +539,23 @@
       "Distinguer les recettes selon leur usage.",
       "Associer ton besoin à un workflow disponible.",
       "Montrer un appel sans l’exécuter."
+    ],
+    "steps13": "Clarifier l’objectif et les limites|Définir la qualité attendue|Réaliser et vérifier|Évaluer et améliorer",
+    "stepNotes13": [
+      "Comprendre la demande, l’état actuel et le périmètre autorisé.",
+      "Définir des critères de réussite observables et les vérifications utiles.",
+      "Réaliser la plus petite solution complète et vérifier le parcours réel.",
+      "Corriger les faiblesses et transmettre le résultat, les preuves et les points ouverts."
     ]
   },
   "es": {
     "name": "Español",
-    "tagline": "Trece recetas para tus proyectos",
+    "tagline": "Catorce recetas para tus proyectos",
     "recipe": "Receta",
     "when": "Cuándo",
     "ingredients": "Ingredientes",
     "method": "Preparación",
-    "invoke": "Cómo iniciar esta receta",
+    "invoke": "Iniciar receta",
     "copy": "Copiar",
     "copied": "Copiado",
     "language": "Idioma",
@@ -520,8 +565,8 @@
     "previous": "Receta anterior",
     "next": "Receta siguiente",
     "ingredientList": "Una idea|Contexto del proyecto|Preguntas abiertas|Restricciones",
-    "summaries": "De la idea al primer paso verificable.|Comprobar si el enfoque lleva al objetivo.|Recuperar objetivos, decisiones y estado.|Revisar contenido sensible antes de compartir.|Delimitar cuestiones legales y barreras de uso.|Preparar un proyecto para su publicación.|Redactar cambios a partir de pruebas.|Cerrar el trabajo o preparar el relevo.|Aprender de los intentos anteriores.|Retomar un proyecto tras una pausa larga.|Completar un prompt iniciado según el contexto.|Encontrar juntos nombres Plain y Kitchen.|Entender Cookbook y encontrar el skill adecuado.",
-    "whenList": "Una idea necesita un comienzo concreto.|Quieres saber si el trabajo avanza.|Tras una pausa necesitas el contexto.|Quieres compartir archivos o un repositorio.|Antes de publicar o ante una pregunta concreta.|Otros deben entender y usar tu proyecto.|Una versión o una etapa ha terminado.|Una etapa termina o necesita relevo.|Cuando se repiten errores o consejos sin aplicar.|Cuando hace falta recordar objetivos, decisiones y estado actual.|Cuando falta el autocompletado o una idea queda incompleta.|Cuando un producto o skill necesita nombres adecuados.|Al empezar o al buscar el flujo apropiado.",
+    "summaries": "De la idea al primer paso verificable.|Comprobar si el enfoque lleva al objetivo.|Recuperar objetivos, decisiones y estado.|Revisar contenido sensible antes de compartir.|Delimitar cuestiones legales y barreras de uso.|Preparar un proyecto para su publicación.|Redactar cambios a partir de pruebas.|Cerrar el trabajo o preparar el relevo.|Aprender de los intentos anteriores.|Retomar un proyecto tras una pausa larga.|Completar un prompt iniciado según el contexto.|Encontrar juntos nombres Plain y Kitchen.|Entender Cookbook y encontrar el skill adecuado.|Llevar un objetivo hasta un resultado implementado y verificado.",
+    "whenList": "Una idea necesita un comienzo concreto.|Quieres saber si el trabajo avanza.|Tras una pausa necesitas el contexto.|Quieres compartir archivos o un repositorio.|Antes de publicar o ante una pregunta concreta.|Otros deben entender y usar tu proyecto.|Una versión o una etapa ha terminado.|Una etapa termina o necesita relevo.|Cuando se repiten errores o consejos sin aplicar.|Cuando hace falta recordar objetivos, decisiones y estado actual.|Cuando falta el autocompletado o una idea queda incompleta.|Cuando un producto o skill necesita nombres adecuados.|Al empezar o al buscar el flujo apropiado.|Cuando quieras delegar un objetivo del proyecto y su implementación.",
     "steps0": "Entender el objetivo|Examinar el contexto|Aclarar preguntas|Planificar el primer paso",
     "steps1": "Comparar con el objetivo|Examinar pruebas|Identificar obstáculos|Recomendar el siguiente paso",
     "steps2": "Leer el historial disponible|Separar decisiones|Atribuir resultados|Resumir el estado",
@@ -533,7 +578,7 @@
     "limitText": "Usar pruebas existentes. Mostrar límites; las acciones externas requieren autorización.",
     "languageNote": "Los comandos mantienen su idioma instalado.",
     "footer": "Preparar bien. Construir mejor.",
-    "intros": "Entender el objetivo y planificar un primer paso pequeño y verificable.|Revisar el enfoque según el encargo y las pruebas disponibles.|Reconstruir el objetivo visible, las decisiones y el último estado probado.|Revisar archivos autorizados sin revelar valores sensibles.|Examinar la barrera real y las fuentes pertinentes.|Revisar inicio, documentación y paquete para el público real.|Usar la comparación acordada y separar el trabajo sin confirmar.|Comparar encargo y resultados para un cierre o relevo claro.|No aplicar cambios ni reglas automáticamente.|Las afirmaciones antiguas no son comprobaciones actuales; no continuar automáticamente.|Solo borrador; sin ejecución ni integración nativa de Tab.|Las propuestas no cambian nombres ni garantizan disponibilidad.|Explicamos la colección según tu necesidad y mostramos el siguiente comando adecuado.",
+    "intros": "Entender el objetivo y planificar un primer paso pequeño y verificable.|Revisar el enfoque según el encargo y las pruebas disponibles.|Reconstruir el objetivo visible, las decisiones y el último estado probado.|Revisar archivos autorizados sin revelar valores sensibles.|Examinar la barrera real y las fuentes pertinentes.|Revisar inicio, documentación y paquete para el público real.|Usar la comparación acordada y separar el trabajo sin confirmar.|Comparar encargo y resultados para un cierre o relevo claro.|No aplicar cambios ni reglas automáticamente.|Las afirmaciones antiguas no son comprobaciones actuales; no continuar automáticamente.|Solo borrador; sin ejecución ni integración nativa de Tab.|Las propuestas no cambian nombres ni garantizan disponibilidad.|Explicamos la colección según tu necesidad y mostramos el siguiente comando adecuado.|Preservamos tu intención, definimos el nivel de calidad adecuado y ejecutamos el objetivo con autonomía. Después revisamos y mejoramos el resultado con pruebas concretas.",
     "stepNotes": [
       "Usar información disponible.",
       "Respetar las convenciones existentes.",
@@ -555,7 +600,8 @@
       "Las afirmaciones antiguas no son comprobaciones actuales; no continuar automáticamente.",
       "Solo borrador; sin ejecución ni integración nativa de Tab.",
       "Las propuestas no cambian nombres ni garantizan disponibilidad.",
-      "El guía recomienda; no ejecuta otros flujos automáticamente."
+      "El guía recomienda; no ejecuta otros flujos automáticamente.",
+      "No concede permiso general para publicar ni realizar acciones externas; preguntar por las decisiones necesarias que falten."
     ],
     "ingredientLists": [
       [
@@ -635,6 +681,12 @@
         "Tu situación",
         "Estilo instalado",
         "Resultado deseado"
+      ],
+      [
+        "Objetivo del proyecto acordado",
+        "Arquitectura existente",
+        "Criterios de éxito verificables",
+        "Alcance autorizado"
       ]
     ],
     "verifications": [
@@ -650,7 +702,8 @@
       "Retomar un proyecto tras una pausa larga.",
       "Completar un prompt iniciado según el contexto.",
       "Encontrar juntos nombres Plain y Kitchen.",
-      "Explicamos la colección según tu necesidad y mostramos el siguiente comando adecuado."
+      "Explicamos la colección según tu necesidad y mostramos el siguiente comando adecuado.",
+      "Aportar pruebas de los resultados implementados y las comprobaciones superadas; indicar los límites pendientes."
     ],
     "appearance": "Apariencia",
     "system": "Sistema",
@@ -669,16 +722,23 @@
       "Distinguir recetas similares según su uso.",
       "Elegir un flujo disponible para tu necesidad.",
       "Mostrar una llamada sin ejecutarla."
+    ],
+    "steps13": "Aclarar objetivo y límites|Definir la calidad esperada|Implementar y verificar|Evaluar y mejorar",
+    "stepNotes13": [
+      "Comprender el encargo, el estado actual y el alcance autorizado.",
+      "Definir criterios de éxito observables y comprobaciones pertinentes.",
+      "Implementar la solución completa más pequeña y verificar el flujo real.",
+      "Corregir los puntos débiles y entregar el resultado, las pruebas y los asuntos pendientes."
     ]
   },
   "pt-BR": {
     "name": "Português (Brasil)",
-    "tagline": "Treze receitas para seus projetos",
+    "tagline": "Quatorze receitas para seus projetos",
     "recipe": "Receita",
     "when": "Quando",
     "ingredients": "Ingredientes",
     "method": "Preparo",
-    "invoke": "Como iniciar esta receita",
+    "invoke": "Iniciar receita",
     "copy": "Copiar",
     "copied": "Copiado",
     "language": "Idioma",
@@ -688,8 +748,8 @@
     "previous": "Receita anterior",
     "next": "Próxima receita",
     "ingredientList": "Uma ideia|Contexto do projeto|Questões abertas|Restrições",
-    "summaries": "Da ideia ao primeiro passo verificável.|Verificar se a abordagem leva ao objetivo.|Recuperar objetivos, decisões e situação.|Revisar conteúdo sensível antes de compartilhar.|Delimitar questões legais e barreiras de uso.|Preparar um projeto para publicação.|Escrever notas com base em mudanças comprovadas.|Encerrar o trabalho ou preparar a passagem.|Aprender com tentativas anteriores.|Retomar um projeto após uma pausa longa.|Completar um prompt iniciado com contexto.|Encontrar nomes Plain e Kitchen juntos.|Entender Cookbook e encontrar o skill certo.",
-    "whenList": "Uma ideia precisa de um começo concreto.|Você quer saber se o trabalho avança.|Após uma pausa, falta contexto.|Você quer compartilhar arquivos ou um repositório.|Antes de publicar ou para uma questão específica.|Outros precisam entender e usar seu projeto.|Uma versão ou etapa foi concluída.|Uma etapa termina ou precisa ser transferida.|Quando falhas ou recomendações sem conclusão se repetem.|Quando objetivos, decisões e estado atual precisam ser lembrados.|Quando o preenchimento automático falta ou uma ideia está incompleta.|Quando um produto ou skill precisa de nomes adequados.|Ao começar ou procurar o fluxo adequado.",
+    "summaries": "Da ideia ao primeiro passo verificável.|Verificar se a abordagem leva ao objetivo.|Recuperar objetivos, decisões e situação.|Revisar conteúdo sensível antes de compartilhar.|Delimitar questões legais e barreiras de uso.|Preparar um projeto para publicação.|Escrever notas com base em mudanças comprovadas.|Encerrar o trabalho ou preparar a passagem.|Aprender com tentativas anteriores.|Retomar um projeto após uma pausa longa.|Completar um prompt iniciado com contexto.|Encontrar nomes Plain e Kitchen juntos.|Entender Cookbook e encontrar o skill certo.|Levar um objetivo até um resultado implementado e verificado.",
+    "whenList": "Uma ideia precisa de um começo concreto.|Você quer saber se o trabalho avança.|Após uma pausa, falta contexto.|Você quer compartilhar arquivos ou um repositório.|Antes de publicar ou para uma questão específica.|Outros precisam entender e usar seu projeto.|Uma versão ou etapa foi concluída.|Uma etapa termina ou precisa ser transferida.|Quando falhas ou recomendações sem conclusão se repetem.|Quando objetivos, decisões e estado atual precisam ser lembrados.|Quando o preenchimento automático falta ou uma ideia está incompleta.|Quando um produto ou skill precisa de nomes adequados.|Ao começar ou procurar o fluxo adequado.|Quando você quiser delegar um objetivo do projeto e sua implementação.",
     "steps0": "Entender o objetivo|Examinar o contexto|Esclarecer questões|Planejar o primeiro passo",
     "steps1": "Comparar com o objetivo|Examinar evidências|Identificar obstáculos|Recomendar o próximo passo",
     "steps2": "Ler o histórico disponível|Separar decisões|Atribuir resultados|Resumir a situação",
@@ -701,7 +761,7 @@
     "limitText": "Usar evidências existentes. Mostrar limites; ações externas exigem autorização.",
     "languageNote": "Os comandos mantêm o idioma instalado.",
     "footer": "Preparar bem. Construir melhor.",
-    "intros": "Entender o objetivo e planejar um primeiro passo pequeno e verificável.|Revisar a abordagem conforme o pedido e as evidências existentes.|Reconstruir o objetivo visível, decisões e o último estado comprovado.|Revisar arquivos autorizados sem expor valores sensíveis.|Examinar a barreira real e as fontes relevantes.|Revisar início, documentação e pacote para o público real.|Usar a comparação acordada e separar trabalho não commitado.|Comparar pedido e resultados para uma conclusão ou passagem clara.|Não aplicar correções ou regras automaticamente.|Afirmações antigas não são verificações atuais; não retomar automaticamente.|Somente rascunho; sem execução ou integração nativa com Tab.|As propostas não renomeiam nada nem garantem disponibilidade.|Explicamos a coleção conforme sua necessidade e mostramos um comando adequado.",
+    "intros": "Entender o objetivo e planejar um primeiro passo pequeno e verificável.|Revisar a abordagem conforme o pedido e as evidências existentes.|Reconstruir o objetivo visível, decisões e o último estado comprovado.|Revisar arquivos autorizados sem expor valores sensíveis.|Examinar a barreira real e as fontes relevantes.|Revisar início, documentação e pacote para o público real.|Usar a comparação acordada e separar trabalho não commitado.|Comparar pedido e resultados para uma conclusão ou passagem clara.|Não aplicar correções ou regras automaticamente.|Afirmações antigas não são verificações atuais; não retomar automaticamente.|Somente rascunho; sem execução ou integração nativa com Tab.|As propostas não renomeiam nada nem garantem disponibilidade.|Explicamos a coleção conforme sua necessidade e mostramos um comando adequado.|Preservamos sua intenção, definimos o nível de qualidade adequado e executamos o objetivo com autonomia. Depois avaliamos e melhoramos o resultado com evidências concretas.",
     "stepNotes": [
       "Usar informações disponíveis.",
       "Respeitar convenções existentes.",
@@ -723,7 +783,8 @@
       "Afirmações antigas não são verificações atuais; não retomar automaticamente.",
       "Somente rascunho; sem execução ou integração nativa com Tab.",
       "As propostas não renomeiam nada nem garantem disponibilidade.",
-      "O guia recomenda; não executa outros fluxos automaticamente."
+      "O guia recomenda; não executa outros fluxos automaticamente.",
+      "Não concede autorização geral para publicar nem realizar ações externas; perguntar pelas decisões necessárias que faltarem."
     ],
     "ingredientLists": [
       [
@@ -803,6 +864,12 @@
         "Sua situação",
         "Estilo instalado",
         "Resultado desejado"
+      ],
+      [
+        "Objetivo do projeto acordado",
+        "Arquitetura existente",
+        "Critérios de sucesso verificáveis",
+        "Escopo autorizado"
       ]
     ],
     "verifications": [
@@ -818,7 +885,8 @@
       "Retomar um projeto após uma pausa longa.",
       "Completar um prompt iniciado com contexto.",
       "Encontrar nomes Plain e Kitchen juntos.",
-      "Explicamos a coleção conforme sua necessidade e mostramos um comando adequado."
+      "Explicamos a coleção conforme sua necessidade e mostramos um comando adequado.",
+      "Comprovar resultados implementados e verificações aprovadas; indicar os limites ainda existentes."
     ],
     "appearance": "Aparência",
     "system": "Sistema",
@@ -837,16 +905,23 @@
       "Distinguir receitas pelo momento de uso.",
       "Escolher um fluxo disponível para sua necessidade.",
       "Mostrar uma chamada sem executá-la."
+    ],
+    "steps13": "Esclarecer objetivo e limites|Definir a qualidade esperada|Implementar e verificar|Avaliar e melhorar",
+    "stepNotes13": [
+      "Entender o pedido, o estado atual e o escopo autorizado.",
+      "Definir critérios de sucesso observáveis e verificações relevantes.",
+      "Implementar a menor solução completa e verificar o fluxo real.",
+      "Corrigir os pontos fracos e entregar o resultado, as evidências e as pendências."
     ]
   },
   "it": {
     "name": "Italiano",
-    "tagline": "Tredici ricette per i tuoi progetti",
+    "tagline": "Quattordici ricette per i tuoi progetti",
     "recipe": "Ricetta",
     "when": "Quando",
     "ingredients": "Ingredienti",
     "method": "Preparazione",
-    "invoke": "Come avviare questa ricetta",
+    "invoke": "Avvia la ricetta",
     "copy": "Copia",
     "copied": "Copiato",
     "language": "Lingua",
@@ -856,8 +931,8 @@
     "previous": "Ricetta precedente",
     "next": "Ricetta successiva",
     "ingredientList": "Un’idea|Contesto del progetto|Domande aperte|Vincoli",
-    "summaries": "Dall’idea al primo passo verificabile.|Verificare se il metodo porta all’obiettivo.|Ritrovare obiettivi, decisioni e stato.|Esaminare dati sensibili prima di condividere.|Delimitare domande legali e ostacoli d’uso.|Preparare un progetto alla pubblicazione.|Scrivere note da modifiche documentate.|Concludere o preparare una consegna.|Imparare dai tentativi precedenti.|Riprendere un progetto dopo una lunga pausa.|Completare un prompt iniziato usando il contesto.|Trovare insieme nomi Plain e Kitchen.|Capire Cookbook e trovare lo skill adatto.",
-    "whenList": "Un’idea richiede un inizio concreto.|Vuoi sapere se il lavoro avanza.|Dopo una pausa manca il contesto.|Vuoi condividere file o un repository.|Prima del rilascio o per una domanda precisa.|Altri devono capire e usare il progetto.|Una versione o fase è terminata.|Una fase termina o richiede una consegna.|Quando si ripetono errori o consigli rimasti in sospeso.|Quando occorre ricordare obiettivi, decisioni e stato attuale.|Quando manca il completamento automatico o un pensiero è incompleto.|Quando un prodotto o skill necessita di nomi adatti.|Per iniziare o scegliere il processo giusto.",
+    "summaries": "Dall’idea al primo passo verificabile.|Verificare se il metodo porta all’obiettivo.|Ritrovare obiettivi, decisioni e stato.|Esaminare dati sensibili prima di condividere.|Delimitare domande legali e ostacoli d’uso.|Preparare un progetto alla pubblicazione.|Scrivere note da modifiche documentate.|Concludere o preparare una consegna.|Imparare dai tentativi precedenti.|Riprendere un progetto dopo una lunga pausa.|Completare un prompt iniziato usando il contesto.|Trovare insieme nomi Plain e Kitchen.|Capire Cookbook e trovare lo skill adatto.|Portare un obiettivo fino a un risultato realizzato e verificato.",
+    "whenList": "Un’idea richiede un inizio concreto.|Vuoi sapere se il lavoro avanza.|Dopo una pausa manca il contesto.|Vuoi condividere file o un repository.|Prima del rilascio o per una domanda precisa.|Altri devono capire e usare il progetto.|Una versione o fase è terminata.|Una fase termina o richiede una consegna.|Quando si ripetono errori o consigli rimasti in sospeso.|Quando occorre ricordare obiettivi, decisioni e stato attuale.|Quando manca il completamento automatico o un pensiero è incompleto.|Quando un prodotto o skill necessita di nomi adatti.|Per iniziare o scegliere il processo giusto.|Quando vuoi delegare un obiettivo del progetto e la sua realizzazione.",
     "steps0": "Capire l’obiettivo|Esaminare il contesto|Chiarire le domande|Pianificare il primo passo",
     "steps1": "Confrontare l’obiettivo|Esaminare le prove|Individuare ostacoli|Consigliare il passo successivo",
     "steps2": "Leggere la cronologia|Separare le decisioni|Attribuire i risultati|Riassumere lo stato",
@@ -869,7 +944,7 @@
     "limitText": "Usare prove esistenti. Esporre i limiti; le azioni esterne richiedono autorizzazione.",
     "languageNote": "I comandi mantengono la lingua installata.",
     "footer": "Preparare bene. Costruire meglio.",
-    "intros": "Capire l’obiettivo e pianificare un primo passo piccolo e verificabile.|Esaminare il metodo rispetto alla richiesta e alle prove.|Ricostruire obiettivo visibile, decisioni e ultimo stato documentato.|Esaminare file autorizzati senza esporre valori sensibili.|Esaminare l’ostacolo reale e le fonti pertinenti.|Verificare avvio, documentazione e pacchetto per il vero pubblico.|Usare il confronto concordato e separare il lavoro non committato.|Confrontare richiesta e risultati per una conclusione o consegna chiara.|Non applicare automaticamente correzioni o regole.|Le vecchie affermazioni non sono verifiche attuali; non riprendere automaticamente.|Solo bozza; nessuna esecuzione o integrazione Tab nativa.|Le proposte non rinominano nulla e non garantiscono disponibilità.|Spieghiamo la raccolta secondo le tue esigenze e mostriamo un comando adatto.",
+    "intros": "Capire l’obiettivo e pianificare un primo passo piccolo e verificabile.|Esaminare il metodo rispetto alla richiesta e alle prove.|Ricostruire obiettivo visibile, decisioni e ultimo stato documentato.|Esaminare file autorizzati senza esporre valori sensibili.|Esaminare l’ostacolo reale e le fonti pertinenti.|Verificare avvio, documentazione e pacchetto per il vero pubblico.|Usare il confronto concordato e separare il lavoro non committato.|Confrontare richiesta e risultati per una conclusione o consegna chiara.|Non applicare automaticamente correzioni o regole.|Le vecchie affermazioni non sono verifiche attuali; non riprendere automaticamente.|Solo bozza; nessuna esecuzione o integrazione Tab nativa.|Le proposte non rinominano nulla e non garantiscono disponibilità.|Spieghiamo la raccolta secondo le tue esigenze e mostriamo un comando adatto.|Preserviamo la tua intenzione, definiamo il livello di qualità adeguato e realizziamo l’obiettivo in autonomia. Poi esaminiamo e miglioriamo il risultato sulla base di prove concrete.",
     "stepNotes": [
       "Usare informazioni disponibili.",
       "Rispettare le convenzioni esistenti.",
@@ -891,7 +966,8 @@
       "Le vecchie affermazioni non sono verifiche attuali; non riprendere automaticamente.",
       "Solo bozza; nessuna esecuzione o integrazione Tab nativa.",
       "Le proposte non rinominano nulla e non garantiscono disponibilità.",
-      "La guida consiglia; non esegue automaticamente altri processi."
+      "La guida consiglia; non esegue automaticamente altri processi.",
+      "Nessun permesso generale di pubblicare o compiere azioni esterne; chiedere le decisioni necessarie mancanti."
     ],
     "ingredientLists": [
       [
@@ -971,6 +1047,12 @@
         "La tua situazione",
         "Stile installato",
         "Risultato desiderato"
+      ],
+      [
+        "Obiettivo del progetto concordato",
+        "Architettura esistente",
+        "Criteri di successo verificabili",
+        "Ambito autorizzato"
       ]
     ],
     "verifications": [
@@ -986,7 +1068,8 @@
       "Riprendere un progetto dopo una lunga pausa.",
       "Completare un prompt iniziato usando il contesto.",
       "Trovare insieme nomi Plain e Kitchen.",
-      "Spieghiamo la raccolta secondo le tue esigenze e mostriamo un comando adatto."
+      "Spieghiamo la raccolta secondo le tue esigenze e mostriamo un comando adatto.",
+      "Documentare i risultati realizzati e le verifiche superate; indicare i limiti ancora aperti."
     ],
     "appearance": "Aspetto",
     "system": "Sistema",
@@ -1005,16 +1088,23 @@
       "Distinguere ricette simili in base all’uso.",
       "Abbinare la tua esigenza a un flusso disponibile.",
       "Mostrare un comando senza eseguirlo."
+    ],
+    "steps13": "Chiarire obiettivo e limiti|Definire la qualità attesa|Realizzare e verificare|Valutare e migliorare",
+    "stepNotes13": [
+      "Comprendere la richiesta, lo stato attuale e l’ambito autorizzato.",
+      "Definire criteri di successo osservabili e verifiche pertinenti.",
+      "Realizzare la soluzione completa più piccola e verificare il flusso reale.",
+      "Correggere i punti deboli e consegnare risultato, prove e questioni aperte."
     ]
   },
   "tr": {
     "name": "Türkçe",
-    "tagline": "Projelerin için on üç tarif",
+    "tagline": "Projelerin için on dört tarif",
     "recipe": "Tarif",
     "when": "Ne zaman",
     "ingredients": "Malzemeler",
     "method": "Hazırlanışı",
-    "invoke": "Bu tarifi başlat",
+    "invoke": "Tarifi başlat",
     "copy": "Kopyala",
     "copied": "Kopyalandı",
     "language": "Dil",
@@ -1024,8 +1114,8 @@
     "previous": "Önceki tarif",
     "next": "Sonraki tarif",
     "ingredientList": "Bir fikir|Proje bağlamı|Açık sorular|Kısıtlar",
-    "summaries": "Fikirden doğrulanabilir ilk adıma.|Yaklaşımın hedefe ulaşıp ulaşmadığını incele.|Hedefleri, kararları ve durumu bul.|Paylaşmadan önce hassas içeriği incele.|Hukuki soruları ve kullanım engellerini sınırla.|Projeyi yayımlanmaya hazırla.|Kanıtlanan değişikliklerden notlar yaz.|Çalışmayı tamamla veya devre hazırla.|Önceki denemelerden ders çıkar.|Uzun aradan sonra projeye geri dön.|Başlanmış bir istemi bağlama göre tamamla.|Plain ve Kitchen adlarını birlikte bul.|Cookbook’u anla ve doğru beceriyi bul.",
-    "whenList": "Bir fikir somut bir başlangıç gerektirir.|İşin ilerleyip ilerlemediğini bilmek istiyorsun.|Aradan sonra bağlamı yeniden bulmalısın.|Dosya veya depo paylaşmak istiyorsun.|Yayım öncesinde veya belirli bir soru için.|Başkaları projeyi anlayıp kullanabilmeli.|Bir sürüm veya aşama tamamlandı.|Bir aşama bitiyor veya devredilmeli.|Hatalar veya uygulanmayan öneriler tekrarlandığında.|Hedefler, kararlar ve güncel durum hatırlanmalıysa.|Otomatik tamamlama yoksa veya düşünce yarım kalmışsa.|Bir ürün veya beceriye uygun ad gerektiğinde.|Yeni başlarken veya uygun iş akışını ararken.",
+    "summaries": "Fikirden doğrulanabilir ilk adıma.|Yaklaşımın hedefe ulaşıp ulaşmadığını incele.|Hedefleri, kararları ve durumu bul.|Paylaşmadan önce hassas içeriği incele.|Hukuki soruları ve kullanım engellerini sınırla.|Projeyi yayımlanmaya hazırla.|Kanıtlanan değişikliklerden notlar yaz.|Çalışmayı tamamla veya devre hazırla.|Önceki denemelerden ders çıkar.|Uzun aradan sonra projeye geri dön.|Başlanmış bir istemi bağlama göre tamamla.|Plain ve Kitchen adlarını birlikte bul.|Cookbook’u anla ve doğru beceriyi bul.|Bir hedefi uygulanmış ve doğrulanmış bir sonuca ulaştır.",
+    "whenList": "Bir fikir somut bir başlangıç gerektirir.|İşin ilerleyip ilerlemediğini bilmek istiyorsun.|Aradan sonra bağlamı yeniden bulmalısın.|Dosya veya depo paylaşmak istiyorsun.|Yayım öncesinde veya belirli bir soru için.|Başkaları projeyi anlayıp kullanabilmeli.|Bir sürüm veya aşama tamamlandı.|Bir aşama bitiyor veya devredilmeli.|Hatalar veya uygulanmayan öneriler tekrarlandığında.|Hedefler, kararlar ve güncel durum hatırlanmalıysa.|Otomatik tamamlama yoksa veya düşünce yarım kalmışsa.|Bir ürün veya beceriye uygun ad gerektiğinde.|Yeni başlarken veya uygun iş akışını ararken.|Bir proje hedefini ve uygulamasını devretmek istediğinde.",
     "steps0": "Hedefi anla|Bağlamı incele|Soruları netleştir|İlk adımı planla",
     "steps1": "Hedefle karşılaştır|Kanıtları incele|Engelleri belirle|Sonraki adımı öner",
     "steps2": "Görünen geçmişi oku|Kararları ayır|Sonuçları ilişkilendir|Durumu özetle",
@@ -1037,7 +1127,7 @@
     "limitText": "Mevcut kanıtları kullan. Sınırları belirt; dış eylemler izin gerektirir.",
     "languageNote": "Beceri komutları kurulu dilde kalır.",
     "footer": "İyi hazırlan. Daha iyi geliştir.",
-    "intros": "Hedefi anla ve küçük, doğrulanabilir ilk adımı planla.|Yaklaşımı istek ve mevcut kanıtlara göre incele.|Görünen hedefi, kararları ve son kanıtlanmış durumu yeniden kur.|İzin verilen dosyaları hassas değerleri açıklamadan incele.|Gerçek kullanım engelini ve ilgili kaynakları incele.|Başlangıç, belgeler ve paketi gerçek kitle için incele.|Kararlaştırılan karşılaştırmayı kullan ve kaydedilmemiş işi ayır.|İstekle sonuçları karşılaştır, açık bir kapanış veya devir yaz.|Düzeltmeleri veya kuralları otomatik uygulama.|Eski iddialar güncel kontrol değildir; otomatik devam etme.|Yalnızca taslak; çalıştırma veya yerel Tab entegrasyonu yok.|Öneriler adları değiştirmez veya kullanılabilirliği garanti etmez.|Koleksiyonu ihtiyacına göre açıklayıp uygun bir komut gösteririz.",
+    "intros": "Hedefi anla ve küçük, doğrulanabilir ilk adımı planla.|Yaklaşımı istek ve mevcut kanıtlara göre incele.|Görünen hedefi, kararları ve son kanıtlanmış durumu yeniden kur.|İzin verilen dosyaları hassas değerleri açıklamadan incele.|Gerçek kullanım engelini ve ilgili kaynakları incele.|Başlangıç, belgeler ve paketi gerçek kitle için incele.|Kararlaştırılan karşılaştırmayı kullan ve kaydedilmemiş işi ayır.|İstekle sonuçları karşılaştır, açık bir kapanış veya devir yaz.|Düzeltmeleri veya kuralları otomatik uygulama.|Eski iddialar güncel kontrol değildir; otomatik devam etme.|Yalnızca taslak; çalıştırma veya yerel Tab entegrasyonu yok.|Öneriler adları değiştirmez veya kullanılabilirliği garanti etmez.|Koleksiyonu ihtiyacına göre açıklayıp uygun bir komut gösteririz.|Amacını korur, uygun kalite ölçütlerini belirler ve hedefi bağımsız biçimde uygularız. Ardından sonucu somut kanıtlarla inceler ve iyileştiririz.",
     "stepNotes": [
       "Mevcut bilgiyi kullan.",
       "Var olan kurallara uy.",
@@ -1059,7 +1149,8 @@
       "Eski iddialar güncel kontrol değildir; otomatik devam etme.",
       "Yalnızca taslak; çalıştırma veya yerel Tab entegrasyonu yok.",
       "Öneriler adları değiştirmez veya kullanılabilirliği garanti etmez.",
-      "Rehber önerir; diğer iş akışlarını otomatik çalıştırmaz."
+      "Rehber önerir; diğer iş akışlarını otomatik çalıştırmaz.",
+      "Yayınlama veya dış işlemler için genel izin vermez; gerekli eksik kararları sor."
     ],
     "ingredientLists": [
       [
@@ -1139,6 +1230,12 @@
         "Durumun",
         "Yüklü adlandırma",
         "İstenen sonuç"
+      ],
+      [
+        "Kararlaştırılmış proje hedefi",
+        "Mevcut mimari",
+        "Doğrulanabilir başarı ölçütleri",
+        "İzin verilen kapsam"
       ]
     ],
     "verifications": [
@@ -1154,7 +1251,8 @@
       "Uzun aradan sonra projeye geri dön.",
       "Başlanmış bir istemi bağlama göre tamamla.",
       "Plain ve Kitchen adlarını birlikte bul.",
-      "Koleksiyonu ihtiyacına göre açıklayıp uygun bir komut gösteririz."
+      "Koleksiyonu ihtiyacına göre açıklayıp uygun bir komut gösteririz.",
+      "Uygulanan sonuçları ve başarılı kontrolleri kanıtla; çözülmemiş sınırları belirt."
     ],
     "appearance": "Görünüm",
     "system": "Sistem",
@@ -1173,16 +1271,23 @@
       "Benzer tarifleri kullanım zamanına göre ayır.",
       "İhtiyacına uygun mevcut bir iş akışı seç.",
       "Çalıştırmadan somut bir çağrı örneği göster."
+    ],
+    "steps13": "Hedefi ve sınırları netleştir|Kalite ölçütlerini belirle|Uygula ve doğrula|Eleştirel değerlendir ve iyileştir",
+    "stepNotes13": [
+      "Talebi, mevcut durumu ve izin verilen kapsamı anla.",
+      "Gözlemlenebilir başarı ölçütlerini ve ilgili kontrolleri belirle.",
+      "En küçük tam çözümü uygula ve gerçek akışı doğrula.",
+      "Zayıflıkları gider; sonucu, kanıtları ve açık noktaları devret."
     ]
   },
   "ja": {
     "name": "日本語",
-    "tagline": "プロジェクトのための13のレシピ",
+    "tagline": "プロジェクトのための14のレシピ",
     "recipe": "レシピ",
     "when": "使うとき",
     "ingredients": "材料",
     "method": "作り方",
-    "invoke": "レシピを呼び出す",
+    "invoke": "レシピを実行",
     "copy": "コピー",
     "copied": "コピー済み",
     "language": "言語",
@@ -1192,8 +1297,8 @@
     "previous": "前のレシピ",
     "next": "次のレシピ",
     "ingredientList": "アイデア|プロジェクトの背景|未解決の質問|制約",
-    "summaries": "アイデアから検証できる最初の一歩へ。|今の進め方が目標につながるか確認。|目標、決定事項、現在地を振り返る。|共有前に機密情報を確認。|法律上の疑問と利用上の障壁を整理。|プロジェクトの公開準備を確認。|確認できた変更から更新内容を書く。|作業を締めくくる、または引き継ぐ。|過去の試行から学ぶ。|長い休止後にプロジェクトへ戻る。|文脈に沿って書きかけのプロンプトを補う。|PlainとKitchenの名前を一緒に考える。|Cookbookを理解し、適したスキルを見つける。",
-    "whenList": "アイデアを具体的に始めたいとき。|作業が進んでいるか知りたいとき。|中断後に背景を取り戻したいとき。|ファイルやリポジトリを共有したいとき。|公開前、または具体的な疑問があるとき。|他の人がプロジェクトを使う前に。|バージョンや作業範囲が完成したとき。|作業を終了、または引き継ぐとき。|失敗や未実行の提案が繰り返されるとき。|目的や決定、現在の状況を思い出したいとき。|自動補完がないときや考えが途中のとき。|製品やスキルに合う名前が必要なとき。|初めて使うときや手順を選びたいとき。",
+    "summaries": "アイデアから検証できる最初の一歩へ。|今の進め方が目標につながるか確認。|目標、決定事項、現在地を振り返る。|共有前に機密情報を確認。|法律上の疑問と利用上の障壁を整理。|プロジェクトの公開準備を確認。|確認できた変更から更新内容を書く。|作業を締めくくる、または引き継ぐ。|過去の試行から学ぶ。|長い休止後にプロジェクトへ戻る。|文脈に沿って書きかけのプロンプトを補う。|PlainとKitchenの名前を一緒に考える。|Cookbookを理解し、適したスキルを見つける。|目標を引き受け、実装と検証を終えた成果まで進める。",
+    "whenList": "アイデアを具体的に始めたいとき。|作業が進んでいるか知りたいとき。|中断後に背景を取り戻したいとき。|ファイルやリポジトリを共有したいとき。|公開前、または具体的な疑問があるとき。|他の人がプロジェクトを使う前に。|バージョンや作業範囲が完成したとき。|作業を終了、または引き継ぐとき。|失敗や未実行の提案が繰り返されるとき。|目的や決定、現在の状況を思い出したいとき。|自動補完がないときや考えが途中のとき。|製品やスキルに合う名前が必要なとき。|初めて使うときや手順を選びたいとき。|プロジェクトの目標と、その実現を任せたいとき。",
     "steps0": "目標を理解する|背景を調べる|疑問を整理する|最初の一歩を計画",
     "steps1": "目標と照合|根拠を確認|障害を特定|次の一歩を提案",
     "steps2": "見える履歴を読む|決定を区別|結果を整理|現在地を要約",
@@ -1205,7 +1310,7 @@
     "limitText": "既存の根拠を使用。限界を明示し、外部への操作は許可を得て実行。",
     "languageNote": "スキルの呼び出し名はインストール時のままです。",
     "footer": "準備を整え、より良く作る。",
-    "intros": "目標を理解し、小さく検証できる最初の一歩を計画します。|依頼と既存の根拠に照らして進め方を確認します。|見える目標、確認済みの決定、最後に裏付けられた状態を整理します。|許可されたファイルを、機密の値を開示せず確認します。|実際の障壁と関連する資料を調べます。|実際の対象者に合わせて導入、文書、パッケージを確認します。|合意した比較範囲を使い、未コミットの作業を区別します。|依頼と結果を照合し、終了または引き継ぎを明確にします。|修正やルールを自動適用しません。|過去の報告は現在の確認ではありません。自動で作業を再開しません。|下書きのみ。実行やネイティブTab連携はしません。|提案だけで改名せず、利用可能性も保証しません。|目的に合わせてコレクションを説明し、適した呼び出し例を示します。",
+    "intros": "目標を理解し、小さく検証できる最初の一歩を計画します。|依頼と既存の根拠に照らして進め方を確認します。|見える目標、確認済みの決定、最後に裏付けられた状態を整理します。|許可されたファイルを、機密の値を開示せず確認します。|実際の障壁と関連する資料を調べます。|実際の対象者に合わせて導入、文書、パッケージを確認します。|合意した比較範囲を使い、未コミットの作業を区別します。|依頼と結果を照合し、終了または引き継ぎを明確にします。|修正やルールを自動適用しません。|過去の報告は現在の確認ではありません。自動で作業を再開しません。|下書きのみ。実行やネイティブTab連携はしません。|提案だけで改名せず、利用可能性も保証しません。|目的に合わせてコレクションを説明し、適した呼び出し例を示します。|あなたの意図を守り、適切な品質基準を定めて、自律的に実現まで進めます。その後、具体的な証拠をもとに成果を見直し、改善します。",
     "stepNotes": [
       "利用できる情報を使う。",
       "既存の規則を尊重する。",
@@ -1227,7 +1332,8 @@
       "過去の報告は現在の確認ではありません。自動で作業を再開しません。",
       "下書きのみ。実行やネイティブTab連携はしません。",
       "提案だけで改名せず、利用可能性も保証しません。",
-      "ガイドは提案のみで、別の手順を自動実行しません。"
+      "ガイドは提案のみで、別の手順を自動実行しません。",
+      "公開や外部操作への包括的な許可ではない。必要な判断が不足していれば確認する。"
     ],
     "ingredientLists": [
       [
@@ -1307,6 +1413,12 @@
         "状況",
         "導入した命名形式",
         "望む結果"
+      ],
+      [
+        "合意したプロジェクト目標",
+        "既存のアーキテクチャ",
+        "検証できる成功基準",
+        "許可された作業範囲"
       ]
     ],
     "verifications": [
@@ -1322,7 +1434,8 @@
       "長い休止後にプロジェクトへ戻る。",
       "文脈に沿って書きかけのプロンプトを補う。",
       "PlainとKitchenの名前を一緒に考える。",
-      "目的に合わせてコレクションを説明し、適した呼び出し例を示します。"
+      "目的に合わせてコレクションを説明し、適した呼び出し例を示します。",
+      "実装した成果と成功した検証を証拠で示し、残る制約を明記する。"
     ],
     "appearance": "表示",
     "system": "システム",
@@ -1341,16 +1454,23 @@
       "似たレシピを利用場面で区別します。",
       "目的に合う利用可能なワークフローを選びます。",
       "実行せずに具体的な呼び出し例を示します。"
+    ],
+    "steps13": "目標と範囲を明確にする|品質基準を定める|実装して検証する|批評して改善する",
+    "stepNotes13": [
+      "依頼、現在の状態、許可された作業範囲を理解する。",
+      "観察できる成功基準と必要な検証を定める。",
+      "最小限で完結する解決策を実装し、実際の流れを検証する。",
+      "弱点を直し、成果、検証の証拠、未解決事項を引き継ぐ。"
     ]
   },
   "ko": {
     "name": "한국어",
-    "tagline": "프로젝트를 위한 열세 가지 레시피",
+    "tagline": "프로젝트를 위한 열네 가지 레시피",
     "recipe": "레시피",
     "when": "언제",
     "ingredients": "재료",
     "method": "만드는 법",
-    "invoke": "이 레시피 실행하기",
+    "invoke": "레시피 실행",
     "copy": "복사",
     "copied": "복사됨",
     "language": "언어",
@@ -1360,8 +1480,8 @@
     "previous": "이전 레시피",
     "next": "다음 레시피",
     "ingredientList": "아이디어|프로젝트 맥락|열린 질문|제약 조건",
-    "summaries": "아이디어에서 검증 가능한 첫걸음으로.|현재 방식이 목표로 향하는지 확인.|목표, 결정과 현재 상태를 되찾기.|공유 전 민감한 내용을 검토.|법적 질문과 사용 장벽을 구체화.|프로젝트의 공개 준비를 검토.|확인된 변경으로 릴리스 노트 작성.|작업을 마무리하거나 인계.|이전 시도에서 배웁니다.|긴 휴식 후 프로젝트로 돌아옵니다.|문맥에 맞게 작성 중인 프롬프트를 완성합니다.|Plain과 Kitchen 이름을 함께 찾습니다.|Cookbook을 이해하고 적절한 스킬을 찾습니다.",
-    "whenList": "아이디어에 구체적인 시작이 필요할 때.|작업이 진전되는지 알고 싶을 때.|휴식 후 맥락이 필요할 때.|파일이나 저장소를 공유하려 할 때.|공개 전 또는 구체적인 질문이 있을 때.|다른 사람이 프로젝트를 쓰기 전에.|버전이나 작업 단계가 끝났을 때.|작업을 끝내거나 넘겨야 할 때.|실패나 미완료 권고가 반복될 때.|목표와 결정, 현재 상태를 다시 알아야 할 때.|자동 완성이 없거나 생각이 미완성일 때.|제품이나 스킬에 어울리는 이름이 필요할 때.|처음 사용하거나 알맞은 작업을 고를 때.",
+    "summaries": "아이디어에서 검증 가능한 첫걸음으로.|현재 방식이 목표로 향하는지 확인.|목표, 결정과 현재 상태를 되찾기.|공유 전 민감한 내용을 검토.|법적 질문과 사용 장벽을 구체화.|프로젝트의 공개 준비를 검토.|확인된 변경으로 릴리스 노트 작성.|작업을 마무리하거나 인계.|이전 시도에서 배웁니다.|긴 휴식 후 프로젝트로 돌아옵니다.|문맥에 맞게 작성 중인 프롬프트를 완성합니다.|Plain과 Kitchen 이름을 함께 찾습니다.|Cookbook을 이해하고 적절한 스킬을 찾습니다.|목표를 맡아 구현과 검증을 마친 결과까지 완성하기.",
+    "whenList": "아이디어에 구체적인 시작이 필요할 때.|작업이 진전되는지 알고 싶을 때.|휴식 후 맥락이 필요할 때.|파일이나 저장소를 공유하려 할 때.|공개 전 또는 구체적인 질문이 있을 때.|다른 사람이 프로젝트를 쓰기 전에.|버전이나 작업 단계가 끝났을 때.|작업을 끝내거나 넘겨야 할 때.|실패나 미완료 권고가 반복될 때.|목표와 결정, 현재 상태를 다시 알아야 할 때.|자동 완성이 없거나 생각이 미완성일 때.|제품이나 스킬에 어울리는 이름이 필요할 때.|처음 사용하거나 알맞은 작업을 고를 때.|프로젝트 목표와 구현을 맡기고 싶을 때.",
     "steps0": "목표 이해|맥락 검토|질문 정리|첫 단계 계획",
     "steps1": "목표와 비교|근거 확인|장애물 파악|다음 단계 제안",
     "steps2": "보이는 기록 읽기|결정 구분|결과 정리|상태 요약",
@@ -1373,7 +1493,7 @@
     "limitText": "기존 근거만 사용하세요. 한계를 명시하고 외부 작업은 승인을 받으세요.",
     "languageNote": "스킬 호출 이름은 설치된 언어를 유지합니다.",
     "footer": "잘 준비하고, 더 잘 만드세요.",
-    "intros": "목표를 이해하고 작고 검증 가능한 첫 단계를 계획합니다.|요청과 기존 근거에 맞춰 접근법을 검토합니다.|보이는 목표와 확인된 결정, 마지막으로 입증된 상태를 정리합니다.|허용된 파일을 민감한 값의 노출 없이 검토합니다.|실제 사용 장벽과 관련 출처를 살펴봅니다.|실제 대상을 위해 시작, 문서와 패키지를 검토합니다.|합의된 비교 범위를 사용하고 미커밋 작업을 구분합니다.|요청과 결과를 대조하고 마무리나 인계를 명확히 합니다.|수정이나 규칙을 자동 적용하지 않습니다.|과거 주장은 현재 확인이 아닙니다. 자동으로 작업을 재개하지 않습니다.|초안만 작성합니다. 실행이나 기본 Tab 연동은 하지 않습니다.|제안은 이름 변경이나 사용 가능성을 보장하지 않습니다.|요구에 맞게 모음을 설명하고 적절한 호출 예시를 보여줍니다.",
+    "intros": "목표를 이해하고 작고 검증 가능한 첫 단계를 계획합니다.|요청과 기존 근거에 맞춰 접근법을 검토합니다.|보이는 목표와 확인된 결정, 마지막으로 입증된 상태를 정리합니다.|허용된 파일을 민감한 값의 노출 없이 검토합니다.|실제 사용 장벽과 관련 출처를 살펴봅니다.|실제 대상을 위해 시작, 문서와 패키지를 검토합니다.|합의된 비교 범위를 사용하고 미커밋 작업을 구분합니다.|요청과 결과를 대조하고 마무리나 인계를 명확히 합니다.|수정이나 규칙을 자동 적용하지 않습니다.|과거 주장은 현재 확인이 아닙니다. 자동으로 작업을 재개하지 않습니다.|초안만 작성합니다. 실행이나 기본 Tab 연동은 하지 않습니다.|제안은 이름 변경이나 사용 가능성을 보장하지 않습니다.|요구에 맞게 모음을 설명하고 적절한 호출 예시를 보여줍니다.|의도를 보존하고 적절한 품질 기준을 정한 뒤 자율적으로 목표를 구현합니다. 이후 구체적인 근거를 바탕으로 결과를 검토하고 개선합니다.",
     "stepNotes": [
       "사용 가능한 정보를 활용합니다.",
       "기존 규칙을 존중합니다.",
@@ -1395,7 +1515,8 @@
       "과거 주장은 현재 확인이 아닙니다. 자동으로 작업을 재개하지 않습니다.",
       "초안만 작성합니다. 실행이나 기본 Tab 연동은 하지 않습니다.",
       "제안은 이름 변경이나 사용 가능성을 보장하지 않습니다.",
-      "가이드는 추천만 하며 다른 작업을 자동 실행하지 않습니다."
+      "가이드는 추천만 하며 다른 작업을 자동 실행하지 않습니다.",
+      "게시나 외부 작업에 대한 포괄적 허가는 아닙니다. 필요한 결정이 빠져 있다면 질문합니다."
     ],
     "ingredientLists": [
       [
@@ -1475,6 +1596,12 @@
         "현재 상황",
         "설치된 이름 형식",
         "원하는 결과"
+      ],
+      [
+        "합의한 프로젝트 목표",
+        "기존 아키텍처",
+        "검증 가능한 성공 기준",
+        "허용된 작업 범위"
       ]
     ],
     "verifications": [
@@ -1490,7 +1617,8 @@
       "긴 휴식 후 프로젝트로 돌아옵니다.",
       "문맥에 맞게 작성 중인 프롬프트를 완성합니다.",
       "Plain과 Kitchen 이름을 함께 찾습니다.",
-      "요구에 맞게 모음을 설명하고 적절한 호출 예시를 보여줍니다."
+      "요구에 맞게 모음을 설명하고 적절한 호출 예시를 보여줍니다.",
+      "구현한 결과와 통과한 검증의 근거를 제시하고 남은 제약을 명시합니다."
     ],
     "appearance": "화면",
     "system": "시스템",
@@ -1509,16 +1637,23 @@
       "비슷한 레시피의 사용 시점을 구분합니다.",
       "필요에 맞는 사용 가능한 워크플로를 고릅니다.",
       "실행하지 않고 호출 예를 보여 줍니다."
+    ],
+    "steps13": "목표와 범위 명확히 하기|품질 기준 정하기|구현하고 검증하기|비판적으로 검토하고 개선하기",
+    "stepNotes13": [
+      "요청, 현재 상태, 허용된 작업 범위를 이해합니다.",
+      "관찰 가능한 성공 기준과 필요한 검증을 정합니다.",
+      "가장 작고 완전한 해결책을 구현하고 실제 흐름을 검증합니다.",
+      "약점을 수정하고 결과, 검증 근거, 미해결 사항을 전달합니다."
     ]
   },
   "zh-CN": {
     "name": "简体中文",
-    "tagline": "为你的项目准备的十三道食谱",
+    "tagline": "为你的项目准备的十四道食谱",
     "recipe": "食谱",
     "when": "何时使用",
     "ingredients": "食材",
     "method": "做法",
-    "invoke": "调用这道食谱",
+    "invoke": "运行食谱",
     "copy": "复制",
     "copied": "已复制",
     "language": "语言",
@@ -1528,8 +1663,8 @@
     "previous": "上一道食谱",
     "next": "下一道食谱",
     "ingredientList": "一个想法|项目背景|待解问题|限制条件",
-    "summaries": "从想法迈向可验证的第一步。|检查当前方法是否通向目标。|找回目标、决定和当前进度。|分享前检查敏感内容。|明确法律问题和使用障碍。|为项目公开发布做准备。|根据已核实的变更撰写说明。|有意识地结束工作或准备交接。|从过去的尝试中学习。|长时间暂停后重新了解项目。|根据上下文补全未写完的提示词。|同时构思Plain和Kitchen名称。|理解Cookbook并找到合适的技能。",
-    "whenList": "想法需要一个具体的起点。|你想知道工作是否在推进。|暂停后需要恢复上下文。|你准备分享文件或代码仓库。|发布前或有具体问题时。|其他人需要理解和使用项目。|一个版本或工作阶段已经完成。|一个阶段完成或需要交接。|当失败或未落实的建议反复出现时。|需要回顾目标、决定和当前状态时。|自动补全缺失或想法尚未完整时。|产品或技能需要合适名称时。|初次使用或需要选择工作流时。",
+    "summaries": "从想法迈向可验证的第一步。|检查当前方法是否通向目标。|找回目标、决定和当前进度。|分享前检查敏感内容。|明确法律问题和使用障碍。|为项目公开发布做准备。|根据已核实的变更撰写说明。|有意识地结束工作或准备交接。|从过去的尝试中学习。|长时间暂停后重新了解项目。|根据上下文补全未写完的提示词。|同时构思Plain和Kitchen名称。|理解Cookbook并找到合适的技能。|接手目标，推进到完成实现并验证的成果。",
+    "whenList": "想法需要一个具体的起点。|你想知道工作是否在推进。|暂停后需要恢复上下文。|你准备分享文件或代码仓库。|发布前或有具体问题时。|其他人需要理解和使用项目。|一个版本或工作阶段已经完成。|一个阶段完成或需要交接。|当失败或未落实的建议反复出现时。|需要回顾目标、决定和当前状态时。|自动补全缺失或想法尚未完整时。|产品或技能需要合适名称时。|初次使用或需要选择工作流时。|当你想把项目目标及其实现交给助手时。",
     "steps0": "理解目标|查看背景|厘清问题|计划第一步",
     "steps1": "对照目标|查看证据|识别障碍|建议下一步",
     "steps2": "阅读可见历史|区分决定|对应结果|简要总结",
@@ -1541,7 +1676,7 @@
     "limitText": "仅使用现有证据。明确边界；外部操作需要授权。",
     "languageNote": "技能调用名称保持安装时的语言。",
     "footer": "准备充分，构建更好。",
-    "intros": "理解目标，计划一个小而可验证的起点。|根据请求和现有证据检查当前方法。|重建可见目标、已确认决定和最后有依据的状态。|检查已授权文件，不在报告中泄露敏感值。|检查实际障碍和相关来源。|面向真实受众检查上手流程、文档和打包。|使用约定的比较范围，区分未提交的工作。|对照请求与结果，明确结束或交接。|不自动应用修复或规则。|过去的说法不等于当前核查，不自动继续实施。|仅为草稿，不执行任务，也不接入原生Tab补全。|建议不等于改名，也不保证名称可用。|根据你的需求介绍集合，并展示合适的调用示例。",
+    "intros": "理解目标，计划一个小而可验证的起点。|根据请求和现有证据检查当前方法。|重建可见目标、已确认决定和最后有依据的状态。|检查已授权文件，不在报告中泄露敏感值。|检查实际障碍和相关来源。|面向真实受众检查上手流程、文档和打包。|使用约定的比较范围，区分未提交的工作。|对照请求与结果，明确结束或交接。|不自动应用修复或规则。|过去的说法不等于当前核查，不自动继续实施。|仅为草稿，不执行任务，也不接入原生Tab补全。|建议不等于改名，也不保证名称可用。|根据你的需求介绍集合，并展示合适的调用示例。|我们保留你的意图，确定适当的质量标准，自主推进目标的实现。随后依据具体证据审视并改进成果。",
     "stepNotes": [
       "使用现有信息。",
       "尊重已有约定。",
@@ -1563,7 +1698,8 @@
       "过去的说法不等于当前核查，不自动继续实施。",
       "仅为草稿，不执行任务，也不接入原生Tab补全。",
       "建议不等于改名，也不保证名称可用。",
-      "指南只提出建议，不自动执行其他工作流。"
+      "指南只提出建议，不自动执行其他工作流。",
+      "不代表获准发布或执行外部操作；缺少必要决策时应先询问。"
     ],
     "ingredientLists": [
       [
@@ -1643,6 +1779,12 @@
         "你的情况",
         "已安装命名形式",
         "预期结果"
+      ],
+      [
+        "约定的项目目标",
+        "现有架构",
+        "可验证的成功标准",
+        "获准的工作范围"
       ]
     ],
     "verifications": [
@@ -1658,7 +1800,8 @@
       "长时间暂停后重新了解项目。",
       "根据上下文补全未写完的提示词。",
       "同时构思Plain和Kitchen名称。",
-      "根据你的需求介绍集合，并展示合适的调用示例。"
+      "根据你的需求介绍集合，并展示合适的调用示例。",
+      "提供已实现成果和已通过检查的证据，并说明尚存的限制。"
     ],
     "appearance": "外观",
     "system": "跟随系统",
@@ -1677,16 +1820,23 @@
       "按使用场景区分相似配方。",
       "为你的需求匹配可用工作流。",
       "展示调用示例，不自动执行。"
+    ],
+    "steps13": "明确目标与边界|确定质量标准|实现并验证|审视并改进",
+    "stepNotes13": [
+      "理解请求、当前状态及获准的工作范围。",
+      "确定可观察的成功标准和相关检查。",
+      "实现最小的完整方案，并验证实际流程。",
+      "修正不足，交付成果、验证证据和未解决事项。"
     ]
   },
   "ar": {
     "name": "العربية",
-    "tagline": "ثلاث عشرة وصفة لمشاريعك",
+    "tagline": "أربع عشرة وصفة لمشاريعك",
     "recipe": "وصفة",
     "when": "متى",
     "ingredients": "المكونات",
     "method": "الطريقة",
-    "invoke": "كيفية تشغيل الوصفة",
+    "invoke": "تشغيل الوصفة",
     "copy": "نسخ",
     "copied": "تم النسخ",
     "language": "اللغة",
@@ -1696,8 +1846,8 @@
     "previous": "الوصفة السابقة",
     "next": "الوصفة التالية",
     "ingredientList": "فكرة|سياق المشروع|أسئلة مفتوحة|قيود",
-    "summaries": "من الفكرة إلى أول خطوة قابلة للتحقق.|تحقق من أن النهج يقود إلى الهدف.|استعد الأهداف والقرارات والحالة الحالية.|راجع المحتوى الحساس قبل المشاركة.|حدد الأسئلة القانونية وعوائق الاستخدام.|جهز المشروع للنشر.|اكتب ملاحظات من تغييرات مثبتة.|أنهِ العمل أو جهز تسليمه.|التعلم من المحاولات السابقة.|العودة إلى المشروع بعد انقطاع طويل.|إكمال طلب جزئي وفق السياق.|اقتراح أسماء Plain وKitchen معًا.|افهم Cookbook واعثر على المهارة المناسبة.",
-    "whenList": "عندما تحتاج الفكرة إلى بداية واضحة.|عندما تريد معرفة مدى التقدم.|بعد انقطاع تحتاج فيه إلى السياق.|عندما تريد مشاركة ملفات أو مستودع.|قبل النشر أو لسؤال محدد.|قبل أن يستخدم الآخرون المشروع.|عند اكتمال إصدار أو مرحلة.|عند انتهاء مرحلة أو الحاجة لتسليمها.|عندما تتكرر الأخطاء أو التوصيات غير المنفذة.|عند الحاجة لتذكر الهدف والقرارات والحالة الحالية.|عندما يغيب الإكمال التلقائي أو تبقى فكرة غير مكتملة.|عندما يحتاج منتج أو مهارة إلى اسم مناسب.|عند البدء أو البحث عن سير العمل المناسب.",
+    "summaries": "من الفكرة إلى أول خطوة قابلة للتحقق.|تحقق من أن النهج يقود إلى الهدف.|استعد الأهداف والقرارات والحالة الحالية.|راجع المحتوى الحساس قبل المشاركة.|حدد الأسئلة القانونية وعوائق الاستخدام.|جهز المشروع للنشر.|اكتب ملاحظات من تغييرات مثبتة.|أنهِ العمل أو جهز تسليمه.|التعلم من المحاولات السابقة.|العودة إلى المشروع بعد انقطاع طويل.|إكمال طلب جزئي وفق السياق.|اقتراح أسماء Plain وKitchen معًا.|افهم Cookbook واعثر على المهارة المناسبة.|تنفيذ الهدف باستقلالية حتى الوصول إلى نتيجة منجزة ومتحقق منها.",
+    "whenList": "عندما تحتاج الفكرة إلى بداية واضحة.|عندما تريد معرفة مدى التقدم.|بعد انقطاع تحتاج فيه إلى السياق.|عندما تريد مشاركة ملفات أو مستودع.|قبل النشر أو لسؤال محدد.|قبل أن يستخدم الآخرون المشروع.|عند اكتمال إصدار أو مرحلة.|عند انتهاء مرحلة أو الحاجة لتسليمها.|عندما تتكرر الأخطاء أو التوصيات غير المنفذة.|عند الحاجة لتذكر الهدف والقرارات والحالة الحالية.|عندما يغيب الإكمال التلقائي أو تبقى فكرة غير مكتملة.|عندما يحتاج منتج أو مهارة إلى اسم مناسب.|عند البدء أو البحث عن سير العمل المناسب.|عندما تريد تفويض هدف المشروع وتنفيذه.",
     "steps0": "افهم الهدف|راجع السياق|وضح الأسئلة|خطط للخطوة الأولى",
     "steps1": "قارن بالهدف|راجع الأدلة|حدد العقبات|اقترح الخطوة التالية",
     "steps2": "اقرأ التاريخ المتاح|ميز القرارات|انسب النتائج|لخص الحالة",
@@ -1709,7 +1859,7 @@
     "limitText": "استخدم الأدلة القائمة فقط. وضح الحدود؛ الإجراءات الخارجية تتطلب إذناً.",
     "languageNote": "تبقى أوامر المهارات بلغتها المثبتة.",
     "footer": "استعد جيداً وابنِ أفضل.",
-    "intros": "افهم الهدف وخطط لأول خطوة صغيرة قابلة للتحقق.|راجع النهج وفق الطلب والأدلة القائمة.|أعد بناء الهدف الظاهر والقرارات والحالة المثبتة.|راجع الملفات المأذونة دون كشف القيم الحساسة.|افحص العائق الفعلي والمصادر ذات الصلة.|راجع البدء والتوثيق والحزمة للجمهور الفعلي.|استخدم المقارنة المتفق عليها وافصل العمل غير المحفوظ.|قارن الطلب والنتائج واكتب ختاماً أو تسليماً واضحاً.|لا تُطبّق الإصلاحات أو القواعد تلقائيًا.|الأقوال السابقة ليست تحققًا حاليًا؛ لا تستأنف العمل تلقائيًا.|مسودة فقط؛ لا تنفيذ ولا تكامل أصلي مع Tab.|الاقتراحات لا تعيد التسمية ولا تضمن التوفر.|نشرح المجموعة حسب حاجتك ونعرض مثال استدعاء مناسبًا.",
+    "intros": "افهم الهدف وخطط لأول خطوة صغيرة قابلة للتحقق.|راجع النهج وفق الطلب والأدلة القائمة.|أعد بناء الهدف الظاهر والقرارات والحالة المثبتة.|راجع الملفات المأذونة دون كشف القيم الحساسة.|افحص العائق الفعلي والمصادر ذات الصلة.|راجع البدء والتوثيق والحزمة للجمهور الفعلي.|استخدم المقارنة المتفق عليها وافصل العمل غير المحفوظ.|قارن الطلب والنتائج واكتب ختاماً أو تسليماً واضحاً.|لا تُطبّق الإصلاحات أو القواعد تلقائيًا.|الأقوال السابقة ليست تحققًا حاليًا؛ لا تستأنف العمل تلقائيًا.|مسودة فقط؛ لا تنفيذ ولا تكامل أصلي مع Tab.|الاقتراحات لا تعيد التسمية ولا تضمن التوفر.|نشرح المجموعة حسب حاجتك ونعرض مثال استدعاء مناسبًا.|نحافظ على مقصدك، ونحدد مستوى الجودة المناسب، ثم ننفذ الهدف باستقلالية. بعد ذلك نراجع النتيجة ونحسنها بالاستناد إلى أدلة ملموسة.",
     "stepNotes": [
       "استخدم المعلومات المتاحة.",
       "احترم القواعد القائمة.",
@@ -1731,7 +1881,8 @@
       "الأقوال السابقة ليست تحققًا حاليًا؛ لا تستأنف العمل تلقائيًا.",
       "مسودة فقط؛ لا تنفيذ ولا تكامل أصلي مع Tab.",
       "الاقتراحات لا تعيد التسمية ولا تضمن التوفر.",
-      "الدليل يوصي فقط ولا ينفذ سير عمل آخر تلقائيًا."
+      "الدليل يوصي فقط ولا ينفذ سير عمل آخر تلقائيًا.",
+      "لا يمنح إذنا عاما بالنشر أو باتخاذ إجراءات خارجية؛ يجب السؤال عن القرارات الضرورية الناقصة."
     ],
     "ingredientLists": [
       [
@@ -1811,6 +1962,12 @@
         "حالتك",
         "نمط الأسماء المثبّت",
         "النتيجة المطلوبة"
+      ],
+      [
+        "هدف المشروع المتفق عليه",
+        "البنية الحالية",
+        "معايير نجاح قابلة للتحقق",
+        "نطاق العمل المصرح به"
       ]
     ],
     "verifications": [
@@ -1826,7 +1983,8 @@
       "العودة إلى المشروع بعد انقطاع طويل.",
       "إكمال طلب جزئي وفق السياق.",
       "اقتراح أسماء Plain وKitchen معًا.",
-      "نشرح المجموعة حسب حاجتك ونعرض مثال استدعاء مناسبًا."
+      "نشرح المجموعة حسب حاجتك ونعرض مثال استدعاء مناسبًا.",
+      "تقديم أدلة على النتائج المنفذة والفحوص الناجحة، مع توضيح الحدود المتبقية."
     ],
     "appearance": "المظهر",
     "system": "النظام",
@@ -1845,16 +2003,23 @@
       "تمييز الوصفات المتشابهة حسب وقت استخدامها.",
       "اختيار سير عمل متاح يناسب حاجتك.",
       "عرض مثال استدعاء دون تنفيذه."
+    ],
+    "steps13": "توضيح الهدف والحدود|تحديد معايير الجودة|التنفيذ والتحقق|التقييم النقدي والتحسين",
+    "stepNotes13": [
+      "فهم الطلب والحالة الحالية ونطاق العمل المصرح به.",
+      "تحديد معايير نجاح قابلة للملاحظة والفحوص المناسبة.",
+      "تنفيذ أصغر حل مكتمل والتحقق من مسار الاستخدام الفعلي.",
+      "معالجة نقاط الضعف وتسليم النتيجة والأدلة والمسائل المفتوحة."
     ]
   },
   "hi": {
     "name": "हिन्दी",
-    "tagline": "आपके प्रोजेक्ट के लिए तेरह रेसिपी",
+    "tagline": "आपके प्रोजेक्ट के लिए चौदह रेसिपी",
     "recipe": "व्यंजन",
     "when": "कब",
     "ingredients": "सामग्री",
     "method": "विधि",
-    "invoke": "इस व्यंजन को चलाएँ",
+    "invoke": "व्यंजन चलाएँ",
     "copy": "कॉपी करें",
     "copied": "कॉपी किया",
     "language": "भाषा",
@@ -1864,8 +2029,8 @@
     "previous": "पिछला व्यंजन",
     "next": "अगला व्यंजन",
     "ingredientList": "एक विचार|परियोजना का संदर्भ|खुले प्रश्न|सीमाएँ",
-    "summaries": "विचार से पहले सत्यापनीय कदम तक।|जाँचें कि तरीका लक्ष्य की ओर जा रहा है।|लक्ष्य, निर्णय और स्थिति फिर से जानें।|साझा करने से पहले संवेदनशील सामग्री जाँचें।|कानूनी प्रश्न और उपयोग की बाधाएँ सीमित करें।|परियोजना को प्रकाशन के लिए तैयार करें।|प्रमाणित बदलावों से नोट्स लिखें।|काम पूरा करें या हस्तांतरण तैयार करें।|पिछले प्रयासों से सीखें।|लंबे विराम के बाद प्रोजेक्ट पर लौटें।|संदर्भ के अनुसार अधूरा प्रॉम्प्ट पूरा करें।|Plain और Kitchen नाम साथ सुझाएँ।|Cookbook समझें और सही स्किल चुनें।",
-    "whenList": "जब विचार को ठोस शुरुआत चाहिए।|जब आप प्रगति जानना चाहते हैं।|विराम के बाद संदर्भ चाहिए।|जब फ़ाइलें या रिपॉज़िटरी साझा करनी हो।|प्रकाशन से पहले या किसी खास प्रश्न पर।|दूसरे लोग परियोजना का उपयोग करने से पहले।|जब संस्करण या काम का चरण पूरा हो।|जब चरण पूरा हो या सौंपना हो।|जब विफलताएँ या अधूरी सलाह दोहराई जाएँ।|जब लक्ष्य, फैसले और वर्तमान स्थिति फिर समझनी हो।|जब स्वतः पूर्ति न हो या विचार अधूरा रह जाए।|जब उत्पाद या स्किल को उपयुक्त नाम चाहिए।|शुरुआत करते समय या सही कार्यप्रवाह खोजते समय।",
+    "summaries": "विचार से पहले सत्यापनीय कदम तक।|जाँचें कि तरीका लक्ष्य की ओर जा रहा है।|लक्ष्य, निर्णय और स्थिति फिर से जानें।|साझा करने से पहले संवेदनशील सामग्री जाँचें।|कानूनी प्रश्न और उपयोग की बाधाएँ सीमित करें।|परियोजना को प्रकाशन के लिए तैयार करें।|प्रमाणित बदलावों से नोट्स लिखें।|काम पूरा करें या हस्तांतरण तैयार करें।|पिछले प्रयासों से सीखें।|लंबे विराम के बाद प्रोजेक्ट पर लौटें।|संदर्भ के अनुसार अधूरा प्रॉम्प्ट पूरा करें।|Plain और Kitchen नाम साथ सुझाएँ।|Cookbook समझें और सही स्किल चुनें।|लक्ष्य की जिम्मेदारी लेकर उसे लागू और सत्यापित परिणाम तक पहुँचाना।",
+    "whenList": "जब विचार को ठोस शुरुआत चाहिए।|जब आप प्रगति जानना चाहते हैं।|विराम के बाद संदर्भ चाहिए।|जब फ़ाइलें या रिपॉज़िटरी साझा करनी हो।|प्रकाशन से पहले या किसी खास प्रश्न पर।|दूसरे लोग परियोजना का उपयोग करने से पहले।|जब संस्करण या काम का चरण पूरा हो।|जब चरण पूरा हो या सौंपना हो।|जब विफलताएँ या अधूरी सलाह दोहराई जाएँ।|जब लक्ष्य, फैसले और वर्तमान स्थिति फिर समझनी हो।|जब स्वतः पूर्ति न हो या विचार अधूरा रह जाए।|जब उत्पाद या स्किल को उपयुक्त नाम चाहिए।|शुरुआत करते समय या सही कार्यप्रवाह खोजते समय।|जब आप प्रोजेक्ट का लक्ष्य और उसका क्रियान्वयन सौंपना चाहते हों।",
     "steps0": "लक्ष्य समझें|संदर्भ देखें|प्रश्न स्पष्ट करें|पहला कदम तय करें",
     "steps1": "लक्ष्य से तुलना करें|प्रमाण देखें|बाधाएँ पहचानें|अगला कदम सुझाएँ",
     "steps2": "उपलब्ध इतिहास पढ़ें|निर्णय अलग करें|परिणाम जोड़ें|स्थिति संक्षेप में लिखें",
@@ -1877,7 +2042,7 @@
     "limitText": "केवल मौजूदा प्रमाण लें। सीमाएँ स्पष्ट रखें; बाहरी कार्यों के लिए अनुमति चाहिए।",
     "languageNote": "कौशल के कमांड स्थापित भाषा में रहते हैं।",
     "footer": "अच्छी तैयारी, बेहतर निर्माण।",
-    "intros": "लक्ष्य समझें और छोटा, सत्यापनीय पहला कदम तय करें।|अनुरोध और मौजूदा प्रमाण के अनुसार तरीका जाँचें।|दिखने वाला लक्ष्य, पुष्ट निर्णय और अंतिम प्रमाणित स्थिति जानें।|संवेदनशील मान दिखाए बिना अधिकृत फ़ाइलें जाँचें।|वास्तविक बाधा और संबंधित स्रोत देखें।|वास्तविक पाठकों के लिए शुरुआत, दस्तावेज़ और पैकेज जाँचें।|तय तुलना का उपयोग करें और बिना कमिट काम अलग रखें।|अनुरोध और परिणाम मिलाएँ और स्पष्ट समापन या हस्तांतरण लिखें।|सुधार या नियम अपने आप लागू न करें।|पुराने दावे वर्तमान जाँच नहीं हैं; काम अपने आप शुरू न करें।|केवल मसौदा; कोई निष्पादन या मूल Tab एकीकरण नहीं।|सुझाव नाम नहीं बदलते और उपलब्धता की गारंटी नहीं देते।|आपकी जरूरत के अनुसार संग्रह समझाते हैं और उपयुक्त कमांड दिखाते हैं।",
+    "intros": "लक्ष्य समझें और छोटा, सत्यापनीय पहला कदम तय करें।|अनुरोध और मौजूदा प्रमाण के अनुसार तरीका जाँचें।|दिखने वाला लक्ष्य, पुष्ट निर्णय और अंतिम प्रमाणित स्थिति जानें।|संवेदनशील मान दिखाए बिना अधिकृत फ़ाइलें जाँचें।|वास्तविक बाधा और संबंधित स्रोत देखें।|वास्तविक पाठकों के लिए शुरुआत, दस्तावेज़ और पैकेज जाँचें।|तय तुलना का उपयोग करें और बिना कमिट काम अलग रखें।|अनुरोध और परिणाम मिलाएँ और स्पष्ट समापन या हस्तांतरण लिखें।|सुधार या नियम अपने आप लागू न करें।|पुराने दावे वर्तमान जाँच नहीं हैं; काम अपने आप शुरू न करें।|केवल मसौदा; कोई निष्पादन या मूल Tab एकीकरण नहीं।|सुझाव नाम नहीं बदलते और उपलब्धता की गारंटी नहीं देते।|आपकी जरूरत के अनुसार संग्रह समझाते हैं और उपयुक्त कमांड दिखाते हैं।|हम आपके आशय को बनाए रखते हैं, उपयुक्त गुणवत्ता मानदंड तय करते हैं और स्वतंत्र रूप से लक्ष्य पूरा करते हैं। फिर ठोस प्रमाणों के आधार पर परिणाम की समीक्षा और सुधार करते हैं।",
     "stepNotes": [
       "उपलब्ध जानकारी लें।",
       "मौजूदा नियमों का सम्मान करें।",
@@ -1899,7 +2064,8 @@
       "पुराने दावे वर्तमान जाँच नहीं हैं; काम अपने आप शुरू न करें।",
       "केवल मसौदा; कोई निष्पादन या मूल Tab एकीकरण नहीं।",
       "सुझाव नाम नहीं बदलते और उपलब्धता की गारंटी नहीं देते।",
-      "गाइड केवल सुझाव देता है, दूसरे कार्यप्रवाह अपने आप नहीं चलाता।"
+      "गाइड केवल सुझाव देता है, दूसरे कार्यप्रवाह अपने आप नहीं चलाता।",
+      "प्रकाशन या बाहरी कार्रवाइयों की सामान्य अनुमति नहीं मिलती; जरूरी निर्णय गायब हों तो पूछें।"
     ],
     "ingredientLists": [
       [
@@ -1979,6 +2145,12 @@
         "आपकी स्थिति",
         "इंस्टॉल नाम शैली",
         "चाहा परिणाम"
+      ],
+      [
+        "सहमत प्रोजेक्ट लक्ष्य",
+        "मौजूदा संरचना",
+        "सत्यापित किए जा सकने वाले सफलता मानदंड",
+        "अधिकृत कार्य-सीमा"
       ]
     ],
     "verifications": [
@@ -1994,7 +2166,8 @@
       "लंबे विराम के बाद प्रोजेक्ट पर लौटें।",
       "संदर्भ के अनुसार अधूरा प्रॉम्प्ट पूरा करें।",
       "Plain और Kitchen नाम साथ सुझाएँ।",
-      "आपकी जरूरत के अनुसार संग्रह समझाते हैं और उपयुक्त कमांड दिखाते हैं।"
+      "आपकी जरूरत के अनुसार संग्रह समझाते हैं और उपयुक्त कमांड दिखाते हैं।",
+      "लागू परिणामों और सफल जाँचों के प्रमाण दें; शेष सीमाएँ स्पष्ट करें।"
     ],
     "appearance": "रूप",
     "system": "सिस्टम",
@@ -2013,6 +2186,13 @@
       "मिलती-जुलती विधियों का उपयोग अलग करें।",
       "ज़रूरत के लिए उपलब्ध कार्यप्रवाह चुनें।",
       "चलाए बिना एक ठोस कमांड दिखाएँ।"
+    ],
+    "steps13": "लक्ष्य और सीमाएँ स्पष्ट करें|गुणवत्ता मानदंड तय करें|लागू करें और सत्यापित करें|आलोचनात्मक समीक्षा और सुधार करें",
+    "stepNotes13": [
+      "अनुरोध, मौजूदा स्थिति और अधिकृत कार्य-सीमा समझें।",
+      "देखे जा सकने वाले सफलता मानदंड और जरूरी जाँच तय करें।",
+      "सबसे छोटा पूर्ण समाधान लागू करें और वास्तविक प्रक्रिया जाँचें।",
+      "कमियाँ ठीक करें और परिणाम, प्रमाण तथा खुले मुद्दे सौंपें।"
     ]
   }
 }

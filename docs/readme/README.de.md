@@ -1,5 +1,7 @@
 # Cookbook by Pengusto
 
+Projekt: **Cookbook by Pengusto** · GitHub-Repository: [`pengusto/cookbook`](https://github.com/pengusto/cookbook).
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../assets/readme/cookbook-banner-storybook-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="../../assets/readme/cookbook-banner-storybook-v3.png">
@@ -14,11 +16,11 @@
 
 **Ein Rezept für den nächsten Schritt im Coding-Chat.**
 
-Cookbook bietet Entwicklerinnen und Entwicklern mit Codex oder Claude Code 13 gezielte Workflows: Projekte planen, Fortschritt prüfen, nach einer Pause wieder einsteigen, vor dem Teilen prüfen und mit einer brauchbaren Übergabe abschließen. Wähle bei Bedarf ein Rezept; Host und Modell führen die Arbeit aus.
+Cookbook bietet Entwicklerinnen und Entwicklern mit Codex oder Claude Code 14 gezielte Workflows: Projekte planen, Fortschritt prüfen, nach einer Pause wieder einsteigen, vor dem Teilen prüfen und mit einer brauchbaren Übergabe abschließen. Wähle bei Bedarf ein Rezept; Host und Modell führen die Arbeit aus.
 
 Wähle **einfache Fragen** oder **Koch-Namen**. Beide entstehen aus denselben gepflegten Anleitungen; installiere pro Host eine Namenswelt.
 
-**Experimentelle öffentliche Beta · 0.5.1.** [Rezepte ansehen](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Experimentelle öffentliche Beta · 0.6.0.** [Rezepte ansehen](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Schnellstart: eine Namenswelt wählen
 
@@ -56,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 28 individual ZIPs + `SHA256SUMS`.
 
 ## Bauen und prüfen
 
@@ -85,6 +87,9 @@ python3 scripts/launch_check.py
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
 | Explain the Cookbook | Show Me the Kitchen |
+| You Got This | You’re the Chef |
+
+Mit `$youre-the-chef <Ziel>` (Kitchen) oder `$you-got-this <Ziel>` (Plain) übernimmt der Agent die Umsetzung bis zum geprüften Ergebnis. `gauntlet` ergänzt eine endliche Kritikschleife; `audit` liefert Befunde ohne breite Umsetzung. Die Prompt-Vervollständigung erstellt dagegen nur einen Entwurf.
 
 ## Aktualisieren
 
@@ -108,7 +113,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## Grenzen und Prüfstand
 
-Paket-, Hash-, Linkprüfungen und portabler Neubau sind automatisiert. Der Maintainer bestätigte den Desktop-Picker mit zwölf Skills und den Abschlussguide für 0.4.0; für 0.5.0 wurde die neue Einführung separat in einem frischen nativen Codex-Aufruf getestet. Das sind datierte Prüfstände, keine vollständige visuelle Abnahme von 0.5.1 oder Store-Freigabe. Das visuelle Cookbook bietet 12 UI-Sprachen und System-/Hell-/Dunkel-Themes; die UI-Sprache übersetzt keine Workflow-Anleitungen. Die optionale lokale MCP-Seitenleiste ist ein separates Paket.
+Paket-, Hash-, Linkprüfungen und portabler Neubau sind automatisiert. Der Maintainer bestätigte den Desktop-Picker mit zwölf Skills und den Abschlussguide für 0.4.0; für 0.5.0 wurde die neue Einführung separat in einem frischen nativen Codex-Aufruf getestet. Das sind datierte Prüfstände, keine vollständige visuelle Abnahme von 0.6.0 oder Store-Freigabe. Das visuelle Cookbook bietet 12 UI-Sprachen und System-/Hell-/Dunkel-Themes; die UI-Sprache übersetzt keine Workflow-Anleitungen. Die optionale lokale MCP-Seitenleiste ist ein separates Paket.
 
 Sicherheits- und Rechtsprüfrezepte leiten Prüfungen an, bieten aber keine Garantien. Repository- und Website-Veröffentlichung sind von der Store-Einreichung getrennt. Importierte Git-Historien und Herkunft bleiben erhalten, einschließlich freigegebener früherer Kontaktseiten; die vier abgelösten GitHub-Repositories wurden mit Zustimmung des Maintainers entfernt. [0.5.0 acceptance](../../docs/acceptance-0.5.0.md) · [Release review](../../docs/public-release-review.md).
 

@@ -1,7 +1,7 @@
 {
   "name": "cookbook-by-pengusto",
-  "version": "0.5.1",
-  "description": "Thirteen focused coding-agent workflows: collection guide, planning, progress, context recovery, reviews, release preparation, handoff, retrospectives, prompt drafting and naming.",
+  "version": "0.6.0",
+  "description": "Fourteen coding-agent workflows for planning, autonomous execution, progress, context recovery, reviews, release preparation, handoff, retrospectives, prompt drafting and naming.",
   "author": {
     "name": "Pengusto"
   },
@@ -19,7 +19,8 @@
     "catch-me-up",
     "finish-my-prompt",
     "which-name-wins",
-    "explain-the-cookbook"
+    "explain-the-cookbook",
+    "you-got-this"
   ],
   "keywords": [
     "developer-tools",
@@ -33,5 +34,5 @@
     "kitchen"
   ],
   "store_variant": "kitchen",
-  "sidebar_version": "0.5.1"
+  "sidebar_version": "0.6.0"
 }

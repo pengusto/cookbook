@@ -1,3 +1,13 @@
+# Release 0.6.0 / Veröffentlichung
+
+14 Workflows, beide Namensvarianten und Host-Pakete; You Got This / You’re the Chef mit übernommener MIT-Lizenz. Der lokale Stand besteht 44 Tests, Quellen- und Paketprüfungen sowie den bytegleichen portablen Neubau. Die gerenderte Browserprüfung ist in [landing-page.md](landing-page.md) belegt.
+
+Der Nutzer hat Commit, Push, Website-Deploy und das Update des installierten Kitchen-Plugins ausdrücklich beauftragt. Erfolgsnachweise sind der aktuelle Publish-/Check-Workflow zum konkreten Commit, die aktuelle Live-Seite und der bytegleiche installierte 0.6.0-Cache. Ein Build, ein Push oder eine alte Host-Abnahme ersetzt keinen dieser Nachweise. Der vorherige Plugin-Cache wird bis zur erfolgreichen Prüfung als lokale Rückfallkopie erhalten. Kein Tag, GitHub-Release oder Store-Upload beauftragt.
+
+---
+
+## Historischer Prüfstand 0.5.1
+
 # Release 0.5.1 vorbereiten / Prepare release 0.5.1
 
 ## Inhalt / Contents

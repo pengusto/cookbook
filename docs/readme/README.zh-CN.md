@@ -1,5 +1,7 @@
 # Cookbook by Pengusto
 
+项目名称：**Cookbook by Pengusto** · GitHub 仓库：[`pengusto/cookbook`](https://github.com/pengusto/cookbook)。
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../assets/readme/cookbook-banner-storybook-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="../../assets/readme/cookbook-banner-storybook-v3.png">
@@ -14,11 +16,11 @@
 
 **为编程对话的下一步选一道配方。**
 
-Cookbook 为使用 Codex 或 Claude Code 的开发者提供 13 个专注的工作流：规划项目、检查进展、在休息后找回上下文、分享前审查，以及整理有用的交接。按需选择配方，由宿主和模型执行工作。
+Cookbook 为使用 Codex 或 Claude Code 的开发者提供 14 个专注的工作流：规划项目、检查进展、在休息后找回上下文、分享前审查，以及整理有用的交接。按需选择配方，由宿主和模型执行工作。
 
 选择**直白问题**或**厨房名称**。两种风格由同一份维护中的指令生成；每个宿主安装一种命名风格。
 
-**实验性公开 Beta · 0.5.1.** [浏览配方](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**实验性公开 Beta · 0.6.0.** [浏览配方](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## 快速开始：选择一种命名风格
 
@@ -56,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 28 individual ZIPs + `SHA256SUMS`.
 
 ## 构建与验证
 
@@ -85,6 +87,7 @@ python3 scripts/launch_check.py
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
 | Explain the Cookbook | Show Me the Kitchen |
+| You Got This | You’re the Chef |
 
 ## 更新
 
@@ -108,7 +111,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## 限制与状态
 
-软件包、哈希、链接和可移植重建检查已自动化。维护者确认了 0.4.0 的十二个技能在 Desktop 选择器中的显示和结束指南；0.5.0 的新入门指南在新的原生 Codex 调用中单独测试。这些是特定版本的检查，不代表 0.5.1 的完整视觉验收或商店批准。可视化 Cookbook 提供 12 种界面语言及系统/浅色/深色主题；界面语言不会翻译工作流指令。可选的本地 MCP 侧栏是独立软件包。
+软件包、哈希、链接和可移植重建检查已自动化。维护者确认了 0.4.0 的十二个技能在 Desktop 选择器中的显示和结束指南；0.5.0 的新入门指南在新的原生 Codex 调用中单独测试。这些是特定版本的检查，不代表 0.6.0 的完整视觉验收或商店批准。可视化 Cookbook 提供 12 种界面语言及系统/浅色/深色主题；界面语言不会翻译工作流指令。可选的本地 MCP 侧栏是独立软件包。
 
 安全和法律审查配方只提供检查指导，不提供保证。仓库和网站发布与商店提交相互独立。导入的 Git 历史和署名均予保留，包括维护者批准的历史联系页面；四个被替代的 GitHub 仓库已获维护者授权删除。 [0.5.0 acceptance](../../docs/acceptance-0.5.0.md) · [Release review](../../docs/public-release-review.md).
 

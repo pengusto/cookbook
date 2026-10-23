@@ -39,3 +39,7 @@ Die vier bestätigten Paare sind jetzt kanonische Quellen und Bestandteil beider
 | `which-name-wins` | Which Name Wins? (`which-name-wins`) | Name That Dish (`name-that-dish`) |
 
 Der Naming-Workflow wurde als portable Fassung ohne persönliche Pfade oder privaten Korpus übernommen. Die ursprüngliche private Quelle bleibt erhalten. [Aktueller Installationsnachweis](skill-installation-0.4.0.md).
+
+## Bestätigtes Paar · lokale Erweiterung 0.6.0
+
+**You Got This** (`you-got-this`) / **You’re the Chef** (`youre-the-chef`) ist bestätigt und als vierzehnter Workflow aufgenommen. Stabile Quell-ID: `you-got-this`. Der Workflow übernimmt ein Projektziel bis zum geprüften Ergebnis. [Herkunft, Lizenz und Abgrenzung](you-got-this-import.md). Das Originalrepo bleibt vorerst erhalten; die Aufnahme autorisiert keine Veröffentlichung oder Änderung der Host-Installation.

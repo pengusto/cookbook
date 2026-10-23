@@ -1,5 +1,7 @@
 # Cookbook by Pengusto
 
+Project: **Cookbook by Pengusto** · GitHub repository: [`pengusto/cookbook`](https://github.com/pengusto/cookbook).
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/readme/cookbook-banner-storybook-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/cookbook-banner-storybook-v3.png">
@@ -12,11 +14,11 @@
 
 **A recipe for the next step in your coding chat.**
 
-Cookbook gives developers using Codex or Claude Code 13 focused workflows: plan a project, check progress, recover context after a break, review before sharing, and close with a useful handoff. Pick a recipe when you need it; your host and model carry out the work.
+Cookbook gives developers using Codex or Claude Code 14 focused workflows: plan a project, check progress, recover context after a break, review before sharing, and close with a useful handoff. Pick a recipe when you need it; your host and model carry out the work.
 
 Choose **Plain questions** or **Kitchen names**. Both are built from the same maintained instructions; install one naming style per host.
 
-**Experimental public beta · 0.5.1.** [Browse the recipes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Experimental public beta · 0.6.0.** [Browse the recipes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Quickstart: choose one naming style
 
@@ -54,7 +56,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 28 individual ZIPs + `SHA256SUMS`.
 
 ## Build and verify
 
@@ -83,6 +85,9 @@ python3 scripts/launch_check.py
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
 | Explain the Cookbook | Show Me the Kitchen |
+| You Got This | You’re the Chef |
+
+Use `$youre-the-chef <goal>` (Kitchen) or `$you-got-this <goal>` (Plain) to delegate implementation through a checked result. `gauntlet` adds a finite critique loop; `audit` reports findings without broad implementation. This differs from prompt completion, which only drafts the request.
 
 ## Update
 
@@ -106,7 +111,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## Limits and status
 
-Package, hash, link and portable rebuild checks are automated. The maintainer confirmed the twelve-skill 0.4.0 Desktop picker and closing guide; 0.5.0 separately tested the new introduction in a fresh native Codex invocation. These are dated checks, not full visual acceptance of 0.5.1 or Store approval. The visual Cookbook offers 12 UI languages and system/light/dark themes; UI language does not translate workflow instructions. The optional local MCP sidebar is a separate package.
+Package, hash, link and portable rebuild checks are automated. The maintainer confirmed the twelve-skill 0.4.0 Desktop picker and closing guide; 0.5.0 separately tested the new introduction in a fresh native Codex invocation. These are dated checks, not full visual acceptance of 0.6.0 or Store approval. The visual Cookbook offers 12 UI languages and system/light/dark themes; UI language does not translate workflow instructions. The optional local MCP sidebar is a separate package.
 
 Security and legal review recipes guide checks; they provide no guarantees. Repository and website publication are separate from Store submission. Imported Git histories and their attribution remain preserved, including maintainer-approved historical contact pages; the four superseded GitHub repositories were removed with maintainer approval. [0.5.0 acceptance](docs/acceptance-0.5.0.md) · [Release review](docs/public-release-review.md).
 

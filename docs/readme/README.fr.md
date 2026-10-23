@@ -1,5 +1,7 @@
 # Cookbook by Pengusto
 
+Projet : **Cookbook by Pengusto** · Dépôt GitHub : [`pengusto/cookbook`](https://github.com/pengusto/cookbook).
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../assets/readme/cookbook-banner-storybook-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="../../assets/readme/cookbook-banner-storybook-v3.png">
@@ -14,11 +16,11 @@
 
 **Une recette pour la prochaine étape de votre conversation de code.**
 
-Cookbook propose aux développeurs utilisant Codex ou Claude Code 13 processus ciblés : planifier un projet, vérifier les progrès, reprendre après une pause, vérifier avant de partager et préparer une transmission utile. Choisissez une recette au besoin ; votre environnement et votre modèle effectuent le travail.
+Cookbook propose aux développeurs utilisant Codex ou Claude Code 14 processus ciblés : planifier un projet, vérifier les progrès, reprendre après une pause, vérifier avant de partager et préparer une transmission utile. Choisissez une recette au besoin ; votre environnement et votre modèle effectuent le travail.
 
 Choisissez les **questions simples** ou les **noms de cuisine**. Les deux styles proviennent des mêmes instructions maintenues ; installez un seul style par environnement.
 
-**Bêta publique expérimentale · 0.5.1.** [Parcourir les recettes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Bêta publique expérimentale · 0.6.0.** [Parcourir les recettes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Démarrage rapide : choisir un style
 
@@ -56,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 28 individual ZIPs + `SHA256SUMS`.
 
 ## Construire et vérifier
 
@@ -85,6 +87,7 @@ python3 scripts/launch_check.py
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
 | Explain the Cookbook | Show Me the Kitchen |
+| You Got This | You’re the Chef |
 
 ## Mettre à jour
 
@@ -108,7 +111,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## Limites et état
 
-Les paquets, empreintes, liens et reconstructions portables sont vérifiés automatiquement. Le responsable a confirmé le sélecteur Desktop à douze skills et le guide de clôture en 0.4.0 ; la nouvelle introduction a été testée séparément en 0.5.0 dans une nouvelle invocation native Codex. Ces vérifications datées ne prouvent ni l’acceptation visuelle complète de 0.5.1 ni l’approbation en boutique. Le Cookbook visuel propose 12 langues d’interface et des thèmes système/clair/sombre ; cela ne traduit pas les instructions des processus. La barre latérale MCP locale facultative est un paquet séparé.
+Les paquets, empreintes, liens et reconstructions portables sont vérifiés automatiquement. Le responsable a confirmé le sélecteur Desktop à douze skills et le guide de clôture en 0.4.0 ; la nouvelle introduction a été testée séparément en 0.5.0 dans une nouvelle invocation native Codex. Ces vérifications datées ne prouvent ni l’acceptation visuelle complète de 0.6.0 ni l’approbation en boutique. Le Cookbook visuel propose 12 langues d’interface et des thèmes système/clair/sombre ; cela ne traduit pas les instructions des processus. La barre latérale MCP locale facultative est un paquet séparé.
 
 Les recettes de sécurité et de droit guident les vérifications sans garantie. La publication du dépôt et du site est distincte de la soumission en boutique. Les historiques Git importés et leur attribution sont conservés, y compris les anciennes pages de contact approuvées ; les quatre dépôts GitHub remplacés ont été supprimés avec l’accord du responsable. [0.5.0 acceptance](../../docs/acceptance-0.5.0.md) · [Release review](../../docs/public-release-review.md).
 

@@ -35,7 +35,7 @@ class Links(html.parser.HTMLParser):
 class WebsiteContracts(unittest.TestCase):
     def test_landing_discovery_preserves_language_and_naming_pairs(self):
         base_url = 'https://pengusto.github.io/cookbook/'
-        for base in ('index', 'kitchen'):
+        for base in ('install-plain', 'install'):
             expected = {'de': base_url + base + '.html',
                         'en': base_url + base + '-en.html'}
             for language, url in expected.items():
@@ -47,6 +47,53 @@ class WebsiteContracts(unittest.TestCase):
                     self.assertEqual({link['hreflang']: link['href'] for link in alternates}, expected)
                     self.assertEqual([link['href'] for link in parser.head_links if link.get('rel') == 'canonical'], [url])
                     self.assertIn('https://github.com/pengusto/cookbook', parser.links)
+
+    def test_open_book_is_home_with_installation_and_information(self):
+        for filename in ('index.html', 'index-en.html', 'kitchen.html', 'kitchen-en.html', 'cookbook.html', 'cookbook-plain.html'):
+            with self.subTest(filename=filename):
+                text = (ROOT / 'site' / filename).read_text()
+                parser = Links()
+                parser.feed(text)
+                self.assertIn('class="public-book"', text)
+                self.assertTrue({'welcome', 'install', 'about', 'recipe-content'} <= parser.ids)
+                self.assertIn('class="book-install"', text)
+                self.assertIn('data-open-page="install"', text)
+                self.assertIn('id="codex-install-command"', text)
+                self.assertIn('id="claude-install-command"', text)
+                self.assertIn('Python 3.10+', text)
+                self.assertIn('downloads/SHA256SUMS', parser.links)
+                self.assertIn('https://github.com/pengusto/cookbook/issues', parser.links)
+                self.assertIn('<noscript>', text)
+                self.assertNotIn('cookbook-banner-storybook', text)
+        german = Links()
+        german.feed((ROOT / 'site/index.html').read_text())
+        self.assertEqual([link['href'] for link in german.head_links if link.get('rel') == 'canonical'], ['https://pengusto.github.io/cookbook/index.html'])
+
+    def test_help_uses_current_build_and_correct_plain_installation(self):
+        config = json.loads((ROOT / 'bundle.json').read_text())
+        count = str(len(json.loads((ROOT / 'catalog.json').read_text())))
+        for suffix in ('', '-en'):
+            text = (ROOT / ('site/help'+suffix+'.html')).read_text()
+            self.assertIn('Version '+config['version'], text)
+            self.assertIn(count+(' Workflows' if not suffix else ' workflows'), text)
+            self.assertIn('href="install-plain'+suffix+'.html">Plain', text)
+            self.assertNotIn('{{', text)
+
+    def test_every_information_page_has_its_own_ingredients(self):
+        import re
+        lists = []
+        for filename in ('index.html', 'index-en.html'):
+            text = (ROOT / 'site' / filename).read_text()
+            for name in ('welcome', 'install', 'about'):
+                with self.subTest(filename=filename, page=name):
+                    marker = 'id="' + name + '-ingredients-title"'
+                    self.assertIn(marker, text)
+                    section = text.split(marker, 1)[1].split('</section>', 1)[0]
+                    items = re.findall(r'role="img" aria-label="([^"]+)"', section)
+                    self.assertEqual(len(items), 4)
+                    self.assertTrue(all(item.strip() for item in items))
+                    lists.append(tuple(items))
+        self.assertEqual(len(set(lists)), 6)
 
     def test_html_links_and_fragments_stay_inside_export(self):
         site = ROOT / 'site'
@@ -73,6 +120,7 @@ class WebsiteContracts(unittest.TestCase):
         expected = {str(p.relative_to(site)): p.read_bytes() for p in site.rglob('*') if p.is_file()}
         rows = json.loads((ROOT / 'catalog.json').read_text())
         allowed = {'index.html', 'kitchen.html', 'help.html', 'LICENSE', 'assets/icon.svg', 'assets/icon-dark.svg', 'assets/cookbook-hero-transparent.png', 'assets/site.css', 'index-en.html', 'kitchen-en.html', 'help-en.html', 'downloads/SHA256SUMS'}
+        allowed.update({'install.html', 'install-en.html', 'install-plain.html', 'install-plain-en.html'})
         allowed.update({'legal.html','legal-en.html','privacy.html','privacy-en.html','cookbook.html','cookbook-plain.html','robots.txt','sitemap.xml','.nojekyll'})
         allowed.update(f'assets/icons/{name}' for name in ('download.svg', 'book.svg', 'chef-hat.svg', 'message-circle.svg', 'arrow-right.svg', 'clipboard.svg', 'soup.svg', 'lock.svg', 'search.svg', 'bell.svg', 'list-details.svg', 'door-exit.svg', 'terminal-2.svg', 'LICENSE', 'LUCIDE-LICENSE', 'README.md'))
         allowed.update(f'downloads/cookbook-by-pengusto-{variant}-{host}.zip' for host in ('codex', 'claude') for variant in ('plain','kitchen'))
@@ -96,13 +144,13 @@ class WebsiteContracts(unittest.TestCase):
 
     def test_language_and_naming_navigation_preserve_selection(self):
         for language in ('de', 'en'):
-            for variant, base in (('plain', 'index'), ('kitchen', 'kitchen')):
+            for variant, base in (('plain', 'install-plain'), ('kitchen', 'install')):
                 with self.subTest(language=language, variant=variant):
                     suffix = '' if language == 'de' else '-en'
                     page = (ROOT / 'site' / (base + suffix + '.html')).read_text()
                     self.assertIn(f'<html lang="{language}">', page)
-                    self.assertIn('href="index' + suffix + '.html#skills"', page)
-                    self.assertIn('href="kitchen' + suffix + '.html#skills"', page)
+                    self.assertIn('href="install-plain' + suffix + '.html#skills"', page)
+                    self.assertIn('href="install' + suffix + '.html#skills"', page)
                     self.assertIn('href="' + base + '.html"', page)
                     self.assertIn('href="' + base + '-en.html"', page)
                     self.assertIn(f'cookbook-by-pengusto-{variant}-codex.zip', page)
@@ -114,7 +162,7 @@ class WebsiteContracts(unittest.TestCase):
 
 class PublicBetaContracts(unittest.TestCase):
     def test_dark_assets_match_system_preference_without_external_runtime(self):
-        for name in ('index.html', 'kitchen.html', 'index-en.html', 'kitchen-en.html', 'help.html', 'help-en.html'):
+        for name in ('install-plain.html', 'install.html', 'install-plain-en.html', 'install-en.html', 'help.html', 'help-en.html'):
             text = (ROOT / 'site' / name).read_text()
             self.assertIn('content="light dark"', text)
             self.assertIn('media="(prefers-color-scheme: dark)"', text)

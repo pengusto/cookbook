@@ -2,7 +2,7 @@
 
 Version {{VERSION}} · {{HOST}} · {{VARIANT}}
 
-Thirteen workflows for planning a project, checking progress, recovering chat context, reviewing exposure and legal questions, preparing a release, drafting change notes and finishing a chat. Open a fresh host session after installation, then invoke a workflow with your request.
+{{COUNT}} workflows for planning a project, checking progress, recovering chat context, reviewing exposure and legal questions, preparing a release, drafting change notes and finishing a chat. Open a fresh host session after installation, then invoke a workflow with your request.
 
 | Workflow | Invocation |
 |---|---|

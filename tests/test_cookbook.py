@@ -196,7 +196,7 @@ class PackagingContracts(unittest.TestCase):
                 import re
                 normalized = {}
                 for name, content in files.items():
-                    if name in ('SKILL.md', 'agents/openai.yaml'):
+                    if name in ('SKILL.md', 'agents/openai.yaml', 'examples.md'):
                         content = content.replace(('name: '+slug+'\n').encode(), b'name: ID\n')
                         content = content.replace(('$'+slug).encode(), b'$ID')
                         if name == 'SKILL.md':
@@ -248,6 +248,7 @@ class NewWorkflowInstallationContracts(unittest.TestCase):
             'catch-me-up': 'back-to-the-kitchen',
             'finish-my-prompt': 'finish-my-order',
             'which-name-wins': 'name-that-dish',
+            'you-got-this': 'youre-the-chef',
             'explain-the-cookbook': 'show-me-the-kitchen',
         }
         rows = {r['id']: r for r in app.catalog()}
@@ -266,6 +267,22 @@ class NewWorkflowInstallationContracts(unittest.TestCase):
                     self.assertNotIn('/Users/', guide)
                     self.assertNotIn('Enis Uysal', guide)
                     self.assertNotIn(f'skills/{rows[source_id]["install_ids"]["plain" if variant == "kitchen" else "kitchen"]}/SKILL.md', files)
+
+class AutonomousWorkflowContracts(unittest.TestCase):
+    def test_modes_and_examples_are_portable_in_each_installed_variant(self):
+        row = next(r for r in app.catalog() if r['id'] == 'you-got-this')
+        for variant in app.VARIANTS:
+            slug, files = app.rendered_files(row, variant)
+            other = row['install_ids']['kitchen' if variant == 'plain' else 'plain']
+            guide, examples = files['SKILL.md'].decode(), files['examples.md'].decode()
+            for text in (guide, examples):
+                self.assertIn('$'+slug+' gauntlet', text)
+                self.assertIn('$'+slug+' audit', text)
+                self.assertNotIn('$'+other, text)
+                self.assertNotIn('{{', text)
+            self.assertEqual(files['LICENSE'], (app.ROOT / 'skills/you-got-this/LICENSE').read_bytes())
+            self.assertIn('Copyright (c) 2026 Enis Uysal', files['LICENSE'].decode())
+
 
 class RemoteMarketplaceContracts(unittest.TestCase):
     def test_remote_branches_have_the_native_root_and_exact_skill_package(self):

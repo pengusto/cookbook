@@ -1,0 +1,2399 @@
+[
+  {
+    "id": "start-it-right",
+    "file": "start-it-right.webp",
+    "dish": "shakshuka in a cast-iron skillet",
+    "ingredients": [
+      "ripe tomatoes",
+      "whole eggs",
+      "red bell pepper",
+      "parsley"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "4328fbade05e9695e6f012ba86755e294026829e7be7550243186d9505c8751d",
+    "sha256": "fc0b5fb57248b4ca7cb4e6539b1f00f0c11d0afe5aefd40e1b7328b8accbce95",
+    "prompt": "Transparent 3:2 cookbook sprite: dish in left two-thirds; four raw ingredient cutouts in a 2x2 grid in right third; hand-painted watercolor/gouache, no text or icons. Subject: shakshuka in a cast-iron skillet. Ingredients: ripe tomatoes, whole eggs, red bell pepper, parsley",
+    "dishNames": {
+      "de": "Shakshuka",
+      "en": "Shakshuka"
+    },
+    "ingredientNames": {
+      "de": [
+        "Tomaten",
+        "Eier",
+        "Paprika",
+        "Petersilie"
+      ],
+      "en": [
+        "ripe tomatoes",
+        "whole eggs",
+        "red bell pepper",
+        "parsley"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        475,
+        512
+      ],
+      "ingredients": [
+        [
+          475,
+          0,
+          155,
+          256
+        ],
+        [
+          630,
+          0,
+          138,
+          256
+        ],
+        [
+          475,
+          256,
+          155,
+          256
+        ],
+        [
+          630,
+          256,
+          138,
+          256
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/start-it-right-dish.webp",
+        "sha256": "e9e2c18c948bf076181024182c76a5287c230402c28c70819dcc40e66703120c",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          7,
+          0,
+          479,
+          481
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/start-it-right-ingredient-0.webp",
+          "sha256": "35c88e31ebe603a803b246424248d8568918fa633c31ba29ca56d275383ecb7d",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            469,
+            57,
+            627,
+            241
+          ]
+        },
+        {
+          "file": "cutouts/start-it-right-ingredient-1.webp",
+          "sha256": "f58c85d730a0b9a710190abbf8dd8efb2f84d7c1645162d560d8046b441332ee",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            647,
+            83,
+            760,
+            229
+          ]
+        },
+        {
+          "file": "cutouts/start-it-right-ingredient-2.webp",
+          "sha256": "6355d42dbcb80e0063b2ae4c13c2388b705afa3a9894af8af8218fd2baf1943e",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            480,
+            285,
+            618,
+            460
+          ]
+        },
+        {
+          "file": "cutouts/start-it-right-ingredient-3.webp",
+          "sha256": "0d9d9c70e78ae7685113533e89b9d37b57e373393ef2ebfefcc895129d4f6ccd",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            622,
+            285,
+            763,
+            481
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "are-we-cooking",
+    "file": "are-we-cooking.webp",
+    "dish": "creamy mushroom risotto on a shallow cream ceramic plate",
+    "ingredients": [
+      "arborio rice in a small bowl",
+      "fresh brown mushrooms",
+      "a wedge of parmesan",
+      "thyme sprigs"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "49d93ad0ca1c9edaee62d4a5b2698b6aef485d6ebb0ce47450506bda9576dd75",
+    "sha256": "2b3d68c8ebcf9fa638ba3748cc68dae9cece1070516aad02ffc843eadea63122",
+    "prompt": "Use case: stylized-concept. ONE production transparent cookbook food sprite sheet, exactly landscape 3:2. Left two-thirds is ONE large appetizing creamy mushroom risotto on a shallow cream ceramic plate, overhead three-quarter perspective. Right third is four separate raw ingredient illustrations in a 2 by 2 grid: top left arborio rice in a small bowl, top right fresh brown mushrooms, bottom left a wedge of parmesan, bottom right thyme sprigs. Dish entirely within x=0..66.6%, ingredients in x=66.6..83.3% and 83.3..100%, y=0..50% and 50..100%. Give every zone generous transparent padding; do not overlap zones. Elegant hand-painted cookbook watercolor and gouache, richly textured recognizable real food, delicate brush edges, wine red and sage accents, warm cream ceramics, natural ingredient colors, consistent sophisticated illustrated cookbook style. True transparent alpha background and clear transparent gaps, no backdrop or glow wash, no page, no scene, no typography or labels, no icons, no people. Keep the plate rim and each ingredient complete inside its own zone.",
+    "dishNames": {
+      "de": "Pilzrisotto",
+      "en": "Mushroom risotto"
+    },
+    "ingredientNames": {
+      "de": [
+        "Risottoreis",
+        "Champignons",
+        "Parmesan",
+        "Thymian"
+      ],
+      "en": [
+        "arborio rice in a small bowl",
+        "fresh brown mushrooms",
+        "a wedge of parmesan",
+        "thyme sprigs"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        475,
+        512
+      ],
+      "ingredients": [
+        [
+          475,
+          0,
+          150,
+          256
+        ],
+        [
+          625,
+          0,
+          143,
+          256
+        ],
+        [
+          475,
+          256,
+          150,
+          256
+        ],
+        [
+          625,
+          256,
+          143,
+          256
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/are-we-cooking-dish.webp",
+        "sha256": "d4551069f4102cb34223523c36642c1fe0f331ea2241ed90341fefdfe9cf7e1f",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          0,
+          48,
+          481,
+          457
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/are-we-cooking-ingredient-0.webp",
+          "sha256": "64dcf8ba38a59dccfb56a8e22e27b7921fa6fd452fb61202bbace9238bb1e367",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            473,
+            81,
+            626,
+            225
+          ]
+        },
+        {
+          "file": "cutouts/are-we-cooking-ingredient-1.webp",
+          "sha256": "d882ef7441b0d7478ac69e07aea72a9f9546b5bca77840fc0fdbd28e146ffbf1",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            610,
+            80,
+            763,
+            233
+          ]
+        },
+        {
+          "file": "cutouts/are-we-cooking-ingredient-2.webp",
+          "sha256": "855afa9fafea11e620665ba32d045ce35d8932c0730a0c782963acd5919f3422",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            477,
+            246,
+            656,
+            442
+          ]
+        },
+        {
+          "file": "cutouts/are-we-cooking-ingredient-3.webp",
+          "sha256": "9dce97a0ba5cae098f42dec6006fe7b13a751290dc92f88d1c0a92ece00e5406",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            625,
+            239,
+            761,
+            451
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "what-was-i-cooking",
+    "file": "what-was-i-cooking.webp",
+    "dish": "hearty colorful minestrone soup in a wine-red ceramic bowl",
+    "ingredients": [
+      "white beans in a small bowl",
+      "carrots",
+      "celery stalks",
+      "ripe tomatoes"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "b35b76be1ad5bcbb5951e2a742c7b4b01e3509fcfe0ab514d4f632ed322f12a5",
+    "sha256": "3e68eb58fc686c9e462b1e1c904e51826dddb76dcbe2ecbfef49edcabb0b8882",
+    "prompt": "Use case: stylized-concept. ONE production transparent cookbook food sprite sheet, exactly landscape 3:2. Left two-thirds is ONE large appetizing hearty colorful minestrone soup in a wine-red ceramic bowl, overhead three-quarter perspective. Right third is four separate raw ingredient illustrations in a 2 by 2 grid: top left white beans in a small bowl, top right carrots, bottom left celery stalks, bottom right ripe tomatoes. Dish entirely within x=0..66.6%, ingredients in x=66.6..83.3% and 83.3..100%, y=0..50% and 50..100%. Give every zone generous transparent padding; do not overlap zones. Elegant hand-painted cookbook watercolor and gouache, richly textured recognizable real food, delicate brush edges, wine red and sage accents, warm cream ceramics, natural ingredient colors, consistent sophisticated illustrated cookbook style. True transparent alpha background and clear transparent gaps, no backdrop or glow wash, no page, no scene, no typography or labels, no icons, no people. Keep the plate rim and each ingredient complete inside its own zone.",
+    "dishNames": {
+      "de": "Minestrone",
+      "en": "Minestrone"
+    },
+    "ingredientNames": {
+      "de": [
+        "Weiße Bohnen",
+        "Karotten",
+        "Sellerie",
+        "Tomaten"
+      ],
+      "en": [
+        "white beans in a small bowl",
+        "carrots",
+        "celery stalks",
+        "ripe tomatoes"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        470,
+        512
+      ],
+      "ingredients": [
+        [
+          470,
+          0,
+          155,
+          260
+        ],
+        [
+          625,
+          0,
+          143,
+          260
+        ],
+        [
+          470,
+          260,
+          155,
+          252
+        ],
+        [
+          625,
+          260,
+          143,
+          252
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/what-was-i-cooking-dish.webp",
+        "sha256": "f06157c73ac4d205818d5f2b326dd641f44a3c577996d2fff8845108fa1bf0bd",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          5,
+          40,
+          479,
+          450
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/what-was-i-cooking-ingredient-0.webp",
+          "sha256": "aac467116602a36798e97780fb334d1d4bf8c201b69298420ccac92bd339ce03",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            467,
+            70,
+            635,
+            225
+          ]
+        },
+        {
+          "file": "cutouts/what-was-i-cooking-ingredient-1.webp",
+          "sha256": "2f39bbd6ce0f61854cd30fb3aa5bb073b42d7f5f43039d0d12e0f94c30b8e2c2",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            625,
+            17,
+            768,
+            284
+          ]
+        },
+        {
+          "file": "cutouts/what-was-i-cooking-ingredient-2.webp",
+          "sha256": "b5398d4bded0bb2d64abdd992475771e7068888266b9829c8adeea63a0f6eaaa",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            449,
+            259,
+            624,
+            488
+          ]
+        },
+        {
+          "file": "cutouts/what-was-i-cooking-ingredient-3.webp",
+          "sha256": "d13ca0a78a2d54adec45a71c365acdc9025f7c276c0bf50eeb8eb634ccc7e069",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            607,
+            299,
+            768,
+            472
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "did-i-leak",
+    "file": "did-i-leak.webp",
+    "dish": "beautiful baked salmon en papillote, parchment packet gently opened",
+    "ingredients": [
+      "a fresh salmon fillet",
+      "a lemon",
+      "asparagus spears",
+      "a fennel bulb"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "642e58301906cebac89cffe894a1a1eb9f9b57c9198405a6149d8a6c33734515",
+    "sha256": "909b430cc0beab57d741416cf9afdc934cca702c3343f072347b8f0f0a61eeff",
+    "prompt": "Use case: stylized-concept. ONE production transparent cookbook food sprite sheet, exactly landscape 3:2. Left two-thirds is ONE large appetizing beautiful baked salmon en papillote, parchment packet gently opened, overhead three-quarter perspective. Right third is four separate raw ingredient illustrations in a 2 by 2 grid: top left a fresh salmon fillet, top right a lemon, bottom left asparagus spears, bottom right a fennel bulb. Dish entirely within x=0..66.6%, ingredients in x=66.6..83.3% and 83.3..100%, y=0..50% and 50..100%. Give every zone generous transparent padding; do not overlap zones. Elegant hand-painted cookbook watercolor and gouache, richly textured recognizable real food, delicate brush edges, wine red and sage accents, warm cream ceramics, natural ingredient colors, consistent sophisticated illustrated cookbook style. True transparent alpha background and clear transparent gaps, no backdrop or glow wash, no page, no scene, no typography or labels, no icons, no people. Keep the plate rim and each ingredient complete inside its own zone.",
+    "dishNames": {
+      "de": "Lachs im Pergament",
+      "en": "Salmon en papillote"
+    },
+    "ingredientNames": {
+      "de": [
+        "Lachs",
+        "Zitrone",
+        "Spargel",
+        "Fenchel"
+      ],
+      "en": [
+        "a fresh salmon fillet",
+        "a lemon",
+        "asparagus spears",
+        "a fennel bulb"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        480,
+        512
+      ],
+      "ingredients": [
+        [
+          480,
+          0,
+          150,
+          256
+        ],
+        [
+          630,
+          0,
+          138,
+          256
+        ],
+        [
+          480,
+          256,
+          150,
+          256
+        ],
+        [
+          630,
+          256,
+          138,
+          256
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/did-i-leak-dish.webp",
+        "sha256": "9517bedbb04533c8cd609afc65a163c5f3c9607097d393ee0f433a056013ec35",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          14,
+          0,
+          481,
+          458
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/did-i-leak-ingredient-0.webp",
+          "sha256": "30ac946b4849575fdbb1b9fcd10f0fdaa9905d0c90a543c9226cdb3027117906",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            471,
+            56,
+            625,
+            241
+          ]
+        },
+        {
+          "file": "cutouts/did-i-leak-ingredient-1.webp",
+          "sha256": "b78a0a30446054c38adf4bf7c4a72ab6bcc2859b81a38523bac273d9d71c452e",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            618,
+            26,
+            761,
+            232
+          ]
+        },
+        {
+          "file": "cutouts/did-i-leak-ingredient-2.webp",
+          "sha256": "83a7759272dc12fb4e876f58d8bfabf5047a57480334dd332468c2da330f3928",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            452,
+            249,
+            611,
+            500
+          ]
+        },
+        {
+          "file": "cutouts/did-i-leak-ingredient-3.webp",
+          "sha256": "f3a7a48aebf3691407894f26f403d31a4d3c9be878f0de6e4ba8284c935633b6",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            598,
+            249,
+            754,
+            473
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "will-they-sue-me",
+    "file": "will-they-sue-me.webp",
+    "dish": "a golden beef Wellington with one slice showing its layered center",
+    "ingredients": [
+      "beef fillet",
+      "brown mushrooms",
+      "a folded sheet of puff pastry",
+      "thyme sprigs"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "431c2f225926bf43fd71e94644844fed4a4d6fcd66a2a2a2ac5eed126a486833",
+    "sha256": "ec8eb151386ff0b3c3dc674b75347b12b39a7f1a21d0c4a40f997406a4831db6",
+    "prompt": "Use case: stylized-concept. ONE production transparent cookbook food sprite sheet, exactly landscape 3:2. Left two-thirds is ONE large appetizing a golden beef Wellington with one slice showing its layered center, overhead three-quarter perspective. Right third is four separate raw ingredient illustrations in a 2 by 2 grid: top left beef fillet, top right brown mushrooms, bottom left a folded sheet of puff pastry, bottom right thyme sprigs. Dish entirely within x=0..66.6%, ingredients in x=66.6..83.3% and 83.3..100%, y=0..50% and 50..100%. Give every zone generous transparent padding; do not overlap zones. Elegant hand-painted cookbook watercolor and gouache, richly textured recognizable real food, delicate brush edges, wine red and sage accents, warm cream ceramics, natural ingredient colors, consistent sophisticated illustrated cookbook style. True transparent alpha background and clear transparent gaps, no backdrop or glow wash, no page, no scene, no typography or labels, no icons, no people. Keep the plate rim and each ingredient complete inside its own zone.",
+    "dishNames": {
+      "de": "Beef Wellington",
+      "en": "Beef Wellington"
+    },
+    "ingredientNames": {
+      "de": [
+        "Rinderfilet",
+        "Champignons",
+        "Blätterteig",
+        "Thymian"
+      ],
+      "en": [
+        "beef fillet",
+        "brown mushrooms",
+        "a folded sheet of puff pastry",
+        "thyme sprigs"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        470,
+        512
+      ],
+      "ingredients": [
+        [
+          470,
+          0,
+          155,
+          260
+        ],
+        [
+          625,
+          0,
+          143,
+          260
+        ],
+        [
+          470,
+          260,
+          155,
+          252
+        ],
+        [
+          625,
+          260,
+          143,
+          252
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/will-they-sue-me-dish.webp",
+        "sha256": "cc6a27c0d32c88709a91c74aec249ee9a2f6feb17a8324c607f484e331311fec",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          6,
+          10,
+          466,
+          457
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/will-they-sue-me-ingredient-0.webp",
+          "sha256": "2e67465e84f0ed1d0b9a6ecaaf2e11e8cb3d3ae4917c1b33179ff63877981e89",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            455,
+            57,
+            617,
+            243
+          ]
+        },
+        {
+          "file": "cutouts/will-they-sue-me-ingredient-1.webp",
+          "sha256": "dadf240d6cc1f548c35fc880237eb12799a39fe779b99618e6890bc49531e6f9",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            617,
+            71,
+            760,
+            248
+          ]
+        },
+        {
+          "file": "cutouts/will-they-sue-me-ingredient-2.webp",
+          "sha256": "84026e612fe0014340d131421bf84f0b93db3c26b2374cc1c05eae115aa802ca",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            438,
+            275,
+            641,
+            457
+          ]
+        },
+        {
+          "file": "cutouts/will-they-sue-me-ingredient-3.webp",
+          "sha256": "cf69b40747ac299921d759662da38e237a2db2fba887a6a833a574c26e633a04",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            610,
+            256,
+            759,
+            487
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "let-them-see-it",
+    "file": "let-them-see-it.webp",
+    "dish": "a beautiful lemon meringue tart on a cream cake stand with one slice",
+    "ingredients": [
+      "lemons",
+      "flour in a small bowl",
+      "a slab of butter",
+      "whole eggs"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "a174154ce7804cddd881ba4ff7905f06872fe80a235e3fd12b6d93d70e05f646",
+    "sha256": "ae58c16bd4680f736a39e0df68873e02f77061b6bf43ffaa05a69f37dd831328",
+    "prompt": "Use case: stylized-concept. ONE production transparent cookbook food sprite sheet, exactly landscape 3:2. Left two-thirds is ONE large appetizing a beautiful lemon meringue tart on a cream cake stand with one slice, overhead three-quarter perspective. Right third is four separate raw ingredient illustrations in a 2 by 2 grid: top left lemons, top right flour in a small bowl, bottom left a slab of butter, bottom right whole eggs. Dish entirely within x=0..66.6%, ingredients in x=66.6..83.3% and 83.3..100%, y=0..50% and 50..100%. Give every zone generous transparent padding; do not overlap zones. Elegant hand-painted cookbook watercolor and gouache, richly textured recognizable real food, delicate brush edges, wine red and sage accents, warm cream ceramics, natural ingredient colors, consistent sophisticated illustrated cookbook style. True transparent alpha background and clear transparent gaps, no backdrop or glow wash, no page, no scene, no typography or labels, no icons, no people. Keep the plate rim and each ingredient complete inside its own zone.",
+    "dishNames": {
+      "de": "Zitronen-Baiser-Tarte",
+      "en": "Lemon meringue tart"
+    },
+    "ingredientNames": {
+      "de": [
+        "Zitronen",
+        "Mehl",
+        "Butter",
+        "Eier"
+      ],
+      "en": [
+        "lemons",
+        "flour in a small bowl",
+        "a slab of butter",
+        "whole eggs"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        435,
+        512
+      ],
+      "ingredients": [
+        [
+          435,
+          0,
+          180,
+          290
+        ],
+        [
+          615,
+          0,
+          153,
+          290
+        ],
+        [
+          435,
+          290,
+          180,
+          222
+        ],
+        [
+          615,
+          290,
+          153,
+          222
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/let-them-see-it-dish.webp",
+        "sha256": "1c53f8f675de306f0b1ebcda161fac48ff884e503ee76d8c79b182647e7c716d",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          0,
+          63,
+          451,
+          481
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/let-them-see-it-ingredient-0.webp",
+          "sha256": "7424c4b7bd967ff4ffecc1e9bc09b8bd5df82520cd9970c30caeec9a40b67050",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            440,
+            14,
+            616,
+            297
+          ]
+        },
+        {
+          "file": "cutouts/let-them-see-it-ingredient-1.webp",
+          "sha256": "c0895b362acf3ea1604b7bb8eff8bb3e8b88f8416acb18b7a734ff4a8295bda8",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            609,
+            28,
+            768,
+            264
+          ]
+        },
+        {
+          "file": "cutouts/let-them-see-it-ingredient-2.webp",
+          "sha256": "ff339325693f0af1a29c8ac76654f3e4f6a14068863f8b8c78508c9b540399bc",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            425,
+            325,
+            614,
+            483
+          ]
+        },
+        {
+          "file": "cutouts/let-them-see-it-ingredient-3.webp",
+          "sha256": "6433cc777140854158ae549264fa6c62726bdf85fcdc7484c40adf3ae2d3b7da",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            614,
+            333,
+            762,
+            482
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "what-did-we-change",
+    "file": "what-did-we-change.webp",
+    "dish": "colorful salmon poke bowl with artfully arranged toppings",
+    "ingredients": [
+      "rice in a small bowl",
+      "a halved avocado",
+      "fresh salmon cubes",
+      "red radishes"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "9639825c94d6821acdc0d42e82946813c7c8379bc44d3d15837c974f28351b09",
+    "sha256": "b8727d17674f8a205b14d96e9faafe87f127ca0a81e5fb5909482bb3c0f28961",
+    "prompt": "Transparent 3:2 cookbook sprite: dish in left two-thirds; four raw ingredient cutouts in a 2x2 grid in right third; hand-painted watercolor/gouache, no text or icons. Subject: colorful salmon poke bowl with artfully arranged toppings. Ingredients: rice in a small bowl, a halved avocado, fresh salmon cubes, red radishes",
+    "dishNames": {
+      "de": "Poke Bowl",
+      "en": "Poke bowl"
+    },
+    "ingredientNames": {
+      "de": [
+        "Reis",
+        "Avocado",
+        "Lachs",
+        "Radieschen"
+      ],
+      "en": [
+        "rice in a small bowl",
+        "a halved avocado",
+        "fresh salmon cubes",
+        "red radishes"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        480,
+        512
+      ],
+      "ingredients": [
+        [
+          480,
+          0,
+          145,
+          290
+        ],
+        [
+          625,
+          0,
+          143,
+          290
+        ],
+        [
+          480,
+          290,
+          145,
+          222
+        ],
+        [
+          625,
+          290,
+          143,
+          222
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/what-did-we-change-dish.webp",
+        "sha256": "673f6d4a23bd19e589cd6b191c5edde3122f85a059afac3027f471c58a118d60",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          0,
+          49,
+          474,
+          457
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/what-did-we-change-ingredient-0.webp",
+          "sha256": "ac8dbb8b9faf10b38f82050bbdfa948e734d04c94006fcd171e47d268b247501",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            471,
+            101,
+            636,
+            256
+          ]
+        },
+        {
+          "file": "cutouts/what-did-we-change-ingredient-1.webp",
+          "sha256": "b6687693a0e12d485ea2eccb6366bec05a4e14bbd2708322cf3514be5083c22b",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            629,
+            13,
+            766,
+            264
+          ]
+        },
+        {
+          "file": "cutouts/what-did-we-change-ingredient-2.webp",
+          "sha256": "b48899da59961108a1b4f43f857a3c677b4d3cebeec412870dcdf614166b1261",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            465,
+            297,
+            639,
+            451
+          ]
+        },
+        {
+          "file": "cutouts/what-did-we-change-ingredient-3.webp",
+          "sha256": "00df7aad57fb75a7e545b452e55bb17dbcc7a7944970da9c24017a694d0d147b",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            630,
+            265,
+            768,
+            456
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "kill-the-todos",
+    "file": "kill-the-todos.webp",
+    "dish": "a golden baked vegetable lasagna portion in a small burgundy baking dish",
+    "ingredients": [
+      "lasagna pasta sheets",
+      "ripe tomatoes",
+      "a zucchini",
+      "a mozzarella ball"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "2771662110cb6222c57991bc11ce327faa76e9784c7ad8b269eae0df38609726",
+    "sha256": "b8bd42f7a511fc3a9ae3e7fdbfde72884f725495e336d9441d7e6be6470b8f44",
+    "prompt": "Transparent 3:2 cookbook sprite: dish in left two-thirds; four raw ingredient cutouts in a 2x2 grid in right third; hand-painted watercolor/gouache, no text or icons. Subject: a golden baked vegetable lasagna portion in a small burgundy baking dish. Ingredients: lasagna pasta sheets, ripe tomatoes, a zucchini, a mozzarella ball",
+    "dishNames": {
+      "de": "Gemüselasagne",
+      "en": "Vegetable lasagna"
+    },
+    "ingredientNames": {
+      "de": [
+        "Lasagneblätter",
+        "Tomaten",
+        "Zucchini",
+        "Mozzarella"
+      ],
+      "en": [
+        "lasagna pasta sheets",
+        "ripe tomatoes",
+        "a zucchini",
+        "a mozzarella ball"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        485,
+        512
+      ],
+      "ingredients": [
+        [
+          485,
+          0,
+          140,
+          270
+        ],
+        [
+          625,
+          0,
+          143,
+          270
+        ],
+        [
+          485,
+          270,
+          140,
+          242
+        ],
+        [
+          625,
+          270,
+          143,
+          242
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/kill-the-todos-dish.webp",
+        "sha256": "fcfdf5c0e639f71a5e7ecfb8e21b944829af7a890d82186232623d220c9c2f44",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          0,
+          64,
+          487,
+          440
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/kill-the-todos-ingredient-0.webp",
+          "sha256": "44a4d28737fb00047f7aaa689692294bd73d2fcfaab8dc9339f2e62cff3d801d",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            478,
+            45,
+            610,
+            242
+          ]
+        },
+        {
+          "file": "cutouts/kill-the-todos-ingredient-1.webp",
+          "sha256": "118c992aee4ccba9c008f4395c39723cc6f7d0c10370a626e0758f034767837d",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            605,
+            64,
+            761,
+            233
+          ]
+        },
+        {
+          "file": "cutouts/kill-the-todos-ingredient-2.webp",
+          "sha256": "3fe9301d5da45479e822808c5717ba252a3044560cac514a060ed2a6d5b23559",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            483,
+            267,
+            619,
+            449
+          ]
+        },
+        {
+          "file": "cutouts/kill-the-todos-ingredient-3.webp",
+          "sha256": "eb29cc79a915bba2508ea4c392cb38e61cb11d7dc06b2d5f6c5ad02bd7d3baab",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            619,
+            296,
+            759,
+            435
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "here-we-go-again",
+    "file": "here-we-go-again.webp",
+    "dish": "golden French onion soup with toasted cheese bread in a dark crock",
+    "ingredients": [
+      "golden onions",
+      "a short baguette",
+      "a wedge of gruyere cheese",
+      "thyme sprigs"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "e23b727e758b65bbd1cabeb182c1f671e2de6a3faf70d3b20ef676d5febefc3b",
+    "sha256": "42eba2d893c832d76ebc0921ee606bc869c9ac8287cecdf136515214b137a285",
+    "prompt": "Transparent 3:2 cookbook sprite: dish in left two-thirds; four raw ingredient cutouts in a 2x2 grid in right third; hand-painted watercolor/gouache, no text or icons. Subject: golden French onion soup with toasted cheese bread in a dark crock. Ingredients: golden onions, a short baguette, a wedge of gruyere cheese, thyme sprigs",
+    "dishNames": {
+      "de": "Französische Zwiebelsuppe",
+      "en": "French onion soup"
+    },
+    "ingredientNames": {
+      "de": [
+        "Zwiebeln",
+        "Baguette",
+        "Gruyère",
+        "Thymian"
+      ],
+      "en": [
+        "golden onions",
+        "a short baguette",
+        "a wedge of gruyere cheese",
+        "thyme sprigs"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        475,
+        512
+      ],
+      "ingredients": [
+        [
+          475,
+          0,
+          150,
+          285
+        ],
+        [
+          625,
+          0,
+          143,
+          285
+        ],
+        [
+          475,
+          285,
+          150,
+          227
+        ],
+        [
+          625,
+          285,
+          143,
+          227
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/here-we-go-again-dish.webp",
+        "sha256": "13b7a62d443ec260a5e38531184639c1b5aa2f7feae79055371920062ebc5500",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          6,
+          29,
+          459,
+          473
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/here-we-go-again-ingredient-0.webp",
+          "sha256": "cd31b080d8a07bfa867b60c1480ed1ddcf652d76675bb5a6d009d88c4c63fb32",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            471,
+            15,
+            625,
+            262
+          ]
+        },
+        {
+          "file": "cutouts/here-we-go-again-ingredient-1.webp",
+          "sha256": "f9678e9a5e978624e7d6fffb6d9ea5f0c9ab64806e4d1d585a67bf8785ac21e7",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            631,
+            33,
+            760,
+            273
+          ]
+        },
+        {
+          "file": "cutouts/here-we-go-again-ingredient-2.webp",
+          "sha256": "f3d758734b2510c5a5dc470a039d0a34493e22efb45857f4026b4847c2bae180",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            410,
+            297,
+            626,
+            484
+          ]
+        },
+        {
+          "file": "cutouts/here-we-go-again-ingredient-3.webp",
+          "sha256": "13eea3cb763d38915d5708a8359dab685f3d304036901b8c693236702a04af23",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            625,
+            274,
+            762,
+            487
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "catch-me-up",
+    "file": "catch-me-up.webp",
+    "dish": "a comforting lentil and root vegetable stew in a rustic ceramic bowl",
+    "ingredients": [
+      "dry green lentils in a bowl",
+      "carrots",
+      "potatoes",
+      "fresh spinach leaves"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "b095ba8330fda7accd571d99c4cb018de215f76f3f815845c52cb0b4ddca3a54",
+    "sha256": "8cded24bf299a294e02c1d084acbdade5370084a2a995c819fe4383984fd6c51",
+    "prompt": "Transparent 3:2 cookbook sprite: dish in left two-thirds; four raw ingredient cutouts in a 2x2 grid in right third; hand-painted watercolor/gouache, no text or icons. Subject: a comforting lentil and root vegetable stew in a rustic ceramic bowl. Ingredients: dry green lentils in a bowl, carrots, potatoes, fresh spinach leaves",
+    "dishNames": {
+      "de": "Linseneintopf",
+      "en": "Lentil stew"
+    },
+    "ingredientNames": {
+      "de": [
+        "Linsen",
+        "Karotten",
+        "Kartoffeln",
+        "Spinat"
+      ],
+      "en": [
+        "dry green lentils in a bowl",
+        "carrots",
+        "potatoes",
+        "fresh spinach leaves"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        480,
+        512
+      ],
+      "ingredients": [
+        [
+          480,
+          0,
+          145,
+          285
+        ],
+        [
+          625,
+          0,
+          143,
+          285
+        ],
+        [
+          480,
+          285,
+          145,
+          227
+        ],
+        [
+          625,
+          285,
+          143,
+          227
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/catch-me-up-dish.webp",
+        "sha256": "4c85bcb86b9068b48e684c9e25b48477e864acffafa467a3e840e1753375891e",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          6,
+          50,
+          459,
+          457
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/catch-me-up-ingredient-0.webp",
+          "sha256": "7faa948049acfb99e406c7594fafdb255c0b2bbb160817673ac14fe076d77780",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            463,
+            105,
+            636,
+            257
+          ]
+        },
+        {
+          "file": "cutouts/catch-me-up-ingredient-1.webp",
+          "sha256": "54dcb0bd9b55baf8d5370d77040b09b85f6c0c1917ad18dba871ff58bf5a2ccd",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            606,
+            44,
+            768,
+            298
+          ]
+        },
+        {
+          "file": "cutouts/catch-me-up-ingredient-2.webp",
+          "sha256": "4164cf9acdc81a08ca4133de0fe84898e3f91e10da2421f7ad46dc0bbb588eb6",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            465,
+            295,
+            619,
+            449
+          ]
+        },
+        {
+          "file": "cutouts/catch-me-up-ingredient-3.webp",
+          "sha256": "dfb16aa3c42c60f2b40ef75ab10e5fa2a49b169602ca7d2e920751b00eebfeaa",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            608,
+            287,
+            768,
+            469
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "finish-my-prompt",
+    "file": "finish-my-prompt.webp",
+    "dish": "handmade potato gnocchi with sage butter on a shallow cream plate",
+    "ingredients": [
+      "potatoes",
+      "flour in a bowl",
+      "one whole egg",
+      "sage leaves"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "7d6c4b60823434f43a3417b13e7ff81291716a463335b2880bf38cdc427782f9",
+    "sha256": "1924d83d7d5ab8fb6f59e16ae6ae3b4b05dec6f56c98ea14b2cc300a976dc460",
+    "prompt": "Transparent 3:2 cookbook sprite: dish in left two-thirds; four raw ingredient cutouts in a 2x2 grid in right third; hand-painted watercolor/gouache, no text or icons. Subject: handmade potato gnocchi with sage butter on a shallow cream plate. Ingredients: potatoes, flour in a bowl, one whole egg, sage leaves",
+    "dishNames": {
+      "de": "Gnocchi mit Salbeibutter",
+      "en": "Gnocchi with sage butter"
+    },
+    "ingredientNames": {
+      "de": [
+        "Kartoffeln",
+        "Mehl",
+        "Ei",
+        "Salbei"
+      ],
+      "en": [
+        "potatoes",
+        "flour in a bowl",
+        "one whole egg",
+        "sage leaves"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        450,
+        512
+      ],
+      "ingredients": [
+        [
+          450,
+          0,
+          160,
+          275
+        ],
+        [
+          610,
+          0,
+          158,
+          275
+        ],
+        [
+          450,
+          275,
+          160,
+          237
+        ],
+        [
+          610,
+          275,
+          158,
+          237
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/finish-my-prompt-dish.webp",
+        "sha256": "af483e33da3c839cbbaba3b1b464aafe7f96b10014e2f23f13536ee24aef516b",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          8,
+          32,
+          450,
+          457
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/finish-my-prompt-ingredient-0.webp",
+          "sha256": "744b24be61c4038f635a5960467e44c40db9890699aefbff31d8e6a1bdcbd88e",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            451,
+            8,
+            600,
+            258
+          ]
+        },
+        {
+          "file": "cutouts/finish-my-prompt-ingredient-1.webp",
+          "sha256": "6a2fd228e2461d601f09c55d1ef15392349ad3bda4425136aba21ee79fcf56fc",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            594,
+            91,
+            768,
+            255
+          ]
+        },
+        {
+          "file": "cutouts/finish-my-prompt-ingredient-2.webp",
+          "sha256": "16b95ea3d0b5f98bef71725d24d00cfd40dc8a4781b82bf071a233932e3fd96d",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            433,
+            302,
+            579,
+            499
+          ]
+        },
+        {
+          "file": "cutouts/finish-my-prompt-ingredient-3.webp",
+          "sha256": "f595cbad4780d3e7e738c14428347f27a88b75c45489bc12bc760c877adb6149",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            610,
+            272,
+            767,
+            512
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "which-name-wins",
+    "file": "which-name-wins.webp",
+    "dish": "three distinct tomato and mozzarella bruschetta on a small wooden board",
+    "ingredients": [
+      "ripe tomatoes",
+      "basil leaves",
+      "crusty sourdough bread",
+      "a mozzarella ball"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "80b851599d87668e5bcad1eb20ec8d125e8a82630d52f6d715f22943b614c94b",
+    "sha256": "d914300998a9dfe789e73282dc0a1c7aa4f87300752d229a96b9c590f718f754",
+    "prompt": "Use case: stylized-concept. ONE production transparent cookbook food sprite sheet, exactly landscape 3:2. Left two-thirds is ONE large appetizing three distinct tomato and mozzarella bruschetta on a small wooden board, overhead three-quarter perspective. Right third is four separate raw ingredient illustrations in a 2 by 2 grid: top left ripe tomatoes, top right basil leaves, bottom left crusty sourdough bread, bottom right a mozzarella ball. Dish entirely within x=0..66.6%, ingredients in x=66.6..83.3% and 83.3..100%, y=0..50% and 50..100%. Give every zone generous transparent padding; do not overlap zones. Elegant hand-painted cookbook watercolor and gouache, richly textured recognizable real food, delicate brush edges, wine red and sage accents, warm cream ceramics, natural ingredient colors. True transparent alpha background and clear transparent gaps, no backdrop or glow wash, no page, no scene, no typography or labels, no icons, no people. Keep the plate rim and each ingredient complete inside its own zone.",
+    "dishNames": {
+      "de": "Bruschetta-Trio",
+      "en": "Bruschetta trio"
+    },
+    "ingredientNames": {
+      "de": [
+        "Tomaten",
+        "Basilikum",
+        "Sauerteigbrot",
+        "Mozzarella"
+      ],
+      "en": [
+        "ripe tomatoes",
+        "basil leaves",
+        "crusty sourdough bread",
+        "a mozzarella ball"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        470,
+        512
+      ],
+      "ingredients": [
+        [
+          445,
+          0,
+          175,
+          260
+        ],
+        [
+          620,
+          0,
+          148,
+          260
+        ],
+        [
+          445,
+          260,
+          175,
+          252
+        ],
+        [
+          620,
+          260,
+          148,
+          252
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/which-name-wins-dish.webp",
+        "sha256": "4cf3a3ce518e1dfcfee0df6b3f1ec7dc8da5b0e1ee6c2643dd9457c550025186",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          8,
+          23,
+          472,
+          497
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/which-name-wins-ingredient-0.webp",
+          "sha256": "5b9ea42db3b87f869096cf9a3d6e47dfdb88f6a376abb2f6ed11dae7b72f3b6f",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            440,
+            15,
+            608,
+            240
+          ]
+        },
+        {
+          "file": "cutouts/which-name-wins-ingredient-1.webp",
+          "sha256": "d5019185c87502615cf6b896cea98425ab730f67b57dc0c65a1f0b716c86cf50",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            616,
+            72,
+            767,
+            240
+          ]
+        },
+        {
+          "file": "cutouts/which-name-wins-ingredient-2.webp",
+          "sha256": "caa5447453f053fec8fb241ec1fb53a05bd10d6b8f8d82c0c7f0d7ae484231ef",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            441,
+            279,
+            627,
+            449
+          ]
+        },
+        {
+          "file": "cutouts/which-name-wins-ingredient-3.webp",
+          "sha256": "aae1d3fc4c18b5145abef6a553c67ac139518bf0450f2eb8e02e8b0956cb1f48",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            623,
+            295,
+            761,
+            437
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "explain-the-cookbook",
+    "file": "explain-the-cookbook.webp",
+    "dish": "a generous Japanese ramen bowl with noodles, soft egg and vegetables",
+    "ingredients": [
+      "a nest of ramen noodles",
+      "shiitake mushrooms",
+      "a halved soft-boiled egg",
+      "baby bok choy"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "66869a9fbd831acf2c44f29fafe489f19ed1591adf06ae26d357fff5baac6875",
+    "sha256": "e0af54a8368a9d8c8c92944c95d95fc1cbf9f2e50f896b3ed3cf20256d6b5c4a",
+    "prompt": "Use case: stylized-concept. ONE production transparent cookbook food sprite sheet, exactly landscape 3:2. Left two-thirds is ONE large appetizing a generous Japanese ramen bowl with noodles, soft egg and vegetables, overhead three-quarter perspective. Right third is four separate raw ingredient illustrations in a 2 by 2 grid: top left a nest of ramen noodles, top right shiitake mushrooms, bottom left a halved soft-boiled egg, bottom right baby bok choy. Dish entirely within x=0..66.6%, ingredients in x=66.6..83.3% and 83.3..100%, y=0..50% and 50..100%. Give every zone generous transparent padding; do not overlap zones. Elegant hand-painted cookbook watercolor and gouache, richly textured recognizable real food, delicate brush edges, wine red and sage accents, warm cream ceramics, natural ingredient colors. True transparent alpha background and clear transparent gaps, no backdrop or glow wash, no page, no scene, no typography or labels, no icons, no people. Keep the plate rim and each ingredient complete inside its own zone.",
+    "dishNames": {
+      "de": "Ramen",
+      "en": "Ramen"
+    },
+    "ingredientNames": {
+      "de": [
+        "Ramennudeln",
+        "Shiitake",
+        "Ei",
+        "Pak Choi"
+      ],
+      "en": [
+        "a nest of ramen noodles",
+        "shiitake mushrooms",
+        "a halved soft-boiled egg",
+        "baby bok choy"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        465,
+        512
+      ],
+      "ingredients": [
+        [
+          465,
+          0,
+          160,
+          260
+        ],
+        [
+          625,
+          0,
+          143,
+          260
+        ],
+        [
+          465,
+          260,
+          160,
+          252
+        ],
+        [
+          625,
+          260,
+          143,
+          252
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/explain-the-cookbook-dish.webp",
+        "sha256": "d4a4ff349d83bff4b5bb0719ebacc33926cad28c25c21a02488ed4dda14946b6",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          0,
+          25,
+          467,
+          466
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/explain-the-cookbook-ingredient-0.webp",
+          "sha256": "082e1152d8058d359fc656298370a6d9a7301b4ec0f127493f64bf72fff6803e",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            464,
+            71,
+            621,
+            250
+          ]
+        },
+        {
+          "file": "cutouts/explain-the-cookbook-ingredient-1.webp",
+          "sha256": "acb6b80471753c0c2e87f1de586292eecd65ceaed0ea6f95e350a1304d6dcef7",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            631,
+            76,
+            754,
+            250
+          ]
+        },
+        {
+          "file": "cutouts/explain-the-cookbook-ingredient-2.webp",
+          "sha256": "2bab9b4b302417b49a8963b61364f6c71eef4b5bb67ea756ea577f21da8935b1",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            471,
+            291,
+            617,
+            451
+          ]
+        },
+        {
+          "file": "cutouts/explain-the-cookbook-ingredient-3.webp",
+          "sha256": "de9b1a00d4bee2870dcb2b22ef4a75d9dc600a1fb792495fddd2e27903e05a10",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            613,
+            255,
+            760,
+            457
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "welcome",
+    "file": "welcome.webp",
+    "dish": "an inviting Mediterranean mezze platter on a large cream oval ceramic plate",
+    "ingredients": [
+      "chickpeas in a bowl",
+      "a cucumber",
+      "black and green olives",
+      "folded flatbread"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "2aecae9de155318c06f2732b88ef5e85356b0acdf39b96022241f401c6e39b58",
+    "sha256": "e275385a9ad8b24cc1438551b8685f5bba4faa5a99f7f2a67d3b3951aef559f3",
+    "prompt": "Use case: stylized-concept. ONE production transparent cookbook food sprite sheet, exactly landscape 3:2. Left two-thirds is ONE large appetizing an inviting Mediterranean mezze platter on a large cream oval ceramic plate, overhead three-quarter perspective. Right third is four separate raw ingredient illustrations in a 2 by 2 grid: top left chickpeas in a bowl, top right a cucumber, bottom left black and green olives, bottom right folded flatbread. Dish entirely within x=0..66.6%, ingredients in x=66.6..83.3% and 83.3..100%, y=0..50% and 50..100%. Give every zone generous transparent padding; do not overlap zones. Elegant hand-painted cookbook watercolor and gouache, richly textured recognizable real food, delicate brush edges, wine red and sage accents, warm cream ceramics, natural ingredient colors. True transparent alpha background and clear transparent gaps, no backdrop or glow wash, no page, no scene, no typography or labels, no icons, no people. Keep the plate rim and each ingredient complete inside its own zone.",
+    "dishNames": {
+      "de": "Mezze zum Einstieg",
+      "en": "Welcome mezze"
+    },
+    "ingredientNames": {
+      "de": [
+        "Kichererbsen",
+        "Gurke",
+        "Oliven",
+        "Fladenbrot"
+      ],
+      "en": [
+        "chickpeas in a bowl",
+        "a cucumber",
+        "black and green olives",
+        "folded flatbread"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        480,
+        512
+      ],
+      "ingredients": [
+        [
+          465,
+          0,
+          160,
+          260
+        ],
+        [
+          625,
+          0,
+          143,
+          260
+        ],
+        [
+          465,
+          260,
+          160,
+          252
+        ],
+        [
+          625,
+          260,
+          143,
+          252
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/welcome-dish.webp",
+        "sha256": "cbf0322a877aacdc790a346d4bd90cde728fd8e59e8ab115db3c7f67b866ba19",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          0,
+          4,
+          482,
+          453
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/welcome-ingredient-0.webp",
+          "sha256": "2d786138c32afddc604257c26ad1b87cf8a86e14523b455158f5cfe26adbaa1b",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            448,
+            10,
+            629,
+            241
+          ]
+        },
+        {
+          "file": "cutouts/welcome-ingredient-1.webp",
+          "sha256": "6008a57e9590773829aeb84a27108497646b2eef8996e2e80827d573c4a4c6fc",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            615,
+            11,
+            762,
+            246
+          ]
+        },
+        {
+          "file": "cutouts/welcome-ingredient-2.webp",
+          "sha256": "8401357453b991bbe537c378c3130bf5dc55f5b03c2837102ebca46e8525aa7f",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            444,
+            281,
+            612,
+            502
+          ]
+        },
+        {
+          "file": "cutouts/welcome-ingredient-3.webp",
+          "sha256": "fd247976639aa8acbb03ea3dddb124f8f9ede35ee40880539cf4d1e3f206f587",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            597,
+            280,
+            762,
+            455
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "install",
+    "file": "install.webp",
+    "dish": "handmade ricotta ravioli with basil on a cream ceramic plate",
+    "ingredients": [
+      "flour in a bowl",
+      "whole eggs",
+      "ricotta in a bowl",
+      "basil leaves"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "80c6876fcefab1c434740e794575af49fa67dcc340ba24c9ee5acc4e43f8f4ac",
+    "sha256": "23be8a2b66985f57887cfd3dfce309e2bb7d9943d5e73988af82d55e4bae2476",
+    "prompt": "Use case: stylized-concept. ONE production transparent cookbook food sprite sheet, exactly landscape 3:2. Left two-thirds is ONE large appetizing handmade ricotta ravioli with basil on a cream ceramic plate, overhead three-quarter perspective. Right third is four separate raw ingredient illustrations in a 2 by 2 grid: top left flour in a bowl, top right whole eggs, bottom left ricotta in a bowl, bottom right basil leaves. Dish entirely within x=0..66.6%, ingredients in x=66.6..83.3% and 83.3..100%, y=0..50% and 50..100%. Give every zone generous transparent padding; do not overlap zones. Elegant hand-painted cookbook watercolor and gouache, richly textured recognizable real food, delicate brush edges, wine red and sage accents, warm cream ceramics, natural ingredient colors. True transparent alpha background and clear transparent gaps, no backdrop or glow wash, no page, no scene, no typography or labels, no icons, no people. Keep the plate rim and each ingredient complete inside its own zone.",
+    "dishNames": {
+      "de": "Ricotta-Ravioli",
+      "en": "Ricotta ravioli"
+    },
+    "ingredientNames": {
+      "de": [
+        "Mehl",
+        "Eier",
+        "Ricotta",
+        "Basilikum"
+      ],
+      "en": [
+        "flour in a bowl",
+        "whole eggs",
+        "ricotta in a bowl",
+        "basil leaves"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        440,
+        512
+      ],
+      "ingredients": [
+        [
+          440,
+          0,
+          180,
+          280
+        ],
+        [
+          620,
+          0,
+          148,
+          280
+        ],
+        [
+          440,
+          280,
+          180,
+          232
+        ],
+        [
+          620,
+          280,
+          148,
+          232
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/install-dish.webp",
+        "sha256": "c891714125505cfaa2a366fb0854988aaef8bb3536aa4dcdd59ef45f2f9eaa96",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          9,
+          55,
+          449,
+          494
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/install-ingredient-0.webp",
+          "sha256": "431e42d7fedbde7ecbbe238fd7b85a03f5d549bcb8abe9d40b8fee62ef19a19f",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            439,
+            99,
+            616,
+            250
+          ]
+        },
+        {
+          "file": "cutouts/install-ingredient-1.webp",
+          "sha256": "9472a500595d9ed5985951d94366dfa03734e1ea3b1e21032e66804dd48781ac",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            622,
+            103,
+            761,
+            249
+          ]
+        },
+        {
+          "file": "cutouts/install-ingredient-2.webp",
+          "sha256": "75071f9cd5c8aa7ee4460ef2b5c1d96a5cee08165ac7b8a0f37adbdc209c431c",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            432,
+            283,
+            617,
+            474
+          ]
+        },
+        {
+          "file": "cutouts/install-ingredient-3.webp",
+          "sha256": "44f0acda14cbb6b3fb18a30cc0d4c8664e60adc1c3d4448e2ff5a2c3d5a310e3",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            608,
+            275,
+            761,
+            495
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "about",
+    "file": "about.webp",
+    "dish": "a gorgeous spiral vegetable tart with golden pastry on a cream ceramic plate",
+    "ingredients": [
+      "a folded sheet of shortcrust pastry",
+      "a zucchini",
+      "ripe tomatoes",
+      "goat cheese"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "a859b0e78b5901d509f3c15c6e09daddae3e7135e53239422f7c4e3b9a2f56ec",
+    "sha256": "592ec7bc2cd87134a0195ffee569554f3eb4c3c4afb058cc91937e1ae4574ea1",
+    "prompt": "Use case: stylized-concept. ONE production transparent cookbook food sprite sheet, exactly landscape 3:2. Left two-thirds is ONE large appetizing a gorgeous spiral vegetable tart with golden pastry on a cream ceramic plate, overhead three-quarter perspective. Right third is four separate raw ingredient illustrations in a 2 by 2 grid: top left a folded sheet of shortcrust pastry, top right a zucchini, bottom left ripe tomatoes, bottom right goat cheese. Dish entirely within x=0..66.6%, ingredients in x=66.6..83.3% and 83.3..100%, y=0..50% and 50..100%. Give every zone generous transparent padding; do not overlap zones. Elegant hand-painted cookbook watercolor and gouache, richly textured recognizable real food, delicate brush edges, wine red and sage accents, warm cream ceramics, natural ingredient colors. True transparent alpha background and clear transparent gaps, no backdrop or glow wash, no page, no scene, no typography or labels, no icons, no people. Keep the plate rim and each ingredient complete inside its own zone.",
+    "dishNames": {
+      "de": "Gemüsetarte",
+      "en": "Vegetable tart"
+    },
+    "ingredientNames": {
+      "de": [
+        "Mürbeteig",
+        "Zucchini",
+        "Tomaten",
+        "Ziegenkäse"
+      ],
+      "en": [
+        "a folded sheet of shortcrust pastry",
+        "a zucchini",
+        "ripe tomatoes",
+        "goat cheese"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        0,
+        455,
+        512
+      ],
+      "ingredients": [
+        [
+          455,
+          0,
+          170,
+          270
+        ],
+        [
+          625,
+          0,
+          143,
+          270
+        ],
+        [
+          455,
+          270,
+          170,
+          242
+        ],
+        [
+          625,
+          270,
+          143,
+          242
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/about-dish.webp",
+        "sha256": "eedd6cb02f8cac8edc962253fdec17a0ea97639522688608dede1832baa126d5",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          14,
+          40,
+          457,
+          472
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/about-ingredient-0.webp",
+          "sha256": "fc8828073b1a7d086ba5fac6ba43f2366f732d94658969dc8e49f9ac50035d5a",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            436,
+            36,
+            625,
+            251
+          ]
+        },
+        {
+          "file": "cutouts/about-ingredient-1.webp",
+          "sha256": "8abdc2c57d0ac3859a72cb39681fb2146a854689a5a197437f0ce2dc002b99f9",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            635,
+            56,
+            761,
+            265
+          ]
+        },
+        {
+          "file": "cutouts/about-ingredient-2.webp",
+          "sha256": "c8f6d5970837c844e1f5cf14403c9518ad6e286691a52c3b1e695b249d3655b0",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            453,
+            289,
+            616,
+            456
+          ]
+        },
+        {
+          "file": "cutouts/about-ingredient-3.webp",
+          "sha256": "256de5b9072a31ac27f8f14310e7ecbb4cca10af9f3f62f37192799ee9e34b43",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            627,
+            295,
+            761,
+            472
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "you-got-this",
+    "file": "you-got-this.webp",
+    "dish": "paella in a copper pan",
+    "ingredients": [
+      "short grain rice",
+      "red bell pepper",
+      "green peas",
+      "lemon"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-24",
+    "source_sha256": "3b92086bd2fb3755381a76bdbcd7dae329b13db04640ab822cbaddbe85a79d42",
+    "sha256": "59a2eb88aa2adecc28e0e6926bf6db11c3fb67e8c961996545ae4c71b5af8810",
+    "prompt": "Transparent 3:2 hand-painted watercolor/gouache cookbook sheet. Whole copper paella pan at left; four separate raw ingredients at right in 2x2 layout: rice, red bell pepper, peas, lemon. Full silhouettes, clear gaps, no lettering.",
+    "dishNames": {
+      "de": "Paella",
+      "en": "Paella"
+    },
+    "ingredientNames": {
+      "de": [
+        "Reis",
+        "Paprika",
+        "Erbsen",
+        "Zitrone"
+      ],
+      "en": [
+        "Rice",
+        "Bell pepper",
+        "Peas",
+        "Lemon"
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/you-got-this-dish.webp",
+        "sha256": "d3d6f57e8a4ba44155938ce84dd22ae3d233350b3ea51c7d475a47e55eb48f91",
+        "size": [
+          480,
+          480
+        ],
+        "source_bounds": [
+          0,
+          31,
+          469,
+          487
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/you-got-this-ingredient-0.webp",
+          "sha256": "37e7df7fe2dee6231f12699ab7bcd05053b54b096de4e0b0ee67266fe6ff9569",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            448,
+            91,
+            622,
+            257
+          ]
+        },
+        {
+          "file": "cutouts/you-got-this-ingredient-1.webp",
+          "sha256": "80ae227a995a701952e6129e1f81d18e371e7a9247b4e7920e093aae94a5e6cf",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            621,
+            62,
+            764,
+            264
+          ]
+        },
+        {
+          "file": "cutouts/you-got-this-ingredient-2.webp",
+          "sha256": "b0fb4ebbfbf97c93ac46796f7f9561108a88125c8f23f28859a690392992b0bb",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            467,
+            297,
+            627,
+            450
+          ]
+        },
+        {
+          "file": "cutouts/you-got-this-ingredient-3.webp",
+          "sha256": "8004736bf8f0c2f39d653ecf3be43b12ea5ae6810485aef177eb15f1018e4151",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            625,
+            279,
+            768,
+            463
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  }
+]

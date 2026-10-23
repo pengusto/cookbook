@@ -1,3 +1,5 @@
+> Namensstand 2026-10-23: Das aktuelle Projekt heißt **Cookbook by Pengusto**, das Repository ist [`pengusto/cookbook`](https://github.com/pengusto/cookbook). Das unten früher vorgeschlagene Ziel `pengusto/vibe-coding-cookbook` ist überholt; die damaligen Prüf- und Freigabestände bleiben historische Angaben.
+
 > Historical preparation record. For current Beta status, installation and limitations, use the [README](../README.md) and [public release review](public-release-review.md).
 
 # Privater Review und Übergabe

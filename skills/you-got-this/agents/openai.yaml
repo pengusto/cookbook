@@ -1,0 +1,4 @@
+interface:
+  display_name: "{{TITLE}}"
+  short_description: "Execute a goal, verify and improve the result"
+  default_prompt: "Use ${{ID}} to execute this project goal autonomously, preserve its intent and verify the actual result."

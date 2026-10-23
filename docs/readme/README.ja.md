@@ -1,5 +1,7 @@
 # Cookbook by Pengusto
 
+プロジェクト名：**Cookbook by Pengusto** · GitHub リポジトリ：[`pengusto/cookbook`](https://github.com/pengusto/cookbook)。
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../assets/readme/cookbook-banner-storybook-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="../../assets/readme/cookbook-banner-storybook-v3.png">
@@ -14,11 +16,11 @@
 
 **コーディングの会話で、次の一歩に合うレシピを。**
 
-Cookbook は Codex や Claude Code を使う開発者向けに、13 のワークフローを提供します。プロジェクトの計画、進捗確認、休止後の状況把握、共有前のレビュー、引き継ぎの整理に使えます。必要なときにレシピを選び、ホストとモデルが作業を行います。
+Cookbook は Codex や Claude Code を使う開発者向けに、14 のワークフローを提供します。プロジェクトの計画、進捗確認、休止後の状況把握、共有前のレビュー、引き継ぎの整理に使えます。必要なときにレシピを選び、ホストとモデルが作業を行います。
 
 **わかりやすい質問**か**料理の名前**を選んでください。両方とも同じ管理された指示から生成されます。ホストごとに一方の命名スタイルをインストールします。
 
-**実験的な公開ベータ · 0.5.1.** [レシピを見る](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**実験的な公開ベータ · 0.6.0.** [レシピを見る](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## クイックスタート：命名スタイルを選ぶ
 
@@ -56,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 28 individual ZIPs + `SHA256SUMS`.
 
 ## ビルドと検証
 
@@ -85,6 +87,7 @@ python3 scripts/launch_check.py
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
 | Explain the Cookbook | Show Me the Kitchen |
+| You Got This | You’re the Chef |
 
 ## 更新
 
@@ -108,7 +111,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## 制限と状態
 
-パッケージ、ハッシュ、リンク、可搬ビルドの検証は自動化されています。メンテナーは 0.4.0 の十二のスキルの Desktop 選択画面と終了ガイドを確認しました。0.5.0 の新しい導入ガイドは、新規のネイティブ Codex 呼び出しで別途テストされています。これは各バージョンの記録であり、0.5.1 全体の視覚的受け入れ確認やストア承認ではありません。視覚的な Cookbook は 12 の UI 言語とシステム／ライト／ダークテーマに対応します。UI 言語はワークフローの指示を翻訳しません。任意のローカル MCP サイドバーは別パッケージです。
+パッケージ、ハッシュ、リンク、可搬ビルドの検証は自動化されています。メンテナーは 0.4.0 の十二のスキルの Desktop 選択画面と終了ガイドを確認しました。0.5.0 の新しい導入ガイドは、新規のネイティブ Codex 呼び出しで別途テストされています。これは各バージョンの記録であり、0.6.0 全体の視覚的受け入れ確認やストア承認ではありません。視覚的な Cookbook は 12 の UI 言語とシステム／ライト／ダークテーマに対応します。UI 言語はワークフローの指示を翻訳しません。任意のローカル MCP サイドバーは別パッケージです。
 
 セキュリティや法務のレシピは検証を案内しますが、保証はしません。リポジトリとウェブサイトの公開はストア申請とは別です。インポートした Git 履歴と帰属情報は、承認された過去の連絡先ページも含めて保存されています。置き換えられた四つの GitHub リポジトリはメンテナーの承認で削除されました。 [0.5.0 acceptance](../../docs/acceptance-0.5.0.md) · [Release review](../../docs/public-release-review.md).
 

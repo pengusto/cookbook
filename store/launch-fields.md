@@ -1,6 +1,6 @@
 # Öffentliche Ziele und offene Store-Angaben
 
-Version 0.5.0. Die bestätigten Ziele sind in `store/listing.json` eingetragen. Vor einer Store-Einreichung die tatsächliche Live-Erreichbarkeit und den exakten Upload-Build erneut prüfen.
+Lokale Version 0.6.0. Die bestätigten Ziele sind in `store/listing.json` eingetragen. Vor einer Store-Einreichung die tatsächliche Live-Erreichbarkeit und den exakten Upload-Build erneut prüfen.
 
 | Feld | Ziel |
 |---|---|

@@ -1,5 +1,7 @@
 # Cookbook by Pengusto
 
+Proyecto: **Cookbook by Pengusto** · Repositorio de GitHub: [`pengusto/cookbook`](https://github.com/pengusto/cookbook).
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../assets/readme/cookbook-banner-storybook-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="../../assets/readme/cookbook-banner-storybook-v3.png">
@@ -14,11 +16,11 @@
 
 **Una receta para el siguiente paso de tu conversación de código.**
 
-Cookbook ofrece a quienes desarrollan con Codex o Claude Code 13 flujos concretos: planificar un proyecto, comprobar el progreso, retomar el contexto tras una pausa, revisar antes de compartir y cerrar con un traspaso útil. Elige una receta cuando la necesites; tu entorno y modelo realizan el trabajo.
+Cookbook ofrece a quienes desarrollan con Codex o Claude Code 14 flujos concretos: planificar un proyecto, comprobar el progreso, retomar el contexto tras una pausa, revisar antes de compartir y cerrar con un traspaso útil. Elige una receta cuando la necesites; tu entorno y modelo realizan el trabajo.
 
 Elige **preguntas sencillas** o **nombres de cocina**. Ambos estilos se generan desde las mismas instrucciones mantenidas; instala un estilo por entorno.
 
-**Beta pública experimental · 0.5.1.** [Explorar las recetas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Beta pública experimental · 0.6.0.** [Explorar las recetas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Inicio rápido: elige un estilo
 
@@ -56,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 28 individual ZIPs + `SHA256SUMS`.
 
 ## Compilar y verificar
 
@@ -85,6 +87,7 @@ python3 scripts/launch_check.py
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
 | Explain the Cookbook | Show Me the Kitchen |
+| You Got This | You’re the Chef |
 
 ## Actualizar
 
@@ -108,7 +111,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## Límites y estado
 
-Las comprobaciones de paquetes, hashes, enlaces y compilación portátil están automatizadas. El responsable confirmó el selector Desktop con doce skills y la guía de cierre en 0.4.0; la nueva introducción se probó por separado en 0.5.0 con una invocación nativa nueva de Codex. Son pruebas fechadas, no una aceptación visual completa de 0.5.1 ni aprobación en tienda. El Cookbook visual ofrece 12 idiomas de interfaz y temas del sistema/claro/oscuro; no traduce las instrucciones de los flujos. La barra lateral MCP local opcional es un paquete separado.
+Las comprobaciones de paquetes, hashes, enlaces y compilación portátil están automatizadas. El responsable confirmó el selector Desktop con doce skills y la guía de cierre en 0.4.0; la nueva introducción se probó por separado en 0.5.0 con una invocación nativa nueva de Codex. Son pruebas fechadas, no una aceptación visual completa de 0.6.0 ni aprobación en tienda. El Cookbook visual ofrece 12 idiomas de interfaz y temas del sistema/claro/oscuro; no traduce las instrucciones de los flujos. La barra lateral MCP local opcional es un paquete separado.
 
 Las recetas de seguridad y revisión legal orientan las comprobaciones sin garantías. Publicar el repositorio y la web es distinto de enviarlo a la tienda. Se conservan los historiales Git importados y su atribución, incluidas las páginas de contacto históricas aprobadas; los cuatro repositorios GitHub sustituidos se eliminaron con autorización del responsable. [0.5.0 acceptance](../../docs/acceptance-0.5.0.md) · [Release review](../../docs/public-release-review.md).
 

@@ -1,5 +1,7 @@
 # Cookbook by Pengusto
 
+프로젝트: **Cookbook by Pengusto** · GitHub 저장소: [`pengusto/cookbook`](https://github.com/pengusto/cookbook).
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../assets/readme/cookbook-banner-storybook-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="../../assets/readme/cookbook-banner-storybook-v3.png">
@@ -18,7 +20,7 @@ Cookbook은 Codex 또는 Claude Code를 사용하는 개발자에게 13개의 �
 
 **쉬운 질문** 또는 **요리 이름**을 선택하세요. 두 스타일은 같은 관리 지침에서 생성되며, 호스트마다 하나의 이름 체계를 설치합니다.
 
-**실험적 공개 베타 · 0.5.1.** [레시피 둘러보기](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**실험적 공개 베타 · 0.6.0.** [레시피 둘러보기](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## 빠른 시작: 이름 체계 선택
 
@@ -56,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 26 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 28 individual ZIPs + `SHA256SUMS`.
 
 ## 빌드 및 검증
 
@@ -85,6 +87,7 @@ python3 scripts/launch_check.py
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
 | Explain the Cookbook | Show Me the Kitchen |
+| You Got This | You’re the Chef |
 
 ## 업데이트
 
@@ -108,7 +111,7 @@ python3 scripts/cookbook.py serve --port 8767
 
 ## 제한 및 상태
 
-패키지, 해시, 링크 및 이식 가능한 재빌드 검사는 자동화되어 있습니다. 관리자는 0.4.0에서 열두 스킬의 Desktop 선택기와 종료 가이드를 확인했습니다. 0.5.0의 새 소개 가이드는 새 네이티브 Codex 호출로 별도 테스트되었습니다. 이는 해당 버전의 검사 기록이며 0.5.1 전체의 시각적 승인이나 스토어 승인이 아닙니다. 시각적 Cookbook은 12개 UI 언어와 시스템/밝은/어두운 테마를 제공합니다. UI 언어는 워크플로 지침을 번역하지 않습니다. 선택적인 로컬 MCP 사이드바는 별도 패키지입니다.
+패키지, 해시, 링크 및 이식 가능한 재빌드 검사는 자동화되어 있습니다. 관리자는 0.4.0에서 열두 스킬의 Desktop 선택기와 종료 가이드를 확인했습니다. 0.5.0의 새 소개 가이드는 새 네이티브 Codex 호출로 별도 테스트되었습니다. 이는 해당 버전의 검사 기록이며 0.6.0 전체의 시각적 승인이나 스토어 승인이 아닙니다. 시각적 Cookbook은 12개 UI 언어와 시스템/밝은/어두운 테마를 제공합니다. UI 언어는 워크플로 지침을 번역하지 않습니다. 선택적인 로컬 MCP 사이드바는 별도 패키지입니다.
 
 보안 및 법률 검토 레시피는 검사를 안내하지만 보장하지 않습니다. 저장소 및 웹사이트 공개는 스토어 제출과 별개입니다. 승인된 과거 연락처 페이지를 포함한 가져온 Git 기록과 출처는 보존됩니다. 대체된 네 개의 GitHub 저장소는 관리자의 승인으로 삭제되었습니다. [0.5.0 acceptance](../../docs/acceptance-0.5.0.md) · [Release review](../../docs/public-release-review.md).
 

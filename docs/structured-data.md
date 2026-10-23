@@ -1,3 +1,19 @@
+# Aktueller Prüfstand · 2026-10-24 · 0.6.0
+
+Der Schema-Skill wurde für die offene Kochbuchansicht und die ausführlichen Installationsübersichten erneut angewendet. Der aktuelle Katalog enthält 14 Workflows, einschließlich **You Got This** / **You’re the Chef**. `scripts/cookbook.py` erzeugt weiterhin einen JSON-LD-Block als `CollectionPage` mit `ItemList` und je einem `CreativeWork` pro Workflow. Namen, Beschreibungen und Reihenfolge stammen aus dem Katalog und den jeweiligen Sprachdaten. Das Gericht ist eine Illustration der Arbeitsweise; deshalb wird kein `Recipe`-Markup erzeugt.
+
+Die lokalen Vertragstests prüfen die sechs erzeugten Buch-Routen (`index.html`, `index-en.html`, `kitchen.html`, `kitchen-en.html`, `cookbook.html`, `cookbook-plain.html`) und die vier ausführlichen Installationsübersichten. Für die Buch-Routen vergleichen sie Sprache, genaue Anzahl und Reihenfolge, Positionen, lokalisierte Beschreibungen sowie Namen mit Navigation und lesbarem No-JavaScript-Katalog. Ein gesonderter Test prüft die sichere Einbettung von Sonderzeichen und `</script>` in JSON-LD. Die abschließende Build- und Testausführung erfolgt gemeinsam mit dem aktuellen Paket; historische Testzahlen unten gelten ausschließlich für den jeweiligen damaligen Stand.
+
+Aktueller Quellenabgleich: [Schema.org CollectionPage](https://schema.org/CollectionPage), [ItemList](https://schema.org/ItemList) und [Google-Richtlinien für strukturierte Daten](https://developers.google.com/search/docs/appearance/structured-data/sd-policies). Die Typen beschreiben die Workflow-Sammlung sachlich. Es werden keine Preise, Bewertungen, Verfügbarkeit, Veröffentlichungstermine oder besondere Google-Suchdarstellungen erfunden. Korrektes Schema.org-Markup allein belegt keine Rich-Result-Eignung.
+
+In diesem Durchlauf wurden keine Daten an externe Validatoren übermittelt und kein neuer externer Validierungserfolg behauptet. Nach ausdrücklicher Nutzerfreigabe wurde die lokale Browserprüfung fortgesetzt: Der gerenderte Buchzustand enthielt CollectionPage mit 14 Einträgen; beim Wechsel auf Arabisch blieb die deutsche Infoseite samt JSON-LD auf Deutsch und LTR. Die Sichtprüfung ersetzt keine externe Schema.org-/Google-Validator-Prüfung. Website-Veröffentlichung, Crawl-/Indexierungsnachweis und Search-Console-Prüfung bleiben separate Schritte. Die früheren offiziellen Code-Tests und ihre Hashes sind nachfolgend unverändert als historische Nachweise erhalten; ihre damaligen Aussagen zu sechs/sieben Einträgen, URLs oder `noindex` beschreiben nicht den aktuellen Build.
+
+English: The current 0.6.0 catalog has 14 workflows. Local contracts cover all six generated book routes and four installation overview pages, matching JSON-LD to localized content and the readable fallback. CollectionPage / ItemList / CreativeWork remains appropriate; food illustrations do not make these cooking recipes. No fresh external validator submission, rich-result claim, deployment or indexing verification is implied by this review. Historical evidence below retains its original scope.
+
+---
+
+> Namensstand 2026-10-23: Aktuelle Builds verwenden **Cookbook by Pengusto**. `Vibe Coding Cookbook` im alten Beispiel `structured-data/cookbook.jsonld` ist ein historischer Titel und keine aktuelle Build-Eingabe.
+
 > **Historischer Prüfstand 0.1.x.** Die aktuelle Architektur, Namenswelten und Installationswege stehen in [consolidation.md](consolidation.md) und der [README](../README.md). Frühere Testergebnisse werden nicht als neue 0.2.0-Abnahme behauptet.
 
 # Strukturierte Daten: lokal eingebunden

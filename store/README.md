@@ -1,4 +1,4 @@
-> **Current preparation 0.5.1:** thirteen skills; public website/privacy destinations configured. Exact current artifacts and remaining Desktop/portal gates: [release checklist](../docs/release-checklist.md). Earlier results below are historical.
+> **Current local preparation 0.6.0:** fourteen skills; public website/privacy destinations configured. Exact current artifacts and remaining Desktop/portal gates: [release checklist](../docs/release-checklist.md). Earlier results below are historical.
 
 > **Abnahme 0.4.0 abgeschlossen (2026-10-22):** zwölf Skills nativ synthetisch geprüft; Nutzer bestätigt alle zwölf im Desktop-Picker und funktionierenden Abschluss-Guide. Exaktes Upload-ZIP erneut gescannt. Store-Zugang scheitert aktuell an der Identitätsprüfung; veröffentlichte vollständige Datenschutzerklärung fehlt. [Finaler Bericht](../docs/final-acceptance-0.4.0.md). Nichts hochgeladen oder veröffentlicht.
 

@@ -2,7 +2,7 @@
 
 Version {{VERSION}} · {{HOST}} · {{VARIANT}}
 
-Dreizehn Workflows für Projektplanung, Fortschrittschecks, Chat-Rückblicke, Sicherheits- und Rechtsfragen, Release-Vorbereitung, Änderungsnotizen und einen bewussten Chat-Abschluss. Nach der Installation eine neue Host-Sitzung öffnen und einen Workflow zusammen mit dem eigenen Anliegen aufrufen.
+{{COUNT}} Workflows für Projektplanung, Fortschrittschecks, Chat-Rückblicke, Sicherheits- und Rechtsfragen, Release-Vorbereitung, Änderungsnotizen und einen bewussten Chat-Abschluss. Nach der Installation eine neue Host-Sitzung öffnen und einen Workflow zusammen mit dem eigenen Anliegen aufrufen.
 
 | Workflow | Aufruf |
 |---|---|

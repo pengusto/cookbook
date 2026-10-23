@@ -23,16 +23,17 @@ class SidebarContracts(unittest.TestCase):
             data = json.loads(payload[1])
             self.assertEqual(set(data['locales']), {'de','en','fr','es','pt-BR','it','tr','ja','ko','zh-CN','ar','hi'})
             self.assertEqual([r['id'] for r in data['recipes']], [r['install_ids'][variant] for r in builder.catalog()])
-            self.assertEqual(data['version'], '0.5.1')
+            self.assertEqual(data['version'], json.loads((builder.ROOT / 'bundle.json').read_text())['sidebar_version'])
             self.assertEqual(data['variant'], variant)
             self.assertEqual([r['names'] for r in data['recipes']], [{'plain': r['title'], 'kitchen': r['cooking_title']} for r in builder.catalog()])
-            self.assertIn("$('invocation').textContent='$'+recipe.id", text)
+            self.assertIn("skillInvocation(publicBook?recipe.installIds[naming]:recipe.id)", text)
             self.assertIn('cookbook-naming', text)
             self.assertIn("let appearance='system'", text)
             for locale in data['locales'].values():
-                self.assertEqual(len(locale['stepNotes12']), 4)
+                self.assertTrue(all(len(locale['stepNotes'+str(i)]) == 4 for i in (12, 13)))
                 self.assertEqual(len(locale['verifications']), len(builder.catalog()))
                 self.assertEqual(len(locale['ingredientLists']), len(builder.catalog()))
+                self.assertEqual(len({tuple(items) for items in locale['ingredientLists']}), len(builder.catalog()))
                 self.assertEqual(len(locale['intros'].split('|')), len(builder.catalog()))
                 self.assertTrue(all(len(locale['steps'+str(i)].split('|')) == 4 for i in range(len(builder.catalog()))))
             self.assertIn('prefers-reduced-motion', text)
@@ -43,6 +44,40 @@ class SidebarContracts(unittest.TestCase):
             self.assertLess(len(files['ui/index.html']), 3 * 1024 * 1024)
             self.assertIn('licenses/animejs.txt', files)
             self.assertIn('licenses/caveat.txt', files)
+
+    def test_food_is_distinct_per_page_and_lenis_is_vendored_with_its_license(self):
+        import hashlib
+        food = builder.food_art()
+        self.assertEqual(len(food), len(builder.catalog()) + 3)
+        self.assertEqual(len({row['sha256'] for row in food.values()}), len(food))
+        for row in food.values():
+            self.assertEqual(len(row['ingredientNames']['de']), 4)
+            self.assertEqual(len(row['ingredientNames']['en']), 4)
+            self.assertTrue(row['dishNames']['de'])
+            cutouts = [row['cutouts']['dish'], *row['cutouts']['ingredients']]
+            self.assertEqual(len(cutouts), 5)
+            for record in cutouts:
+                data = (builder.ROOT / 'assets/cookbook/food' / record['file']).read_bytes()
+                self.assertEqual(hashlib.sha256(data).hexdigest(), record['sha256'])
+                self.assertEqual(data[:4], b'RIFF')
+                self.assertEqual(data[8:16], b'WEBPVP8X')
+                width = 1 + int.from_bytes(data[24:27], 'little')
+                height = 1 + int.from_bytes(data[27:30], 'little')
+                self.assertEqual([width, height], record['size'])
+                self.assertEqual(width, height)
+            style = builder.food_image_style(row)
+            self.assertEqual(len(style), 5)
+            self.assertTrue(all(name.endswith('-image') for name in style))
+        records = json.loads((builder.ROOT / 'assets/vendor/lenis/SOURCE.json').read_text())
+        for name, record in records['files'].items():
+            self.assertEqual(hashlib.sha256((builder.ROOT / 'assets/vendor/lenis' / name).read_bytes()).hexdigest(), record['sha256'])
+        files = builder.sidebar_files('kitchen')
+        self.assertIn('licenses/lenis.txt', files)
+        self.assertIn('licenses/lenis-source.json', files)
+        text = files['ui/index.html'].decode()
+        self.assertIn('new window.Lenis', text)
+        self.assertNotIn('cloneNode(true)', text)
+        self.assertNotIn('/*COOKBOOK_LENIS*/', text)
 
     def test_inline_data_cannot_terminate_script_and_no_runtime_remote_assets(self):
         from unittest.mock import patch

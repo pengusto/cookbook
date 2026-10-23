@@ -1,3 +1,5 @@
+> Namensstand 2026-10-23: Die Sammlung heißt **Cookbook by Pengusto** und verwendet [`pengusto/cookbook`](https://github.com/pengusto/cookbook). `vibe-coding-cookbook` bezeichnet unten die damalige lokale Vorbereitung.
+
 > Historical preparation record. For current Beta status, installation and limitations, use the [README](../README.md) and [public release review](public-release-review.md).
 
 > **Historischer Prüfstand 0.1.x.** Die aktuelle Architektur, Namenswelten und Installationswege stehen in [consolidation.md](consolidation.md) und der [README](../README.md). Frühere Testergebnisse werden nicht als neue 0.2.0-Abnahme behauptet.
