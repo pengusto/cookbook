@@ -1,0 +1,4 @@
+interface:
+  display_name: "Can We Simplify?"
+  short_description: "Reduce complexity while preserving behavior"
+  default_prompt: "Use $can-we-simplify to inspect the selected flow for useful simplifications and preserve its contracts."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review My Changes"
+  short_description: "Review a bounded change for concrete defects"
+  default_prompt: "Use $review-my-changes to review the selected change and report evidence-backed defects without editing unless fixes are requested."
