@@ -27,6 +27,16 @@ Earlier limits such as no edits, no commits, or no publication remain in force. 
 
 Dropping a TODO is not completing it. Change persisted task status only when requested or already authorized, and only to reflect actual work. Do not hide failing checks to produce a clean finish.
 
+## Review cleanup and backups together
+
+When this chat created or downloaded files, or the user requests cleanup, include a scoped cleanup review in the closing plan. Consider backups, staging, test outputs, superseded build packages, downloaded installers and exported documents such as PDFs imported into a document archive. Inspect only relevant locations and distinguish originals, retained recovery copies, reproducible intermediates and uncertain files. Age, filename and apparent duplication alone do not establish that a file is disposable.
+
+For each proposed removal, give its exact path or identifier, size when available, purpose, reason for removal and the retained recovery source. Verify that source is accessible and covers the data being removed; use an integrity or restore check appropriate to the risk. Check active references and retention requirements. Keep unique originals, the only verified recovery copy and anything with unresolved ownership, recovery coverage or retention needs.
+
+For an exported PDF or other document reportedly imported into Paperless or a similar service, verify the actual destination record and retrieve or inspect the stored original to confirm completeness. An upload attempt, receipt, filename match or search hit alone is insufficient. An archive entry does not resolve legal or original-document retention requirements. If destination access or retention is unclear, retain the local file and ask the user for the missing decision. For installers, check whether the installed application still depends on the download and whether a trusted replacement is available for the required version or recovery needs.
+
+Present a short keep/remove/needs-check recommendation so the user can decide together with the agent. Ask about unclear purpose or retention before proposing removal. A cleanup review does not authorize deletion. If exact removals are not already authorized, ask for approval of the concrete list after completing the independent checks; do not treat silence as approval. Guide-only and pause requests remain read-only. Prefer recoverable removal when supported, then verify authorized removals and report what remains, its size when available and the condition for later cleanup. Never broaden this into a machine-wide file purge.
+
 ## Leave a verified handoff
 
 Compare the outcome with the finish line and run checks relevant to the selected slice. Distinguish local files, commits, pushes and deployments; attempted checks and confirmed results; complete, deferred and blocked work. State important coverage limits.
