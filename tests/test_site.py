@@ -79,6 +79,18 @@ class WebsiteContracts(unittest.TestCase):
             self.assertIn('href="install-plain'+suffix+'.html">Plain', text)
             self.assertNotIn('{{', text)
 
+    def test_welcome_routes_debugging_and_journey_checks_to_packaged_workflows(self):
+        import re
+        rows = json.loads((ROOT / 'catalog.json').read_text())
+        source_ids = {row['id'] for row in rows}
+        expected = {'explain-the-cookbook', 'start-it-right', 'catch-me-up', 'let-them-see-it', 'why-is-it-broken', 'you-got-this'}
+        for filename in ('index.html', 'index-en.html', 'cookbook-plain.html'):
+            text = (ROOT / 'site' / filename).read_text()
+            welcome = text.split('id="welcome"', 1)[1].split('id="install"', 1)[0]
+            targets = set(re.findall(r'data-open-recipe="([^"]+)"', welcome))
+            self.assertEqual(expected, targets, filename)
+            self.assertTrue(targets <= source_ids, filename)
+
     def test_every_information_page_has_its_own_ingredients(self):
         import re
         lists = []

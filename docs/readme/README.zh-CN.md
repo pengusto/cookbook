@@ -16,11 +16,11 @@
 
 **为编程对话的下一步选一道配方。**
 
-Cookbook 为使用 Codex 或 Claude Code 的开发者提供 14 个专注的工作流：规划项目、检查进展、在休息后找回上下文、分享前审查，以及整理有用的交接。按需选择配方，由宿主和模型执行工作。
+Cookbook 为使用 Codex 或 Claude Code 的开发者提供 18 个专注的工作流：规划项目、检查进展、在休息后找回上下文、分享前审查，以及整理有用的交接。按需选择配方，由宿主和模型执行工作。
 
 选择**直白问题**或**厨房名称**。两种风格由同一份维护中的指令生成；每个宿主安装一种命名风格。
 
-**实验性公开 Beta · 0.6.0.** [浏览配方](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**实验性公开 Beta · 0.7.0.** [浏览配方](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## 快速开始：选择一种命名风格
 
@@ -74,20 +74,28 @@ python3 scripts/launch_check.py
 
 | Plain | Kitchen |
 |---|---|
-| How Do I Start? | Prep the Kitchen |
-| Am I Making Progress? | Are We Cooking? |
+| Explain the Cookbook | Show Me the Kitchen |
+| Find Our Work | Find the Recipe |
+| Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
+| How Do I Start? | Prep the Kitchen |
+| Finish My Prompt | Finish My Order |
+| Which Name Wins? | Name That Dish |
+| You Got This | You’re the Chef |
+| Am I Making Progress? | Are We Cooking? |
+| Why Is It Broken? | Find the Bad Ingredient |
+| Can We Simplify? | Trim the Recipe |
+| Review My Changes | Taste Before Serving |
 | Did I Leak? | Keep the Recipe Secret |
 | Will They Sue Me? | Can I Serve This? |
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
 | Here We Go Again | Why Did It Burn? |
-| Catch Me Up | Back to the Kitchen |
-| Finish My Prompt | Finish My Order |
-| Which Name Wins? | Name That Dish |
-| Explain the Cookbook | Show Me the Kitchen |
-| You Got This | You’re the Chef |
+
+其他模式：`$prep-the-kitchen explain <flow>` 解释现有代码，`$prep-the-kitchen choose <decision>` 比较方案，`$ready-to-serve verify-live <target>` 验证实际交付，`$close-the-kitchen handoff <destination>` 准备交接。Plain 使用相同参数配合 `$how-do-i-start`、`$am-i-ready-to-share` 和 `$can-we-finish`。这些请求本身不授权修改；准备交接不代表已经完成转移。
+
+按情况选择：[使用指南](../choosing-workflow.md)。当前故障使用 `$find-the-bad-ingredient`（Kitchen）或 `$why-is-it-broken`（Plain）。真实操作流程使用 `$youre-the-chef usertest <flow>` 或 `$you-got-this usertest <flow>`。该模式只报告发现，不自动修复，也不是由真人参与的用户研究。
 
 ## 更新
 

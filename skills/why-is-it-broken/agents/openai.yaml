@@ -1,0 +1,4 @@
+interface:
+  display_name: "{{TITLE}}"
+  short_description: "Reproduce a current failure, find its cause and verify the fix"
+  default_prompt: "Use ${{ID}} to investigate this failure, distinguish evidence from hypotheses and verify any requested fix."

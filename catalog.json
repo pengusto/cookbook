@@ -1,67 +1,94 @@
 [
   {
-    "id": "start-it-right",
-    "title": "How Do I Start?",
-    "phase": "Start",
-    "summary": "Klein anfangen: eine Idee in den nächsten prüfbaren Projektschritt übersetzen.",
-    "when": "Eine Idee ist klar genug zum Besprechen, aber der erste umsetzbare Schritt fehlt.",
-    "ingredients": "Produktidee oder Repository; Zielgruppe, Grenzen, vorhandene Konventionen. Keine Kontozugriffe nötig.",
-    "steps": "Projekt einordnen; nur nötige Entscheidungen klären; kleinen autorisierten Abschnitt umsetzen, ohne Ticketpflicht.",
-    "verify": "Der empfohlene nächste Schritt hat ein beobachtbares Ergebnis; offene Entscheidungen sind sichtbar.",
-    "result": "Kompakter Projektstart mit Empfehlung und, wenn bestätigt, passenden Artefakten.",
-    "limits": "Zusatzmodule und Tickets sind optional. Brainstorming erlaubt keine Umsetzung; bestehende Freigaben bleiben gültig.",
-    "prompt": "${{ID}} brainstorm Eine kleine Website für meine drei Projekte.",
-    "status": "source",
-    "license": "MIT",
-    "revision": null,
-    "repository": null,
-    "files": {
-      "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
-      "SKILL.md": "c84a97d172f4a3e28b2f6c4d0eb67ab18b9df254155590e61b3fc04ec85af885",
-      "agents/openai.yaml": "e2132fb5e90309fc5d1884e41a234875bb610f63827fbafa6372847ce80ff586",
-      "references/artifact-contract.md": "32e58c231bddc210f48008f31337d2540bc90450badac8c9929e22a3761cf90e",
-      "references/examples.md": "ccc828fb2c5f6d9a2aa678d18613d821ead1e97e8e280c21a4cab9f5bcf2e3ea",
-      "references/module-catalog.md": "471f4049414f9f440a6dfbf197b3e57210976d86fe35f4abee0e3ea6fef9c324"
-    },
-    "cooking_title": "Prep the Kitchen",
-    "install_ids": {
-      "plain": "how-do-i-start",
-      "kitchen": "prep-the-kitchen"
-    }
-  },
-  {
-    "id": "are-we-cooking",
-    "title": "Am I Making Progress?",
-    "phase": "Unterwegs",
-    "summary": "Kurz prüfen, ob die aktuelle Vorgehensweise dem Ziel dient.",
-    "when": "Viele Versuche, unklarer Fortschritt oder eine vermutete Nebenbaustelle.",
-    "ingredients": "Aktueller Chat, vereinbartes Ziel, relevante Ergebnisse und Prüfungen.",
-    "steps": "Bekanntes Ziel, belegten Fortschritt und Hindernis abgleichen; nächste sinnvolle Entscheidung empfehlen.",
-    "verify": "Cooking, Stalled, Side quest oder Unclear ist durch sichtbare Evidenz begründet.",
-    "result": "Kurze Kurskorrektur mit nächstem Schritt.",
-    "limits": "Diagnostik allein autorisiert keine neuen Änderungen. Historische Musteranalyse ist optional und kein erforderlicher Zusatz-Skill.",
-    "prompt": "${{ID}} Kommen wir mit diesem Projekt wirklich voran?",
+    "id": "explain-the-cookbook",
+    "title": "Explain the Cookbook",
+    "cooking_title": "Show Me the Kitchen",
+    "phase": "Einführung",
+    "summary": "Cookbook verstehen, den passenden Skill wählen und richtig aufrufen.",
+    "when": "Beim Einstieg oder wenn unklar ist, welcher Workflow zur Situation passt.",
+    "ingredients": "Aktuelle Skill-Liste, installierte Namenswelt, Frage und gewünschtes Ergebnis.",
+    "steps": "Sammlung einordnen; ähnliche Zwecke unterscheiden; passenden Skill empfehlen; konkreten Aufruf zeigen.",
+    "verify": "Nur tatsächlich verfügbare Aufrufe nennen; Anzeigenamen und installierte IDs unterscheiden.",
+    "result": "Verständliche Orientierung mit einer passenden Empfehlung und einem editierbaren Beispiel.",
+    "limits": "Erklärt und empfiehlt; keine automatische Ausführung, Installation oder Freigabe.",
+    "prompt": "${{ID}} Erkläre mir Cookbook und welchen Skill ich nach einer langen Projektpause nutzen sollte.",
     "status": "source",
     "license": "MIT",
     "revision": null,
     "repository": null,
     "files": {
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "e7f79b0290ff7e3b280ac5e75dc373d2b89b8a4d9811c3c9422b8b14d58162bb",
-      "agents/openai.yaml": "4dc21bf49cc77f133981fc3b0e99a56372033d5b0f31f058605e7b9889d16f16"
+      "SKILL.md": "e5a6d77ec6c72d450d67d3007577d48a8fda34b1cdb15f4fdfefc564f7f54c5b",
+      "agents/openai.yaml": "276fe7b61fe3887bcde70ad8bc40ade7f4420d0b35973f796b48a0e3f88d12b6"
     },
-    "cooking_title": "Are We Cooking?",
     "install_ids": {
-      "plain": "am-i-making-progress",
-      "kitchen": "are-we-cooking"
-    }
+      "plain": "explain-the-cookbook",
+      "kitchen": "show-me-the-kitchen"
+    },
+    "chapter": "orientation"
+  },
+  {
+    "id": "find-our-work",
+    "title": "Find Our Work",
+    "cooking_title": "Find the Recipe",
+    "phase": "Wiedereinstieg",
+    "summary": "„Wo hatten wir das angefangen?“ Den richtigen Chat, das Repo oder frühere Artefakt finden.",
+    "when": "Die Quelle der früheren Arbeit ist unbekannt; ein bekannter Chat soll nicht bloß zusammengefasst werden.",
+    "ingredients": "Erinnerter Begriff, ungefähres Datum, Host oder Projekt und verfügbare Suchquellen.",
+    "steps": "Kompakte Inventare durchsuchen; Kandidaten eingrenzen; Originalquelle bestätigen; passenden Einstieg nennen.",
+    "verify": "Titel, Host, Datum und Version passen zum Hinweis; Mehrdeutigkeit bleibt ausdrücklich sichtbar.",
+    "result": "Bestätigter Fund mit nutzbarem Verweis oder kleine Kandidatenliste mit entscheidender Rückfrage.",
+    "limits": "Suche allein erlaubt kein Verschieben, Wiederherstellen oder Fortsetzen. Fehlende Sichtbarkeit beweist keine Löschung.",
+    "prompt": "${{ID}} Wo hatten wir den Scanner-Vergleich vorbereitet? Suche den passenden Chat oder die Übergabe, ändere nichts.",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+      "SKILL.md": "e4bdd9b5307fdefa6d61de19a882e6e506bf86762db98ee0c73bb41f6d6fd2b9",
+      "agents/openai.yaml": "e9bbc23412aaf280d4614f80141f2492a79fb5c87fd6eaa3f36ef35fe70aa7f6"
+    },
+    "install_ids": {
+      "plain": "find-our-work",
+      "kitchen": "find-the-recipe"
+    },
+    "chapter": "orientation"
+  },
+  {
+    "id": "catch-me-up",
+    "title": "Catch Me Up",
+    "cooking_title": "Back to the Kitchen",
+    "phase": "Orientierung",
+    "summary": "„Ich war länger weg.“ Projektstand prüfen und einen heutigen Wiedereinstieg finden.",
+    "when": "Nach längerer Pause brauchst du alte Entscheidungen plus einen Abgleich mit dem heutigen Projekt.",
+    "ingredients": "Verfügbarer Chat, Übergabe und relevante aktuelle Projektartefakte.",
+    "steps": "Letzten bestätigten Stand rekonstruieren; veraltete Angaben gezielt prüfen; Änderungen und nächsten Einstieg benennen.",
+    "verify": "Frühere Berichte sind von heute geprüften Fakten getrennt; fehlender Verlauf bleibt sichtbar.",
+    "result": "Kurzer Wiedereinstieg mit Projektzweck, Entscheidungen, aktuellem Stand und nächstem Schritt.",
+    "limits": "Keine Restarbeit automatisch ausführen und keine aktuelle Bereitstellung aus alten Aussagen ableiten.",
+    "prompt": "${{ID}} Hol mich nach der langen Pause ab. Was war das Ziel, was gilt heute und wo steigen wir ein?",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "5ff11eeef0a8b4a34aef7fd0f07ad13486bead237289d03edf58fe4d0bd66611",
+      "agents/openai.yaml": "32891f3e96cd00fd0420f7a878796f9435eb39f782c48ca6b3fd0d763913b4d0"
+    },
+    "install_ids": {
+      "plain": "catch-me-up",
+      "kitchen": "back-to-the-kitchen"
+    },
+    "chapter": "orientation"
   },
   {
     "id": "what-was-i-cooking",
     "title": "Where Were We?",
     "phase": "Wiedereinstieg",
-    "summary": "Nach einer Pause kurz Ziel, Stand und offene Arbeit wiederfinden.",
-    "when": "Nach einer Pause oder einem langen Chat ist unklar, was vereinbart, erledigt oder offen ist.",
+    "summary": "„Was wollte ich ursprünglich?“ Ziel und Entscheidungen dieses Chats rekonstruieren.",
+    "when": "Der Chat ist abgedriftet oder der ursprüngliche Auftrag ist unklar; kein Projekt-Neustart nach langer Pause.",
     "ingredients": "Verfügbarer Verlauf dieses Chats, spätere Zielentscheidungen und belegte Ergebnisse.",
     "steps": "Ziel und spätere Entscheidungen abgleichen; kurz zusammenfassen, bei fehlendem Verlauf die Lücke benennen.",
     "verify": "Zieländerungen sind von Vorschlägen getrennt; fehlender Verlauf und unbelegte Ergebnisse bleiben sichtbar.",
@@ -82,7 +109,237 @@
     "install_ids": {
       "plain": "where-were-we",
       "kitchen": "what-was-i-cooking"
-    }
+    },
+    "chapter": "orientation"
+  },
+  {
+    "id": "start-it-right",
+    "title": "How Do I Start?",
+    "phase": "Start",
+    "summary": "„Wie fange ich an?“ Einen kleinen Start wählen, mit explain erklären oder mit choose vergleichen.",
+    "when": "Projektstart, ein unklarer nächster Schritt, eine Erklärung des bestehenden Ablaufs oder eine konkrete Wahl zwischen Optionen.",
+    "ingredients": "Produktidee oder Repository; Zielgruppe, Grenzen, vorhandene Konventionen. Keine Kontozugriffe nötig.",
+    "steps": "Projekt einordnen; nur nötige Entscheidungen klären; kleinen autorisierten Abschnitt umsetzen, ohne Ticketpflicht.",
+    "verify": "Der empfohlene nächste Schritt hat ein beobachtbares Ergebnis; offene Entscheidungen sind sichtbar.",
+    "result": "Kompakter Projektstart mit Empfehlung und, wenn bestätigt, passenden Artefakten.",
+    "limits": "Zusatzmodule und Tickets sind optional. Brainstorming erlaubt keine Umsetzung; bestehende Freigaben bleiben gültig.",
+    "prompt": "${{ID}} brainstorm Eine kleine Website für meine drei Projekte.",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+      "SKILL.md": "9edf1ab03e91031a942211800844753b3e1461ca44e26e2687336e533ef92624",
+      "agents/openai.yaml": "e2132fb5e90309fc5d1884e41a234875bb610f63827fbafa6372847ce80ff586",
+      "references/artifact-contract.md": "32e58c231bddc210f48008f31337d2540bc90450badac8c9929e22a3761cf90e",
+      "references/examples.md": "ccc828fb2c5f6d9a2aa678d18613d821ead1e97e8e280c21a4cab9f5bcf2e3ea",
+      "references/explain-and-choose.md": "3ac5a702c489e62a2071f1215450967c7c004214e5e0a2bcceeaba4dc3ba46d8",
+      "references/module-catalog.md": "471f4049414f9f440a6dfbf197b3e57210976d86fe35f4abee0e3ea6fef9c324"
+    },
+    "cooking_title": "Prep the Kitchen",
+    "install_ids": {
+      "plain": "how-do-i-start",
+      "kitchen": "prep-the-kitchen"
+    },
+    "chapter": "planning"
+  },
+  {
+    "id": "finish-my-prompt",
+    "title": "Finish My Prompt",
+    "cooking_title": "Finish My Order",
+    "phase": "Planung",
+    "summary": "„Formuliere meinen Auftrag fertig.“ Einen begonnenen Prompt als Entwurf vervollständigen.",
+    "when": "Der Auftrag ist noch nicht fertig formuliert; die darin beschriebene Arbeit soll noch nicht ausgeführt werden.",
+    "ingredients": "Prompt-Fragment, sichtbarer Kontext, gewünschtes Ziel und bestehende Grenzen.",
+    "steps": "Fragment als Entwurf lesen; Absicht erhalten; nur nötigen Kontext ergänzen; kopierbaren Vorschlag ausgeben.",
+    "verify": "Keine erfundenen Projektfakten oder zusätzlichen Aufträge; der Entwurf wird nicht ausgeführt.",
+    "result": "Ein bearbeitbarer vollständiger Prompt oder ausdrücklich nur die gewünschte Fortsetzung.",
+    "limits": "Manueller Ersatz für eine Ergänzung, keine native Tab-Integration und keine identische Modellfunktion.",
+    "prompt": "${{ID}} Vervollständige nur diesen Prompt, führe ihn nicht aus: Bitte prüfe die Startseite und …",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "aed74a6e456c40b32efdb3f09c4a3b72fa6475b82c888b54e89f157b4a23c4f5",
+      "agents/openai.yaml": "e4aa7445aa07ec623783f7f031bf0045ffb357b1ffff3bb51b63353e23e8fbee"
+    },
+    "install_ids": {
+      "plain": "finish-my-prompt",
+      "kitchen": "finish-my-order"
+    },
+    "chapter": "planning"
+  },
+  {
+    "id": "which-name-wins",
+    "title": "Which Name Wins?",
+    "cooking_title": "Name That Dish",
+    "phase": "Planung",
+    "summary": "Passende Namen finden und Klartext/Kitchen-Paare gemeinsam vergleichen.",
+    "when": "Ein Produkt oder Skill braucht einen Namen oder ein klares Namenspaar.",
+    "ingredients": "Zweck, Zielgruppe, Ton und relevante bestehende Namen; kein privater Korpus nötig.",
+    "steps": "Einsatzmoment verstehen; Namen paarweise erzeugen; Kollisionen und Bedeutungen prüfen; Auswahl empfehlen.",
+    "verify": "Beide Varianten benennen dieselbe Funktion; bestätigte Auswahl und Vorschlag bleiben getrennt.",
+    "result": "Bewertete Namenspaare mit beiden Aufruf-IDs und kurzer Begründung.",
+    "limits": "Keine behauptete Verfügbarkeit und keine Umbenennung durch eine bloße Namensfrage.",
+    "prompt": "${{ID}} Schlage drei Namenspaare für einen Skill vor, der langsame Tests erklärt.",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "825954780e912ece60ea7fc48b036dd537b4813334e788993e9dcdb073dddb90",
+      "agents/openai.yaml": "fbddc0ad937a4607c6075ad41ba8d0b729d420059d3d0a1165a030fd7973d051"
+    },
+    "install_ids": {
+      "plain": "which-name-wins",
+      "kitchen": "name-that-dish"
+    },
+    "chapter": "planning"
+  },
+  {
+    "id": "you-got-this",
+    "title": "You Got This",
+    "cooking_title": "You’re the Chef",
+    "phase": "Umsetzung",
+    "summary": "„Übernimm die Umsetzung.“ Ein Ziel ausführen oder mit usertest einen Nutzerablauf prüfen.",
+    "when": "Ein konkretes Ziel soll umgesetzt werden; usertest prüft einen echten Ablauf und meldet Befunde ohne automatische Reparaturen.",
+    "ingredients": "Projektziel, Repository und Konventionen, vorhandene Werkzeuge und ein beobachtbarer Qualitätsmaßstab.",
+    "steps": "Realen Ablauf verstehen; Qualitätsmaßstab festlegen; kleinste vollständige Änderung umsetzen; Ergebnis prüfen und kritisch verbessern.",
+    "verify": "Das integrierte Ergebnis erfüllt den Maßstab; Tests, tatsächliche Beobachtung und offene Prüflücken sind getrennt.",
+    "result": "Nachvollziehbare Umsetzung mit geprüftem Ergebnis und klaren Grenzen.",
+    "limits": "Audit bleibt lesend, sofern keine Fixes beauftragt sind. Keine Veröffentlichung, destruktiven Aktionen oder zusätzlichen Kosten durch bloße Delegation.",
+    "prompt": "${{ID}} Mach dieses Kochbuch insgesamt stimmig und vorzeigbar. Behalte die Kochbuchästhetik; veröffentliche nichts.",
+    "status": "source",
+    "license": "MIT",
+    "repository": "https://github.com/pengusto/you-got-this",
+    "revision": "d8ce9d530d74852ead13fac2f6994714808caff5",
+    "files": {
+      "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+      "SKILL.md": "ea78740c282e59bc1f78e090bb54a7fc0c6e54df262b65412af91e7ca79b64d8",
+      "agents/openai.yaml": "653155bf6dc1bba854d8087cff023592efe19b27425e376b884498473ac8fec5",
+      "examples.md": "b997b3f231736e748c0db7a63cb59a4dda0d88ddf1e30fe939a36e347c651103"
+    },
+    "install_ids": {
+      "plain": "you-got-this",
+      "kitchen": "youre-the-chef"
+    },
+    "chapter": "build"
+  },
+  {
+    "id": "are-we-cooking",
+    "title": "Am I Making Progress?",
+    "phase": "Unterwegs",
+    "summary": "„Kommen wir voran?“ Den aktuellen Weg und den nächsten sinnvollen Schritt prüfen.",
+    "when": "Du zweifelst am Fortschritt im laufenden Chat; es geht nicht um die technische Ursache eines einzelnen Bugs.",
+    "ingredients": "Aktueller Chat, vereinbartes Ziel, relevante Ergebnisse und Prüfungen.",
+    "steps": "Bekanntes Ziel, belegten Fortschritt und Hindernis abgleichen; nächste sinnvolle Entscheidung empfehlen.",
+    "verify": "Cooking, Stalled, Side quest oder Unclear ist durch sichtbare Evidenz begründet.",
+    "result": "Kurze Kurskorrektur mit nächstem Schritt.",
+    "limits": "Diagnostik allein autorisiert keine neuen Änderungen. Historische Musteranalyse ist optional und kein erforderlicher Zusatz-Skill.",
+    "prompt": "${{ID}} Kommen wir mit diesem Projekt wirklich voran?",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "e7f79b0290ff7e3b280ac5e75dc373d2b89b8a4d9811c3c9422b8b14d58162bb",
+      "agents/openai.yaml": "4dc21bf49cc77f133981fc3b0e99a56372033d5b0f31f058605e7b9889d16f16"
+    },
+    "cooking_title": "Are We Cooking?",
+    "install_ids": {
+      "plain": "am-i-making-progress",
+      "kitchen": "are-we-cooking"
+    },
+    "chapter": "build"
+  },
+  {
+    "id": "why-is-it-broken",
+    "title": "Why Is It Broken?",
+    "cooking_title": "Find the Bad Ingredient",
+    "phase": "Unterwegs",
+    "summary": "„Das ist kaputt.“ Einen aktuellen Fehler reproduzieren, erklären und gezielt beheben.",
+    "when": "Ein Button, Test, Build oder anderer Ablauf schlägt gerade fehl; keine rückblickende Prozessanalyse.",
+    "ingredients": "Erwartetes und tatsächliches Verhalten, relevante Projektdateien und ein sicherer Reproduktionsweg.",
+    "steps": "Fehler reproduzieren; betroffenen Ablauf verfolgen; Hypothesen prüfen; beauftragten Fix am Ursprung umsetzen.",
+    "verify": "Ursprünglicher Fehlerfall und relevante Nachbarfälle geprüft; vermutete Ursachen und fehlende Prüfabdeckung klar benannt.",
+    "result": "Belegte Ursache mit geprüftem Fix oder konkreter nächster Diagnoseprüfung.",
+    "limits": "Nur untersuchen bedeutet keine Änderungen. Kein Deployment, keine destruktiven Tests und keine Veröffentlichung ohne Auftrag.",
+    "prompt": "${{ID}} Der Speichern-Button meldet Erfolg, aber nach dem Neuladen fehlen die Änderungen. Finde und behebe die Ursache.",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+      "SKILL.md": "bcf51290000dbf830fe1981bfa2b909a3b0eddb7874be6416c62f433a24ca1ff",
+      "agents/openai.yaml": "f7ac4a17f2f1c25d9cd664b1444b5323907f9e089af7bf5e150c382311952430"
+    },
+    "install_ids": {
+      "plain": "why-is-it-broken",
+      "kitchen": "find-the-bad-ingredient"
+    },
+    "chapter": "build"
+  },
+  {
+    "id": "can-we-simplify",
+    "title": "Can We Simplify?",
+    "cooking_title": "Trim the Recipe",
+    "phase": "Unterwegs",
+    "summary": "„Geht das einfacher?“ Unnötige Komplexität reduzieren und Verhalten erhalten.",
+    "when": "Ein ausgewählter Diff oder Ablauf soll einfacher werden; kein pauschaler Repository-Umbau.",
+    "ingredients": "Ausgewählter Bereich, Aufrufer, öffentliche Verträge und beobachtbares bisheriges Verhalten.",
+    "steps": "Verträge klären; echte Redundanz finden; kleine Alternative begründen; beauftragte Änderung prüfen.",
+    "verify": "Originalverhalten und betroffene Aufrufer geprüft; unbekannte externe Verbraucher nicht als ungenutzt behandeln.",
+    "result": "Begründete Vereinfachungen oder ein geprüftes, kleineres Ergebnis im freigegebenen Umfang.",
+    "limits": "Prüfung allein erlaubt keine Änderungen. Weniger Zeilen rechtfertigen keine schwächere Validierung, Sicherheit oder Wiederherstellung.",
+    "prompt": "${{ID}} Vereinfache den ausgewählten Exportpfad und erhalte Dateiformat, Fehlermeldungen und öffentliche Aufrufe.",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+      "SKILL.md": "379454f4d31d492528b95311dfce9413a41abb54d45e968be995382d978bb802",
+      "agents/openai.yaml": "0f6752a5b7d175431d7dfb5fdb87f9f38865a69d5172d8f871ebe63861dc0b33"
+    },
+    "install_ids": {
+      "plain": "can-we-simplify",
+      "kitchen": "trim-the-recipe"
+    },
+    "chapter": "build"
+  },
+  {
+    "id": "review-my-changes",
+    "title": "Review My Changes",
+    "cooking_title": "Taste Before Serving",
+    "phase": "Review",
+    "summary": "„Prüfe diese Änderung.“ Konkrete Fehler und Regressionsrisiken im Diff finden.",
+    "when": "Ein Branch, PR oder ausgewählter Arbeitsstand soll technisch geprüft werden; keine automatische Reparatur.",
+    "ingredients": "Abgegrenzter Diff, beabsichtigtes Verhalten, betroffene Aufrufer und relevante Prüfungen.",
+    "steps": "Vergleich festhalten; betroffene Verträge verfolgen; Befunde belegen; nach Auswirkung ordnen.",
+    "verify": "Jeder Befund hat einen konkreten Auslöser und eine gültige Fundstelle; Prüflücken bleiben sichtbar.",
+    "result": "Priorisierte, umsetzbare Befunde oder keine gefundenen Defekte mit benannter Abdeckung.",
+    "limits": "Review allein ändert keine Dateien und veröffentlicht keine Kommentare. Ein grüner Check beweist keine Fehlerfreiheit.",
+    "prompt": "${{ID}} Prüfe die uncommitteten Änderungen am Speichern auf konkrete Fehler. Nur Befunde, keine Änderungen.",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+      "SKILL.md": "531db17e499057c7f6b8b25e7a49687e124cea81fcb6bd3177114335f5ee9414",
+      "agents/openai.yaml": "3117f806fa4ff0d270188df78dedbcf638362e26a95141ae193b70c0e5b4c67e"
+    },
+    "install_ids": {
+      "plain": "review-my-changes",
+      "kitchen": "taste-before-serving"
+    },
+    "chapter": "review"
   },
   {
     "id": "did-i-leak",
@@ -111,7 +368,8 @@
     "install_ids": {
       "plain": "did-i-leak",
       "kitchen": "keep-the-recipe-secret"
-    }
+    },
+    "chapter": "review"
   },
   {
     "id": "will-they-sue-me",
@@ -140,14 +398,15 @@
     "install_ids": {
       "plain": "will-they-sue-me",
       "kitchen": "can-i-serve-this"
-    }
+    },
+    "chapter": "review"
   },
   {
     "id": "let-them-see-it",
     "title": "Am I Ready to Share?",
     "phase": "Release-Vorbereitung",
-    "summary": "Ein Repository mit passender Dokumentation und überprüfbarer Installation teilbar machen.",
-    "when": "Das Produkt funktioniert lokal, aber Dokumentation, Installation oder Release-Grenzen fehlen.",
+    "summary": "„Können andere das nutzen?“ Teilen vorbereiten, Dokumentation abgleichen oder mit verify-live die Auslieferung prüfen.",
+    "when": "Vor dem Teilen, bei widersprüchlicher Dokumentation oder wenn eine konkrete Version wirklich ausgeliefert sein soll.",
     "ingredients": "Repository, Git-Status, Installationsfluss, bestehende Dokumentation und Lizenzen.",
     "steps": "Zuerst konkrete Evaluation; nur passende freigegebene Änderungen umsetzen; keine pauschale Sprach- oder Dateipflicht.",
     "verify": "Quickstart und Paket passen zusammen; lokal, committed, pushed und deployed bleiben getrennt.",
@@ -160,16 +419,18 @@
     "repository": null,
     "files": {
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "9efbb6b83a694ae48bc9eea953ff3dbafb8cea229513147cf210d5caa6f56a68",
+      "SKILL.md": "f1a811422a42701533380d5bcca8a7bcef749a8c3e89f3b45822707ba43d1b8a",
       "agents/openai.yaml": "c5a544227bc017b57f85b0f0692a9a725fd81699ad43ae839c16acb0c78f0020",
       "references/github-pages.md": "26a71d05cf69d44f432012d4c506f0eb69a021a6b37a891718447310b7721e92",
-      "references/readme-presentation.md": "fc87dfdc97cdddf1b0126542573b69bf8c9190b3d33728fd141e13891d843cde"
+      "references/readme-presentation.md": "fc87dfdc97cdddf1b0126542573b69bf8c9190b3d33728fd141e13891d843cde",
+      "references/verify-live.md": "48045fcab04796d6e21d14aa733872fcc526015adf1211725dbb65ac7aa9dd70"
     },
     "cooking_title": "Ready to Serve",
     "install_ids": {
       "plain": "am-i-ready-to-share",
       "kitchen": "ready-to-serve"
-    }
+    },
+    "chapter": "release"
   },
   {
     "id": "what-did-we-change",
@@ -196,14 +457,15 @@
     "install_ids": {
       "plain": "what-did-we-change",
       "kitchen": "whats-new-on-the-menu"
-    }
+    },
+    "chapter": "release"
   },
   {
     "id": "kill-the-todos",
     "title": "Can We Finish?",
     "phase": "Abschluss",
-    "summary": "Den Chat kurz und belegt abschließen oder bewusst mit Übergabe pausieren.",
-    "when": "Der aktuelle Chat soll auslaufen, beendet oder später fortgesetzt werden.",
+    "summary": "„Können wir aufhören?“ Zusagen abgleichen, Aufräumen prüfen oder mit handoff gezielt übergeben.",
+    "when": "Der Chat soll enden oder pausieren; relevante Backups, Installer und Exporte werden vor einer Löschentscheidung geprüft.",
     "ingredients": "Vereinbartes Ziel, vorhandene Ergebnisse, offene Arbeit und relevante Prüfungen.",
     "steps": "Vorhandene Prüfnachweise nutzen; autorisierten Rest abschließen; fertig, offen und nötigen Wiedereinstieg knapp nennen.",
     "verify": "Erledigtes ist belegt; offene, vertagte und blockierte Punkte bleiben sichtbar.",
@@ -216,22 +478,24 @@
     "repository": null,
     "files": {
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "4bdd3759e20053eba0c7abf1ac8df8d99148fc3aa3866ab45397e5d8891bec1b",
-      "agents/openai.yaml": "ffd32d863dc091b3f7c2e6e0fb5e3c0f90350d6e0606be90d75270990d181623"
+      "SKILL.md": "0ec465001a22534d82b3581add202d82996690f3256dd8ddd661b2617a6a1631",
+      "agents/openai.yaml": "ffd32d863dc091b3f7c2e6e0fb5e3c0f90350d6e0606be90d75270990d181623",
+      "references/handoff.md": "59a6124c75d399d631cc8c4aa24805375981a0c29bf61ac0234fbf9600e543d4"
     },
     "cooking_title": "Close the Kitchen",
     "install_ids": {
       "plain": "can-we-finish",
       "kitchen": "close-the-kitchen"
-    }
+    },
+    "chapter": "closing"
   },
   {
     "id": "here-we-go-again",
     "title": "Here We Go Again",
     "cooking_title": "Why Did It Burn?",
     "phase": "Planung",
-    "summary": "Wiederkehrende Fehler und liegen gebliebene Empfehlungen belegt untersuchen.",
-    "when": "Fehlversuche wiederholen sich oder akzeptierte Empfehlungen bleiben liegen.",
+    "summary": "„Warum passiert uns das immer wieder?“ Aus früheren Fehlversuchen lernen.",
+    "when": "Wiederkehrende Arbeitsprobleme oder liegen gebliebene Empfehlungen; für einen aktuellen technischen Fehler den Debugging-Workflow wählen.",
     "ingredients": "Relevanter Verlauf, Projektartefakte und belegte Ergebnisse im vereinbarten Zeitraum.",
     "steps": "Evidenz eingrenzen; Ursachen statt Versuche zählen; Empfehlungen abgleichen; kleinste Prävention empfehlen.",
     "verify": "Jedes Muster hat eine Quelle; Einzelereignisse und Hypothesen bleiben ausdrücklich getrennt.",
@@ -250,142 +514,7 @@
     "install_ids": {
       "plain": "here-we-go-again",
       "kitchen": "why-did-it-burn"
-    }
-  },
-  {
-    "id": "catch-me-up",
-    "title": "Catch Me Up",
-    "cooking_title": "Back to the Kitchen",
-    "phase": "Orientierung",
-    "summary": "Nach einer Pause Ziel, Entscheidungen und heutigen Projektstand auffrischen.",
-    "when": "Nach längerer Pause fehlen Kontext, letzter Stand und ein sinnvoller Wiedereinstieg.",
-    "ingredients": "Verfügbarer Chat, Übergabe und relevante aktuelle Projektartefakte.",
-    "steps": "Letzten bestätigten Stand rekonstruieren; veraltete Angaben gezielt prüfen; Änderungen und nächsten Einstieg benennen.",
-    "verify": "Frühere Berichte sind von heute geprüften Fakten getrennt; fehlender Verlauf bleibt sichtbar.",
-    "result": "Kurzer Wiedereinstieg mit Projektzweck, Entscheidungen, aktuellem Stand und nächstem Schritt.",
-    "limits": "Keine Restarbeit automatisch ausführen und keine aktuelle Bereitstellung aus alten Aussagen ableiten.",
-    "prompt": "${{ID}} Hol mich nach der langen Pause ab. Was war das Ziel, was gilt heute und wo steigen wir ein?",
-    "status": "source",
-    "license": "MIT",
-    "revision": null,
-    "repository": null,
-    "files": {
-      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "5ff11eeef0a8b4a34aef7fd0f07ad13486bead237289d03edf58fe4d0bd66611",
-      "agents/openai.yaml": "32891f3e96cd00fd0420f7a878796f9435eb39f782c48ca6b3fd0d763913b4d0"
     },
-    "install_ids": {
-      "plain": "catch-me-up",
-      "kitchen": "back-to-the-kitchen"
-    }
-  },
-  {
-    "id": "finish-my-prompt",
-    "title": "Finish My Prompt",
-    "cooking_title": "Finish My Order",
-    "phase": "Planung",
-    "summary": "Einen begonnenen Prompt aus sichtbarem Kontext sinnvoll vervollständigen.",
-    "when": "Die automatische Prompt-Ergänzung hilft gerade nicht oder ein Satz bleibt unvollständig.",
-    "ingredients": "Prompt-Fragment, sichtbarer Kontext, gewünschtes Ziel und bestehende Grenzen.",
-    "steps": "Fragment als Entwurf lesen; Absicht erhalten; nur nötigen Kontext ergänzen; kopierbaren Vorschlag ausgeben.",
-    "verify": "Keine erfundenen Projektfakten oder zusätzlichen Aufträge; der Entwurf wird nicht ausgeführt.",
-    "result": "Ein bearbeitbarer vollständiger Prompt oder ausdrücklich nur die gewünschte Fortsetzung.",
-    "limits": "Manueller Ersatz für eine Ergänzung, keine native Tab-Integration und keine identische Modellfunktion.",
-    "prompt": "${{ID}} Vervollständige nur diesen Prompt, führe ihn nicht aus: Bitte prüfe die Startseite und …",
-    "status": "source",
-    "license": "MIT",
-    "revision": null,
-    "repository": null,
-    "files": {
-      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "aed74a6e456c40b32efdb3f09c4a3b72fa6475b82c888b54e89f157b4a23c4f5",
-      "agents/openai.yaml": "e4aa7445aa07ec623783f7f031bf0045ffb357b1ffff3bb51b63353e23e8fbee"
-    },
-    "install_ids": {
-      "plain": "finish-my-prompt",
-      "kitchen": "finish-my-order"
-    }
-  },
-  {
-    "id": "which-name-wins",
-    "title": "Which Name Wins?",
-    "cooking_title": "Name That Dish",
-    "phase": "Planung",
-    "summary": "Passende Namen finden und Klartext/Kitchen-Paare gemeinsam vergleichen.",
-    "when": "Ein Produkt oder Skill braucht einen Namen oder ein klares Namenspaar.",
-    "ingredients": "Zweck, Zielgruppe, Ton und relevante bestehende Namen; kein privater Korpus nötig.",
-    "steps": "Einsatzmoment verstehen; Namen paarweise erzeugen; Kollisionen und Bedeutungen prüfen; Auswahl empfehlen.",
-    "verify": "Beide Varianten benennen dieselbe Funktion; bestätigte Auswahl und Vorschlag bleiben getrennt.",
-    "result": "Bewertete Namenspaare mit beiden Aufruf-IDs und kurzer Begründung.",
-    "limits": "Keine behauptete Verfügbarkeit und keine Umbenennung durch eine bloße Namensfrage.",
-    "prompt": "${{ID}} Schlage drei Namenspaare für einen Skill vor, der langsame Tests erklärt.",
-    "status": "source",
-    "license": "MIT",
-    "revision": null,
-    "repository": null,
-    "files": {
-      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "825954780e912ece60ea7fc48b036dd537b4813334e788993e9dcdb073dddb90",
-      "agents/openai.yaml": "fbddc0ad937a4607c6075ad41ba8d0b729d420059d3d0a1165a030fd7973d051"
-    },
-    "install_ids": {
-      "plain": "which-name-wins",
-      "kitchen": "name-that-dish"
-    }
-  },
-  {
-    "id": "explain-the-cookbook",
-    "title": "Explain the Cookbook",
-    "cooking_title": "Show Me the Kitchen",
-    "phase": "Einführung",
-    "summary": "Cookbook verstehen, den passenden Skill wählen und richtig aufrufen.",
-    "when": "Beim Einstieg oder wenn unklar ist, welcher Workflow zur Situation passt.",
-    "ingredients": "Aktuelle Skill-Liste, installierte Namenswelt, Frage und gewünschtes Ergebnis.",
-    "steps": "Sammlung einordnen; ähnliche Zwecke unterscheiden; passenden Skill empfehlen; konkreten Aufruf zeigen.",
-    "verify": "Nur tatsächlich verfügbare Aufrufe nennen; Anzeigenamen und installierte IDs unterscheiden.",
-    "result": "Verständliche Orientierung mit einer passenden Empfehlung und einem editierbaren Beispiel.",
-    "limits": "Erklärt und empfiehlt; keine automatische Ausführung, Installation oder Freigabe.",
-    "prompt": "${{ID}} Erkläre mir Cookbook und welchen Skill ich nach einer langen Projektpause nutzen sollte.",
-    "status": "source",
-    "license": "MIT",
-    "revision": null,
-    "repository": null,
-    "files": {
-      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "44343f29b237ddbf60f6d7fba77600d333ad37114d72c3055c342b95d7b7f20b",
-      "agents/openai.yaml": "276fe7b61fe3887bcde70ad8bc40ade7f4420d0b35973f796b48a0e3f88d12b6"
-    },
-    "install_ids": {
-      "plain": "explain-the-cookbook",
-      "kitchen": "show-me-the-kitchen"
-    }
-  },
-  {
-    "id": "you-got-this",
-    "title": "You Got This",
-    "cooking_title": "You’re the Chef",
-    "phase": "Umsetzung",
-    "summary": "Ein Projektziel selbstständig in ein vollständiges, geprüftes Ergebnis übersetzen.",
-    "when": "Das Ziel steht fest; der Agent soll die Details untersuchen und die Umsetzung übernehmen.",
-    "ingredients": "Projektziel, Repository und Konventionen, vorhandene Werkzeuge und ein beobachtbarer Qualitätsmaßstab.",
-    "steps": "Realen Ablauf verstehen; Qualitätsmaßstab festlegen; kleinste vollständige Änderung umsetzen; Ergebnis prüfen und kritisch verbessern.",
-    "verify": "Das integrierte Ergebnis erfüllt den Maßstab; Tests, tatsächliche Beobachtung und offene Prüflücken sind getrennt.",
-    "result": "Nachvollziehbare Umsetzung mit geprüftem Ergebnis und klaren Grenzen.",
-    "limits": "Audit bleibt lesend, sofern keine Fixes beauftragt sind. Keine Veröffentlichung, destruktiven Aktionen oder zusätzlichen Kosten durch bloße Delegation.",
-    "prompt": "${{ID}} Mach dieses Kochbuch insgesamt stimmig und vorzeigbar. Behalte die Kochbuchästhetik; veröffentliche nichts.",
-    "status": "source",
-    "license": "MIT",
-    "repository": "https://github.com/pengusto/you-got-this",
-    "revision": "d8ce9d530d74852ead13fac2f6994714808caff5",
-    "files": {
-      "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
-      "SKILL.md": "e0467c392f67641f25e9a1727536304789ca51af2568b16ce4845e339290eb87",
-      "agents/openai.yaml": "653155bf6dc1bba854d8087cff023592efe19b27425e376b884498473ac8fec5",
-      "examples.md": "8fc73aea812a6e809fda1c7db30d55c6157c05fd41db7e91f9fc2d40ea654867"
-    },
-    "install_ids": {
-      "plain": "you-got-this",
-      "kitchen": "youre-the-chef"
-    }
+    "chapter": "closing"
   }
 ]

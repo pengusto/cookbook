@@ -24,6 +24,17 @@ ${{ID}} audit payment retry behavior
 
 Audit mode reports prioritized, evidence-backed findings and does not turn an inspection into a broad rewrite unless the request also asks for fixes.
 
+## User test mode
+
+```text
+${{ID}} usertest Create a draft, save it, reload and open it again. Use the local test account; report findings without fixes.
+```
+
+Exercise the real journey and report reproduced defects, usability judgments
+and coverage gaps separately. This is an agent-run check, not a study with
+human participants. A test request alone does not authorize repairs or real
+external effects.
+
 ## Mode words inside a goal
 
 ```text

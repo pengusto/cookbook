@@ -24,11 +24,19 @@ def sha(data):
 def catalog():
     rows = json.loads((ROOT / 'catalog.json').read_text())
     ids = set()
+    chapters = []
     installed = {'plain': set(), 'kitchen': set()}
     for row in rows:
         if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', row['id']) or row['id'] in ids:
             raise ValueError('Invalid or duplicate recipe ID')
         ids.add(row['id'])
+        chapter = row.get('chapter', '')
+        if not re.fullmatch(r'[a-z]+(?:-[a-z]+)*', chapter):
+            raise ValueError('Missing or invalid chapter ID')
+        if not chapters or chapter != chapters[-1]:
+            if chapter in chapters:
+                raise ValueError('Recipes in each chapter must be contiguous')
+            chapters.append(chapter)
         if set(row.get('install_ids', {})) != {'plain', 'kitchen'}:
             raise ValueError('Both naming variants require an invocation ID')
         for variant, name in row['install_ids'].items():
@@ -296,10 +304,13 @@ def sidebar_files(variant='plain'):
     if set(locales) != expected:
         raise ValueError('Cookbook UI requires the twelve reviewed locales')
     recipe_count = len(catalog())
+    chapter_ids = list(dict.fromkeys(row['chapter'] for row in catalog()))
     reference_keys = set(locales['de'])
     for locale, values in locales.items():
         if set(values) != reference_keys or any(not str(value).strip() for value in values.values()):
             raise ValueError(f'Incomplete UI locale: {locale}')
+        if set(values['chapterTitles']) != set(chapter_ids) or any(not title.strip() for title in values['chapterTitles'].values()):
+            raise ValueError(f'Incomplete chapter titles: {locale}')
         for key in ('summaries', 'whenList', 'intros'):
             if len(values[key].split('|')) != recipe_count:
                 raise ValueError(f'Incomplete recipes: {locale}/{key}')
@@ -307,12 +318,12 @@ def sidebar_files(variant='plain'):
             raise ValueError(f'Incomplete recipe details: {locale}')
         if any(len(values['steps'+str(i)].split('|')) != 4 for i in range(recipe_count)):
             raise ValueError(f'Incomplete preparation steps: {locale}')
-    accents = ['#843327', '#52623e', '#465e70', '#6d405d', '#78602e', '#3f6963', '#9b4f30', '#3f536a', '#774551', '#8b522d', '#326b70', '#69712c', '#795132', '#936231']
-    dark_accents = ['#e3a384', '#b9cd92', '#a9c8dc', '#d5add0', '#e6ca87', '#9fd1c6', '#ecb08b', '#b5c9e1', '#e5a5b8', '#e1b88d', '#96d5da', '#cbd58e', '#ddc19b', '#e9c08a']
+    accents = ['#795132', '#8a523d', '#8b522d', '#465e70', '#843327', '#326b70', '#69712c', '#936231', '#52623e', '#84602e', '#6e713b', '#58716a', '#6d405d', '#78602e', '#3f6963', '#9b4f30', '#3f536a', '#774551']
+    dark_accents = ['#ddc19b', '#e7b49d', '#e1b88d', '#a9c8dc', '#e3a384', '#96d5da', '#cbd58e', '#e9c08a', '#b9cd92', '#e9c481', '#d0d59b', '#aacfc3', '#d5add0', '#e6ca87', '#9fd1c6', '#ecb08b', '#b5c9e1', '#e5a5b8']
     utensil_icons = recipe_icons()
     food = food_art()
-    recipes = [{'icon': utensil_icons[row['id']]['id'], 'id': row['install_ids'][variant], 'title': row['title'] if variant == 'plain' else row['cooking_title'],
-                'names': {'plain': row['title'], 'kitchen': row['cooking_title']}, 'installIds': row['install_ids'],
+    recipes = [{'icon': utensil_icons[row['id']]['id'], 'id': row['install_ids'][variant], 'sourceId': row['id'], 'title': row['title'] if variant == 'plain' else row['cooking_title'],
+                'names': {'plain': row['title'], 'kitchen': row['cooking_title']}, 'installIds': row['install_ids'], 'chapter': row['chapter'],
                 'accent': accents[index], 'accentDark': dark_accents[index], 'dishNames': food[row['id']]['dishNames'], 'artwork': food_image_style(food[row['id']])}
                for index, row in enumerate(catalog())]
     payload = json.dumps({'version': manifest['version'], 'variant': variant, 'recipes': recipes, 'locales': locales}, ensure_ascii=False).replace('<', '\\u003c')
@@ -384,7 +395,7 @@ def check_plugins():
                     raise ValueError('Plugin archive differs')
 
 
-def schema_script(rows, language="de"):
+def schema_script(rows, language="de", chapter_titles=None):
     """Describe only the visible collection; omit unconfirmed public identifiers."""
     data = {
         '@context': 'https://schema.org', '@type': 'CollectionPage',
@@ -396,6 +407,13 @@ def schema_script(rows, language="de"):
                  'item': {'@type': 'CreativeWork', 'name': row['title'],
                           'description': row['summary']}}
                 for index, row in enumerate(rows, 1)]}}
+    if chapter_titles is not None:
+        data['hasPart'] = [
+            {'@type': 'CreativeWork', 'identifier': chapter,
+             'name': chapter_titles[chapter],
+             'hasPart': [entry['item'] for row, entry in zip(rows, data['mainEntity']['itemListElement'])
+                         if row['chapter'] == chapter]}
+            for chapter in dict.fromkeys(row['chapter'] for row in rows)]
     # JSON inside an HTML script is raw text: prevent a catalog value from
     # closing the element or introducing markup, while preserving JSON values.
     payload = json.dumps(data, ensure_ascii=False, indent=2)
@@ -452,7 +470,7 @@ def public_book(variant='kitchen', language='de'):
     rows = catalog()
     home = 'index.html' if language == 'de' else 'index-en.html'
     canonical = home if variant == 'kitchen' else 'cookbook-plain.html'
-    values = {key: html.escape(value) for key, value in ui.items()}
+    values = {key: html.escape(value.replace('{count}', str(len(rows)))) for key, value in ui.items()}
     values.update(LEGAL_PAGE='legal.html' if language=='de' else 'legal-en.html', POLICY_PAGE='privacy.html' if language=='de' else 'privacy-en.html', VERSION=html.escape(config['version']), COUNT=str(len(rows)),
                   VARIANT='Kitchen' if variant == 'kitchen' else 'Plain',
                   INSTALL_FALLBACK=page_name(language, variant),
@@ -482,7 +500,7 @@ def public_book(variant='kitchen', language='de'):
     page = page.replace('</aside>', footer+'</aside>')
     visible = [dict(row, title=row['title'] if variant=='plain' else row['cooking_title'],
                     summary=ui_summary) for row, ui_summary in zip(rows, json.loads((ROOT / 'ui/locales.json').read_text())[language]['summaries'].split('|'))]
-    schema = schema_script(visible, language).replace('type="application/ld+json"', 'id="book-schema" type="application/ld+json"')
+    schema = schema_script(visible, language, json.loads((ROOT / 'ui/locales.json').read_text())[language]['chapterTitles']).replace('type="application/ld+json"', 'id="book-schema" type="application/ld+json"')
     fallback = '<noscript><style>[data-book-page][hidden]{display:grid!important}[data-host-panel][hidden]{display:block!important}#recipe-content{display:none}</style><section class="book-fallback"><h2>'+values['RECIPES']+'</h2>'+''.join(
         '<article><h3>'+html.escape(row['title'])+'</h3><p>'+html.escape(row['summary'])+'</p></article>' for row in visible)+'<a href="'+page_name(language,variant)+'">'+values['INSTALL']+'</a></section></noscript>'
     head = '<link rel="icon" href="assets/icon.svg"><meta name="description" content="'+values['DESCRIPTION']+'"><link rel="canonical" href="'+PUBLIC_BASE+canonical+'">'+schema

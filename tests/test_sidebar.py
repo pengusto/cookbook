@@ -14,6 +14,28 @@ spec.loader.exec_module(builder)
 
 
 class SidebarContracts(unittest.TestCase):
+    def test_chapters_cover_each_recipe_and_require_localized_titles(self):
+        import re
+        from unittest.mock import patch
+        for variant in ('plain', 'kitchen'):
+            text = builder.sidebar_files(variant)['ui/index.html'].decode()
+            data = json.loads(re.search(r'<script id="cookbook-data" type="application/json">(.*?)</script>', text, re.S)[1])
+            expected = [row['chapter'] for row in builder.catalog()]
+            self.assertEqual([recipe['chapter'] for recipe in data['recipes']], expected)
+            for locale in data['locales'].values():
+                self.assertEqual(set(locale['chapterTitles']), set(expected))
+                self.assertTrue(all(locale['chapterTitles'].values()))
+        original = Path.read_text
+        def read(path, *args, **kwargs):
+            text = original(path, *args, **kwargs)
+            if path == builder.ROOT / 'ui/locales.json':
+                value = json.loads(text)
+                value['en']['chapterTitles'].pop(next(iter(value['en']['chapterTitles'])))
+                return json.dumps(value)
+            return text
+        with patch.object(Path, 'read_text', read), self.assertRaisesRegex(ValueError, 'Incomplete chapter titles: en'):
+            builder.sidebar_files('kitchen')
+
     def test_book_has_twelve_complete_locales_and_both_names_with_installed_invocation(self):
         import re
         for variant in ('plain', 'kitchen'):
@@ -25,12 +47,15 @@ class SidebarContracts(unittest.TestCase):
             self.assertEqual([r['id'] for r in data['recipes']], [r['install_ids'][variant] for r in builder.catalog()])
             self.assertEqual(data['version'], json.loads((builder.ROOT / 'bundle.json').read_text())['sidebar_version'])
             self.assertEqual(data['variant'], variant)
+            self.assertEqual([r['sourceId'] for r in data['recipes']], [r['id'] for r in builder.catalog()])
             self.assertEqual([r['names'] for r in data['recipes']], [{'plain': r['title'], 'kitchen': r['cooking_title']} for r in builder.catalog()])
             self.assertIn("skillInvocation(publicBook?recipe.installIds[naming]:recipe.id)", text)
             self.assertIn('cookbook-naming', text)
             self.assertIn("let appearance='system'", text)
             for locale in data['locales'].values():
-                self.assertTrue(all(len(locale['stepNotes'+str(i)]) == 4 for i in (12, 13)))
+                for index, row in enumerate(builder.catalog()):
+                    if row['id'] in ('explain-the-cookbook', 'you-got-this', 'why-is-it-broken', 'review-my-changes', 'can-we-simplify', 'find-our-work'):
+                        self.assertEqual(len(locale['stepNotes'+str(index)]), 4)
                 self.assertEqual(len(locale['verifications']), len(builder.catalog()))
                 self.assertEqual(len(locale['ingredientLists']), len(builder.catalog()))
                 self.assertEqual(len({tuple(items) for items in locale['ingredientLists']}), len(builder.catalog()))

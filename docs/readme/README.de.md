@@ -16,11 +16,11 @@ Projekt: **Cookbook by Pengusto** · GitHub-Repository: [`pengusto/cookbook`](ht
 
 **Ein Rezept für den nächsten Schritt im Coding-Chat.**
 
-Cookbook bietet Entwicklerinnen und Entwicklern mit Codex oder Claude Code 14 gezielte Workflows: Projekte planen, Fortschritt prüfen, nach einer Pause wieder einsteigen, vor dem Teilen prüfen und mit einer brauchbaren Übergabe abschließen. Wähle bei Bedarf ein Rezept; Host und Modell führen die Arbeit aus.
+Cookbook bietet Entwicklerinnen und Entwicklern mit Codex oder Claude Code 18 gezielte Workflows: Projekte planen, Fortschritt prüfen, nach einer Pause wieder einsteigen, vor dem Teilen prüfen und mit einer brauchbaren Übergabe abschließen. Wähle bei Bedarf ein Rezept; Host und Modell führen die Arbeit aus.
 
 Wähle **einfache Fragen** oder **Koch-Namen**. Beide entstehen aus denselben gepflegten Anleitungen; installiere pro Host eine Namenswelt.
 
-**Experimentelle öffentliche Beta · 0.6.0.** [Rezepte ansehen](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Experimentelle öffentliche Beta · 0.7.0.** [Rezepte ansehen](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Schnellstart: eine Namenswelt wählen
 
@@ -74,20 +74,28 @@ python3 scripts/launch_check.py
 
 | Plain | Kitchen |
 |---|---|
-| How Do I Start? | Prep the Kitchen |
-| Am I Making Progress? | Are We Cooking? |
+| Explain the Cookbook | Show Me the Kitchen |
+| Find Our Work | Find the Recipe |
+| Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
+| How Do I Start? | Prep the Kitchen |
+| Finish My Prompt | Finish My Order |
+| Which Name Wins? | Name That Dish |
+| You Got This | You’re the Chef |
+| Am I Making Progress? | Are We Cooking? |
+| Why Is It Broken? | Find the Bad Ingredient |
+| Can We Simplify? | Trim the Recipe |
+| Review My Changes | Taste Before Serving |
 | Did I Leak? | Keep the Recipe Secret |
 | Will They Sue Me? | Can I Serve This? |
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
 | Here We Go Again | Why Did It Burn? |
-| Catch Me Up | Back to the Kitchen |
-| Finish My Prompt | Finish My Order |
-| Which Name Wins? | Name That Dish |
-| Explain the Cookbook | Show Me the Kitchen |
-| You Got This | You’re the Chef |
+
+Weitere Modi: `$prep-the-kitchen explain <Ablauf>` erklärt vorhandenen Code; `$prep-the-kitchen choose <Entscheidung>` vergleicht passende Optionen; `$ready-to-serve verify-live <Ziel>` prüft die tatsächliche Auslieferung; `$close-the-kitchen handoff <Ziel>` bereitet eine gezielte Übergabe vor. Plain nutzt `$how-do-i-start`, `$am-i-ready-to-share` und `$can-we-finish` mit denselben Argumenten. Erklärung, Vergleich und Prüfung allein erlauben keine Änderungen; eine vorbereitete Übergabe ist kein vollzogener Transfer.
+
+Nach Situation wählen: [Auswahlhilfe](../choosing-workflow.md). Für einen aktuellen Fehler nutze `$find-the-bad-ingredient` (Kitchen) oder `$why-is-it-broken` (Plain). Einen echten Nutzerablauf prüfst du mit `$youre-the-chef usertest <Ablauf>` oder `$you-got-this usertest <Ablauf>`; der Modus meldet Befunde ohne automatische Reparaturen und ist keine Studie mit Menschen.
 
 Mit `$youre-the-chef <Ziel>` (Kitchen) oder `$you-got-this <Ziel>` (Plain) übernimmt der Agent die Umsetzung bis zum geprüften Ergebnis. `gauntlet` ergänzt eine endliche Kritikschleife; `audit` liefert Befunde ohne breite Umsetzung. Die Prompt-Vervollständigung erstellt dagegen nur einen Entwurf.
 

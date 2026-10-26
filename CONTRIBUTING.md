@@ -4,4 +4,6 @@ Open an issue or pull request in https://github.com/pengusto/cookbook. Keep chan
 
 Edit workflow instructions only in `skills/<stable-id>/`; update reviewed file hashes in `catalog.json` when source content changes. `plain` and `kitchen` are generated alternative naming styles, not separate workflows. Keep all eight READMEs aligned when installation or capabilities change; disclose machine-translated text until reviewed by a fluent speaker. Compare introductory workflow counts and dated acceptance claims too; matching commands alone does not establish translation parity.
 
+Workflow display order comes from `catalog.json`; keep `bundle.json`, README menus, localized recipe arrays and color sequences aligned by source ID when reordering. Welcome-page links use stable source IDs, not positions. Each row’s `chapter` groups contiguous recipes; chapter titles live in the twelve UI locales.
+
 Run `python3 scripts/launch_check.py`. Generated `site/`, `dist/`, local source registries and `.scratch/` are not committed. Preserve source licenses and imported `history/*` branches. Package validation does not replace host behavior testing. Include the host/version and synthetic test steps for runtime changes.

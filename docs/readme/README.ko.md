@@ -20,7 +20,7 @@ Cookbook은 Codex 또는 Claude Code를 사용하는 개발자에게 13개의 �
 
 **쉬운 질문** 또는 **요리 이름**을 선택하세요. 두 스타일은 같은 관리 지침에서 생성되며, 호스트마다 하나의 이름 체계를 설치합니다.
 
-**실험적 공개 베타 · 0.6.0.** [레시피 둘러보기](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**실험적 공개 베타 · 0.7.0.** [레시피 둘러보기](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## 빠른 시작: 이름 체계 선택
 
@@ -74,20 +74,28 @@ python3 scripts/launch_check.py
 
 | Plain | Kitchen |
 |---|---|
-| How Do I Start? | Prep the Kitchen |
-| Am I Making Progress? | Are We Cooking? |
+| Explain the Cookbook | Show Me the Kitchen |
+| Find Our Work | Find the Recipe |
+| Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
+| How Do I Start? | Prep the Kitchen |
+| Finish My Prompt | Finish My Order |
+| Which Name Wins? | Name That Dish |
+| You Got This | You’re the Chef |
+| Am I Making Progress? | Are We Cooking? |
+| Why Is It Broken? | Find the Bad Ingredient |
+| Can We Simplify? | Trim the Recipe |
+| Review My Changes | Taste Before Serving |
 | Did I Leak? | Keep the Recipe Secret |
 | Will They Sue Me? | Can I Serve This? |
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
 | Here We Go Again | Why Did It Burn? |
-| Catch Me Up | Back to the Kitchen |
-| Finish My Prompt | Finish My Order |
-| Which Name Wins? | Name That Dish |
-| Explain the Cookbook | Show Me the Kitchen |
-| You Got This | You’re the Chef |
+
+추가 모드: `$prep-the-kitchen explain <flow>`는 기존 코드를 설명하고 `$prep-the-kitchen choose <decision>`은 대안을 비교합니다. `$ready-to-serve verify-live <target>`은 실제 배포를 확인하고 `$close-the-kitchen handoff <destination>`은 인계를 준비합니다. Plain은 같은 인수로 `$how-do-i-start`, `$am-i-ready-to-share`, `$can-we-finish`를 사용합니다. 이 요청만으로 변경이 허용되지 않으며 인계 준비가 전송 완료를 뜻하지 않습니다.
+
+상황에 맞는 [선택 안내](../choosing-workflow.md). 현재 오류에는 `$find-the-bad-ingredient`(Kitchen) 또는 `$why-is-it-broken`(Plain)을 사용합니다. 실제 사용 흐름은 `$youre-the-chef usertest <flow>` 또는 `$you-got-this usertest <flow>`로 확인합니다. 자동 수정 없이 결과를 보고하며 실제 참가자 대상 연구가 아닙니다.
 
 ## 업데이트
 

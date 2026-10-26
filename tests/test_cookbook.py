@@ -242,6 +242,23 @@ if __name__ == '__main__':
     unittest.main()
 
 class NewWorkflowInstallationContracts(unittest.TestCase):
+    def test_relative_instruction_links_resolve_in_each_runtime_package(self):
+        import posixpath
+        import re
+        for row in app.catalog():
+            for variant in app.VARIANTS:
+                slug, files = app.rendered_files(row, variant)
+                for name, content in files.items():
+                    if not name.endswith('.md'):
+                        continue
+                    text = content.decode()
+                    self.assertNotIn('{{', text, (slug, name))
+                    for target in re.findall(r'\]\(([^)]+)\)', text):
+                        if '://' in target or target.startswith(('mailto:', '#')):
+                            continue
+                        path = posixpath.normpath(posixpath.join(posixpath.dirname(name), target.split('#', 1)[0]))
+                        self.assertIn(path, files, (slug, name, target))
+
     def test_confirmed_new_workflows_are_selected_and_rendered_in_both_variants(self):
         expected = {
             'here-we-go-again': 'why-did-it-burn',
@@ -250,6 +267,10 @@ class NewWorkflowInstallationContracts(unittest.TestCase):
             'which-name-wins': 'name-that-dish',
             'you-got-this': 'youre-the-chef',
             'explain-the-cookbook': 'show-me-the-kitchen',
+            'why-is-it-broken': 'find-the-bad-ingredient',
+            'review-my-changes': 'taste-before-serving',
+            'can-we-simplify': 'trim-the-recipe',
+            'find-our-work': 'find-the-recipe',
         }
         rows = {r['id']: r for r in app.catalog()}
         for variant in app.VARIANTS:
@@ -278,6 +299,7 @@ class AutonomousWorkflowContracts(unittest.TestCase):
             for text in (guide, examples):
                 self.assertIn('$'+slug+' gauntlet', text)
                 self.assertIn('$'+slug+' audit', text)
+                self.assertIn('$'+slug+' usertest', text)
                 self.assertNotIn('$'+other, text)
                 self.assertNotIn('{{', text)
             self.assertEqual(files['LICENSE'], (app.ROOT / 'skills/you-got-this/LICENSE').read_bytes())

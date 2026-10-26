@@ -1,0 +1,4 @@
+interface:
+  display_name: "{{TITLE}}"
+  short_description: "Find the right chat, project or earlier artifact"
+  default_prompt: "Use ${{ID}} to find and verify the earlier work matching these clues without changing its state."

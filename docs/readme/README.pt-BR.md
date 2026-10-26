@@ -16,11 +16,11 @@ Projeto: **Cookbook by Pengusto** · Repositório no GitHub: [`pengusto/cookbook
 
 **Uma receita para o próximo passo na sua conversa de código.**
 
-Cookbook oferece a quem desenvolve com Codex ou Claude Code 14 fluxos focados: planejar um projeto, verificar o progresso, retomar o contexto após uma pausa, revisar antes de compartilhar e encerrar com uma passagem de trabalho útil. Escolha uma receita quando precisar; seu ambiente e modelo executam o trabalho.
+Cookbook oferece a quem desenvolve com Codex ou Claude Code 18 fluxos focados: planejar um projeto, verificar o progresso, retomar o contexto após uma pausa, revisar antes de compartilhar e encerrar com uma passagem de trabalho útil. Escolha uma receita quando precisar; seu ambiente e modelo executam o trabalho.
 
 Escolha **perguntas simples** ou **nomes de cozinha**. Ambos vêm das mesmas instruções mantidas; instale um estilo por ambiente.
 
-**Beta pública experimental · 0.6.0.** [Explorar as receitas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Beta pública experimental · 0.7.0.** [Explorar as receitas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Início rápido: escolha um estilo
 
@@ -74,20 +74,28 @@ python3 scripts/launch_check.py
 
 | Plain | Kitchen |
 |---|---|
-| How Do I Start? | Prep the Kitchen |
-| Am I Making Progress? | Are We Cooking? |
+| Explain the Cookbook | Show Me the Kitchen |
+| Find Our Work | Find the Recipe |
+| Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
+| How Do I Start? | Prep the Kitchen |
+| Finish My Prompt | Finish My Order |
+| Which Name Wins? | Name That Dish |
+| You Got This | You’re the Chef |
+| Am I Making Progress? | Are We Cooking? |
+| Why Is It Broken? | Find the Bad Ingredient |
+| Can We Simplify? | Trim the Recipe |
+| Review My Changes | Taste Before Serving |
 | Did I Leak? | Keep the Recipe Secret |
 | Will They Sue Me? | Can I Serve This? |
 | Am I Ready to Share? | Ready to Serve |
 | What Did We Change? | What’s New on the Menu? |
 | Can We Finish? | Close the Kitchen |
 | Here We Go Again | Why Did It Burn? |
-| Catch Me Up | Back to the Kitchen |
-| Finish My Prompt | Finish My Order |
-| Which Name Wins? | Name That Dish |
-| Explain the Cookbook | Show Me the Kitchen |
-| You Got This | You’re the Chef |
+
+Outros modos: `$prep-the-kitchen explain <fluxo>` explica o código; `$prep-the-kitchen choose <decisão>` compara opções; `$ready-to-serve verify-live <alvo>` verifica a entrega; `$close-the-kitchen handoff <destino>` prepara a passagem. Plain usa `$how-do-i-start`, `$am-i-ready-to-share` e `$can-we-finish` com os mesmos argumentos. Esses pedidos sozinhos não autorizam alterações; preparar uma passagem não conclui a transferência.
+
+Escolha pela situação: [guia](../choosing-workflow.md). Para uma falha atual: `$find-the-bad-ingredient` (Kitchen) ou `$why-is-it-broken` (Plain). Para testar um fluxo real: `$youre-the-chef usertest <fluxo>` ou `$you-got-this usertest <fluxo>`. O modo relata resultados sem reparos automáticos; não é uma pesquisa com participantes humanos.
 
 ## Atualizar
 

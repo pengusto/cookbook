@@ -46,6 +46,7 @@ function syncText() {
  document.querySelector('.edition').textContent=naming==='kitchen'?'Kitchen edition':t.plainNames;
  document.querySelectorAll('[data-naming]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.naming===naming)));
  document.querySelectorAll('.recipe-label').forEach((label,index)=>label.textContent=recipeName(recipes[index]));
+ document.querySelectorAll('[data-chapter-label]').forEach(label=>label.textContent=t.chapterTitles[label.dataset.chapterLabel]);
  $('language-toggle').setAttribute('aria-label',t.language+': '+t.name);
  $('language-heading').textContent=t.language;
  syncAppearance();
@@ -60,6 +61,7 @@ function displayRecipe(motion=true) {
  resetPaperScroll();
  if(publicBook){bookPage='recipe';syncText();setBookVisibility();syncPublicInstall();}
  const recipe=recipes[selected], t=locales[language];
+ $('recipe-chapter-context').textContent=t.chapter+' · '+t.chapterTitles[recipe.chapter];
  const number=String(selected+1).padStart(2,'0');
  $('recipe-number').textContent=number; $('page-number').textContent=number;
  $('recipe-title').textContent=recipeName(recipe);
@@ -82,13 +84,16 @@ function displayRecipe(motion=true) {
  const steps=t['steps'+selected].split('|');
  $('method-list').replaceChildren(...steps.map((title,index)=>{
    const li=document.createElement('li'), copy=document.createElement('div'),h3=document.createElement('h3'),p=document.createElement('p'),art=document.createElement('span');
+   const number=document.createElement('span');number.className='method-number';number.textContent=String(index+1);number.setAttribute('aria-hidden','true');
    h3.textContent=title; p.textContent=(t['stepNotes'+selected]||t.stepNotes)[index]; copy.append(h3,p);
-   art.className='step-art food-cell'+index; art.setAttribute('aria-hidden','true');li.append(copy,art);return li;
+   art.className='step-art food-cell'+index; art.setAttribute('aria-hidden','true');li.append(number,copy,art);return li;
  }));
  $('invocation').textContent=skillInvocation(publicBook?recipe.installIds[naming]:recipe.id);
  $('limits-copy').textContent=t.verifications[selected]+' '+t.limitText+' '+t.recipeLimits[selected];
  $('copy-status').textContent=t.languageNote;
- $('copy-command').setAttribute('aria-label',t.copy+' '+recipeName(recipe));
+ $('copy-command').setAttribute('aria-label',t.copyInvocation+': '+recipeName(recipe));
+ $('copy-command-label').textContent=t.copyInvocation;
+ delete $('copy-command').dataset.copied;
  clearTimeout(copyTimer);
  $('previous-recipe').disabled=selected===0;
  $('next-recipe').disabled=selected===recipes.length-1;
@@ -114,13 +119,23 @@ function chooseRecipe(index,focus=false,motion=true) {
  if(innerWidth<=560) document.querySelector('.recipe-tab[aria-current=true]').scrollIntoView({block:'nearest',inline:'nearest',behavior:reduced.matches?'instant':'smooth'});
 }
 $('recipe-index').replaceChildren();
+let chapterRecipes;
 recipes.forEach((recipe,index)=>{
+ if(index===0 || recipe.chapter!==recipes[index-1].chapter){
+  const section=document.createElement('section');section.className='recipe-chapter';section.dataset.chapter=recipe.chapter;
+  const heading=document.createElement('h2');heading.className='chapter-heading';heading.id='chapter-'+recipe.chapter;
+  section.setAttribute('aria-labelledby',heading.id);
+  const label=document.createElement('span');label.dataset.chapterLabel=recipe.chapter;
+  const chapterIcons={orientation:'book',planning:'basket',build:'chef',review:'recipe-sieve',release:'serve',closing:'clock'};
+  heading.append(icon(chapterIcons[recipe.chapter]),label);
+  chapterRecipes=document.createElement('div');chapterRecipes.className='chapter-recipes';
+  section.append(heading,chapterRecipes);$('recipe-index').append(section);
+ }
  const button=document.createElement('button');button.type='button';button.className='recipe-tab';
- const number=document.createElement('span');number.className='index-number';number.textContent=String(index+1).padStart(2,'0');number.setAttribute('aria-hidden','true');
- const label=document.createElement('span');label.dir='ltr';label.className='recipe-label';label.textContent=recipeName(recipe);button.append(number,icon('recipe-'+recipe.icon),label);
+ const label=document.createElement('span');label.dir='ltr';label.className='recipe-label';label.textContent=recipeName(recipe);button.append(icon('recipe-'+recipe.icon),label);
  button.addEventListener('click',()=>chooseRecipe(index));
- button.addEventListener('keydown',event=>{let next=null;if(event.key==='ArrowDown') next=Math.min(recipes.length-1,index+1);if(event.key==='ArrowUp') next=Math.max(0,index-1);if(event.key==='Home')next=0;if(event.key==='End')next=recipes.length-1;if(next!==null){event.preventDefault();chooseRecipe(next);$('recipe-index').children[next].focus();}});
- $('recipe-index').append(button);
+ button.addEventListener('keydown',event=>{let next=null;if(event.key==='ArrowDown') next=Math.min(recipes.length-1,index+1);if(event.key==='ArrowUp') next=Math.max(0,index-1);if(event.key==='Home')next=0;if(event.key==='End')next=recipes.length-1;if(next!==null){event.preventDefault();chooseRecipe(next);document.querySelectorAll('.recipe-tab')[next].focus();}});
+ chapterRecipes.append(button);
 });
 document.querySelectorAll('[data-naming]').forEach(button=>button.addEventListener('click',()=>{naming=button.dataset.naming;try{localStorage.setItem('cookbook-naming',naming);}catch{}syncText();if(publicBook){syncPublicInstall();if(bookPage==='recipe')displayRecipe(false);}else displayRecipe(false);}));
 function closeLanguages(restore=false) {
@@ -173,11 +188,13 @@ $('copy-command').addEventListener('click',async()=>{
  try {
   await navigator.clipboard.writeText($('invocation').textContent);
   $('copy-status').textContent=t.copied;
+  $('copy-command-label').textContent=t.copied;
+  $('copy-command').dataset.copied='true';
   animate($('copy-command'),{scale:[1,.83,1],duration:280,ease:'outCubic'});
  } catch {
   const selection=window.getSelection(),range=document.createRange();range.selectNodeContents($('invocation'));selection.removeAllRanges();selection.addRange(range);$('copy-status').textContent=t.copyManual;
  }
- clearTimeout(copyTimer);copyTimer=setTimeout(()=>$('copy-status').textContent=locales[language].languageNote,3000);
+ clearTimeout(copyTimer);copyTimer=setTimeout(()=>{const current=locales[language];$('copy-status').textContent=current.languageNote;$('copy-command-label').textContent=current.copyInvocation;delete $('copy-command').dataset.copied;},3000);
 });
 reduced.addEventListener('change',()=>{if(reduced.matches){if(animation){animation.revert();animation=null;}if(pageTurn){pageTurn.pause();pageTurn=null;}document.querySelectorAll('.page-turn-leaf').forEach(node=>node.remove());}});
 function setBookVisibility(){
@@ -198,6 +215,18 @@ function showBookPage(name,focus=false,write=true){
  if(write)try{history.pushState(null,'','#'+name);}catch{}
  if(focus){heading.focus({preventScroll:true});if(innerWidth<=850)heading.scrollIntoView({block:'start',behavior:reduced.matches?'instant':'smooth'});}
 }
+function updateBookSchema(value){
+ value.inLanguage=currentBookLanguage();
+ value.mainEntity.itemListElement.forEach((entry,i)=>{
+  entry.item.name=recipeName(recipes[i]);
+  entry.item.description=locales[value.inLanguage].summaries.split('|')[i];
+ });
+ value.hasPart.forEach(chapter=>{
+  chapter.name=locales[value.inLanguage].chapterTitles[chapter.identifier];
+  chapter.hasPart=value.mainEntity.itemListElement.filter((entry,i)=>recipes[i].chapter===chapter.identifier).map(entry=>entry.item);
+ });
+ return value;
+}
 function syncPublicInstall(){
  if(!publicBook)return;
  document.querySelectorAll('[data-public-variant]').forEach(node=>node.textContent=naming==='kitchen'?'Kitchen':'Plain');
@@ -213,11 +242,11 @@ function syncPublicInstall(){
  document.querySelectorAll('[data-host-panel]').forEach(panel=>panel.hidden=panel.dataset.hostPanel!==installHost);
  // Keep machine-readable names and summaries aligned with the recipe interface.
  const schema=$('book-schema');
- if(schema){const value=JSON.parse(schema.textContent);value.inLanguage=currentBookLanguage();value.mainEntity.itemListElement.forEach((entry,i)=>{entry.item.name=recipeName(recipes[i]);entry.item.description=locales[value.inLanguage].summaries.split('|')[i];});schema.textContent=JSON.stringify(value).replace(/</g,'\\u003c');}
+ if(schema){const value=updateBookSchema(JSON.parse(schema.textContent));schema.textContent=JSON.stringify(value).replace(/</g,'\\u003c');}
 }
 if(publicBook){
  document.querySelectorAll('[data-open-page]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();showBookPage(link.dataset.openPage,true);}));
- document.querySelectorAll('[data-open-recipe]').forEach(button=>button.addEventListener('click',()=>{chooseRecipe(Number(button.dataset.openRecipe),true);}));
+ document.querySelectorAll('[data-open-recipe]').forEach(button=>button.addEventListener('click',()=>{chooseRecipe(recipes.findIndex(recipe=>recipe.sourceId===button.dataset.openRecipe),true);}));
  document.querySelectorAll('[data-install-host]').forEach(button=>button.addEventListener('click',()=>{installHost=button.dataset.installHost;syncPublicInstall();}));
  document.querySelectorAll('[data-copy-target]').forEach(button=>button.addEventListener('click',async()=>{
   const code=$(button.dataset.copyTarget),status=$('install-copy-status');
@@ -289,7 +318,7 @@ document.querySelector('.pages').addEventListener('wheel',event=>{
 },{passive:false});
 reduced.addEventListener('change',()=>{if(reduced.matches)stopScrollTurn();syncSmoothScroll();});
 function keepSelectedRecipeVisible(){
- const nav=$('recipe-index'),active=nav.children[selected];
+ const nav=$('recipe-index'),active=nav.querySelectorAll('.recipe-tab')[selected];
  if(innerWidth>850 && active){const box=active.getBoundingClientRect(),viewport=nav.getBoundingClientRect();if(box.bottom>viewport.bottom)nav.scrollTop+=box.bottom-viewport.bottom;if(box.top<viewport.top)nav.scrollTop-=viewport.top-box.top;}
 }
 function placeDish(){

@@ -158,3 +158,134 @@ English: Both exact 0.1.4 archives passed native installation, seven-skill disco
 Auf Nutzerauftrag wurden beide finalen 0.1.4-Pakete aus den stabilen lokalen dist-Marketplaces erneut installiert und aktiviert. Claude Code verwendet diesmal Benutzer-Scope, damit eine neue Sitzung im isolierten Testordner das Plugin findet. Je 37 installierte Dateien stimmen bytegleich mit dem final getesteten ZIP überein; alle sieben Skill-Ordner sind vorhanden. Beide Registrierungen bleiben für die Nutzerabnahme installiert; die bestehende Sidebar wurde nicht verändert. Keine sichtbare Abnahme behauptet. Die manuellen Schritte stehen in [desktop-acceptance.md](desktop-acceptance.md). Synthetische STATE.md-Dateien, ein lokaler Claude-Starthelfer und maschinenbezogener Installationsnachweis bleiben ausschließlich ignoriert unter `.scratch/desktop-acceptance/` bis zur Abnahme erhalten. Nichts veröffentlicht.
 
 English: Both exact final 0.1.4 packages are now installed and enabled from stable local marketplace outputs for user visual acceptance. Claude uses user scope. All installed bytes match the final ZIPs; registrations remain installed, the existing sidebar is unchanged, and visual results are pending.
+
+## 2026-10-26 · 0.7.0 · lokale Erweiterung auf 18 Workflows
+
+Drei zusätzliche Workflows: Review My Changes / Taste Before Serving,
+Can We Simplify? / Trim the Recipe und Find Our Work / Find the Recipe.
+Vorhandene Abläufe ergänzen `explain`, `choose`, `verify-live` und `handoff`;
+Abschlussabgleich und Dokumentationskonsistenz bleiben Zweige bestehender
+Workflows. Der zuvor lokal ergänzte Debugging-Workflow und `usertest` sind
+enthalten. Alle acht README-Fassungen und zwölf Rezeptoberflächen enthalten
+die neuen Einträge; Übersetzungen sind nicht durchgehend muttersprachlich
+abgenommen.
+
+Build, Paketprüfung, Quellenabgleich und 46 Tests bestehen. Ein portabler
+Neubau erzeugt bytegleiche Archive. Der Skill-Validator besteht für die neun
+neuen/geänderten Workflow-Quellen in beiden gerenderten Namensvarianten.
+Ein Paketvertrag prüft zusätzlich relative Anleitungslinks und ungelöste
+Platzhalter in allen Markdown-Runtime-Dateien.
+
+Eine unabhängige Subagent-Prüfung führte zwölf synthetische Szenarien aus:
+Diff-Review mit absichtlicher Rechenregression; Vereinfachung mit neun
+Verhaltensfällen einschließlich Auslassen/Leeren; Suche bei ähnlich benannten
+Quellen; Auslieferungsabgleich mit altem Download trotz grünem Build;
+zielbezogene Übergabe; Wahl zwischen vorhandener Standardbibliothek und
+neuer Abstraktion; Untersuchung ohne Änderungen; usertest ohne verfügbare
+Interaktionswerkzeuge; Erklärung eines Persistenzpfads; Zusagen-/Beitragsabgleich;
+Karakeep-Zugangsentscheidung mit begrenzten Connector-Fähigkeiten; unterstützte
+Projektzuordnung bei noch unverändertem Runtime-Kontext. Alle 25 Fixture-Dateien
+behielten ihre Hashes. Kein Anweisungsdefekt wurde in diesen einzelnen
+Trajektorien reproduziert. Die beiden lokalen Zugriffs-/Zuordnungsanweisungen
+wurden separat validiert; sie gehören nicht zum Cookbook-Runtime-Paket.
+
+Browser-Stichprobe: lokale deutsche Oberfläche im Desktop-Viewport,
+alle drei neuen Rezeptseiten und Kitchen/Plain-Wechsel mit passendem Such-Skill-
+Aufruf. Keine neue vollständige mobile oder native Desktop-Abnahme. Es gab
+keine reale Connector-Mutation, Chatverschiebung, Store-Prüfung oder
+Installation von 0.7.0; die synthetischen Szenarien sind keine frischen
+nativen Codex-/Claude-Plugin-Aufrufe und belegen keine allgemeine Zuverlässigkeit.
+
+English: Local-only 0.7.0 preparation, 18 shared workflows. Build, source and
+package checks, 46 tests, eighteen rendered skill validations and a byte-identical
+portable rebuild pass. Twelve independent synthetic scenarios and a scoped
+German desktop browser check pass with the stated coverage. No publication,
+installed-plugin refresh, native host acceptance or real external mutation is
+implied. Relative runtime instruction links are now covered by the package tests.
+
+### Reihenfolge und Navigation, ebenfalls 26.10.2026
+
+Die 18 Workflows sind jetzt nach Orientierung/Wiedereinstieg, Planung,
+Umsetzung, Prüfung, Veröffentlichung und Abschluss geordnet. Katalog, Bundle,
+alle zwölf Rezeptsprachen, Farben und acht README-Menüs wurden gemeinsam
+umgeordnet; die Inhaltszuordnung wurde pro stabiler Quell-ID mit dem Stand vor
+der Umsortierung verglichen. Startseiten-Verknüpfungen verwenden Quell-IDs
+statt Positionsnummern. Ein ausführbarer UI-Vertrag prüft dieselben Ziele bei
+zwei verschiedenen Rezeptreihenfolgen. Der Gesamtcheck besteht nun mit
+47 Tests und bytegleichem portablem Neubau. Im lokalen Browser öffneten
+„Ein Projekt beginnen“ das fünfte Rezept und „Rezepte entdecken“ die erste
+Orientierungsanleitung. Kein Plugin-Update oder Deployment ausgeführt.
+
+English: Reordered all eighteen workflows and retained every translated recipe's
+content by source identity. Welcome navigation now uses stable source IDs; a
+runtime UI regression test covers reordered arrays. Forty-seven tests and the
+portable rebuild pass. Scoped local browser navigation checks pass.
+
+### Kapitel und Schrittzahlen, 26.10.2026
+
+Sechs Kapitel gliedern das Inhaltsverzeichnis und erscheinen als Kontext auf
+der Rezeptseite. Kapitelmitgliedschaft kommt aus dem Katalog, Titel aus allen
+zwölf UI-Sprachen. Tastaturfokus und Sichtbarkeitssteuerung adressieren die
+tatsächlichen Rezept-Buttons auch innerhalb verschachtelter Kapitel. Die
+Schrittzahlen sind dekorative, für Screenreader ausgeblendete DOM-Elemente
+in gleich großen Kreisen; Grid-Zentrierung und tabellarische Ziffern ersetzen
+die frühere Grundlinienausrichtung. Die geordnete Liste bleibt semantisch
+erhalten.
+
+49 Tests, Quellen-/Paketprüfungen und portabler Neubau bestehen. Neue Verträge
+prüfen vollständige Kapitelübersetzungen und Tastaturnavigation über
+Kapitelgrenzen. Desktop-Browser-Stichprobe: sechs Gruppen, Kapitelkontext,
+sichtbar zentrierte Zahlen sowie Pfeil-ab von Rezept 04 zu Rezept 05 mit
+korrektem Fokus und Kapitelwechsel. Keine neue mobile visuelle Abnahme oder
+Veröffentlichung.
+
+English: Six localized chapters, continuous recipe numbering and centered
+decorative step numbers. Forty-nine tests and the portable rebuild pass.
+Desktop keyboard navigation crosses chapter boundaries with correct focus.
+No new mobile visual acceptance, plugin installation or deployment implied.
+
+### Visuelle Verfeinerung der Kapitel, 26.10.2026
+
+Kapitelköpfe verwenden jetzt farbige Registerbänder mit passenden vorhandenen
+Küchen-Symbolen und größerer Serifenschrift. Die gestalterische Hierarchie
+liegt auf den Kapiteln; Rezeptnamen bleiben ruhiger und ohne eigene Zählspalte.
+Schrittzahlen behalten eine feine Kontur und die zentrierte Ausrichtung.
+Die Desktop-Vorschau wurde im dunklen Systemtheme geprüft; der Gesamtcheck
+besteht weiterhin mit 49 Tests und bytegleichem portablem Neubau. Das ist eine
+lokale visuelle Stichprobe, keine vollständige responsive oder native Abnahme.
+
+### Navigation, Lesetypografie und Kopieraktion, 26.10.2026
+
+Der kompakte Markenkopf gibt dem Kapitelregister mehr Platz. Rezepttexte und
+Schritterläuterungen verwenden größere Schrift und mehr Zeilenabstand. Die
+Aufrufkarte ist gerade gesetzt; ein sichtbarer, in zwölf Sprachen beschrifteter
+Button kopiert den aktuellen Aufruf und meldet Erfolg. Bei verweigertem
+Zwischenablagezugriff bleibt die manuelle Textauswahl erhalten. Ein neuer
+UI-Vertrag prüft Codex- und Claude-Aufrufe, beide Clipboard-Ausgänge sowie das
+Zurücksetzen des Labels nach einem Sprachwechsel. Alle 50 Tests und der
+portable Neubau bestehen. Desktop-Browser-Stichprobe in Hell und System/Dunkel;
+der reale Kopierklick zeigte die Erfolgsrückmeldung. Keine neue vollständige
+mobile Abnahme, Veröffentlichung oder Plugin-Aktualisierung.
+
+English: Compact navigation header, larger reading typography and a visible
+localized copy-command action. Fifty tests and reproducible packaging pass;
+copy success, denied-clipboard fallback and feedback reset are covered by a
+runtime UI contract. Scoped light/dark desktop checks pass. No deployment or
+installed-plugin update implied.
+
+### Schema: 18 Skills und sechs Kapitel, 26.10.2026
+
+Die öffentlichen Buchseiten enthalten zusätzlich zur flachen Skill-Liste sechs
+CreativeWork-Kapitel mit hasPart-Zuordnung aus dem Katalog. Namen und
+Beschreibungen bleiben bei allen zwölf UI-Sprachen und beiden Namensvarianten
+synchron; ein ausführbarer Regressionstest prüft diese Wechsel. Die
+Skill-Anzahl in Installations- und Über-uns-Texten kommt aus dem Katalog,
+damit frühere feste Zahlen nicht erneut abweichen. 51 Tests und der
+bytegleiche portable Neubau bestehen. Kein externes Rich-Results-Testurteil
+oder Google-Suchergebnis wird damit behauptet.
+
+English: The public book JSON-LD now includes six chapter CreativeWorks and
+their exact skill membership. Runtime tests cover all twelve interface
+languages and both naming variants. Public skill counts derive from the
+catalog. Fifty-one tests and the portable rebuild pass; external rich-result
+eligibility and search appearance are not verified.

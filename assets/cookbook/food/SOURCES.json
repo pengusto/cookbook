@@ -2395,5 +2395,577 @@
       ]
     },
     "cutout_method": "Alpha-connected silhouettes, translucent fringe and detached crumbs assigned to nearest silhouette; centered with 5% transparent padding on square canvas."
+  },
+  {
+    "id": "why-is-it-broken",
+    "file": "why-is-it-broken.webp",
+    "dish": "pumpkin soup",
+    "ingredients": [
+      "pumpkin",
+      "onion",
+      "cream",
+      "pumpkin seeds"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-26",
+    "source_sha256": "047fab7e60e7f2e382aa8bd1b2b94e71782314d1f14aab425318ed6d066bc19d",
+    "sha256": "7f2c2ac737c070e8e6a5c9b38afce6a9e295853a3dc0639ad079d7db341cb975",
+    "prompt": "Transparent watercolor cookbook sprite: pumpkin soup on the left, pumpkin, onion, cream jug and pumpkin seeds in a separated 2x2 grid on the right; no text.",
+    "dishNames": {
+      "de": "Kürbissuppe",
+      "en": "Pumpkin soup"
+    },
+    "ingredientNames": {
+      "de": [
+        "Kürbis",
+        "Zwiebel",
+        "Sahne",
+        "Kürbiskerne"
+      ],
+      "en": [
+        "Pumpkin",
+        "Onion",
+        "Cream",
+        "Pumpkin seeds"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        80,
+        810,
+        890
+      ],
+      "ingredients": [
+        [
+          815,
+          80,
+          1170,
+          490
+        ],
+        [
+          1170,
+          80,
+          1536,
+          490
+        ],
+        [
+          815,
+          510,
+          1170,
+          900
+        ],
+        [
+          1170,
+          510,
+          1536,
+          900
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/why-is-it-broken-dish.webp",
+        "sha256": "f8ccef84f6a76d0dd1007b66a9ca2b36600a48e9677a4e835917cebb1d297a7f",
+        "size": [
+          384,
+          384
+        ],
+        "source_bounds": [
+          0,
+          80,
+          810,
+          890
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/why-is-it-broken-ingredient-0.webp",
+          "sha256": "e619b5a375ed7309c30d78eb4a389df2a078d06ffb0535ecda9c984e631ecb71",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            815,
+            80,
+            1170,
+            490
+          ]
+        },
+        {
+          "file": "cutouts/why-is-it-broken-ingredient-1.webp",
+          "sha256": "9b949c2de2c6ee3774381f49f5eff10eadb99ce109f8d9275b6ddc6dc77540b7",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1170,
+            80,
+            1536,
+            490
+          ]
+        },
+        {
+          "file": "cutouts/why-is-it-broken-ingredient-2.webp",
+          "sha256": "fc536f079f8504e3c0b2c9ba2b320501403d9ef3a4febb11395b367ceba615f5",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            815,
+            510,
+            1170,
+            900
+          ]
+        },
+        {
+          "file": "cutouts/why-is-it-broken-ingredient-3.webp",
+          "sha256": "474d141f0515a770a7d347436557af84dcedc4b8dd4c4a8828e32030dcb25300",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1170,
+            510,
+            1536,
+            900
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Generated separated sprites cropped by grid region, aspect ratio preserved and centered with padding on transparent square canvases. Original generation preserved outside runtime package."
+  },
+  {
+    "id": "review-my-changes",
+    "file": "review-my-changes.webp",
+    "dish": "vegetable dumplings in a bamboo steamer",
+    "ingredients": [
+      "napa cabbage",
+      "carrot",
+      "ginger",
+      "soy sauce"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-26",
+    "source_sha256": "da6f190dd6928f272d574df4208a6ec95c26d8e15f2970dbedc387baf98fb313",
+    "sha256": "90e46c0a2e06a1592c55eae52153cd342b93b5eba2ebd3a472bdbfec50ae5117",
+    "prompt": "Transparent watercolor cookbook sprite: vegetable dumplings in a bamboo steamer on the left; napa cabbage, carrot, ginger, soy sauce in a separated 2x2 grid on the right; no text.",
+    "dishNames": {
+      "de": "Gemüse-Dumplings",
+      "en": "Vegetable dumplings"
+    },
+    "ingredientNames": {
+      "de": [
+        "Chinakohl",
+        "Karotte",
+        "Ingwer",
+        "Sojasauce"
+      ],
+      "en": [
+        "napa cabbage",
+        "carrot",
+        "ginger",
+        "soy sauce"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        90,
+        810,
+        960
+      ],
+      "ingredients": [
+        [
+          815,
+          20,
+          1170,
+          575
+        ],
+        [
+          1170,
+          20,
+          1536,
+          575
+        ],
+        [
+          815,
+          600,
+          1170,
+          1024
+        ],
+        [
+          1170,
+          600,
+          1536,
+          1024
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/review-my-changes-dish.webp",
+        "sha256": "87f2fcdd19231d55a39d841a9585df07af466b0bf480f5141379150b3dc4c1c5",
+        "size": [
+          384,
+          384
+        ],
+        "source_bounds": [
+          0,
+          90,
+          810,
+          960
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/review-my-changes-ingredient-0.webp",
+          "sha256": "08168c59b65bbe279eabc33fb73a36244480e1e0d4ac28320d93ca6753955ef4",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            815,
+            20,
+            1170,
+            575
+          ]
+        },
+        {
+          "file": "cutouts/review-my-changes-ingredient-1.webp",
+          "sha256": "d2710c01f6250789ce58ef8b4696816744271383a8c43a6a37bfafe8c133db17",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1170,
+            20,
+            1536,
+            575
+          ]
+        },
+        {
+          "file": "cutouts/review-my-changes-ingredient-2.webp",
+          "sha256": "4be71a4aa921db3665754cd8333100bb15620972d83b300f12e5d5c25aa28517",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            815,
+            600,
+            1170,
+            1024
+          ]
+        },
+        {
+          "file": "cutouts/review-my-changes-ingredient-3.webp",
+          "sha256": "bbecd53c93efc697674f3fa538689034758764048c71123664e426bb905edc4a",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1170,
+            600,
+            1536,
+            1024
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Separated generated sprites cropped by grid region, aspect ratio preserved and centered with padding on transparent square canvases. Original generation preserved outside runtime package."
+  },
+  {
+    "id": "can-we-simplify",
+    "file": "can-we-simplify.webp",
+    "dish": "simple caprese salad",
+    "ingredients": [
+      "tomato",
+      "mozzarella",
+      "basil",
+      "olive oil"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-26",
+    "source_sha256": "89f9f458f44006d31838c1b82a2269b9bd39a70017bbc977bf910c7793c1d5ad",
+    "sha256": "9d2830ede7f1b5c3295176696c13eca3e3b1bf7eed157e3e9594b52a76642164",
+    "prompt": "Transparent watercolor cookbook sprite: simple caprese salad on the left; tomato, mozzarella, basil, olive oil in a separated 2x2 grid on the right; no text.",
+    "dishNames": {
+      "de": "Caprese",
+      "en": "Caprese"
+    },
+    "ingredientNames": {
+      "de": [
+        "Tomate",
+        "Mozzarella",
+        "Basilikum",
+        "Olivenöl"
+      ],
+      "en": [
+        "tomato",
+        "mozzarella",
+        "basil",
+        "olive oil"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        100,
+        800,
+        900
+      ],
+      "ingredients": [
+        [
+          810,
+          100,
+          1170,
+          500
+        ],
+        [
+          1170,
+          100,
+          1536,
+          500
+        ],
+        [
+          810,
+          510,
+          1170,
+          930
+        ],
+        [
+          1170,
+          510,
+          1536,
+          930
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/can-we-simplify-dish.webp",
+        "sha256": "3bdcceeeb0f4cfddbbfa09b8762659b2f5e95e7cf061dd69999b066cef9033e8",
+        "size": [
+          384,
+          384
+        ],
+        "source_bounds": [
+          0,
+          100,
+          800,
+          900
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/can-we-simplify-ingredient-0.webp",
+          "sha256": "eeb0adc9d6755653a62beb46ae28ec11177b51d5ce52200f8fb29e91db19e565",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            810,
+            100,
+            1170,
+            500
+          ]
+        },
+        {
+          "file": "cutouts/can-we-simplify-ingredient-1.webp",
+          "sha256": "7059da74f397a4b7633675cddb8844d4d80913f945e21298a6d763e1f900fd6b",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1170,
+            100,
+            1536,
+            500
+          ]
+        },
+        {
+          "file": "cutouts/can-we-simplify-ingredient-2.webp",
+          "sha256": "52604a74ffc0c1a76b7c76a082bdae88eb730df212b68715d06796315096069e",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            810,
+            510,
+            1170,
+            930
+          ]
+        },
+        {
+          "file": "cutouts/can-we-simplify-ingredient-3.webp",
+          "sha256": "e507db2451e1312a8817606966bb549681cab5925f2a8cdfb435d459dfd2f190",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1170,
+            510,
+            1536,
+            930
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Separated generated sprites cropped by grid region, aspect ratio preserved and centered with padding on transparent square canvases. Original generation preserved outside runtime package."
+  },
+  {
+    "id": "find-our-work",
+    "file": "find-our-work.webp",
+    "dish": "apple galette",
+    "ingredients": [
+      "apple",
+      "butter",
+      "flour",
+      "cinnamon"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-26",
+    "source_sha256": "08b9131faf67f843f02f4d3703f466e7e36e5f06bfdcc899b9d92cd0986fdf2f",
+    "sha256": "ffdad37cbca12caf6e00ec2411a52aca5d2cae6b932b5658283c21d9dda07fef",
+    "prompt": "Transparent watercolor cookbook sprite: apple galette on the left; apple, butter, flour, cinnamon in a separated 2x2 grid on the right; no text.",
+    "dishNames": {
+      "de": "Apfelgalette",
+      "en": "Apple galette"
+    },
+    "ingredientNames": {
+      "de": [
+        "Apfel",
+        "Butter",
+        "Mehl",
+        "Zimt"
+      ],
+      "en": [
+        "apple",
+        "butter",
+        "flour",
+        "cinnamon"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        100,
+        800,
+        900
+      ],
+      "ingredients": [
+        [
+          810,
+          80,
+          1180,
+          520
+        ],
+        [
+          1180,
+          80,
+          1536,
+          520
+        ],
+        [
+          810,
+          550,
+          1190,
+          950
+        ],
+        [
+          1190,
+          550,
+          1536,
+          950
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/find-our-work-dish.webp",
+        "sha256": "6f68539fea510ede790f79d7f74d1b7f4053b958012e49acb8e29f303d760bec",
+        "size": [
+          384,
+          384
+        ],
+        "source_bounds": [
+          0,
+          100,
+          800,
+          900
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/find-our-work-ingredient-0.webp",
+          "sha256": "9ed89c790c0dce53d43af8737719cd1687edfc5a6a68f5324ba3af1bcf2a37c7",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            810,
+            80,
+            1180,
+            520
+          ]
+        },
+        {
+          "file": "cutouts/find-our-work-ingredient-1.webp",
+          "sha256": "793183955c4ee124c6f0cc23cbb1e1785f9cfd732051f84e04aecdb7ba4e2e1d",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1180,
+            80,
+            1536,
+            520
+          ]
+        },
+        {
+          "file": "cutouts/find-our-work-ingredient-2.webp",
+          "sha256": "040a73277a5bc13925c80a37a51040d06b1c865e719c74ee222b183aeea6c1d0",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            810,
+            550,
+            1190,
+            950
+          ]
+        },
+        {
+          "file": "cutouts/find-our-work-ingredient-3.webp",
+          "sha256": "c0bcec47db1b757875d4eb2543584bb48656dffef234dca6d443a88455d13543",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1190,
+            550,
+            1536,
+            950
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Separated generated sprites cropped by grid region, aspect ratio preserved and centered with padding on transparent square canvases. Original generation preserved outside runtime package."
   }
 ]

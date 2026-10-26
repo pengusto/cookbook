@@ -2,6 +2,8 @@
 import html.parser
 import importlib.util
 import json
+import shutil
+import subprocess
 from pathlib import Path
 import unittest
 
@@ -106,12 +108,16 @@ class SchemaContracts(unittest.TestCase):
                 schema = [script for script in page.scripts if script['type'] == 'application/ld+json']
                 self.assertEqual(len(schema), 1)
                 data = json.loads(schema[0]['text'])
-                self.assertEqual(set(data), {'@context', '@type', 'name', 'inLanguage', 'mainEntity'})
+                self.assertEqual(set(data), {'@context', '@type', 'name', 'inLanguage', 'mainEntity', 'hasPart'})
                 self.assertEqual(data['@context'], 'https://schema.org')
                 self.assertEqual(data['@type'], 'CollectionPage')
                 self.assertEqual(data['name'], 'Cookbook by Pengusto')
                 self.assertEqual(data['inLanguage'], language)
                 self.assertEqual(page.html_language, language)
+                rendered = (ROOT / 'site' / filename).read_text()
+                self.assertNotIn('{count}', rendered)
+                self.assertNotIn('14 Skills', rendered)
+                self.assertNotIn('14 maintained', rendered)
                 summaries = locales[language]['summaries'].split('|')
                 self.assertEqual(len(summaries), len(rows))
                 expected = [
@@ -122,6 +128,15 @@ class SchemaContracts(unittest.TestCase):
                     for position, (row, summary) in enumerate(zip(rows, summaries), 1)]
                 self.assertEqual(data['mainEntity'], {
                     '@type': 'ItemList', 'numberOfItems': len(rows), 'itemListElement': expected})
+                chapters = list(dict.fromkeys(row['chapter'] for row in rows))
+                self.assertEqual(len(rows), 18)
+                self.assertEqual(len(chapters), 6)
+                self.assertEqual(data['hasPart'], [
+                    {'@type': 'CreativeWork', 'identifier': chapter,
+                     'name': locales[language]['chapterTitles'][chapter],
+                     'hasPart': [entry['item'] for row, entry in zip(rows, expected)
+                                 if row['chapter'] == chapter]}
+                    for chapter in chapters])
                 self.assertEqual(page.recipe_links, [
                     {'href': '#' + row['install_ids'][variant], 'name': item['item']['name']}
                     for row, item in zip(rows, expected)])
@@ -131,6 +146,43 @@ class SchemaContracts(unittest.TestCase):
                 self.assertNotIn('"@type": "Recipe"', schema[0]['text'])
                 self.assertNotIn('aggregateRating', schema[0]['text'])
                 self.assertNotIn('offers', schema[0]['text'])
+
+    @unittest.skipUnless(shutil.which('node'), 'Optional Node.js unavailable')
+    def test_schema_tracks_every_interface_language_and_naming_variant(self):
+        source = (ROOT / 'ui/book.js').read_text()
+        helper = source[source.index('function updateBookSchema('):source.index('function syncPublicInstall(')]
+        rows = builder.catalog()
+        locales = json.loads((ROOT / 'ui/locales.json').read_text())
+        page = Page()
+        page.feed(builder.schema_script(rows, 'de', locales['de']['chapterTitles']))
+        data = json.loads(page.scripts[0]['text'])
+        script = "const assert=require('node:assert/strict');\n"
+        script += 'const recipes=' + json.dumps(rows) + ';\n'
+        script += 'const locales=' + json.dumps(locales) + ';\n'
+        script += 'let value=' + json.dumps(data) + ';\n'
+        script += "let language,naming;const currentBookLanguage=()=>language;const recipeName=row=>row[naming==='plain'?'title':'cooking_title'];\n"
+        script += helper + """
+for(language of Object.keys(locales))for(naming of ['plain','kitchen']){
+ value=updateBookSchema(JSON.parse(JSON.stringify(value)));
+ assert.equal(value.inLanguage,language);
+ assert.equal(value.hasPart.length,6);
+ assert.equal(value.mainEntity.numberOfItems,18);
+ const flattened=[];
+ for(const chapter of value.hasPart){
+  assert.equal(chapter.name,locales[language].chapterTitles[chapter.identifier]);
+  const indices=recipes.flatMap((row,i)=>row.chapter===chapter.identifier?[i]:[]);
+  assert.deepEqual(chapter.hasPart,indices.map(i=>value.mainEntity.itemListElement[i].item));
+  flattened.push(...chapter.hasPart);
+ }
+ assert.deepEqual(flattened,value.mainEntity.itemListElement.map(entry=>entry.item));
+ recipes.forEach((row,i)=>{
+  assert.equal(flattened[i].name,recipeName(row));
+  assert.equal(flattened[i].description,locales[language].summaries.split('|')[i]);
+ });
+}
+"""
+        result = subprocess.run([shutil.which('node'), '-e', script], capture_output=True, text=True, timeout=10)
+        self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_catalog_changes_are_reflected_and_cannot_escape_script(self):
         title = '</script><script>alert("demo")</script> & <Test>'

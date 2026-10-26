@@ -7,7 +7,7 @@
     "RECIPES": "Die Rezepte",
     "LEGAL": "Impressum",
     "PRIVACY": "Datenschutz",
-    "DESCRIPTION": "Cookbook by Pengusto: 14 Workflows für Codex und Claude Code. Im offenen Kochbuch entdecken, installieren und den nächsten Projektschritt finden.",
+    "DESCRIPTION": "Cookbook by Pengusto: 18 Workflows für Codex und Claude Code. Im offenen Kochbuch entdecken, installieren und den nächsten Projektschritt finden.",
     "WELCOME_TITLE": "Ein Rezept für deinen nächsten Schritt.",
     "WELCOME_INTRO": "Cookbook gibt deinem Coding-Agent gezielte Abläufe: für einen klaren Projektstart, den Wiedereinstieg nach einer Pause, einen Review oder eine gute Übergabe.",
     "WELCOME_NOTE": "Eine Sammlung von Pengusto. Für Entwicklerinnen und Entwickler, die mit Codex oder Claude Code arbeiten.",
@@ -22,7 +22,7 @@
     "CHOICE": "Kitchen oder Plain?",
     "CHOICE_TEXT": "Dieselben Workflows mit Koch-Namen oder einfachen Fragen. Wähle eine Namenswelt; die Website-Sprache übersetzt nicht die Skill-Anleitungen.",
     "INSTALL_TITLE": "Deine Küche einrichten.",
-    "INSTALL_INTRO": "Installiere alle 14 Skills als Plugin. Die Werkzeuge deines Hosts führen die Workflows aus; dieses Buch hilft dir bei der Auswahl.",
+    "INSTALL_INTRO": "Installiere alle {count} Skills als Plugin. Die Werkzeuge deines Hosts führen die Workflows aus; dieses Buch hilft dir bei der Auswahl.",
     "REQUIREMENTS": "Was du brauchst",
     "REQUIREMENTS_TEXT": "Codex oder Claude Code, installiert und angemeldet. Repository-Prüfungen können Git, Python 3.10+ und optionale Scanner benötigen.",
     "HOST_CHOICE": "Wähle deinen Host",
@@ -43,7 +43,7 @@
     "CHECKSUMS": "SHA-256-Prüfsummen",
     "FULL_GUIDE": "Ausführliche Installationsübersicht",
     "ABOUT_TITLE": "Gute Abläufe. Klare Grenzen.",
-    "ABOUT_INTRO": "Cookbook by Pengusto ist eine Sammlung von 14 gepflegten Agent-Workflows. Plain und Kitchen entstehen aus derselben Quelle. Du prüfst die Ergebnisse und entscheidest über die nächsten Schritte.",
+    "ABOUT_INTRO": "Cookbook by Pengusto ist eine Sammlung von {count} gepflegten Agent-Workflows. Plain und Kitchen entstehen aus derselben Quelle. Du prüfst die Ergebnisse und entscheidest über die nächsten Schritte.",
     "STATUS": "Experimentelle öffentliche Beta",
     "STATUS_TEXT": "Paket-, Quell- und portable Build-Prüfungen sind automatisiert. Host-Abnahmen gelten für ihre dokumentierte Version. Keine Store-Freigabe, Sicherheits- oder Rechtszertifizierung.",
     "LICENSE": "Offen und nachvollziehbar",
@@ -58,7 +58,11 @@
     "GERMAN": "Deutsch",
     "RECIPE_LABEL": "Rezepte",
     "INGREDIENTS": "Zutaten",
-    "SCROLL_HINT": "Am Seitenende weiterscrollen, um umzublättern. Am Anfang geht es zurück."
+    "SCROLL_HINT": "Am Seitenende weiterscrollen, um umzublättern. Am Anfang geht es zurück.",
+    "DEBUG": "Ein aktueller Fehler",
+    "DEBUG_TEXT": "Reproduzieren, Ursache eingrenzen und einen beauftragten Fix nachprüfen.",
+    "USERTEST": "Einen Nutzerablauf testen",
+    "USERTEST_TEXT": "Den echten Ablauf im usertest-Modus prüfen; Befunde statt automatischer Reparaturen."
   },
   "en": {
     "CONTENTS": "In this book",
@@ -68,7 +72,7 @@
     "RECIPES": "The recipes",
     "LEGAL": "Legal notice",
     "PRIVACY": "Privacy",
-    "DESCRIPTION": "Cookbook by Pengusto: 14 workflows for Codex and Claude Code. Explore the open cookbook, install the skills and find your next project step.",
+    "DESCRIPTION": "Cookbook by Pengusto: 18 workflows for Codex and Claude Code. Explore the open cookbook, install the skills and find your next project step.",
     "WELCOME_TITLE": "A recipe for your next step.",
     "WELCOME_INTRO": "Cookbook gives your coding agent focused workflows: start a project, pick up after a break, review your work or leave a useful handoff.",
     "WELCOME_NOTE": "A collection by Pengusto. For developers working with Codex or Claude Code.",
@@ -83,7 +87,7 @@
     "CHOICE": "Kitchen or Plain?",
     "CHOICE_TEXT": "The same workflows with cooking names or straightforward questions. Choose one naming style; website language does not translate the skill instructions.",
     "INSTALL_TITLE": "Set up your kitchen.",
-    "INSTALL_INTRO": "Install all 14 skills as a plugin. Your host tools carry out the workflows; this book helps you choose one.",
+    "INSTALL_INTRO": "Install all 18 skills as a plugin. Your host tools carry out the workflows; this book helps you choose one.",
     "REQUIREMENTS": "What you need",
     "REQUIREMENTS_TEXT": "Codex or Claude Code, installed and signed in. Repository checks may need Git, Python 3.10+ and optional scanners.",
     "HOST_CHOICE": "Choose your host",
@@ -104,7 +108,7 @@
     "CHECKSUMS": "SHA-256 checksums",
     "FULL_GUIDE": "Detailed installation overview",
     "ABOUT_TITLE": "Useful workflows. Clear boundaries.",
-    "ABOUT_INTRO": "Cookbook by Pengusto is a collection of 14 maintained agent workflows. Plain and Kitchen are built from the same source. You review the results and decide what happens next.",
+    "ABOUT_INTRO": "Cookbook by Pengusto is a collection of {count} maintained agent workflows. Plain and Kitchen are built from the same source. You review the results and decide what happens next.",
     "STATUS": "Experimental public beta",
     "STATUS_TEXT": "Package, source and portable-build checks are automated. Host acceptance records apply to their documented version. No store approval, security or legal certification.",
     "LICENSE": "Open and traceable",
@@ -119,6 +123,10 @@
     "GERMAN": "Deutsch",
     "RECIPE_LABEL": "recipes",
     "INGREDIENTS": "Ingredients",
-    "SCROLL_HINT": "Keep scrolling at the end to turn the page. Scroll back at the start to return."
+    "SCROLL_HINT": "Keep scrolling at the end to turn the page. Scroll back at the start to return.",
+    "DEBUG": "A current failure",
+    "DEBUG_TEXT": "Reproduce, isolate the cause and verify a requested correction.",
+    "USERTEST": "Test a user journey",
+    "USERTEST_TEXT": "Exercise the real flow in usertest mode; report findings without automatic repairs."
   }
 }
