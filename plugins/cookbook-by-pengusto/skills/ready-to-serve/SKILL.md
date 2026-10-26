@@ -1,11 +1,23 @@
 ---
 name: ready-to-serve
-description: Evaluate a repository for public GitHub release, propose a prioritized preparation plan, then implement approved changes. Use when preparing a project for open source or improving its public documentation and repository hygiene.
+description: Evaluate a repository for public GitHub release, propose a prioritized preparation plan, then implement approved changes. Use for sharing preparation or documentation consistency; verify-live checks whether an intended version is actually delivered and working.
 ---
 
 # Ready to Serve
 
 Prepare a repository so outsiders can understand, run, and contribute to it. Work in two phases: evaluate first, implement the agreed scope second.
+
+For `$ready-to-serve verify-live <target>`, read [the delivery verification guide](references/verify-live.md)
+and perform that read-only verification instead of preparing a new release.
+Treat `verify-live` as a mode only when it is the first argument.
+
+For a documentation-consistency request, narrow the evaluation to the changed
+behavior and its README, website, installation examples, translations and
+illustrations. Compare claims with the actual product and package. Report
+stale commands, contradictory versions and unverified feature claims; preserve
+dated historical acceptance records. Apply only requested or already approved
+corrections. Use the existing checks for mechanical consistency and inspect
+rendered examples when their appearance affects the claim.
 
 ## 1. Evaluate without editing
 

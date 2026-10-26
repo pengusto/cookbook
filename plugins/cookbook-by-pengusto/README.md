@@ -1,25 +1,29 @@
 # Cookbook by Pengusto
 
-Version 0.6.0 · Codex · kitchen
+Version 0.7.0 · Codex · kitchen
 
-14 workflows for planning a project, checking progress, recovering chat context, reviewing exposure and legal questions, preparing a release, drafting change notes and finishing a chat. Open a fresh host session after installation, then invoke a workflow with your request.
+18 workflows for planning a project, checking progress, recovering chat context, reviewing exposure and legal questions, preparing a release, drafting change notes and finishing a chat. Open a fresh host session after installation, then invoke a workflow with your request.
 
 | Workflow | Invocation |
 |---|---|
-| Prep the Kitchen | `$prep-the-kitchen` |
-| Are We Cooking? | `$are-we-cooking` |
+| Show Me the Kitchen | `$show-me-the-kitchen` |
+| Find the Recipe | `$find-the-recipe` |
+| Back to the Kitchen | `$back-to-the-kitchen` |
 | What Was I Cooking? | `$what-was-i-cooking` |
+| Prep the Kitchen | `$prep-the-kitchen` |
+| Finish My Order | `$finish-my-order` |
+| Name That Dish | `$name-that-dish` |
+| You’re the Chef | `$youre-the-chef` |
+| Are We Cooking? | `$are-we-cooking` |
+| Find the Bad Ingredient | `$find-the-bad-ingredient` |
+| Trim the Recipe | `$trim-the-recipe` |
+| Taste Before Serving | `$taste-before-serving` |
 | Keep the Recipe Secret | `$keep-the-recipe-secret` |
 | Can I Serve This? | `$can-i-serve-this` |
 | Ready to Serve | `$ready-to-serve` |
 | What’s New on the Menu? | `$whats-new-on-the-menu` |
 | Close the Kitchen | `$close-the-kitchen` |
 | Why Did It Burn? | `$why-did-it-burn` |
-| Back to the Kitchen | `$back-to-the-kitchen` |
-| Finish My Order | `$finish-my-order` |
-| Name That Dish | `$name-that-dish` |
-| Show Me the Kitchen | `$show-me-the-kitchen` |
-| You’re the Chef | `$youre-the-chef` |
 
 Start with a small request: ask the planning workflow for a three-project portfolio plan, or ask the release-readiness workflow to review the current repository without publishing. Reviews report findings and limits; they do not certify security or legal compliance.
 

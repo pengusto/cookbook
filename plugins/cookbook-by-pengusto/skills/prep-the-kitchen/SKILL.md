@@ -1,6 +1,6 @@
 ---
 name: prep-the-kitchen
-description: Turn a free-form product idea or existing project into a focused implementation start. Use when beginning a project, feature, app, service, extension, CLI, game, or agent skill, or when the next project step is unclear.
+description: Turn a free-form product idea or existing project into a focused implementation start. Use when beginning a project or choosing its next step; explain traces an existing flow and choose compares suitable options before implementation.
 metadata:
   short-description: Turn ideas into an actionable project start
 ---
@@ -30,6 +30,13 @@ Do not ask for hosting, accounts or publication decisions when the requested sli
   project artifacts and leave one executable frontier ticket.
 - `continue`: inspect the existing repository and continue from its first open,
   unblocked ticket or the next explicitly selected decision.
+- `explain <flow>`: trace the real project and explain how the selected part
+  works, without edits.
+- `choose <decision>`: compare a few suitable options against the existing
+  project and recommend one, without installing or implementing them.
+
+For `explain` or `choose`, read [the focused mode guide](references/explain-and-choose.md)
+and complete that mode instead of the implementation-start workflow below.
 
 Treat mode words only when they are the first argument. Otherwise treat the
 whole request as the product intent.

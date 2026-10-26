@@ -1,0 +1,4 @@
+interface:
+  display_name: "Trim the Recipe"
+  short_description: "Reduce complexity while preserving behavior"
+  default_prompt: "Use $trim-the-recipe to inspect the selected flow for useful simplifications and preserve its contracts."

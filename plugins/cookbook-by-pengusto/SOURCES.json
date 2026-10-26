@@ -1,8 +1,53 @@
 {
   "bundle": "cookbook-by-pengusto",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "variant": "kitchen",
   "skills": [
+    {
+      "id": "explain-the-cookbook",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "e5a6d77ec6c72d450d67d3007577d48a8fda34b1cdb15f4fdfefc564f7f54c5b",
+        "agents/openai.yaml": "276fe7b61fe3887bcde70ad8bc40ade7f4420d0b35973f796b48a0e3f88d12b6"
+      }
+    },
+    {
+      "id": "find-our-work",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+        "SKILL.md": "e4bdd9b5307fdefa6d61de19a882e6e506bf86762db98ee0c73bb41f6d6fd2b9",
+        "agents/openai.yaml": "e9bbc23412aaf280d4614f80141f2492a79fb5c87fd6eaa3f36ef35fe70aa7f6"
+      }
+    },
+    {
+      "id": "catch-me-up",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "5ff11eeef0a8b4a34aef7fd0f07ad13486bead237289d03edf58fe4d0bd66611",
+        "agents/openai.yaml": "32891f3e96cd00fd0420f7a878796f9435eb39f782c48ca6b3fd0d763913b4d0"
+      }
+    },
+    {
+      "id": "what-was-i-cooking",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "de17adb3ac6d9b55d86b6d8f83d6c38d1481b7a0fab41d7f65a2d2bcb6997eec",
+        "agents/openai.yaml": "58f193486f02c6a6791c62f184044d6c1b27a6c989415b00f2e709cf7c90e2ca",
+        "references/examples.md": "a1b09f7ce03ed323e997bd4855bc93c52185b6db7e1d9fbf73e5872e5a14d572"
+      }
+    },
     {
       "id": "start-it-right",
       "license": "MIT",
@@ -10,11 +55,46 @@
       "revision": null,
       "files": {
         "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
-        "SKILL.md": "c84a97d172f4a3e28b2f6c4d0eb67ab18b9df254155590e61b3fc04ec85af885",
+        "SKILL.md": "9edf1ab03e91031a942211800844753b3e1461ca44e26e2687336e533ef92624",
         "agents/openai.yaml": "e2132fb5e90309fc5d1884e41a234875bb610f63827fbafa6372847ce80ff586",
         "references/artifact-contract.md": "32e58c231bddc210f48008f31337d2540bc90450badac8c9929e22a3761cf90e",
         "references/examples.md": "ccc828fb2c5f6d9a2aa678d18613d821ead1e97e8e280c21a4cab9f5bcf2e3ea",
+        "references/explain-and-choose.md": "3ac5a702c489e62a2071f1215450967c7c004214e5e0a2bcceeaba4dc3ba46d8",
         "references/module-catalog.md": "471f4049414f9f440a6dfbf197b3e57210976d86fe35f4abee0e3ea6fef9c324"
+      }
+    },
+    {
+      "id": "finish-my-prompt",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "aed74a6e456c40b32efdb3f09c4a3b72fa6475b82c888b54e89f157b4a23c4f5",
+        "agents/openai.yaml": "e4aa7445aa07ec623783f7f031bf0045ffb357b1ffff3bb51b63353e23e8fbee"
+      }
+    },
+    {
+      "id": "which-name-wins",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "825954780e912ece60ea7fc48b036dd537b4813334e788993e9dcdb073dddb90",
+        "agents/openai.yaml": "fbddc0ad937a4607c6075ad41ba8d0b729d420059d3d0a1165a030fd7973d051"
+      }
+    },
+    {
+      "id": "you-got-this",
+      "license": "MIT",
+      "repository": "https://github.com/pengusto/you-got-this",
+      "revision": "d8ce9d530d74852ead13fac2f6994714808caff5",
+      "files": {
+        "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+        "SKILL.md": "ea78740c282e59bc1f78e090bb54a7fc0c6e54df262b65412af91e7ca79b64d8",
+        "agents/openai.yaml": "653155bf6dc1bba854d8087cff023592efe19b27425e376b884498473ac8fec5",
+        "examples.md": "b997b3f231736e748c0db7a63cb59a4dda0d88ddf1e30fe939a36e347c651103"
       }
     },
     {
@@ -29,15 +109,36 @@
       }
     },
     {
-      "id": "what-was-i-cooking",
+      "id": "why-is-it-broken",
       "license": "MIT",
       "repository": null,
       "revision": null,
       "files": {
-        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "de17adb3ac6d9b55d86b6d8f83d6c38d1481b7a0fab41d7f65a2d2bcb6997eec",
-        "agents/openai.yaml": "58f193486f02c6a6791c62f184044d6c1b27a6c989415b00f2e709cf7c90e2ca",
-        "references/examples.md": "a1b09f7ce03ed323e997bd4855bc93c52185b6db7e1d9fbf73e5872e5a14d572"
+        "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+        "SKILL.md": "bcf51290000dbf830fe1981bfa2b909a3b0eddb7874be6416c62f433a24ca1ff",
+        "agents/openai.yaml": "f7ac4a17f2f1c25d9cd664b1444b5323907f9e089af7bf5e150c382311952430"
+      }
+    },
+    {
+      "id": "can-we-simplify",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+        "SKILL.md": "379454f4d31d492528b95311dfce9413a41abb54d45e968be995382d978bb802",
+        "agents/openai.yaml": "0f6752a5b7d175431d7dfb5fdb87f9f38865a69d5172d8f871ebe63861dc0b33"
+      }
+    },
+    {
+      "id": "review-my-changes",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+        "SKILL.md": "531db17e499057c7f6b8b25e7a49687e124cea81fcb6bd3177114335f5ee9414",
+        "agents/openai.yaml": "3117f806fa4ff0d270188df78dedbcf638362e26a95141ae193b70c0e5b4c67e"
       }
     },
     {
@@ -73,10 +174,11 @@
       "revision": null,
       "files": {
         "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "9efbb6b83a694ae48bc9eea953ff3dbafb8cea229513147cf210d5caa6f56a68",
+        "SKILL.md": "f1a811422a42701533380d5bcca8a7bcef749a8c3e89f3b45822707ba43d1b8a",
         "agents/openai.yaml": "c5a544227bc017b57f85b0f0692a9a725fd81699ad43ae839c16acb0c78f0020",
         "references/github-pages.md": "26a71d05cf69d44f432012d4c506f0eb69a021a6b37a891718447310b7721e92",
-        "references/readme-presentation.md": "fc87dfdc97cdddf1b0126542573b69bf8c9190b3d33728fd141e13891d843cde"
+        "references/readme-presentation.md": "fc87dfdc97cdddf1b0126542573b69bf8c9190b3d33728fd141e13891d843cde",
+        "references/verify-live.md": "48045fcab04796d6e21d14aa733872fcc526015adf1211725dbb65ac7aa9dd70"
       }
     },
     {
@@ -97,8 +199,9 @@
       "revision": null,
       "files": {
         "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "4bdd3759e20053eba0c7abf1ac8df8d99148fc3aa3866ab45397e5d8891bec1b",
-        "agents/openai.yaml": "ffd32d863dc091b3f7c2e6e0fb5e3c0f90350d6e0606be90d75270990d181623"
+        "SKILL.md": "0ec465001a22534d82b3581add202d82996690f3256dd8ddd661b2617a6a1631",
+        "agents/openai.yaml": "ffd32d863dc091b3f7c2e6e0fb5e3c0f90350d6e0606be90d75270990d181623",
+        "references/handoff.md": "59a6124c75d399d631cc8c4aa24805375981a0c29bf61ac0234fbf9600e543d4"
       }
     },
     {
@@ -110,62 +213,6 @@
         "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
         "SKILL.md": "28edc81a7798659a025f221414df7a07b6a1231f9caeab2361ca4f7f0b725180",
         "agents/openai.yaml": "e1543cd0e45357f167536a48679044e57d57731e91a5da57852de7620c720671"
-      }
-    },
-    {
-      "id": "catch-me-up",
-      "license": "MIT",
-      "repository": null,
-      "revision": null,
-      "files": {
-        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "5ff11eeef0a8b4a34aef7fd0f07ad13486bead237289d03edf58fe4d0bd66611",
-        "agents/openai.yaml": "32891f3e96cd00fd0420f7a878796f9435eb39f782c48ca6b3fd0d763913b4d0"
-      }
-    },
-    {
-      "id": "finish-my-prompt",
-      "license": "MIT",
-      "repository": null,
-      "revision": null,
-      "files": {
-        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "aed74a6e456c40b32efdb3f09c4a3b72fa6475b82c888b54e89f157b4a23c4f5",
-        "agents/openai.yaml": "e4aa7445aa07ec623783f7f031bf0045ffb357b1ffff3bb51b63353e23e8fbee"
-      }
-    },
-    {
-      "id": "which-name-wins",
-      "license": "MIT",
-      "repository": null,
-      "revision": null,
-      "files": {
-        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "825954780e912ece60ea7fc48b036dd537b4813334e788993e9dcdb073dddb90",
-        "agents/openai.yaml": "fbddc0ad937a4607c6075ad41ba8d0b729d420059d3d0a1165a030fd7973d051"
-      }
-    },
-    {
-      "id": "explain-the-cookbook",
-      "license": "MIT",
-      "repository": null,
-      "revision": null,
-      "files": {
-        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "44343f29b237ddbf60f6d7fba77600d333ad37114d72c3055c342b95d7b7f20b",
-        "agents/openai.yaml": "276fe7b61fe3887bcde70ad8bc40ade7f4420d0b35973f796b48a0e3f88d12b6"
-      }
-    },
-    {
-      "id": "you-got-this",
-      "license": "MIT",
-      "repository": "https://github.com/pengusto/you-got-this",
-      "revision": "d8ce9d530d74852ead13fac2f6994714808caff5",
-      "files": {
-        "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
-        "SKILL.md": "e0467c392f67641f25e9a1727536304789ca51af2568b16ce4845e339290eb87",
-        "agents/openai.yaml": "653155bf6dc1bba854d8087cff023592efe19b27425e376b884498473ac8fec5",
-        "examples.md": "8fc73aea812a6e809fda1c7db30d55c6157c05fd41db7e91f9fc2d40ea654867"
       }
     }
   ]

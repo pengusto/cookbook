@@ -1,7 +1,7 @@
 {
   "name": "cookbook-by-pengusto",
-  "version": "0.6.0",
-  "description": "Fourteen coding-agent workflows for planning, autonomous execution, progress, context recovery, reviews, release preparation, handoff, retrospectives, prompt drafting and naming.",
+  "version": "0.7.0",
+  "description": "Eighteen focused workflows for coding agents: plan, explain, choose, build, debug, review, simplify, find earlier work, verify delivery and hand off.",
   "author": {
     "name": "Pengusto"
   },

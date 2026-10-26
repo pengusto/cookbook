@@ -7,11 +7,28 @@ description: Close the Kitchen. Guide the current conversation to a verified fin
 
 Bring the current chat to a deliberate stopping point. Use `$close-the-kitchen` to invoke this workflow.
 
+For `$close-the-kitchen handoff <destination>`, read [the targeted handoff guide](references/handoff.md).
+Treat `handoff` as a mode only when it is the first argument. Preparing a handoff
+does not itself authorize a host transfer or a message to another chat.
+
 ## Establish the finish line
 
 Reconstruct the agreed outcome, accepted decisions and remaining commitments from the available conversation and actual artifacts. Resolve material factual uncertainty with relevant tools. Reuse observed results from this chat when the relevant state has not changed; do not rerun checks just to produce a closing message. Ask for missing context only when it materially affects scope; do not invent prior agreements.
 
 Separate work that is verified complete, actionable now, needs a decision or human action, or has been deferred or cancelled. Do not revive rejected ideas or promote optional suggestions into commitments. Stay within this chat; do not sweep unrelated projects or create tasks, goals or automations unless requested.
+
+When reconciling earlier recommendations, identify what was merely proposed,
+accepted, started, verified implemented, deferred/rejected or not evidenced.
+Check only material uncertainties against the owning artifacts. Report an old
+claim as historical when it cannot be refreshed; do not reopen proven work
+just to fill a checklist. A dropped requirement is not completed work.
+
+For an upstream contribution, distinguish local commits, pushed branch, PR
+head, CI, maintainer feedback and merge status. Before proposing fork or branch
+cleanup, check all relevant own commits and retained recovery references,
+including squash/cherry-pick equivalents where appropriate. A merged PR alone
+does not establish that every branch is disposable. Report what remains;
+deletion and external follow-up need their own authorization.
 
 ## Give a closing guide first
 

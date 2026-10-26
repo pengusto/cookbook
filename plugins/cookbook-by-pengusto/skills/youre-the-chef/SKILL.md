@@ -6,7 +6,8 @@ description: >-
   details, establish an observable quality bar, implement, test, critique, and
   review the integrated result. Use for requests such as "$youre-the-chef make
   this prototype really good", finishing a project for public demonstration,
-  substantial builds, polish passes, game work, or focused audits.
+  substantial builds, polish passes, game work, focused audits, or usertest
+  requests to exercise a real user journey and report findings.
 ---
 
 # You’re the Chef
@@ -20,7 +21,9 @@ The user supplies intent. Determine the rest and act.
 - `$youre-the-chef audit` or `$youre-the-chef audit <area>`: inspect and report;
   do not implement major new functionality unless the request also clearly
   asks for fixes.
-- Treat `gauntlet` and `audit` as mode words only when they are the first
+- `$youre-the-chef usertest <flow>`: exercise a concrete user journey and report
+  observed behavior; implement fixes only when separately requested.
+- Treat `gauntlet`, `audit` and `usertest` as mode words only when they are the first
   argument. Otherwise treat the whole message as the goal.
 
 ## Start with evidence
@@ -85,6 +88,34 @@ replaces playable or usable product work. Note unavailable tools rather than
 pretending their output was verified.
 
 ## Modes
+
+### User test
+
+Use `$youre-the-chef usertest <flow>` when the user wants to know whether a real task
+works from a user's perspective. This is an agent-run journey check, not
+research with human participants or evidence of what all users will understand.
+
+Establish the intended user, task, target environment and observable success
+condition from the product and request. Select a small representative journey,
+including relevant empty, loading, error and recovery states. Exercise the
+actual interface with available browser, app or CLI tools; check keyboard and
+small-screen behavior when applicable. Source inspection and unit tests alone
+do not establish that the journey works. Report unavailable interaction tools
+as a coverage gap rather than inventing a successful walkthrough.
+
+Use isolated test data and the least consequential environment that can
+represent the flow. Do not register real users, send messages, incur charges,
+alter production records or delete data without specific authorization.
+Ask about a missing account, role or environment only when it prevents a
+useful test; never request passwords in chat. Record agent-created test data
+and clean it up only within the existing authorization.
+
+For each important finding give the action, expected and observed result,
+reproduction evidence and impact. Separate reproduced defects, usability
+judgments and untested paths. Report covered scenarios even when no defect
+was found, without claiming comprehensive QA. A test request authorizes
+inspection, not repairs; if repairs are also requested, fix within scope and
+retest the original journey. Stop at the selected coverage boundary.
 
 ### Default
 
