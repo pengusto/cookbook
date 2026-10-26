@@ -181,7 +181,8 @@ for(language of Object.keys(locales))for(naming of ['plain','kitchen']){
  });
 }
 """
-        result = subprocess.run([shutil.which('node'), '-e', script], capture_output=True, text=True, timeout=10)
+        # Full locale fixtures exceed Linux's per-argument limit; stream via stdin.
+        result = subprocess.run([shutil.which('node')], input=script, capture_output=True, text=True, timeout=10)
         self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_catalog_changes_are_reflected_and_cannot_escape_script(self):
