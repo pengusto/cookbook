@@ -1,7 +1,7 @@
 {
   "displayName": "Cookbook by Pengusto",
   "shortDescription": "Plan, review and finish work",
-  "longDescription": "Fourteen workflows for developers working with a coding agent: turn an idea into a small project plan, check progress, recover chat goals and decisions, review exposure and legal questions, assess release readiness, draft change notes from evidence, and finish with a clear handoff. Choose one naming style per installation. Runs locally; repository checks may need Git, Python 3.10+ and optional scanners. No hooks or MCP server are included. Findings are not security or legal certification. External actions require authorization. Also includes evidence-based retrospectives, returning after a long pause, manual prompt completion and paired Plain/Kitchen naming. Includes an introduction that explains the collection and recommends a fitting workflow. Includes autonomous goal execution with verification and critique, while preserving product intent.",
+  "longDescription": "Eighteen workflows for developers working with a coding agent: turn an idea into a small project plan, check progress, recover chat goals and decisions, review exposure and legal questions, assess release readiness, draft change notes from evidence, and finish with a clear handoff. Choose one naming style per installation. Runs locally; repository checks may need Git, Python 3.10+ and optional scanners. No hooks or MCP server are included. Findings are not security or legal certification. External actions require authorization. Also includes evidence-based retrospectives, returning after a long pause, manual prompt completion and paired Plain/Kitchen naming. Includes an introduction that explains the collection and recommends a fitting workflow. Includes autonomous goal execution with verification and critique, while preserving product intent. Also includes finding earlier work, targeted bug diagnosis, simplification and review of concrete changes.",
   "developerName": "Pengusto",
   "category": "Developer Tools",
   "capabilities": [
@@ -18,7 +18,11 @@
     "Complete a partial prompt",
     "Compare paired skill names",
     "Understand Cookbook and choose a workflow",
-    "Execute a project goal and verify the actual result"
+    "Execute a project goal and verify the actual result",
+    "Find earlier work and decisions",
+    "Diagnose a current bug",
+    "Simplify unnecessary complexity",
+    "Review concrete changes"
   ],
   "defaultPrompt": [
     "Help me plan a small portfolio website with three projects.",
@@ -33,5 +37,6 @@
   "logoDark": "./assets/icon-dark.png",
   "websiteURL": "https://pengusto.github.io/cookbook/",
   "supportURL": "https://github.com/pengusto/cookbook/issues",
-  "privacyPolicyURL": "https://pengusto.github.io/cookbook/privacy-en.html"
+  "privacyPolicyURL": "https://pengusto.github.io/cookbook/privacy-en.html",
+  "termsOfServiceURL": "https://pengusto.github.io/cookbook/terms-en.html"
 }

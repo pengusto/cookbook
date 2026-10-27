@@ -151,6 +151,9 @@ def plugin_files(host, variant='plain'):
             raise ValueError('Invalid starter prompts')
         manifest['interface'] = listing
         translation = json.loads((ROOT / 'store/listing.de.json').read_text())
+        # Publication translations contain localized text, not interface branding.
+        if set(translation) != {'subtitle', 'description'}:
+            raise ValueError('German listing translation must contain only subtitle and description')
         if not 0 < len(translation['subtitle']) <= 30 or not 0 < len(translation['description']) <= 4000:
             raise ValueError('Invalid German listing translation')
         manifest['extensions'] = {'com.openai': {'publication': {'translations': {'de-DE': translation}}}}
@@ -496,7 +499,7 @@ def public_book(variant='kitchen', language='de'):
     index = ''.join('<a class="recipe-tab" href="#'+row['install_ids'][variant]+'" id="'+row['install_ids'][variant]+'">'+html.escape(row['title'] if variant=='plain' else row['cooking_title'])+'</a>' for row in rows)
     page = page.replace('aria-label="Recipes"></nav>', 'aria-label="Recipes">'+index+'</nav>')
     suffix = '' if language=='de' else '-en'
-    footer = '<nav class="public-book-links" aria-label="Project links"><a href="https://github.com/pengusto/cookbook">GitHub</a> · <a href="legal'+suffix+'.html">'+values['LEGAL']+'</a> · <a href="privacy'+suffix+'.html">'+values['PRIVACY']+'</a></nav>'
+    footer = '<nav class="public-book-links" aria-label="Project links"><a href="https://github.com/pengusto/cookbook">GitHub</a> · <a href="legal'+suffix+'.html">'+values['LEGAL']+'</a> · <a href="privacy'+suffix+'.html">'+values['PRIVACY']+'</a> · <a href="terms'+suffix+'.html">'+('Nutzungsbedingungen' if language == 'de' else 'Terms of use')+'</a></nav>'
     page = page.replace('</aside>', footer+'</aside>')
     visible = [dict(row, title=row['title'] if variant=='plain' else row['cooking_title'],
                     summary=ui_summary) for row, ui_summary in zip(rows, json.loads((ROOT / 'ui/locales.json').read_text())[language]['summaries'].split('|'))]
@@ -527,7 +530,7 @@ def public_pages(site):
                 '<nav><a href="'+other+'">'+('English' if language=='de' else 'Deutsch')+'</a></nav></header>'
                 '<main class="help-main wrap"><h1>'+content['title']+'</h1>'+content['body']+'</main>'
                 '<footer class="wrap"><a href="'+home+'">Cookbook</a> · <a href="legal'+suffix+'.html">'
-                +legal[language]['legal']['title']+'</a> · <a href="privacy'+suffix+'.html">'+legal[language]['privacy']['title']+'</a></footer></body></html>')
+                +legal[language]['legal']['title']+'</a> · <a href="privacy'+suffix+'.html">'+legal[language]['privacy']['title']+'</a> · <a href="terms'+suffix+'.html">'+legal[language]['terms']['title']+'</a></footer></body></html>')
             (site / name).write_text(page)
     for name, variant, language in (
         ('index.html', 'kitchen', 'de'), ('index-en.html', 'kitchen', 'en'),
@@ -535,7 +538,7 @@ def public_pages(site):
         ('cookbook.html', 'kitchen', 'de'), ('cookbook-plain.html', 'plain', 'de')):
         (site / name).write_text(public_book(variant, language))
     (site / '.nojekyll').write_text('')
-    urls = ['index.html', 'index-en.html']+[page_name(lang,v) for lang in ('de','en') for v in VARIANTS]+['legal.html','legal-en.html','privacy.html','privacy-en.html','cookbook.html','cookbook-plain.html']
+    urls = ['index.html', 'index-en.html']+[page_name(lang,v) for lang in ('de','en') for v in VARIANTS]+['legal.html','legal-en.html','privacy.html','privacy-en.html','terms.html','terms-en.html','cookbook.html','cookbook-plain.html']
     (site / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+PUBLIC_BASE+name+'</loc></url>' for name in urls)+'</urlset>')
     # This file applies to a root-hosted export, not the /cookbook/ Pages path.
     (site / 'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+PUBLIC_BASE+'sitemap.xml\n')

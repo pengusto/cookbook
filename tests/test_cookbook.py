@@ -3,6 +3,7 @@ import io
 import json
 import tempfile
 import unittest
+from unittest import mock
 import zipfile
 from pathlib import Path
 
@@ -12,6 +13,30 @@ spec.loader.exec_module(app)
 
 
 class PackagingContracts(unittest.TestCase):
+    def test_publication_translations_exclude_interface_branding(self):
+        for variant in app.VARIANTS:
+            with self.subTest(variant=variant):
+                _, files = app.plugin_files('codex', variant)
+                manifest = json.loads(files['.codex-plugin/plugin.json'])
+                translation = manifest['extensions']['com.openai']['publication']['translations']['de-DE']
+                self.assertEqual(set(translation), {'subtitle', 'description'})
+                self.assertIn('brandColor', manifest['interface'])
+                self.assertIn('brandColorDark', manifest['interface'])
+
+        original_read = Path.read_text
+        for invalid_field in ('brandColor', 'brandColorDark'):
+            def read_with_invalid_branding(path, *args, **kwargs):
+                text = original_read(path, *args, **kwargs)
+                if path == app.ROOT / 'store/listing.de.json':
+                    translation = json.loads(text)
+                    translation[invalid_field] = '#682C27'
+                    return json.dumps(translation)
+                return text
+
+            with self.subTest(field=invalid_field), mock.patch.object(Path, 'read_text', read_with_invalid_branding):
+                with self.assertRaisesRegex(ValueError, 'only subtitle and description'):
+                    app.plugin_files('codex', 'kitchen')
+
     def test_store_uploads_contain_plugin_at_root_without_marketplace_or_sidebar(self):
         for variant in app.VARIANTS:
             config, files = app.plugin_files('codex', variant)

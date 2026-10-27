@@ -1,6 +1,6 @@
 {
   "name": "cookbook-by-pengusto",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Eighteen focused workflows for coding agents: plan, explain, choose, build, debug, review, simplify, find earlier work, verify delivery and hand off.",
   "author": {
     "name": "Pengusto"

@@ -33,6 +33,24 @@ class Links(html.parser.HTMLParser):
 
 
 class WebsiteContracts(unittest.TestCase):
+    def test_store_terms_url_resolves_to_exported_bilingual_pages(self):
+        listing = json.loads((ROOT / 'store/listing.json').read_text())
+        self.assertEqual(listing['termsOfServiceURL'], 'https://pengusto.github.io/cookbook/terms-en.html')
+        for suffix, language in (('', 'de'), ('-en', 'en')):
+            name = f'terms{suffix}.html'
+            page = (ROOT / 'site' / name).read_text()
+            parser = Links()
+            parser.feed(page)
+            self.assertIn(f'<html lang="{language}">', page)
+            self.assertIn('LICENSE', parser.links)
+            self.assertIn(f'privacy{suffix}.html', parser.links)
+            self.assertIn(name, (ROOT / 'site/sitemap.xml').read_text())
+            other = 'terms-en.html' if language == 'de' else 'terms.html'
+            self.assertIn(other, parser.links)
+            book = Links()
+            book.feed((ROOT / 'site' / ('index.html' if language == 'de' else 'index-en.html')).read_text())
+            self.assertIn(name, book.links)
+
     def test_landing_discovery_preserves_language_and_naming_pairs(self):
         base_url = 'https://pengusto.github.io/cookbook/'
         for base in ('install-plain', 'install'):
@@ -133,7 +151,7 @@ class WebsiteContracts(unittest.TestCase):
         rows = json.loads((ROOT / 'catalog.json').read_text())
         allowed = {'index.html', 'kitchen.html', 'help.html', 'LICENSE', 'assets/icon.svg', 'assets/icon-dark.svg', 'assets/cookbook-hero-transparent.png', 'assets/site.css', 'index-en.html', 'kitchen-en.html', 'help-en.html', 'downloads/SHA256SUMS'}
         allowed.update({'install.html', 'install-en.html', 'install-plain.html', 'install-plain-en.html'})
-        allowed.update({'legal.html','legal-en.html','privacy.html','privacy-en.html','cookbook.html','cookbook-plain.html','robots.txt','sitemap.xml','.nojekyll'})
+        allowed.update({'legal.html','legal-en.html','privacy.html','privacy-en.html','terms.html','terms-en.html','cookbook.html','cookbook-plain.html','robots.txt','sitemap.xml','.nojekyll'})
         allowed.update(f'assets/icons/{name}' for name in ('download.svg', 'book.svg', 'chef-hat.svg', 'message-circle.svg', 'arrow-right.svg', 'clipboard.svg', 'soup.svg', 'lock.svg', 'search.svg', 'bell.svg', 'list-details.svg', 'door-exit.svg', 'terminal-2.svg', 'LICENSE', 'LUCIDE-LICENSE', 'README.md'))
         allowed.update(f'downloads/cookbook-by-pengusto-{variant}-{host}.zip' for host in ('codex', 'claude') for variant in ('plain','kitchen'))
         for row in rows:

@@ -18,7 +18,7 @@ Cookbook gives developers using Codex or Claude Code 18 focused workflows: plan 
 
 Choose **Plain questions** or **Kitchen names**. Both are built from the same maintained instructions; install one naming style per host.
 
-**Experimental public beta · 0.7.0.** [Browse the recipes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Experimental public beta · 0.7.1.** [Browse the recipes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Quickstart: choose one naming style
 

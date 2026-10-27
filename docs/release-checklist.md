@@ -1,4 +1,32 @@
-# Release 0.6.0 / Veröffentlichung
+# Release 0.7.1 / Veröffentlichung
+
+## Portalentscheidung 2026-10-27 / Current eligibility gate
+
+Der vom Maintainer gezeigte Portalstand bestätigt den erfolgreichen Upload von **0.7.0 als Entwurf**. Publication: **Not published**; Review: **Needs attention**. Die 18 Skills waren im Screenshot noch in Prüfung (0/18); daraus folgt kein bestandenes oder fehlgeschlagenes Skill-Ergebnis.
+
+Zwei blockierende Metadatenbefunde:
+
+- `Terms of service URL is required.` DE/EN-Seiten und `interface.termsOfServiceURL` sind jetzt lokal vorbereitet. Die Zielseite ist noch nicht veröffentlicht; der Portalbefund ist dadurch noch nicht als erledigt bestätigt.
+- `We are not accepting more skills-only submissions at this time.` Dies ist ein aktuelles Zulassungshindernis im Portal; weitere Paketkorrekturen beheben es nicht.
+
+Die am 2026-10-27 geprüfte [öffentliche Richtlinie](https://developers.openai.com/plugins/plugin-guidelines) nennt zusätzliche Zulassungsvoraussetzungen für reine Skill-Pakete. Die [Fehlerreferenz](https://developers.openai.com/plugins/deploy/submission-errors) beschreibt URLs für reine Skill-ZIPs weiterhin als optional; für diesen konkreten Entwurf ist der strengere Portalbefund maßgeblich. Kein Wiederöffnungstermin und keine Freigabe bestätigt. Keine künstliche MCP-Komponente hinzufügen, nur um die Kategorie zu wechseln. Vor weiterem Store-Aufwand zuerst Zulassung für den konkreten Produkttyp im Portal bzw. durch OpenAI bestätigen; lokale Paketvalidität und Verifizierung beweisen keine Directory-Zulassung.
+
+English: The maintainer's portal capture confirms a 0.7.0 draft, not a review submission or publication. Blocking findings require a terms URL and state that further skills-only submissions are not currently accepted. Skill checks were still pending. Resolve eligibility before further Store-specific work; no reopening date or exception is confirmed.
+
+---
+
+## Delivery 0.7.1 / Übergabe
+
+This patch includes the portal translation fix, bilingual terms pages and their listing URL, updated 18-workflow descriptions, and repository delivery checks in the closing workflow. The latter checks relevant local changes, branches and unpushed commits, completes already authorized delivery, verifies the remote commit, and reports local-only prerequisites for resuming on another computer. It does not grant permission to push, merge, publish, delete or rewrite history.
+
+Der Nutzer hat Commit, Push und den folgenden Website-Deploy beauftragt. Die Store-Zulassung bleibt gesperrt; keine Store-Einreichung oder -Veröffentlichung. Die Support-Anfrage bleibt ungesendet. Terms müssen nach erfolgreichem Pages-Deploy live geprüft werden. Lokale Build-/Testnachweise ersetzen diesen Nachweis nicht. Exakte aktuelle ZIP-Hashes stehen nach dem Build in `dist/launch-report.json`.
+
+Resume on another computer: clone `https://github.com/pengusto/cookbook.git`, check out the delivered `main` commit, use Python 3.10+ and run `python3 scripts/launch_check.py`. The generated website and ZIPs are rebuilt locally. Existing untracked banner/design drafts and ignored acceptance logs are intentionally local; they are not needed for this patch. Host plugin installation and Desktop acceptance remain host-specific. Use [the prepared support inquiry](../store/eligibility-request.md) to clarify skills-only eligibility before more Store work. Do not publish the plugin.
+
+
+---
+
+## Historischer Prüfstand 0.6.0
 
 14 Workflows, beide Namensvarianten und Host-Pakete; You Got This / You’re the Chef mit übernommener MIT-Lizenz. Der lokale Stand besteht 44 Tests, Quellen- und Paketprüfungen sowie den bytegleichen portablen Neubau. Die gerenderte Browserprüfung ist in [landing-page.md](landing-page.md) belegt.
 
