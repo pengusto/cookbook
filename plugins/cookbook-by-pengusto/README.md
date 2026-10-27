@@ -1,6 +1,6 @@
 # Cookbook by Pengusto
 
-Version 0.7.0 · Codex · kitchen
+Version 0.7.1 · Codex · kitchen
 
 18 workflows for planning a project, checking progress, recovering chat context, reviewing exposure and legal questions, preparing a release, drafting change notes and finishing a chat. Open a fresh host session after installation, then invoke a workflow with your request.
 

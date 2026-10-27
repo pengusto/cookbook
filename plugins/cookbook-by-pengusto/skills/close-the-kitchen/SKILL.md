@@ -56,6 +56,25 @@ Present a short keep/remove/needs-check recommendation so the user can decide to
 
 ## Leave a verified handoff
 
+For repository work, check delivery readiness before closing: inspect the working
+tree, current branch and upstream, then identify relevant unpushed commits and
+unmerged work from this chat. Refresh the remote before comparing branches.
+Prefer one coherent, reviewed change on the intended shared branch over leaving
+necessary work scattered across local branches. Use existing commit, push,
+integration and deployment authorization to complete that delivery; do not ask
+again for settled permissions. Closing alone grants none of those permissions.
+Do not squash unrelated work, rewrite shared history or delete branches to make
+the repository look tidy. Preserve and identify unrelated or uncertain files.
+
+Make resumption on another computer possible with the fewest moving parts:
+use the existing remote, a pushed branch or commit, the project's setup commands
+and a short next action. Verify the remote contains the delivered commit and
+check required CI/deployment separately. Mention any necessary local-only files,
+ignored recovery material or host configuration that a clone will not contain;
+never sync secrets. Prefer updating an existing project handoff or checklist to
+creating another document. If delivery is unauthorized or blocked, name the
+exact remaining step instead of calling the work ready on another computer.
+
 Compare the outcome with the finish line and run checks relevant to the selected slice. Distinguish local files, commits, pushes and deployments; attempted checks and confirmed results; complete, deferred and blocked work. State important coverage limits.
 
 Default to three short points: complete with evidence, remaining work, and a re-entry action only if pausing unfinished work. A fully completed small request needs no handoff document or new task. Include paths, refs or active job identifiers only when useful for resuming. Do not add fresh improvement ideas after reaching the stopping point.
