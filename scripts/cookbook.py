@@ -287,7 +287,7 @@ def food_art():
     return {row['id']: row for row in rows}
 
 
-def sidebar_files(variant='plain'):
+def sidebar_files(variant='plain', remote=False):
     """Optional read-only companion; does not duplicate installed skills."""
     name = 'cookbook-sidebar'
     listing = json.loads((ROOT / 'store/listing.json').read_text())
@@ -329,7 +329,8 @@ def sidebar_files(variant='plain'):
                 'names': {'plain': row['title'], 'kitchen': row['cooking_title']}, 'installIds': row['install_ids'], 'chapter': row['chapter'],
                 'accent': accents[index], 'accentDark': dark_accents[index], 'dishNames': food[row['id']]['dishNames'], 'artwork': food_image_style(food[row['id']])}
                for index, row in enumerate(catalog())]
-    payload = json.dumps({'version': manifest['version'], 'variant': variant, 'recipes': recipes, 'locales': locales}, ensure_ascii=False).replace('<', '\\u003c')
+    payload = json.dumps({'version': manifest['version'], 'variant': variant, 'recipes': recipes, 'locales': locales,
+                          **({'remote': True} if remote else {})}, ensure_ascii=False).replace('<', '\\u003c')
     css = (ROOT / 'assets/sidebar.css').read_text() + '\n' + (ROOT / 'assets/vendor/lenis/lenis.css').read_text()
     font_css = []
     for font in json.loads((ROOT / 'assets/vendor/fonts/sources.json').read_text()):
@@ -345,7 +346,9 @@ def sidebar_files(variant='plain'):
         ('/*COOKBOOK_DATA*/', payload),
         ('/*COOKBOOK_MOTION*/', (ROOT / 'assets/vendor/animejs/anime.umd.min.js').read_text()),
         ('/*COOKBOOK_LENIS*/', (ROOT / 'assets/vendor/lenis/lenis.min.js').read_text()),
-        ('/*COOKBOOK_JS*/', (ROOT / 'ui/book.js').read_text().replace('/*COOKBOOK_SCROLL_GESTURE*/', (ROOT / 'ui/scroll-gesture.js').read_text()))):
+        ('/*COOKBOOK_JS*/', (ROOT / 'ui/book.js').read_text()
+         .replace('/*COOKBOOK_SCROLL_GESTURE*/', (ROOT / 'ui/scroll-gesture.js').read_text())
+         .replace('/*COOKBOOK_REMOTE*/', (ROOT / 'ui/remote.js').read_text() if remote else ''))):
         page = page.replace(token, content)
     files = {'.codex-plugin/plugin.json': json_bytes(manifest), '.mcp.json': json_bytes(config),
              'scripts/sidebar_server.py': (ROOT / 'scripts/sidebar_server.py').read_bytes(),
@@ -361,6 +364,46 @@ def sidebar_files(variant='plain'):
     for asset in ('icon.png', 'icon-dark.png', 'icon.svg', 'icon-dark.svg', 'sidebar-icon.svg'):
         files[f'assets/{asset}'] = (ROOT / 'assets' / asset).read_bytes()
     return files
+
+
+def remote_files(variant):
+    """Separate local runtime bundle; never part of a Store ZIP or site download."""
+    config = json.loads((ROOT / 'bundle.json').read_text())
+    rows = [row for row in catalog() if row['id'] in config['skills'] and row['status'] == 'source']
+    locales = json.loads((ROOT / 'ui/locales.json').read_text())
+    workflows = []
+    for row in rows:
+        index = next(i for i, item in enumerate(catalog()) if item['id'] == row['id'])
+        slug, rendered = rendered_files(row, variant)
+        localized = {language: {'summary': locales[language]['summaries'].split('|')[index],
+                                 'when': locales[language]['whenList'].split('|')[index],
+                                 'prerequisites': ' '.join(locales[language]['ingredientLists'][index]),
+                                 'limits': locales[language]['recipeLimits'][index]}
+                     for language in ('en', 'de')}
+        workflows.append({'id': slug, 'title': row['title'] if variant == 'plain' else row['cooking_title'],
+                          'searchTitle': row['title'],
+                          'chapter': row['chapter'], 'url': PUBLIC_BASE + f'cookbook-{variant}.html#{slug}' if variant == 'plain'
+                          else PUBLIC_BASE + f'cookbook.html#{slug}',
+                          'localized': localized, 'instructions': rendered['SKILL.md'].decode(),
+                          'sha256': sha(rendered['SKILL.md']),
+                          'files': {name: {'text': data.decode(), 'sha256': sha(data)} for name, data in rendered.items() if name != 'SKILL.md'}})
+    sidebar = sidebar_files(variant, remote=True)
+    files = {name: data for name, data in sidebar.items() if name.startswith(('assets/', 'licenses/')) or name == 'LICENSE'}
+    files.update({'ui/index.html': sidebar['ui/index.html'],
+                  'scripts/remote_server.py': (ROOT / 'scripts/remote_server.py').read_bytes(),
+                  'data/workflows.json': json_bytes({'version': config['version'], 'variant': variant, 'workflows': workflows}),
+                  'README.md': (ROOT / 'docs/remote-mcp.md').read_bytes()})
+    return files
+
+
+def build_remote(variant):
+    files = remote_files(variant)
+    root = ROOT / 'dist/remote' / variant
+    for name, data in files.items():
+        path = root / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(data)
+    write_zip(files, ROOT / 'dist/remote' / f'cookbook-remote-{variant}.zip')
 
 
 def build_sidebar(variant='plain'):
@@ -568,6 +611,7 @@ def build():
         for language in ('de', 'en'):
             (site / page_name(language, variant)).write_text(render_landing(rows, language, variant))
         build_sidebar(variant)
+        build_remote(variant)
     for language in ('de', 'en'):
         help_page = (ROOT / 'templates' / ('help.html' if language == 'de' else 'help-en.html')).read_text()
         help_page = help_page.replace('{{COUNT}}', str(len(rows))).replace('{{VERSION}}', json.loads((ROOT / 'bundle.json').read_text())['version'])
@@ -590,6 +634,13 @@ def build():
 def check():
     rows = catalog()
     check_plugins()
+    for variant in VARIANTS:
+        expected = remote_files(variant)
+        root = ROOT / 'dist/remote' / variant
+        actual = {str(p.relative_to(root)): p.read_bytes() for p in root.rglob('*') if p.is_file()}
+        with zipfile.ZipFile(ROOT / 'dist/remote' / f'cookbook-remote-{variant}.zip') as archive:
+            if actual != expected or {n: archive.read(n) for n in archive.namelist()} != expected:
+                raise ValueError('Remote runtime differs from reviewed sources')
     expected_downloads = {f'{v}-{row["id"]}.zip' for row in rows for v in VARIANTS}
     expected_downloads.update(f'cookbook-by-pengusto-{v}-{h}.zip' for v in VARIANTS for h in ('codex', 'claude'))
     for row in rows:

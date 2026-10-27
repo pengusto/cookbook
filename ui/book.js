@@ -111,6 +111,7 @@ function displayRecipe(motion=true) {
   }
  }
  try {history.replaceState(null,'','#'+(publicBook?recipe.installIds[naming]:recipe.id));} catch { /* Host iframe can disallow history access. */ }
+ if(data.remote)document.dispatchEvent(new CustomEvent('cookbook:recipe',{detail:{id:recipe.id}}));
 }
 function chooseRecipe(index,focus=false,motion=true) {
  if(index<0 || index>=recipes.length || (index===selected && bookPage==='recipe')) return;
@@ -338,9 +339,10 @@ syncText();if(publicBook && bookPage!=='recipe')showBookPage(bookPage,false,fals
 document.documentElement.classList.add('book-ready');
 // A single restrained book-opening gesture; never a looping decoration.
 animate(document.querySelector('.pages'),{opacity:[0,1],rotateY:[-2,0],duration:600,ease:'outCubic'});
-if(parent!==window){
+if(parent!==window && !data.remote){
  const id='cookbook-init';
  addEventListener('message',event=>{if(event.source===parent&&event.data?.jsonrpc==='2.0'&&event.data.id===id&&event.data.result)parent.postMessage({jsonrpc:'2.0',method:'ui/notifications/initialized'},'*');});
  parent.postMessage({jsonrpc:'2.0',id,method:'ui/initialize',params:{protocolVersion:'2026-01-26',appInfo:{name:'cookbook-sidebar',version:data.version},appCapabilities:{}}},'*');
 }
+/*COOKBOOK_REMOTE*/
 })();

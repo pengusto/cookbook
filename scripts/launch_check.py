@@ -19,6 +19,7 @@ def artifacts(root):
     paths = list((root / 'site/downloads').glob('*.zip'))
     paths += [root / 'dist/website.zip', *[root / 'dist' / v / 'sidebar/cookbook-sidebar.zip' for v in ('plain', 'kitchen')]]
     paths += list((root / 'dist/store').glob('*/*.zip'))
+    paths += list((root / 'dist/remote').glob('*.zip'))
     return {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
 
 
