@@ -1,6 +1,6 @@
 {
   "bundle": "cookbook-by-pengusto",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "variant": "plain",
   "skills": [
     {
@@ -199,7 +199,7 @@
       "revision": null,
       "files": {
         "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "0ec465001a22534d82b3581add202d82996690f3256dd8ddd661b2617a6a1631",
+        "SKILL.md": "fd32b3e2a4b195fee0446627f6bad171e12f777e45d6eefdc1e73105a45f6812",
         "agents/openai.yaml": "ffd32d863dc091b3f7c2e6e0fb5e3c0f90350d6e0606be90d75270990d181623",
         "references/handoff.md": "59a6124c75d399d631cc8c4aa24805375981a0c29bf61ac0234fbf9600e543d4"
       }
