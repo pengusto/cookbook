@@ -130,3 +130,7 @@ python3 scripts/cookbook.py serve --port 8767
 [Contributing](../../CONTRIBUTING.md) · [MIT](../../LICENSE) · [Third-party notices](../../THIRD_PARTY_NOTICES.md) · [Maintenance](../../docs/maintenance.md).
 
 使用现有 Cookbook 标志：Cormorant Garamond 字形轮廓，遵循 SIL OFL。配方插图由 AI 生成，不是截图，也不证明宿主验收。[素材来源与许可](../../THIRD_PARTY_NOTICES.md) · [标志指南](../../assets/brand/GUIDE.md)。
+
+## 支持开发
+
+如果 Cookbook 对你有帮助，欢迎[支持我的开源工作](https://github.com/sponsors/pengusto)。

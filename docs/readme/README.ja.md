@@ -130,3 +130,7 @@ issue や範囲を絞った pull request を歓迎します。共通のスキル
 [Contributing](../../CONTRIBUTING.md) · [MIT](../../LICENSE) · [Third-party notices](../../THIRD_PARTY_NOTICES.md) · [Maintenance](../../docs/maintenance.md).
 
 既存の Cookbook ロゴを使用：Cormorant Garamond の字形輪郭は SIL OFL に従います。レシピのイラストは AI 生成であり、スクリーンショットやホストでの受け入れ確認を示すものではありません。[素材の出所とライセンス](../../THIRD_PARTY_NOTICES.md) · [ロゴガイド](../../assets/brand/GUIDE.md)。
+
+## 開発を支援
+
+Cookbook が役に立ったら、[私のオープンソース活動を支援](https://github.com/sponsors/pengusto)していただけます。

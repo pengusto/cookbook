@@ -132,3 +132,7 @@ Issues und gezielte Pull Requests sind willkommen. Nur die gemeinsame Skill-Quel
 [Contributing](../../CONTRIBUTING.md) · [MIT](../../LICENSE) · [Third-party notices](../../THIRD_PARTY_NOTICES.md) · [Maintenance](../../docs/maintenance.md).
 
 Vorhandenes Cookbook-Logo: Cormorant-Garamond-Schriftkonturen unter SIL OFL. Rezeptillustrationen sind KI-generiert; sie belegen weder Screenshots noch Host-Abnahmen. [Asset-Herkunft und Lizenzen](../../THIRD_PARTY_NOTICES.md) · [Logo-Anleitung](../../assets/brand/GUIDE.md).
+
+## Entwicklung unterstützen
+
+Wenn dir Cookbook hilft, kannst du [meine Open-Source-Arbeit unterstützen](https://github.com/sponsors/pengusto).

@@ -130,3 +130,7 @@ Abra uma issue ou pull request focada. Edite apenas a fonte comum dos skills e m
 [Contributing](../../CONTRIBUTING.md) · [MIT](../../LICENSE) · [Third-party notices](../../THIRD_PARTY_NOTICES.md) · [Maintenance](../../docs/maintenance.md).
 
 Logo Cookbook existente: contornos Cormorant Garamond sob SIL OFL. Ilustrações das receitas são geradas por IA; não são capturas nem comprovam aceitação no ambiente. [Origem e licenças dos recursos](../../THIRD_PARTY_NOTICES.md) · [Guia do logo](../../assets/brand/GUIDE.md).
+
+## Apoie o desenvolvimento
+
+Se o Cookbook é útil para você, pode [apoiar meu trabalho de código aberto](https://github.com/sponsors/pengusto).

@@ -130,3 +130,7 @@ issue 또는 범위가 명확한 pull request를 보내주세요. 공통 스킬 
 [Contributing](../../CONTRIBUTING.md) · [MIT](../../LICENSE) · [Third-party notices](../../THIRD_PARTY_NOTICES.md) · [Maintenance](../../docs/maintenance.md).
 
 기존 Cookbook 로고 사용: Cormorant Garamond 글꼴 윤곽은 SIL OFL을 따릅니다. 레시피 그림은 AI로 생성되었으며 스크린샷이나 호스트 승인 증거가 아닙니다. [에셋 출처 및 라이선스](../../THIRD_PARTY_NOTICES.md) · [로고 안내](../../assets/brand/GUIDE.md).
+
+## 개발 지원
+
+Cookbook이 유용하다면 [제 오픈 소스 활동을 후원](https://github.com/sponsors/pengusto)하실 수 있습니다.

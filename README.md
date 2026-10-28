@@ -130,3 +130,7 @@ Report issues or send focused pull requests. Edit only the shared skills source 
 [Contributing](CONTRIBUTING.md) · [MIT](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Maintenance](docs/maintenance.md).
 
 Existing Cookbook logo: Cormorant Garamond outlines under SIL OFL. Recipe illustrations are AI-generated; no screenshot or host acceptance is implied. [Asset provenance and licenses](THIRD_PARTY_NOTICES.md) · [Logo guide](assets/brand/GUIDE.md).
+
+## Support development
+
+If Cookbook is useful to you, you can [support my open-source work](https://github.com/sponsors/pengusto).
