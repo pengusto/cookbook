@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sort the Ingredients"
+  short_description: "Triage and organize emails or other items"
+  default_prompt: "Use $sort-the-ingredients to review this collection and help me sort it."

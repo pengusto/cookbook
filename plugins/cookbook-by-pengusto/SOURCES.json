@@ -1,6 +1,6 @@
 {
   "bundle": "cookbook-by-pengusto",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "variant": "kitchen",
   "skills": [
     {
@@ -10,7 +10,7 @@
       "revision": null,
       "files": {
         "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "45a1c26015cb3ef82a11386a9adf86cc1a4d6735513108ccf1c51a7d7f80707b",
+        "SKILL.md": "6dee411e362ad217189a805a2e4e91f1ec3829671dd4d07902df2e4fb30bf907",
         "agents/openai.yaml": "276fe7b61fe3887bcde70ad8bc40ade7f4420d0b35973f796b48a0e3f88d12b6"
       }
     },
@@ -34,6 +34,17 @@
         "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
         "SKILL.md": "73f820a9bb90213598e0e66d30f889481cd1066bb2ec13fe70ce2bc862b7880b",
         "agents/openai.yaml": "26f10422c559d3a55e3e0562c92328ea9534a172a9bfc7a4eceea81adcde61b7"
+      }
+    },
+    {
+      "id": "sort-and-triage",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+        "SKILL.md": "8eb800ace2f68390cc04a886505bb75eda9dbc80117e9cce0b7a46cfce991962",
+        "agents/openai.yaml": "cd8a0a4831fc1a3c1eb81102eb4f8b1a44a7651716d8500fcba4d9f7f07aeca6"
       }
     },
     {
