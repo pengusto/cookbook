@@ -18,7 +18,7 @@
     "repository": null,
     "files": {
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "45a1c26015cb3ef82a11386a9adf86cc1a4d6735513108ccf1c51a7d7f80707b",
+      "SKILL.md": "6dee411e362ad217189a805a2e4e91f1ec3829671dd4d07902df2e4fb30bf907",
       "agents/openai.yaml": "276fe7b61fe3887bcde70ad8bc40ade7f4420d0b35973f796b48a0e3f88d12b6"
     },
     "install_ids": {
@@ -80,6 +80,34 @@
     "install_ids": {
       "plain": "where-does-this-chat-belong",
       "kitchen": "find-the-kitchen"
+    },
+    "chapter": "orientation"
+  },
+  {
+    "id": "sort-and-triage",
+    "title": "Sort and Triage",
+    "cooking_title": "Sort the Ingredients",
+    "phase": "Einordnung",
+    "summary": "E-Mails oder andere Eingänge nach Handlungsbedarf und passendem Platz einordnen.",
+    "when": "Ein Posteingang, Aufgabenstapel oder eine Sammlung braucht Überblick oder Sortierung.",
+    "ingredients": "Abgegrenzte Sammlung, vorhandene Ordner oder Labels, gewünschte Aktion und Prioritäten.",
+    "steps": "Umfang klären; Inhalte sichten; Dringlichkeit und Ziel einordnen; beauftragte Änderungen prüfen.",
+    "verify": "Einordnung und bestätigte Änderungen sind belegt; unklare Fälle und fehlende Abdeckung bleiben sichtbar.",
+    "result": "Übersicht mit nächstem Schritt und gegebenenfalls bestätigter Sortierung.",
+    "limits": "Überblick allein verändert nichts. Sortieren erlaubt nicht automatisch Löschen, Antworten oder neue Filter.",
+    "prompt": "${{ID}} Verschaffe mir einen Überblick über meinen Posteingang; ändere nichts.",
+    "status": "source",
+    "license": "MIT",
+    "revision": null,
+    "repository": null,
+    "files": {
+      "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
+      "SKILL.md": "8eb800ace2f68390cc04a886505bb75eda9dbc80117e9cce0b7a46cfce991962",
+      "agents/openai.yaml": "cd8a0a4831fc1a3c1eb81102eb4f8b1a44a7651716d8500fcba4d9f7f07aeca6"
+    },
+    "install_ids": {
+      "plain": "sort-and-triage",
+      "kitchen": "sort-the-ingredients"
     },
     "chapter": "orientation"
   },

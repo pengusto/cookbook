@@ -16,11 +16,11 @@
 
 **코딩 대화의 다음 단계를 위한 레시피.**
 
-Cookbook은 Codex 또는 Claude Code를 사용하는 개발자에게 19개의 집중된 워크플로를 제공합니다. 프로젝트 계획, 진행 상황 점검, 휴식 후 맥락 복구, 공유 전 검토, 유용한 인계 정리에 활용하세요. 필요할 때 레시피를 선택하면 호스트와 모델이 작업을 수행합니다.
+Cookbook은 Codex 또는 Claude Code를 사용하는 개발자에게 20개의 집중된 워크플로를 제공합니다. 프로젝트 계획, 진행 상황 점검, 휴식 후 맥락 복구, 공유 전 검토, 유용한 인계 정리에 활용하세요. 필요할 때 레시피를 선택하면 호스트와 모델이 작업을 수행합니다.
 
 **쉬운 질문** 또는 **요리 이름**을 선택하세요. 두 스타일은 같은 관리 지침에서 생성되며, 호스트마다 하나의 이름 체계를 설치합니다.
 
-**실험적 공개 베타 · 0.7.2.** [레시피 둘러보기](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**실험적 공개 베타 · 0.7.3.** [레시피 둘러보기](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## 빠른 시작: 이름 체계 선택
 
@@ -58,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 38 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 40 individual ZIPs + `SHA256SUMS`.
 
 ## 빌드 및 검증
 
@@ -77,6 +77,7 @@ python3 scripts/launch_check.py
 | Explain the Cookbook | Show Me the Kitchen |
 | Find Our Work | Find the Recipe |
 | Where Does This Chat Belong? | Find the Kitchen |
+| Sort and Triage | Sort the Ingredients |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
 | How Do I Start? | Prep the Kitchen |

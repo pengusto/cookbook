@@ -14,6 +14,7 @@ verwenden Codex-Syntax; für Claude Code gilt die Syntax im Absatz oben.
 | Which workflow fits? / Welcher Ablauf passt? | Explain the Cookbook | Show Me the Kitchen | One recommendation / Eine Empfehlung |
 | Where did we start? / Wo hatten wir angefangen? | Find Our Work | Find the Recipe | Verified source match / Bestätigte Originalquelle |
 | Where does this chat belong? / Wohin gehört dieser Chat? | Where Does This Chat Belong? | Find the Kitchen | Project recommendation or requested assignment / Projektempfehlung oder beauftragte Zuordnung |
+| What needs attention? / Was ist zu tun? | Sort and Triage | Sort the Ingredients | Scoped triage and requested organization / Einordnung und beauftragte Sortierung |
 | I have been away. / Ich war länger weg. | Catch Me Up | Back to the Kitchen | Project reentry checked against today / Wiedereinstieg mit aktuellem Abgleich |
 | What did I originally ask? / Was wollte ich ursprünglich? | Where Were We? | What Was I Cooking? | This chat’s goal and decisions / Ziel und Entscheidungen dieses Chats |
 | Where do I start? / Wie fange ich an? | How Do I Start? | Prep the Kitchen | Small next step / Kleiner nächster Schritt |

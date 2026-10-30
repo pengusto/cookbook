@@ -93,5 +93,10 @@
     "id": "project-shelf",
     "meaning": "Regal: einen Chat dem passenden Projekt zuordnen",
     "body": "<path d=\"M4 5h24v24H4zM4 13h24M9 8h8M9 18h14M9 23h10\"/><circle cx=\"24\" cy=\"8\" r=\"2\"/>"
+  },
+  "sort-and-triage": {
+    "id": "ingredient-bowls",
+    "meaning": "Schalen: Eingänge sichten und nach Bedarf sortieren",
+    "body": "<path d=\"M3 12h12a6 6 0 0 1-12 0ZM17 12h12a6 6 0 0 1-12 0ZM7 23h18a9 9 0 0 1-18 0ZM9 7V4m14 3V4M13 20v-3m7 3v-3\"/>"
   }
 }

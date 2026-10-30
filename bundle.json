@@ -1,7 +1,7 @@
 {
   "name": "cookbook-by-pengusto",
-  "version": "0.7.2",
-  "description": "Nineteen focused workflows for coding agents: plan, explain, choose, build, debug, review, simplify, find earlier work, verify delivery and hand off.",
+  "version": "0.7.3",
+  "description": "Twenty focused workflows for coding agents: plan, explain, choose, build, debug, review, simplify, find earlier work, verify delivery and hand off.",
   "author": {
     "name": "Pengusto"
   },
@@ -10,6 +10,7 @@
     "explain-the-cookbook",
     "find-our-work",
     "find-chat-project",
+    "sort-and-triage",
     "catch-me-up",
     "what-was-i-cooking",
     "start-it-right",
@@ -39,5 +40,5 @@
     "kitchen"
   ],
   "store_variant": "kitchen",
-  "sidebar_version": "0.7.1"
+  "sidebar_version": "0.7.2"
 }

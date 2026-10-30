@@ -16,11 +16,11 @@ Projeto: **Cookbook by Pengusto** · Repositório no GitHub: [`pengusto/cookbook
 
 **Uma receita para o próximo passo na sua conversa de código.**
 
-Cookbook oferece a quem desenvolve com Codex ou Claude Code 19 fluxos focados: planejar um projeto, verificar o progresso, retomar o contexto após uma pausa, revisar antes de compartilhar e encerrar com uma passagem de trabalho útil. Escolha uma receita quando precisar; seu ambiente e modelo executam o trabalho.
+Cookbook oferece a quem desenvolve com Codex ou Claude Code 20 fluxos focados: planejar um projeto, verificar o progresso, retomar o contexto após uma pausa, revisar antes de compartilhar e encerrar com uma passagem de trabalho útil. Escolha uma receita quando precisar; seu ambiente e modelo executam o trabalho.
 
 Escolha **perguntas simples** ou **nomes de cozinha**. Ambos vêm das mesmas instruções mantidas; instale um estilo por ambiente.
 
-**Beta pública experimental · 0.7.2.** [Explorar as receitas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Beta pública experimental · 0.7.3.** [Explorar as receitas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Início rápido: escolha um estilo
 
@@ -58,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 38 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 40 individual ZIPs + `SHA256SUMS`.
 
 ## Gerar e verificar
 
@@ -77,6 +77,7 @@ python3 scripts/launch_check.py
 | Explain the Cookbook | Show Me the Kitchen |
 | Find Our Work | Find the Recipe |
 | Where Does This Chat Belong? | Find the Kitchen |
+| Sort and Triage | Sort the Ingredients |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
 | How Do I Start? | Prep the Kitchen |

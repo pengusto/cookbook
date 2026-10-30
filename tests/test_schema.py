@@ -129,7 +129,7 @@ class SchemaContracts(unittest.TestCase):
                 self.assertEqual(data['mainEntity'], {
                     '@type': 'ItemList', 'numberOfItems': len(rows), 'itemListElement': expected})
                 chapters = list(dict.fromkeys(row['chapter'] for row in rows))
-                self.assertEqual(len(rows), 19)
+                self.assertEqual(len(rows), 20)
                 self.assertEqual(len(chapters), 6)
                 self.assertEqual(data['hasPart'], [
                     {'@type': 'CreativeWork', 'identifier': chapter,

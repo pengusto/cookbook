@@ -1,0 +1,4 @@
+interface:
+  display_name: "{{TITLE}}"
+  short_description: "Triage and organize emails or other items"
+  default_prompt: "Use ${{ID}} to review this collection and help me sort it."

@@ -39,6 +39,7 @@ Use a typical user sentence and the expected result to make the choice concrete:
 | “Can this implementation be simpler?” | proposes behavior-preserving reductions in a selected scope |
 | “Where did we start that project?” | finds and verifies the right chat, repository or artifact |
 | “Put this chat in the right project.” | identifies a suitable project and assigns the existing chat when requested |
+| “Help me sort my inbox.” | triages the requested collection and organizes it only when asked |
 | “How does this code path work?” | traces the existing flow in project-start's `explain` mode |
 | “Which option fits this project?” | compares suitable options in project-start's `choose` mode |
 | “Is this version really delivered?” | checks the delivery chain in sharing-preparation's `verify-live` mode |

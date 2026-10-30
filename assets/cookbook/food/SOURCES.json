@@ -3110,5 +3110,148 @@
       ]
     },
     "cutout_method": "Generated sprites cropped by grid region, aspect ratio preserved and centered with padding on transparent square canvases."
+  },
+  {
+    "id": "sort-and-triage",
+    "file": "sort-and-triage.webp",
+    "dish": "roasted vegetables and chickpeas",
+    "ingredients": [
+      "bell pepper",
+      "carrot",
+      "chickpeas",
+      "parsley"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-30",
+    "source_sha256": "827bf46e3b154971e50695526a2aa8eab1848beb7dc8d6c885d51871d96d716b",
+    "sha256": "311a8cd09cf9601cf111b68b7f40196171e4c102aff3028eb08f483c96031c39",
+    "prompt": "Transparent watercolor cookbook sprite: roasted vegetables and chickpeas on the left; bell pepper, carrot, chickpeas and parsley in a separated 2x2 grid on the right; no text.",
+    "dishNames": {
+      "de": "Ofengemüse mit Kichererbsen",
+      "en": "Roasted vegetables and chickpeas"
+    },
+    "ingredientNames": {
+      "de": [
+        "Paprika",
+        "Karotte",
+        "Kichererbsen",
+        "Petersilie"
+      ],
+      "en": [
+        "bell pepper",
+        "carrot",
+        "chickpeas",
+        "parsley"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        110,
+        960,
+        820
+      ],
+      "ingredients": [
+        [
+          980,
+          40,
+          1370,
+          500
+        ],
+        [
+          1380,
+          0,
+          1760,
+          515
+        ],
+        [
+          950,
+          515,
+          1380,
+          855
+        ],
+        [
+          1390,
+          490,
+          1755,
+          865
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/sort-and-triage-dish.webp",
+        "sha256": "c9c7f596a7931b91ca9d84f389b01bf54ab3c45a6aa3d6054b77bb3b841a7538",
+        "size": [
+          384,
+          384
+        ],
+        "source_bounds": [
+          0,
+          110,
+          960,
+          820
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/sort-and-triage-ingredient-0.webp",
+          "sha256": "a86966dd7f797cc81951fad825ab1bdf4d928c1181ff69bee3f8506e4f77ad83",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            980,
+            40,
+            1370,
+            500
+          ]
+        },
+        {
+          "file": "cutouts/sort-and-triage-ingredient-1.webp",
+          "sha256": "4d58f71c3aa1b14e712cd2c304da0584f79b063208aa98e844ac983857d04612",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1380,
+            0,
+            1760,
+            515
+          ]
+        },
+        {
+          "file": "cutouts/sort-and-triage-ingredient-2.webp",
+          "sha256": "1a314ab00ec75077d4b247a93d0110f420c8762a9bed8ebc7b57e4fea8d2c29b",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            950,
+            515,
+            1380,
+            855
+          ]
+        },
+        {
+          "file": "cutouts/sort-and-triage-ingredient-3.webp",
+          "sha256": "9e690844c55733feafd5ae79e95ed0f3c549472c94067e3a40a729e1b0c74819",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1390,
+            490,
+            1755,
+            865
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Generated sprites cropped by grid region, aspect ratio preserved and centered with padding on transparent square canvases."
   }
 ]

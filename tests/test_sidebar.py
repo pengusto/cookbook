@@ -54,7 +54,7 @@ class SidebarContracts(unittest.TestCase):
             self.assertIn("let appearance='system'", text)
             for locale in data['locales'].values():
                 for index, row in enumerate(builder.catalog()):
-                    if row['id'] in ('explain-the-cookbook', 'you-got-this', 'why-is-it-broken', 'review-my-changes', 'can-we-simplify', 'find-our-work', 'find-chat-project'):
+                    if row['id'] in ('explain-the-cookbook', 'you-got-this', 'why-is-it-broken', 'review-my-changes', 'can-we-simplify', 'find-our-work', 'find-chat-project', 'sort-and-triage'):
                         self.assertEqual(len(locale['stepNotes'+str(index)]), 4)
                 self.assertEqual(len(locale['verifications']), len(builder.catalog()))
                 self.assertEqual(len(locale['ingredientLists']), len(builder.catalog()))

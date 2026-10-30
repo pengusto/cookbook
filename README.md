@@ -14,11 +14,11 @@ Project: **Cookbook by Pengusto** · GitHub repository: [`pengusto/cookbook`](ht
 
 **A recipe for the next step in your coding chat.**
 
-Cookbook gives developers using Codex or Claude Code 19 focused workflows: plan a project, check progress, recover context after a break, review before sharing, and close with a useful handoff. Pick a recipe when you need it; your host and model carry out the work.
+Cookbook gives developers using Codex or Claude Code 20 focused workflows: plan a project, check progress, recover context after a break, review before sharing, and close with a useful handoff. Pick a recipe when you need it; your host and model carry out the work.
 
 Choose **Plain questions** or **Kitchen names**. Both are built from the same maintained instructions; install one naming style per host.
 
-**Experimental public beta · 0.7.2.** [Browse the recipes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Experimental public beta · 0.7.3.** [Browse the recipes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Quickstart: choose one naming style
 
@@ -56,7 +56,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 38 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 40 individual ZIPs + `SHA256SUMS`.
 
 ## Build and verify
 
@@ -75,6 +75,7 @@ python3 scripts/launch_check.py
 | Explain the Cookbook | Show Me the Kitchen |
 | Find Our Work | Find the Recipe |
 | Where Does This Chat Belong? | Find the Kitchen |
+| Sort and Triage | Sort the Ingredients |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
 | How Do I Start? | Prep the Kitchen |
