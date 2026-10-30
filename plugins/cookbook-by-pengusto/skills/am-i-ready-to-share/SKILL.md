@@ -23,7 +23,7 @@ rendered examples when their appearance affects the claim.
 
 Read effective project instructions, inspect Git status, remotes and tracked files, and trace the actual installation and usage flow. Preserve unrelated work. Identify the audience, project type, maturity, and existing documentation conventions. Tailor proposals: CLI projects need command examples, libraries need API usage, websites need setup and useful screenshots, and skills need installation and behavioral checks. Establish whether the project is experimental, maintained, or complete from evidence or a maintainer decision; do not infer abandonment from inactivity alone.
 
-Return a concise table: priority (necessary / recommended / optional), evidence with file references, proposed change, and acceptance check. Include what already works and what this project does not need. Recommend a concrete set of changes rather than a generic file checklist.
+Lead the evaluation in the user's language with an evidence-backed assessment: 🟢 ready for publication, 🟡 ready with stated limitations, or 🔴 blocked by specific items. Name the reason and intended publication scope; if the review is incomplete, say so rather than claiming readiness. Follow with ✅ what already works, and a concise table of necessary / recommended / optional actions, evidence with file references, proposed change, and acceptance check. Identify the smallest ➡️ next step and any human decision. Omit empty categories, distinguish unverified checks from findings, and explain in words what colors mean. Include what this project does not need. Recommend a concrete set of changes rather than a generic file checklist.
 
 Start with purpose, a working quickstart, license and relevant release blockers. Evaluate the following areas only in proportion to the project; a small repository can need no additional files:
 
@@ -63,4 +63,4 @@ does not require a demo deployment.
 
 ## Completion
 
-Report one of: **ready for publication**, **ready with stated limitations**, or **blocked by specific items**. Distinguish local changes, checks, commit/push, public visibility, and remaining decisions. Include a concise commit message suggestion when files changed. Never equate scanner silence or a valid skill schema with proven safety or behavior.
+Lead the final report with the same evidence-backed readiness assessment. Briefly separate ✅ completed work and checks, 🔴 necessary remaining items or blockers, 🟡 optional recommendations, and ➡️ the next action when these apply. Distinguish local changes, checks, commit/push, public visibility, and remaining decisions. Include a concise commit message suggestion when files changed. Never equate scanner silence or a valid skill schema with proven safety or behavior.
