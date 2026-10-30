@@ -16,11 +16,11 @@
 
 **コーディングの会話で、次の一歩に合うレシピを。**
 
-Cookbook は Codex や Claude Code を使う開発者向けに、18 のワークフローを提供します。プロジェクトの計画、進捗確認、休止後の状況把握、共有前のレビュー、引き継ぎの整理に使えます。必要なときにレシピを選び、ホストとモデルが作業を行います。
+Cookbook は Codex や Claude Code を使う開発者向けに、19 のワークフローを提供します。プロジェクトの計画、進捗確認、休止後の状況把握、共有前のレビュー、引き継ぎの整理に使えます。必要なときにレシピを選び、ホストとモデルが作業を行います。
 
 **わかりやすい質問**か**料理の名前**を選んでください。両方とも同じ管理された指示から生成されます。ホストごとに一方の命名スタイルをインストールします。
 
-**実験的な公開ベータ · 0.7.0.** [レシピを見る](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**実験的な公開ベータ · 0.7.2.** [レシピを見る](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## クイックスタート：命名スタイルを選ぶ
 
@@ -58,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 28 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 38 individual ZIPs + `SHA256SUMS`.
 
 ## ビルドと検証
 
@@ -76,6 +76,7 @@ python3 scripts/launch_check.py
 |---|---|
 | Explain the Cookbook | Show Me the Kitchen |
 | Find Our Work | Find the Recipe |
+| Where Does This Chat Belong? | Find the Kitchen |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
 | How Do I Start? | Prep the Kitchen |

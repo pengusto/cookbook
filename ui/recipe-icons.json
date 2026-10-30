@@ -88,5 +88,10 @@
     "id": "recipe-box",
     "meaning": "Rezeptkasten: frühere Arbeit gezielt wiederfinden",
     "body": "<path d=\"M3 12h26v17H3zM7 12V6h18v6M10 6V3h12v3M3 18h26M12 22h8\"/>"
+  },
+  "find-chat-project": {
+    "id": "project-shelf",
+    "meaning": "Regal: einen Chat dem passenden Projekt zuordnen",
+    "body": "<path d=\"M4 5h24v24H4zM4 13h24M9 8h8M9 18h14M9 23h10\"/><circle cx=\"24\" cy=\"8\" r=\"2\"/>"
   }
 }

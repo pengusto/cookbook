@@ -82,7 +82,7 @@ Use these defaults:
 ### 3. Ask once, in a batch
 
 For a material choice, give a concise recommendation and alternatives. Use
-checkboxes only when several independent selections genuinely help. Ask only decisions that materially change scope,
+checkboxes only when several independent selections genuinely help. Use unchecked boxes or ordinary bullets in static Markdown; checked boxes look completed and recommendations are not authorization. Ask only decisions that materially change scope,
 security, ownership, cost, privacy, publication, or compatibility. Keep
 straightforward work moving with safe assumptions.
 
@@ -125,13 +125,6 @@ manual step. Never claim that a missing tool ran.
 
 ## Output shape
 
-Keep the response compact and concrete:
-
-1. inferred project and current stage;
-2. recommended checkbox modules with reasons;
-3. one batched human decision, if needed;
-4. selected artifacts or implementation result;
-5. checks and remaining gates;
-6. a next action only if useful work remains.
+Match the user's language and lead with 🎯 the inferred project and stage and 💡 one concrete recommended starting slice. When several independent selections are useful, use a compact checkbox list with a brief reason for each relevant module, grouped as required, recommended, or optional; otherwise use a short list. Omit empty groups. A preselected recommendation is not a decision or authorization. Show one batched human decision if needed, then any selected artifacts or implementation result, checks, and remaining gates. When useful work remains, end with one ➡️ next recommended action. Use labels as well as icons, and adapt the detail to the selected mode.
 
 For three representative flows, read [references/examples.md](references/examples.md).

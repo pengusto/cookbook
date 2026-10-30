@@ -1,7 +1,7 @@
 {
   "de": {
     "name": "Deutsch",
-    "tagline": "Achtzehn Rezepte für deine Projekte",
+    "tagline": "Neunzehn Rezepte für deine Projekte",
     "recipe": "Rezept",
     "when": "Wann",
     "ingredients": "Zutaten",
@@ -16,12 +16,12 @@
     "previous": "Vorheriges Rezept",
     "next": "Nächstes Rezept",
     "ingredientList": "Eine Idee|Projektkontext|Offene Fragen|Rahmenbedingungen",
-    "summaries": "Cookbook verstehen und den passenden Skill finden.|Den richtigen früheren Chat, das Repo oder Artefakt wiederfinden.|Was ist nach meiner Pause heute noch aktuell?|Was wollte ich in diesem Chat ursprünglich?|Erst einen kleinen Start wählen; explain erklärt, choose vergleicht.|Einen begonnenen Prompt passend vervollständigen.|Klartext- und Kitchen-Namen gemeinsam finden.|Ein Ziel umsetzen oder mit usertest einen Nutzerablauf prüfen.|Kommen wir mit diesem Chat voran?|Einen aktuellen Fehler reproduzieren und gezielt beheben.|Einen ausgewählten Ablauf einfacher machen und Verhalten erhalten.|Eine Änderung auf konkrete Fehler und Regressionen prüfen.|Sensible Inhalte vor dem Teilen prüfen.|Rechtsfragen und Nutzerhürden gezielt eingrenzen.|Teilen vorbereiten oder mit verify-live die Auslieferung prüfen.|Änderungsnotizen aus belegten Änderungen schreiben.|Zusagen abgleichen, Aufräumen prüfen oder mit handoff übergeben.|Warum wiederholen sich unsere Arbeitsprobleme?",
-    "whenList": "Wenn du neu dabei bist oder die richtige Anleitung suchst.|Du weißt nicht mehr, wo die Arbeit liegt oder welche Fassung passt.|Nach längerer Projektpause: alte Entscheidungen mit heutigem Stand abgleichen.|Wenn Ziel oder Entscheidungen dieses Chats unklar sind.|Für Projektstart, Verständnis eines bestehenden Ablaufs oder eine konkrete Entscheidung.|Wenn die automatische Ergänzung fehlt oder ein Gedanke unvollständig bleibt.|Wenn ein Produkt oder Skill passende Namen braucht.|Umsetzung beauftragen; usertest meldet Befunde eines echten Ablaufs ohne automatische Fixes.|Bei unklarem Fortschritt oder einer Nebenbaustelle.|Ein konkreter Fehler tritt jetzt auf; keine Analyse vergangener Arbeitsmuster.|Unnötige Komplexität im gewählten Bereich; kein pauschaler Umbau.|Du möchtest ein technisches Diff-Review, keinen automatischen Fix.|Du möchtest Dateien oder ein Repository teilen.|Vor einer Freigabe oder bei einer konkreten Frage.|Für Repository-Präsentation, Dokumentationsabgleich oder eine konkrete ausgelieferte Version.|Eine Version oder ein Arbeitsabschnitt ist fertig.|Ein Arbeitsabschnitt endet oder soll auf einem benannten Ziel weitergehen.|Für Muster aus früheren Versuchen; nicht für einen aktuellen Bug.",
+    "summaries": "Cookbook verstehen und den passenden Skill finden.|Den richtigen früheren Chat, das Repo oder Artefakt wiederfinden.|Chat einem passenden Projekt zuordnen.|Was ist nach meiner Pause heute noch aktuell?|Was wollte ich in diesem Chat ursprünglich?|Erst einen kleinen Start wählen; explain erklärt, choose vergleicht.|Einen begonnenen Prompt passend vervollständigen.|Klartext- und Kitchen-Namen gemeinsam finden.|Ein Ziel umsetzen oder mit usertest einen Nutzerablauf prüfen.|Kommen wir mit diesem Chat voran?|Einen aktuellen Fehler reproduzieren und gezielt beheben.|Einen ausgewählten Ablauf einfacher machen und Verhalten erhalten.|Eine Änderung auf konkrete Fehler und Regressionen prüfen.|Sensible Inhalte vor dem Teilen prüfen.|Rechtsfragen und Nutzerhürden gezielt eingrenzen.|Teilen vorbereiten oder mit verify-live die Auslieferung prüfen.|Änderungsnotizen aus belegten Änderungen schreiben.|Zusagen abgleichen, Aufräumen prüfen oder mit handoff übergeben.|Warum wiederholen sich unsere Arbeitsprobleme?",
+    "whenList": "Wenn du neu dabei bist oder die richtige Anleitung suchst.|Du weißt nicht mehr, wo die Arbeit liegt oder welche Fassung passt.|Ein Chat braucht ein Projekt.|Nach längerer Projektpause: alte Entscheidungen mit heutigem Stand abgleichen.|Wenn Ziel oder Entscheidungen dieses Chats unklar sind.|Für Projektstart, Verständnis eines bestehenden Ablaufs oder eine konkrete Entscheidung.|Wenn die automatische Ergänzung fehlt oder ein Gedanke unvollständig bleibt.|Wenn ein Produkt oder Skill passende Namen braucht.|Umsetzung beauftragen; usertest meldet Befunde eines echten Ablaufs ohne automatische Fixes.|Bei unklarem Fortschritt oder einer Nebenbaustelle.|Ein konkreter Fehler tritt jetzt auf; keine Analyse vergangener Arbeitsmuster.|Unnötige Komplexität im gewählten Bereich; kein pauschaler Umbau.|Du möchtest ein technisches Diff-Review, keinen automatischen Fix.|Du möchtest Dateien oder ein Repository teilen.|Vor einer Freigabe oder bei einer konkreten Frage.|Für Repository-Präsentation, Dokumentationsabgleich oder eine konkrete ausgelieferte Version.|Eine Version oder ein Arbeitsabschnitt ist fertig.|Ein Arbeitsabschnitt endet oder soll auf einem benannten Ziel weitergehen.|Für Muster aus früheren Versuchen; nicht für einen aktuellen Bug.",
     "limitText": "Nur vorhandene Belege verwenden. Grenzen sichtbar halten; externe Aktionen brauchen Autorisierung.",
     "languageNote": "Skill-Aufrufe bleiben in ihrer installierten Sprache.",
     "footer": "Gut vorbereitet. Besser programmiert.",
-    "intros": "Wir erklären die Sammlung anhand deines Anliegens und zeigen dir einen passenden nächsten Aufruf.|Erst die richtige Quelle finden, danach bei Bedarf zusammenfassen oder weiterarbeiten.|Was ist nach meiner Pause heute noch aktuell?|Was wollte ich in diesem Chat ursprünglich?|explain <Ablauf> erklärt den echten Codepfad; choose <Entscheidung> vergleicht passende Optionen. Beide Modi bleiben ohne Umsetzungsauftrag lesend.|Wir ergänzen den begonnenen Auftrag mit dem sichtbaren Kontext. Du erhältst einen Prompt, den du selbst prüfen und absenden kannst.|Wir suchen Namen aus dem Einsatzmoment des Produkts. Klartext und Kitchen werden als zusammengehörige Paare bewertet.|usertest <Ablauf> als erstes Argument prüft den Ablauf und meldet Befunde. Ohne diesen Modus wird das beauftragte Ziel umgesetzt.|Kommen wir mit diesem Chat voran?|Vom beobachteten Symptom über eine prüfbare Erklärung zur kleinsten passenden Korrektur.|Öffentliche Verträge und wichtige Randfälle bleiben erhalten; nur begründete Komplexität wird reduziert.|Der Blick bleibt auf dem ausgewählten Diff und seinen Auswirkungen. Befunde brauchen einen konkreten Auslöser.|Wir untersuchen freigegebene Dateien und Historie, ohne sensible Werte im Bericht offenzulegen.|Wir betrachten die konkrete Nutzerhürde und klären, welche Quellen und rechtlichen Fragen wirklich relevant sind.|verify-live <Ziel> gleicht Quelle, Build, Auslieferung und beobachtetes Verhalten ab. Dokumentationsabgleich prüft Aussagen gegen das tatsächliche Produkt.|Wir nutzen den vereinbarten Vergleichsbereich und trennen bestätigte Änderungen von ungespeicherter Arbeit.|handoff <Ziel> bereitet den nächsten Arbeitsblock mit Zielhost, Projekt und erster Prüfung vor. Ein vorbereiteter Prompt ist noch kein Transfer.|Warum wiederholen sich unsere Arbeitsprobleme?",
+    "intros": "Wir erklären die Sammlung anhand deines Anliegens und zeigen dir einen passenden nächsten Aufruf.|Erst die richtige Quelle finden, danach bei Bedarf zusammenfassen oder weiterarbeiten.|Projekt anhand des Chat-Ziels auswählen.|Was ist nach meiner Pause heute noch aktuell?|Was wollte ich in diesem Chat ursprünglich?|explain <Ablauf> erklärt den echten Codepfad; choose <Entscheidung> vergleicht passende Optionen. Beide Modi bleiben ohne Umsetzungsauftrag lesend.|Wir ergänzen den begonnenen Auftrag mit dem sichtbaren Kontext. Du erhältst einen Prompt, den du selbst prüfen und absenden kannst.|Wir suchen Namen aus dem Einsatzmoment des Produkts. Klartext und Kitchen werden als zusammengehörige Paare bewertet.|usertest <Ablauf> als erstes Argument prüft den Ablauf und meldet Befunde. Ohne diesen Modus wird das beauftragte Ziel umgesetzt.|Kommen wir mit diesem Chat voran?|Vom beobachteten Symptom über eine prüfbare Erklärung zur kleinsten passenden Korrektur.|Öffentliche Verträge und wichtige Randfälle bleiben erhalten; nur begründete Komplexität wird reduziert.|Der Blick bleibt auf dem ausgewählten Diff und seinen Auswirkungen. Befunde brauchen einen konkreten Auslöser.|Wir untersuchen freigegebene Dateien und Historie, ohne sensible Werte im Bericht offenzulegen.|Wir betrachten die konkrete Nutzerhürde und klären, welche Quellen und rechtlichen Fragen wirklich relevant sind.|verify-live <Ziel> gleicht Quelle, Build, Auslieferung und beobachtetes Verhalten ab. Dokumentationsabgleich prüft Aussagen gegen das tatsächliche Produkt.|Wir nutzen den vereinbarten Vergleichsbereich und trennen bestätigte Änderungen von ungespeicherter Arbeit.|handoff <Ziel> bereitet den nächsten Arbeitsblock mit Zielhost, Projekt und erster Prüfung vor. Ein vorbereiteter Prompt ist noch kein Transfer.|Warum wiederholen sich unsere Arbeitsprobleme?",
     "stepNotes": [
       "Vorhandene Informationen nutzen.",
       "Bestehende Konventionen berücksichtigen.",
@@ -33,6 +33,7 @@
     "recipeLimits": [
       "Der Guide empfiehlt; er startet keine weiteren Workflows automatisch.",
       "Suche allein erlaubt kein Verschieben, Wiederherstellen oder Fortsetzen. Alte Anweisungen bleiben historische Belege.",
+      "Projektanlage und Ordnerzugriff hängen vom Host ab.",
       "Frühere Aussagen sind keine heutige Prüfung; nicht automatisch weiterarbeiten.",
       "Keine vollständige Historie erfinden.",
       "",
@@ -62,6 +63,12 @@
         "Ungefähres Datum",
         "Host oder Projekt",
         "Verfügbare Suchquellen"
+      ],
+      [
+        "Chat",
+        "Kontext",
+        "Projekte",
+        "Host"
       ],
       [
         "Letzter Stand",
@@ -163,6 +170,7 @@
     "verifications": [
       "Wir erklären die Sammlung anhand deines Anliegens und zeigen dir einen passenden nächsten Aufruf.",
       "Treffer anhand der Originalquelle, Host, Datum und Fassung bestätigen; Mehrdeutigkeit sichtbar lassen.",
+      "Zuordnung und Zugriff prüfen.",
       "Nach langer Pause wieder in das Projekt finden.",
       "Fehlende Frühhistorie und Unsicherheit sind sichtbar.",
       "Der nächste Schritt hat ein beobachtbares Ergebnis.",
@@ -201,46 +209,6 @@
       "Titel, Host, Datum und Fassung an Originalstellen bestätigen.",
       "Den belegten Treffer verlinken oder die entscheidende Rückfrage stellen."
     ],
-    "steps2": "Letzten Stand rekonstruieren|Heutigen Stand prüfen|Änderungen benennen|Wiedereinstieg empfehlen",
-    "steps3": "Sichtbaren Verlauf lesen|Entscheidungen trennen|Ergebnisse zuordnen|Stand knapp festhalten",
-    "steps4": "Ziel verstehen|Umfeld sichten|Offene Fragen klären|Ersten Schritt planen",
-    "steps5": "Fragment verstehen|Absicht erhalten|Fehlendes ergänzen|Prompt vorschlagen",
-    "steps6": "Kontext verstehen|Namenspaare bilden|Kollisionen prüfen|Auswahl empfehlen",
-    "steps7": "Ziel und Grenzen klären|Qualitätsmaßstab festlegen|Umsetzen und prüfen|Ergebnis kritisch verbessern",
-    "stepNotes7": [
-      "Auftrag, vorhandenen Stand und freigegebenen Handlungsspielraum verstehen.",
-      "Beobachtbare Erfolgskriterien und relevante Prüfungen festlegen.",
-      "Die kleinste vollständige Lösung umsetzen und im tatsächlichen Ablauf prüfen.",
-      "Schwächen beheben und Ergebnis, Nachweise sowie offene Punkte knapp übergeben."
-    ],
-    "steps8": "Ziel abgleichen|Belege sichten|Hindernisse benennen|Nächsten Schritt empfehlen",
-    "steps9": "Reproduzieren|Ablauf verfolgen|Hypothesen prüfen|Fix nachprüfen",
-    "stepNotes9": [
-      "Erwartung und Fehler mit einem sicheren Testfall gegenüberstellen.",
-      "Eingabe, Zustand, Speicherung und Ausgabe im betroffenen Pfad verfolgen.",
-      "Eine Erklärung wählen und mit einem widerlegbaren Test prüfen.",
-      "Beauftragten Fix am Ursprung umsetzen und den Fehlerfall erneut testen."
-    ],
-    "steps10": "Verhalten klären|Redundanz prüfen|Kleine Alternative wählen|Verhalten nachprüfen",
-    "stepNotes10": [
-      "Beobachtbares Verhalten und wichtige öffentliche Verträge festhalten.",
-      "Nur nachweislich unnötige Schichten oder echte Doppelungen auswählen.",
-      "Den kleinsten Eingriff und seine Risiken gegenüber dem Ist-Zustand begründen.",
-      "Beauftragte Änderungen an ursprünglichen Fällen und betroffenen Aufrufern prüfen."
-    ],
-    "steps11": "Änderung eingrenzen|Verträge verfolgen|Befunde belegen|Nach Wirkung ordnen",
-    "stepNotes11": [
-      "Basis, Zielstand und ausgewählten Diff eindeutig festhalten.",
-      "Geänderten Code, Aufrufer und beabsichtigtes Verhalten zusammen lesen.",
-      "Jeden Befund mit einem konkreten Auslöser und einer Fundstelle prüfen.",
-      "Nur umsetzbare Befunde nach Auswirkung melden; Prüflücken benennen."
-    ],
-    "steps12": "Prüfumfang festlegen|Dateien und Historie prüfen|Funde redigieren|Abdeckung offenlegen",
-    "steps13": "Prüffrage eingrenzen|Nutzerweg untersuchen|Quellen und Anwendbarkeit prüfen|Offene Fragen festhalten",
-    "steps14": "Zielgruppe bestimmen|Einstieg und Paket prüfen|Befunde priorisieren|Freigegebene Verbesserungen prüfen",
-    "steps15": "Vergleichsbereich klären|Echten Diff lesen|Nutzerwirkung beschreiben|Ungeprüftes kennzeichnen",
-    "steps16": "Auftrag abgleichen|Vorhandene Nachweise nutzen|Offene Punkte festhalten|Abschluss oder Übergabe schreiben",
-    "steps17": "Umfang eingrenzen|Ursachen untersuchen|Empfehlungen abgleichen|Prävention empfehlen",
     "chapter": "Kapitel",
     "chapterTitles": {
       "orientation": "Orientierung & Wiedereinstieg",
@@ -250,11 +218,58 @@
       "release": "Veröffentlichung",
       "closing": "Abschluss & Rückblick"
     },
-    "copyInvocation": "Skill-Aufruf kopieren"
+    "copyInvocation": "Skill-Aufruf kopieren",
+    "steps18": "Umfang eingrenzen|Ursachen untersuchen|Empfehlungen abgleichen|Prävention empfehlen",
+    "steps17": "Auftrag abgleichen|Vorhandene Nachweise nutzen|Offene Punkte festhalten|Abschluss oder Übergabe schreiben",
+    "steps16": "Vergleichsbereich klären|Echten Diff lesen|Nutzerwirkung beschreiben|Ungeprüftes kennzeichnen",
+    "steps15": "Zielgruppe bestimmen|Einstieg und Paket prüfen|Befunde priorisieren|Freigegebene Verbesserungen prüfen",
+    "steps14": "Prüffrage eingrenzen|Nutzerweg untersuchen|Quellen und Anwendbarkeit prüfen|Offene Fragen festhalten",
+    "steps13": "Prüfumfang festlegen|Dateien und Historie prüfen|Funde redigieren|Abdeckung offenlegen",
+    "steps12": "Änderung eingrenzen|Verträge verfolgen|Befunde belegen|Nach Wirkung ordnen",
+    "stepNotes12": [
+      "Basis, Zielstand und ausgewählten Diff eindeutig festhalten.",
+      "Geänderten Code, Aufrufer und beabsichtigtes Verhalten zusammen lesen.",
+      "Jeden Befund mit einem konkreten Auslöser und einer Fundstelle prüfen.",
+      "Nur umsetzbare Befunde nach Auswirkung melden; Prüflücken benennen."
+    ],
+    "steps11": "Verhalten klären|Redundanz prüfen|Kleine Alternative wählen|Verhalten nachprüfen",
+    "stepNotes11": [
+      "Beobachtbares Verhalten und wichtige öffentliche Verträge festhalten.",
+      "Nur nachweislich unnötige Schichten oder echte Doppelungen auswählen.",
+      "Den kleinsten Eingriff und seine Risiken gegenüber dem Ist-Zustand begründen.",
+      "Beauftragte Änderungen an ursprünglichen Fällen und betroffenen Aufrufern prüfen."
+    ],
+    "steps10": "Reproduzieren|Ablauf verfolgen|Hypothesen prüfen|Fix nachprüfen",
+    "stepNotes10": [
+      "Erwartung und Fehler mit einem sicheren Testfall gegenüberstellen.",
+      "Eingabe, Zustand, Speicherung und Ausgabe im betroffenen Pfad verfolgen.",
+      "Eine Erklärung wählen und mit einem widerlegbaren Test prüfen.",
+      "Beauftragten Fix am Ursprung umsetzen und den Fehlerfall erneut testen."
+    ],
+    "steps9": "Ziel abgleichen|Belege sichten|Hindernisse benennen|Nächsten Schritt empfehlen",
+    "steps8": "Ziel und Grenzen klären|Qualitätsmaßstab festlegen|Umsetzen und prüfen|Ergebnis kritisch verbessern",
+    "stepNotes8": [
+      "Auftrag, vorhandenen Stand und freigegebenen Handlungsspielraum verstehen.",
+      "Beobachtbare Erfolgskriterien und relevante Prüfungen festlegen.",
+      "Die kleinste vollständige Lösung umsetzen und im tatsächlichen Ablauf prüfen.",
+      "Schwächen beheben und Ergebnis, Nachweise sowie offene Punkte knapp übergeben."
+    ],
+    "steps7": "Kontext verstehen|Namenspaare bilden|Kollisionen prüfen|Auswahl empfehlen",
+    "steps6": "Fragment verstehen|Absicht erhalten|Fehlendes ergänzen|Prompt vorschlagen",
+    "steps5": "Ziel verstehen|Umfeld sichten|Offene Fragen klären|Ersten Schritt planen",
+    "steps4": "Sichtbaren Verlauf lesen|Entscheidungen trennen|Ergebnisse zuordnen|Stand knapp festhalten",
+    "steps3": "Letzten Stand rekonstruieren|Heutigen Stand prüfen|Änderungen benennen|Wiedereinstieg empfehlen",
+    "steps2": "Chat prüfen|Projekte vergleichen|Passendes wählen|Zuordnung bestätigen",
+    "stepNotes2": [
+      "Chat, Host und Ziel anhand verfügbarer Hinweise eindeutig bestimmen.",
+      "Vorhandene Projekte und ihre Eignung prüfen.",
+      "Bei mehreren Treffern eine Auswahl empfehlen; sonst ein Projekt vorschlagen.",
+      "Die beauftragte Zuordnung prüfen und fehlenden Zugriff benennen."
+    ]
   },
   "en": {
     "name": "English",
-    "tagline": "Eighteen recipes for your projects",
+    "tagline": "Nineteen recipes for your projects",
     "recipe": "Recipe",
     "when": "When",
     "ingredients": "Ingredients",
@@ -269,12 +284,12 @@
     "previous": "Previous recipe",
     "next": "Next recipe",
     "ingredientList": "An idea|Project context|Open questions|Constraints",
-    "summaries": "Understand Cookbook and find the right skill.|Find the right earlier chat, repository or artifact.|What is still current after my project break?|What did I originally ask for in this chat?|Choose a small start; explain traces a flow and choose compares options.|Complete a partial prompt using the context.|Find Plain and Kitchen names together.|Execute a goal or exercise a journey with usertest.|Are we making progress in this chat?|Reproduce a current failure and verify a focused fix.|Simplify a selected flow while preserving its behavior.|Review a change for concrete defects and regressions.|Review sensitive content before sharing.|Scope legal questions and user barriers.|Prepare sharing or check actual delivery with verify-live.|Write change notes from verified changes.|Reconcile commitments, review cleanup or prepare a targeted handoff.|Why do our workflow problems keep recurring?",
-    "whenList": "When you are new or looking for the right workflow.|The location or correct version of earlier work is unknown.|After a longer break: compare old decisions with today’s project.|When this conversation’s goal or decisions are unclear.|For a project start, understanding an existing flow or a concrete decision.|When autocomplete is missing or a thought is unfinished.|When a product or skill needs fitting names.|Delegate implementation; usertest reports observed journey findings without automatic fixes.|When progress is unclear or work has drifted.|A concrete failure occurs now; not a retrospective on past work.|Unnecessary complexity in a chosen area, not a repository rewrite.|You want a technical diff review, without automatic repairs.|You want to share files or a repository.|Before release or for a specific question.|For repository presentation, documentation consistency or a delivered version.|A version or work slice is complete.|A work block ends or should continue at a named destination.|For patterns across past attempts; not a current technical bug.",
+    "summaries": "Understand Cookbook and find the right skill.|Find the right earlier chat, repository or artifact.|Assign a chat to a suitable project.|What is still current after my project break?|What did I originally ask for in this chat?|Choose a small start; explain traces a flow and choose compares options.|Complete a partial prompt using the context.|Find Plain and Kitchen names together.|Execute a goal or exercise a journey with usertest.|Are we making progress in this chat?|Reproduce a current failure and verify a focused fix.|Simplify a selected flow while preserving its behavior.|Review a change for concrete defects and regressions.|Review sensitive content before sharing.|Scope legal questions and user barriers.|Prepare sharing or check actual delivery with verify-live.|Write change notes from verified changes.|Reconcile commitments, review cleanup or prepare a targeted handoff.|Why do our workflow problems keep recurring?",
+    "whenList": "When you are new or looking for the right workflow.|The location or correct version of earlier work is unknown.|A chat needs a project.|After a longer break: compare old decisions with today’s project.|When this conversation’s goal or decisions are unclear.|For a project start, understanding an existing flow or a concrete decision.|When autocomplete is missing or a thought is unfinished.|When a product or skill needs fitting names.|Delegate implementation; usertest reports observed journey findings without automatic fixes.|When progress is unclear or work has drifted.|A concrete failure occurs now; not a retrospective on past work.|Unnecessary complexity in a chosen area, not a repository rewrite.|You want a technical diff review, without automatic repairs.|You want to share files or a repository.|Before release or for a specific question.|For repository presentation, documentation consistency or a delivered version.|A version or work slice is complete.|A work block ends or should continue at a named destination.|For patterns across past attempts; not a current technical bug.",
     "limitText": "Use existing evidence only. Keep limits visible; external actions require authorization.",
     "languageNote": "Skill invocations keep their installed language.",
     "footer": "Well prepared. Better built.",
-    "intros": "We explain the collection through your needs and show a fitting next invocation.|Find the right original source before recapping or continuing the work.|What is still current after my project break?|What did I originally ask for in this chat?|explain <flow> traces the real code path; choose <decision> compares suitable options. Both modes stay read-only without an implementation request.|We complete your draft using the visible context. You receive an editable prompt to review and submit yourself.|We find names from the product’s usage moment and compare Plain and Kitchen as paired alternatives.|Use usertest <flow> as the first argument to exercise the journey and report findings. Without that mode, the requested goal is implemented.|Are we making progress in this chat?|Move from an observed symptom through a testable explanation to the smallest suitable correction.|Preserve public contracts and important edge cases while removing only justified complexity.|Keep the review on the selected diff and its consequences. Findings need a concrete trigger.|Review authorized files and history without exposing sensitive values in reports.|Inspect the actual user barrier and identify relevant sources and legal questions.|verify-live <target> compares source, build, delivery and observed behavior. Documentation consistency checks claims against the actual product.|Use the agreed comparison and separate verified changes from uncommitted work.|handoff <destination> prepares the next work block with target host, project and first check. A prepared prompt is not a completed transfer.|Why do our workflow problems keep recurring?",
+    "intros": "We explain the collection through your needs and show a fitting next invocation.|Find the right original source before recapping or continuing the work.|Choose a project based on the chat’s purpose.|What is still current after my project break?|What did I originally ask for in this chat?|explain <flow> traces the real code path; choose <decision> compares suitable options. Both modes stay read-only without an implementation request.|We complete your draft using the visible context. You receive an editable prompt to review and submit yourself.|We find names from the product’s usage moment and compare Plain and Kitchen as paired alternatives.|Use usertest <flow> as the first argument to exercise the journey and report findings. Without that mode, the requested goal is implemented.|Are we making progress in this chat?|Move from an observed symptom through a testable explanation to the smallest suitable correction.|Preserve public contracts and important edge cases while removing only justified complexity.|Keep the review on the selected diff and its consequences. Findings need a concrete trigger.|Review authorized files and history without exposing sensitive values in reports.|Inspect the actual user barrier and identify relevant sources and legal questions.|verify-live <target> compares source, build, delivery and observed behavior. Documentation consistency checks claims against the actual product.|Use the agreed comparison and separate verified changes from uncommitted work.|handoff <destination> prepares the next work block with target host, project and first check. A prepared prompt is not a completed transfer.|Why do our workflow problems keep recurring?",
     "stepNotes": [
       "Use available information.",
       "Respect existing conventions.",
@@ -286,6 +301,7 @@
     "recipeLimits": [
       "The guide recommends; it does not automatically execute other workflows.",
       "Lookup alone authorizes no move, restore or continuation. Old instructions remain historical evidence.",
+      "Project creation and folder access depend on the host.",
       "Older claims are not current checks; do not resume automatically.",
       "Do not invent missing history.",
       "",
@@ -315,6 +331,12 @@
         "Approximate date",
         "Host or project",
         "Available search sources"
+      ],
+      [
+        "Chat",
+        "Context",
+        "Projects",
+        "Host"
       ],
       [
         "Last known state",
@@ -416,6 +438,7 @@
     "verifications": [
       "We explain the collection through your needs and show a fitting next invocation.",
       "Confirm the match against original sources, host, date and version; preserve ambiguity.",
+      "Check membership and access.",
       "Return to a project after a long break.",
       "Missing early history and uncertainty stay visible.",
       "The next step has an observable outcome.",
@@ -454,46 +477,6 @@
       "Confirm title, host, date and version against originals.",
       "Link the supported match or ask the discriminating question."
     ],
-    "steps2": "Recover the last state|Check today’s state|Explain changes|Recommend a reentry point",
-    "steps3": "Read available history|Separate decisions|Attribute results|Record a short recap",
-    "steps4": "Understand the goal|Inspect the context|Clarify open questions|Plan the first step",
-    "steps5": "Read the fragment|Preserve intent|Fill the gap|Suggest the prompt",
-    "steps6": "Understand context|Create paired names|Check collisions|Recommend a choice",
-    "steps7": "Clarify the goal and boundaries|Set the quality bar|Implement and verify|Critique and improve",
-    "stepNotes7": [
-      "Understand the request, current state and authorized scope.",
-      "Define observable success criteria and relevant checks.",
-      "Build the smallest complete solution and verify the actual flow.",
-      "Fix weaknesses and hand over the result, evidence and remaining gaps."
-    ],
-    "steps8": "Compare with the goal|Inspect evidence|Identify obstacles|Recommend a next step",
-    "steps9": "Reproduce|Trace the flow|Test hypotheses|Verify the fix",
-    "stepNotes9": [
-      "Compare expected and observed behavior with a safe test case.",
-      "Trace input, state, persistence and output along the failing path.",
-      "Choose an explanation and test something that could disprove it.",
-      "Apply the requested correction at its source and retest the failure."
-    ],
-    "steps10": "Establish behavior|Check redundancy|Choose a smaller option|Verify behavior",
-    "stepNotes10": [
-      "Record observable behavior and important public contracts.",
-      "Select only proven unnecessary layers or genuine duplication.",
-      "Explain the smallest reduction and its risks against the current implementation.",
-      "Check requested changes against original cases and affected callers."
-    ],
-    "steps11": "Pin the change|Trace contracts|Verify findings|Rank by impact",
-    "stepNotes11": [
-      "Pin the base, target revision and selected diff.",
-      "Read changed code, callers and intended behavior together.",
-      "Check each finding against a concrete trigger and source location.",
-      "Report actionable findings by impact and identify coverage gaps."
-    ],
-    "steps12": "Set the scope|Review files and history|Redact findings|Disclose coverage",
-    "steps13": "Narrow the question|Inspect the user flow|Check sources and applicability|Record open questions",
-    "steps14": "Identify the audience|Review setup and packaging|Prioritize findings|Verify approved improvements",
-    "steps15": "Clarify the comparison|Read the actual diff|Describe user impact|Label unverified claims",
-    "steps16": "Reconcile the request|Reuse existing evidence|Record open items|Write closure or handoff",
-    "steps17": "Set the scope|Find causes|Reconcile advice|Recommend prevention",
     "chapter": "Chapter",
     "chapterTitles": {
       "orientation": "Orientation & return",
@@ -503,11 +486,58 @@
       "release": "Release",
       "closing": "Close & reflect"
     },
-    "copyInvocation": "Copy skill command"
+    "copyInvocation": "Copy skill command",
+    "steps18": "Set the scope|Find causes|Reconcile advice|Recommend prevention",
+    "steps17": "Reconcile the request|Reuse existing evidence|Record open items|Write closure or handoff",
+    "steps16": "Clarify the comparison|Read the actual diff|Describe user impact|Label unverified claims",
+    "steps15": "Identify the audience|Review setup and packaging|Prioritize findings|Verify approved improvements",
+    "steps14": "Narrow the question|Inspect the user flow|Check sources and applicability|Record open questions",
+    "steps13": "Set the scope|Review files and history|Redact findings|Disclose coverage",
+    "steps12": "Pin the change|Trace contracts|Verify findings|Rank by impact",
+    "stepNotes12": [
+      "Pin the base, target revision and selected diff.",
+      "Read changed code, callers and intended behavior together.",
+      "Check each finding against a concrete trigger and source location.",
+      "Report actionable findings by impact and identify coverage gaps."
+    ],
+    "steps11": "Establish behavior|Check redundancy|Choose a smaller option|Verify behavior",
+    "stepNotes11": [
+      "Record observable behavior and important public contracts.",
+      "Select only proven unnecessary layers or genuine duplication.",
+      "Explain the smallest reduction and its risks against the current implementation.",
+      "Check requested changes against original cases and affected callers."
+    ],
+    "steps10": "Reproduce|Trace the flow|Test hypotheses|Verify the fix",
+    "stepNotes10": [
+      "Compare expected and observed behavior with a safe test case.",
+      "Trace input, state, persistence and output along the failing path.",
+      "Choose an explanation and test something that could disprove it.",
+      "Apply the requested correction at its source and retest the failure."
+    ],
+    "steps9": "Compare with the goal|Inspect evidence|Identify obstacles|Recommend a next step",
+    "steps8": "Clarify the goal and boundaries|Set the quality bar|Implement and verify|Critique and improve",
+    "stepNotes8": [
+      "Understand the request, current state and authorized scope.",
+      "Define observable success criteria and relevant checks.",
+      "Build the smallest complete solution and verify the actual flow.",
+      "Fix weaknesses and hand over the result, evidence and remaining gaps."
+    ],
+    "steps7": "Understand context|Create paired names|Check collisions|Recommend a choice",
+    "steps6": "Read the fragment|Preserve intent|Fill the gap|Suggest the prompt",
+    "steps5": "Understand the goal|Inspect the context|Clarify open questions|Plan the first step",
+    "steps4": "Read available history|Separate decisions|Attribute results|Record a short recap",
+    "steps3": "Recover the last state|Check today’s state|Explain changes|Recommend a reentry point",
+    "steps2": "Identify chat|Compare projects|Choose match|Verify assignment",
+    "stepNotes2": [
+      "Identify the chat, host and goal from available evidence.",
+      "Compare available projects and their suitability.",
+      "Recommend a shortlist or propose a project if none fits.",
+      "Verify an authorized assignment and report missing access."
+    ]
   },
   "fr": {
     "name": "Français",
-    "tagline": "Dix-huit recettes pour vos projets",
+    "tagline": "Dix-neuf recettes pour vos projets",
     "recipe": "Recette",
     "when": "Quand",
     "ingredients": "Ingrédients",
@@ -522,12 +552,12 @@
     "previous": "Recette précédente",
     "next": "Recette suivante",
     "ingredientList": "Une idée|Contexte du projet|Questions ouvertes|Contraintes",
-    "summaries": "Comprendre Cookbook et trouver le bon skill.|Retrouver le bon échange, dépôt ou artefact antérieur.|Reprendre un projet après une longue pause.|Retrouver objectifs, décisions et état actuel.|De l’idée au premier pas vérifiable.|Compléter un début de prompt selon le contexte.|Trouver ensemble les noms Plain et Kitchen.|Mener un objectif jusqu’à un résultat réalisé et vérifié.|Vérifier si la démarche mène au but.|Reproduire une panne actuelle et vérifier une correction ciblée.|Simplifier un parcours ciblé en préservant son comportement.|Examiner une modification pour trouver des défauts et régressions concrets.|Examiner les données sensibles avant partage.|Cadrer les questions juridiques et les obstacles.|Préparer un projet à la publication.|Rédiger les changements à partir de preuves.|Terminer ou préparer une transmission.|Apprendre des tentatives précédentes.",
-    "whenList": "Pour découvrir la collection ou choisir un processus.|Le lieu ou la bonne version du travail antérieur est inconnu.|Quand les objectifs, décisions et état actuel doivent être rappelés.|Après une pause, le contexte manque.|Une idée a besoin d’un début concret.|Quand la saisie automatique manque ou une idée reste inachevée.|Quand un produit ou skill a besoin de noms adaptés.|Quand vous souhaitez déléguer un objectif de projet et sa réalisation.|Vous voulez évaluer la progression.|Une panne survient maintenant ; pas une rétrospective du travail passé.|Complexité inutile dans un périmètre choisi, sans réécriture générale.|Une revue technique du diff, sans réparation automatique.|Vous souhaitez partager des fichiers ou un dépôt.|Avant publication ou pour une question précise.|D’autres doivent comprendre et utiliser le projet.|Une version ou une étape est terminée.|Une étape se termine ou doit être transmise.|Quand les échecs ou conseils sans suite se répètent.",
+    "summaries": "Comprendre Cookbook et trouver le bon skill.|Retrouver le bon échange, dépôt ou artefact antérieur.|Associer une discussion au bon projet.|Reprendre un projet après une longue pause.|Retrouver objectifs, décisions et état actuel.|De l’idée au premier pas vérifiable.|Compléter un début de prompt selon le contexte.|Trouver ensemble les noms Plain et Kitchen.|Mener un objectif jusqu’à un résultat réalisé et vérifié.|Vérifier si la démarche mène au but.|Reproduire une panne actuelle et vérifier une correction ciblée.|Simplifier un parcours ciblé en préservant son comportement.|Examiner une modification pour trouver des défauts et régressions concrets.|Examiner les données sensibles avant partage.|Cadrer les questions juridiques et les obstacles.|Préparer un projet à la publication.|Rédiger les changements à partir de preuves.|Terminer ou préparer une transmission.|Apprendre des tentatives précédentes.",
+    "whenList": "Pour découvrir la collection ou choisir un processus.|Le lieu ou la bonne version du travail antérieur est inconnu.|Une discussion a besoin d’un projet.|Quand les objectifs, décisions et état actuel doivent être rappelés.|Après une pause, le contexte manque.|Une idée a besoin d’un début concret.|Quand la saisie automatique manque ou une idée reste inachevée.|Quand un produit ou skill a besoin de noms adaptés.|Quand vous souhaitez déléguer un objectif de projet et sa réalisation.|Vous voulez évaluer la progression.|Une panne survient maintenant ; pas une rétrospective du travail passé.|Complexité inutile dans un périmètre choisi, sans réécriture générale.|Une revue technique du diff, sans réparation automatique.|Vous souhaitez partager des fichiers ou un dépôt.|Avant publication ou pour une question précise.|D’autres doivent comprendre et utiliser le projet.|Une version ou une étape est terminée.|Une étape se termine ou doit être transmise.|Quand les échecs ou conseils sans suite se répètent.",
     "limitText": "Utiliser les preuves disponibles. Signaler les limites ; les actions externes demandent une autorisation.",
     "languageNote": "Les commandes gardent leur langue installée.",
     "footer": "Bien préparer. Mieux construire.",
-    "intros": "Nous présentons la collection selon votre besoin et proposons une commande adaptée.|Confirmer la source, la machine, la date et la version ; signaler les ambiguïtés.|Les anciennes affirmations ne sont pas des vérifications actuelles; pas de reprise automatique.|Reconstituer le but visible, les décisions confirmées et le dernier état prouvé.|Comprendre le but et préparer un premier pas modeste et vérifiable.|Brouillon uniquement; aucune exécution ni intégration Tab native.|Les propositions ne renomment rien et ne garantissent pas la disponibilité.|Nous préservons votre intention, définissons le niveau de qualité attendu et réalisons l’objectif en autonomie. Nous examinons ensuite le résultat et l’améliorons à partir de preuves concrètes.|Examiner la démarche selon la demande et les preuves disponibles.|Retester le cas initial et les cas proches. Signaler les vérifications manquantes.|Retester le comportement initial et les appelants concernés.|Chaque constat a une condition, un emplacement valide et un impact.|Examiner les fichiers autorisés sans exposer de valeurs sensibles.|Étudier l’obstacle réel et les sources pertinentes.|Vérifier démarrage, documentation et paquet pour le vrai public.|Utiliser la comparaison convenue et séparer le travail non commité.|Comparer demande et résultats pour une conclusion ou transmission claire.|Ne pas appliquer automatiquement de correctifs ou de règles.",
+    "intros": "Nous présentons la collection selon votre besoin et proposons une commande adaptée.|Confirmer la source, la machine, la date et la version ; signaler les ambiguïtés.|Choisir un projet selon le but de la discussion.|Les anciennes affirmations ne sont pas des vérifications actuelles; pas de reprise automatique.|Reconstituer le but visible, les décisions confirmées et le dernier état prouvé.|Comprendre le but et préparer un premier pas modeste et vérifiable.|Brouillon uniquement; aucune exécution ni intégration Tab native.|Les propositions ne renomment rien et ne garantissent pas la disponibilité.|Nous préservons votre intention, définissons le niveau de qualité attendu et réalisons l’objectif en autonomie. Nous examinons ensuite le résultat et l’améliorons à partir de preuves concrètes.|Examiner la démarche selon la demande et les preuves disponibles.|Retester le cas initial et les cas proches. Signaler les vérifications manquantes.|Retester le comportement initial et les appelants concernés.|Chaque constat a une condition, un emplacement valide et un impact.|Examiner les fichiers autorisés sans exposer de valeurs sensibles.|Étudier l’obstacle réel et les sources pertinentes.|Vérifier démarrage, documentation et paquet pour le vrai public.|Utiliser la comparaison convenue et séparer le travail non commité.|Comparer demande et résultats pour une conclusion ou transmission claire.|Ne pas appliquer automatiquement de correctifs ou de règles.",
     "stepNotes": [
       "Utiliser les informations disponibles.",
       "Respecter les conventions existantes.",
@@ -539,6 +569,7 @@
     "recipeLimits": [
       "Le guide recommande sans lancer automatiquement un autre processus.",
       "La recherche seule ne permet ni déplacement, ni restauration, ni reprise du travail.",
+      "La création et les accès dépendent de l’hôte.",
       "Les anciennes affirmations ne sont pas des vérifications actuelles; pas de reprise automatique.",
       "Ne pas inventer l’historique manquant.",
       "",
@@ -568,6 +599,12 @@
         "Date approximative",
         "Machine ou projet",
         "Sources de recherche"
+      ],
+      [
+        "Discussion",
+        "Contexte",
+        "Projets",
+        "Hôte"
       ],
       [
         "Dernier état connu",
@@ -669,6 +706,7 @@
     "verifications": [
       "Nous présentons la collection selon votre besoin et proposons une commande adaptée.",
       "Confirmer la source, la machine, la date et la version ; signaler les ambiguïtés.",
+      "Vérifier le projet et les accès.",
       "Reprendre un projet après une longue pause.",
       "Historique manquant et incertitudes restent visibles.",
       "La prochaine étape a un résultat observable.",
@@ -707,46 +745,6 @@
       "Confirmer titre, machine, date et version dans les originaux.",
       "Lier le résultat établi ou poser la question décisive."
     ],
-    "steps2": "Retrouver le dernier état|Vérifier l’état actuel|Expliquer les changements|Proposer un point de reprise",
-    "steps3": "Lire l’historique disponible|Séparer les décisions|Attribuer les résultats|Résumer la situation",
-    "steps4": "Comprendre le but|Examiner le contexte|Clarifier les questions|Préparer le premier pas",
-    "steps5": "Lire le fragment|Préserver l’intention|Compléter le manque|Proposer le prompt",
-    "steps6": "Comprendre le contexte|Créer des paires|Vérifier les collisions|Recommander un choix",
-    "steps7": "Clarifier l’objectif et les limites|Définir la qualité attendue|Réaliser et vérifier|Évaluer et améliorer",
-    "stepNotes7": [
-      "Comprendre la demande, l’état actuel et le périmètre autorisé.",
-      "Définir des critères de réussite observables et les vérifications utiles.",
-      "Réaliser la plus petite solution complète et vérifier le parcours réel.",
-      "Corriger les faiblesses et transmettre le résultat, les preuves et les points ouverts."
-    ],
-    "steps8": "Comparer au but|Examiner les preuves|Identifier les obstacles|Recommander la suite",
-    "steps9": "Reproduire|Suivre le parcours|Tester les hypothèses|Vérifier la correction",
-    "stepNotes9": [
-      "Reproduire",
-      "Suivre le parcours",
-      "Tester les hypothèses",
-      "Vérifier la correction"
-    ],
-    "steps10": "Établir le comportement|Vérifier les redondances|Choisir plus simple|Vérifier le résultat",
-    "stepNotes10": [
-      "Noter le comportement observable et les contrats publics.",
-      "Choisir uniquement les couches inutiles ou doublons établis.",
-      "Expliquer la plus petite réduction et ses risques.",
-      "Vérifier les changements demandés sur les cas initiaux et les appelants."
-    ],
-    "steps11": "Délimiter le diff|Suivre les contrats|Vérifier les constats|Classer les impacts",
-    "stepNotes11": [
-      "Fixer la base, la révision cible et le diff choisi.",
-      "Lire ensemble le code modifié, ses appelants et le comportement prévu.",
-      "Vérifier chaque constat avec un cas concret et une source.",
-      "Rapporter les constats utiles par impact et signaler les lacunes."
-    ],
-    "steps12": "Définir le périmètre|Examiner fichiers et historique|Masquer les données sensibles|Indiquer la couverture",
-    "steps13": "Préciser la question|Examiner le parcours|Vérifier sources et pertinence|Noter les questions ouvertes",
-    "steps14": "Identifier le public|Vérifier démarrage et paquet|Prioriser les constats|Vérifier les changements autorisés",
-    "steps15": "Préciser la comparaison|Lire le vrai diff|Décrire l’effet utilisateur|Signaler les incertitudes",
-    "steps16": "Revoir la demande|Réutiliser les preuves|Noter les points ouverts|Rédiger la conclusion",
-    "steps17": "Définir le périmètre|Chercher les causes|Vérifier les conseils|Proposer une prévention",
     "chapter": "Chapitre",
     "chapterTitles": {
       "orientation": "Orientation et reprise",
@@ -756,11 +754,58 @@
       "release": "Publication",
       "closing": "Clôture et bilan"
     },
-    "copyInvocation": "Copier la commande"
+    "copyInvocation": "Copier la commande",
+    "steps18": "Définir le périmètre|Chercher les causes|Vérifier les conseils|Proposer une prévention",
+    "steps17": "Revoir la demande|Réutiliser les preuves|Noter les points ouverts|Rédiger la conclusion",
+    "steps16": "Préciser la comparaison|Lire le vrai diff|Décrire l’effet utilisateur|Signaler les incertitudes",
+    "steps15": "Identifier le public|Vérifier démarrage et paquet|Prioriser les constats|Vérifier les changements autorisés",
+    "steps14": "Préciser la question|Examiner le parcours|Vérifier sources et pertinence|Noter les questions ouvertes",
+    "steps13": "Définir le périmètre|Examiner fichiers et historique|Masquer les données sensibles|Indiquer la couverture",
+    "steps12": "Délimiter le diff|Suivre les contrats|Vérifier les constats|Classer les impacts",
+    "stepNotes12": [
+      "Fixer la base, la révision cible et le diff choisi.",
+      "Lire ensemble le code modifié, ses appelants et le comportement prévu.",
+      "Vérifier chaque constat avec un cas concret et une source.",
+      "Rapporter les constats utiles par impact et signaler les lacunes."
+    ],
+    "steps11": "Établir le comportement|Vérifier les redondances|Choisir plus simple|Vérifier le résultat",
+    "stepNotes11": [
+      "Noter le comportement observable et les contrats publics.",
+      "Choisir uniquement les couches inutiles ou doublons établis.",
+      "Expliquer la plus petite réduction et ses risques.",
+      "Vérifier les changements demandés sur les cas initiaux et les appelants."
+    ],
+    "steps10": "Reproduire|Suivre le parcours|Tester les hypothèses|Vérifier la correction",
+    "stepNotes10": [
+      "Reproduire",
+      "Suivre le parcours",
+      "Tester les hypothèses",
+      "Vérifier la correction"
+    ],
+    "steps9": "Comparer au but|Examiner les preuves|Identifier les obstacles|Recommander la suite",
+    "steps8": "Clarifier l’objectif et les limites|Définir la qualité attendue|Réaliser et vérifier|Évaluer et améliorer",
+    "stepNotes8": [
+      "Comprendre la demande, l’état actuel et le périmètre autorisé.",
+      "Définir des critères de réussite observables et les vérifications utiles.",
+      "Réaliser la plus petite solution complète et vérifier le parcours réel.",
+      "Corriger les faiblesses et transmettre le résultat, les preuves et les points ouverts."
+    ],
+    "steps7": "Comprendre le contexte|Créer des paires|Vérifier les collisions|Recommander un choix",
+    "steps6": "Lire le fragment|Préserver l’intention|Compléter le manque|Proposer le prompt",
+    "steps5": "Comprendre le but|Examiner le contexte|Clarifier les questions|Préparer le premier pas",
+    "steps4": "Lire l’historique disponible|Séparer les décisions|Attribuer les résultats|Résumer la situation",
+    "steps3": "Retrouver le dernier état|Vérifier l’état actuel|Expliquer les changements|Proposer un point de reprise",
+    "steps2": "Identifier|Comparer|Choisir|Vérifier",
+    "stepNotes2": [
+      "Identifier la discussion, l’hôte et le but.",
+      "Comparer les projets disponibles.",
+      "Proposer des choix ou un nouveau projet.",
+      "Vérifier l’association autorisée et les accès."
+    ]
   },
   "es": {
     "name": "Español",
-    "tagline": "Dieciocho recetas para tus proyectos",
+    "tagline": "Diecinueve recetas para tus proyectos",
     "recipe": "Receta",
     "when": "Cuándo",
     "ingredients": "Ingredientes",
@@ -775,12 +820,12 @@
     "previous": "Receta anterior",
     "next": "Receta siguiente",
     "ingredientList": "Una idea|Contexto del proyecto|Preguntas abiertas|Restricciones",
-    "summaries": "Entender Cookbook y encontrar el skill adecuado.|Encontrar el chat, repositorio o archivo anterior correcto.|Retomar un proyecto tras una pausa larga.|Recuperar objetivos, decisiones y estado.|De la idea al primer paso verificable.|Completar un prompt iniciado según el contexto.|Encontrar juntos nombres Plain y Kitchen.|Llevar un objetivo hasta un resultado implementado y verificado.|Comprobar si el enfoque lleva al objetivo.|Reproducir un fallo actual y verificar una corrección concreta.|Simplificar un flujo concreto conservando su comportamiento.|Revisar un cambio para detectar defectos y regresiones concretos.|Revisar contenido sensible antes de compartir.|Delimitar cuestiones legales y barreras de uso.|Preparar un proyecto para su publicación.|Redactar cambios a partir de pruebas.|Cerrar el trabajo o preparar el relevo.|Aprender de los intentos anteriores.",
-    "whenList": "Al empezar o al buscar el flujo apropiado.|No sabes dónde está el trabajo anterior o qué versión corresponde.|Cuando hace falta recordar objetivos, decisiones y estado actual.|Tras una pausa necesitas el contexto.|Una idea necesita un comienzo concreto.|Cuando falta el autocompletado o una idea queda incompleta.|Cuando un producto o skill necesita nombres adecuados.|Cuando quieras delegar un objetivo del proyecto y su implementación.|Quieres saber si el trabajo avanza.|Hay un fallo ahora; no es una retrospectiva del trabajo anterior.|Complejidad innecesaria en un área, sin reescribir el repositorio.|Revisión técnica del diff sin reparaciones automáticas.|Quieres compartir archivos o un repositorio.|Antes de publicar o ante una pregunta concreta.|Otros deben entender y usar tu proyecto.|Una versión o una etapa ha terminado.|Una etapa termina o necesita relevo.|Cuando se repiten errores o consejos sin aplicar.",
+    "summaries": "Entender Cookbook y encontrar el skill adecuado.|Encontrar el chat, repositorio o archivo anterior correcto.|Asignar un chat al proyecto adecuado.|Retomar un proyecto tras una pausa larga.|Recuperar objetivos, decisiones y estado.|De la idea al primer paso verificable.|Completar un prompt iniciado según el contexto.|Encontrar juntos nombres Plain y Kitchen.|Llevar un objetivo hasta un resultado implementado y verificado.|Comprobar si el enfoque lleva al objetivo.|Reproducir un fallo actual y verificar una corrección concreta.|Simplificar un flujo concreto conservando su comportamiento.|Revisar un cambio para detectar defectos y regresiones concretos.|Revisar contenido sensible antes de compartir.|Delimitar cuestiones legales y barreras de uso.|Preparar un proyecto para su publicación.|Redactar cambios a partir de pruebas.|Cerrar el trabajo o preparar el relevo.|Aprender de los intentos anteriores.",
+    "whenList": "Al empezar o al buscar el flujo apropiado.|No sabes dónde está el trabajo anterior o qué versión corresponde.|Un chat necesita un proyecto.|Cuando hace falta recordar objetivos, decisiones y estado actual.|Tras una pausa necesitas el contexto.|Una idea necesita un comienzo concreto.|Cuando falta el autocompletado o una idea queda incompleta.|Cuando un producto o skill necesita nombres adecuados.|Cuando quieras delegar un objetivo del proyecto y su implementación.|Quieres saber si el trabajo avanza.|Hay un fallo ahora; no es una retrospectiva del trabajo anterior.|Complejidad innecesaria en un área, sin reescribir el repositorio.|Revisión técnica del diff sin reparaciones automáticas.|Quieres compartir archivos o un repositorio.|Antes de publicar o ante una pregunta concreta.|Otros deben entender y usar tu proyecto.|Una versión o una etapa ha terminado.|Una etapa termina o necesita relevo.|Cuando se repiten errores o consejos sin aplicar.",
     "limitText": "Usar pruebas existentes. Mostrar límites; las acciones externas requieren autorización.",
     "languageNote": "Los comandos mantienen su idioma instalado.",
     "footer": "Preparar bien. Construir mejor.",
-    "intros": "Explicamos la colección según tu necesidad y mostramos el siguiente comando adecuado.|Confirmar fuente, equipo, fecha y versión; señalar ambigüedades.|Las afirmaciones antiguas no son comprobaciones actuales; no continuar automáticamente.|Reconstruir el objetivo visible, las decisiones y el último estado probado.|Entender el objetivo y planificar un primer paso pequeño y verificable.|Solo borrador; sin ejecución ni integración nativa de Tab.|Las propuestas no cambian nombres ni garantizan disponibilidad.|Preservamos tu intención, definimos el nivel de calidad adecuado y ejecutamos el objetivo con autonomía. Después revisamos y mejoramos el resultado con pruebas concretas.|Revisar el enfoque según el encargo y las pruebas disponibles.|Repetir el fallo original y los casos relacionados. Indicar qué no se comprobó.|Volver a comprobar el comportamiento original y los llamadores afectados.|Cada hallazgo tiene un caso concreto, una ubicación válida y un impacto.|Revisar archivos autorizados sin revelar valores sensibles.|Examinar la barrera real y las fuentes pertinentes.|Revisar inicio, documentación y paquete para el público real.|Usar la comparación acordada y separar el trabajo sin confirmar.|Comparar encargo y resultados para un cierre o relevo claro.|No aplicar cambios ni reglas automáticamente.",
+    "intros": "Explicamos la colección según tu necesidad y mostramos el siguiente comando adecuado.|Confirmar fuente, equipo, fecha y versión; señalar ambigüedades.|Elegir un proyecto según el objetivo del chat.|Las afirmaciones antiguas no son comprobaciones actuales; no continuar automáticamente.|Reconstruir el objetivo visible, las decisiones y el último estado probado.|Entender el objetivo y planificar un primer paso pequeño y verificable.|Solo borrador; sin ejecución ni integración nativa de Tab.|Las propuestas no cambian nombres ni garantizan disponibilidad.|Preservamos tu intención, definimos el nivel de calidad adecuado y ejecutamos el objetivo con autonomía. Después revisamos y mejoramos el resultado con pruebas concretas.|Revisar el enfoque según el encargo y las pruebas disponibles.|Repetir el fallo original y los casos relacionados. Indicar qué no se comprobó.|Volver a comprobar el comportamiento original y los llamadores afectados.|Cada hallazgo tiene un caso concreto, una ubicación válida y un impacto.|Revisar archivos autorizados sin revelar valores sensibles.|Examinar la barrera real y las fuentes pertinentes.|Revisar inicio, documentación y paquete para el público real.|Usar la comparación acordada y separar el trabajo sin confirmar.|Comparar encargo y resultados para un cierre o relevo claro.|No aplicar cambios ni reglas automáticamente.",
     "stepNotes": [
       "Usar información disponible.",
       "Respetar las convenciones existentes.",
@@ -792,6 +837,7 @@
     "recipeLimits": [
       "El guía recomienda; no ejecuta otros flujos automáticamente.",
       "Buscar no autoriza mover, restaurar ni reanudar el trabajo.",
+      "La creación y el acceso dependen del entorno.",
       "Las afirmaciones antiguas no son comprobaciones actuales; no continuar automáticamente.",
       "No inventar el historial que falta.",
       "",
@@ -821,6 +867,12 @@
         "Fecha aproximada",
         "Equipo o proyecto",
         "Fuentes de búsqueda"
+      ],
+      [
+        "Chat",
+        "Contexto",
+        "Proyectos",
+        "Equipo"
       ],
       [
         "Último estado",
@@ -922,6 +974,7 @@
     "verifications": [
       "Explicamos la colección según tu necesidad y mostramos el siguiente comando adecuado.",
       "Confirmar fuente, equipo, fecha y versión; señalar ambigüedades.",
+      "Comprobar la asignación y el acceso.",
       "Retomar un proyecto tras una pausa larga.",
       "El historial ausente y las dudas quedan visibles.",
       "El siguiente paso tiene un resultado observable.",
@@ -960,46 +1013,6 @@
       "Confirmar título, equipo, fecha y versión en los originales.",
       "Enlazar el resultado confirmado o hacer la pregunta decisiva."
     ],
-    "steps2": "Recuperar el estado anterior|Comprobar el estado actual|Explicar cambios|Proponer un punto de entrada",
-    "steps3": "Leer el historial disponible|Separar decisiones|Atribuir resultados|Resumir el estado",
-    "steps4": "Entender el objetivo|Examinar el contexto|Aclarar preguntas|Planificar el primer paso",
-    "steps5": "Leer el fragmento|Conservar la intención|Completar lo que falta|Proponer el prompt",
-    "steps6": "Entender contexto|Crear pares|Revisar colisiones|Recomendar una opción",
-    "steps7": "Aclarar objetivo y límites|Definir la calidad esperada|Implementar y verificar|Evaluar y mejorar",
-    "stepNotes7": [
-      "Comprender el encargo, el estado actual y el alcance autorizado.",
-      "Definir criterios de éxito observables y comprobaciones pertinentes.",
-      "Implementar la solución completa más pequeña y verificar el flujo real.",
-      "Corregir los puntos débiles y entregar el resultado, las pruebas y los asuntos pendientes."
-    ],
-    "steps8": "Comparar con el objetivo|Examinar pruebas|Identificar obstáculos|Recomendar el siguiente paso",
-    "steps9": "Reproducir|Seguir el flujo|Probar hipótesis|Verificar la corrección",
-    "stepNotes9": [
-      "Reproducir",
-      "Seguir el flujo",
-      "Probar hipótesis",
-      "Verificar la corrección"
-    ],
-    "steps10": "Definir comportamiento|Comprobar redundancia|Elegir algo menor|Verificar comportamiento",
-    "stepNotes10": [
-      "Anotar el comportamiento observable y los contratos públicos.",
-      "Elegir solo capas innecesarias o duplicaciones demostradas.",
-      "Explicar la reducción más pequeña y sus riesgos.",
-      "Comprobar cambios solicitados con los casos originales y llamadores."
-    ],
-    "steps11": "Delimitar el cambio|Seguir contratos|Verificar hallazgos|Ordenar por impacto",
-    "stepNotes11": [
-      "Fijar la base, revisión objetivo y diff elegido.",
-      "Leer juntos el código modificado, sus llamadores y el comportamiento previsto.",
-      "Verificar cada hallazgo con un caso concreto y su fuente.",
-      "Informar hallazgos útiles por impacto e indicar lagunas."
-    ],
-    "steps12": "Definir el alcance|Revisar archivos e historial|Ocultar datos sensibles|Indicar la cobertura",
-    "steps13": "Precisar la pregunta|Examinar el recorrido|Verificar fuentes y aplicación|Anotar dudas",
-    "steps14": "Identificar el público|Revisar inicio y paquete|Priorizar hallazgos|Verificar mejoras autorizadas",
-    "steps15": "Aclarar la comparación|Leer el diff real|Describir el efecto|Marcar lo no verificado",
-    "steps16": "Revisar el encargo|Reutilizar pruebas|Anotar pendientes|Escribir cierre o relevo",
-    "steps17": "Definir alcance|Buscar causas|Revisar recomendaciones|Proponer prevención",
     "chapter": "Capítulo",
     "chapterTitles": {
       "orientation": "Orientación y regreso",
@@ -1009,11 +1022,58 @@
       "release": "Publicación",
       "closing": "Cierre y retrospectiva"
     },
-    "copyInvocation": "Copiar comando del skill"
+    "copyInvocation": "Copiar comando del skill",
+    "steps18": "Definir alcance|Buscar causas|Revisar recomendaciones|Proponer prevención",
+    "steps17": "Revisar el encargo|Reutilizar pruebas|Anotar pendientes|Escribir cierre o relevo",
+    "steps16": "Aclarar la comparación|Leer el diff real|Describir el efecto|Marcar lo no verificado",
+    "steps15": "Identificar el público|Revisar inicio y paquete|Priorizar hallazgos|Verificar mejoras autorizadas",
+    "steps14": "Precisar la pregunta|Examinar el recorrido|Verificar fuentes y aplicación|Anotar dudas",
+    "steps13": "Definir el alcance|Revisar archivos e historial|Ocultar datos sensibles|Indicar la cobertura",
+    "steps12": "Delimitar el cambio|Seguir contratos|Verificar hallazgos|Ordenar por impacto",
+    "stepNotes12": [
+      "Fijar la base, revisión objetivo y diff elegido.",
+      "Leer juntos el código modificado, sus llamadores y el comportamiento previsto.",
+      "Verificar cada hallazgo con un caso concreto y su fuente.",
+      "Informar hallazgos útiles por impacto e indicar lagunas."
+    ],
+    "steps11": "Definir comportamiento|Comprobar redundancia|Elegir algo menor|Verificar comportamiento",
+    "stepNotes11": [
+      "Anotar el comportamiento observable y los contratos públicos.",
+      "Elegir solo capas innecesarias o duplicaciones demostradas.",
+      "Explicar la reducción más pequeña y sus riesgos.",
+      "Comprobar cambios solicitados con los casos originales y llamadores."
+    ],
+    "steps10": "Reproducir|Seguir el flujo|Probar hipótesis|Verificar la corrección",
+    "stepNotes10": [
+      "Reproducir",
+      "Seguir el flujo",
+      "Probar hipótesis",
+      "Verificar la corrección"
+    ],
+    "steps9": "Comparar con el objetivo|Examinar pruebas|Identificar obstáculos|Recomendar el siguiente paso",
+    "steps8": "Aclarar objetivo y límites|Definir la calidad esperada|Implementar y verificar|Evaluar y mejorar",
+    "stepNotes8": [
+      "Comprender el encargo, el estado actual y el alcance autorizado.",
+      "Definir criterios de éxito observables y comprobaciones pertinentes.",
+      "Implementar la solución completa más pequeña y verificar el flujo real.",
+      "Corregir los puntos débiles y entregar el resultado, las pruebas y los asuntos pendientes."
+    ],
+    "steps7": "Entender contexto|Crear pares|Revisar colisiones|Recomendar una opción",
+    "steps6": "Leer el fragmento|Conservar la intención|Completar lo que falta|Proponer el prompt",
+    "steps5": "Entender el objetivo|Examinar el contexto|Aclarar preguntas|Planificar el primer paso",
+    "steps4": "Leer el historial disponible|Separar decisiones|Atribuir resultados|Resumir el estado",
+    "steps3": "Recuperar el estado anterior|Comprobar el estado actual|Explicar cambios|Proponer un punto de entrada",
+    "steps2": "Identificar|Comparar|Elegir|Verificar",
+    "stepNotes2": [
+      "Identifica el chat, el equipo y el objetivo.",
+      "Compara los proyectos disponibles.",
+      "Propón opciones o un proyecto nuevo.",
+      "Verifica la asignación autorizada y el acceso."
+    ]
   },
   "pt-BR": {
     "name": "Português (Brasil)",
-    "tagline": "Dezoito receitas para seus projetos",
+    "tagline": "Dezenove receitas para seus projetos",
     "recipe": "Receita",
     "when": "Quando",
     "ingredients": "Ingredientes",
@@ -1028,12 +1088,12 @@
     "previous": "Receita anterior",
     "next": "Próxima receita",
     "ingredientList": "Uma ideia|Contexto do projeto|Questões abertas|Restrições",
-    "summaries": "Entender Cookbook e encontrar o skill certo.|Encontrar a conversa, o repositório ou o artefato anterior correto.|Retomar um projeto após uma pausa longa.|Recuperar objetivos, decisões e situação.|Da ideia ao primeiro passo verificável.|Completar um prompt iniciado com contexto.|Encontrar nomes Plain e Kitchen juntos.|Levar um objetivo até um resultado implementado e verificado.|Verificar se a abordagem leva ao objetivo.|Reproduzir uma falha atual e verificar uma correção pontual.|Simplificar um fluxo escolhido preservando o comportamento.|Revisar uma alteração em busca de defeitos e regressões concretos.|Revisar conteúdo sensível antes de compartilhar.|Delimitar questões legais e barreiras de uso.|Preparar um projeto para publicação.|Escrever notas com base em mudanças comprovadas.|Encerrar o trabalho ou preparar a passagem.|Aprender com tentativas anteriores.",
-    "whenList": "Ao começar ou procurar o fluxo adequado.|A localização ou versão correta do trabalho anterior é desconhecida.|Quando objetivos, decisões e estado atual precisam ser lembrados.|Após uma pausa, falta contexto.|Uma ideia precisa de um começo concreto.|Quando o preenchimento automático falta ou uma ideia está incompleta.|Quando um produto ou skill precisa de nomes adequados.|Quando você quiser delegar um objetivo do projeto e sua implementação.|Você quer saber se o trabalho avança.|Uma falha ocorre agora; não é uma retrospectiva do trabalho anterior.|Complexidade desnecessária em uma área, sem reescrever o repositório.|Revisão técnica do diff sem reparos automáticos.|Você quer compartilhar arquivos ou um repositório.|Antes de publicar ou para uma questão específica.|Outros precisam entender e usar seu projeto.|Uma versão ou etapa foi concluída.|Uma etapa termina ou precisa ser transferida.|Quando falhas ou recomendações sem conclusão se repetem.",
+    "summaries": "Entender Cookbook e encontrar o skill certo.|Encontrar a conversa, o repositório ou o artefato anterior correto.|Atribuir uma conversa ao projeto adequado.|Retomar um projeto após uma pausa longa.|Recuperar objetivos, decisões e situação.|Da ideia ao primeiro passo verificável.|Completar um prompt iniciado com contexto.|Encontrar nomes Plain e Kitchen juntos.|Levar um objetivo até um resultado implementado e verificado.|Verificar se a abordagem leva ao objetivo.|Reproduzir uma falha atual e verificar uma correção pontual.|Simplificar um fluxo escolhido preservando o comportamento.|Revisar uma alteração em busca de defeitos e regressões concretos.|Revisar conteúdo sensível antes de compartilhar.|Delimitar questões legais e barreiras de uso.|Preparar um projeto para publicação.|Escrever notas com base em mudanças comprovadas.|Encerrar o trabalho ou preparar a passagem.|Aprender com tentativas anteriores.",
+    "whenList": "Ao começar ou procurar o fluxo adequado.|A localização ou versão correta do trabalho anterior é desconhecida.|Uma conversa precisa de um projeto.|Quando objetivos, decisões e estado atual precisam ser lembrados.|Após uma pausa, falta contexto.|Uma ideia precisa de um começo concreto.|Quando o preenchimento automático falta ou uma ideia está incompleta.|Quando um produto ou skill precisa de nomes adequados.|Quando você quiser delegar um objetivo do projeto e sua implementação.|Você quer saber se o trabalho avança.|Uma falha ocorre agora; não é uma retrospectiva do trabalho anterior.|Complexidade desnecessária em uma área, sem reescrever o repositório.|Revisão técnica do diff sem reparos automáticos.|Você quer compartilhar arquivos ou um repositório.|Antes de publicar ou para uma questão específica.|Outros precisam entender e usar seu projeto.|Uma versão ou etapa foi concluída.|Uma etapa termina ou precisa ser transferida.|Quando falhas ou recomendações sem conclusão se repetem.",
     "limitText": "Usar evidências existentes. Mostrar limites; ações externas exigem autorização.",
     "languageNote": "Os comandos mantêm o idioma instalado.",
     "footer": "Preparar bem. Construir melhor.",
-    "intros": "Explicamos a coleção conforme sua necessidade e mostramos um comando adequado.|Confirmar fonte, máquina, data e versão; indicar ambiguidades.|Afirmações antigas não são verificações atuais; não retomar automaticamente.|Reconstruir o objetivo visível, decisões e o último estado comprovado.|Entender o objetivo e planejar um primeiro passo pequeno e verificável.|Somente rascunho; sem execução ou integração nativa com Tab.|As propostas não renomeiam nada nem garantem disponibilidade.|Preservamos sua intenção, definimos o nível de qualidade adequado e executamos o objetivo com autonomia. Depois avaliamos e melhoramos o resultado com evidências concretas.|Revisar a abordagem conforme o pedido e as evidências existentes.|Repetir a falha original e casos próximos. Indicar verificações ausentes.|Verificar novamente o comportamento original e os chamadores afetados.|Cada achado tem um caso concreto, localização válida e impacto.|Revisar arquivos autorizados sem expor valores sensíveis.|Examinar a barreira real e as fontes relevantes.|Revisar início, documentação e pacote para o público real.|Usar a comparação acordada e separar trabalho não commitado.|Comparar pedido e resultados para uma conclusão ou passagem clara.|Não aplicar correções ou regras automaticamente.",
+    "intros": "Explicamos a coleção conforme sua necessidade e mostramos um comando adequado.|Confirmar fonte, máquina, data e versão; indicar ambiguidades.|Escolher um projeto pelo objetivo da conversa.|Afirmações antigas não são verificações atuais; não retomar automaticamente.|Reconstruir o objetivo visível, decisões e o último estado comprovado.|Entender o objetivo e planejar um primeiro passo pequeno e verificável.|Somente rascunho; sem execução ou integração nativa com Tab.|As propostas não renomeiam nada nem garantem disponibilidade.|Preservamos sua intenção, definimos o nível de qualidade adequado e executamos o objetivo com autonomia. Depois avaliamos e melhoramos o resultado com evidências concretas.|Revisar a abordagem conforme o pedido e as evidências existentes.|Repetir a falha original e casos próximos. Indicar verificações ausentes.|Verificar novamente o comportamento original e os chamadores afetados.|Cada achado tem um caso concreto, localização válida e impacto.|Revisar arquivos autorizados sem expor valores sensíveis.|Examinar a barreira real e as fontes relevantes.|Revisar início, documentação e pacote para o público real.|Usar a comparação acordada e separar trabalho não commitado.|Comparar pedido e resultados para uma conclusão ou passagem clara.|Não aplicar correções ou regras automaticamente.",
     "stepNotes": [
       "Usar informações disponíveis.",
       "Respeitar convenções existentes.",
@@ -1045,6 +1105,7 @@
     "recipeLimits": [
       "O guia recomenda; não executa outros fluxos automaticamente.",
       "A busca sozinha não autoriza mover, restaurar ou retomar o trabalho.",
+      "Criação e acesso dependem do ambiente.",
       "Afirmações antigas não são verificações atuais; não retomar automaticamente.",
       "Não inventar o histórico ausente.",
       "",
@@ -1074,6 +1135,12 @@
         "Data aproximada",
         "Máquina ou projeto",
         "Fontes de busca"
+      ],
+      [
+        "Conversa",
+        "Contexto",
+        "Projetos",
+        "Ambiente"
       ],
       [
         "Último estado",
@@ -1175,6 +1242,7 @@
     "verifications": [
       "Explicamos a coleção conforme sua necessidade e mostramos um comando adequado.",
       "Confirmar fonte, máquina, data e versão; indicar ambiguidades.",
+      "Conferir a associação e o acesso.",
       "Retomar um projeto após uma pausa longa.",
       "Histórico ausente e incertezas ficam visíveis.",
       "O próximo passo tem resultado observável.",
@@ -1213,46 +1281,6 @@
       "Confirmar título, máquina, data e versão nos originais.",
       "Vincular o resultado confirmado ou fazer a pergunta decisiva."
     ],
-    "steps2": "Recuperar o estado anterior|Verificar o estado atual|Explicar mudanças|Sugerir um ponto de retomada",
-    "steps3": "Ler o histórico disponível|Separar decisões|Atribuir resultados|Resumir a situação",
-    "steps4": "Entender o objetivo|Examinar o contexto|Esclarecer questões|Planejar o primeiro passo",
-    "steps5": "Ler o fragmento|Preservar intenção|Completar o que falta|Sugerir o prompt",
-    "steps6": "Entender contexto|Criar pares|Verificar colisões|Recomendar uma opção",
-    "steps7": "Esclarecer objetivo e limites|Definir a qualidade esperada|Implementar e verificar|Avaliar e melhorar",
-    "stepNotes7": [
-      "Entender o pedido, o estado atual e o escopo autorizado.",
-      "Definir critérios de sucesso observáveis e verificações relevantes.",
-      "Implementar a menor solução completa e verificar o fluxo real.",
-      "Corrigir os pontos fracos e entregar o resultado, as evidências e as pendências."
-    ],
-    "steps8": "Comparar com o objetivo|Examinar evidências|Identificar obstáculos|Recomendar o próximo passo",
-    "steps9": "Reproduzir|Seguir o fluxo|Testar hipóteses|Verificar a correção",
-    "stepNotes9": [
-      "Reproduzir",
-      "Seguir o fluxo",
-      "Testar hipóteses",
-      "Verificar a correção"
-    ],
-    "steps10": "Definir comportamento|Verificar redundância|Escolher algo menor|Validar comportamento",
-    "stepNotes10": [
-      "Registrar o comportamento observável e contratos públicos.",
-      "Escolher apenas camadas desnecessárias ou duplicações comprovadas.",
-      "Explicar a menor redução e seus riscos.",
-      "Verificar alterações solicitadas com os casos originais e chamadores."
-    ],
-    "steps11": "Delimitar a alteração|Seguir contratos|Verificar achados|Ordenar por impacto",
-    "stepNotes11": [
-      "Fixar base, revisão de destino e diff escolhido.",
-      "Ler juntos o código alterado, seus chamadores e o comportamento esperado.",
-      "Verificar cada achado com um caso concreto e sua fonte.",
-      "Relatar achados úteis por impacto e indicar lacunas."
-    ],
-    "steps12": "Definir o escopo|Revisar arquivos e histórico|Ocultar dados sensíveis|Informar a cobertura",
-    "steps13": "Precisar a questão|Examinar o percurso|Verificar fontes e aplicação|Registrar questões abertas",
-    "steps14": "Identificar o público|Revisar início e pacote|Priorizar resultados|Verificar melhorias autorizadas",
-    "steps15": "Definir a comparação|Ler o diff real|Descrever o impacto|Marcar o não verificado",
-    "steps16": "Rever o pedido|Reutilizar evidências|Registrar pendências|Escrever conclusão ou passagem",
-    "steps17": "Definir escopo|Encontrar causas|Revisar recomendações|Sugerir prevenção",
     "chapter": "Capítulo",
     "chapterTitles": {
       "orientation": "Orientação e retomada",
@@ -1262,11 +1290,58 @@
       "release": "Publicação",
       "closing": "Conclusão e retrospectiva"
     },
-    "copyInvocation": "Copiar comando do skill"
+    "copyInvocation": "Copiar comando do skill",
+    "steps18": "Definir escopo|Encontrar causas|Revisar recomendações|Sugerir prevenção",
+    "steps17": "Rever o pedido|Reutilizar evidências|Registrar pendências|Escrever conclusão ou passagem",
+    "steps16": "Definir a comparação|Ler o diff real|Descrever o impacto|Marcar o não verificado",
+    "steps15": "Identificar o público|Revisar início e pacote|Priorizar resultados|Verificar melhorias autorizadas",
+    "steps14": "Precisar a questão|Examinar o percurso|Verificar fontes e aplicação|Registrar questões abertas",
+    "steps13": "Definir o escopo|Revisar arquivos e histórico|Ocultar dados sensíveis|Informar a cobertura",
+    "steps12": "Delimitar a alteração|Seguir contratos|Verificar achados|Ordenar por impacto",
+    "stepNotes12": [
+      "Fixar base, revisão de destino e diff escolhido.",
+      "Ler juntos o código alterado, seus chamadores e o comportamento esperado.",
+      "Verificar cada achado com um caso concreto e sua fonte.",
+      "Relatar achados úteis por impacto e indicar lacunas."
+    ],
+    "steps11": "Definir comportamento|Verificar redundância|Escolher algo menor|Validar comportamento",
+    "stepNotes11": [
+      "Registrar o comportamento observável e contratos públicos.",
+      "Escolher apenas camadas desnecessárias ou duplicações comprovadas.",
+      "Explicar a menor redução e seus riscos.",
+      "Verificar alterações solicitadas com os casos originais e chamadores."
+    ],
+    "steps10": "Reproduzir|Seguir o fluxo|Testar hipóteses|Verificar a correção",
+    "stepNotes10": [
+      "Reproduzir",
+      "Seguir o fluxo",
+      "Testar hipóteses",
+      "Verificar a correção"
+    ],
+    "steps9": "Comparar com o objetivo|Examinar evidências|Identificar obstáculos|Recomendar o próximo passo",
+    "steps8": "Esclarecer objetivo e limites|Definir a qualidade esperada|Implementar e verificar|Avaliar e melhorar",
+    "stepNotes8": [
+      "Entender o pedido, o estado atual e o escopo autorizado.",
+      "Definir critérios de sucesso observáveis e verificações relevantes.",
+      "Implementar a menor solução completa e verificar o fluxo real.",
+      "Corrigir os pontos fracos e entregar o resultado, as evidências e as pendências."
+    ],
+    "steps7": "Entender contexto|Criar pares|Verificar colisões|Recomendar uma opção",
+    "steps6": "Ler o fragmento|Preservar intenção|Completar o que falta|Sugerir o prompt",
+    "steps5": "Entender o objetivo|Examinar o contexto|Esclarecer questões|Planejar o primeiro passo",
+    "steps4": "Ler o histórico disponível|Separar decisões|Atribuir resultados|Resumir a situação",
+    "steps3": "Recuperar o estado anterior|Verificar o estado atual|Explicar mudanças|Sugerir um ponto de retomada",
+    "steps2": "Identificar|Comparar|Escolher|Verificar",
+    "stepNotes2": [
+      "Identifique a conversa, o ambiente e o objetivo.",
+      "Compare os projetos disponíveis.",
+      "Sugira opções ou um novo projeto.",
+      "Verifique a associação autorizada e o acesso."
+    ]
   },
   "it": {
     "name": "Italiano",
-    "tagline": "Diciotto ricette per i tuoi progetti",
+    "tagline": "Diciannove ricette per i tuoi progetti",
     "recipe": "Ricetta",
     "when": "Quando",
     "ingredients": "Ingredienti",
@@ -1281,12 +1356,12 @@
     "previous": "Ricetta precedente",
     "next": "Ricetta successiva",
     "ingredientList": "Un’idea|Contesto del progetto|Domande aperte|Vincoli",
-    "summaries": "Capire Cookbook e trovare lo skill adatto.|Ritrovare la conversazione, il repository o il file corretto.|Riprendere un progetto dopo una lunga pausa.|Ritrovare obiettivi, decisioni e stato.|Dall’idea al primo passo verificabile.|Completare un prompt iniziato usando il contesto.|Trovare insieme nomi Plain e Kitchen.|Portare un obiettivo fino a un risultato realizzato e verificato.|Verificare se il metodo porta all’obiettivo.|Riprodurre un errore attuale e verificare una correzione mirata.|Semplificare un flusso mirato preservandone il comportamento.|Esaminare una modifica per difetti e regressioni concreti.|Esaminare dati sensibili prima di condividere.|Delimitare domande legali e ostacoli d’uso.|Preparare un progetto alla pubblicazione.|Scrivere note da modifiche documentate.|Concludere o preparare una consegna.|Imparare dai tentativi precedenti.",
-    "whenList": "Per iniziare o scegliere il processo giusto.|Non è chiaro dove sia il lavoro precedente o quale versione serva.|Quando occorre ricordare obiettivi, decisioni e stato attuale.|Dopo una pausa manca il contesto.|Un’idea richiede un inizio concreto.|Quando manca il completamento automatico o un pensiero è incompleto.|Quando un prodotto o skill necessita di nomi adatti.|Quando vuoi delegare un obiettivo del progetto e la sua realizzazione.|Vuoi sapere se il lavoro avanza.|Un errore si verifica ora; non è una retrospettiva sul lavoro passato.|Complessità inutile in una parte scelta, senza riscritture generali.|Revisione tecnica del diff senza correzioni automatiche.|Vuoi condividere file o un repository.|Prima del rilascio o per una domanda precisa.|Altri devono capire e usare il progetto.|Una versione o fase è terminata.|Una fase termina o richiede una consegna.|Quando si ripetono errori o consigli rimasti in sospeso.",
+    "summaries": "Capire Cookbook e trovare lo skill adatto.|Ritrovare la conversazione, il repository o il file corretto.|Assegnare una chat al progetto adatto.|Riprendere un progetto dopo una lunga pausa.|Ritrovare obiettivi, decisioni e stato.|Dall’idea al primo passo verificabile.|Completare un prompt iniziato usando il contesto.|Trovare insieme nomi Plain e Kitchen.|Portare un obiettivo fino a un risultato realizzato e verificato.|Verificare se il metodo porta all’obiettivo.|Riprodurre un errore attuale e verificare una correzione mirata.|Semplificare un flusso mirato preservandone il comportamento.|Esaminare una modifica per difetti e regressioni concreti.|Esaminare dati sensibili prima di condividere.|Delimitare domande legali e ostacoli d’uso.|Preparare un progetto alla pubblicazione.|Scrivere note da modifiche documentate.|Concludere o preparare una consegna.|Imparare dai tentativi precedenti.",
+    "whenList": "Per iniziare o scegliere il processo giusto.|Non è chiaro dove sia il lavoro precedente o quale versione serva.|Una chat richiede un progetto.|Quando occorre ricordare obiettivi, decisioni e stato attuale.|Dopo una pausa manca il contesto.|Un’idea richiede un inizio concreto.|Quando manca il completamento automatico o un pensiero è incompleto.|Quando un prodotto o skill necessita di nomi adatti.|Quando vuoi delegare un obiettivo del progetto e la sua realizzazione.|Vuoi sapere se il lavoro avanza.|Un errore si verifica ora; non è una retrospettiva sul lavoro passato.|Complessità inutile in una parte scelta, senza riscritture generali.|Revisione tecnica del diff senza correzioni automatiche.|Vuoi condividere file o un repository.|Prima del rilascio o per una domanda precisa.|Altri devono capire e usare il progetto.|Una versione o fase è terminata.|Una fase termina o richiede una consegna.|Quando si ripetono errori o consigli rimasti in sospeso.",
     "limitText": "Usare prove esistenti. Esporre i limiti; le azioni esterne richiedono autorizzazione.",
     "languageNote": "I comandi mantengono la lingua installata.",
     "footer": "Preparare bene. Costruire meglio.",
-    "intros": "Spieghiamo la raccolta secondo le tue esigenze e mostriamo un comando adatto.|Confermare fonte, macchina, data e versione; indicare le ambiguità.|Le vecchie affermazioni non sono verifiche attuali; non riprendere automaticamente.|Ricostruire obiettivo visibile, decisioni e ultimo stato documentato.|Capire l’obiettivo e pianificare un primo passo piccolo e verificabile.|Solo bozza; nessuna esecuzione o integrazione Tab nativa.|Le proposte non rinominano nulla e non garantiscono disponibilità.|Preserviamo la tua intenzione, definiamo il livello di qualità adeguato e realizziamo l’obiettivo in autonomia. Poi esaminiamo e miglioriamo il risultato sulla base di prove concrete.|Esaminare il metodo rispetto alla richiesta e alle prove.|Riprovare il caso originale e quelli collegati. Indicare i controlli mancanti.|Ricontrollare il comportamento originale e i chiamanti coinvolti.|Ogni rilievo ha un caso concreto, una posizione valida e un impatto.|Esaminare file autorizzati senza esporre valori sensibili.|Esaminare l’ostacolo reale e le fonti pertinenti.|Verificare avvio, documentazione e pacchetto per il vero pubblico.|Usare il confronto concordato e separare il lavoro non committato.|Confrontare richiesta e risultati per una conclusione o consegna chiara.|Non applicare automaticamente correzioni o regole.",
+    "intros": "Spieghiamo la raccolta secondo le tue esigenze e mostriamo un comando adatto.|Confermare fonte, macchina, data e versione; indicare le ambiguità.|Scegliere un progetto in base allo scopo della chat.|Le vecchie affermazioni non sono verifiche attuali; non riprendere automaticamente.|Ricostruire obiettivo visibile, decisioni e ultimo stato documentato.|Capire l’obiettivo e pianificare un primo passo piccolo e verificabile.|Solo bozza; nessuna esecuzione o integrazione Tab nativa.|Le proposte non rinominano nulla e non garantiscono disponibilità.|Preserviamo la tua intenzione, definiamo il livello di qualità adeguato e realizziamo l’obiettivo in autonomia. Poi esaminiamo e miglioriamo il risultato sulla base di prove concrete.|Esaminare il metodo rispetto alla richiesta e alle prove.|Riprovare il caso originale e quelli collegati. Indicare i controlli mancanti.|Ricontrollare il comportamento originale e i chiamanti coinvolti.|Ogni rilievo ha un caso concreto, una posizione valida e un impatto.|Esaminare file autorizzati senza esporre valori sensibili.|Esaminare l’ostacolo reale e le fonti pertinenti.|Verificare avvio, documentazione e pacchetto per il vero pubblico.|Usare il confronto concordato e separare il lavoro non committato.|Confrontare richiesta e risultati per una conclusione o consegna chiara.|Non applicare automaticamente correzioni o regole.",
     "stepNotes": [
       "Usare informazioni disponibili.",
       "Rispettare le convenzioni esistenti.",
@@ -1298,6 +1373,7 @@
     "recipeLimits": [
       "La guida consiglia; non esegue automaticamente altri processi.",
       "La ricerca non autorizza spostamenti, ripristini o ripresa del lavoro.",
+      "Creazione e accesso dipendono dall’ambiente.",
       "Le vecchie affermazioni non sono verifiche attuali; non riprendere automaticamente.",
       "Non inventare la cronologia mancante.",
       "",
@@ -1327,6 +1403,12 @@
         "Data approssimativa",
         "Macchina o progetto",
         "Fonti di ricerca"
+      ],
+      [
+        "Chat",
+        "Contesto",
+        "Progetti",
+        "Host"
       ],
       [
         "Ultimo stato",
@@ -1428,6 +1510,7 @@
     "verifications": [
       "Spieghiamo la raccolta secondo le tue esigenze e mostriamo un comando adatto.",
       "Confermare fonte, macchina, data e versione; indicare le ambiguità.",
+      "Verificare assegnazione e accesso.",
       "Riprendere un progetto dopo una lunga pausa.",
       "Cronologia mancante e dubbi restano visibili.",
       "Il prossimo passo ha un risultato osservabile.",
@@ -1466,46 +1549,6 @@
       "Confermare titolo, macchina, data e versione negli originali.",
       "Collegare il risultato verificato o porre la domanda decisiva."
     ],
-    "steps2": "Ricostruire lo stato precedente|Verificare lo stato attuale|Spiegare i cambiamenti|Proporre un punto di ripresa",
-    "steps3": "Leggere la cronologia|Separare le decisioni|Attribuire i risultati|Riassumere lo stato",
-    "steps4": "Capire l’obiettivo|Esaminare il contesto|Chiarire le domande|Pianificare il primo passo",
-    "steps5": "Leggere il frammento|Preservare l’intento|Colmare la lacuna|Proporre il prompt",
-    "steps6": "Capire il contesto|Creare coppie|Controllare collisioni|Consigliare una scelta",
-    "steps7": "Chiarire obiettivo e limiti|Definire la qualità attesa|Realizzare e verificare|Valutare e migliorare",
-    "stepNotes7": [
-      "Comprendere la richiesta, lo stato attuale e l’ambito autorizzato.",
-      "Definire criteri di successo osservabili e verifiche pertinenti.",
-      "Realizzare la soluzione completa più piccola e verificare il flusso reale.",
-      "Correggere i punti deboli e consegnare risultato, prove e questioni aperte."
-    ],
-    "steps8": "Confrontare l’obiettivo|Esaminare le prove|Individuare ostacoli|Consigliare il passo successivo",
-    "steps9": "Riprodurre|Seguire il flusso|Verificare le ipotesi|Controllare la correzione",
-    "stepNotes9": [
-      "Riprodurre",
-      "Seguire il flusso",
-      "Verificare le ipotesi",
-      "Controllare la correzione"
-    ],
-    "steps10": "Definire il comportamento|Verificare ridondanze|Scegliere meno|Verificare il risultato",
-    "stepNotes10": [
-      "Annotare il comportamento osservabile e i contratti pubblici.",
-      "Scegliere solo livelli inutili o duplicazioni dimostrate.",
-      "Spiegare la riduzione minima e i rischi.",
-      "Verificare le modifiche richieste sui casi originali e sui chiamanti."
-    ],
-    "steps11": "Delimitare la modifica|Seguire i contratti|Verificare i risultati|Ordinare per impatto",
-    "stepNotes11": [
-      "Fissare base, revisione di destinazione e diff scelto.",
-      "Leggere insieme codice modificato, chiamanti e comportamento previsto.",
-      "Verificare ogni rilievo con un caso concreto e la fonte.",
-      "Riportare rilievi utili per impatto e indicare le lacune."
-    ],
-    "steps12": "Definire l’ambito|Esaminare file e cronologia|Oscurare dati sensibili|Indicare la copertura",
-    "steps13": "Precisare la domanda|Esaminare il percorso|Verificare fonti e applicabilità|Annotare le domande",
-    "steps14": "Individuare il pubblico|Controllare avvio e pacchetto|Ordinare i risultati|Verificare migliorie autorizzate",
-    "steps15": "Chiarire il confronto|Leggere il diff reale|Descrivere l’effetto|Segnalare ciò che manca",
-    "steps16": "Rivedere la richiesta|Riutilizzare le prove|Annotare punti aperti|Scrivere la conclusione",
-    "steps17": "Definire l’ambito|Cercare le cause|Verificare i consigli|Proporre prevenzione",
     "chapter": "Capitolo",
     "chapterTitles": {
       "orientation": "Orientamento e ripresa",
@@ -1515,11 +1558,58 @@
       "release": "Pubblicazione",
       "closing": "Chiusura e retrospettiva"
     },
-    "copyInvocation": "Copia comando dello skill"
+    "copyInvocation": "Copia comando dello skill",
+    "steps18": "Definire l’ambito|Cercare le cause|Verificare i consigli|Proporre prevenzione",
+    "steps17": "Rivedere la richiesta|Riutilizzare le prove|Annotare punti aperti|Scrivere la conclusione",
+    "steps16": "Chiarire il confronto|Leggere il diff reale|Descrivere l’effetto|Segnalare ciò che manca",
+    "steps15": "Individuare il pubblico|Controllare avvio e pacchetto|Ordinare i risultati|Verificare migliorie autorizzate",
+    "steps14": "Precisare la domanda|Esaminare il percorso|Verificare fonti e applicabilità|Annotare le domande",
+    "steps13": "Definire l’ambito|Esaminare file e cronologia|Oscurare dati sensibili|Indicare la copertura",
+    "steps12": "Delimitare la modifica|Seguire i contratti|Verificare i risultati|Ordinare per impatto",
+    "stepNotes12": [
+      "Fissare base, revisione di destinazione e diff scelto.",
+      "Leggere insieme codice modificato, chiamanti e comportamento previsto.",
+      "Verificare ogni rilievo con un caso concreto e la fonte.",
+      "Riportare rilievi utili per impatto e indicare le lacune."
+    ],
+    "steps11": "Definire il comportamento|Verificare ridondanze|Scegliere meno|Verificare il risultato",
+    "stepNotes11": [
+      "Annotare il comportamento osservabile e i contratti pubblici.",
+      "Scegliere solo livelli inutili o duplicazioni dimostrate.",
+      "Spiegare la riduzione minima e i rischi.",
+      "Verificare le modifiche richieste sui casi originali e sui chiamanti."
+    ],
+    "steps10": "Riprodurre|Seguire il flusso|Verificare le ipotesi|Controllare la correzione",
+    "stepNotes10": [
+      "Riprodurre",
+      "Seguire il flusso",
+      "Verificare le ipotesi",
+      "Controllare la correzione"
+    ],
+    "steps9": "Confrontare l’obiettivo|Esaminare le prove|Individuare ostacoli|Consigliare il passo successivo",
+    "steps8": "Chiarire obiettivo e limiti|Definire la qualità attesa|Realizzare e verificare|Valutare e migliorare",
+    "stepNotes8": [
+      "Comprendere la richiesta, lo stato attuale e l’ambito autorizzato.",
+      "Definire criteri di successo osservabili e verifiche pertinenti.",
+      "Realizzare la soluzione completa più piccola e verificare il flusso reale.",
+      "Correggere i punti deboli e consegnare risultato, prove e questioni aperte."
+    ],
+    "steps7": "Capire il contesto|Creare coppie|Controllare collisioni|Consigliare una scelta",
+    "steps6": "Leggere il frammento|Preservare l’intento|Colmare la lacuna|Proporre il prompt",
+    "steps5": "Capire l’obiettivo|Esaminare il contesto|Chiarire le domande|Pianificare il primo passo",
+    "steps4": "Leggere la cronologia|Separare le decisioni|Attribuire i risultati|Riassumere lo stato",
+    "steps3": "Ricostruire lo stato precedente|Verificare lo stato attuale|Spiegare i cambiamenti|Proporre un punto di ripresa",
+    "steps2": "Identificare|Confrontare|Scegliere|Verificare",
+    "stepNotes2": [
+      "Identifica chat, ambiente e obiettivo.",
+      "Confronta i progetti disponibili.",
+      "Proponi alternative o un nuovo progetto.",
+      "Verifica l’assegnazione autorizzata e l’accesso."
+    ]
   },
   "tr": {
     "name": "Türkçe",
-    "tagline": "Projelerin için on sekiz tarif",
+    "tagline": "Projelerin için on dokuz tarif",
     "recipe": "Tarif",
     "when": "Ne zaman",
     "ingredients": "Malzemeler",
@@ -1534,12 +1624,12 @@
     "previous": "Önceki tarif",
     "next": "Sonraki tarif",
     "ingredientList": "Bir fikir|Proje bağlamı|Açık sorular|Kısıtlar",
-    "summaries": "Cookbook’u anla ve doğru beceriyi bul.|Önceki doğru sohbeti, depoyu veya çıktıyı bul.|Uzun aradan sonra projeye geri dön.|Hedefleri, kararları ve durumu bul.|Fikirden doğrulanabilir ilk adıma.|Başlanmış bir istemi bağlama göre tamamla.|Plain ve Kitchen adlarını birlikte bul.|Bir hedefi uygulanmış ve doğrulanmış bir sonuca ulaştır.|Yaklaşımın hedefe ulaşıp ulaşmadığını incele.|Mevcut bir hatayı yeniden üret ve hedefli düzeltmeyi doğrula.|Seçilen akışı davranışı koruyarak sadeleştir.|Bir değişikliği somut hatalar ve gerilemeler için incele.|Paylaşmadan önce hassas içeriği incele.|Hukuki soruları ve kullanım engellerini sınırla.|Projeyi yayımlanmaya hazırla.|Kanıtlanan değişikliklerden notlar yaz.|Çalışmayı tamamla veya devre hazırla.|Önceki denemelerden ders çıkar.",
-    "whenList": "Yeni başlarken veya uygun iş akışını ararken.|Önceki çalışmanın yeri veya doğru sürümü bilinmiyor.|Hedefler, kararlar ve güncel durum hatırlanmalıysa.|Aradan sonra bağlamı yeniden bulmalısın.|Bir fikir somut bir başlangıç gerektirir.|Otomatik tamamlama yoksa veya düşünce yarım kalmışsa.|Bir ürün veya beceriye uygun ad gerektiğinde.|Bir proje hedefini ve uygulamasını devretmek istediğinde.|İşin ilerleyip ilerlemediğini bilmek istiyorsun.|Hata şimdi oluşuyor; geçmiş çalışma örüntülerinin incelemesi değil.|Seçili alanda gereksiz karmaşıklık; tüm depoyu yeniden yazma değil.|Otomatik düzeltme olmadan teknik fark incelemesi.|Dosya veya depo paylaşmak istiyorsun.|Yayım öncesinde veya belirli bir soru için.|Başkaları projeyi anlayıp kullanabilmeli.|Bir sürüm veya aşama tamamlandı.|Bir aşama bitiyor veya devredilmeli.|Hatalar veya uygulanmayan öneriler tekrarlandığında.",
+    "summaries": "Cookbook’u anla ve doğru beceriyi bul.|Önceki doğru sohbeti, depoyu veya çıktıyı bul.|Bir sohbeti uygun projeye ata.|Uzun aradan sonra projeye geri dön.|Hedefleri, kararları ve durumu bul.|Fikirden doğrulanabilir ilk adıma.|Başlanmış bir istemi bağlama göre tamamla.|Plain ve Kitchen adlarını birlikte bul.|Bir hedefi uygulanmış ve doğrulanmış bir sonuca ulaştır.|Yaklaşımın hedefe ulaşıp ulaşmadığını incele.|Mevcut bir hatayı yeniden üret ve hedefli düzeltmeyi doğrula.|Seçilen akışı davranışı koruyarak sadeleştir.|Bir değişikliği somut hatalar ve gerilemeler için incele.|Paylaşmadan önce hassas içeriği incele.|Hukuki soruları ve kullanım engellerini sınırla.|Projeyi yayımlanmaya hazırla.|Kanıtlanan değişikliklerden notlar yaz.|Çalışmayı tamamla veya devre hazırla.|Önceki denemelerden ders çıkar.",
+    "whenList": "Yeni başlarken veya uygun iş akışını ararken.|Önceki çalışmanın yeri veya doğru sürümü bilinmiyor.|Bir sohbet için proje gerekiyor.|Hedefler, kararlar ve güncel durum hatırlanmalıysa.|Aradan sonra bağlamı yeniden bulmalısın.|Bir fikir somut bir başlangıç gerektirir.|Otomatik tamamlama yoksa veya düşünce yarım kalmışsa.|Bir ürün veya beceriye uygun ad gerektiğinde.|Bir proje hedefini ve uygulamasını devretmek istediğinde.|İşin ilerleyip ilerlemediğini bilmek istiyorsun.|Hata şimdi oluşuyor; geçmiş çalışma örüntülerinin incelemesi değil.|Seçili alanda gereksiz karmaşıklık; tüm depoyu yeniden yazma değil.|Otomatik düzeltme olmadan teknik fark incelemesi.|Dosya veya depo paylaşmak istiyorsun.|Yayım öncesinde veya belirli bir soru için.|Başkaları projeyi anlayıp kullanabilmeli.|Bir sürüm veya aşama tamamlandı.|Bir aşama bitiyor veya devredilmeli.|Hatalar veya uygulanmayan öneriler tekrarlandığında.",
     "limitText": "Mevcut kanıtları kullan. Sınırları belirt; dış eylemler izin gerektirir.",
     "languageNote": "Beceri komutları kurulu dilde kalır.",
     "footer": "İyi hazırlan. Daha iyi geliştir.",
-    "intros": "Koleksiyonu ihtiyacına göre açıklayıp uygun bir komut gösteririz.|Kaynağı, makineyi, tarihi ve sürümü doğrula; belirsizliği belirt.|Eski iddialar güncel kontrol değildir; otomatik devam etme.|Görünen hedefi, kararları ve son kanıtlanmış durumu yeniden kur.|Hedefi anla ve küçük, doğrulanabilir ilk adımı planla.|Yalnızca taslak; çalıştırma veya yerel Tab entegrasyonu yok.|Öneriler adları değiştirmez veya kullanılabilirliği garanti etmez.|Amacını korur, uygun kalite ölçütlerini belirler ve hedefi bağımsız biçimde uygularız. Ardından sonucu somut kanıtlarla inceler ve iyileştiririz.|Yaklaşımı istek ve mevcut kanıtlara göre incele.|Asıl hatayı ve ilgili durumları tekrar sına. Eksik kontrolleri belirt.|Asıl davranışı ve etkilenen çağıranları yeniden denetle.|Her bulgunun somut koşulu, geçerli konumu ve etkisi vardır.|İzin verilen dosyaları hassas değerleri açıklamadan incele.|Gerçek kullanım engelini ve ilgili kaynakları incele.|Başlangıç, belgeler ve paketi gerçek kitle için incele.|Kararlaştırılan karşılaştırmayı kullan ve kaydedilmemiş işi ayır.|İstekle sonuçları karşılaştır, açık bir kapanış veya devir yaz.|Düzeltmeleri veya kuralları otomatik uygulama.",
+    "intros": "Koleksiyonu ihtiyacına göre açıklayıp uygun bir komut gösteririz.|Kaynağı, makineyi, tarihi ve sürümü doğrula; belirsizliği belirt.|Sohbetin amacına uygun projeyi seç.|Eski iddialar güncel kontrol değildir; otomatik devam etme.|Görünen hedefi, kararları ve son kanıtlanmış durumu yeniden kur.|Hedefi anla ve küçük, doğrulanabilir ilk adımı planla.|Yalnızca taslak; çalıştırma veya yerel Tab entegrasyonu yok.|Öneriler adları değiştirmez veya kullanılabilirliği garanti etmez.|Amacını korur, uygun kalite ölçütlerini belirler ve hedefi bağımsız biçimde uygularız. Ardından sonucu somut kanıtlarla inceler ve iyileştiririz.|Yaklaşımı istek ve mevcut kanıtlara göre incele.|Asıl hatayı ve ilgili durumları tekrar sına. Eksik kontrolleri belirt.|Asıl davranışı ve etkilenen çağıranları yeniden denetle.|Her bulgunun somut koşulu, geçerli konumu ve etkisi vardır.|İzin verilen dosyaları hassas değerleri açıklamadan incele.|Gerçek kullanım engelini ve ilgili kaynakları incele.|Başlangıç, belgeler ve paketi gerçek kitle için incele.|Kararlaştırılan karşılaştırmayı kullan ve kaydedilmemiş işi ayır.|İstekle sonuçları karşılaştır, açık bir kapanış veya devir yaz.|Düzeltmeleri veya kuralları otomatik uygulama.",
     "stepNotes": [
       "Mevcut bilgiyi kullan.",
       "Var olan kurallara uy.",
@@ -1551,6 +1641,7 @@
     "recipeLimits": [
       "Rehber önerir; diğer iş akışlarını otomatik çalıştırmaz.",
       "Arama tek başına taşıma, geri yükleme veya işe devam izni vermez.",
+      "Proje oluşturma ve erişim ortama bağlıdır.",
       "Eski iddialar güncel kontrol değildir; otomatik devam etme.",
       "Eksik geçmişi uydurma.",
       "",
@@ -1580,6 +1671,12 @@
         "Yaklaşık tarih",
         "Makine veya proje",
         "Arama kaynakları"
+      ],
+      [
+        "Sohbet",
+        "Bağlam",
+        "Projeler",
+        "Ortam"
       ],
       [
         "Son durum",
@@ -1681,6 +1778,7 @@
     "verifications": [
       "Koleksiyonu ihtiyacına göre açıklayıp uygun bir komut gösteririz.",
       "Kaynağı, makineyi, tarihi ve sürümü doğrula; belirsizliği belirt.",
+      "Proje üyeliğini ve erişimi doğrula.",
       "Uzun aradan sonra projeye geri dön.",
       "Eksik geçmiş ve belirsizlikler görünür.",
       "Sonraki adımın gözlenebilir sonucu var.",
@@ -1719,46 +1817,6 @@
       "Başlık, makine, tarih ve sürümü asıl kaynaklardan doğrula.",
       "Doğrulanan eşleşmeyi bağla veya ayırt edici soruyu sor."
     ],
-    "steps2": "Son durumu hatırla|Bugünkü durumu kontrol et|Değişiklikleri açıkla|Dönüş noktası öner",
-    "steps3": "Görünen geçmişi oku|Kararları ayır|Sonuçları ilişkilendir|Durumu özetle",
-    "steps4": "Hedefi anla|Bağlamı incele|Soruları netleştir|İlk adımı planla",
-    "steps5": "Parçayı oku|Niyeti koru|Eksiği tamamla|İstem öner",
-    "steps6": "Bağlamı anla|Ad çiftleri üret|Çakışmaları kontrol et|Seçim öner",
-    "steps7": "Hedefi ve sınırları netleştir|Kalite ölçütlerini belirle|Uygula ve doğrula|Eleştirel değerlendir ve iyileştir",
-    "stepNotes7": [
-      "Talebi, mevcut durumu ve izin verilen kapsamı anla.",
-      "Gözlemlenebilir başarı ölçütlerini ve ilgili kontrolleri belirle.",
-      "En küçük tam çözümü uygula ve gerçek akışı doğrula.",
-      "Zayıflıkları gider; sonucu, kanıtları ve açık noktaları devret."
-    ],
-    "steps8": "Hedefle karşılaştır|Kanıtları incele|Engelleri belirle|Sonraki adımı öner",
-    "steps9": "Yeniden üret|Akışı izle|Hipotezleri sına|Düzeltmeyi doğrula",
-    "stepNotes9": [
-      "Yeniden üret",
-      "Akışı izle",
-      "Hipotezleri sına",
-      "Düzeltmeyi doğrula"
-    ],
-    "steps10": "Davranışı belirle|Fazlalığı denetle|Küçük çözüm seç|Davranışı doğrula",
-    "stepNotes10": [
-      "Gözlenebilir davranışı ve açık sözleşmeleri kaydet.",
-      "Yalnızca kanıtlanmış gereksiz katmanları veya tekrarları seç.",
-      "En küçük sadeleştirmeyi ve risklerini açıkla.",
-      "İstenen değişiklikleri asıl durumlar ve çağıranlarla doğrula."
-    ],
-    "steps11": "Değişikliği belirle|Sözleşmeleri izle|Bulguları doğrula|Etkiye göre sırala",
-    "stepNotes11": [
-      "Tabanı, hedef sürümü ve seçilen farkı belirle.",
-      "Değişen kodu, çağıranları ve beklenen davranışı birlikte oku.",
-      "Her bulguyu somut durum ve kaynak konumuyla denetle.",
-      "Eyleme dönük bulguları etkiye göre sun ve eksikleri belirt."
-    ],
-    "steps12": "Kapsamı belirle|Dosyaları ve geçmişi incele|Hassas veriyi gizle|Kapsam sınırlarını açıkla",
-    "steps13": "Soruyu daralt|Kullanıcı akışını incele|Kaynakları ve geçerliliği kontrol et|Açık soruları yaz",
-    "steps14": "Kitleyi belirle|Başlangıcı ve paketi incele|Bulguları sırala|İzinli iyileştirmeleri doğrula",
-    "steps15": "Karşılaştırmayı netleştir|Gerçek farkı oku|Kullanıcı etkisini açıkla|Doğrulanmayanı belirt",
-    "steps16": "İsteği kontrol et|Mevcut kanıtları kullan|Açık noktaları yaz|Kapanış veya devir yaz",
-    "steps17": "Kapsamı belirle|Nedenleri bul|Önerileri karşılaştır|Önlem öner",
     "chapter": "Bölüm",
     "chapterTitles": {
       "orientation": "Yön bulma ve dönüş",
@@ -1768,11 +1826,58 @@
       "release": "Yayınlama",
       "closing": "Kapanış ve değerlendirme"
     },
-    "copyInvocation": "Beceri komutunu kopyala"
+    "copyInvocation": "Beceri komutunu kopyala",
+    "steps18": "Kapsamı belirle|Nedenleri bul|Önerileri karşılaştır|Önlem öner",
+    "steps17": "İsteği kontrol et|Mevcut kanıtları kullan|Açık noktaları yaz|Kapanış veya devir yaz",
+    "steps16": "Karşılaştırmayı netleştir|Gerçek farkı oku|Kullanıcı etkisini açıkla|Doğrulanmayanı belirt",
+    "steps15": "Kitleyi belirle|Başlangıcı ve paketi incele|Bulguları sırala|İzinli iyileştirmeleri doğrula",
+    "steps14": "Soruyu daralt|Kullanıcı akışını incele|Kaynakları ve geçerliliği kontrol et|Açık soruları yaz",
+    "steps13": "Kapsamı belirle|Dosyaları ve geçmişi incele|Hassas veriyi gizle|Kapsam sınırlarını açıkla",
+    "steps12": "Değişikliği belirle|Sözleşmeleri izle|Bulguları doğrula|Etkiye göre sırala",
+    "stepNotes12": [
+      "Tabanı, hedef sürümü ve seçilen farkı belirle.",
+      "Değişen kodu, çağıranları ve beklenen davranışı birlikte oku.",
+      "Her bulguyu somut durum ve kaynak konumuyla denetle.",
+      "Eyleme dönük bulguları etkiye göre sun ve eksikleri belirt."
+    ],
+    "steps11": "Davranışı belirle|Fazlalığı denetle|Küçük çözüm seç|Davranışı doğrula",
+    "stepNotes11": [
+      "Gözlenebilir davranışı ve açık sözleşmeleri kaydet.",
+      "Yalnızca kanıtlanmış gereksiz katmanları veya tekrarları seç.",
+      "En küçük sadeleştirmeyi ve risklerini açıkla.",
+      "İstenen değişiklikleri asıl durumlar ve çağıranlarla doğrula."
+    ],
+    "steps10": "Yeniden üret|Akışı izle|Hipotezleri sına|Düzeltmeyi doğrula",
+    "stepNotes10": [
+      "Yeniden üret",
+      "Akışı izle",
+      "Hipotezleri sına",
+      "Düzeltmeyi doğrula"
+    ],
+    "steps9": "Hedefle karşılaştır|Kanıtları incele|Engelleri belirle|Sonraki adımı öner",
+    "steps8": "Hedefi ve sınırları netleştir|Kalite ölçütlerini belirle|Uygula ve doğrula|Eleştirel değerlendir ve iyileştir",
+    "stepNotes8": [
+      "Talebi, mevcut durumu ve izin verilen kapsamı anla.",
+      "Gözlemlenebilir başarı ölçütlerini ve ilgili kontrolleri belirle.",
+      "En küçük tam çözümü uygula ve gerçek akışı doğrula.",
+      "Zayıflıkları gider; sonucu, kanıtları ve açık noktaları devret."
+    ],
+    "steps7": "Bağlamı anla|Ad çiftleri üret|Çakışmaları kontrol et|Seçim öner",
+    "steps6": "Parçayı oku|Niyeti koru|Eksiği tamamla|İstem öner",
+    "steps5": "Hedefi anla|Bağlamı incele|Soruları netleştir|İlk adımı planla",
+    "steps4": "Görünen geçmişi oku|Kararları ayır|Sonuçları ilişkilendir|Durumu özetle",
+    "steps3": "Son durumu hatırla|Bugünkü durumu kontrol et|Değişiklikleri açıkla|Dönüş noktası öner",
+    "steps2": "Belirle|Karşılaştır|Seç|Doğrula",
+    "stepNotes2": [
+      "Sohbeti, ortamı ve amacı belirle.",
+      "Mevcut projeleri karşılaştır.",
+      "Seçenek veya yeni proje öner.",
+      "Yetkili atamayı ve erişimi doğrula."
+    ]
   },
   "ja": {
     "name": "日本語",
-    "tagline": "プロジェクトのための18のレシピ",
+    "tagline": "プロジェクトのための19のレシピ",
     "recipe": "レシピ",
     "when": "使うとき",
     "ingredients": "材料",
@@ -1787,12 +1892,12 @@
     "previous": "前のレシピ",
     "next": "次のレシピ",
     "ingredientList": "アイデア|プロジェクトの背景|未解決の質問|制約",
-    "summaries": "Cookbookを理解し、適したスキルを見つける。|以前の正しいチャット、リポジトリや成果物を探す。|長い休止後にプロジェクトへ戻る。|目標、決定事項、現在地を振り返る。|アイデアから検証できる最初の一歩へ。|文脈に沿って書きかけのプロンプトを補う。|PlainとKitchenの名前を一緒に考える。|目標を引き受け、実装と検証を終えた成果まで進める。|今の進め方が目標につながるか確認。|現在の不具合を再現し、対象を絞った修正を検証する。|選んだ処理を動作を保って簡素化する。|変更から具体的な不具合と回帰を見つける。|共有前に機密情報を確認。|法律上の疑問と利用上の障壁を整理。|プロジェクトの公開準備を確認。|確認できた変更から更新内容を書く。|作業を締めくくる、または引き継ぐ。|過去の試行から学ぶ。",
-    "whenList": "初めて使うときや手順を選びたいとき。|以前の作業の場所や適切な版が分からない。|目的や決定、現在の状況を思い出したいとき。|中断後に背景を取り戻したいとき。|アイデアを具体的に始めたいとき。|自動補完がないときや考えが途中のとき。|製品やスキルに合う名前が必要なとき。|プロジェクトの目標と、その実現を任せたいとき。|作業が進んでいるか知りたいとき。|今発生している具体的な不具合。過去の作業の振り返りとは別。|指定範囲の不要な複雑さが対象。全体の書き直しではない。|自動修正を伴わない技術的な差分レビュー。|ファイルやリポジトリを共有したいとき。|公開前、または具体的な疑問があるとき。|他の人がプロジェクトを使う前に。|バージョンや作業範囲が完成したとき。|作業を終了、または引き継ぐとき。|失敗や未実行の提案が繰り返されるとき。",
+    "summaries": "Cookbookを理解し、適したスキルを見つける。|以前の正しいチャット、リポジトリや成果物を探す。|チャットを適切なプロジェクトに割り当てます。|長い休止後にプロジェクトへ戻る。|目標、決定事項、現在地を振り返る。|アイデアから検証できる最初の一歩へ。|文脈に沿って書きかけのプロンプトを補う。|PlainとKitchenの名前を一緒に考える。|目標を引き受け、実装と検証を終えた成果まで進める。|今の進め方が目標につながるか確認。|現在の不具合を再現し、対象を絞った修正を検証する。|選んだ処理を動作を保って簡素化する。|変更から具体的な不具合と回帰を見つける。|共有前に機密情報を確認。|法律上の疑問と利用上の障壁を整理。|プロジェクトの公開準備を確認。|確認できた変更から更新内容を書く。|作業を締めくくる、または引き継ぐ。|過去の試行から学ぶ。",
+    "whenList": "初めて使うときや手順を選びたいとき。|以前の作業の場所や適切な版が分からない。|チャットの所属先が必要なとき。|目的や決定、現在の状況を思い出したいとき。|中断後に背景を取り戻したいとき。|アイデアを具体的に始めたいとき。|自動補完がないときや考えが途中のとき。|製品やスキルに合う名前が必要なとき。|プロジェクトの目標と、その実現を任せたいとき。|作業が進んでいるか知りたいとき。|今発生している具体的な不具合。過去の作業の振り返りとは別。|指定範囲の不要な複雑さが対象。全体の書き直しではない。|自動修正を伴わない技術的な差分レビュー。|ファイルやリポジトリを共有したいとき。|公開前、または具体的な疑問があるとき。|他の人がプロジェクトを使う前に。|バージョンや作業範囲が完成したとき。|作業を終了、または引き継ぐとき。|失敗や未実行の提案が繰り返されるとき。",
     "limitText": "既存の根拠を使用。限界を明示し、外部への操作は許可を得て実行。",
     "languageNote": "スキルの呼び出し名はインストール時のままです。",
     "footer": "準備を整え、より良く作る。",
-    "intros": "目的に合わせてコレクションを説明し、適した呼び出し例を示します。|資料、端末、日付、版を確認し、曖昧さを示す。|過去の報告は現在の確認ではありません。自動で作業を再開しません。|見える目標、確認済みの決定、最後に裏付けられた状態を整理します。|目標を理解し、小さく検証できる最初の一歩を計画します。|下書きのみ。実行やネイティブTab連携はしません。|提案だけで改名せず、利用可能性も保証しません。|あなたの意図を守り、適切な品質基準を定めて、自律的に実現まで進めます。その後、具体的な証拠をもとに成果を見直し、改善します。|依頼と既存の根拠に照らして進め方を確認します。|元の不具合と関連ケースを再確認し、未検証の範囲を示す。|元の動作と影響する呼び出し元を再検証する。|指摘には具体的な条件、有効な場所、影響を付ける。|許可されたファイルを、機密の値を開示せず確認します。|実際の障壁と関連する資料を調べます。|実際の対象者に合わせて導入、文書、パッケージを確認します。|合意した比較範囲を使い、未コミットの作業を区別します。|依頼と結果を照合し、終了または引き継ぎを明確にします。|修正やルールを自動適用しません。",
+    "intros": "目的に合わせてコレクションを説明し、適した呼び出し例を示します。|資料、端末、日付、版を確認し、曖昧さを示す。|チャットの目的に合うプロジェクトを選びます。|過去の報告は現在の確認ではありません。自動で作業を再開しません。|見える目標、確認済みの決定、最後に裏付けられた状態を整理します。|目標を理解し、小さく検証できる最初の一歩を計画します。|下書きのみ。実行やネイティブTab連携はしません。|提案だけで改名せず、利用可能性も保証しません。|あなたの意図を守り、適切な品質基準を定めて、自律的に実現まで進めます。その後、具体的な証拠をもとに成果を見直し、改善します。|依頼と既存の根拠に照らして進め方を確認します。|元の不具合と関連ケースを再確認し、未検証の範囲を示す。|元の動作と影響する呼び出し元を再検証する。|指摘には具体的な条件、有効な場所、影響を付ける。|許可されたファイルを、機密の値を開示せず確認します。|実際の障壁と関連する資料を調べます。|実際の対象者に合わせて導入、文書、パッケージを確認します。|合意した比較範囲を使い、未コミットの作業を区別します。|依頼と結果を照合し、終了または引き継ぎを明確にします。|修正やルールを自動適用しません。",
     "stepNotes": [
       "利用できる情報を使う。",
       "既存の規則を尊重する。",
@@ -1804,6 +1909,7 @@
     "recipeLimits": [
       "ガイドは提案のみで、別の手順を自動実行しません。",
       "検索だけでは移動、復元、作業再開を許可しない。",
+      "作成とフォルダーへのアクセスは環境に依存します。",
       "過去の報告は現在の確認ではありません。自動で作業を再開しません。",
       "欠けた履歴を作らない。",
       "",
@@ -1833,6 +1939,12 @@
         "おおよその日付",
         "端末やプロジェクト",
         "検索できる資料"
+      ],
+      [
+        "チャット",
+        "文脈",
+        "プロジェクト",
+        "環境"
       ],
       [
         "最後の状況",
@@ -1934,6 +2046,7 @@
     "verifications": [
       "目的に合わせてコレクションを説明し、適した呼び出し例を示します。",
       "資料、端末、日付、版を確認し、曖昧さを示す。",
+      "所属とアクセスを確認します。",
       "長い休止後にプロジェクトへ戻る。",
       "欠けた履歴や不確実性が明示される。",
       "次の一歩に観察できる結果がある。",
@@ -1972,46 +2085,6 @@
       "題名、端末、日付、版を原資料で確認する。",
       "確認できた資料を示すか、候補を分ける質問をする。"
     ],
-    "steps2": "以前の状況を復元する|現在を確認する|変化を説明する|再開地点を勧める",
-    "steps3": "見える履歴を読む|決定を区別|結果を整理|現在地を要約",
-    "steps4": "目標を理解する|背景を調べる|疑問を整理する|最初の一歩を計画",
-    "steps5": "断片を読む|意図を保つ|不足を補う|プロンプトを提案する",
-    "steps6": "文脈を理解する|名前の組を作る|重複を確認する|候補を勧める",
-    "steps7": "目標と範囲を明確にする|品質基準を定める|実装して検証する|批評して改善する",
-    "stepNotes7": [
-      "依頼、現在の状態、許可された作業範囲を理解する。",
-      "観察できる成功基準と必要な検証を定める。",
-      "最小限で完結する解決策を実装し、実際の流れを検証する。",
-      "弱点を直し、成果、検証の証拠、未解決事項を引き継ぐ。"
-    ],
-    "steps8": "目標と照合|根拠を確認|障害を特定|次の一歩を提案",
-    "steps9": "再現する|処理を追う|仮説を検証する|修正を確かめる",
-    "stepNotes9": [
-      "再現する",
-      "処理を追う",
-      "仮説を検証する",
-      "修正を確かめる"
-    ],
-    "steps10": "動作を確認|重複を確認|小さい案を選択|動作を再検証",
-    "stepNotes10": [
-      "観測できる動作と公開契約を記録する。",
-      "不要と確認できた層や重複だけを選ぶ。",
-      "最小の簡素化とリスクを説明する。",
-      "依頼された変更を元の例と呼び出し元で確認する。"
-    ],
-    "steps11": "変更を特定|契約を追跡|指摘を検証|影響順に整理",
-    "stepNotes11": [
-      "基準、対象版、選んだ差分を固定する。",
-      "変更コード、呼び出し元、意図した動作を合わせて読む。",
-      "各指摘を具体例と資料の場所で検証する。",
-      "対応できる指摘を影響順に示し、未検証範囲を明記する。"
-    ],
-    "steps12": "範囲を決める|ファイルと履歴を確認|機密を伏せる|確認範囲を開示",
-    "steps13": "質問を絞る|利用手順を確認|資料と適用範囲を確認|未解決点を記録",
-    "steps14": "対象者を決める|導入とパッケージを確認|指摘を優先順位付け|承認済み改善を検証",
-    "steps15": "比較範囲を確認|実際の差分を読む|利用者への影響を記述|未確認を明示",
-    "steps16": "依頼と照合|既存の根拠を使う|未解決点を記録|終了または引き継ぎを書く",
-    "steps17": "範囲を決める|原因を探す|提案を照合する|予防策を勧める",
     "chapter": "章",
     "chapterTitles": {
       "orientation": "案内と再開",
@@ -2021,11 +2094,58 @@
       "release": "公開",
       "closing": "完了と振り返り"
     },
-    "copyInvocation": "スキルのコマンドをコピー"
+    "copyInvocation": "スキルのコマンドをコピー",
+    "steps18": "範囲を決める|原因を探す|提案を照合する|予防策を勧める",
+    "steps17": "依頼と照合|既存の根拠を使う|未解決点を記録|終了または引き継ぎを書く",
+    "steps16": "比較範囲を確認|実際の差分を読む|利用者への影響を記述|未確認を明示",
+    "steps15": "対象者を決める|導入とパッケージを確認|指摘を優先順位付け|承認済み改善を検証",
+    "steps14": "質問を絞る|利用手順を確認|資料と適用範囲を確認|未解決点を記録",
+    "steps13": "範囲を決める|ファイルと履歴を確認|機密を伏せる|確認範囲を開示",
+    "steps12": "変更を特定|契約を追跡|指摘を検証|影響順に整理",
+    "stepNotes12": [
+      "基準、対象版、選んだ差分を固定する。",
+      "変更コード、呼び出し元、意図した動作を合わせて読む。",
+      "各指摘を具体例と資料の場所で検証する。",
+      "対応できる指摘を影響順に示し、未検証範囲を明記する。"
+    ],
+    "steps11": "動作を確認|重複を確認|小さい案を選択|動作を再検証",
+    "stepNotes11": [
+      "観測できる動作と公開契約を記録する。",
+      "不要と確認できた層や重複だけを選ぶ。",
+      "最小の簡素化とリスクを説明する。",
+      "依頼された変更を元の例と呼び出し元で確認する。"
+    ],
+    "steps10": "再現する|処理を追う|仮説を検証する|修正を確かめる",
+    "stepNotes10": [
+      "再現する",
+      "処理を追う",
+      "仮説を検証する",
+      "修正を確かめる"
+    ],
+    "steps9": "目標と照合|根拠を確認|障害を特定|次の一歩を提案",
+    "steps8": "目標と範囲を明確にする|品質基準を定める|実装して検証する|批評して改善する",
+    "stepNotes8": [
+      "依頼、現在の状態、許可された作業範囲を理解する。",
+      "観察できる成功基準と必要な検証を定める。",
+      "最小限で完結する解決策を実装し、実際の流れを検証する。",
+      "弱点を直し、成果、検証の証拠、未解決事項を引き継ぐ。"
+    ],
+    "steps7": "文脈を理解する|名前の組を作る|重複を確認する|候補を勧める",
+    "steps6": "断片を読む|意図を保つ|不足を補う|プロンプトを提案する",
+    "steps5": "目標を理解する|背景を調べる|疑問を整理する|最初の一歩を計画",
+    "steps4": "見える履歴を読む|決定を区別|結果を整理|現在地を要約",
+    "steps3": "以前の状況を復元する|現在を確認する|変化を説明する|再開地点を勧める",
+    "steps2": "特定|比較|選択|確認",
+    "stepNotes2": [
+      "チャット、環境、目的を特定します。",
+      "利用可能なプロジェクトを比較します。",
+      "候補または新しいプロジェクトを提案します。",
+      "依頼された割り当てとアクセスを確認します。"
+    ]
   },
   "ko": {
     "name": "한국어",
-    "tagline": "프로젝트를 위한 열여덟 가지 레시피",
+    "tagline": "프로젝트를 위한 열아홉 가지 레시피",
     "recipe": "레시피",
     "when": "언제",
     "ingredients": "재료",
@@ -2040,12 +2160,12 @@
     "previous": "이전 레시피",
     "next": "다음 레시피",
     "ingredientList": "아이디어|프로젝트 맥락|열린 질문|제약 조건",
-    "summaries": "Cookbook을 이해하고 적절한 스킬을 찾습니다.|이전의 올바른 채팅, 저장소 또는 결과물을 찾습니다.|긴 휴식 후 프로젝트로 돌아옵니다.|목표, 결정과 현재 상태를 되찾기.|아이디어에서 검증 가능한 첫걸음으로.|문맥에 맞게 작성 중인 프롬프트를 완성합니다.|Plain과 Kitchen 이름을 함께 찾습니다.|목표를 맡아 구현과 검증을 마친 결과까지 완성하기.|현재 방식이 목표로 향하는지 확인.|현재 오류를 재현하고 필요한 수정을 검증합니다.|선택한 흐름의 동작을 유지하며 단순화합니다.|변경에서 구체적인 결함과 회귀를 찾습니다.|공유 전 민감한 내용을 검토.|법적 질문과 사용 장벽을 구체화.|프로젝트의 공개 준비를 검토.|확인된 변경으로 릴리스 노트 작성.|작업을 마무리하거나 인계.|이전 시도에서 배웁니다.",
-    "whenList": "처음 사용하거나 알맞은 작업을 고를 때.|이전 작업의 위치나 올바른 버전을 모를 때 사용합니다.|목표와 결정, 현재 상태를 다시 알아야 할 때.|휴식 후 맥락이 필요할 때.|아이디어에 구체적인 시작이 필요할 때.|자동 완성이 없거나 생각이 미완성일 때.|제품이나 스킬에 어울리는 이름이 필요할 때.|프로젝트 목표와 구현을 맡기고 싶을 때.|작업이 진전되는지 알고 싶을 때.|지금 발생하는 구체적인 오류이며 과거 작업 회고와는 다릅니다.|선택한 영역의 불필요한 복잡성을 다루며 전체 재작성은 아닙니다.|자동 수정 없는 기술적 차이 검토입니다.|파일이나 저장소를 공유하려 할 때.|공개 전 또는 구체적인 질문이 있을 때.|다른 사람이 프로젝트를 쓰기 전에.|버전이나 작업 단계가 끝났을 때.|작업을 끝내거나 넘겨야 할 때.|실패나 미완료 권고가 반복될 때.",
+    "summaries": "Cookbook을 이해하고 적절한 스킬을 찾습니다.|이전의 올바른 채팅, 저장소 또는 결과물을 찾습니다.|채팅을 적절한 프로젝트에 배정합니다.|긴 휴식 후 프로젝트로 돌아옵니다.|목표, 결정과 현재 상태를 되찾기.|아이디어에서 검증 가능한 첫걸음으로.|문맥에 맞게 작성 중인 프롬프트를 완성합니다.|Plain과 Kitchen 이름을 함께 찾습니다.|목표를 맡아 구현과 검증을 마친 결과까지 완성하기.|현재 방식이 목표로 향하는지 확인.|현재 오류를 재현하고 필요한 수정을 검증합니다.|선택한 흐름의 동작을 유지하며 단순화합니다.|변경에서 구체적인 결함과 회귀를 찾습니다.|공유 전 민감한 내용을 검토.|법적 질문과 사용 장벽을 구체화.|프로젝트의 공개 준비를 검토.|확인된 변경으로 릴리스 노트 작성.|작업을 마무리하거나 인계.|이전 시도에서 배웁니다.",
+    "whenList": "처음 사용하거나 알맞은 작업을 고를 때.|이전 작업의 위치나 올바른 버전을 모를 때 사용합니다.|채팅에 프로젝트가 필요할 때.|목표와 결정, 현재 상태를 다시 알아야 할 때.|휴식 후 맥락이 필요할 때.|아이디어에 구체적인 시작이 필요할 때.|자동 완성이 없거나 생각이 미완성일 때.|제품이나 스킬에 어울리는 이름이 필요할 때.|프로젝트 목표와 구현을 맡기고 싶을 때.|작업이 진전되는지 알고 싶을 때.|지금 발생하는 구체적인 오류이며 과거 작업 회고와는 다릅니다.|선택한 영역의 불필요한 복잡성을 다루며 전체 재작성은 아닙니다.|자동 수정 없는 기술적 차이 검토입니다.|파일이나 저장소를 공유하려 할 때.|공개 전 또는 구체적인 질문이 있을 때.|다른 사람이 프로젝트를 쓰기 전에.|버전이나 작업 단계가 끝났을 때.|작업을 끝내거나 넘겨야 할 때.|실패나 미완료 권고가 반복될 때.",
     "limitText": "기존 근거만 사용하세요. 한계를 명시하고 외부 작업은 승인을 받으세요.",
     "languageNote": "스킬 호출 이름은 설치된 언어를 유지합니다.",
     "footer": "잘 준비하고, 더 잘 만드세요.",
-    "intros": "요구에 맞게 모음을 설명하고 적절한 호출 예시를 보여줍니다.|원본, 기기, 날짜와 버전을 확인하고 모호함을 밝힙니다.|과거 주장은 현재 확인이 아닙니다. 자동으로 작업을 재개하지 않습니다.|보이는 목표와 확인된 결정, 마지막으로 입증된 상태를 정리합니다.|목표를 이해하고 작고 검증 가능한 첫 단계를 계획합니다.|초안만 작성합니다. 실행이나 기본 Tab 연동은 하지 않습니다.|제안은 이름 변경이나 사용 가능성을 보장하지 않습니다.|의도를 보존하고 적절한 품질 기준을 정한 뒤 자율적으로 목표를 구현합니다. 이후 구체적인 근거를 바탕으로 결과를 검토하고 개선합니다.|요청과 기존 근거에 맞춰 접근법을 검토합니다.|원래 오류와 관련 사례를 다시 확인하고 미검증 범위를 밝힙니다.|원래 동작과 영향받는 호출자를 다시 검사합니다.|발견 사항에는 구체적인 조건, 유효한 위치와 영향이 있어야 합니다.|허용된 파일을 민감한 값의 노출 없이 검토합니다.|실제 사용 장벽과 관련 출처를 살펴봅니다.|실제 대상을 위해 시작, 문서와 패키지를 검토합니다.|합의된 비교 범위를 사용하고 미커밋 작업을 구분합니다.|요청과 결과를 대조하고 마무리나 인계를 명확히 합니다.|수정이나 규칙을 자동 적용하지 않습니다.",
+    "intros": "요구에 맞게 모음을 설명하고 적절한 호출 예시를 보여줍니다.|원본, 기기, 날짜와 버전을 확인하고 모호함을 밝힙니다.|채팅의 목적에 맞는 프로젝트를 고릅니다.|과거 주장은 현재 확인이 아닙니다. 자동으로 작업을 재개하지 않습니다.|보이는 목표와 확인된 결정, 마지막으로 입증된 상태를 정리합니다.|목표를 이해하고 작고 검증 가능한 첫 단계를 계획합니다.|초안만 작성합니다. 실행이나 기본 Tab 연동은 하지 않습니다.|제안은 이름 변경이나 사용 가능성을 보장하지 않습니다.|의도를 보존하고 적절한 품질 기준을 정한 뒤 자율적으로 목표를 구현합니다. 이후 구체적인 근거를 바탕으로 결과를 검토하고 개선합니다.|요청과 기존 근거에 맞춰 접근법을 검토합니다.|원래 오류와 관련 사례를 다시 확인하고 미검증 범위를 밝힙니다.|원래 동작과 영향받는 호출자를 다시 검사합니다.|발견 사항에는 구체적인 조건, 유효한 위치와 영향이 있어야 합니다.|허용된 파일을 민감한 값의 노출 없이 검토합니다.|실제 사용 장벽과 관련 출처를 살펴봅니다.|실제 대상을 위해 시작, 문서와 패키지를 검토합니다.|합의된 비교 범위를 사용하고 미커밋 작업을 구분합니다.|요청과 결과를 대조하고 마무리나 인계를 명확히 합니다.|수정이나 규칙을 자동 적용하지 않습니다.",
     "stepNotes": [
       "사용 가능한 정보를 활용합니다.",
       "기존 규칙을 존중합니다.",
@@ -2057,6 +2177,7 @@
     "recipeLimits": [
       "가이드는 추천만 하며 다른 작업을 자동 실행하지 않습니다.",
       "검색만으로 이동, 복원이나 작업 재개가 허용되지 않습니다.",
+      "생성과 폴더 접근은 환경에 따라 다릅니다.",
       "과거 주장은 현재 확인이 아닙니다. 자동으로 작업을 재개하지 않습니다.",
       "없는 기록을 만들지 마세요.",
       "",
@@ -2086,6 +2207,12 @@
         "대략적 날짜",
         "기기나 프로젝트",
         "검색 가능한 자료"
+      ],
+      [
+        "채팅",
+        "맥락",
+        "프로젝트",
+        "환경"
       ],
       [
         "마지막 상태",
@@ -2187,6 +2314,7 @@
     "verifications": [
       "요구에 맞게 모음을 설명하고 적절한 호출 예시를 보여줍니다.",
       "원본, 기기, 날짜와 버전을 확인하고 모호함을 밝힙니다.",
+      "소속과 접근 권한을 확인합니다.",
       "긴 휴식 후 프로젝트로 돌아옵니다.",
       "누락 기록과 불확실성이 명시됩니다.",
       "다음 단계에 관찰 가능한 결과가 있습니다.",
@@ -2225,46 +2353,6 @@
       "제목, 기기, 날짜와 버전을 원본으로 확인합니다.",
       "확인된 결과를 연결하거나 구분에 필요한 질문을 합니다."
     ],
-    "steps2": "이전 상태 복원하기|현재 확인하기|변화 설명하기|재진입 지점 제안하기",
-    "steps3": "보이는 기록 읽기|결정 구분|결과 정리|상태 요약",
-    "steps4": "목표 이해|맥락 검토|질문 정리|첫 단계 계획",
-    "steps5": "조각 읽기|의도 유지하기|빈 부분 채우기|프롬프트 제안하기",
-    "steps6": "문맥 이해하기|이름 쌍 만들기|중복 확인하기|선택 제안하기",
-    "steps7": "목표와 범위 명확히 하기|품질 기준 정하기|구현하고 검증하기|비판적으로 검토하고 개선하기",
-    "stepNotes7": [
-      "요청, 현재 상태, 허용된 작업 범위를 이해합니다.",
-      "관찰 가능한 성공 기준과 필요한 검증을 정합니다.",
-      "가장 작고 완전한 해결책을 구현하고 실제 흐름을 검증합니다.",
-      "약점을 수정하고 결과, 검증 근거, 미해결 사항을 전달합니다."
-    ],
-    "steps8": "목표와 비교|근거 확인|장애물 파악|다음 단계 제안",
-    "steps9": "재현하기|흐름 추적|가설 검증|수정 확인",
-    "stepNotes9": [
-      "재현하기",
-      "흐름 추적",
-      "가설 검증",
-      "수정 확인"
-    ],
-    "steps10": "동작 확인|중복 확인|작은 대안 선택|동작 재검증",
-    "stepNotes10": [
-      "관찰 가능한 동작과 공개 계약을 기록합니다.",
-      "불필요함이 입증된 계층이나 중복만 선택합니다.",
-      "가장 작은 단순화와 위험을 설명합니다.",
-      "요청한 변경을 원래 사례와 호출자로 검증합니다."
-    ],
-    "steps11": "변경 범위 확정|계약 추적|발견 사항 검증|영향순 정리",
-    "stepNotes11": [
-      "기준, 대상 버전과 선택한 차이를 확정합니다.",
-      "변경 코드, 호출자와 의도한 동작을 함께 읽습니다.",
-      "각 발견 사항을 구체적 사례와 원본 위치로 검증합니다.",
-      "실행 가능한 발견 사항을 영향순으로 제시하고 공백을 밝힙니다."
-    ],
-    "steps12": "범위 결정|파일과 기록 검토|민감 정보 가리기|검토 범위 공개",
-    "steps13": "질문 구체화|사용 흐름 확인|출처와 적용 검토|열린 질문 기록",
-    "steps14": "대상 확인|시작과 패키지 검토|결과 우선순위 결정|승인된 개선 검증",
-    "steps15": "비교 범위 확인|실제 차이 읽기|사용자 영향 설명|미확인 표시",
-    "steps16": "요청 대조|기존 근거 활용|남은 항목 기록|마무리나 인계 작성",
-    "steps17": "범위 정하기|원인 찾기|권고 대조하기|예방책 제안하기",
     "chapter": "장",
     "chapterTitles": {
       "orientation": "안내와 재개",
@@ -2274,11 +2362,58 @@
       "release": "배포",
       "closing": "마무리와 회고"
     },
-    "copyInvocation": "스킬 명령 복사"
+    "copyInvocation": "스킬 명령 복사",
+    "steps18": "범위 정하기|원인 찾기|권고 대조하기|예방책 제안하기",
+    "steps17": "요청 대조|기존 근거 활용|남은 항목 기록|마무리나 인계 작성",
+    "steps16": "비교 범위 확인|실제 차이 읽기|사용자 영향 설명|미확인 표시",
+    "steps15": "대상 확인|시작과 패키지 검토|결과 우선순위 결정|승인된 개선 검증",
+    "steps14": "질문 구체화|사용 흐름 확인|출처와 적용 검토|열린 질문 기록",
+    "steps13": "범위 결정|파일과 기록 검토|민감 정보 가리기|검토 범위 공개",
+    "steps12": "변경 범위 확정|계약 추적|발견 사항 검증|영향순 정리",
+    "stepNotes12": [
+      "기준, 대상 버전과 선택한 차이를 확정합니다.",
+      "변경 코드, 호출자와 의도한 동작을 함께 읽습니다.",
+      "각 발견 사항을 구체적 사례와 원본 위치로 검증합니다.",
+      "실행 가능한 발견 사항을 영향순으로 제시하고 공백을 밝힙니다."
+    ],
+    "steps11": "동작 확인|중복 확인|작은 대안 선택|동작 재검증",
+    "stepNotes11": [
+      "관찰 가능한 동작과 공개 계약을 기록합니다.",
+      "불필요함이 입증된 계층이나 중복만 선택합니다.",
+      "가장 작은 단순화와 위험을 설명합니다.",
+      "요청한 변경을 원래 사례와 호출자로 검증합니다."
+    ],
+    "steps10": "재현하기|흐름 추적|가설 검증|수정 확인",
+    "stepNotes10": [
+      "재현하기",
+      "흐름 추적",
+      "가설 검증",
+      "수정 확인"
+    ],
+    "steps9": "목표와 비교|근거 확인|장애물 파악|다음 단계 제안",
+    "steps8": "목표와 범위 명확히 하기|품질 기준 정하기|구현하고 검증하기|비판적으로 검토하고 개선하기",
+    "stepNotes8": [
+      "요청, 현재 상태, 허용된 작업 범위를 이해합니다.",
+      "관찰 가능한 성공 기준과 필요한 검증을 정합니다.",
+      "가장 작고 완전한 해결책을 구현하고 실제 흐름을 검증합니다.",
+      "약점을 수정하고 결과, 검증 근거, 미해결 사항을 전달합니다."
+    ],
+    "steps7": "문맥 이해하기|이름 쌍 만들기|중복 확인하기|선택 제안하기",
+    "steps6": "조각 읽기|의도 유지하기|빈 부분 채우기|프롬프트 제안하기",
+    "steps5": "목표 이해|맥락 검토|질문 정리|첫 단계 계획",
+    "steps4": "보이는 기록 읽기|결정 구분|결과 정리|상태 요약",
+    "steps3": "이전 상태 복원하기|현재 확인하기|변화 설명하기|재진입 지점 제안하기",
+    "steps2": "식별|비교|선택|확인",
+    "stepNotes2": [
+      "채팅, 환경과 목표를 확인합니다.",
+      "사용 가능한 프로젝트를 비교합니다.",
+      "후보 또는 새 프로젝트를 제안합니다.",
+      "요청된 배정과 접근 권한을 확인합니다."
+    ]
   },
   "zh-CN": {
     "name": "简体中文",
-    "tagline": "为你的项目准备的十八道食谱",
+    "tagline": "为你的项目准备的十九道食谱",
     "recipe": "食谱",
     "when": "何时使用",
     "ingredients": "食材",
@@ -2293,12 +2428,12 @@
     "previous": "上一道食谱",
     "next": "下一道食谱",
     "ingredientList": "一个想法|项目背景|待解问题|限制条件",
-    "summaries": "理解Cookbook并找到合适的技能。|找到之前正确的聊天、仓库或成果文件。|长时间暂停后重新了解项目。|找回目标、决定和当前进度。|从想法迈向可验证的第一步。|根据上下文补全未写完的提示词。|同时构思Plain和Kitchen名称。|接手目标，推进到完成实现并验证的成果。|检查当前方法是否通向目标。|复现当前故障并验证针对性的修复。|在保留行为的前提下简化选定流程。|审查变更中的具体缺陷和回归。|分享前检查敏感内容。|明确法律问题和使用障碍。|为项目公开发布做准备。|根据已核实的变更撰写说明。|有意识地结束工作或准备交接。|从过去的尝试中学习。",
-    "whenList": "初次使用或需要选择工作流时。|不清楚之前工作的所在位置或正确版本。|需要回顾目标、决定和当前状态时。|暂停后需要恢复上下文。|想法需要一个具体的起点。|自动补全缺失或想法尚未完整时。|产品或技能需要合适名称时。|当你想把项目目标及其实现交给助手时。|你想知道工作是否在推进。|现在发生的具体故障，而非对过去工作模式的复盘。|处理选定范围内的多余复杂性，不重写整个仓库。|技术性差异审查，不自动修复。|你准备分享文件或代码仓库。|发布前或有具体问题时。|其他人需要理解和使用项目。|一个版本或工作阶段已经完成。|一个阶段完成或需要交接。|当失败或未落实的建议反复出现时。",
+    "summaries": "理解Cookbook并找到合适的技能。|找到之前正确的聊天、仓库或成果文件。|将聊天归入合适的项目。|长时间暂停后重新了解项目。|找回目标、决定和当前进度。|从想法迈向可验证的第一步。|根据上下文补全未写完的提示词。|同时构思Plain和Kitchen名称。|接手目标，推进到完成实现并验证的成果。|检查当前方法是否通向目标。|复现当前故障并验证针对性的修复。|在保留行为的前提下简化选定流程。|审查变更中的具体缺陷和回归。|分享前检查敏感内容。|明确法律问题和使用障碍。|为项目公开发布做准备。|根据已核实的变更撰写说明。|有意识地结束工作或准备交接。|从过去的尝试中学习。",
+    "whenList": "初次使用或需要选择工作流时。|不清楚之前工作的所在位置或正确版本。|聊天需要归属项目时。|需要回顾目标、决定和当前状态时。|暂停后需要恢复上下文。|想法需要一个具体的起点。|自动补全缺失或想法尚未完整时。|产品或技能需要合适名称时。|当你想把项目目标及其实现交给助手时。|你想知道工作是否在推进。|现在发生的具体故障，而非对过去工作模式的复盘。|处理选定范围内的多余复杂性，不重写整个仓库。|技术性差异审查，不自动修复。|你准备分享文件或代码仓库。|发布前或有具体问题时。|其他人需要理解和使用项目。|一个版本或工作阶段已经完成。|一个阶段完成或需要交接。|当失败或未落实的建议反复出现时。",
     "limitText": "仅使用现有证据。明确边界；外部操作需要授权。",
     "languageNote": "技能调用名称保持安装时的语言。",
     "footer": "准备充分，构建更好。",
-    "intros": "根据你的需求介绍集合，并展示合适的调用示例。|确认来源、设备、日期和版本，并说明歧义。|过去的说法不等于当前核查，不自动继续实施。|重建可见目标、已确认决定和最后有依据的状态。|理解目标，计划一个小而可验证的起点。|仅为草稿，不执行任务，也不接入原生Tab补全。|建议不等于改名，也不保证名称可用。|我们保留你的意图，确定适当的质量标准，自主推进目标的实现。随后依据具体证据审视并改进成果。|根据请求和现有证据检查当前方法。|重新测试原始故障及相关情况，说明未验证的范围。|重新检查原始行为和受影响的调用方。|每项发现都包含具体触发条件、有效位置和影响。|检查已授权文件，不在报告中泄露敏感值。|检查实际障碍和相关来源。|面向真实受众检查上手流程、文档和打包。|使用约定的比较范围，区分未提交的工作。|对照请求与结果，明确结束或交接。|不自动应用修复或规则。",
+    "intros": "根据你的需求介绍集合，并展示合适的调用示例。|确认来源、设备、日期和版本，并说明歧义。|根据聊天目的选择项目。|过去的说法不等于当前核查，不自动继续实施。|重建可见目标、已确认决定和最后有依据的状态。|理解目标，计划一个小而可验证的起点。|仅为草稿，不执行任务，也不接入原生Tab补全。|建议不等于改名，也不保证名称可用。|我们保留你的意图，确定适当的质量标准，自主推进目标的实现。随后依据具体证据审视并改进成果。|根据请求和现有证据检查当前方法。|重新测试原始故障及相关情况，说明未验证的范围。|重新检查原始行为和受影响的调用方。|每项发现都包含具体触发条件、有效位置和影响。|检查已授权文件，不在报告中泄露敏感值。|检查实际障碍和相关来源。|面向真实受众检查上手流程、文档和打包。|使用约定的比较范围，区分未提交的工作。|对照请求与结果，明确结束或交接。|不自动应用修复或规则。",
     "stepNotes": [
       "使用现有信息。",
       "尊重已有约定。",
@@ -2310,6 +2445,7 @@
     "recipeLimits": [
       "指南只提出建议，不自动执行其他工作流。",
       "仅搜索不授权移动、恢复或继续工作。",
+      "项目创建和文件夹访问取决于环境。",
       "过去的说法不等于当前核查，不自动继续实施。",
       "不要虚构缺失的历史。",
       "",
@@ -2339,6 +2475,12 @@
         "大致日期",
         "设备或项目",
         "可用搜索来源"
+      ],
+      [
+        "聊天",
+        "上下文",
+        "项目",
+        "环境"
       ],
       [
         "上次状态",
@@ -2440,6 +2582,7 @@
     "verifications": [
       "根据你的需求介绍集合，并展示合适的调用示例。",
       "确认来源、设备、日期和版本，并说明歧义。",
+      "确认项目归属与访问权限。",
       "长时间暂停后重新了解项目。",
       "缺失历史和不确定性保持可见。",
       "下一步有可观察的结果。",
@@ -2478,46 +2621,6 @@
       "根据原始资料确认标题、设备、日期和版本。",
       "链接已证实的结果，或提出能区分候选的问题。"
     ],
-    "steps2": "恢复上次状态|核查当前状态|解释变化|建议切入点",
-    "steps3": "阅读可见历史|区分决定|对应结果|简要总结",
-    "steps4": "理解目标|查看背景|厘清问题|计划第一步",
-    "steps5": "阅读片段|保留意图|补足缺失|提出提示词",
-    "steps6": "理解上下文|成对构思|检查冲突|推荐选择",
-    "steps7": "明确目标与边界|确定质量标准|实现并验证|审视并改进",
-    "stepNotes7": [
-      "理解请求、当前状态及获准的工作范围。",
-      "确定可观察的成功标准和相关检查。",
-      "实现最小的完整方案，并验证实际流程。",
-      "修正不足，交付成果、验证证据和未解决事项。"
-    ],
-    "steps8": "对照目标|查看证据|识别障碍|建议下一步",
-    "steps9": "复现故障|追踪流程|验证假设|检查修复",
-    "stepNotes9": [
-      "复现故障",
-      "追踪流程",
-      "验证假设",
-      "检查修复"
-    ],
-    "steps10": "确认行为|检查冗余|选择更小方案|验证行为",
-    "stepNotes10": [
-      "记录可观察的行为和公开契约。",
-      "只选择已证实多余的层或真正重复的逻辑。",
-      "解释最小简化方案及其风险。",
-      "使用原始案例和受影响调用方验证获准的修改。"
-    ],
-    "steps11": "确定变更|追踪契约|验证发现|按影响排序",
-    "stepNotes11": [
-      "确定基准、目标版本和选定差异。",
-      "结合阅读变更代码、调用方和预期行为。",
-      "使用具体触发案例和原始位置验证每项发现。",
-      "按影响报告可处理的发现，并说明检查空白。"
-    ],
-    "steps12": "确定范围|检查文件和历史|隐藏敏感内容|说明覆盖范围",
-    "steps13": "缩小问题范围|查看用户流程|核查来源与适用性|记录待解问题",
-    "steps14": "确定受众|检查上手流程和打包|排列发现优先级|验证已批准的改进",
-    "steps15": "明确比较范围|阅读实际差异|说明用户影响|标记未核实内容",
-    "steps16": "对照请求|利用现有证据|记录未完成项|撰写结束或交接说明",
-    "steps17": "确定范围|寻找原因|核对建议|提出预防措施",
     "chapter": "章",
     "chapterTitles": {
       "orientation": "导航与回归",
@@ -2527,11 +2630,58 @@
       "release": "发布",
       "closing": "收尾与复盘"
     },
-    "copyInvocation": "复制技能命令"
+    "copyInvocation": "复制技能命令",
+    "steps18": "确定范围|寻找原因|核对建议|提出预防措施",
+    "steps17": "对照请求|利用现有证据|记录未完成项|撰写结束或交接说明",
+    "steps16": "明确比较范围|阅读实际差异|说明用户影响|标记未核实内容",
+    "steps15": "确定受众|检查上手流程和打包|排列发现优先级|验证已批准的改进",
+    "steps14": "缩小问题范围|查看用户流程|核查来源与适用性|记录待解问题",
+    "steps13": "确定范围|检查文件和历史|隐藏敏感内容|说明覆盖范围",
+    "steps12": "确定变更|追踪契约|验证发现|按影响排序",
+    "stepNotes12": [
+      "确定基准、目标版本和选定差异。",
+      "结合阅读变更代码、调用方和预期行为。",
+      "使用具体触发案例和原始位置验证每项发现。",
+      "按影响报告可处理的发现，并说明检查空白。"
+    ],
+    "steps11": "确认行为|检查冗余|选择更小方案|验证行为",
+    "stepNotes11": [
+      "记录可观察的行为和公开契约。",
+      "只选择已证实多余的层或真正重复的逻辑。",
+      "解释最小简化方案及其风险。",
+      "使用原始案例和受影响调用方验证获准的修改。"
+    ],
+    "steps10": "复现故障|追踪流程|验证假设|检查修复",
+    "stepNotes10": [
+      "复现故障",
+      "追踪流程",
+      "验证假设",
+      "检查修复"
+    ],
+    "steps9": "对照目标|查看证据|识别障碍|建议下一步",
+    "steps8": "明确目标与边界|确定质量标准|实现并验证|审视并改进",
+    "stepNotes8": [
+      "理解请求、当前状态及获准的工作范围。",
+      "确定可观察的成功标准和相关检查。",
+      "实现最小的完整方案，并验证实际流程。",
+      "修正不足，交付成果、验证证据和未解决事项。"
+    ],
+    "steps7": "理解上下文|成对构思|检查冲突|推荐选择",
+    "steps6": "阅读片段|保留意图|补足缺失|提出提示词",
+    "steps5": "理解目标|查看背景|厘清问题|计划第一步",
+    "steps4": "阅读可见历史|区分决定|对应结果|简要总结",
+    "steps3": "恢复上次状态|核查当前状态|解释变化|建议切入点",
+    "steps2": "识别|比较|选择|验证",
+    "stepNotes2": [
+      "确认聊天、环境和目标。",
+      "比较可用项目。",
+      "推荐候选项目或建议新项目。",
+      "核实已授权的归属和访问权限。"
+    ]
   },
   "ar": {
     "name": "العربية",
-    "tagline": "ثماني عشرة وصفة لمشاريعك",
+    "tagline": "تسع عشرة وصفة لمشاريعك",
     "recipe": "وصفة",
     "when": "متى",
     "ingredients": "المكونات",
@@ -2546,12 +2696,12 @@
     "previous": "الوصفة السابقة",
     "next": "الوصفة التالية",
     "ingredientList": "فكرة|سياق المشروع|أسئلة مفتوحة|قيود",
-    "summaries": "افهم Cookbook واعثر على المهارة المناسبة.|العثور على المحادثة أو المستودع أو الملف السابق الصحيح.|العودة إلى المشروع بعد انقطاع طويل.|استعد الأهداف والقرارات والحالة الحالية.|من الفكرة إلى أول خطوة قابلة للتحقق.|إكمال طلب جزئي وفق السياق.|اقتراح أسماء Plain وKitchen معًا.|تنفيذ الهدف باستقلالية حتى الوصول إلى نتيجة منجزة ومتحقق منها.|تحقق من أن النهج يقود إلى الهدف.|إعادة إنتاج عطل حالي والتحقق من إصلاح محدد.|تبسيط مسار محدد مع الحفاظ على سلوكه.|مراجعة تغيير بحثًا عن عيوب وتراجعات محددة.|راجع المحتوى الحساس قبل المشاركة.|حدد الأسئلة القانونية وعوائق الاستخدام.|جهز المشروع للنشر.|اكتب ملاحظات من تغييرات مثبتة.|أنهِ العمل أو جهز تسليمه.|التعلم من المحاولات السابقة.",
-    "whenList": "عند البدء أو البحث عن سير العمل المناسب.|مكان العمل السابق أو نسخته الصحيحة غير معروف.|عند الحاجة لتذكر الهدف والقرارات والحالة الحالية.|بعد انقطاع تحتاج فيه إلى السياق.|عندما تحتاج الفكرة إلى بداية واضحة.|عندما يغيب الإكمال التلقائي أو تبقى فكرة غير مكتملة.|عندما يحتاج منتج أو مهارة إلى اسم مناسب.|عندما تريد تفويض هدف المشروع وتنفيذه.|عندما تريد معرفة مدى التقدم.|عطل محدد يحدث الآن، وليس مراجعة لأنماط العمل السابقة.|تعقيد غير ضروري في نطاق محدد، وليس إعادة كتابة شاملة.|مراجعة تقنية للفروق دون إصلاحات تلقائية.|عندما تريد مشاركة ملفات أو مستودع.|قبل النشر أو لسؤال محدد.|قبل أن يستخدم الآخرون المشروع.|عند اكتمال إصدار أو مرحلة.|عند انتهاء مرحلة أو الحاجة لتسليمها.|عندما تتكرر الأخطاء أو التوصيات غير المنفذة.",
+    "summaries": "افهم Cookbook واعثر على المهارة المناسبة.|العثور على المحادثة أو المستودع أو الملف السابق الصحيح.|إسناد محادثة إلى مشروع مناسب.|العودة إلى المشروع بعد انقطاع طويل.|استعد الأهداف والقرارات والحالة الحالية.|من الفكرة إلى أول خطوة قابلة للتحقق.|إكمال طلب جزئي وفق السياق.|اقتراح أسماء Plain وKitchen معًا.|تنفيذ الهدف باستقلالية حتى الوصول إلى نتيجة منجزة ومتحقق منها.|تحقق من أن النهج يقود إلى الهدف.|إعادة إنتاج عطل حالي والتحقق من إصلاح محدد.|تبسيط مسار محدد مع الحفاظ على سلوكه.|مراجعة تغيير بحثًا عن عيوب وتراجعات محددة.|راجع المحتوى الحساس قبل المشاركة.|حدد الأسئلة القانونية وعوائق الاستخدام.|جهز المشروع للنشر.|اكتب ملاحظات من تغييرات مثبتة.|أنهِ العمل أو جهز تسليمه.|التعلم من المحاولات السابقة.",
+    "whenList": "عند البدء أو البحث عن سير العمل المناسب.|مكان العمل السابق أو نسخته الصحيحة غير معروف.|عندما تحتاج المحادثة إلى مشروع.|عند الحاجة لتذكر الهدف والقرارات والحالة الحالية.|بعد انقطاع تحتاج فيه إلى السياق.|عندما تحتاج الفكرة إلى بداية واضحة.|عندما يغيب الإكمال التلقائي أو تبقى فكرة غير مكتملة.|عندما يحتاج منتج أو مهارة إلى اسم مناسب.|عندما تريد تفويض هدف المشروع وتنفيذه.|عندما تريد معرفة مدى التقدم.|عطل محدد يحدث الآن، وليس مراجعة لأنماط العمل السابقة.|تعقيد غير ضروري في نطاق محدد، وليس إعادة كتابة شاملة.|مراجعة تقنية للفروق دون إصلاحات تلقائية.|عندما تريد مشاركة ملفات أو مستودع.|قبل النشر أو لسؤال محدد.|قبل أن يستخدم الآخرون المشروع.|عند اكتمال إصدار أو مرحلة.|عند انتهاء مرحلة أو الحاجة لتسليمها.|عندما تتكرر الأخطاء أو التوصيات غير المنفذة.",
     "limitText": "استخدم الأدلة القائمة فقط. وضح الحدود؛ الإجراءات الخارجية تتطلب إذناً.",
     "languageNote": "تبقى أوامر المهارات بلغتها المثبتة.",
     "footer": "استعد جيداً وابنِ أفضل.",
-    "intros": "نشرح المجموعة حسب حاجتك ونعرض مثال استدعاء مناسبًا.|تحقق من المصدر والجهاز والتاريخ والنسخة واذكر الغموض.|الأقوال السابقة ليست تحققًا حاليًا؛ لا تستأنف العمل تلقائيًا.|أعد بناء الهدف الظاهر والقرارات والحالة المثبتة.|افهم الهدف وخطط لأول خطوة صغيرة قابلة للتحقق.|مسودة فقط؛ لا تنفيذ ولا تكامل أصلي مع Tab.|الاقتراحات لا تعيد التسمية ولا تضمن التوفر.|نحافظ على مقصدك، ونحدد مستوى الجودة المناسب، ثم ننفذ الهدف باستقلالية. بعد ذلك نراجع النتيجة ونحسنها بالاستناد إلى أدلة ملموسة.|راجع النهج وفق الطلب والأدلة القائمة.|أعد اختبار العطل الأصلي والحالات المرتبطة واذكر ما لم يتم التحقق منه.|أعد فحص السلوك الأصلي والمستدعين المتأثرين.|لكل نتيجة شرط محدد وموقع صحيح وأثر واضح.|راجع الملفات المأذونة دون كشف القيم الحساسة.|افحص العائق الفعلي والمصادر ذات الصلة.|راجع البدء والتوثيق والحزمة للجمهور الفعلي.|استخدم المقارنة المتفق عليها وافصل العمل غير المحفوظ.|قارن الطلب والنتائج واكتب ختاماً أو تسليماً واضحاً.|لا تُطبّق الإصلاحات أو القواعد تلقائيًا.",
+    "intros": "نشرح المجموعة حسب حاجتك ونعرض مثال استدعاء مناسبًا.|تحقق من المصدر والجهاز والتاريخ والنسخة واذكر الغموض.|اختر مشروعًا يناسب هدف المحادثة.|الأقوال السابقة ليست تحققًا حاليًا؛ لا تستأنف العمل تلقائيًا.|أعد بناء الهدف الظاهر والقرارات والحالة المثبتة.|افهم الهدف وخطط لأول خطوة صغيرة قابلة للتحقق.|مسودة فقط؛ لا تنفيذ ولا تكامل أصلي مع Tab.|الاقتراحات لا تعيد التسمية ولا تضمن التوفر.|نحافظ على مقصدك، ونحدد مستوى الجودة المناسب، ثم ننفذ الهدف باستقلالية. بعد ذلك نراجع النتيجة ونحسنها بالاستناد إلى أدلة ملموسة.|راجع النهج وفق الطلب والأدلة القائمة.|أعد اختبار العطل الأصلي والحالات المرتبطة واذكر ما لم يتم التحقق منه.|أعد فحص السلوك الأصلي والمستدعين المتأثرين.|لكل نتيجة شرط محدد وموقع صحيح وأثر واضح.|راجع الملفات المأذونة دون كشف القيم الحساسة.|افحص العائق الفعلي والمصادر ذات الصلة.|راجع البدء والتوثيق والحزمة للجمهور الفعلي.|استخدم المقارنة المتفق عليها وافصل العمل غير المحفوظ.|قارن الطلب والنتائج واكتب ختاماً أو تسليماً واضحاً.|لا تُطبّق الإصلاحات أو القواعد تلقائيًا.",
     "stepNotes": [
       "استخدم المعلومات المتاحة.",
       "احترم القواعد القائمة.",
@@ -2563,6 +2713,7 @@
     "recipeLimits": [
       "الدليل يوصي فقط ولا ينفذ سير عمل آخر تلقائيًا.",
       "البحث وحده لا يسمح بالنقل أو الاستعادة أو متابعة العمل.",
+      "يعتمد إنشاء المشروع والوصول إلى المجلد على البيئة.",
       "الأقوال السابقة ليست تحققًا حاليًا؛ لا تستأنف العمل تلقائيًا.",
       "لا تختلق التاريخ المفقود.",
       "",
@@ -2592,6 +2743,12 @@
         "تاريخ تقريبي",
         "جهاز أو مشروع",
         "مصادر بحث متاحة"
+      ],
+      [
+        "المحادثة",
+        "السياق",
+        "المشاريع",
+        "البيئة"
       ],
       [
         "آخر حالة",
@@ -2693,6 +2850,7 @@
     "verifications": [
       "نشرح المجموعة حسب حاجتك ونعرض مثال استدعاء مناسبًا.",
       "تحقق من المصدر والجهاز والتاريخ والنسخة واذكر الغموض.",
+      "تحقق من العضوية والوصول.",
       "العودة إلى المشروع بعد انقطاع طويل.",
       "التاريخ المفقود وعدم اليقين واضحان.",
       "للخطوة التالية نتيجة قابلة للملاحظة.",
@@ -2731,46 +2889,6 @@
       "أكد العنوان والجهاز والتاريخ والنسخة من الأصول.",
       "اربط النتيجة المثبتة أو اطرح السؤال الفاصل."
     ],
-    "steps2": "استعادة آخر حالة|التحقق من الحالة الحالية|شرح التغييرات|اقتراح نقطة عودة",
-    "steps3": "اقرأ التاريخ المتاح|ميز القرارات|انسب النتائج|لخص الحالة",
-    "steps4": "افهم الهدف|راجع السياق|وضح الأسئلة|خطط للخطوة الأولى",
-    "steps5": "قراءة الجزء|حفظ النية|إكمال الناقص|اقتراح الطلب",
-    "steps6": "فهم السياق|إنشاء أزواج أسماء|فحص التعارض|ترشيح اختيار",
-    "steps7": "توضيح الهدف والحدود|تحديد معايير الجودة|التنفيذ والتحقق|التقييم النقدي والتحسين",
-    "stepNotes7": [
-      "فهم الطلب والحالة الحالية ونطاق العمل المصرح به.",
-      "تحديد معايير نجاح قابلة للملاحظة والفحوص المناسبة.",
-      "تنفيذ أصغر حل مكتمل والتحقق من مسار الاستخدام الفعلي.",
-      "معالجة نقاط الضعف وتسليم النتيجة والأدلة والمسائل المفتوحة."
-    ],
-    "steps8": "قارن بالهدف|راجع الأدلة|حدد العقبات|اقترح الخطوة التالية",
-    "steps9": "إعادة الإنتاج|تتبع المسار|اختبار الفرضيات|التحقق من الإصلاح",
-    "stepNotes9": [
-      "إعادة الإنتاج",
-      "تتبع المسار",
-      "اختبار الفرضيات",
-      "التحقق من الإصلاح"
-    ],
-    "steps10": "تحديد السلوك|فحص التكرار|اختيار بديل أصغر|التحقق من السلوك",
-    "stepNotes10": [
-      "سجل السلوك القابل للملاحظة والعقود العامة.",
-      "اختر فقط الطبقات الزائدة أو التكرار المثبت.",
-      "اشرح أصغر تبسيط ومخاطره.",
-      "تحقق من التغييرات المطلوبة بالحالات الأصلية والمستدعين."
-    ],
-    "steps11": "تحديد التغيير|تتبع العقود|التحقق من النتائج|الترتيب حسب الأثر",
-    "stepNotes11": [
-      "حدد الأساس والنسخة المستهدفة والفروق المختارة.",
-      "اقرأ الكود المعدل والمستدعين والسلوك المقصود معًا.",
-      "تحقق من كل نتيجة بحالة محددة وموقع المصدر.",
-      "اعرض النتائج القابلة للتنفيذ حسب الأثر واذكر فجوات الفحص."
-    ],
-    "steps12": "حدد النطاق|راجع الملفات والتاريخ|احجب البيانات الحساسة|وضح التغطية",
-    "steps13": "حدد السؤال|راجع مسار المستخدم|تحقق من المصادر والانطباق|سجل الأسئلة",
-    "steps14": "حدد الجمهور|راجع البدء والحزمة|رتب النتائج|تحقق من التحسينات المأذونة",
-    "steps15": "وضح المقارنة|اقرأ الفروق الفعلية|صف أثر المستخدم|وضح غير المتحقق",
-    "steps16": "راجع الطلب|استخدم الأدلة القائمة|سجل النقاط المفتوحة|اكتب الختام أو التسليم",
-    "steps17": "تحديد النطاق|البحث عن الأسباب|مراجعة التوصيات|اقتراح الوقاية",
     "chapter": "الفصل",
     "chapterTitles": {
       "orientation": "التوجيه والعودة",
@@ -2780,11 +2898,58 @@
       "release": "النشر",
       "closing": "الختام والتقييم"
     },
-    "copyInvocation": "نسخ أمر المهارة"
+    "copyInvocation": "نسخ أمر المهارة",
+    "steps18": "تحديد النطاق|البحث عن الأسباب|مراجعة التوصيات|اقتراح الوقاية",
+    "steps17": "راجع الطلب|استخدم الأدلة القائمة|سجل النقاط المفتوحة|اكتب الختام أو التسليم",
+    "steps16": "وضح المقارنة|اقرأ الفروق الفعلية|صف أثر المستخدم|وضح غير المتحقق",
+    "steps15": "حدد الجمهور|راجع البدء والحزمة|رتب النتائج|تحقق من التحسينات المأذونة",
+    "steps14": "حدد السؤال|راجع مسار المستخدم|تحقق من المصادر والانطباق|سجل الأسئلة",
+    "steps13": "حدد النطاق|راجع الملفات والتاريخ|احجب البيانات الحساسة|وضح التغطية",
+    "steps12": "تحديد التغيير|تتبع العقود|التحقق من النتائج|الترتيب حسب الأثر",
+    "stepNotes12": [
+      "حدد الأساس والنسخة المستهدفة والفروق المختارة.",
+      "اقرأ الكود المعدل والمستدعين والسلوك المقصود معًا.",
+      "تحقق من كل نتيجة بحالة محددة وموقع المصدر.",
+      "اعرض النتائج القابلة للتنفيذ حسب الأثر واذكر فجوات الفحص."
+    ],
+    "steps11": "تحديد السلوك|فحص التكرار|اختيار بديل أصغر|التحقق من السلوك",
+    "stepNotes11": [
+      "سجل السلوك القابل للملاحظة والعقود العامة.",
+      "اختر فقط الطبقات الزائدة أو التكرار المثبت.",
+      "اشرح أصغر تبسيط ومخاطره.",
+      "تحقق من التغييرات المطلوبة بالحالات الأصلية والمستدعين."
+    ],
+    "steps10": "إعادة الإنتاج|تتبع المسار|اختبار الفرضيات|التحقق من الإصلاح",
+    "stepNotes10": [
+      "إعادة الإنتاج",
+      "تتبع المسار",
+      "اختبار الفرضيات",
+      "التحقق من الإصلاح"
+    ],
+    "steps9": "قارن بالهدف|راجع الأدلة|حدد العقبات|اقترح الخطوة التالية",
+    "steps8": "توضيح الهدف والحدود|تحديد معايير الجودة|التنفيذ والتحقق|التقييم النقدي والتحسين",
+    "stepNotes8": [
+      "فهم الطلب والحالة الحالية ونطاق العمل المصرح به.",
+      "تحديد معايير نجاح قابلة للملاحظة والفحوص المناسبة.",
+      "تنفيذ أصغر حل مكتمل والتحقق من مسار الاستخدام الفعلي.",
+      "معالجة نقاط الضعف وتسليم النتيجة والأدلة والمسائل المفتوحة."
+    ],
+    "steps7": "فهم السياق|إنشاء أزواج أسماء|فحص التعارض|ترشيح اختيار",
+    "steps6": "قراءة الجزء|حفظ النية|إكمال الناقص|اقتراح الطلب",
+    "steps5": "افهم الهدف|راجع السياق|وضح الأسئلة|خطط للخطوة الأولى",
+    "steps4": "اقرأ التاريخ المتاح|ميز القرارات|انسب النتائج|لخص الحالة",
+    "steps3": "استعادة آخر حالة|التحقق من الحالة الحالية|شرح التغييرات|اقتراح نقطة عودة",
+    "steps2": "حدد|قارن|اختر|تحقق",
+    "stepNotes2": [
+      "حدد المحادثة والبيئة والهدف.",
+      "قارن المشاريع المتاحة.",
+      "اقترح خيارات أو مشروعًا جديدًا.",
+      "تحقق من الإسناد المصرح به والوصول."
+    ]
   },
   "hi": {
     "name": "हिन्दी",
-    "tagline": "आपके प्रोजेक्ट के लिए अठारह रेसिपी",
+    "tagline": "आपके प्रोजेक्ट के लिए उन्नीस रेसिपी",
     "recipe": "व्यंजन",
     "when": "कब",
     "ingredients": "सामग्री",
@@ -2799,12 +2964,12 @@
     "previous": "पिछला व्यंजन",
     "next": "अगला व्यंजन",
     "ingredientList": "एक विचार|परियोजना का संदर्भ|खुले प्रश्न|सीमाएँ",
-    "summaries": "Cookbook समझें और सही स्किल चुनें।|सही पुरानी चैट, रिपॉजिटरी या फ़ाइल खोजें।|लंबे विराम के बाद प्रोजेक्ट पर लौटें।|लक्ष्य, निर्णय और स्थिति फिर से जानें।|विचार से पहले सत्यापनीय कदम तक।|संदर्भ के अनुसार अधूरा प्रॉम्प्ट पूरा करें।|Plain और Kitchen नाम साथ सुझाएँ।|लक्ष्य की जिम्मेदारी लेकर उसे लागू और सत्यापित परिणाम तक पहुँचाना।|जाँचें कि तरीका लक्ष्य की ओर जा रहा है।|मौजूदा त्रुटि दोहराएँ और लक्षित सुधार की जाँच करें।|चुने हुए प्रवाह का व्यवहार बचाते हुए उसे सरल करें।|बदलाव में ठोस दोष और रिग्रेशन खोजें।|साझा करने से पहले संवेदनशील सामग्री जाँचें।|कानूनी प्रश्न और उपयोग की बाधाएँ सीमित करें।|परियोजना को प्रकाशन के लिए तैयार करें।|प्रमाणित बदलावों से नोट्स लिखें।|काम पूरा करें या हस्तांतरण तैयार करें।|पिछले प्रयासों से सीखें।",
-    "whenList": "शुरुआत करते समय या सही कार्यप्रवाह खोजते समय।|पुराने काम का स्थान या सही संस्करण पता नहीं है।|जब लक्ष्य, फैसले और वर्तमान स्थिति फिर समझनी हो।|विराम के बाद संदर्भ चाहिए।|जब विचार को ठोस शुरुआत चाहिए।|जब स्वतः पूर्ति न हो या विचार अधूरा रह जाए।|जब उत्पाद या स्किल को उपयुक्त नाम चाहिए।|जब आप प्रोजेक्ट का लक्ष्य और उसका क्रियान्वयन सौंपना चाहते हों।|जब आप प्रगति जानना चाहते हैं।|अभी हो रही ठोस त्रुटि; पिछले काम की समीक्षा नहीं।|चुने हुए क्षेत्र की अनावश्यक जटिलता, पूरे रिपॉजिटरी का पुनर्लेखन नहीं।|तकनीकी डिफ समीक्षा, बिना स्वतः सुधार के।|जब फ़ाइलें या रिपॉज़िटरी साझा करनी हो।|प्रकाशन से पहले या किसी खास प्रश्न पर।|दूसरे लोग परियोजना का उपयोग करने से पहले।|जब संस्करण या काम का चरण पूरा हो।|जब चरण पूरा हो या सौंपना हो।|जब विफलताएँ या अधूरी सलाह दोहराई जाएँ।",
+    "summaries": "Cookbook समझें और सही स्किल चुनें।|सही पुरानी चैट, रिपॉजिटरी या फ़ाइल खोजें।|चैट को सही प्रोजेक्ट से जोड़ें।|लंबे विराम के बाद प्रोजेक्ट पर लौटें।|लक्ष्य, निर्णय और स्थिति फिर से जानें।|विचार से पहले सत्यापनीय कदम तक।|संदर्भ के अनुसार अधूरा प्रॉम्प्ट पूरा करें।|Plain और Kitchen नाम साथ सुझाएँ।|लक्ष्य की जिम्मेदारी लेकर उसे लागू और सत्यापित परिणाम तक पहुँचाना।|जाँचें कि तरीका लक्ष्य की ओर जा रहा है।|मौजूदा त्रुटि दोहराएँ और लक्षित सुधार की जाँच करें।|चुने हुए प्रवाह का व्यवहार बचाते हुए उसे सरल करें।|बदलाव में ठोस दोष और रिग्रेशन खोजें।|साझा करने से पहले संवेदनशील सामग्री जाँचें।|कानूनी प्रश्न और उपयोग की बाधाएँ सीमित करें।|परियोजना को प्रकाशन के लिए तैयार करें।|प्रमाणित बदलावों से नोट्स लिखें।|काम पूरा करें या हस्तांतरण तैयार करें।|पिछले प्रयासों से सीखें।",
+    "whenList": "शुरुआत करते समय या सही कार्यप्रवाह खोजते समय।|पुराने काम का स्थान या सही संस्करण पता नहीं है।|जब चैट को प्रोजेक्ट चाहिए।|जब लक्ष्य, फैसले और वर्तमान स्थिति फिर समझनी हो।|विराम के बाद संदर्भ चाहिए।|जब विचार को ठोस शुरुआत चाहिए।|जब स्वतः पूर्ति न हो या विचार अधूरा रह जाए।|जब उत्पाद या स्किल को उपयुक्त नाम चाहिए।|जब आप प्रोजेक्ट का लक्ष्य और उसका क्रियान्वयन सौंपना चाहते हों।|जब आप प्रगति जानना चाहते हैं।|अभी हो रही ठोस त्रुटि; पिछले काम की समीक्षा नहीं।|चुने हुए क्षेत्र की अनावश्यक जटिलता, पूरे रिपॉजिटरी का पुनर्लेखन नहीं।|तकनीकी डिफ समीक्षा, बिना स्वतः सुधार के।|जब फ़ाइलें या रिपॉज़िटरी साझा करनी हो।|प्रकाशन से पहले या किसी खास प्रश्न पर।|दूसरे लोग परियोजना का उपयोग करने से पहले।|जब संस्करण या काम का चरण पूरा हो।|जब चरण पूरा हो या सौंपना हो।|जब विफलताएँ या अधूरी सलाह दोहराई जाएँ।",
     "limitText": "केवल मौजूदा प्रमाण लें। सीमाएँ स्पष्ट रखें; बाहरी कार्यों के लिए अनुमति चाहिए।",
     "languageNote": "कौशल के कमांड स्थापित भाषा में रहते हैं।",
     "footer": "अच्छी तैयारी, बेहतर निर्माण।",
-    "intros": "आपकी जरूरत के अनुसार संग्रह समझाते हैं और उपयुक्त कमांड दिखाते हैं।|स्रोत, मशीन, तारीख और संस्करण की पुष्टि करें; अस्पष्टता बताएँ।|पुराने दावे वर्तमान जाँच नहीं हैं; काम अपने आप शुरू न करें।|दिखने वाला लक्ष्य, पुष्ट निर्णय और अंतिम प्रमाणित स्थिति जानें।|लक्ष्य समझें और छोटा, सत्यापनीय पहला कदम तय करें।|केवल मसौदा; कोई निष्पादन या मूल Tab एकीकरण नहीं।|सुझाव नाम नहीं बदलते और उपलब्धता की गारंटी नहीं देते।|हम आपके आशय को बनाए रखते हैं, उपयुक्त गुणवत्ता मानदंड तय करते हैं और स्वतंत्र रूप से लक्ष्य पूरा करते हैं। फिर ठोस प्रमाणों के आधार पर परिणाम की समीक्षा और सुधार करते हैं।|अनुरोध और मौजूदा प्रमाण के अनुसार तरीका जाँचें।|मूल त्रुटि और संबंधित मामलों को फिर जाँचें। अधूरी जाँच स्पष्ट करें।|मूल व्यवहार और प्रभावित कॉलर फिर जाँचें।|हर निष्कर्ष में ठोस स्थिति, सही स्थान और प्रभाव हो।|संवेदनशील मान दिखाए बिना अधिकृत फ़ाइलें जाँचें।|वास्तविक बाधा और संबंधित स्रोत देखें।|वास्तविक पाठकों के लिए शुरुआत, दस्तावेज़ और पैकेज जाँचें।|तय तुलना का उपयोग करें और बिना कमिट काम अलग रखें।|अनुरोध और परिणाम मिलाएँ और स्पष्ट समापन या हस्तांतरण लिखें।|सुधार या नियम अपने आप लागू न करें।",
+    "intros": "आपकी जरूरत के अनुसार संग्रह समझाते हैं और उपयुक्त कमांड दिखाते हैं।|स्रोत, मशीन, तारीख और संस्करण की पुष्टि करें; अस्पष्टता बताएँ।|चैट के उद्देश्य के अनुसार प्रोजेक्ट चुनें।|पुराने दावे वर्तमान जाँच नहीं हैं; काम अपने आप शुरू न करें।|दिखने वाला लक्ष्य, पुष्ट निर्णय और अंतिम प्रमाणित स्थिति जानें।|लक्ष्य समझें और छोटा, सत्यापनीय पहला कदम तय करें।|केवल मसौदा; कोई निष्पादन या मूल Tab एकीकरण नहीं।|सुझाव नाम नहीं बदलते और उपलब्धता की गारंटी नहीं देते।|हम आपके आशय को बनाए रखते हैं, उपयुक्त गुणवत्ता मानदंड तय करते हैं और स्वतंत्र रूप से लक्ष्य पूरा करते हैं। फिर ठोस प्रमाणों के आधार पर परिणाम की समीक्षा और सुधार करते हैं।|अनुरोध और मौजूदा प्रमाण के अनुसार तरीका जाँचें।|मूल त्रुटि और संबंधित मामलों को फिर जाँचें। अधूरी जाँच स्पष्ट करें।|मूल व्यवहार और प्रभावित कॉलर फिर जाँचें।|हर निष्कर्ष में ठोस स्थिति, सही स्थान और प्रभाव हो।|संवेदनशील मान दिखाए बिना अधिकृत फ़ाइलें जाँचें।|वास्तविक बाधा और संबंधित स्रोत देखें।|वास्तविक पाठकों के लिए शुरुआत, दस्तावेज़ और पैकेज जाँचें।|तय तुलना का उपयोग करें और बिना कमिट काम अलग रखें।|अनुरोध और परिणाम मिलाएँ और स्पष्ट समापन या हस्तांतरण लिखें।|सुधार या नियम अपने आप लागू न करें।",
     "stepNotes": [
       "उपलब्ध जानकारी लें।",
       "मौजूदा नियमों का सम्मान करें।",
@@ -2816,6 +2981,7 @@
     "recipeLimits": [
       "गाइड केवल सुझाव देता है, दूसरे कार्यप्रवाह अपने आप नहीं चलाता।",
       "खोज मात्र से स्थानांतरण, बहाली या काम जारी रखने की अनुमति नहीं मिलती।",
+      "प्रोजेक्ट बनाना और फ़ोल्डर पहुँच परिवेश पर निर्भर है।",
       "पुराने दावे वर्तमान जाँच नहीं हैं; काम अपने आप शुरू न करें।",
       "गायब इतिहास न गढ़ें।",
       "",
@@ -2845,6 +3011,12 @@
         "लगभग तारीख",
         "मशीन या परियोजना",
         "उपलब्ध खोज स्रोत"
+      ],
+      [
+        "चैट",
+        "संदर्भ",
+        "प्रोजेक्ट",
+        "परिवेश"
       ],
       [
         "अंतिम स्थिति",
@@ -2946,6 +3118,7 @@
     "verifications": [
       "आपकी जरूरत के अनुसार संग्रह समझाते हैं और उपयुक्त कमांड दिखाते हैं।",
       "स्रोत, मशीन, तारीख और संस्करण की पुष्टि करें; अस्पष्टता बताएँ।",
+      "सदस्यता और पहुँच जाँचें।",
       "लंबे विराम के बाद प्रोजेक्ट पर लौटें।",
       "गायब इतिहास और अनिश्चितता स्पष्ट हैं।",
       "अगले कदम का दिखने योग्य परिणाम है।",
@@ -2984,46 +3157,6 @@
       "मूल स्रोत से शीर्षक, मशीन, तारीख और संस्करण की पुष्टि करें।",
       "पुष्ट परिणाम का लिंक दें या निर्णायक सवाल पूछें।"
     ],
-    "steps2": "पुरानी स्थिति समझें|वर्तमान स्थिति जाँचें|बदलाव बताएँ|वापसी का बिंदु सुझाएँ",
-    "steps3": "उपलब्ध इतिहास पढ़ें|निर्णय अलग करें|परिणाम जोड़ें|स्थिति संक्षेप में लिखें",
-    "steps4": "लक्ष्य समझें|संदर्भ देखें|प्रश्न स्पष्ट करें|पहला कदम तय करें",
-    "steps5": "अंश पढ़ें|मंशा बनाए रखें|कमी पूरी करें|प्रॉम्प्ट सुझाएँ",
-    "steps6": "संदर्भ समझें|नामों के जोड़े बनाएँ|टकराव जाँचें|चुनाव सुझाएँ",
-    "steps7": "लक्ष्य और सीमाएँ स्पष्ट करें|गुणवत्ता मानदंड तय करें|लागू करें और सत्यापित करें|आलोचनात्मक समीक्षा और सुधार करें",
-    "stepNotes7": [
-      "अनुरोध, मौजूदा स्थिति और अधिकृत कार्य-सीमा समझें।",
-      "देखे जा सकने वाले सफलता मानदंड और जरूरी जाँच तय करें।",
-      "सबसे छोटा पूर्ण समाधान लागू करें और वास्तविक प्रक्रिया जाँचें।",
-      "कमियाँ ठीक करें और परिणाम, प्रमाण तथा खुले मुद्दे सौंपें।"
-    ],
-    "steps8": "लक्ष्य से तुलना करें|प्रमाण देखें|बाधाएँ पहचानें|अगला कदम सुझाएँ",
-    "steps9": "त्रुटि दोहराएँ|प्रवाह समझें|परिकल्पनाएँ जाँचें|सुधार सत्यापित करें",
-    "stepNotes9": [
-      "त्रुटि दोहराएँ",
-      "प्रवाह समझें",
-      "परिकल्पनाएँ जाँचें",
-      "सुधार सत्यापित करें"
-    ],
-    "steps10": "व्यवहार समझें|दोहराव जाँचें|छोटा विकल्प चुनें|व्यवहार सत्यापित करें",
-    "stepNotes10": [
-      "देखा जा सकने वाला व्यवहार और सार्वजनिक अनुबंध दर्ज करें।",
-      "केवल सिद्ध अनावश्यक परत या वास्तविक दोहराव चुनें।",
-      "सबसे छोटी सरलता और उसके जोखिम समझाएँ।",
-      "माँगे गए बदलाव मूल मामलों और कॉलर से सत्यापित करें।"
-    ],
-    "steps11": "बदलाव तय करें|अनुबंध समझें|निष्कर्ष जाँचें|प्रभाव के अनुसार क्रम दें",
-    "stepNotes11": [
-      "आधार, लक्ष्य संस्करण और चुना डिफ तय करें।",
-      "बदला कोड, कॉलर और अपेक्षित व्यवहार साथ पढ़ें।",
-      "हर निष्कर्ष को ठोस मामले और स्रोत स्थान से जाँचें।",
-      "कार्रवाई योग्य निष्कर्ष प्रभाव के अनुसार दें और जाँच की कमी बताएँ।"
-    ],
-    "steps12": "दायरा तय करें|फ़ाइलें और इतिहास जाँचें|संवेदनशील डेटा छिपाएँ|जाँच की सीमा बताएँ",
-    "steps13": "प्रश्न सीमित करें|उपयोग का क्रम देखें|स्रोत और लागू होना जाँचें|खुले प्रश्न लिखें",
-    "steps14": "पाठक पहचानें|शुरुआत और पैकेज जाँचें|निष्कर्षों की प्राथमिकता तय करें|स्वीकृत सुधार जाँचें",
-    "steps15": "तुलना स्पष्ट करें|वास्तविक अंतर पढ़ें|उपयोगकर्ता पर असर बताएँ|अपुष्ट बातें चिह्नित करें",
-    "steps16": "अनुरोध जाँचें|मौजूदा प्रमाण लें|खुले बिंदु लिखें|समापन या हस्तांतरण लिखें",
-    "steps17": "दायरा तय करें|कारण खोजें|सलाह की तुलना करें|रोकथाम सुझाएँ",
     "chapter": "अध्याय",
     "chapterTitles": {
       "orientation": "दिशा और वापसी",
@@ -3033,6 +3166,53 @@
       "release": "प्रकाशन",
       "closing": "समापन और पुनरावलोकन"
     },
-    "copyInvocation": "स्किल कमांड कॉपी करें"
+    "copyInvocation": "स्किल कमांड कॉपी करें",
+    "steps18": "दायरा तय करें|कारण खोजें|सलाह की तुलना करें|रोकथाम सुझाएँ",
+    "steps17": "अनुरोध जाँचें|मौजूदा प्रमाण लें|खुले बिंदु लिखें|समापन या हस्तांतरण लिखें",
+    "steps16": "तुलना स्पष्ट करें|वास्तविक अंतर पढ़ें|उपयोगकर्ता पर असर बताएँ|अपुष्ट बातें चिह्नित करें",
+    "steps15": "पाठक पहचानें|शुरुआत और पैकेज जाँचें|निष्कर्षों की प्राथमिकता तय करें|स्वीकृत सुधार जाँचें",
+    "steps14": "प्रश्न सीमित करें|उपयोग का क्रम देखें|स्रोत और लागू होना जाँचें|खुले प्रश्न लिखें",
+    "steps13": "दायरा तय करें|फ़ाइलें और इतिहास जाँचें|संवेदनशील डेटा छिपाएँ|जाँच की सीमा बताएँ",
+    "steps12": "बदलाव तय करें|अनुबंध समझें|निष्कर्ष जाँचें|प्रभाव के अनुसार क्रम दें",
+    "stepNotes12": [
+      "आधार, लक्ष्य संस्करण और चुना डिफ तय करें।",
+      "बदला कोड, कॉलर और अपेक्षित व्यवहार साथ पढ़ें।",
+      "हर निष्कर्ष को ठोस मामले और स्रोत स्थान से जाँचें।",
+      "कार्रवाई योग्य निष्कर्ष प्रभाव के अनुसार दें और जाँच की कमी बताएँ।"
+    ],
+    "steps11": "व्यवहार समझें|दोहराव जाँचें|छोटा विकल्प चुनें|व्यवहार सत्यापित करें",
+    "stepNotes11": [
+      "देखा जा सकने वाला व्यवहार और सार्वजनिक अनुबंध दर्ज करें।",
+      "केवल सिद्ध अनावश्यक परत या वास्तविक दोहराव चुनें।",
+      "सबसे छोटी सरलता और उसके जोखिम समझाएँ।",
+      "माँगे गए बदलाव मूल मामलों और कॉलर से सत्यापित करें।"
+    ],
+    "steps10": "त्रुटि दोहराएँ|प्रवाह समझें|परिकल्पनाएँ जाँचें|सुधार सत्यापित करें",
+    "stepNotes10": [
+      "त्रुटि दोहराएँ",
+      "प्रवाह समझें",
+      "परिकल्पनाएँ जाँचें",
+      "सुधार सत्यापित करें"
+    ],
+    "steps9": "लक्ष्य से तुलना करें|प्रमाण देखें|बाधाएँ पहचानें|अगला कदम सुझाएँ",
+    "steps8": "लक्ष्य और सीमाएँ स्पष्ट करें|गुणवत्ता मानदंड तय करें|लागू करें और सत्यापित करें|आलोचनात्मक समीक्षा और सुधार करें",
+    "stepNotes8": [
+      "अनुरोध, मौजूदा स्थिति और अधिकृत कार्य-सीमा समझें।",
+      "देखे जा सकने वाले सफलता मानदंड और जरूरी जाँच तय करें।",
+      "सबसे छोटा पूर्ण समाधान लागू करें और वास्तविक प्रक्रिया जाँचें।",
+      "कमियाँ ठीक करें और परिणाम, प्रमाण तथा खुले मुद्दे सौंपें।"
+    ],
+    "steps7": "संदर्भ समझें|नामों के जोड़े बनाएँ|टकराव जाँचें|चुनाव सुझाएँ",
+    "steps6": "अंश पढ़ें|मंशा बनाए रखें|कमी पूरी करें|प्रॉम्प्ट सुझाएँ",
+    "steps5": "लक्ष्य समझें|संदर्भ देखें|प्रश्न स्पष्ट करें|पहला कदम तय करें",
+    "steps4": "उपलब्ध इतिहास पढ़ें|निर्णय अलग करें|परिणाम जोड़ें|स्थिति संक्षेप में लिखें",
+    "steps3": "पुरानी स्थिति समझें|वर्तमान स्थिति जाँचें|बदलाव बताएँ|वापसी का बिंदु सुझाएँ",
+    "steps2": "पहचानें|तुलना करें|चुनें|जाँचें",
+    "stepNotes2": [
+      "चैट, परिवेश और लक्ष्य पहचानें।",
+      "उपलब्ध प्रोजेक्ट की तुलना करें।",
+      "विकल्प या नया प्रोजेक्ट सुझाएँ।",
+      "अधिकृत जुड़ाव और पहुँच जाँचें।"
+    ]
   }
 }

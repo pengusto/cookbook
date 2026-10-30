@@ -13,6 +13,7 @@ verwenden Codex-Syntax; für Claude Code gilt die Syntax im Absatz oben.
 |---|---|---|---|
 | Which workflow fits? / Welcher Ablauf passt? | Explain the Cookbook | Show Me the Kitchen | One recommendation / Eine Empfehlung |
 | Where did we start? / Wo hatten wir angefangen? | Find Our Work | Find the Recipe | Verified source match / Bestätigte Originalquelle |
+| Where does this chat belong? / Wohin gehört dieser Chat? | Where Does This Chat Belong? | Find the Kitchen | Project recommendation or requested assignment / Projektempfehlung oder beauftragte Zuordnung |
 | I have been away. / Ich war länger weg. | Catch Me Up | Back to the Kitchen | Project reentry checked against today / Wiedereinstieg mit aktuellem Abgleich |
 | What did I originally ask? / Was wollte ich ursprünglich? | Where Were We? | What Was I Cooking? | This chat’s goal and decisions / Ziel und Entscheidungen dieses Chats |
 | Where do I start? / Wie fange ich an? | How Do I Start? | Prep the Kitchen | Small next step / Kleiner nächster Schritt |
@@ -61,6 +62,7 @@ Ablauf nachgeprüft.
 $taste-before-serving Review the selected settings diff for regressions; report findings without edits.
 $trim-the-recipe Simplify this export path while preserving its public format and errors.
 $find-the-recipe Find the earlier scanner-comparison chat or handoff; do not move anything.
+$find-the-kitchen Ordne diesen Chat dem passenden Projekt zu.
 $prep-the-kitchen explain how a saved draft reaches the database
 $prep-the-kitchen choose whether this project needs another state library
 $ready-to-serve verify-live Compare the intended release with the package users actually receive.

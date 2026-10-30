@@ -77,6 +77,13 @@ exact remaining step instead of calling the work ready on another computer.
 
 Compare the outcome with the finish line and run checks relevant to the selected slice. Distinguish local files, commits, pushes and deployments; attempted checks and confirmed results; complete, deferred and blocked work. State important coverage limits.
 
-Default to three short points: complete with evidence, remaining work, and a re-entry action only if pausing unfinished work. A fully completed small request needs no handoff document or new task. Include paths, refs or active job identifiers only when useful for resuming. Do not add fresh improvement ideas after reaching the stopping point.
+Lead the closing guide and final handoff with a plain recommendation: ready to close, finish the specified remaining work first, or pause intentionally with the objective still open. Make the decision and its reason easy to scan. In the user's language, use concise labeled lines or bullets as relevant:
+
+- ✅ Done: agreed work that is actually complete, with brief verification evidence.
+- 🔴 Still needed or blocked: unfinished commitments, failed checks or the specific decision or action required; do not label optional work as required.
+- 🟡 Optional or deferred: useful but nonessential work or an explicitly postponed item; distinguish these from each other when it matters.
+- ➡️ Next step: the smallest concrete action, especially for a pause or blocker.
+
+Omit empty categories and avoid inventing optional improvements. A task is ready to close only if the agreed outcome and applicable checks are complete; if evidence is missing, say so. Preserve the distinction between a closed task and a safe stopping point for an unfinished task. Include paths, refs or active job identifiers only when useful for resuming. Do not add fresh improvement ideas after reaching the stopping point.
 
 Preparing to close is not a request to archive or end a voice call. Use a supported host action only when the user explicitly requests that action. If unavailable, explain the manual step without claiming it happened. Never mark an unfinished objective complete to make the chat look closed.

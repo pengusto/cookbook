@@ -2967,5 +2967,148 @@
       ]
     },
     "cutout_method": "Separated generated sprites cropped by grid region, aspect ratio preserved and centered with padding on transparent square canvases. Original generation preserved outside runtime package."
+  },
+  {
+    "id": "find-chat-project",
+    "file": "find-chat-project.webp",
+    "dish": "tomato and basil focaccia",
+    "ingredients": [
+      "tomato",
+      "basil",
+      "flour",
+      "olive oil"
+    ],
+    "generator": "built-in image_gen",
+    "generated": "2026-10-30",
+    "source_sha256": "aca45a62bdb36b0200882d280b99996cdebfe6d181d087babcb6f9a7425b1085",
+    "sha256": "40d80c703bde1ff39371e38356f699899046eedae96fa83d5da565b93a494cb9",
+    "prompt": "Transparent watercolor cookbook sprite: tomato basil focaccia on the left; tomato, basil, flour and olive oil in a separated 2x2 grid on the right; no text.",
+    "dishNames": {
+      "de": "Tomaten-Basilikum-Focaccia",
+      "en": "Tomato and basil focaccia"
+    },
+    "ingredientNames": {
+      "de": [
+        "Tomate",
+        "Basilikum",
+        "Mehl",
+        "Olivenöl"
+      ],
+      "en": [
+        "tomato",
+        "basil",
+        "flour",
+        "olive oil"
+      ]
+    },
+    "regions": {
+      "dish": [
+        0,
+        110,
+        945,
+        790
+      ],
+      "ingredients": [
+        [
+          980,
+          65,
+          1350,
+          430
+        ],
+        [
+          1360,
+          60,
+          1755,
+          425
+        ],
+        [
+          950,
+          480,
+          1400,
+          850
+        ],
+        [
+          1410,
+          420,
+          1740,
+          865
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/find-chat-project-dish.webp",
+        "sha256": "1b9abe288681c82ead71cbf2d1a2ac44641cb38c7c6db425e4f0fa78971413d8",
+        "size": [
+          384,
+          384
+        ],
+        "source_bounds": [
+          0,
+          110,
+          945,
+          790
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/find-chat-project-ingredient-0.webp",
+          "sha256": "c62ddfef71bf29e0db2059df08ed235fe2b6bde71ca7877864d5047cc1abc54e",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            980,
+            65,
+            1350,
+            430
+          ]
+        },
+        {
+          "file": "cutouts/find-chat-project-ingredient-1.webp",
+          "sha256": "1fbdcad8346acf0b934dc168a759a293bc8923a05c6a4e5c5de273d25a4ef2bc",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1360,
+            60,
+            1755,
+            425
+          ]
+        },
+        {
+          "file": "cutouts/find-chat-project-ingredient-2.webp",
+          "sha256": "f4446427025929fb4951a99e28bf969b7f3d84681222b0e6455e35c36c382076",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            950,
+            480,
+            1400,
+            850
+          ]
+        },
+        {
+          "file": "cutouts/find-chat-project-ingredient-3.webp",
+          "sha256": "fb0cdbfebf0c14c53be10f3eca092f5f1c76dbcef64c867608a120c4165ad072",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1410,
+            420,
+            1740,
+            865
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Generated sprites cropped by grid region, aspect ratio preserved and centered with padding on transparent square canvases."
   }
 ]

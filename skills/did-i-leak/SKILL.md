@@ -25,7 +25,7 @@ python3 scripts/did_i_leak.py --repo /path/to/target-repo --full
 
 If the user asks for a full scan, says to ignore the cache, requests a clean audit, or asks to rescan everything, pass `--full`. When the user intends to make the repository public, open-source it, launch it, publish or release it publicly, or promote it publicly, recommend or automatically select `--full`.
 
-The output is a concise `GO`, `GO WITH REVIEW`, or `NO-GO`. Use `--json` only when structured metadata is needed. Never print raw scanner output or secret values.
+Lead the response in the user's language with the actual `GO`, `GO WITH REVIEW`, or `NO-GO` result and a plain explanation. Follow with 🔴 concrete blockers, 🟡 items needing review, 🔍 what was actually scanned including history, cache/full mode, available and missing scanners, and ➡️ the most useful next action. Include only applicable categories; do not turn unavailable coverage into a clean result. Describe findings without secret values and do not imply a clean scan proves safety. Use `--json` only when structured metadata is needed. Never print raw scanner output or secret values.
 
 ## Workflow
 

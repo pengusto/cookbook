@@ -1,0 +1,4 @@
+interface:
+  display_name: "{{TITLE}}"
+  short_description: "Find a suitable project for a chat"
+  default_prompt: "Use ${{ID}} to find the right project for this chat and assign it if clear."

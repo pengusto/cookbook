@@ -35,7 +35,7 @@ A reported Tab skip alone does not establish that submission is impossible or pr
 
 ## Plate the findings
 
-Give a concise scope statement and a reviewable table with:
+Lead in the user's language with a concise scope and an evidence-backed assessment: 🔴 confirmed launch blocker, 🟡 review or required evidence remains, or ✅ the named areas were checked with stated limits. Describe the assessment in words; never treat a checked area as a blanket legal or safety clearance. Show only relevant categories: 🔴 confirmed findings, 🟡 missing evidence or unresolved applicability, ✅ areas actually checked with their coverage, and ➡️ the smallest useful next action. Keep optional improvements distinct from requirements. Follow with a reviewable table where detail is needed:
 
 - Priority: launch blocker, should fix, or optional improvement. Explain the impact rather than inventing fines or assigning lawsuit probabilities.
 - Finding and applicability: observed mismatch, relevant market, and requirement or good practice.

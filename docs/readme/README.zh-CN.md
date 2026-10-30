@@ -16,11 +16,11 @@
 
 **为编程对话的下一步选一道配方。**
 
-Cookbook 为使用 Codex 或 Claude Code 的开发者提供 18 个专注的工作流：规划项目、检查进展、在休息后找回上下文、分享前审查，以及整理有用的交接。按需选择配方，由宿主和模型执行工作。
+Cookbook 为使用 Codex 或 Claude Code 的开发者提供 19 个专注的工作流：规划项目、检查进展、在休息后找回上下文、分享前审查，以及整理有用的交接。按需选择配方，由宿主和模型执行工作。
 
 选择**直白问题**或**厨房名称**。两种风格由同一份维护中的指令生成；每个宿主安装一种命名风格。
 
-**实验性公开 Beta · 0.7.0.** [浏览配方](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**实验性公开 Beta · 0.7.2.** [浏览配方](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## 快速开始：选择一种命名风格
 
@@ -58,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 28 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 38 individual ZIPs + `SHA256SUMS`.
 
 ## 构建与验证
 
@@ -76,6 +76,7 @@ python3 scripts/launch_check.py
 |---|---|
 | Explain the Cookbook | Show Me the Kitchen |
 | Find Our Work | Find the Recipe |
+| Where Does This Chat Belong? | Find the Kitchen |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
 | How Do I Start? | Prep the Kitchen |

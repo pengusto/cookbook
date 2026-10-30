@@ -129,7 +129,7 @@ class SchemaContracts(unittest.TestCase):
                 self.assertEqual(data['mainEntity'], {
                     '@type': 'ItemList', 'numberOfItems': len(rows), 'itemListElement': expected})
                 chapters = list(dict.fromkeys(row['chapter'] for row in rows))
-                self.assertEqual(len(rows), 18)
+                self.assertEqual(len(rows), 19)
                 self.assertEqual(len(chapters), 6)
                 self.assertEqual(data['hasPart'], [
                     {'@type': 'CreativeWork', 'identifier': chapter,
@@ -166,7 +166,7 @@ for(language of Object.keys(locales))for(naming of ['plain','kitchen']){
  value=updateBookSchema(JSON.parse(JSON.stringify(value)));
  assert.equal(value.inLanguage,language);
  assert.equal(value.hasPart.length,6);
- assert.equal(value.mainEntity.numberOfItems,18);
+ assert.equal(value.mainEntity.numberOfItems,recipes.length);
  const flattened=[];
  for(const chapter of value.hasPart){
   assert.equal(chapter.name,locales[language].chapterTitles[chapter.identifier]);

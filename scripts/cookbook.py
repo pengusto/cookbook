@@ -321,8 +321,8 @@ def sidebar_files(variant='plain'):
             raise ValueError(f'Incomplete recipe details: {locale}')
         if any(len(values['steps'+str(i)].split('|')) != 4 for i in range(recipe_count)):
             raise ValueError(f'Incomplete preparation steps: {locale}')
-    accents = ['#795132', '#8a523d', '#8b522d', '#465e70', '#843327', '#326b70', '#69712c', '#936231', '#52623e', '#84602e', '#6e713b', '#58716a', '#6d405d', '#78602e', '#3f6963', '#9b4f30', '#3f536a', '#774551']
-    dark_accents = ['#ddc19b', '#e7b49d', '#e1b88d', '#a9c8dc', '#e3a384', '#96d5da', '#cbd58e', '#e9c08a', '#b9cd92', '#e9c481', '#d0d59b', '#aacfc3', '#d5add0', '#e6ca87', '#9fd1c6', '#ecb08b', '#b5c9e1', '#e5a5b8']
+    accents = ['#795132', '#8a523d', '#8b522d', '#465e70', '#843327', '#326b70', '#69712c', '#936231', '#52623e', '#84602e', '#6e713b', '#58716a', '#6d405d', '#78602e', '#3f6963', '#9b4f30', '#3f536a', '#774551', '#72523d']
+    dark_accents = ['#ddc19b', '#e7b49d', '#e1b88d', '#a9c8dc', '#e3a384', '#96d5da', '#cbd58e', '#e9c08a', '#b9cd92', '#e9c481', '#d0d59b', '#aacfc3', '#d5add0', '#e6ca87', '#9fd1c6', '#ecb08b', '#b5c9e1', '#e5a5b8', '#e6bfa6']
     utensil_icons = recipe_icons()
     food = food_art()
     recipes = [{'icon': utensil_icons[row['id']]['id'], 'id': row['install_ids'][variant], 'sourceId': row['id'], 'title': row['title'] if variant == 'plain' else row['cooking_title'],
