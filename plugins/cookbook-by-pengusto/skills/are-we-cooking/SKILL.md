@@ -22,7 +22,7 @@ Choose one proportionate next check only when a specific uncertainty remains. Do
 
 ## Response
 
-Lead with a supported verdict: **Cooking**, **Stalled**, **Side quest**, or **Unclear**. Follow with the goal, evidence of progress or drift, the main obstacle, and the next useful decision. Do not repeat the full chat chronology. Keep this to a few short paragraphs or bullets; say what to stop or defer only when there is actual waste. If work is on track, say so without inventing changes.
+Lead with the supported verdict in the user's language: 🟢 on track (Cooking), 🔴 stalled (Stalled), 🟡 detour (Side quest), or 🟡 unclear (Unclear). Distinguish an actual detour from insufficient evidence. In a few short lines give 🎯 the agreed goal, ✅ concrete progress or learning when evidenced, 🔴 the actual blocker or 🟡 uncertainty when relevant, and ➡️ the smallest useful next step with its expected result. Mention what to stop or defer only when there is actual waste. If work is on track, say so without inventing changes. Omit empty categories and never use color as the only explanation.
 
 This invocation is a diagnostic checkpoint, not permission to start new implementation, deploy, mutate other tasks or create automation. When embedded in an already authorized task, report the checkpoint and continue work within that scope; do not introduce a new approval gate.
 

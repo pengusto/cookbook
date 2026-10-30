@@ -26,7 +26,7 @@ Group by user outcome, not by every tool call. Give each item a status based on 
 - ⬜ Open: agreed work has not started.
 - ⛔ Blocked: name the concrete missing input, permission, or dependency.
 - ❔ Unverified: completion was claimed but supporting evidence is missing.
-- ➖ Dropped or replaced: a later user decision removed the requirement.
+- ➖ Dropped or replaced: a later user decision removed a previously agreed requirement. A feature excluded from the outset is a scope constraint, not a dropped commitment.
 
 Mark a side quest with 🌀 alongside its status; a detour may itself be done or open. Explain whether the user requested it. Suggestions alone are not commitments.
 
@@ -36,13 +36,10 @@ Separate local implementation, checks, commit/push, deployment, and live verific
 
 Default to a short recap: original goal, current state, meaningful open work. Expand the chronology only when requested or needed to explain a disputed scope change.
 
-Lead with two short statements: **Originally:** the initial outcome; **Now:** the current activity and any agreed scope change.
+Lead with two short statements in the user's language: 🎯 **Originally:** the initial outcome; 📍 **Now:** the current activity and any agreed scope change. If the beginning is unavailable, label the initial outcome provisional.
 
-For several work items, use a compact table:
+Summarize actual outcomes as concise status lines for a small task, or a compact Item / Status / Evidence or remaining work table for several items. Use the evidence-based statuses above, include only those that apply, and identify proposed ideas separately from agreed work. Make a material change of goal or an unrequested detour explicit.
 
-| Item | Status | Evidence / what remains |
-|---|---|---|
-
-For a small task, a short list is enough. Include only statuses that apply. Finish with the most useful next step and any concrete blocker. If everything requested is complete, say so without inventing follow-up work.
+End with ➡️ the most useful next step and a concrete blocker if one exists. If everything requested is complete, say so without inventing follow-up work. Icons support the words, rather than replacing them.
 
 This invocation produces a recap. Do not edit files, mark external tasks complete, resume implementation, or create automations unless the user also asks for those actions. Do not turn the recap into a full repository audit.

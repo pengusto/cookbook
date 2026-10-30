@@ -86,6 +86,6 @@ Default to compact Markdown:
 - <impact and required action>
 ```
 
-Omit empty sections. For very small releases, use an ungrouped list. Write concise, factual bullet points in past tense for the repository's audience. Mention technical details only when they clarify impact. Distinguish verified facts from suggestions and unverified checks.
+Match the intended audience and language, using the project's established release-note format when present. Make the user-visible outcome immediately clear in each concise bullet; use New, Improved, Fixed and Breaking Changes only where they fit, omitting empty sections. For very small releases, use an ungrouped list. Keep the notes ready to copy and avoid decorative status icons in the release text. Put a requested comparison range or relevant verification limitation briefly outside the notes. Write factual bullet points in past tense. Mention technical details only when they clarify impact. Distinguish verified facts from suggestions and unverified checks.
 
 Return the notes in the response unless the user asks to write them to a file.
