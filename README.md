@@ -1,6 +1,6 @@
 # Cookbook by Pengusto — plain
 
-Generated installation branch for version 0.7.2. Source and issues: https://github.com/pengusto/cookbook
+Generated installation branch for version 0.7.3. Source and issues: https://github.com/pengusto/cookbook
 
 ```sh
 codex plugin marketplace add pengusto/cookbook --ref plain
