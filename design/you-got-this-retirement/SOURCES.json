@@ -1,0 +1,12 @@
+{
+  "origin": "pengusto/you-got-this local uncommitted portfolio handoff, reviewed 2026-10-31",
+  "generator": "built-in image_gen",
+  "reference": "Maintainer-provided profile image, penguin identity reference only.",
+  "rights": "AI-generated visual metaphor; not a product screenshot or evidence of measured workflow results. No claim of exclusive rights to the reference or trademark clearance. Original MIT attribution retained in skills/you-got-this/LICENSE; asset reservations remain applicable.",
+  "files": {
+    "banner-paper-v2.png": "5a55ddfcb53214dfdcbed274d3344ee7d038d9e566aefc11da0889a3ead4784e",
+    "banner-paper-v2-dark.png": "399695dd617ad167332908b76a2ed7cef6c6c86b591ccbec344d0e64c9016dc1",
+    "banner-paper-v2.prompt.txt": "d4d564a8d1adde780b531449b7a6784d2aa253729840fab85d7e43e20b4bc5c3",
+    "banner-paper-v2-dark.prompt.txt": "3ecd9b38b791ab0fd1a612bc28b422fea1dad70664e9083e1082bb01605ce6c0"
+  }
+}

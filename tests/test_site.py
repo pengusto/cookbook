@@ -14,16 +14,19 @@ class Links(html.parser.HTMLParser):
         super().__init__()
         self.links, self.ids, self.head_links = [], set(), []
         self.in_head = False
+        self.images = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == 'img':
+            self.images.append(attrs)
         if tag == 'head':
             self.in_head = True
         if tag == 'link' and self.in_head:
             self.head_links.append(attrs)
         if 'id' in attrs:
             self.ids.add(attrs['id'])
-        for key in ('href', 'src'):
+        for key in ('href', 'src', 'srcset'):
             if key in attrs:
                 self.links.append(attrs[key])
 
@@ -243,7 +246,12 @@ class PublicBetaContracts(unittest.TestCase):
         for page in pages:
             text = page.read_text()
             self.assertEqual(re.findall(r'```sh\n(.*?)```', text, re.S), expected_commands, page.name)
-            for target in re.findall(r'\]\(([^)]+)\)', text):
+            markup = Links()
+            markup.feed(text)
+            self.assertTrue(markup.images, page.name)
+            self.assertTrue(all(image.get('alt') for image in markup.images), page.name)
+            targets = re.findall(r'\]\(([^)]+)\)', text) + markup.links
+            for target in targets:
                 url = urlsplit(target)
                 if url.scheme:
                     continue
@@ -251,3 +259,19 @@ class PublicBetaContracts(unittest.TestCase):
             for row in json.loads((ROOT / 'catalog.json').read_text()):
                 self.assertIn(row['title'], text)
                 self.assertIn(row['cooking_title'], text)
+
+
+class RetirementLinkContracts(unittest.TestCase):
+    def test_workflow_provenance_points_to_maintained_repository(self):
+        row = next(row for row in json.loads((ROOT / 'catalog.json').read_text())
+                   if row['id'] == 'you-got-this')
+        self.assertEqual(row['repository'], 'https://github.com/pengusto/cookbook')
+        self.assertIn('Copyright (c) 2026 Enis Uysal',
+                      (ROOT / 'skills/you-got-this/LICENSE').read_text())
+
+    def test_preserved_design_assets_match_recorded_hashes(self):
+        import hashlib
+        design = ROOT / 'design/you-got-this-retirement'
+        record = json.loads((design / 'SOURCES.json').read_text())
+        for name, expected in record['files'].items():
+            self.assertEqual(hashlib.sha256((design / name).read_bytes()).hexdigest(), expected)
