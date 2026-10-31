@@ -271,7 +271,7 @@
     "prompt": "${{ID}} Mach dieses Kochbuch insgesamt stimmig und vorzeigbar. Behalte die Kochbuchästhetik; veröffentliche nichts.",
     "status": "source",
     "license": "MIT",
-    "repository": "https://github.com/pengusto/you-got-this",
+    "repository": "https://github.com/pengusto/cookbook",
     "revision": "d8ce9d530d74852ead13fac2f6994714808caff5",
     "files": {
       "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
