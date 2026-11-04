@@ -17,10 +17,13 @@ verwenden Codex-Syntax; für Claude Code gilt die Syntax im Absatz oben.
 | What needs attention? / Was ist zu tun? | Sort and Triage | Sort the Ingredients | Scoped triage and requested organization / Einordnung und beauftragte Sortierung |
 | I have been away. / Ich war länger weg. | Catch Me Up | Back to the Kitchen | Project reentry checked against today / Wiedereinstieg mit aktuellem Abgleich |
 | What did I originally ask? / Was wollte ich ursprünglich? | Where Were We? | What Was I Cooking? | This chat’s goal and decisions / Ziel und Entscheidungen dieses Chats |
+| This chat is tangled. / Dieser Chat ist unübersichtlich. | Untangle This Chat | Split the Menu | Overview and selected chat handoffs / Überblick und ausgewählte Chat-Übergaben |
+| Make replies easier to focus on. / Antworten übersichtlicher machen. | Help Me Focus | One Dish at a Time | Adapted communication / Angepasste Kommunikation |
 | Where do I start? / Wie fange ich an? | How Do I Start? | Prep the Kitchen | Small next step / Kleiner nächster Schritt |
 | Finish my request. / Formuliere meinen Auftrag fertig. | Finish My Prompt | Finish My Order | Draft only / Nur Prompt-Entwurf |
 | What should I call it? / Wie soll es heißen? | Which Name Wins? | Name That Dish | Ranked name options / Namensvorschläge |
 | Does this journey work? / Funktioniert dieser Nutzerablauf? | You Got This `usertest` | You’re the Chef `usertest` | Observed journey findings / Befunde aus tatsächlichen Aktionen |
+| How much work is left? / Wie viel Arbeit steht noch an? | You Got This `plan` | You’re the Chef `plan` | Scoped work plan / Eingegrenzter Arbeitsplan |
 | Build this for me. / Setze das um. | You Got This | You’re the Chef | Verified implementation / Geprüfte Umsetzung |
 | Are we getting anywhere? / Kommen wir voran? | Am I Making Progress? | Are We Cooking? | Course check / Kursprüfung |
 | This fails now. / Das schlägt gerade fehl. | Why Is It Broken? | Find the Bad Ingredient | Reproduction, cause, requested fix / Reproduktion, Ursache, beauftragter Fix |

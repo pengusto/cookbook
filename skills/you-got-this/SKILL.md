@@ -6,8 +6,9 @@ description: >-
   details, establish an observable quality bar, implement, test, critique, and
   review the integrated result. Use for requests such as "${{ID}} make
   this prototype really good", finishing a project for public demonstration,
-  substantial builds, polish passes, game work, focused audits, or usertest
-  requests to exercise a real user journey and report findings.
+  substantial builds, stepwise execution and workload planning, polish passes,
+  game work, focused audits, or usertest requests to exercise a real user
+  journey and report findings.
 ---
 
 # {{TITLE}}
@@ -18,12 +19,14 @@ The user supplies intent. Determine the rest and act.
 
 - `${{ID}} <goal>`: execute the scoped goal autonomously.
 - `${{ID}} gauntlet <goal>`: use the aggressive quality loop below.
+- `${{ID}} plan <goal>`: assess the work and discuss a practical scope without
+  starting implementation unless the user also requests it.
 - `${{ID}} audit` or `${{ID}} audit <area>`: inspect and report;
   do not implement major new functionality unless the request also clearly
   asks for fixes.
 - `${{ID}} usertest <flow>`: exercise a concrete user journey and report
   observed behavior; implement fixes only when separately requested.
-- Treat `gauntlet`, `audit` and `usertest` as mode words only when they are the first
+- Treat `gauntlet`, `plan`, `audit` and `usertest` as mode words only when they are the first
   argument. Otherwise treat the whole message as the goal.
 
 ## Start with evidence
@@ -87,7 +90,40 @@ assets into the real product and judge the in-product result. Asset work never
 replaces playable or usable product work. Note unavailable tools rather than
 pretending their output was verified.
 
+## Work in useful steps
+
+For a substantial goal, distinguish the agreed outcome from optional ideas. Map
+the major work remaining, relevant dependencies, the next useful slice, and any
+material uncertainty. Gauge scope from evidence; if time, cost, or effort cannot
+be estimated credibly, say so rather than inventing a number. Use an existing
+project plan or task list when useful instead of creating a parallel system.
+
+Keep working through authorized, unblocked slices. After a meaningful work
+block, briefly report progress, remaining work, and any concrete decision or
+blocker; continue without waiting for confirmation when the agreed direction is
+clear. When the user asks to discuss how much to do, compare a small useful
+scope with a broader readiness scope, explain the trade-offs, recommend one, and
+invite a choice. Continue work independent of that choice while waiting. A
+budget, selected limit, or pause is not evidence that the goal is complete.
+
+Identify improvements needed for the user's stated finish line and propose
+additional ideas separately, with a reason and next step. Do not present an
+unrequested optional enhancement as agreed work or add it silently. When the
+requested result is complete, stop rather than inventing an endless backlog.
+
 ## Modes
+
+### Plan
+
+For `${{ID}} plan <goal>`, inspect the relevant project and its current state,
+then give an evidence-based view of what remains: completed work, the next
+steps in dependency order, material unknowns, and reasonable alternatives for
+how far to go. Describe work and likely scope qualitatively unless a reliable
+estimate is available. Separate the user's existing commitments from new
+suggestions. Recommend a practical starting scope and ask only for the choice
+that materially changes direction or scope. A planning-only request does not
+authorize implementation, task creation, publication or external side effects.
+If the user also requests implementation, proceed within that authorization.
 
 ### User test
 

@@ -16,11 +16,11 @@ Projet : **Cookbook by Pengusto** · Dépôt GitHub : [`pengusto/cookbook`](http
 
 **Une recette pour la prochaine étape de votre conversation de code.**
 
-Cookbook propose aux développeurs utilisant Codex ou Claude Code 20 processus ciblés : planifier un projet, vérifier les progrès, reprendre après une pause, vérifier avant de partager et préparer une transmission utile. Choisissez une recette au besoin ; votre environnement et votre modèle effectuent le travail.
+Cookbook propose aux développeurs utilisant Codex ou Claude Code 22 processus ciblés : planifier un projet, vérifier les progrès, reprendre après une pause, vérifier avant de partager et préparer une transmission utile. Choisissez une recette au besoin ; votre environnement et votre modèle effectuent le travail.
 
 Choisissez les **questions simples** ou les **noms de cuisine**. Les deux styles proviennent des mêmes instructions maintenues ; installez un seul style par environnement.
 
-**Bêta publique expérimentale · 0.7.3.** [Parcourir les recettes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Bêta publique expérimentale · 0.7.4.** [Parcourir les recettes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Démarrage rapide : choisir un style
 
@@ -58,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 40 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 44 individual ZIPs + `SHA256SUMS`.
 
 ## Construire et vérifier
 
@@ -80,6 +80,8 @@ python3 scripts/launch_check.py
 | Sort and Triage | Sort the Ingredients |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
+| Untangle This Chat | Split the Menu |
+| Help Me Focus | One Dish at a Time |
 | How Do I Start? | Prep the Kitchen |
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |

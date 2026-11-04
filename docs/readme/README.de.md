@@ -16,11 +16,11 @@ Projekt: **Cookbook by Pengusto** · GitHub-Repository: [`pengusto/cookbook`](ht
 
 **Ein Rezept für den nächsten Schritt im Coding-Chat.**
 
-Cookbook bietet Entwicklerinnen und Entwicklern mit Codex oder Claude Code 20 gezielte Workflows: Projekte planen, Fortschritt prüfen, nach einer Pause wieder einsteigen, vor dem Teilen prüfen und mit einer brauchbaren Übergabe abschließen. Wähle bei Bedarf ein Rezept; Host und Modell führen die Arbeit aus.
+Cookbook bietet Entwicklerinnen und Entwicklern mit Codex oder Claude Code 22 gezielte Workflows: Projekte planen, Fortschritt prüfen, nach einer Pause wieder einsteigen, vor dem Teilen prüfen und mit einer brauchbaren Übergabe abschließen. Wähle bei Bedarf ein Rezept; Host und Modell führen die Arbeit aus.
 
 Wähle **einfache Fragen** oder **Koch-Namen**. Beide entstehen aus denselben gepflegten Anleitungen; installiere pro Host eine Namenswelt.
 
-**Experimentelle öffentliche Beta · 0.7.3.** [Rezepte ansehen](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Experimentelle öffentliche Beta · 0.7.4.** [Rezepte ansehen](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Schnellstart: eine Namenswelt wählen
 
@@ -58,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 40 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 44 individual ZIPs + `SHA256SUMS`.
 
 ## Bauen und prüfen
 
@@ -80,6 +80,8 @@ python3 scripts/launch_check.py
 | Sort and Triage | Sort the Ingredients |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
+| Untangle This Chat | Split the Menu |
+| Help Me Focus | One Dish at a Time |
 | How Do I Start? | Prep the Kitchen |
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
@@ -99,7 +101,7 @@ Weitere Modi: `$prep-the-kitchen explain <Ablauf>` erklärt vorhandenen Code; `$
 
 Nach Situation wählen: [Auswahlhilfe](../choosing-workflow.md). Für einen aktuellen Fehler nutze `$find-the-bad-ingredient` (Kitchen) oder `$why-is-it-broken` (Plain). Einen echten Nutzerablauf prüfst du mit `$youre-the-chef usertest <Ablauf>` oder `$you-got-this usertest <Ablauf>`; der Modus meldet Befunde ohne automatische Reparaturen und ist keine Studie mit Menschen.
 
-Mit `$youre-the-chef <Ziel>` (Kitchen) oder `$you-got-this <Ziel>` (Plain) übernimmt der Agent die Umsetzung bis zum geprüften Ergebnis. `gauntlet` ergänzt eine endliche Kritikschleife; `audit` liefert Befunde ohne breite Umsetzung. Die Prompt-Vervollständigung erstellt dagegen nur einen Entwurf.
+Mit `$youre-the-chef <Ziel>` (Kitchen) oder `$you-got-this <Ziel>` (Plain) übernimmt der Agent die Umsetzung bis zum geprüften Ergebnis. `gauntlet` ergänzt eine endliche Kritikschleife; `plan` bespricht verbleibende Arbeit und Umfang; `audit` liefert Befunde ohne breite Umsetzung. Die Prompt-Vervollständigung erstellt dagegen nur einen Entwurf.
 
 ## Aktualisieren
 
