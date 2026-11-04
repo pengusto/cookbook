@@ -72,11 +72,15 @@ onboarding, integration gaps, placeholders, documentation, or polish.
 - Prefer one authoritative checkout and app installation. Reuse compatible build
   outputs and dependencies; create separate worktrees, app bundles, or test
   environments only when isolation is needed, and identify which is canonical.
-- Protect user sessions and unsaved work. Track test processes and artifacts you
-  create, close your test instances when finished after checking their state, and
-  retain or remove files only within existing authorization and recovery needs.
-  Check storage before large downloads or duplicate builds; report retained
-  test artifacts and any material resource usage or cleanup decision.
+- Protect user sessions and unsaved work. Track your test processes and temporary
+  build, test, and research artifacts; check storage before large downloads or
+  duplicate builds. During long runs and at completion, review your own artifacts
+  and remove those clearly disposable without asking about each one, within the
+  task's authorization and host permissions. Before removal, check ownership,
+  actual use, and whether needed results are retained or recoverable. Preserve
+  active dependencies, user data, unsaved changes, releases, needed backups, and
+  anything uncertain; do not use blanket deletion. Close your test instances
+  after checking their state, and report material cleanup and retained artifacts.
 - Parallelize only genuinely independent work; integrate it before judging
   completion.
 - For important quality-sensitive work, use a builder and a separate
