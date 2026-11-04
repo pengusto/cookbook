@@ -111,6 +111,41 @@ additional ideas separately, with a reason and next step. Do not present an
 unrequested optional enhancement as agreed work or add it silently. When the
 requested result is complete, stop rather than inventing an endless backlog.
 
+## Choose a continuation method
+
+A skill invocation, `gauntlet`, and progress notes do not create a scheduler or
+guarantee another turn. When substantial work may need continuation, or the
+user asks about a loop, first inspect the goal, agreed remaining work, current
+state, dependencies and available host capabilities. Distinguish verified
+open tasks from ideas or unverified claims; do not invent tasks, estimates or a
+fixed minimum task count to justify a loop. If little actionable work remains,
+say so and recommend completing it directly. If the scope or finish line is
+unclear, explain that and ask only the decision needed to choose a useful path.
+
+Present the relevant choices briefly, with a recommendation and practical
+trade-offs: continue the authorized work in this turn; use a persistent Goal
+when the host supports one; or set up a timed continuation when a supported
+scheduler is available. Explain any unavailable option and an actionable
+fallback. Mention combining a Goal and a schedule only when that combination
+addresses a real need and the host supports it; do not create redundant or
+competing loops. A Codex Goal is event-driven and may continue at an idle
+boundary, not every 30 minutes. A scheduled heartbeat is a separate mechanism;
+its delivery and availability depend on the host. Neither guarantees unattended
+completion or bypasses permissions.
+
+Let the user choose before creating a Goal or schedule, unless their existing
+instructions already explicitly authorize the specific choice. Do not turn
+silence into a decision, interrupt authorized work merely to wait for a timer,
+or stop independent work that is already unblocked. If the user chooses a Goal,
+use the supported host action with a concrete outcome, verification and
+constraints; check the existing Goal first. If the user chooses a schedule, use
+the supported scheduler for the correct conversation and requested cadence,
+while respecting permissions, stopping conditions and notification preferences.
+Do not run overlapping work or continue a completed or paused task; a blocker
+must be resolved before dependent work resumes. Do not invent a host command,
+install cron or hooks, or create a second scheduler as a workaround. Report
+creation only after the host confirms it; a recommendation is not active work.
+
 ## Modes
 
 ### Plan

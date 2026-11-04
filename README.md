@@ -18,7 +18,7 @@ Cookbook gives developers using Codex or Claude Code 22 focused workflows: plan 
 
 Choose **Plain questions** or **Kitchen names**. Both are built from the same maintained instructions; install one naming style per host.
 
-**Experimental public beta · 0.7.4.** [Browse the recipes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Experimental public beta · 0.7.5.** [Browse the recipes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Quickstart: choose one naming style
 
@@ -99,7 +99,7 @@ Additional modes: `$prep-the-kitchen explain <flow>` explains existing code; `$p
 
 Choose by situation: [workflow guide](docs/choosing-workflow.md). For a current failure use `$find-the-bad-ingredient` (Kitchen) or `$why-is-it-broken` (Plain). To exercise a real user journey, use `$youre-the-chef usertest <flow>` or `$you-got-this usertest <flow>`; this reports findings without automatic repairs and is not research with human participants.
 
-Use `$youre-the-chef <goal>` (Kitchen) or `$you-got-this <goal>` (Plain) to delegate implementation through a checked result. `gauntlet` adds a finite critique loop; `plan` discusses the remaining work and scope; `audit` reports findings without broad implementation. This differs from prompt completion, which only drafts the request.
+Use `$youre-the-chef <goal>` (Kitchen) or `$you-got-this <goal>` (Plain) to delegate implementation through a checked result. `gauntlet` adds a finite critique loop; `plan` discusses the remaining work and scope; `audit` reports findings without broad implementation. This differs from prompt completion, which only drafts the request. A skill invocation does not start a timer: for multi-turn work, an explicitly requested Codex Goal can continue at idle boundaries; a requested recurring schedule uses a separate host automation.
 
 ## Update
 

@@ -20,7 +20,7 @@ Cookbook ofrece a quienes desarrollan con Codex o Claude Code 22 flujos concreto
 
 Elige **preguntas sencillas** o **nombres de cocina**. Ambos estilos se generan desde las mismas instrucciones mantenidas; instala un estilo por entorno.
 
-**Beta pública experimental · 0.7.4.** [Explorar las recetas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Beta pública experimental · 0.7.5.** [Explorar las recetas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Inicio rápido: elige un estilo
 
@@ -101,7 +101,7 @@ Otros modos: `$prep-the-kitchen explain <flujo>` explica el código; `$prep-the-
 
 Elige según la situación: [guía](../choosing-workflow.md). Para un fallo actual: `$find-the-bad-ingredient` (Kitchen) o `$why-is-it-broken` (Plain). Para probar un recorrido real: `$youre-the-chef usertest <recorrido>` o `$you-got-this usertest <recorrido>`. Informa de hallazgos sin reparaciones automáticas; no es un estudio con participantes humanos.
 
-Con `$youre-the-chef <objetivo>` o `$you-got-this <objetivo>`, el agente ejecuta el trabajo autorizado y verifica el resultado. `plan` ayuda a decidir el alcance y las tareas pendientes; `gauntlet` añade una revisión iterativa finita y `audit` informa de hallazgos sin una implementación amplia.
+Con `$youre-the-chef <objetivo>` o `$you-got-this <objetivo>`, el agente ejecuta el trabajo autorizado y verifica el resultado. `plan` ayuda a decidir el alcance y las tareas pendientes; `gauntlet` añade una revisión iterativa finita y `audit` informa de hallazgos sin una implementación amplia. Invocar un skill no activa un temporizador: un Goal de Codex solicitado explícitamente puede continuar entre turnos; una recurrencia programada requiere una automatización independiente.
 
 ## Actualizar
 

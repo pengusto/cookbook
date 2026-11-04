@@ -20,7 +20,7 @@ Cookbook propose aux développeurs utilisant Codex ou Claude Code 22 processus c
 
 Choisissez les **questions simples** ou les **noms de cuisine**. Les deux styles proviennent des mêmes instructions maintenues ; installez un seul style par environnement.
 
-**Bêta publique expérimentale · 0.7.4.** [Parcourir les recettes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Bêta publique expérimentale · 0.7.5.** [Parcourir les recettes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Démarrage rapide : choisir un style
 
@@ -101,7 +101,7 @@ Autres modes : `$prep-the-kitchen explain <parcours>` explique le code ; `$prep-
 
 Choisir selon la situation : [guide](../choosing-workflow.md). Pour une panne actuelle : `$find-the-bad-ingredient` (Kitchen) ou `$why-is-it-broken` (Plain). Pour tester un parcours réel : `$youre-the-chef usertest <parcours>` ou `$you-got-this usertest <parcours>`. Le mode rapporte les résultats sans réparation automatique ; ce n’est pas une étude avec des participants humains.
 
-Avec `$youre-the-chef <objectif>` ou `$you-got-this <objectif>`, l’agent réalise le travail autorisé et vérifie le résultat. `plan` aide à discuter du périmètre et du travail restant ; `gauntlet` ajoute une boucle de critique limitée et `audit` rapporte des constats sans implémentation étendue.
+Avec `$youre-the-chef <objectif>` ou `$you-got-this <objectif>`, l’agent réalise le travail autorisé et vérifie le résultat. `plan` aide à discuter du périmètre et du travail restant ; `gauntlet` ajoute une boucle de critique limitée et `audit` rapporte des constats sans implémentation étendue. L’invocation d’un skill ne lance pas de minuterie : un Goal Codex demandé explicitement peut continuer entre les tours ; une récurrence planifiée nécessite une automation distincte.
 
 ## Mettre à jour
 

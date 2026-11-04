@@ -20,7 +20,7 @@ Cookbook은 Codex 또는 Claude Code를 사용하는 개발자에게 22개의 �
 
 **쉬운 질문** 또는 **요리 이름**을 선택하세요. 두 스타일은 같은 관리 지침에서 생성되며, 호스트마다 하나의 이름 체계를 설치합니다.
 
-**실험적 공개 베타 · 0.7.4.** [레시피 둘러보기](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**실험적 공개 베타 · 0.7.5.** [레시피 둘러보기](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## 빠른 시작: 이름 체계 선택
 
@@ -101,7 +101,7 @@ python3 scripts/launch_check.py
 
 상황에 맞는 [선택 안내](../choosing-workflow.md). 현재 오류에는 `$find-the-bad-ingredient`(Kitchen) 또는 `$why-is-it-broken`(Plain)을 사용합니다. 실제 사용 흐름은 `$youre-the-chef usertest <flow>` 또는 `$you-got-this usertest <flow>`로 확인합니다. 자동 수정 없이 결과를 보고하며 실제 참가자 대상 연구가 아닙니다.
 
-`$youre-the-chef <goal>` 또는 `$you-got-this <goal>`은 승인된 작업을 수행하고 결과를 확인합니다. `plan`은 남은 작업과 범위를 논의하고, `gauntlet`은 유한한 개선 반복을 추가하며, `audit`은 광범위한 구현 없이 결과를 보고합니다.
+`$youre-the-chef <goal>` 또는 `$you-got-this <goal>`은 승인된 작업을 수행하고 결과를 확인합니다. `plan`은 남은 작업과 범위를 논의하고, `gauntlet`은 유한한 개선 반복을 추가하며, `audit`은 광범위한 구현 없이 결과를 보고합니다. 스킬 호출만으로 타이머가 시작되지는 않습니다. 명시적으로 요청한 Codex Goal은 여러 턴에 걸쳐 계속할 수 있으며, 정기 실행에는 별도의 자동화가 필요합니다.
 
 ## 업데이트
 

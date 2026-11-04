@@ -40,6 +40,20 @@ verwenden Codex-Syntax; für Claude Code gilt die Syntax im Absatz oben.
 | Continue on another machine. / Auf anderem Rechner fortsetzen. | Can We Finish? `handoff` | Close the Kitchen `handoff` | Destination-specific preparation / Zielbezogene Vorbereitung |
 | Why does this keep happening? / Warum passiert das immer wieder? | Here We Go Again | Why Did It Burn? | Patterns and preventive lessons / Muster und Vorbeugung |
 
+A skill invocation and `gauntlet` do not schedule future turns. For longer
+Codex work, an explicitly requested Goal can continue toward a defined outcome
+at idle boundaries; a timed recurrence requires a separate host automation.
+The skill first checks the remaining work, presents suitable options and lets
+the user choose. Availability, permissions and stopping conditions depend on
+the host.
+
+Ein Skill-Aufruf und `gauntlet` planen keine späteren Turns. Für längere Arbeit
+kann ein ausdrücklich gewünschtes Codex Goal bei Leerlauf an einem definierten
+Ziel weiterarbeiten; ein Zeitplan braucht eine separate Host-Automation.
+Der Skill prüft zunächst die verbleibende Arbeit, stellt passende Optionen vor
+und lässt den Nutzer wählen. Verfügbarkeit, Berechtigungen und Abbruchbedingungen
+hängen vom Host ab.
+
 ## Examples / Beispiele
 
 ```text
