@@ -1,0 +1,4 @@
+interface:
+  display_name: "{{TITLE}}"
+  short_description: "Find the thread and split independent work"
+  default_prompt: "Use ${{ID}} to untangle this chat, show what matters now and suggest useful separate chats."

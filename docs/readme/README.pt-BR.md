@@ -16,11 +16,11 @@ Projeto: **Cookbook by Pengusto** · Repositório no GitHub: [`pengusto/cookbook
 
 **Uma receita para o próximo passo na sua conversa de código.**
 
-Cookbook oferece a quem desenvolve com Codex ou Claude Code 20 fluxos focados: planejar um projeto, verificar o progresso, retomar o contexto após uma pausa, revisar antes de compartilhar e encerrar com uma passagem de trabalho útil. Escolha uma receita quando precisar; seu ambiente e modelo executam o trabalho.
+Cookbook oferece a quem desenvolve com Codex ou Claude Code 22 fluxos focados: planejar um projeto, verificar o progresso, retomar o contexto após uma pausa, revisar antes de compartilhar e encerrar com uma passagem de trabalho útil. Escolha uma receita quando precisar; seu ambiente e modelo executam o trabalho.
 
 Escolha **perguntas simples** ou **nomes de cozinha**. Ambos vêm das mesmas instruções mantidas; instale um estilo por ambiente.
 
-**Beta pública experimental · 0.7.3.** [Explorar as receitas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Beta pública experimental · 0.7.4.** [Explorar as receitas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Início rápido: escolha um estilo
 
@@ -58,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 40 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 44 individual ZIPs + `SHA256SUMS`.
 
 ## Gerar e verificar
 
@@ -80,6 +80,8 @@ python3 scripts/launch_check.py
 | Sort and Triage | Sort the Ingredients |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
+| Untangle This Chat | Split the Menu |
+| Help Me Focus | One Dish at a Time |
 | How Do I Start? | Prep the Kitchen |
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
@@ -98,6 +100,8 @@ python3 scripts/launch_check.py
 Outros modos: `$prep-the-kitchen explain <fluxo>` explica o código; `$prep-the-kitchen choose <decisão>` compara opções; `$ready-to-serve verify-live <alvo>` verifica a entrega; `$close-the-kitchen handoff <destino>` prepara a passagem. Plain usa `$how-do-i-start`, `$am-i-ready-to-share` e `$can-we-finish` com os mesmos argumentos. Esses pedidos sozinhos não autorizam alterações; preparar uma passagem não conclui a transferência.
 
 Escolha pela situação: [guia](../choosing-workflow.md). Para uma falha atual: `$find-the-bad-ingredient` (Kitchen) ou `$why-is-it-broken` (Plain). Para testar um fluxo real: `$youre-the-chef usertest <fluxo>` ou `$you-got-this usertest <fluxo>`. O modo relata resultados sem reparos automáticos; não é uma pesquisa com participantes humanos.
+
+Com `$youre-the-chef <objetivo>` ou `$you-got-this <objetivo>`, o agente executa o trabalho autorizado e verifica o resultado. `plan` ajuda a discutir o escopo e o trabalho restante; `gauntlet` acrescenta um ciclo finito de crítica e `audit` relata achados sem implementação ampla.
 
 ## Atualizar
 

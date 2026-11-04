@@ -16,11 +16,11 @@
 
 **コーディングの会話で、次の一歩に合うレシピを。**
 
-Cookbook は Codex や Claude Code を使う開発者向けに、20 のワークフローを提供します。プロジェクトの計画、進捗確認、休止後の状況把握、共有前のレビュー、引き継ぎの整理に使えます。必要なときにレシピを選び、ホストとモデルが作業を行います。
+Cookbook は Codex や Claude Code を使う開発者向けに、22 のワークフローを提供します。プロジェクトの計画、進捗確認、休止後の状況把握、共有前のレビュー、引き継ぎの整理に使えます。必要なときにレシピを選び、ホストとモデルが作業を行います。
 
 **わかりやすい質問**か**料理の名前**を選んでください。両方とも同じ管理された指示から生成されます。ホストごとに一方の命名スタイルをインストールします。
 
-**実験的な公開ベータ · 0.7.3.** [レシピを見る](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**実験的な公開ベータ · 0.7.4.** [レシピを見る](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## クイックスタート：命名スタイルを選ぶ
 
@@ -58,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 40 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 44 individual ZIPs + `SHA256SUMS`.
 
 ## ビルドと検証
 
@@ -80,6 +80,8 @@ python3 scripts/launch_check.py
 | Sort and Triage | Sort the Ingredients |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
+| Untangle This Chat | Split the Menu |
+| Help Me Focus | One Dish at a Time |
 | How Do I Start? | Prep the Kitchen |
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
@@ -98,6 +100,8 @@ python3 scripts/launch_check.py
 追加モード：`$prep-the-kitchen explain <flow>` は既存コードを説明し、`$prep-the-kitchen choose <decision>` は選択肢を比較します。`$ready-to-serve verify-live <target>` は実際の配信を確認し、`$close-the-kitchen handoff <destination>` は引き継ぎを準備します。Plain では同じ引数で `$how-do-i-start`、`$am-i-ready-to-share`、`$can-we-finish` を使います。これらの依頼だけでは変更を許可せず、引き継ぎの準備は転送の完了ではありません。
 
 状況に応じた[選び方](../choosing-workflow.md)。現在の不具合には `$find-the-bad-ingredient`（Kitchen）または `$why-is-it-broken`（Plain）。実際の操作経路は `$youre-the-chef usertest <flow>` または `$you-got-this usertest <flow>` で確認します。自動修正は行わず、人間の参加者による調査ではありません。
+
+`$youre-the-chef <goal>` または `$you-got-this <goal>` は、許可された作業を実行して結果を確認します。`plan` は残りの作業と範囲を相談し、`gauntlet` は有限の改善ループを追加し、`audit` は広範な実装をせずに所見を報告します。
 
 ## 更新
 

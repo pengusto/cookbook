@@ -25,3 +25,9 @@ The open cookbook embeds Lenis 1.3.27 (MIT) from darkroomengineering/lenis for d
 The square food cutouts were prepared once with Pillow from the bundled workspace runtime, separating alpha-connected painted silhouettes and preserving translucent edges and crumbs. These prepared assets add no runtime or build dependency. Original illustration sheets remain intact.
 
 The preserved You Got This paper-atelier banner pair is historical AI-generated design work, not the Cookbook product banner. Exact prompts, checksums, source roles and rights reservations are in [design/you-got-this-retirement/SOURCES.json](design/you-got-this-retirement/SOURCES.json). The original MIT workflow attribution and imported Git histories remain intact.
+
+## Focused communication workflow
+
+`skills/help-me-focus` adapts ideas from [i-have-adhd](https://github.com/ayghri/i-have-adhd) by Ayoub Ghriss. The upstream MIT license and copyright notice are retained in that skill’s `LICENSE`. The Cookbook version changes the original rules to preserve user preferences, required detail and host instructions.
+
+Two additional recipe sheets reuse existing project-generated dish and ingredient sprites; their source assets and transformations are recorded in `assets/cookbook/food/SOURCES.json`.

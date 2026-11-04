@@ -296,6 +296,8 @@ class NewWorkflowInstallationContracts(unittest.TestCase):
             'review-my-changes': 'taste-before-serving',
             'can-we-simplify': 'trim-the-recipe',
             'find-our-work': 'find-the-recipe',
+            'untangle-this-chat': 'split-the-menu',
+            'help-me-focus': 'one-dish-at-a-time',
         }
         rows = {r['id']: r for r in app.catalog()}
         for variant in app.VARIANTS:
@@ -313,6 +315,17 @@ class NewWorkflowInstallationContracts(unittest.TestCase):
                     self.assertNotIn('/Users/', guide)
                     self.assertNotIn('Enis Uysal', guide)
                     self.assertNotIn(f'skills/{rows[source_id]["install_ids"]["plain" if variant == "kitchen" else "kitchen"]}/SKILL.md', files)
+
+class WorkloadPlanningContracts(unittest.TestCase):
+    def test_workload_mode_is_bundled_in_each_variant(self):
+        row = next(r for r in app.catalog() if r['id'] == 'you-got-this')
+        for variant in app.VARIANTS:
+            slug, files = app.rendered_files(row, variant)
+            guide = files['SKILL.md'].decode()
+            self.assertIn(f'${slug} plan <goal>', guide)
+            self.assertIn('planning-only request does not', guide)
+            self.assertNotIn('{{', guide)
+
 
 class AutonomousWorkflowContracts(unittest.TestCase):
     def test_modes_and_examples_are_portable_in_each_installed_variant(self):

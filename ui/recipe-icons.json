@@ -98,5 +98,15 @@
     "id": "ingredient-bowls",
     "meaning": "Schalen: Eingänge sichten und nach Bedarf sortieren",
     "body": "<path d=\"M3 12h12a6 6 0 0 1-12 0ZM17 12h12a6 6 0 0 1-12 0ZM7 23h18a9 9 0 0 1-18 0ZM9 7V4m14 3V4M13 20v-3m7 3v-3\"/>"
+  },
+  "untangle-this-chat": {
+    "id": "divided-tray",
+    "meaning": "Serviertablett: Themen ordnen und bei Bedarf verteilen",
+    "body": "<rect x=\"3\" y=\"5\" width=\"26\" height=\"22\" rx=\"3\"/><path d=\"M3 12h26M13 12v15M8 8h6m3 0h6M6 16h4m6 0h9m-9 5h7\"/>"
+  },
+  "help-me-focus": {
+    "id": "egg-timer",
+    "meaning": "Eieruhr: eine Sache übersichtlich angehen",
+    "body": "<path d=\"M10 4h12M11 4v5l4 6-4 7v6m10-24v5l-4 6 4 7v6M9 28h14M12 10h8M12 24h8\"/>"
   }
 }

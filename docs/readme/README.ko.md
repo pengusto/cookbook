@@ -16,11 +16,11 @@
 
 **코딩 대화의 다음 단계를 위한 레시피.**
 
-Cookbook은 Codex 또는 Claude Code를 사용하는 개발자에게 20개의 집중된 워크플로를 제공합니다. 프로젝트 계획, 진행 상황 점검, 휴식 후 맥락 복구, 공유 전 검토, 유용한 인계 정리에 활용하세요. 필요할 때 레시피를 선택하면 호스트와 모델이 작업을 수행합니다.
+Cookbook은 Codex 또는 Claude Code를 사용하는 개발자에게 22개의 집중된 워크플로를 제공합니다. 프로젝트 계획, 진행 상황 점검, 휴식 후 맥락 복구, 공유 전 검토, 유용한 인계 정리에 활용하세요. 필요할 때 레시피를 선택하면 호스트와 모델이 작업을 수행합니다.
 
 **쉬운 질문** 또는 **요리 이름**을 선택하세요. 두 스타일은 같은 관리 지침에서 생성되며, 호스트마다 하나의 이름 체계를 설치합니다.
 
-**실험적 공개 베타 · 0.7.3.** [레시피 둘러보기](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**실험적 공개 베타 · 0.7.4.** [레시피 둘러보기](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## 빠른 시작: 이름 체계 선택
 
@@ -58,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 40 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 44 individual ZIPs + `SHA256SUMS`.
 
 ## 빌드 및 검증
 
@@ -80,6 +80,8 @@ python3 scripts/launch_check.py
 | Sort and Triage | Sort the Ingredients |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
+| Untangle This Chat | Split the Menu |
+| Help Me Focus | One Dish at a Time |
 | How Do I Start? | Prep the Kitchen |
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
@@ -98,6 +100,8 @@ python3 scripts/launch_check.py
 추가 모드: `$prep-the-kitchen explain <flow>`는 기존 코드를 설명하고 `$prep-the-kitchen choose <decision>`은 대안을 비교합니다. `$ready-to-serve verify-live <target>`은 실제 배포를 확인하고 `$close-the-kitchen handoff <destination>`은 인계를 준비합니다. Plain은 같은 인수로 `$how-do-i-start`, `$am-i-ready-to-share`, `$can-we-finish`를 사용합니다. 이 요청만으로 변경이 허용되지 않으며 인계 준비가 전송 완료를 뜻하지 않습니다.
 
 상황에 맞는 [선택 안내](../choosing-workflow.md). 현재 오류에는 `$find-the-bad-ingredient`(Kitchen) 또는 `$why-is-it-broken`(Plain)을 사용합니다. 실제 사용 흐름은 `$youre-the-chef usertest <flow>` 또는 `$you-got-this usertest <flow>`로 확인합니다. 자동 수정 없이 결과를 보고하며 실제 참가자 대상 연구가 아닙니다.
+
+`$youre-the-chef <goal>` 또는 `$you-got-this <goal>`은 승인된 작업을 수행하고 결과를 확인합니다. `plan`은 남은 작업과 범위를 논의하고, `gauntlet`은 유한한 개선 반복을 추가하며, `audit`은 광범위한 구현 없이 결과를 보고합니다.
 
 ## 업데이트
 

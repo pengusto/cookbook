@@ -14,11 +14,11 @@ Project: **Cookbook by Pengusto** · GitHub repository: [`pengusto/cookbook`](ht
 
 **A recipe for the next step in your coding chat.**
 
-Cookbook gives developers using Codex or Claude Code 20 focused workflows: plan a project, check progress, recover context after a break, review before sharing, and close with a useful handoff. Pick a recipe when you need it; your host and model carry out the work.
+Cookbook gives developers using Codex or Claude Code 22 focused workflows: plan a project, check progress, recover context after a break, review before sharing, and close with a useful handoff. Pick a recipe when you need it; your host and model carry out the work.
 
 Choose **Plain questions** or **Kitchen names**. Both are built from the same maintained instructions; install one naming style per host.
 
-**Experimental public beta · 0.7.3.** [Browse the recipes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Experimental public beta · 0.7.4.** [Browse the recipes](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Quickstart: choose one naming style
 
@@ -56,7 +56,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 40 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 44 individual ZIPs + `SHA256SUMS`.
 
 ## Build and verify
 
@@ -78,6 +78,8 @@ python3 scripts/launch_check.py
 | Sort and Triage | Sort the Ingredients |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
+| Untangle This Chat | Split the Menu |
+| Help Me Focus | One Dish at a Time |
 | How Do I Start? | Prep the Kitchen |
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
@@ -97,7 +99,7 @@ Additional modes: `$prep-the-kitchen explain <flow>` explains existing code; `$p
 
 Choose by situation: [workflow guide](docs/choosing-workflow.md). For a current failure use `$find-the-bad-ingredient` (Kitchen) or `$why-is-it-broken` (Plain). To exercise a real user journey, use `$youre-the-chef usertest <flow>` or `$you-got-this usertest <flow>`; this reports findings without automatic repairs and is not research with human participants.
 
-Use `$youre-the-chef <goal>` (Kitchen) or `$you-got-this <goal>` (Plain) to delegate implementation through a checked result. `gauntlet` adds a finite critique loop; `audit` reports findings without broad implementation. This differs from prompt completion, which only drafts the request.
+Use `$youre-the-chef <goal>` (Kitchen) or `$you-got-this <goal>` (Plain) to delegate implementation through a checked result. `gauntlet` adds a finite critique loop; `plan` discusses the remaining work and scope; `audit` reports findings without broad implementation. This differs from prompt completion, which only drafts the request.
 
 ## Update
 

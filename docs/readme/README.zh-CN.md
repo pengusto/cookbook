@@ -16,11 +16,11 @@
 
 **为编程对话的下一步选一道配方。**
 
-Cookbook 为使用 Codex 或 Claude Code 的开发者提供 20 个专注的工作流：规划项目、检查进展、在休息后找回上下文、分享前审查，以及整理有用的交接。按需选择配方，由宿主和模型执行工作。
+Cookbook 为使用 Codex 或 Claude Code 的开发者提供 22 个专注的工作流：规划项目、检查进展、在休息后找回上下文、分享前审查，以及整理有用的交接。按需选择配方，由宿主和模型执行工作。
 
 选择**直白问题**或**厨房名称**。两种风格由同一份维护中的指令生成；每个宿主安装一种命名风格。
 
-**实验性公开 Beta · 0.7.3.** [浏览配方](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**实验性公开 Beta · 0.7.4.** [浏览配方](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## 快速开始：选择一种命名风格
 
@@ -58,7 +58,7 @@ python3 scripts/cookbook.py install kill-the-todos --variant kitchen --dest /emp
 
 Codex: `$close-the-kitchen` · Claude Code: `/cookbook-by-pengusto:close-the-kitchen`
 
-`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 40 individual ZIPs + `SHA256SUMS`.
+`skills/<stable-id>/` → `catalog.json` → `dist/{plain,kitchen}/{codex,claude}` · `site/downloads/`: 4 plugin ZIPs + 44 individual ZIPs + `SHA256SUMS`.
 
 ## 构建与验证
 
@@ -80,6 +80,8 @@ python3 scripts/launch_check.py
 | Sort and Triage | Sort the Ingredients |
 | Catch Me Up | Back to the Kitchen |
 | Where Were We? | What Was I Cooking? |
+| Untangle This Chat | Split the Menu |
+| Help Me Focus | One Dish at a Time |
 | How Do I Start? | Prep the Kitchen |
 | Finish My Prompt | Finish My Order |
 | Which Name Wins? | Name That Dish |
@@ -98,6 +100,8 @@ python3 scripts/launch_check.py
 其他模式：`$prep-the-kitchen explain <flow>` 解释现有代码，`$prep-the-kitchen choose <decision>` 比较方案，`$ready-to-serve verify-live <target>` 验证实际交付，`$close-the-kitchen handoff <destination>` 准备交接。Plain 使用相同参数配合 `$how-do-i-start`、`$am-i-ready-to-share` 和 `$can-we-finish`。这些请求本身不授权修改；准备交接不代表已经完成转移。
 
 按情况选择：[使用指南](../choosing-workflow.md)。当前故障使用 `$find-the-bad-ingredient`（Kitchen）或 `$why-is-it-broken`（Plain）。真实操作流程使用 `$youre-the-chef usertest <flow>` 或 `$you-got-this usertest <flow>`。该模式只报告发现，不自动修复，也不是由真人参与的用户研究。
+
+使用 `$youre-the-chef <goal>` 或 `$you-got-this <goal>`，代理会执行已授权的工作并验证结果。`plan` 用于讨论剩余工作和范围；`gauntlet` 增加有限的迭代改进；`audit` 只报告发现，不进行大范围实现。
 
 ## 更新
 

@@ -289,3 +289,34 @@ their exact skill membership. Runtime tests cover all twelve interface
 languages and both naming variants. Public skill counts derive from the
 catalog. Fifty-one tests and the portable rebuild pass; external rich-result
 eligibility and search appearance are not verified.
+
+## Codex behavior checks: Split the Menu and One Dish at a Time, 2026-11-04
+
+Four separate Codex CLI 0.160.0 sessions used `gpt-6.1-terra`, a synthetic appointment-app conversation, read-only sandbox and ephemeral sessions. The two Kitchen skill directories were copied from the locally built Codex package into an isolated fixture and checked byte-for-byte. Each successful test explicitly requested reading the relevant `SKILL.md`, and its event trace confirms that read. User config, plugin and app connections were disabled for these four runs. No real chat, account or project content was used.
+
+| Scenario | Observed result | Scope |
+|---|---|---|
+| Chat orientation | Summarized goal and incomplete evidence, kept appointment handling with its database, distinguished unapproved branding/newsletter ideas and suggested an independent later license review. No chat or file change. | Pass for the synthetic conversation. |
+| Selected handoff | Prepared a scoped copyable license-review brief, preserved limits and stated that this CLI session could not create a chat. Did not perform the review. | Fallback passes; real chat creation is not tested. |
+| Focused next step | Recommended one concrete reload test and distinguished a single success from overall reliability. | Pass for the supplied scenario. |
+| Requested detailed explanation | Explained persistence, example outcomes and several possible causes; said no actual test had run. | Pass for detail despite the focused style. |
+
+A separate ephemeral Codex app-server session read `one-dish-at-a-time` in its first turn; the second turn did not name the skill. Both turns completed, and the second answer stayed brief, reported the observed reload only, and named unverified behavior. Plugins, apps and hooks were disabled for this completed two-turn run. One earlier app-server attempt inadvertently ran the user's configured hooks and its test harness failed to capture the final completion event, although the second final answer appeared; this attempt is not counted as the completed two-turn run. The corrected harness consumes server output on a dedicated reader thread to avoid buffered events being missed. For future isolated app-server tests, disable hooks explicitly rather than assuming the plugin/app flags also disable them.
+
+An initial natural `$split-the-menu` CLI invocation produced a reasonable overview but did not show a skill-file read; it is not counted as evidence that automatic discovery loaded the skill. The five completed checks establish behavior of explicitly loaded packaged copies in the tested scenarios. They do **not** establish native plugin installation, automatic discovery, actual Codex Desktop chat creation, Claude behavior, or general correctness across conversations. The original fixture inventory and packaged skill bytes matched after the runs. Synthetic prompts and event records remain in ignored `.scratch/skill-behavior-2026-11-04/` for review; no publication, installation replacement or real chat creation was performed.
+
+## Native Codex discovery and chat creation: 2026-11-04
+
+On explicit request, the two Kitchen skills were installed as **standalone user skills** with the local installer, without replacing the existing Cookbook plugin or its marketplace. The installed files for `split-the-menu` and `one-dish-at-a-time` matched the local Codex package byte-for-byte. A fresh native Codex app-server `skills/list` scan with cache reload returned both IDs as enabled, with user scope and their respective installed `SKILL.md` paths, and no discovery errors. This does not establish discovery from a newly installed Cookbook plugin bundle; these two test installations are standalone.
+
+A new local projectless Codex Desktop chat, “Cookbook – Skill-Erkennung und Chat-Test”, reported both installed skills in its available inventory and loaded the installed `split-the-menu` instructions. On a synthetic appointment-app scenario it distinguished a branding idea from authorized work and retained the no-publication/no-contact boundary. With explicit test authorization it invoked the supported `codex_app.create_thread` action for exactly one projectless child, “Cookbook-Test: Branding”; the child answered the requested `TEST_OK` message and made no other recorded tool calls. The parent then used `wait_threads` and `read_thread`. The original testing chat independently read both transcripts and confirmed the child title, completed response and idle state. This verifies actual creation and readback for a minimal test chat, not a real branding handoff or arbitrary host environments.
+
+The two standalone skills and both test chats were retained. Nothing was published, and the previously installed Cookbook plugin was not replaced. An earlier app-server test in this task revealed that disabling plugins and apps does not disable user hooks; the successful follow-up explicitly disabled hooks. The previous section records that lesson.
+
+## You're the Chef: workload planning, 2026-11-04
+
+A fresh ephemeral Codex CLI 0.160.0 session (`gpt-6.1-terra`) read the packaged Kitchen skill in a read-only synthetic fixture. For a local appointment-app demo, `plan` identified the missing end-to-end evidence, distinguished a small core demonstration from broader readiness work, treated the newsletter as an unapproved idea, and did not invent a duration, test result or file change. The app itself was deliberately absent, and the answer stated that limitation. This is a bounded planning-mode check, not proof of autonomous implementation or every possible scope discussion.
+
+## Mac Mini native plugin installation, 2026-11-04
+
+A verified backup preceded a native update from Cookbook 0.7.3 to the locally built Kitchen 0.7.4 package. Codex CLI 0.156.1 reports the plugin installed and enabled; all 89 installed plugin files match the reviewed package. A fresh native `skills/list` reports `cookbook-by-pengusto:split-the-menu`, `cookbook-by-pengusto:one-dish-at-a-time`, and `cookbook-by-pengusto:youre-the-chef` enabled, with zero discovery errors. The first query mistakenly matched unqualified names and reported no results; the corrected query matches the host's actual plugin-qualified IDs. Future plugin-discovery tests must use returned qualified names rather than assuming standalone IDs. This is a discovery and package-integrity check; no new Mac Mini model behavior or visible UI test is claimed. The Mini temporarily uses a stable local reviewed marketplace while the corresponding GitHub PR remains open. The prior plugin, marketplace and configuration remain backed up for rollback.
