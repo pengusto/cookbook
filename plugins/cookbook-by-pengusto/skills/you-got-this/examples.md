@@ -16,6 +16,15 @@ $you-got-this gauntlet Improve this game until the first five minutes feel polis
 
 Use this when the work benefits from a finite quality loop. The skill builds against a concrete reference, critiques the real output, fixes the largest remaining gap, and re-checks it. It stops when the remaining improvements are diminishing returns or a product decision is required.
 
+## Choosing continuation
+
+For a large project, inspect the actual remaining work first. Offer a concise
+choice between working now, a supported persistent Goal, or a supported timed
+follow-up; recommend what fits and let the user decide. If only a small task
+remains, say a loop is unnecessary. If the requested host lacks scheduling,
+state that limit and offer the available alternative. No Goal or schedule is
+created merely by invoking the skill.
+
 ## Audit mode
 
 ```text
