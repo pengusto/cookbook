@@ -101,6 +101,8 @@ python3 scripts/launch_check.py
 
 按情况选择：[使用指南](../choosing-workflow.md)。当前故障使用 `$find-the-bad-ingredient`（Kitchen）或 `$why-is-it-broken`（Plain）。真实操作流程使用 `$youre-the-chef usertest <flow>` 或 `$you-got-this usertest <flow>`。该模式只报告发现，不自动修复，也不是由真人参与的用户研究。
 
+使用 `$youre-the-chef <goal>` 或 `$you-got-this <goal>`，代理会执行已授权的工作并验证结果。`plan` 用于讨论剩余工作和范围；`gauntlet` 增加有限的迭代改进；`audit` 只报告发现，不进行大范围实现。
+
 ## 更新
 
 ```sh

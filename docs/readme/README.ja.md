@@ -101,6 +101,8 @@ python3 scripts/launch_check.py
 
 状況に応じた[選び方](../choosing-workflow.md)。現在の不具合には `$find-the-bad-ingredient`（Kitchen）または `$why-is-it-broken`（Plain）。実際の操作経路は `$youre-the-chef usertest <flow>` または `$you-got-this usertest <flow>` で確認します。自動修正は行わず、人間の参加者による調査ではありません。
 
+`$youre-the-chef <goal>` または `$you-got-this <goal>` は、許可された作業を実行して結果を確認します。`plan` は残りの作業と範囲を相談し、`gauntlet` は有限の改善ループを追加し、`audit` は広範な実装をせずに所見を報告します。
+
 ## 更新
 
 ```sh

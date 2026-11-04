@@ -101,6 +101,8 @@ python3 scripts/launch_check.py
 
 상황에 맞는 [선택 안내](../choosing-workflow.md). 현재 오류에는 `$find-the-bad-ingredient`(Kitchen) 또는 `$why-is-it-broken`(Plain)을 사용합니다. 실제 사용 흐름은 `$youre-the-chef usertest <flow>` 또는 `$you-got-this usertest <flow>`로 확인합니다. 자동 수정 없이 결과를 보고하며 실제 참가자 대상 연구가 아닙니다.
 
+`$youre-the-chef <goal>` 또는 `$you-got-this <goal>`은 승인된 작업을 수행하고 결과를 확인합니다. `plan`은 남은 작업과 범위를 논의하고, `gauntlet`은 유한한 개선 반복을 추가하며, `audit`은 광범위한 구현 없이 결과를 보고합니다.
+
 ## 업데이트
 
 ```sh

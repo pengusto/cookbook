@@ -101,6 +101,8 @@ Otros modos: `$prep-the-kitchen explain <flujo>` explica el código; `$prep-the-
 
 Elige según la situación: [guía](../choosing-workflow.md). Para un fallo actual: `$find-the-bad-ingredient` (Kitchen) o `$why-is-it-broken` (Plain). Para probar un recorrido real: `$youre-the-chef usertest <recorrido>` o `$you-got-this usertest <recorrido>`. Informa de hallazgos sin reparaciones automáticas; no es un estudio con participantes humanos.
 
+Con `$youre-the-chef <objetivo>` o `$you-got-this <objetivo>`, el agente ejecuta el trabajo autorizado y verifica el resultado. `plan` ayuda a decidir el alcance y las tareas pendientes; `gauntlet` añade una revisión iterativa finita y `audit` informa de hallazgos sin una implementación amplia.
+
 ## Actualizar
 
 ```sh

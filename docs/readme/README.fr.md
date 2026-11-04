@@ -101,6 +101,8 @@ Autres modes : `$prep-the-kitchen explain <parcours>` explique le code ; `$prep-
 
 Choisir selon la situation : [guide](../choosing-workflow.md). Pour une panne actuelle : `$find-the-bad-ingredient` (Kitchen) ou `$why-is-it-broken` (Plain). Pour tester un parcours réel : `$youre-the-chef usertest <parcours>` ou `$you-got-this usertest <parcours>`. Le mode rapporte les résultats sans réparation automatique ; ce n’est pas une étude avec des participants humains.
 
+Avec `$youre-the-chef <objectif>` ou `$you-got-this <objectif>`, l’agent réalise le travail autorisé et vérifie le résultat. `plan` aide à discuter du périmètre et du travail restant ; `gauntlet` ajoute une boucle de critique limitée et `audit` rapporte des constats sans implémentation étendue.
+
 ## Mettre à jour
 
 ```sh
