@@ -269,6 +269,8 @@ def food_art():
     if len(rows) != len(expected) or {row['id'] for row in rows} != expected:
         raise ValueError('Each recipe and information page needs its own food illustration')
     for row in rows:
+        if any(source in expected for source in row.get('source_assets', [])):
+            raise ValueError('Food illustrations must not reuse another page’s sprites')
         if row['file'] != row['id'] + '.webp' or len(row['ingredients']) != 4:
             raise ValueError('Invalid food sheet contract')
         cutouts = row['cutouts']

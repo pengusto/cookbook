@@ -20,7 +20,7 @@ The eight READMEs select the appropriate image with native `picture/source` mark
 
 The open cookbook embeds Lenis 1.3.27 (MIT) from darkroomengineering/lenis for desktop scroll smoothing. Runtime, stylesheet, pinned source records and license are vendored under `assets/vendor/lenis/`; the offline companion includes the license. No CDN is contacted at runtime.
 
-`assets/cookbook/food/` contains seventeen AI-generated dish-and-ingredient illustration sheets, one for each workflow or information page. The built-in image generator produced the originals; existing cwebp tooling encoded runtime WebP copies. Per-sheet subjects, prompt records, original/runtime checksums and historical sprite regions and 85 separate padded square cutouts (dimensions, method and checksums) are in `assets/cookbook/food/SOURCES.json`. Original generated PNGs and earlier illustrations are preserved. The artwork is a visual metaphor for coding workflows, not evidence of real cooking instructions or product screenshots.
+`assets/cookbook/food/` contains AI-generated dish-and-ingredient illustration sheets for the workflow and information pages. The built-in image generator produced the originals; existing cwebp tooling encoded runtime WebP copies. Per-sheet subjects, prompt records, original/runtime checksums and separate padded square cutouts are in `assets/cookbook/food/SOURCES.json`. Original generated PNGs and earlier illustrations are preserved. The artwork is a visual metaphor for coding workflows, not evidence of real cooking instructions or product screenshots.
 
 The square food cutouts were prepared once with Pillow from the bundled workspace runtime, separating alpha-connected painted silhouettes and preserving translucent edges and crumbs. These prepared assets add no runtime or build dependency. Original illustration sheets remain intact.
 
@@ -30,4 +30,4 @@ The preserved You Got This paper-atelier banner pair is historical AI-generated 
 
 `skills/help-me-focus` adapts ideas from [i-have-adhd](https://github.com/ayghri/i-have-adhd) by Ayoub Ghriss. The upstream MIT license and copyright notice are retained in that skill’s `LICENSE`. The Cookbook version changes the original rules to preserve user preferences, required detail and host instructions.
 
-Two additional recipe sheets reuse existing project-generated dish and ingredient sprites; their source assets and transformations are recorded in `assets/cookbook/food/SOURCES.json`.
+Split the Menu and One Dish at a Time have their own generated recipe illustrations; their source records and transformations are recorded in `assets/cookbook/food/SOURCES.json`.

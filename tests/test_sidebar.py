@@ -104,6 +104,20 @@ class SidebarContracts(unittest.TestCase):
         self.assertNotIn('cloneNode(true)', text)
         self.assertNotIn('/*COOKBOOK_LENIS*/', text)
 
+    def test_reusing_another_recipe_sprite_is_rejected(self):
+        from unittest.mock import patch
+        original = Path.read_text
+        def read(path, *args, **kwargs):
+            text = original(path, *args, **kwargs)
+            if path == builder.ROOT / 'assets/cookbook/food/SOURCES.json':
+                data = json.loads(text)
+                target = next(row for row in data if row['id'] == 'untangle-this-chat')
+                target['source_assets'] = ['which-name-wins']
+                return json.dumps(data)
+            return text
+        with patch.object(Path, 'read_text', read), self.assertRaisesRegex(ValueError, 'must not reuse'):
+            builder.food_art()
+
     def test_inline_data_cannot_terminate_script_and_no_runtime_remote_assets(self):
         from unittest.mock import patch
         import re
