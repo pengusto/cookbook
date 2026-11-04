@@ -20,7 +20,7 @@ Cookbook oferece a quem desenvolve com Codex ou Claude Code 22 fluxos focados: p
 
 Escolha **perguntas simples** ou **nomes de cozinha**. Ambos vêm das mesmas instruções mantidas; instale um estilo por ambiente.
 
-**Beta pública experimental · 0.7.4.** [Explorar as receitas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
+**Beta pública experimental · 0.7.5.** [Explorar as receitas](https://pengusto.github.io/cookbook/cookbook.html) · [Plain](https://pengusto.github.io/cookbook/cookbook-plain.html)
 
 ## Início rápido: escolha um estilo
 
@@ -101,7 +101,7 @@ Outros modos: `$prep-the-kitchen explain <fluxo>` explica o código; `$prep-the-
 
 Escolha pela situação: [guia](../choosing-workflow.md). Para uma falha atual: `$find-the-bad-ingredient` (Kitchen) ou `$why-is-it-broken` (Plain). Para testar um fluxo real: `$youre-the-chef usertest <fluxo>` ou `$you-got-this usertest <fluxo>`. O modo relata resultados sem reparos automáticos; não é uma pesquisa com participantes humanos.
 
-Com `$youre-the-chef <objetivo>` ou `$you-got-this <objetivo>`, o agente executa o trabalho autorizado e verifica o resultado. `plan` ajuda a discutir o escopo e o trabalho restante; `gauntlet` acrescenta um ciclo finito de crítica e `audit` relata achados sem implementação ampla.
+Com `$youre-the-chef <objetivo>` ou `$you-got-this <objetivo>`, o agente executa o trabalho autorizado e verifica o resultado. `plan` ajuda a discutir o escopo e o trabalho restante; `gauntlet` acrescenta um ciclo finito de crítica e `audit` relata achados sem implementação ampla. Invocar um skill não inicia um temporizador: um Goal do Codex solicitado explicitamente pode continuar entre turnos; uma execução periódica exige uma automação separada.
 
 ## Atualizar
 
