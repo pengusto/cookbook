@@ -69,6 +69,14 @@ onboarding, integration gaps, placeholders, documentation, or polish.
 
 - Let the task determine the architecture and decomposition.
 - Keep tightly coupled work under one coherent owner.
+- Prefer one authoritative checkout and app installation. Reuse compatible build
+  outputs and dependencies; create separate worktrees, app bundles, or test
+  environments only when isolation is needed, and identify which is canonical.
+- Protect user sessions and unsaved work. Track test processes and artifacts you
+  create, close your test instances when finished after checking their state, and
+  retain or remove files only within existing authorization and recovery needs.
+  Check storage before large downloads or duplicate builds; report retained
+  test artifacts and any material resource usage or cleanup decision.
 - Parallelize only genuinely independent work; integrate it before judging
   completion.
 - For important quality-sensitive work, use a builder and a separate
