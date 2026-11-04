@@ -3257,289 +3257,287 @@
   {
     "id": "untangle-this-chat",
     "file": "untangle-this-chat.webp",
-    "dish": "three distinct tomato and mozzarella bruschetta on a small wooden board",
+    "dish": "sushi maki platter",
     "ingredients": [
-      "ripe tomatoes",
-      "basil leaves",
-      "crusty sourdough bread",
-      "a mozzarella ball"
+      "sushi rice",
+      "salmon fillet",
+      "cucumber",
+      "nori sheets"
     ],
-    "generator": "Rearranged existing Cookbook illustrations",
+    "generator": "built-in image_gen",
     "generated": "2026-11-04",
-    "source_assets": [
-      "which-name-wins"
-    ],
-    "sha256": "e1c8bf931f015100ca515250f9ec15da02cd4f8080c117adc049cc203f9fa727",
+    "source_sha256": "773a2318f7bac7d7eac6a8c3da1094a03c06c44009f28db034c30b555f684e1f",
+    "sha256": "53405ad1ecd0084936fcd772703780b37c8fbcaea21820c21101083d0238e4e4",
+    "prompt": "Transparent watercolor cookbook sprite sheet: a sushi maki platter on the left; sushi rice, salmon fillet, cucumber and nori sheets in a separated 2×2 grid on the right; no text. Background and glow removal pass requested.",
     "dishNames": {
-      "de": "Bruschetta-Trio",
-      "en": "Bruschetta trio"
+      "de": "Sushi-Maki-Platte",
+      "en": "Sushi maki platter"
     },
     "ingredientNames": {
       "de": [
-        "Tomaten",
-        "Basilikum",
-        "Sauerteigbrot",
-        "Mozzarella"
+        "Sushireis",
+        "Lachs",
+        "Gurke",
+        "Nori-Blätter"
       ],
       "en": [
-        "ripe tomatoes",
-        "basil leaves",
-        "crusty sourdough bread",
-        "a mozzarella ball"
+        "sushi rice",
+        "salmon fillet",
+        "cucumber",
+        "nori sheets"
       ]
     },
     "regions": {
       "dish": [
-        50,
-        100,
-        760,
-        810
+        18,
+        237,
+        857,
+        888
       ],
       "ingredients": [
         [
-          825,
-          40,
-          1150,
-          460
+          877,
+          213,
+          1176,
+          481
         ],
         [
-          1190,
-          40,
-          1515,
-          460
+          1194,
+          230,
+          1507,
+          465
         ],
         [
-          825,
-          550,
-          1150,
-          970
+          868,
+          566,
+          1152,
+          877
         ],
         [
-          1190,
-          550,
-          1515,
-          970
+          1185,
+          574,
+          1508,
+          875
         ]
       ]
     },
     "cutouts": {
       "dish": {
         "file": "cutouts/untangle-this-chat-dish.webp",
-        "sha256": "d6ba0f54712dfcbacfb41db7c7fedee101aff7ff0a3eedf427662a2ef8bcb6af",
+        "sha256": "75b74c47017317b869f72c54fc62200ad7a42e23631d8c523d1dd091c65b5c9d",
         "size": [
           320,
           320
         ],
         "source_bounds": [
-          50,
-          100,
-          760,
-          810
+          13,
+          232,
+          862,
+          893
         ]
       },
       "ingredients": [
         {
           "file": "cutouts/untangle-this-chat-ingredient-0.webp",
-          "sha256": "733b148ae6aabeabf08d5c93d7fec15f88b14f0b827b64d0c43371982cd42260",
+          "sha256": "ddf1823c7dd0ba6798a0128a7c626999e1869ae1601658f4c2342c4ebe462c62",
           "size": [
             160,
             160
           ],
           "source_bounds": [
-            825,
-            40,
-            1150,
-            460
+            872,
+            208,
+            1181,
+            486
           ]
         },
         {
           "file": "cutouts/untangle-this-chat-ingredient-1.webp",
-          "sha256": "ebfb8d7ff15f35674cb865536f358459b7ad3a3e316f780c2e1419e7b2f15a13",
+          "sha256": "bfa901eea90097493a03900f8b3868277e81654160153f1b1c3dd7aa735f12a1",
           "size": [
             160,
             160
           ],
           "source_bounds": [
-            1190,
-            40,
-            1515,
-            460
+            1189,
+            225,
+            1512,
+            470
           ]
         },
         {
           "file": "cutouts/untangle-this-chat-ingredient-2.webp",
-          "sha256": "4a4f2437ec6b33225f5db0a86fd227dd5b523c38167219cc6196f71399c57c2c",
+          "sha256": "8303cde2afe7916209ab6c916df456b01b496234b26cb795582401907b6ebaeb",
           "size": [
             160,
             160
           ],
           "source_bounds": [
-            825,
-            550,
-            1150,
-            970
+            863,
+            561,
+            1157,
+            882
           ]
         },
         {
           "file": "cutouts/untangle-this-chat-ingredient-3.webp",
-          "sha256": "7b9657b9e4ad2b8f6ba02bcdd280a3a2aaec48634feafe26eb951c970789d2d3",
+          "sha256": "987eec3009de9c2c6a07bed363bc6be66d14da6ac87394147d2c51426bc4ff2a",
           "size": [
             160,
             160
           ],
           "source_bounds": [
-            1190,
-            550,
-            1515,
-            970
+            1180,
+            569,
+            1513,
+            880
           ]
         }
       ]
     },
-    "cutout_method": "Reused the named existing transparent dish and ingredient sprites, resized without distortion and assembled into a new sheet. Source assets retained. Optimized from original source sprites at quality 78 for the inline sidebar size budget."
+    "cutout_method": "Separate generated food silhouettes cropped using alpha component bounds, transparent fringe retained, faint alpha noise below 8 removed, centered with 5% padding on square canvases. Original generated PNG retained separately."
   },
   {
     "id": "help-me-focus",
     "file": "help-me-focus.webp",
-    "dish": "a comforting lentil and root vegetable stew in a rustic ceramic bowl",
+    "dish": "spiral ratatouille in a cream baking dish",
     "ingredients": [
-      "dry green lentils in a bowl",
-      "carrots",
-      "potatoes",
-      "fresh spinach leaves"
+      "tomato",
+      "eggplant",
+      "zucchini",
+      "fresh thyme"
     ],
-    "generator": "Rearranged existing Cookbook illustrations",
+    "generator": "built-in image_gen",
     "generated": "2026-11-04",
-    "source_assets": [
-      "catch-me-up"
-    ],
-    "sha256": "adf02419091d8487a0286820e8ab9563b98f421f53aac390d396e2f1290a72eb",
+    "source_sha256": "7f6111b4c56e0f7af98e28290d4a8fbf588749325e9137b9204d09f57b2eaf90",
+    "sha256": "639b4d911eee12a80cb4229c9a24e33d52267352198a023cceb2b56b01f37d34",
+    "prompt": "Transparent watercolor cookbook sprite sheet: spiral ratatouille in a cream baking dish on the left; tomato, eggplant, zucchini and thyme in a separated 2×2 grid on the right; no text. Background and glow removal pass requested.",
     "dishNames": {
-      "de": "Linseneintopf",
-      "en": "Lentil stew"
+      "de": "Ratatouille",
+      "en": "Ratatouille"
     },
     "ingredientNames": {
       "de": [
-        "Linsen",
-        "Karotten",
-        "Kartoffeln",
-        "Spinat"
+        "Tomate",
+        "Aubergine",
+        "Zucchini",
+        "Thymian"
       ],
       "en": [
-        "dry green lentils in a bowl",
-        "carrots",
-        "potatoes",
-        "fresh spinach leaves"
+        "tomato",
+        "eggplant",
+        "zucchini",
+        "fresh thyme"
       ]
     },
     "regions": {
       "dish": [
-        50,
-        100,
-        760,
-        810
+        30,
+        174,
+        865,
+        875
       ],
       "ingredients": [
         [
-          825,
-          40,
-          1150,
-          460
+          912,
+          175,
+          1186,
+          449
         ],
         [
-          1190,
-          40,
-          1515,
-          460
+          1233,
+          96,
+          1489,
+          486
         ],
         [
-          825,
-          550,
-          1150,
-          970
+          896,
+          510,
+          1158,
+          931
         ],
         [
-          1190,
-          550,
-          1515,
-          970
+          1201,
+          528,
+          1491,
+          909
         ]
       ]
     },
     "cutouts": {
       "dish": {
         "file": "cutouts/help-me-focus-dish.webp",
-        "sha256": "c1548b0b3736b97394bcd0c36c038075243d5a62a8aa60d6f0cc35290f62b83a",
+        "sha256": "3c9bc59a6ee257295fe6410b6eb83c5e4211add9a6f716ff7488bb9b3513d119",
         "size": [
           320,
           320
         ],
         "source_bounds": [
-          50,
-          100,
-          760,
-          810
+          25,
+          169,
+          870,
+          880
         ]
       },
       "ingredients": [
         {
           "file": "cutouts/help-me-focus-ingredient-0.webp",
-          "sha256": "5632e8179edbe8705be98ced31494cddccf54e076bf10fbdd13eaf2923eadea9",
+          "sha256": "8ac8a7143efa03d1160eccd79e00ce87384cb6af2847059517b5de9b67b148db",
           "size": [
             160,
             160
           ],
           "source_bounds": [
-            825,
-            40,
-            1150,
-            460
+            907,
+            170,
+            1191,
+            454
           ]
         },
         {
           "file": "cutouts/help-me-focus-ingredient-1.webp",
-          "sha256": "838f51dbc77bc8090ecc7349e98d0b1e8b68aaa15a3d5eaef717fb4b296d238f",
+          "sha256": "d1e4e8ddc7f87d8bc39fae227ea6f98a0d4efe96ba9f6aeb01356a2903c11da7",
           "size": [
             160,
             160
           ],
           "source_bounds": [
-            1190,
-            40,
-            1515,
-            460
+            1228,
+            91,
+            1494,
+            491
           ]
         },
         {
           "file": "cutouts/help-me-focus-ingredient-2.webp",
-          "sha256": "f7e6ff927c6b5d294fc0a3a18b32697c1cac12255fce5206b5249236bf4bd34a",
+          "sha256": "ce6be6ea16fd8676e518e2a1b598c5ddc21621dd3f3b760fc7338f654b262c8b",
           "size": [
             160,
             160
           ],
           "source_bounds": [
-            825,
-            550,
-            1150,
-            970
+            891,
+            505,
+            1163,
+            936
           ]
         },
         {
           "file": "cutouts/help-me-focus-ingredient-3.webp",
-          "sha256": "834956981e48c5dad16d91cf0b69687a9bbc3f0786afea466329624291801a45",
+          "sha256": "51d325231d02e8b46c7c01333030925090ac18c5bb895e46ae34d6e2027efe97",
           "size": [
             160,
             160
           ],
           "source_bounds": [
-            1190,
-            550,
-            1515,
-            970
+            1196,
+            523,
+            1496,
+            914
           ]
         }
       ]
     },
-    "cutout_method": "Reused the named existing transparent dish and ingredient sprites, resized without distortion and assembled into a new sheet. Source assets retained. Optimized from original source sprites at quality 78 for the inline sidebar size budget."
+    "cutout_method": "Separate generated food silhouettes cropped using alpha component bounds, transparent fringe retained, faint alpha noise below 8 removed, centered with 5% padding on square canvases. Original generated PNG retained separately."
   }
 ]
