@@ -1,8 +1,8 @@
 # Cookbook by Pengusto
 
-Version 0.7.3 · Codex · plain
+Version 0.7.4 · Codex · plain
 
-20 workflows for planning a project, checking progress, recovering chat context, reviewing exposure and legal questions, preparing a release, drafting change notes and finishing a chat. Open a fresh host session after installation, then invoke a workflow with your request.
+22 workflows for planning a project, checking progress, recovering chat context, reviewing exposure and legal questions, preparing a release, drafting change notes and finishing a chat. Open a fresh host session after installation, then invoke a workflow with your request.
 
 | Workflow | Invocation |
 |---|---|
@@ -12,6 +12,8 @@ Version 0.7.3 · Codex · plain
 | Sort and Triage | `$sort-and-triage` |
 | Catch Me Up | `$catch-me-up` |
 | Where Were We? | `$where-were-we` |
+| Untangle This Chat | `$untangle-this-chat` |
+| Help Me Focus | `$help-me-focus` |
 | How Do I Start? | `$how-do-i-start` |
 | Finish My Prompt | `$finish-my-prompt` |
 | Which Name Wins? | `$which-name-wins` |

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Help Me Focus"
+  short_description: "Make replies easier to focus on and act on"
+  default_prompt: "Use $help-me-focus for concise, actionable replies, adapting detail to what I need."
