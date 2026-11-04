@@ -26,6 +26,8 @@ Use a typical user sentence and the expected result to make the choice concrete:
 | User's need | Select the available workflow that… |
 |---|---|
 | “Are we getting anywhere?” | checks progress and recommends a course correction |
+| “This chat is too complicated; can we split it?” | summarizes the situation and identifies independent chat handoffs |
+| “Make replies easier for me to focus on.” | adapts the response style while preserving necessary detail |
 | “What did I originally ask for?” | reconstructs this chat's goal and decisions |
 | “I have been away for weeks.” | refreshes the project against its current state |
 | “This button or check fails now.” | reproduces and diagnoses the current failure |

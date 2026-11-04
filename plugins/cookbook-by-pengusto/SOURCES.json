@@ -1,6 +1,6 @@
 {
   "bundle": "cookbook-by-pengusto",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "variant": "kitchen",
   "skills": [
     {
@@ -10,7 +10,7 @@
       "revision": null,
       "files": {
         "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-        "SKILL.md": "6dee411e362ad217189a805a2e4e91f1ec3829671dd4d07902df2e4fb30bf907",
+        "SKILL.md": "98b2674396db90b6888e1ba569aedc1668115859cfcfdd44d76b89437383a0aa",
         "agents/openai.yaml": "276fe7b61fe3887bcde70ad8bc40ade7f4420d0b35973f796b48a0e3f88d12b6"
       }
     },
@@ -71,6 +71,28 @@
       }
     },
     {
+      "id": "untangle-this-chat",
+      "license": "MIT",
+      "repository": null,
+      "revision": null,
+      "files": {
+        "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
+        "SKILL.md": "cca1a7d230750efbca70c6eb739d161264c919105be20cb9e1900e3a5d16066d",
+        "agents/openai.yaml": "a8335cc73a06cb358da15a26282dff6157bbd7bce84d54740469e688fedad0d6"
+      }
+    },
+    {
+      "id": "help-me-focus",
+      "license": "MIT",
+      "repository": "https://github.com/ayghri/i-have-adhd",
+      "revision": null,
+      "files": {
+        "LICENSE": "8acbb618089b738404f76ac60fca1aaa995d9a87995eddf95f0b777acd7f7d2c",
+        "SKILL.md": "a961b9e14b866638bf72b65527639e7a8cb6094b7413e028c8002668989b3166",
+        "agents/openai.yaml": "65518432d1498819045124a770d5c6f95b0a1cd83efc5fe386600e98433133a2"
+      }
+    },
+    {
       "id": "start-it-right",
       "license": "MIT",
       "repository": null,
@@ -114,7 +136,7 @@
       "revision": "d8ce9d530d74852ead13fac2f6994714808caff5",
       "files": {
         "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
-        "SKILL.md": "ea78740c282e59bc1f78e090bb54a7fc0c6e54df262b65412af91e7ca79b64d8",
+        "SKILL.md": "da1f842c0ee6a02e0a501d3cb106649372d8af425dda906bc4bd0623c4d6a85e",
         "agents/openai.yaml": "653155bf6dc1bba854d8087cff023592efe19b27425e376b884498473ac8fec5",
         "examples.md": "b997b3f231736e748c0db7a63cb59a4dda0d88ddf1e30fe939a36e347c651103"
       }

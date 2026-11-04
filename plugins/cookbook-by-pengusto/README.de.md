@@ -1,8 +1,8 @@
 # Cookbook by Pengusto
 
-Version 0.7.3 · Codex · kitchen
+Version 0.7.4 · Codex · kitchen
 
-20 Workflows für Projektplanung, Fortschrittschecks, Chat-Rückblicke, Sicherheits- und Rechtsfragen, Release-Vorbereitung, Änderungsnotizen und einen bewussten Chat-Abschluss. Nach der Installation eine neue Host-Sitzung öffnen und einen Workflow zusammen mit dem eigenen Anliegen aufrufen.
+22 Workflows für Projektplanung, Fortschrittschecks, Chat-Rückblicke, Sicherheits- und Rechtsfragen, Release-Vorbereitung, Änderungsnotizen und einen bewussten Chat-Abschluss. Nach der Installation eine neue Host-Sitzung öffnen und einen Workflow zusammen mit dem eigenen Anliegen aufrufen.
 
 | Workflow | Aufruf |
 |---|---|
@@ -12,6 +12,8 @@ Version 0.7.3 · Codex · kitchen
 | Sort the Ingredients | `$sort-the-ingredients` |
 | Back to the Kitchen | `$back-to-the-kitchen` |
 | What Was I Cooking? | `$what-was-i-cooking` |
+| Split the Menu | `$split-the-menu` |
+| One Dish at a Time | `$one-dish-at-a-time` |
 | Prep the Kitchen | `$prep-the-kitchen` |
 | Finish My Order | `$finish-my-order` |
 | Name That Dish | `$name-that-dish` |

@@ -1,0 +1,4 @@
+interface:
+  display_name: "One Dish at a Time"
+  short_description: "Make replies easier to focus on and act on"
+  default_prompt: "Use $one-dish-at-a-time for concise, actionable replies, adapting detail to what I need."
