@@ -1,0 +1,290 @@
+[
+  {
+    "id": "untangle-this-chat",
+    "file": "untangle-this-chat.webp",
+    "dish": "three distinct tomato and mozzarella bruschetta on a small wooden board",
+    "ingredients": [
+      "ripe tomatoes",
+      "basil leaves",
+      "crusty sourdough bread",
+      "a mozzarella ball"
+    ],
+    "generator": "Rearranged existing Cookbook illustrations",
+    "generated": "2026-11-04",
+    "source_assets": [
+      "which-name-wins"
+    ],
+    "sha256": "e1c8bf931f015100ca515250f9ec15da02cd4f8080c117adc049cc203f9fa727",
+    "dishNames": {
+      "de": "Bruschetta-Trio",
+      "en": "Bruschetta trio"
+    },
+    "ingredientNames": {
+      "de": [
+        "Tomaten",
+        "Basilikum",
+        "Sauerteigbrot",
+        "Mozzarella"
+      ],
+      "en": [
+        "ripe tomatoes",
+        "basil leaves",
+        "crusty sourdough bread",
+        "a mozzarella ball"
+      ]
+    },
+    "regions": {
+      "dish": [
+        50,
+        100,
+        760,
+        810
+      ],
+      "ingredients": [
+        [
+          825,
+          40,
+          1150,
+          460
+        ],
+        [
+          1190,
+          40,
+          1515,
+          460
+        ],
+        [
+          825,
+          550,
+          1150,
+          970
+        ],
+        [
+          1190,
+          550,
+          1515,
+          970
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/untangle-this-chat-dish.webp",
+        "sha256": "fb6c41be49040506514b561efd5585d51e7eb3f3c7e428251a73effcc8567967",
+        "size": [
+          384,
+          384
+        ],
+        "source_bounds": [
+          50,
+          100,
+          760,
+          810
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/untangle-this-chat-ingredient-0.webp",
+          "sha256": "78fb381e1ae7837be69676f15ef80e58338481a30eea4544f888b54f942ffefd",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            825,
+            40,
+            1150,
+            460
+          ]
+        },
+        {
+          "file": "cutouts/untangle-this-chat-ingredient-1.webp",
+          "sha256": "81b8735f129132e64f8f4c55d861823aa636253aa0250ddeaa2a8bb2aae35539",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1190,
+            40,
+            1515,
+            460
+          ]
+        },
+        {
+          "file": "cutouts/untangle-this-chat-ingredient-2.webp",
+          "sha256": "72158106f497481447ff84f62b62ec2b18b6f1680a11697393364841f90aa157",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            825,
+            550,
+            1150,
+            970
+          ]
+        },
+        {
+          "file": "cutouts/untangle-this-chat-ingredient-3.webp",
+          "sha256": "718bd292b539e77c28b7fc5f44d82b358652de1fc32eb481d38176777547fbc0",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1190,
+            550,
+            1515,
+            970
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Reused the named existing transparent dish and ingredient sprites, resized without distortion and assembled into a new sheet. Source assets retained."
+  },
+  {
+    "id": "help-me-focus",
+    "file": "help-me-focus.webp",
+    "dish": "a comforting lentil and root vegetable stew in a rustic ceramic bowl",
+    "ingredients": [
+      "dry green lentils in a bowl",
+      "carrots",
+      "potatoes",
+      "fresh spinach leaves"
+    ],
+    "generator": "Rearranged existing Cookbook illustrations",
+    "generated": "2026-11-04",
+    "source_assets": [
+      "catch-me-up"
+    ],
+    "sha256": "adf02419091d8487a0286820e8ab9563b98f421f53aac390d396e2f1290a72eb",
+    "dishNames": {
+      "de": "Linseneintopf",
+      "en": "Lentil stew"
+    },
+    "ingredientNames": {
+      "de": [
+        "Linsen",
+        "Karotten",
+        "Kartoffeln",
+        "Spinat"
+      ],
+      "en": [
+        "dry green lentils in a bowl",
+        "carrots",
+        "potatoes",
+        "fresh spinach leaves"
+      ]
+    },
+    "regions": {
+      "dish": [
+        50,
+        100,
+        760,
+        810
+      ],
+      "ingredients": [
+        [
+          825,
+          40,
+          1150,
+          460
+        ],
+        [
+          1190,
+          40,
+          1515,
+          460
+        ],
+        [
+          825,
+          550,
+          1150,
+          970
+        ],
+        [
+          1190,
+          550,
+          1515,
+          970
+        ]
+      ]
+    },
+    "cutouts": {
+      "dish": {
+        "file": "cutouts/help-me-focus-dish.webp",
+        "sha256": "99ffc2d092cfc15ea7bd6e7cdc11f4152141cb716193dd989d0d8712f57984da",
+        "size": [
+          384,
+          384
+        ],
+        "source_bounds": [
+          50,
+          100,
+          760,
+          810
+        ]
+      },
+      "ingredients": [
+        {
+          "file": "cutouts/help-me-focus-ingredient-0.webp",
+          "sha256": "043b25124aee7458239964ba13136437ac60d8e7b2c1a20ff47ab8d6747179fd",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            825,
+            40,
+            1150,
+            460
+          ]
+        },
+        {
+          "file": "cutouts/help-me-focus-ingredient-1.webp",
+          "sha256": "f8f6cd9ac19224cdee04a711af31274d2d17a3a0078930a5faf142ac8c5afa71",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1190,
+            40,
+            1515,
+            460
+          ]
+        },
+        {
+          "file": "cutouts/help-me-focus-ingredient-2.webp",
+          "sha256": "320c3f963bffb8e8427e0e5f096968ab0547c2d75bab969f69a51a62ba7ae9d8",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            825,
+            550,
+            1150,
+            970
+          ]
+        },
+        {
+          "file": "cutouts/help-me-focus-ingredient-3.webp",
+          "sha256": "d87601235051275ca77ba0dae752b1b2baab542c6e74489eab74516f469985fc",
+          "size": [
+            192,
+            192
+          ],
+          "source_bounds": [
+            1190,
+            550,
+            1515,
+            970
+          ]
+        }
+      ]
+    },
+    "cutout_method": "Reused the named existing transparent dish and ingredient sprites, resized without distortion and assembled into a new sheet. Source assets retained."
+  }
+]
