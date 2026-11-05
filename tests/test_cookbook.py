@@ -328,6 +328,17 @@ class WorkloadPlanningContracts(unittest.TestCase):
 
 
 class AutonomousWorkflowContracts(unittest.TestCase):
+    def test_closing_delivery_contract_is_present_in_both_variants(self):
+        row = next(r for r in app.catalog() if r['id'] == 'kill-the-todos')
+        for variant in app.VARIANTS:
+            with self.subTest(variant=variant):
+                _, files = app.rendered_files(row, variant)
+                guide = files['SKILL.md'].decode()
+                self.assertIn('source and target branches', guide)
+                self.assertIn('check\nCI and deployment separately', guide)
+                self.assertIn('Never infer permission to merge, push or publish', guide)
+                self.assertIn('A cleanup review does not authorize deletion.', guide)
+
     def test_modes_and_examples_are_portable_in_each_installed_variant(self):
         row = next(r for r in app.catalog() if r['id'] == 'you-got-this')
         for variant in app.VARIANTS:

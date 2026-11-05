@@ -579,10 +579,10 @@
     "summary": "„Können wir aufhören?“ Zusagen abgleichen, Aufräumen prüfen oder mit handoff gezielt übergeben.",
     "when": "Der Chat soll enden oder pausieren; relevante Backups, Installer und Exporte werden vor einer Löschentscheidung geprüft.",
     "ingredients": "Vereinbartes Ziel, vorhandene Ergebnisse, offene Arbeit und relevante Prüfungen.",
-    "steps": "Vorhandene Prüfnachweise nutzen; autorisierten Rest abschließen; fertig, offen und nötigen Wiedereinstieg knapp nennen.",
+    "steps": "Prüfnachweise nutzen; autorisierten Rest samt Git-Übergabe und Aufräumen abschließen; fertig, offen und Wiedereinstieg knapp nennen.",
     "verify": "Erledigtes ist belegt; offene, vertagte und blockierte Punkte bleiben sichtbar.",
     "result": "Geprüfter Abschluss oder konkrete Übergabe mit Wiedereinstieg.",
-    "limits": "Guide-only und Pause ändern keine Dateien oder Aufgabenstatus. Kein blindes TODO-Abhaken, Veröffentlichen oder automatisches Archivieren.",
+    "limits": "Guide-only und Pause bleiben unverändert. Abschluss allein erlaubt keine Löschung, keinen Push, Merge oder Veröffentlichung und kein automatisches Archivieren.",
     "prompt": "${{ID}} Close the Kitchen: Bereite den Abschluss dieses Chats vor; nichts veröffentlichen.",
     "status": "source",
     "license": "MIT",
@@ -590,7 +590,7 @@
     "repository": null,
     "files": {
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "cbd84b92810e549cdc91af1fbe3b4ea21f222a3f189c8952bc5ff779dc9dc6f4",
+      "SKILL.md": "58886f8acb63d91ce1f4a58809ac35d6ef9d682985d728a9f329276ae095128e",
       "agents/openai.yaml": "ffd32d863dc091b3f7c2e6e0fb5e3c0f90350d6e0606be90d75270990d181623",
       "references/handoff.md": "59a6124c75d399d631cc8c4aa24805375981a0c29bf61ac0234fbf9600e543d4"
     },
