@@ -1,0 +1,5 @@
+# Archived banner design variants / Archivierte Banner-Entwürfe
+
+`banner-designs.tar.gz` retains 55 historical files from the October 2026 Cookbook banner review: two alternative PNG images, review notes, prompts, provenance, local README previews, viewport checks and screenshots. The selected light and dark artwork is maintained separately on the current main branch. The archive is historical design material, not a runtime dependency. Each archived file was checked against the original working-tree backup before publication. Paths inside the archive retain their original repository layout.
+
+`banner-designs.tar.gz` enthält 55 historische Dateien aus der Cookbook-Bannerprüfung vom Oktober 2026: zwei alternative PNG-Bilder, Prüfnachweise, Prompts, Herkunftsangaben, lokale README-Vorschauen, Ansichtsprüfungen und Screenshots. Die ausgewählten Hell- und Dunkelvarianten werden separat auf dem aktuellen Main-Zweig gepflegt. Das Archiv dokumentiert den Entwurfsstand und ist keine Runtime-Abhängigkeit. Jede Datei wurde vor der Veröffentlichung mit dem ursprünglichen Arbeitsstand-Backup abgeglichen. Die Pfade im Archiv entsprechen der damaligen Repository-Struktur.
