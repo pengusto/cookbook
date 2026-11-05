@@ -45,6 +45,13 @@ whole request as the product intent.
 
 ### 1. Orient
 
+Settle the project's one canonical folder first (for example
+`~/Projects/<name>`). If the chat started in a dated scratch folder such as
+Codex's `~/Documents/Codex/<date>/…`, switch to the existing project folder
+instead of working or cloning there. For a new project that needs files, create
+the canonical folder with Git and ask whether it should get a private GitHub
+repository; skip this for pure brainstorming.
+
 For an existing project, inspect the real repository root, Git status, nearest
 `AGENTS.md`, README, design guidance, existing ticket conventions, and current
 open work. Preserve unrelated changes and nested repositories. For a new
@@ -112,7 +119,8 @@ without explicit authorization. Reuse authorization already given for that actio
 ### 5. Verify and hand off
 
 Run the smallest relevant checks. Report changed files, checks, assumptions,
-unverified external gates, and the next recommended action. For a skill, run
+unverified external gates, and the next recommended action briefly in the chat;
+do not write evidence JSONs or check reports as files unless the user asks. For a skill, run
 the bundled quick validator and inspect the examples before release.
 
 ## Fallbacks

@@ -12,7 +12,7 @@ Give a short, evidence-based course correction for the current task. Match the u
 ## Check the course
 
 - Use the known current goal and completion criteria; recover earlier context only if it changes the diagnosis. Distinguish the original goal from assistant-proposed additions.
-- Compare that outcome with observable results: working behavior, resolved uncertainty, artifacts, relevant checks and remaining blockers. Activity, tool-call volume and commits alone are not progress. Investigation counts when it eliminates a plausible cause or informs a decision.
+- Compare that outcome with observable results: working behavior, resolved uncertainty, artifacts, relevant checks and remaining blockers. Activity, tool-call volume, commits and new evidence or report files alone are not progress. Investigation counts when it eliminates a plausible cause or informs a decision.
 - Start with current context and inspect only the relevant files, checks or task summaries needed to resolve uncertainty. Identify what cannot be verified. Do not scan unrelated tasks by default.
 - Trace repeated attempts: what changed, what was learned and why another attempt is justified. Look for side quests, premature deployment, unsuitable test data, missing reproduction and tests that fail to exercise the affected behavior. These are hypotheses, not mandatory findings.
 - Revisit accepted recommendations relevant to the next step. Separate suggestions from commitments, intentional deferrals and implementation not evidenced. Do not turn every AI suggestion into a todo.

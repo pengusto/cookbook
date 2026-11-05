@@ -28,6 +28,7 @@ Inspect patterns supported by the evidence, such as:
 - Repeated pipeline retries without a changed hypothesis or relevant local check.
 - Plans that stalled despite a clear direction, including unresolved dependencies, oversized scope, unnecessary approval requests and assistant side quests.
 - Advice the assistant gave but did not carry through after acceptance, or advice that would not have solved the actual problem.
+- Scattered workspaces: repeated clones of the same repository, per-chat or per-reviewer copies, private toolchains or emulators in work folders, uncommitted changes left behind, and piles of evidence files or reports nobody asked for. Check storage and Git status rather than guessing.
 
 Compare proposed alternatives against information and constraints available at the time. Do not assume a sandbox reproduces production, more tests fix every CI failure, or every unimplemented suggestion deserved implementation. Name the concrete failure an improvement could prevent and its limits.
 
