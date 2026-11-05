@@ -171,3 +171,9 @@ References checked 2026-10-27:
 [Submission](https://developers.openai.com/plugins/deploy/submission).
 
 When adding workflows, derive remote search and selection limits from the packaged catalog. Keep positional sidebar details aligned with the same catalog order and test a full-catalog search.
+
+When switching between catalog versions, do not build into shared `site/` or
+`dist/` directories: this experiment's builder does not remove files left by a
+larger catalog and can mix outputs from different builds. Run the full check in
+an isolated clean copy instead; preserve existing generated files until their
+ownership and retention needs are known.
