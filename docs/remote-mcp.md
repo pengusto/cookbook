@@ -80,7 +80,7 @@ keine Installation oder automatische Ausführung eines Workflows statt.
 
 | Tool | Arguments / Argumente | Result / Ergebnis |
 |---|---|---|
-| `search_workflows` | Optional `query` (max. 500 characters), `chapter`, `limit` (1–18), `language` (`en`/`de`) | Ranked lexical matches, prerequisites, limits, version and recipe links. Empty query browses; no matches remains empty. |
+| `search_workflows` | Optional `query` (max. 500 characters), `chapter`, `limit` (1–catalog size), `language` (`en`/`de`) | Ranked lexical matches, prerequisites, limits, version and recipe links. Empty query browses; no matches remains empty. |
 | `get_workflow` | Required `id` from search; optional `language` | Rendered canonical SKILL.md, SHA-256, bundled reference/script files as text with hashes, prerequisites and limits. |
 | `open_cookbook` | Optional `workflow_ids`, `selected_id`, `language` | Shared MCP App book, optionally focused on selected results. Only this tool attaches a UI resource. |
 
@@ -169,3 +169,5 @@ References checked 2026-10-27:
 [OpenAI server guide](https://developers.openai.com/plugins/build/mcp-server),
 [MCP Apps UI](https://developers.openai.com/plugins/build/chatgpt-ui),
 [Submission](https://developers.openai.com/plugins/deploy/submission).
+
+When adding workflows, derive remote search and selection limits from the packaged catalog. Keep positional sidebar details aligned with the same catalog order and test a full-catalog search.

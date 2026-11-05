@@ -101,7 +101,12 @@ class RemoteContracts(unittest.TestCase):
             self.assertIn('ready-to-serve', [r['id'] for r in found['workflows']])
         found = self.app.call('search_workflows', {'query': '', 'limit': 18, 'language': 'de'})['structuredContent']
         self.assertEqual(len(found['workflows']), 18)
-        self.assertEqual(found['total'], 18)
+        self.assertEqual(found['total'], len(self.app.rows))
+        all_found = self.app.call('search_workflows', {'query': '', 'limit': len(self.app.rows)})['structuredContent']
+        self.assertEqual(len(all_found['workflows']), len(self.app.rows))
+        self.assertEqual({row['id'] for row in all_found['workflows']}, set(self.app.by_id))
+        ids = list(self.app.by_id)
+        self.app.validate('open_cookbook', {'workflow_ids': ids})
         self.assertEqual(found['workflows'][0]['summary'], self.app.rows[0]['localized']['de']['summary'])
         self.assertEqual(self.app.call('search_workflows', {'query': 'xyzzqfuzz'})['structuredContent']['workflows'], [])
         filtered = self.app.call('search_workflows', {'chapter': 'closing'})['structuredContent']['workflows']

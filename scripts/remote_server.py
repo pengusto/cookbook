@@ -60,7 +60,7 @@ class Cookbook:
              'Returns lexical matches, not a guarantee of suitability. Use get_workflow for the full instructions.',
              schema({'query': {'type': 'string', 'maxLength': 500},
                      'chapter': {'type': 'string', 'enum': self.chapters},
-                     'limit': {'type': 'integer', 'minimum': 1, 'maximum': 18, 'default': 5}, 'language': language})),
+                     'limit': {'type': 'integer', 'minimum': 1, 'maximum': len(self.rows), 'default': 5}, 'language': language})),
             ('get_workflow', 'Read a Cookbook workflow',
              'Read the full versioned workflow and bundled reference files. Does not execute or install it. '
              'Execution requires the host tools and user authorization described in the instructions.',
@@ -68,7 +68,7 @@ class Cookbook:
             ('open_cookbook', 'Open Cookbook',
              'Open the interactive recipe book, optionally with IDs returned by search_workflows '
              'and a selected workflow. Reads only Cookbook content; does not start a workflow.',
-             schema({'workflow_ids': {'type': 'array', 'items': identifier, 'maxItems': 18, 'uniqueItems': True},
+             schema({'workflow_ids': {'type': 'array', 'items': identifier, 'maxItems': len(self.rows), 'uniqueItems': True},
                      'selected_id': identifier, 'language': language})),
         ]
         tools = []
