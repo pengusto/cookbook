@@ -69,9 +69,17 @@ onboarding, integration gaps, placeholders, documentation, or polish.
 
 - Let the task determine the architecture and decomposition.
 - Keep tightly coupled work under one coherent owner.
+- Work in the project's one canonical folder (for example `~/Projects/<name>`).
+  If the chat started in a dated scratch folder such as Codex's
+  `~/Documents/Codex/<date>/…`, switch to the existing project folder instead
+  of cloning it again; keep scratch folders for short notes only.
 - Prefer one authoritative checkout and app installation. Reuse compatible build
-  outputs and dependencies; create separate worktrees, app bundles, or test
-  environments only when isolation is needed, and identify which is canonical.
+  outputs and dependencies; create a separate worktree, app bundle, or test
+  environment only when isolation is really needed, keep it inside the project,
+  identify which copy is canonical, and remove it after merging.
+- Use toolchains, SDKs, and emulators from their central install locations
+  (Homebrew, `~/.rustup`, the Android SDK, existing Node or Python installs).
+  Never download private copies into a work folder.
 - Protect user sessions and unsaved work. Track your test processes and temporary
   build, test, and research artifacts; check storage before large downloads or
   duplicate builds. During long runs and at completion, review your own artifacts
@@ -79,13 +87,16 @@ onboarding, integration gaps, placeholders, documentation, or polish.
   task's authorization and host permissions. Before removal, check ownership,
   actual use, and whether needed results are retained or recoverable. Preserve
   active dependencies, user data, unsaved changes, releases, needed backups, and
-  anything uncertain; do not use blanket deletion. Close your test instances
-  after checking their state, and report material cleanup and retained artifacts.
+  anything uncertain; do not use blanket deletion. Before reporting completion,
+  stop the dev servers, emulators, test apps, and containers you started after
+  checking their state; name anything left running on purpose, and report
+  material cleanup and retained artifacts.
 - Parallelize only genuinely independent work; integrate it before judging
   completion.
 - For important quality-sensitive work, use a builder and a separate
   fresh-context critic when the host supports it. Have the critic inspect the
-  actual result and the quality bar, not the builder's summary.
+  actual result and the quality bar, not the builder's summary. The critic
+  reads the existing checkout; it does not create its own clone or worktree.
 - Implement the smallest complete change. Reuse existing patterns and
   dependencies. Do not add a framework, agent-management layer, state
   machine, database, scoreboard, or fixed team/iteration protocol.
@@ -253,7 +264,7 @@ an existing equally simple project-appropriate artifact) with only:
 - Important assumptions, decisions, blockers, and likely next step
 
 Create or update it only when it helps the user return later. Never build a
-dashboard, round ledger, scoring service, or process around it.
+dashboard, round ledger, scoring service, evidence files, or process around it.
 
 ## Completion gate
 
@@ -266,7 +277,14 @@ Before declaring completion:
    warrants it.
 5. Perform a final domain-specific missing-things sweep.
 
-Report what changed, what was checked, and what remains unverified. Never
+Leave nothing silently uncommitted: in the user's own repositories, commit
+finished or partial work on a feature branch and push it when authorized, or
+name the open files and why. Do not create backup or evidence branches.
+
+Report what changed, what was checked, and what remains unverified, briefly
+and in plain language in the chat. Evidence belongs in that report, not in
+evidence JSONs, status files, or written review reports, unless the user asks
+for them; keep needed screenshots or logs under an ignored `.scratch/`. Never
 claim browser, runtime, external integration, deployment, or human approval
 without direct evidence.
 
