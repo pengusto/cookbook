@@ -66,6 +66,17 @@ again for settled permissions. Closing alone grants none of those permissions.
 Do not squash unrelated work, rewrite shared history or delete branches to make
 the repository look tidy. Preserve and identify unrelated or uncertain files.
 
+When a commit, push or merge is part of the agreed delivery, make the exact
+change and destination reviewable first: identify the intended files, commits,
+source and target branches, relevant checks and any required review or branch
+protection. Do not include unrelated changes. Fetch before comparing or
+integrating; inspect the resulting diff and resolve conflicts without discarding
+unrelated work. If the action is authorized, complete it using the project's
+normal workflow. Verify the resulting commit and remote or PR state, and check
+CI and deployment separately where applicable. If a check, required review or
+permission prevents delivery, report the precise gate and retain the work.
+Never infer permission to merge, push or publish from a request merely to close.
+
 Make resumption on another computer possible with the fewest moving parts:
 use the existing remote, a pushed branch or commit, the project's setup commands
 and a short next action. Verify the remote contains the delivered commit and
