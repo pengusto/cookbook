@@ -314,6 +314,25 @@ class NewWorkflowInstallationContracts(unittest.TestCase):
                     self.assertNotIn('Enis Uysal', guide)
                     self.assertNotIn(f'skills/{rows[source_id]["install_ids"]["plain" if variant == "kitchen" else "kitchen"]}/SKILL.md', files)
 
+class ReadmePreparationContracts(unittest.TestCase):
+    def test_both_variants_ship_readme_guidance_and_scoped_defaults(self):
+        row = next(r for r in app.catalog() if r['id'] == 'let-them-see-it')
+        for variant in app.VARIANTS:
+            with self.subTest(variant=variant):
+                _, files = app.rendered_files(row, variant)
+                guide = files['SKILL.md'].decode()
+                presentation = files['references/readme-presentation.md'].decode()
+                self.assertIn("for the user's own public projects", guide)
+                for language in ('English', 'German', 'Simplified Chinese', 'Japanese',
+                                 'Spanish', 'Korean', 'Brazilian Portuguese', 'French'):
+                    self.assertIn(language, guide)
+                self.assertIn('review-only request', guide)
+                self.assertIn('without a request', guide)
+                self.assertIn('a short GIF or clip of a real interaction', presentation)
+                self.assertIn('Do not invent a release, passing CI or compatibility', presentation)
+                self.assertIn('Optional sponsorship:', guide)
+
+
 class AutonomousWorkflowContracts(unittest.TestCase):
     def test_modes_and_examples_are_portable_in_each_installed_variant(self):
         row = next(r for r in app.catalog() if r['id'] == 'you-got-this')
