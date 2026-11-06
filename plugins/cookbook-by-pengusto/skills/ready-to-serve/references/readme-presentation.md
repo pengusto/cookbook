@@ -1,6 +1,6 @@
 # README presentation
 
-Use this guide only when the repository review identifies a concrete presentation gap. First state the reader’s question, then propose the smallest useful change in the evaluation table. Preserve the existing quickstart and good writing. Apply the agreed scope; do not install tools or publish assets merely because they appear here.
+Use this guide for README presentation work. Preserve a working quickstart and good writing; improve the first impression and choose visuals that explain the actual product. Do not install tools or publish assets merely because they appear here.
 
 ## Choose by project and reader need
 
@@ -9,7 +9,7 @@ Use this guide only when the repository review identifies a concrete presentatio
 | A short public code example needs visual emphasis | Optional Carbon image alongside the same copyable code | A normal fenced code block is already clear |
 | Small library: how do I use it? | Short, copyable API example and expected result | A screenshot or animation adds no information |
 | CLI: what happens when I run it? | Brief real terminal demo; VHS when reproducibility helps | A command and its text output already explain it |
-| Website or game: what does it look like? | Current screenshot or short clip of the real product | Existing media already answers the question |
+| App, website or game: what does it look like and do? | Current screenshot and, when movement explains the feature, a short GIF or clip of a real interaction | Existing media already answers the question |
 | Multi-component service or MCP: how does data move? | One small Mermaid flow or sequence diagram based on inspected code | A sentence explains the entire flow |
 | Skill: how do I invoke it and what does it do? | Invocation, realistic input and reviewed outcome; distinguish actual agent behavior from package checks | A decorative terminal recording would only simulate behavior |
 | Tiny repository: what is missing? | Nothing extra when purpose and quickstart suffice | Do not invent a presentation requirement |
@@ -19,6 +19,12 @@ Use this guide only when the repository review identifies a concrete presentatio
 [Best-README-Template](https://github.com/othneildrew/Best-README-Template) (Unlicense) is an optional reference for missing sections, not a file to impose on every project. Select relevant material from its blank template; remove placeholders, irrelevant sections and decorative badges. Derive installation, configuration and examples from the target repository. Do not copy example commands or change the project's license to match the template. Keep secrets out of source-code configuration examples.
 
 Acceptance: purpose is clear, a newcomer can follow the verified quickstart, links resolve, and claims match supported behavior. No runtime, account or installation is needed to consult the reference.
+
+## Product visuals and badges
+
+Prefer existing accurate media; otherwise capture a short real interaction with disposable or sanitized data when feasible. A static screenshot, terminal example, or diagram can be clearer than an animation. Keep media readable and reasonably sized, describe it in alt text and nearby prose, and provide a static alternative for motion. If the product cannot be run or captured safely, report the gap rather than presenting a mockup as real. Check the README in light and dark themes and narrow layouts when feasible.
+
+Choose a compact row of badges that answer real questions: license, actual release, platforms, CI, runtime, or downloads where their sources exist. Link to the relevant source, verify labels, rendered images and destinations, and use the same facts in translations. Do not invent a release, passing CI or compatibility; if a dynamic badge cannot be verified, omit it or clearly use a truthful static label.
 
 ## Reproducible CLI demo
 
