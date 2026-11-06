@@ -327,6 +327,25 @@ class WorkloadPlanningContracts(unittest.TestCase):
             self.assertNotIn('{{', guide)
 
 
+class ReadmePreparationContracts(unittest.TestCase):
+    def test_both_variants_ship_readme_guidance_and_scoped_defaults(self):
+        row = next(r for r in app.catalog() if r['id'] == 'let-them-see-it')
+        for variant in app.VARIANTS:
+            with self.subTest(variant=variant):
+                _, files = app.rendered_files(row, variant)
+                guide = files['SKILL.md'].decode()
+                presentation = files['references/readme-presentation.md'].decode()
+                self.assertIn("for the user's own public projects", guide)
+                for language in ('English', 'German', 'Simplified Chinese', 'Japanese',
+                                 'Spanish', 'Korean', 'Brazilian Portuguese', 'French'):
+                    self.assertIn(language, guide)
+                self.assertIn('review-only request', guide)
+                self.assertIn('without a request', guide)
+                self.assertIn('a short GIF or clip of a real interaction', presentation)
+                self.assertIn('Do not invent a release, passing CI or compatibility', presentation)
+                self.assertIn('Optional sponsorship:', guide)
+
+
 class AutonomousWorkflowContracts(unittest.TestCase):
     def test_closing_delivery_contract_is_present_in_both_variants(self):
         row = next(r for r in app.catalog() if r['id'] == 'kill-the-todos')
