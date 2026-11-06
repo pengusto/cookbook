@@ -531,7 +531,7 @@
     "repository": null,
     "files": {
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "1397e42ff91a37b201eade8bf5b58ba9d193aacb776d2165eb2eb81b20c09908",
+      "SKILL.md": "d19bd54bff947125ec879d0bced6428c47155d14438f7f2be0d2b91d358c25cf",
       "agents/openai.yaml": "c5a544227bc017b57f85b0f0692a9a725fd81699ad43ae839c16acb0c78f0020",
       "references/github-pages.md": "26a71d05cf69d44f432012d4c506f0eb69a021a6b37a891718447310b7721e92",
       "references/readme-presentation.md": "dca18b502a54717cee0dcef9bf5b7e43931b05b49c6f035196811f8cd4f632d0",

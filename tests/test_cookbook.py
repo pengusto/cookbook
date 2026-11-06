@@ -344,6 +344,8 @@ class ReadmePreparationContracts(unittest.TestCase):
                 self.assertIn('a short GIF or clip of a real interaction', presentation)
                 self.assertIn('Do not invent a release, passing CI or compatibility', presentation)
                 self.assertIn('Optional sponsorship:', guide)
+                self.assertIn('available local skills for project- or brand-specific banner guidance', guide)
+                self.assertNotIn('pengusto-readme-banner', guide)
 
 
 class AutonomousWorkflowContracts(unittest.TestCase):
