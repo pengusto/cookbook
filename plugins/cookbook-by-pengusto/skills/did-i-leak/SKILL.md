@@ -27,6 +27,10 @@ If the user asks for a full scan, says to ignore the cache, requests a clean aud
 
 Lead the response in the user's language with the actual `GO`, `GO WITH REVIEW`, or `NO-GO` result and a plain explanation. Follow with 🔴 concrete blockers, 🟡 items needing review, 🔍 what was actually scanned including history, cache/full mode, available and missing scanners, and ➡️ the most useful next action. Include only applicable categories; do not turn unavailable coverage into a clean result. Describe findings without secret values and do not imply a clean scan proves safety. Use `--json` only when structured metadata is needed. Never print raw scanner output or secret values.
 
+If the scan aborts without a verdict, report it as failed or incomplete and name
+the missing coverage; do not invent a GO, GO WITH REVIEW, or NO-GO result. An
+incomplete Git history read must not advance the trusted cache.
+
 ## Workflow
 
 1. Inspect the current tree and reachable Git history, including branches, tags, deleted files, and historical blobs. Reuse safe local scan state when coverage is trusted; cache corruption, history rewrites, changed detection/scanner configuration, and uncertain coverage require a full audit.

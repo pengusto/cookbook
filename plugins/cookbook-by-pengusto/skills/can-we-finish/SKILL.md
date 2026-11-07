@@ -48,6 +48,11 @@ Dropping a TODO is not completing it. Change persisted task status only when req
 
 When this chat created or downloaded files, or the user requests cleanup, include a scoped cleanup review in the closing plan. Consider backups, staging, test outputs, superseded build packages, downloaded installers and exported documents such as PDFs imported into a document archive. Inspect only relevant locations and distinguish originals, retained recovery copies, reproducible intermediates and uncertain files. Age, filename and apparent duplication alone do not establish that a file is disposable.
 
+Clearly identified disposable temporary artifacts created by this task can be
+removed within existing authorization and project rules. Preserve uncertain
+files, user data, active dependencies and needed recovery copies; the cleanup
+review and approval requirements below still apply to them.
+
 For each proposed removal, give its exact path or identifier, size when available, purpose, reason for removal and the retained recovery source. Verify that source is accessible and covers the data being removed; use an integrity or restore check appropriate to the risk. Check active references and retention requirements. Keep unique originals, the only verified recovery copy and anything with unresolved ownership, recovery coverage or retention needs.
 
 For an exported PDF or other document reportedly imported into Paperless or a similar service, verify the actual destination record and retrieve or inspect the stored original to confirm completeness. An upload attempt, receipt, filename match or search hit alone is insufficient. An archive entry does not resolve legal or original-document retention requirements. If destination access or retention is unclear, retain the local file and ask the user for the missing decision. For installers, check whether the installed application still depends on the download and whether a trusted replacement is available for the required version or recovery needs.
@@ -86,7 +91,7 @@ never sync secrets. Prefer updating an existing project handoff or checklist to
 creating another document. If delivery is unauthorized or blocked, name the
 exact remaining step instead of calling the work ready on another computer.
 
-Compare the outcome with the finish line and run checks relevant to the selected slice. Distinguish local files, commits, pushes and deployments; attempted checks and confirmed results; complete, deferred and blocked work. State important coverage limits.
+Compare the outcome with the finish line and run checks relevant to the selected slice, reusing valid results when the relevant state has not changed. Distinguish local files, commits, pushes and deployments; attempted checks and confirmed results; complete, deferred and blocked work. Identify any shared acceptance still pending, its covered flows and environments, and the consequences of missing it. State important coverage limits.
 
 Lead the closing guide and final handoff with a plain recommendation: ready to close, finish the specified remaining work first, or pause intentionally with the objective still open. Make the decision and its reason easy to scan. In the user's language, use concise labeled lines or bullets as relevant:
 
