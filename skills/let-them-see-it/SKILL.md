@@ -39,7 +39,7 @@ Start with purpose, a working quickstart, license and relevant release blockers.
 - Collaboration: add `CONTRIBUTING.md`, `SECURITY.md`, a code of conduct, issue/PR templates, or a changelog only when they serve the project. Never invent a security mailbox or maintainer commitment. An `AGENTS.md` is for durable agent guidance, not mandatory decoration.
 - Verification: run relevant existing checks and verify documented commands where feasible. Recommend CI only for useful repeatable checks. For documentation-only projects, validate links, metadata, and realistic skill behavior rather than inventing an application build.
 
-Show the evaluation before editing. If implementation of this concrete scope has not already been authorized, wait for the user to approve, amend, or reject it. Broad requests to "make it ready" alone do not waive this review. Preserve specific approvals already given; do not ask for them twice. Separate unresolved choices from independent approved work.
+Show the evaluation before editing. A broad request to "make it ready" does not waive this review or authorize publication or unrelated changes. Proceed with reversible preparation already authorized by the request and project rules; do not require a second approval merely because the request was broad. If a material choice or the intended change remains unclear, recommend a concrete scope and ask only for that decision while continuing independent authorized work. Preserve specific approvals already given.
 
 For a small private review, distinguish unknowns from confirmed missing material. Recommend only checks required by the actual sharing scope; do not promote every uninspected file or an additional scanner run to a mandatory blocker.
 

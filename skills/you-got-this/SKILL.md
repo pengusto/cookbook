@@ -135,10 +135,12 @@ the project's pre-push checks cannot be completed.
 At a useful boundary between related changes, run a proportionate integrated
 regression pass covering their shared flows and interactions, using appropriate
 test data and environments. This supplements checks needed earlier; it never
-defers a prerequisite test or mandatory gate. When agreed, collect later browser,
-device, provider, or human acceptance in an existing shared acceptance item;
-record its specific flows, environments, dependencies, and outstanding checks.
-An open item is not a passed acceptance or permission to release.
+defers a prerequisite test or mandatory gate. When agreed, record later browser,
+device, provider, or human acceptance in an existing shared item or plan; create
+a new item only when authorized. If neither is available, report the pending
+acceptance in the chat. Record its flows, environments, dependencies, and
+outstanding checks. An open item is not a passed acceptance or permission to
+release.
 
 Report actual results and coverage separately from simulations, untested paths,
 pending acceptance, and local, committed, pushed, or deployed states. Do not
@@ -148,8 +150,7 @@ destructive actions, external changes, and release.
 
 Repeat an attempt only when it can change the result or resolve a specific
 uncertainty. Otherwise change approach or report the blocker; activity and
-retries alone are not progress. Stop when the agreed work is complete, not by
-inventing more work to keep a loop running.
+retries alone are not progress.
 
 Keep working through authorized, unblocked slices. After a meaningful work
 block, briefly report progress, remaining work, and any concrete decision or
@@ -316,7 +317,8 @@ and in plain language in the chat. Evidence belongs in that report, not in
 evidence JSONs, status files, or written review reports, unless the user asks
 for them; keep needed screenshots or logs under an ignored `.scratch/`. Never
 claim browser, runtime, external integration, deployment, or human approval
-without direct evidence.
+without direct evidence. Reuse checks whose relevant state is unchanged, and
+distinguish local, committed, pushed, deployed, and pending acceptance states.
 
 ## Fit within Cookbook
 

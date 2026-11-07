@@ -94,9 +94,29 @@ review or lookup alone does not authorize edits. `verify-live` observes delivery
 it does not publish. `handoff` prepares context; actual sending or host transfer
 requires the user's corresponding instruction.
 
+For related work, choose by the current question rather than running every
+recipe: use a diff review for changed code, a journey check for an actual user
+flow, a secret scan for sensitive repository content, and a product/legal review
+for the applicable product obligations. Each supplies different evidence; none
+substitutes for device, provider or human acceptance that is still pending.
+When implementing several agreed tickets, the execution workflow can reuse the
+project's plan and later pass its checked results and open acceptance to the
+closing workflow. A prompt asking only for review remains read-only; a request
+to fix or simplify authorizes the corresponding reversible work in scope.
+
 Code-Review untersucht die Änderung; usertest durchläuft den Bedienablauf.
 Vereinfachung erhält Verträge; Debugging behebt einen aktuellen Fehler. Die Suche
 findet die Quelle vor Rückblick oder Wiedereinstieg. Erklär-, Vergleichs-, Review-
 und Suchaufträge allein erlauben keine Änderungen. `verify-live` prüft und
 veröffentlicht nicht. `handoff` bereitet Kontext vor; Versand oder Hostwechsel
 brauchen den entsprechenden Auftrag.
+
+Wähle bei zusammenhängender Arbeit nach der aktuellen Frage: Ein Diff-Review
+prüft Änderungen, ein Nutzertest einen tatsächlichen Bedienablauf, ein Secret-Scan
+sensible Repository-Inhalte und ein Produkt-/Rechtsreview die anwendbaren
+Produktpflichten. Sie liefern unterschiedliche Nachweise; keiner ersetzt eine
+noch offene Geräte-, Anbieter- oder menschliche Abnahme. Bei mehreren vereinbarten
+Tickets kann der Umsetzungsskill den bestehenden Projektplan verwenden und seine
+geprüften Ergebnisse samt offener Abnahme an den Abschlussskill übergeben. Ein
+reiner Review-Auftrag bleibt lesend; ein Auftrag zum Beheben oder Vereinfachen
+erlaubt die zugehörigen reversiblen Änderungen im vereinbarten Umfang.

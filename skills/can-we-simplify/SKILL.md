@@ -1,6 +1,6 @@
 ---
 name: can-we-simplify
-description: Find unnecessary complexity in a selected change or code path and propose smaller behavior-preserving alternatives. Use for requests to simplify, remove overengineering or reduce duplication; implement only when the user also asks for changes. This is a focused pass, not a whole-repository rewrite.
+description: Find unnecessary complexity in a selected change or code path and propose smaller behavior-preserving alternatives. Use for requests to simplify, remove overengineering or reduce duplication; implement when the request asks for simplification, and leave files unchanged for review-only requests. This is a focused pass, not a whole-repository rewrite.
 ---
 
 # {{TITLE}}

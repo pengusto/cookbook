@@ -49,9 +49,12 @@ Use a typical user sentence and the expected result to make the choice concrete:
 
 Choose from the inspected inventory, not from this table as an assumed list
 of installed IDs. Show only the selected naming variant and actual host syntax.
-Distinguish a product/legal review from an interactive journey test; neither
-replaces the other. `usertest` simulates a user's actions, not human usability
-research. Never run the recommended mode merely to demonstrate its invocation.
+Distinguish a diff review, current-failure investigation, interactive journey,
+secret scan, and product/legal review by their actual evidence and scope; none
+establishes the others' coverage. `usertest` is an agent-run journey, not human
+usability research. A focused workflow can complement an authorized task when
+useful; do not require a fixed chain of skills or repeat completed checks. Never
+run the recommended mode merely to demonstrate its invocation.
 
 ## Names, interface and limits
 
