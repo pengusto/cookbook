@@ -1,6 +1,6 @@
 ---
 name: trim-the-recipe
-description: Find unnecessary complexity in a selected change or code path and propose smaller behavior-preserving alternatives. Use for requests to simplify, remove overengineering or reduce duplication; implement only when the user also asks for changes. This is a focused pass, not a whole-repository rewrite.
+description: Find unnecessary complexity in a selected change or code path and propose smaller behavior-preserving alternatives. Use for requests to simplify, remove overengineering or reduce duplication; implement when the request asks for simplification, and leave files unchanged for review-only requests. This is a focused pass, not a whole-repository rewrite.
 ---
 
 # Trim the Recipe
@@ -16,6 +16,15 @@ Identify the selected diff or flow and inspect its callers, tests and project co
 Look for actual duplication, unused configuration, indirection with no current benefit, speculative compatibility paths and abstractions that hide a simple operation. Prefer project patterns and platform facilities. Compare the current implementation with the smaller alternative and explain what maintenance burden disappears. Similar-looking code can have different semantics; share it only when the shared responsibility is real. Fewer lines alone is not the goal.
 
 Separate proven redundancy from uncertainty and optional style preferences. Keep a mechanism when removing it would weaken recovery, security, logging, compatibility or another established contract. If no worthwhile simplification is supported, report that outcome instead of inventing a refactor.
+
+Distinguish contractual error handling, such as validation and error responses,
+from a discovered defect. Do not silently fix an unrelated defect under a
+behavior-preserving simplification; report it separately or fix it when the
+request authorizes that change. If preserving or fixing a material behavior is
+ambiguous and affects the requested change, ask the specific question while
+continuing independent authorized work. For example, "keep the errors" could
+refer to an error message, a data-loss defect, or both; clarify which behavior
+to preserve before changing an affected path.
 
 ## Recommend or apply
 

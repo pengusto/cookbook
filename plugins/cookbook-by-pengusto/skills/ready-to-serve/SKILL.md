@@ -1,6 +1,6 @@
 ---
 name: ready-to-serve
-description: Prepare a repository and improve its README for sharing, or check documentation consistency. Use verify-live to check whether an intended version is actually delivered and working.
+description: Prepare a repository and improve its README for private or public sharing, or check documentation consistency. Use verify-live to check whether an intended version is actually delivered and working.
 ---
 
 # Ready to Serve
@@ -23,7 +23,7 @@ rendered examples when their appearance affects the claim.
 
 Read effective project instructions, inspect Git status, remotes and tracked files, and trace the actual installation and usage flow. Preserve unrelated work. Identify the audience, project type, maturity, and existing documentation conventions. Tailor proposals: CLI projects need command examples, libraries need API usage, websites need setup and useful screenshots, and skills need installation and behavioral checks. Establish whether the project is experimental, maintained, or complete from evidence or a maintainer decision; do not infer abandonment from inactivity alone.
 
-Lead the evaluation in the user's language with an evidence-backed assessment: 🟢 ready for publication, 🟡 ready with stated limitations, or 🔴 blocked by specific items. Name the reason and intended publication scope; if the review is incomplete, say so rather than claiming readiness. Follow with ✅ what already works, and a concise table of necessary / recommended / optional actions, evidence with file references, proposed change, and acceptance check. Identify the smallest ➡️ next step and any human decision. Omit empty categories, distinguish unverified checks from findings, and explain in words what colors mean. Include what this project does not need. Recommend a concrete set of changes rather than a generic file checklist.
+Lead the evaluation in the user's language with an evidence-backed assessment for the requested sharing scope: 🟢 ready for that scope, 🟡 ready with stated limitations, or 🔴 blocked by specific items. Name the reason and intended audience; if the review is incomplete, say so rather than claiming readiness. For a private demonstration or review, say so explicitly; do not imply readiness for public publication. Follow with ✅ what already works, and a concise table of necessary / recommended / optional actions, evidence with file references, proposed change, and acceptance check. Identify the smallest ➡️ next step and any human decision. Omit empty categories, distinguish unverified checks from findings, and explain in words what colors mean. Include what this project does not need. Recommend a concrete set of changes rather than a generic file checklist.
 
 Start with purpose, a working quickstart, license and relevant release blockers. Evaluate the following areas only in proportion to the project; a small repository can need no additional files:
 
@@ -39,7 +39,7 @@ Start with purpose, a working quickstart, license and relevant release blockers.
 - Collaboration: add `CONTRIBUTING.md`, `SECURITY.md`, a code of conduct, issue/PR templates, or a changelog only when they serve the project. Never invent a security mailbox or maintainer commitment. An `AGENTS.md` is for durable agent guidance, not mandatory decoration.
 - Verification: run relevant existing checks and verify documented commands where feasible. Recommend CI only for useful repeatable checks. For documentation-only projects, validate links, metadata, and realistic skill behavior rather than inventing an application build.
 
-Give a concise evaluation and proceed with the requested README or preparation work. A request to evaluate or review alone does not authorize edits. Resolve routine choices yourself, respect explicit scope, and separate genuine decisions from independent work. Preparing documentation does not authorize publication or changes to GitHub settings.
+Show a concise evaluation before editing. A request to evaluate or review alone does not authorize edits, and a broad request to "make it ready" does not waive this review. Proceed with requested reversible README or preparation work within project rules without requiring another approval merely because the request was broad. Resolve routine choices yourself; if a material choice or the intended change remains unclear, recommend a concrete scope and ask only for that decision while continuing independent authorized work. Preparing documentation does not authorize publication, unrelated changes or GitHub settings changes. Preserve specific approvals already given.
 
 For a small private review, distinguish unknowns from confirmed missing material. Recommend only checks required by the actual sharing scope; do not promote every uninspected file or an additional scanner run to a mandatory blocker.
 
