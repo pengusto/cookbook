@@ -471,10 +471,10 @@
     "repository": null,
     "files": {
       "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
-      "SKILL.md": "4cddf0dff88772a148f83788dd6234a43fb05cb37a2a348dd2ec5c3b06f1f2b7",
+      "SKILL.md": "6f9391c959162f82e463ecdad19496757c0b53929f52d367ac9eedd0e395069a",
       "agents/openai.yaml": "368658d03a1c2b28417b868ebd980f8a307a99cbb1bfa51d08e99a4bc622920e",
       "bin/did-i-leak": "fd4d6597e8f760047c34af3c6779948692b1d53a78ba5109463528aff807c70a",
-      "scripts/did_i_leak.py": "7ae7758cf521b0c1536bd1241df952fa9e8bd36f65a6b7afb16521be370f2c65"
+      "scripts/did_i_leak.py": "4486ee11313ee94513f174102ab5d921381517efc37ff235275cfa9eec2fc6d5"
     },
     "cooking_title": "Keep the Recipe Secret",
     "install_ids": {
