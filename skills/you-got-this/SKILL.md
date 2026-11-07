@@ -121,6 +121,36 @@ material uncertainty. Gauge scope from evidence; if time, cost, or effort cannot
 be estimated credibly, say so rather than inventing a number. Use an existing
 project plan or task list when useful instead of creating a parallel system.
 
+For related features or tickets, order the agreed work by dependencies, user
+value, risk, and blockers. Start with prerequisites and the next useful
+unblocked slice. Choose reversible details from project context; keep independent
+authorized work moving when a real decision or dependency blocks another slice.
+
+After each meaningful change, check the affected behavior and risks, and preserve
+a recoverable, reviewable state using the project's existing Git or other saving
+conventions. Commit and push only within existing authorization and required
+checks. A failed or unavailable required check remains visible; do not push when
+the project's pre-push checks cannot be completed.
+
+At a useful boundary between related changes, run a proportionate integrated
+regression pass covering their shared flows and interactions, using appropriate
+test data and environments. This supplements checks needed earlier; it never
+defers a prerequisite test or mandatory gate. When agreed, collect later browser,
+device, provider, or human acceptance in an existing shared acceptance item;
+record its specific flows, environments, dependencies, and outstanding checks.
+An open item is not a passed acceptance or permission to release.
+
+Report actual results and coverage separately from simulations, untested paths,
+pending acceptance, and local, committed, pushed, or deployed states. Do not
+claim a measured benefit without evidence. Use authorized data and safe test
+environments; respect explicit boundaries for real data, costs, messages,
+destructive actions, external changes, and release.
+
+Repeat an attempt only when it can change the result or resolve a specific
+uncertainty. Otherwise change approach or report the blocker; activity and
+retries alone are not progress. Stop when the agreed work is complete, not by
+inventing more work to keep a loop running.
+
 Keep working through authorized, unblocked slices. After a meaningful work
 block, briefly report progress, remaining work, and any concrete decision or
 blocker; continue without waiting for confirmation when the agreed direction is

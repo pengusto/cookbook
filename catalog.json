@@ -331,7 +331,7 @@
     "revision": "d8ce9d530d74852ead13fac2f6994714808caff5",
     "files": {
       "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
-      "SKILL.md": "7c349eff760915d7973be012f57e8bf9f3d3d4f9c5838a1b0512013e3761b739",
+      "SKILL.md": "506a03da98707c4f7090f83fa1a53e7cfe9132f3a78627fb4be91b229898bcfe",
       "agents/openai.yaml": "653155bf6dc1bba854d8087cff023592efe19b27425e376b884498473ac8fec5",
       "examples.md": "48088b24722530b5fb86a14c2a173fe925b05a7298ee6196d69508e6f89e57b0"
     },
