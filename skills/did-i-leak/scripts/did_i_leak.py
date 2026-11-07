@@ -59,6 +59,10 @@ class GitError(RuntimeError):
     pass
 
 
+class HistoryScanError(GitError):
+    pass
+
+
 @dataclass
 class Finding:
     category: str
@@ -473,21 +477,29 @@ def scan_historical_objects(
             process.stdin.write(f"{oid}\n".encode())
             process.stdin.flush()
             header = process.stdout.readline()
-            if not header:
-                break
             parts = header.split()
-            if len(parts) < 3:
-                continue
-            size = int(parts[2])
+            if not header.endswith(b"\n") or len(parts) != 3 or parts[0] != oid.encode():
+                raise HistoryScanError("Incomplete Git history object header")
+            if parts[1] not in (b"blob", b"tree", b"commit", b"tag"):
+                raise HistoryScanError("Invalid Git history object type")
+            try:
+                size = int(parts[2])
+            except ValueError:
+                raise HistoryScanError("Invalid Git history object size") from None
+            if size < 0:
+                raise HistoryScanError("Invalid Git history object size")
             read_size = min(size, MAX_TEXT_BYTES)
             data = process.stdout.read(read_size)
+            if len(data) != read_size:
+                raise HistoryScanError("Incomplete Git history object")
             remaining = size - read_size
             while remaining:
                 chunk = process.stdout.read(min(1024 * 1024, remaining))
                 if not chunk:
-                    break
+                    raise HistoryScanError("Incomplete Git history object")
                 remaining -= len(chunk)
-            process.stdout.read(1)  # batch protocol delimiter
+            if process.stdout.read(1) != b"\n":
+                raise HistoryScanError("Incomplete Git history object delimiter")
             if parts[1] != b"blob":
                 continue
             if size > MAX_TEXT_BYTES:
@@ -502,12 +514,25 @@ def scan_historical_objects(
                     finding.commit = short_commit(commit)
                     finding.status = finding_status(commit, name, current)
                 findings.extend(blob_findings)
+    except OSError as error:
+        raise HistoryScanError("Git history reader pipe failed") from error
     finally:
-        process.stdin.close()
+        try:
+            process.stdin.close()
+            pipe_failed = False
+        except OSError:
+            pipe_failed = True
         process.stdout.close()
         if process.stderr:
             process.stderr.close()
-        process.wait(timeout=30)
+        try:
+            status = process.wait(timeout=30)
+        except subprocess.TimeoutExpired:
+            process.kill()
+            process.wait()
+            raise HistoryScanError("Git history reader timed out") from None
+        if status or pipe_failed:
+            raise HistoryScanError("Git history reader failed")
     return findings, truncated
 
 
@@ -1082,6 +1107,9 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         result = scan_repo(Path(args.repo), run_scanners=not args.no_scanners, full=args.full)
+    except HistoryScanError:
+        print("did-i-leak: Git history scan incomplete; no verdict or cache update", file=sys.stderr)
+        return 3
     except (GitError, OSError, RuntimeError, ValueError):
         print("did-i-leak: could not inspect a Git repository", file=sys.stderr)
         return 3
