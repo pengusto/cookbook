@@ -18,7 +18,7 @@
     "repository": null,
     "files": {
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "98b2674396db90b6888e1ba569aedc1668115859cfcfdd44d76b89437383a0aa",
+      "SKILL.md": "f392d9f5e1f75f8ccc187b32ce48b487fda865b8524a6bdb608b8cdccbd86862",
       "agents/openai.yaml": "276fe7b61fe3887bcde70ad8bc40ade7f4420d0b35973f796b48a0e3f88d12b6"
     },
     "install_ids": {
@@ -331,7 +331,7 @@
     "revision": "d8ce9d530d74852ead13fac2f6994714808caff5",
     "files": {
       "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
-      "SKILL.md": "7c349eff760915d7973be012f57e8bf9f3d3d4f9c5838a1b0512013e3761b739",
+      "SKILL.md": "7d1d3769fc7c608315d3eb7b6a58799b8c44d7b68703945d35686f1dfcb4ca11",
       "agents/openai.yaml": "653155bf6dc1bba854d8087cff023592efe19b27425e376b884498473ac8fec5",
       "examples.md": "48088b24722530b5fb86a14c2a173fe925b05a7298ee6196d69508e6f89e57b0"
     },
@@ -416,7 +416,7 @@
     "repository": null,
     "files": {
       "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
-      "SKILL.md": "379454f4d31d492528b95311dfce9413a41abb54d45e968be995382d978bb802",
+      "SKILL.md": "db534df0880a881c9d1ce5caa6af300d99be89c5f6c841f509afa408eaac55db",
       "agents/openai.yaml": "0f6752a5b7d175431d7dfb5fdb87f9f38865a69d5172d8f871ebe63861dc0b33"
     },
     "install_ids": {
@@ -531,8 +531,8 @@
     "repository": null,
     "files": {
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "d19bd54bff947125ec879d0bced6428c47155d14438f7f2be0d2b91d358c25cf",
-      "agents/openai.yaml": "c5a544227bc017b57f85b0f0692a9a725fd81699ad43ae839c16acb0c78f0020",
+      "SKILL.md": "fc2a9d4f4c3ef2d037163b5adfb2a4e6b68e0fc10d1dc20a8aa8212f812568ed",
+      "agents/openai.yaml": "5bbc5518eb57d7644e6ff6f2b408fa9ae527769100e90c463358be0f0d9346f7",
       "references/github-pages.md": "26a71d05cf69d44f432012d4c506f0eb69a021a6b37a891718447310b7721e92",
       "references/readme-presentation.md": "dca18b502a54717cee0dcef9bf5b7e43931b05b49c6f035196811f8cd4f632d0",
       "references/verify-live.md": "48045fcab04796d6e21d14aa733872fcc526015adf1211725dbb65ac7aa9dd70"
@@ -590,7 +590,7 @@
     "repository": null,
     "files": {
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "58886f8acb63d91ce1f4a58809ac35d6ef9d682985d728a9f329276ae095128e",
+      "SKILL.md": "6cd949ad2072f960bb5fec0824c3a01ffc0a0c966d07824b1f7cd6bc748302e2",
       "agents/openai.yaml": "ffd32d863dc091b3f7c2e6e0fb5e3c0f90350d6e0606be90d75270990d181623",
       "references/handoff.md": "59a6124c75d399d631cc8c4aa24805375981a0c29bf61ac0234fbf9600e543d4"
     },

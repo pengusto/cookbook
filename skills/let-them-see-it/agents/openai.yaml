@@ -1,4 +1,4 @@
 interface:
   display_name: "{{TITLE}}"
-  short_description: "Evaluate and prepare a repository for public release"
+  short_description: "Prepare a repository for private or public sharing"
   default_prompt: "Use ${{ID}} for this workflow. Follow its instructions and report verification limits."
