@@ -17,6 +17,15 @@ Look for actual duplication, unused configuration, indirection with no current b
 
 Separate proven redundancy from uncertainty and optional style preferences. Keep a mechanism when removing it would weaken recovery, security, logging, compatibility or another established contract. If no worthwhile simplification is supported, report that outcome instead of inventing a refactor.
 
+Distinguish contractual error handling, such as validation and error responses,
+from a discovered defect. Do not silently fix an unrelated defect under a
+behavior-preserving simplification; report it separately or fix it when the
+request authorizes that change. If preserving or fixing a material behavior is
+ambiguous and affects the requested change, ask the specific question while
+continuing independent authorized work. For example, "keep the errors" could
+refer to an error message, a data-loss defect, or both; clarify which behavior
+to preserve before changing an affected path.
+
 ## Recommend or apply
 
 For a review request, present a short ranked list with location, proposed reduction, preserved behavior, risk and a concrete check. Leave files unchanged. A request such as “simplify this” also authorizes the necessary reversible implementation in that scope; do not ask again for settled permission.

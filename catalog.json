@@ -416,7 +416,7 @@
     "repository": null,
     "files": {
       "LICENSE": "9131b11f9a1af740b404b4dfb8208db9ead2822aac31c8342081ce7246679da6",
-      "SKILL.md": "b5f629e5d4f3ea1db9716be8ad14cf5e8935f6daf84deaaf24b64fa731ea85fc",
+      "SKILL.md": "db534df0880a881c9d1ce5caa6af300d99be89c5f6c841f509afa408eaac55db",
       "agents/openai.yaml": "0f6752a5b7d175431d7dfb5fdb87f9f38865a69d5172d8f871ebe63861dc0b33"
     },
     "install_ids": {
@@ -531,8 +531,8 @@
     "repository": null,
     "files": {
       "LICENSE": "3d52bad2f817aec0a0d07e6d5a233485945b6c949f169a94dae500d61850c7d3",
-      "SKILL.md": "be3d4b8ba4d9d7289a33b7854a42bc345f8ef31341c9a55eaeb8e0fb1daa2e50",
-      "agents/openai.yaml": "c5a544227bc017b57f85b0f0692a9a725fd81699ad43ae839c16acb0c78f0020",
+      "SKILL.md": "81f2c24ee9b3905de28fbe5cdcceea7edcaffbdf59259b1021e2817c328c7efa",
+      "agents/openai.yaml": "5bbc5518eb57d7644e6ff6f2b408fa9ae527769100e90c463358be0f0d9346f7",
       "references/github-pages.md": "26a71d05cf69d44f432012d4c506f0eb69a021a6b37a891718447310b7721e92",
       "references/readme-presentation.md": "fc87dfdc97cdddf1b0126542573b69bf8c9190b3d33728fd141e13891d843cde",
       "references/verify-live.md": "48045fcab04796d6e21d14aa733872fcc526015adf1211725dbb65ac7aa9dd70"
